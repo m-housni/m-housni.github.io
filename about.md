@@ -4,10 +4,11 @@ title:
 permalink: /about/
 ---
 
-<!-- TODO: Add sections -->
+{% include cv1/profile.md %}
 
-lorem ipsum
-# Experience
-lorem ipsum
-# Projects
-lorem ipsum
+{% include cv1/experience.md %}
+
+{% include cv1/projects.md %}
+
+{% include cv1/achievements.md %}
+

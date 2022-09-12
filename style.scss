@@ -65,6 +65,7 @@ h4 {
 }
 
 p {
+  text-align: justify;
   margin: 15px 0;
   color: $black;
 }
@@ -284,6 +285,28 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check>li:before {
+  content: "✔️ ";
+}
+
+.bullseye>li:before {
+  content: "🎯 ";
+}
+
+li {
+  list-style-type: none;
+}
+
+.ml-10 {
+  margin-left: 30px;
 }
 
 @media print {
