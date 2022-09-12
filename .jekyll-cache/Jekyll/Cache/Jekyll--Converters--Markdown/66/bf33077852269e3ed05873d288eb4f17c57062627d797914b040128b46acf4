@@ -1,0 +1,80 @@
+I"«	<h1 id="profile">Profile</h1>
+
+<p>I am an energetic person, an effective communicator, a quick learner, and a problem solver. I worked on various projects related to the software domain which provided me a great deal of technical exposure along with the importance of working in a team and the value of client satisfaction.</p>
+
+<p>I have worked on developing various enterprise-level web applications for helping companies solve problems for sectors like retail, legaltech, education, healthtech, marketing, e-commerce.</p>
+
+<p>During my career, I was involved in tasks like:</p>
+
+<ul class="check">
+  <li>Write App Code</li>
+  <li>Write Tests</li>
+  <li>Review Test Results</li>
+  <li>Manage Infrastructure</li>
+  <li>Lead Engineering Team</li>
+  <li>Manage Quality</li>
+  <li>Manage Releases</li>
+  <li>Engineering Leadership</li>
+</ul>
+
+<p>I have worked on different technology stacks like:</p>
+
+<ul class="bullseye"> 
+  <li>
+    Frontend Dev
+    <ul class="check ml-10">
+      <li>HTML, CSS, Frameworks, Less, Saas, Gulp</li>
+      <li>React, Vue, Angular, Svelte, Solid, ElectronJS</li>
+    </ul>
+  </li>
+  <li>
+    Backend Dev
+    <ul class="check ml-10">
+      <li>Node, Express</li>
+      <li>Spring Boot, Spring MVC, Spring REST</li>
+      <li>Django, Flask, Cherry Py, Pyramid</li>
+      <li>ASP.NET MVC, ASP.NET Web, API, .NET Core Web API, C#</li>
+      <li>Ruby on rails, PHP</li>
+    </ul>
+  </li>
+
+  <li>
+    Databases
+    <ul class="check ml-10">
+      <li>MySql, SQLite, MondoDB, Postgres</li>
+      <li>Sql, Clusters, Joins, Sharding</li>
+    </ul>
+  </li>
+
+  <li>
+    DevOps
+    <ul class="check ml-10">
+      <li>CI/CD, AWS, DO</li>
+      <li>Nginx, Ansible, Lambda, SQS</li>
+    </ul>
+  </li>
+
+  <li>
+    Mobile App Dev
+    <ul class="check ml-10">
+      <li>Hybrid Apps, IOS, Android</li>
+      <li>React Native</li>
+    </ul>
+  </li>
+</ul>
+
+<p>So, I believe I am a good fit for technology-centric roles in your company.</p>
+
+<h1 id="experience">Experience</h1>
+
+<h3 id="technical-specialist--intelcia-it-solutions">Technical Specialist @ Intelcia IT Solutions</h3>
+<p>&lt;&gt;</p>
+<li>Evaluating technical programs.</li>
+<li>Developing application designs and web pages.</li>
+<li>Providing customer support for programs and applications.</li>
+<li>Training customers and staff.</li>
+<li>Troubleshooting technical programs.</li>
+<li>Finding ways to increase productivity and reduce expenses.</li>
+<li>Learning about new products and technologies.</li>
+
+:ET
