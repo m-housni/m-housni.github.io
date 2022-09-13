@@ -31,25 +31,21 @@ I have worked on different technology stacks like:
     Backend Dev
     <ul class="dash ml-10">
       <li>Node, Express</li>
-      <li>Spring Boot, Spring MVC, Spring REST</li>
-      <li>Django, Flask, Cherry Py, Pyramid</li>
-      <li>ASP.NET MVC, ASP.NET Web, API, .NET Core Web API, C#</li>
-      <li>Ruby on rails, PHP</li>
+      <li>PHP, Laravel</li>
     </ul>
   </li>
 
   <li>
     Databases
     <ul class="dash ml-10">
-      <li>MySql, SQLite, MondoDB, Postgres</li>
-      <li>Sql, Clusters, Joins, Sharding</li>
+      <li>MySql, SQLite</li>
     </ul>
   </li>
 
   <li>
     DevOps
     <ul class="dash ml-10">
-      <li>CI/CD, AWS, DO</li>
+      <li>CI/CD, DO</li>
       <li>Nginx, Ansible, Lambda, SQS</li>
     </ul>
   </li>

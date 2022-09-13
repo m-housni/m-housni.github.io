@@ -1,4 +1,4 @@
-I"H<h1 id="profile">Profile</h1>
+I";<h1 id="profile">Profile</h1>
 
 <p>I am an energetic person, an effective communicator, a quick learner, and a problem solver. I worked on various projects related to the software domain which provided me a great deal of technical exposure along with the importance of working in a team and the value of client satisfaction.</p>
 
@@ -31,25 +31,21 @@
     Backend Dev
     <ul class="dash ml-10">
       <li>Node, Express</li>
-      <li>Spring Boot, Spring MVC, Spring REST</li>
-      <li>Django, Flask, Cherry Py, Pyramid</li>
-      <li>ASP.NET MVC, ASP.NET Web, API, .NET Core Web API, C#</li>
-      <li>Ruby on rails, PHP</li>
+      <li>PHP, Laravel</li>
     </ul>
   </li>
 
   <li>
     Databases
     <ul class="dash ml-10">
-      <li>MySql, SQLite, MondoDB, Postgres</li>
-      <li>Sql, Clusters, Joins, Sharding</li>
+      <li>MySql, SQLite</li>
     </ul>
   </li>
 
   <li>
     DevOps
     <ul class="dash ml-10">
-      <li>CI/CD, AWS, DO</li>
+      <li>CI/CD, DO</li>
       <li>Nginx, Ansible, Lambda, SQS</li>
     </ul>
   </li>
@@ -108,6 +104,22 @@
   <li>Development of a SaaS Hospital Management System</li>
   <li>Development of interactive e-learning platform</li>
   <li>Development of E-Commerce Websites</li>
+</ul>
+
+<h1 id="projects">Projects</h1>
+
+<h3>StreamFlix</h3>
+<p style="font-size:.9rem">Script that will help you get started with your own Video Streaming Platform</p>
+<ul class="star">
+  <li>Technologies: Svelte, Laravel, Php</li>
+  <li>Repo:https://github.com/m-housni/stream-flix</li>
+</ul>
+
+<h3>TodoSlick</h3>
+<p style="font-size:.9rem">Slick todo list manager</p>
+<ul class="star">
+  <li>Technologies: Svelte, Laravel, Php</li>
+  <li>Repo:https://github.com/m-housni/todo-slick</li>
 </ul>
 
 :ET
