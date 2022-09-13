@@ -6,7 +6,7 @@ I have worked on developing various enterprise-level web applications for helpin
 
 During my career, I was involved in tasks like:
 
-<ul class="check">
+<ul class="star">
   <li>Write App Code</li>
   <li>Write Tests</li>
   <li>Review Test Results</li>
@@ -19,17 +19,17 @@ During my career, I was involved in tasks like:
 
 I have worked on different technology stacks like:
 
-<ul class="bullseye"> 
+<ul class="star"> 
   <li>
     Frontend Dev
-    <ul class="check ml-10">
+    <ul class="dash ml-10">
       <li>HTML, CSS, Frameworks, Less, Saas, Gulp</li>
       <li>React, Vue, Angular, Svelte, Solid, ElectronJS</li>
     </ul>
   </li>
   <li>
     Backend Dev
-    <ul class="check ml-10">
+    <ul class="dash ml-10">
       <li>Node, Express</li>
       <li>Spring Boot, Spring MVC, Spring REST</li>
       <li>Django, Flask, Cherry Py, Pyramid</li>
@@ -40,7 +40,7 @@ I have worked on different technology stacks like:
 
   <li>
     Databases
-    <ul class="check ml-10">
+    <ul class="dash ml-10">
       <li>MySql, SQLite, MondoDB, Postgres</li>
       <li>Sql, Clusters, Joins, Sharding</li>
     </ul>
@@ -48,7 +48,7 @@ I have worked on different technology stacks like:
 
   <li>
     DevOps
-    <ul class="check ml-10">
+    <ul class="dash ml-10">
       <li>CI/CD, AWS, DO</li>
       <li>Nginx, Ansible, Lambda, SQS</li>
     </ul>
@@ -56,7 +56,7 @@ I have worked on different technology stacks like:
 
   <li>
     Mobile App Dev
-    <ul class="check ml-10">
+    <ul class="dash ml-10">
       <li>Hybrid Apps, IOS, Android</li>
       <li>React Native</li>
     </ul>
