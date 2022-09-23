@@ -59,4 +59,8 @@ I have worked on different technology stacks like:
   </li>
 </ul>
 
+Github stats show that I am mostly using these languages:
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=m-housni&hide=hack&layout=default&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
+
 So, I believe I am a good fit for technology-centric roles in your company.
