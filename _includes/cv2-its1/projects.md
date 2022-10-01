@@ -24,7 +24,7 @@
     </li>
   </ul>
 </ul>
-<p><i class="devicon-github-original small"></i> https://github.com/m-housni/stream-flix</p>
+<p><i class="devicon-github-original small"></i> https://github.com/m-housni/svelte</p>
 
 <h3>Laravel</h3>
 <p>MVC web application framework with expressive, elegant syntax</p>
@@ -37,7 +37,7 @@
     </li>
   </ul>
 </ul>
-<p><i class="devicon-github-original small"></i> https://github.com/m-housni/Koriym.PhpSkeleton</p>
+<p><i class="devicon-github-original small"></i> https://github.com/m-housni/laravel</p>
 
 <h3>js-visualizer-9000-client</h3>
 <p>Step-by-step visualizer for Javascipt code, showcasing the Task Queue, the Microtask Queue, the Event Loop, and the Call Stack</p>
@@ -51,4 +51,4 @@
     </li>
   </ul>
 </ul>
-<p><i class="devicon-github-original small"></i> https://github.com/m-housni/Koriym.PhpSkeleton</p>
+<p><i class="devicon-github-original small"></i> https://github.com/m-housni/svelte</p>
