@@ -8,7 +8,7 @@ During my career, I was involved in tasks like:
   <li>Write App Code</li>
   <li>Manage Infrastructure</li>
   <li>Lead Engineering Team</li>
-  <li>Manage Quality</li>
+  <li>Manage Sprints</li>
   <li>Manage Releases</li>
   <li>Engineering Leadership</li>
 </ul>

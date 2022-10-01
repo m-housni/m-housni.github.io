@@ -31,15 +31,6 @@
   <li>Development of Online Simulator and Quotation System</li>
   <li>Development of a Feedback Management System</li>
   <li>Development of a SaaS Hospital Management System</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
-  <li>Development of interactive e-learning platform</li>
+  <li>Development of an interactive e-learning platform</li>
   <li>Development of E-Commerce Websites</li>
 </ul>
