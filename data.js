@@ -1,3 +1,34 @@
+export const osProjects = [
+  {
+    title: "Project 1",
+    description: "Project 1 description",
+    video: "https://www.youtube.com/embed/1",
+    images: [
+      "https://via.placeholder.com/300x200",
+      "https://via.placeholder.com/300x200",
+      "https://via.placeholder.com/300x200",
+    ],
+    technologies: ["React", "Node", "MongoDB"],
+    link: "https://www.google.com",
+    show: true,
+    order: 2,
+  },
+  {
+    title: "Project 2",
+    description: "Project 2 description",
+    video: "https://www.youtube.com/embed/1",
+    images: [
+      "https://via.placeholder.com/300x200",
+      "https://via.placeholder.com/300x200",
+      "https://via.placeholder.com/300x200",
+    ],
+    technologies: ["React", "Node", "MongoDB"],
+    link: "https://www.google.com",
+    show: true,
+    order: 1,
+  },
+];
+
 export const projects = [
   {
     title: "Koriym.PhpSkeleton",

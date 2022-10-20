@@ -1,13 +1,36 @@
-# OS Contributions
+# OS Projects
+<div id="osProjectsDiv"></div>
 
+
+# OS Contributions
 <div id="projectsDiv"></div>
 
 <script type="module">
 
-  import { projects } from '../../data.js'
+  import { projects, osProjects } from '../../data.js'
   const projectsDiv = document.getElementById('projectsDiv')
+  const osProjectsDiv = document.getElementById('osProjectsDiv')
 
-  projects.sort((a, b) => a.title < b.title)
+  osProjects.sort((a, b) => a.order - b.order)
+
+  for (let i = 0; i < osProjects.length; i++) {
+    const osProject = osProjects[i]
+    let osp = `<h3>${osProject.title}</h3>
+    <p>${osProject.description}</p>
+    <ul class="">
+        <li>Technologies</li>
+        <ul class=""
+          <li>
+            ${osProject.technologies.map(t => `<small class="tech">${t}</small>`).join('')}
+          </li>
+      </ul>
+      </ul >
+    <p><a href="${osProject.link}" alt="project link" target="_blank"><i class="devicon-github-original small"></i> ${osProject.link}</a></p>`
+
+      osProjectsDiv.innerHTML += osProject.show === true ? `<div class="project">${osp}</div>` : ''
+  }
+
+  projects.sort((a, b) => a.order - b.order)
 
   for(let i = 0; i < projects.length ; i++) {
     const project = projects[i]
