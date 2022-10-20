@@ -10,6 +10,6 @@ permalink: /about/
 
 {% include cv2-its1/experience.md %}
 
-{% include cv2-its1/projects.md %}
+{% include cv2-its1/projects.html %}
 
 {% include cv2-its1/achievements.md %}

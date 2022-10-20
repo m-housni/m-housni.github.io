@@ -17,9 +17,17 @@ html {
   font-size: 100%;
 }
 
+.project {
+  background-color: lightgray;
+  color: black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
 .tech {
   font-size: .9rem;
   margin: 2px 5px;
+  padding: 1px 7px;
   border-radius: 5px;
   background-color: gray;
 }
