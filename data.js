@@ -1,31 +1,75 @@
-export const osProjects = [
+export const freelance = [
   {
-    title: "Project 1",
-    description: "Project 1 description",
-    video: "https://www.youtube.com/embed/1",
-    images: [
-      "https://via.placeholder.com/300x200",
-      "https://via.placeholder.com/300x200",
-      "https://via.placeholder.com/300x200",
-    ],
-    technologies: ["React", "Node", "MongoDB"],
+    title: "Gamified Developers Platform",
+    description:
+      "A gamified platform for developers to learn and practice their skills and get matched with recruiters.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
     link: "https://www.google.com",
     show: true,
     order: 2,
   },
   {
-    title: "Project 2",
-    description: "Project 2 description",
-    video: "https://www.youtube.com/embed/1",
-    images: [
-      "https://via.placeholder.com/300x200",
-      "https://via.placeholder.com/300x200",
-      "https://via.placeholder.com/300x200",
-    ],
-    technologies: ["React", "Node", "MongoDB"],
+    title: "Geolocation Tracking System",
+    description:
+      "A web application that allows users to track their location and share it with their friends.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
     link: "https://www.google.com",
     show: true,
-    order: 1,
+    order: 2,
+  },
+  {
+    title: "Compliance and Risk Management System",
+    description:
+      "A web application that allows companies to manage their compliance and risk management.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    link: "https://www.google.com",
+    show: true,
+    order: 2,
+  },
+  {
+    title: "Corporate Social Responsibility Management System",
+    description:
+      "A web application that allows companies to manage their corporate social responsibility.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    link: "https://www.google.com",
+    show: true,
+    order: 2,
+  },
+  {
+    title: "Online Simulator and Quotation System",
+    description:
+      "A web application that allows users to simulate their needs and get a quotation.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    link: "https://www.google.com",
+    show: true,
+    order: 2,
+  },
+  {
+    title: "SaaS Hospital Management System",
+    description:
+      "A web application that allows doctors and hospitals to manage their operations.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    link: "https://www.google.com",
+    show: true,
+    order: 2,
+  },
+  {
+    title: "Interactive e-learning platform",
+    description:
+      "A web application that allows users to learn and interact with each other.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    link: "https://www.google.com",
+    show: true,
+    order: 2,
+  },
+  {
+    title: "E-Commerce Platform",
+    description:
+      "A web application that allows users to buy and sell products.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    link: "https://www.google.com",
+    show: true,
+    order: 2,
   },
 ];
 

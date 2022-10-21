@@ -17,6 +17,14 @@ html {
   font-size: 100%;
 }
 
+.heading {
+    background-color: lightgray;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid black;
+    color: black;
+}
+
 .project {
   background-color: lightgray;
   color: black;
@@ -173,8 +181,8 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $black;
+  padding: 0 0;
+  // border-bottom: 1px solid $black;
 
   @include mobile {
     text-align: center;

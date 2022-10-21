@@ -1,0 +1,135 @@
+I"k<h2 class="heading">Profile</h2>
+
+<p>I am an energetic person, an effective communicator, a quick learner, and a problem solver. I worked on various projects related to the software domain which provided me a great deal of technical exposure along with the importance of working in a team and the value of client satisfaction.</p>
+
+<p>During my career, I was involved in tasks like:</p>
+
+<ul class="star">
+  <li>Write App Code</li>
+  <li>Manage Infrastructure</li>
+  <li>Lead Engineering Team</li>
+  <li>Manage Sprints</li>
+  <li>Manage Releases</li>
+  <li>Engineering Leadership</li>
+</ul>
+
+<!-- I mostly use these technologies:
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=m-housni&hide_title=true&hide=hack&layout=default&langs_count=5)](https://github.com/anuraghazra/github-readme-stats)
+
+So, I believe I am a good fit for technology-centric roles in your company. -->
+
+<h2 class="heading">Education</h2>
+
+<h3>UPMC - Paris VI</h3>
+<p>Master SMR CS / 2014 - 2017</p>
+
+<h3>FST - Tangier</h3>
+<p>BSc Industrial Engineering / 2009 - 2012</p>
+
+<h2 class="heading">Experience</h2>
+
+<h3>Technical Specialist @ Intelcia IT Solutions</h3>
+<p>09/2022 - Currently occupying this position</p>
+
+<!-- <h3>Fullstack Developer @ SmartWorkers.nl </h3>
+<p>04/2019 - 08/2022</p>
+<ul class="star">
+  <li>Assist with the management of projects lifecycle</li>
+  <li>Scope, estimates, architecture, documentation, </li>
+  <li>Development, testing, releases, and enhancements</li>
+  <li>Front and back-end development, </li>
+  <li>Working on and learning new technologies</li>
+  <li>Develop new digital features </li>
+  <li>Diagnose and help correct performance issues</li>
+  <li>Help develop, test, and deliver web sites, and web apps</li>
+  <li>Manage content on client sites</li>
+  <li>Help with debugging and troubleshooting code-related issues/defects</li>
+  <li>Help develop and follow practices in development standards, </li>
+  <li>Improve design patterns, and testing standards</li>
+  <li>Stay up to date on the latest web technologies within various industries</li>
+  <li>Provide technical support to internal and external stakeholders</li>
+</ul> -->
+
+<div id="smartworker"></div>
+
+<h3>Freelance Developer</h3>
+<p>01/2016 - 05/2022</p>
+
+<div id="exp2"></div>
+
+<script type="module">
+
+  import { freelance } from '../../data.js'
+  const exp2 = document.getElementById('exp2')
+  freelance.sort((a, b) => a.order - b.order)
+
+  for (let i = 0; i < freelance.length; i++) { 
+    const frExp = freelance[i] 
+    let osp = `<h3>${frExp.title}</h3>
+    <p>${frExp.description}</p>
+    <ul class="">
+      <ul class="" 
+        <li>
+          ${frExp.technologies.map(t => `<small class="tech">${t}</small>`).join('')}
+        </li>
+      </ul>
+    </ul>`
+
+    exp2.innerHTML += frExp.show === true ? `<div class="xproject">${osp}</div>` : ''
+  }
+
+</script>
+
+<!-- <h3>Freelance Developer</h3>
+<p>01/2016 - 05/2022</p>
+<ul class="star">
+  <li>Development of a Geolocation Tracking System</li>
+  <li>Development of a Compliance and Risk Management System</li>
+  <li>Development of a Corporate Social Responsability Management System</li>
+  <li>Development of Online Simulator and Quotation System</li>
+  <li>Development of a Feedback Management System</li>
+  <li>Development of a SaaS Hospital Management System</li>
+  <li>Development of an interactive e-learning platform</li>
+  <li>Development of E-Commerce Websites</li>
+</ul> -->
+
+<h2 class="heading">OS Contributions</h2>
+
+<div id="projectsDiv"></div>
+
+<script type="module">
+
+  import { projects } from '../../data.js'
+  const projectsDiv = document.getElementById('projectsDiv')
+  projects.sort((a, b) => a.order - b.order)
+
+  for(let i = 0; i < projects.length ; i++) {
+    const project = projects[i]
+    let p = `<h3>${project.title}</h3>
+      <p>${project.description}</p>
+      <ul class="">
+        <ul class="">
+          <li>
+            ${project.technologies.map(t => `<small class="tech">${t}</small>`).join('')}
+          </li>
+        </ul>
+      </ul >
+      <p><a href="${project.link}" alt="project link" target="_blank"><i class="devicon-github-original small"></i> ${project.link}</a></p>`
+    
+    projectsDiv.innerHTML += project.show === true ? `<div class="xproject">${p}</div>` : ''
+  }
+
+</script>
+
+<h2 class="heading">Languages</h2>
+
+<h3>Arabic</h3>
+<p>Native / Bilingual Proficiency.</p>
+
+<h3>French</h3>
+<p></p>
+
+<h3>English: Full Professional Proficiency</h3>
+
+:ET

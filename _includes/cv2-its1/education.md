@@ -1,7 +1,0 @@
-# Education
-
-<h3>UPMC - Paris VI</h3>
-<p>Master SMR CS / 2014 - 2017</p>
-
-<h3>FST - Tangier</h3>
-<p>BSc Industrial Engineering / 2009 - 2012</p>
