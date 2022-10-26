@@ -75,6 +75,15 @@ export const freelance = [
 
 export const projects = [
   {
+    title: "performance-counter",
+    description:
+      "Php package for developers to measure the performance of their code. ",
+    technologies: ["PHP"],
+    link: "https://github.com/m-housni/performance-counter",
+    show: true,
+    order: 1,
+  },
+  {
     title: "Koriym.PhpSkeleton",
     description:
       "Single-line command that will automatically setup for you all the needed code to create a modern, clutter-free and test-oriented PHP package.",
