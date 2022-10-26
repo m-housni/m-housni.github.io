@@ -1,4 +1,4 @@
-I"À<h1 id="profile">Profile</h1>
+I"^<h2 class="heading">Profile</h2>
 
 <p>I am an energetic person, an effective communicator, a quick learner, and a problem solver. I worked on various projects related to the software domain which provided me a great deal of technical exposure along with the importance of working in a team and the value of client satisfaction.</p>
 
@@ -19,7 +19,7 @@
 
 So, I believe I am a good fit for technology-centric roles in your company. -->
 
-<h1 id="education">Education</h1>
+<h2 class="heading">Education</h2>
 
 <h3>UPMC - Paris VI</h3>
 <p>Master SMR CS / 2014 - 2017</p>
@@ -29,10 +29,10 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
 
 <h2 class="heading">Experience</h2>
 
-<h3>Technical Specialist @ Intelcia IT Solutions</h3>
+<!-- <h3>Technical Specialist @ Intelcia IT Solutions</h3>
 <p>09/2022 - Currently occupying this position</p>
 
-<!-- <h3>Fullstack Developer @ SmartWorkers.nl </h3>
+<h3>Fullstack Developer @ SmartWorkers.nl </h3>
 <p>04/2019 - 08/2022</p>
 <ul class="star">
   <li>Assist with the management of projects lifecycle</li>
@@ -51,10 +51,27 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
   <li>Provide technical support to internal and external stakeholders</li>
 </ul> -->
 
-<div id="smartworker"></div>
-
 <h3>Freelance Developer</h3>
-<p>01/2016 - 05/2022</p>
+<p>01/2016 - 10/2022</p>
+
+<ul class="star">
+  <li>Assist with the management of projects lifecycle</li>
+  <li>Scope, estimates, architecture, documentation, </li>
+  <li>Development, testing, releases, and enhancements</li>
+  <li>Front and back-end development, </li>
+  <li>Working on and learning new technologies</li>
+  <li>Develop new digital features </li>
+  <li>Diagnose and help correct performance issues</li>
+  <li>Help develop, test, and deliver web sites, and web apps</li>
+  <li>Manage content on client sites</li>
+  <li>Help with debugging and troubleshooting code-related issues/defects</li>
+  <li>Help develop and follow practices in development standards, </li>
+  <li>Improve design patterns, and testing standards</li>
+  <li>Stay up to date on the latest web technologies within various industries</li>
+  <li>Provide technical support to internal and external stakeholders</li>
+</ul>
+
+<h2 class="heading">Projects</h2>
 
 <div id="exp2"></div>
 
@@ -95,6 +112,7 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
 </ul> -->
 
 <h2 class="heading">OS Contributions</h2>
+
 <div id="projectsDiv"></div>
 
 <script type="module">
@@ -120,5 +138,20 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
   }
 
 </script>
+
+<h2 class="heading">Languages</h2>
+
+<h3>Arabic</h3>
+<p>Native / Bilingual Proficiency.</p>
+
+<h3>French</h3>
+<p>Full Professional Proficiency</p>
+
+<h3>English</h3>
+<p>Full Professional Proficiency</p>
+
+<h2 class="heading">Hobbies</h2>
+
+<h3>Travel, Photography, Sports, Reading, Gymnastics ...</h3>
 
 :ET
