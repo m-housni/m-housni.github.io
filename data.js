@@ -78,7 +78,7 @@ export const projects = [
     title: "performance-counter",
     description:
       "Php package for developers to measure the performance of their code. ",
-    technologies: ["PHP"],
+    technologies: ["PHP", "Composer", "PHPUnit"],
     link: "https://github.com/m-housni/performance-counter",
     show: true,
     order: 1,
