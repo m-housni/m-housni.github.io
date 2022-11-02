@@ -3,7 +3,7 @@ export const freelance = [
     title: "Gamified Developers Platform",
     description:
       "A gamified platform for developers to learn and practice their skills and get matched with recruiters.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    technologies: ["HTML", "CSS", "Javascript", "PHP", "React"],
     link: "https://www.google.com",
     show: true,
     order: 2,
@@ -12,7 +12,7 @@ export const freelance = [
     title: "Geolocation Tracking System",
     description:
       "A web application that allows users to track their location and share it with their friends.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    technologies: ["HTML", "CSS", "Javascript", "Svelte", "Laravel", "PHP"],
     link: "https://www.google.com",
     show: true,
     order: 2,
@@ -74,6 +74,31 @@ export const freelance = [
 ];
 
 export const projects = [
+  {
+    title: "pomodoro-js",
+    description:
+      "A simple pomodoro platform to take your productivity to the next level.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Audio API",
+      "Notifications API",
+      "Local Storage",
+    ],
+    link: "https://github.com/m-housni/pomodoro-js",
+    show: true,
+    order: 0,
+  },
+  {
+    title: "commflix",
+    description:
+      "A simple Netflix clone to browse new movies and TV shows, view their trailers and details.",
+    technologies: ["HTML", "CSS", "Javascript", "Svelte", "PHP", "TMDB API"],
+    link: "https://github.com/m-housni/commflix",
+    show: true,
+    order: 1,
+  },
   {
     title: "performance-counter",
     description:

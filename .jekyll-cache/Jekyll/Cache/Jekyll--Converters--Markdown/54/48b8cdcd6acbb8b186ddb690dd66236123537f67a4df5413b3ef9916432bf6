@@ -1,4 +1,4 @@
-I"<h2 class="heading">Profile</h2>
+I"<h2 class="heading">Profile</h2>
 
 <p>I am an energetic person, an effective communicator, a quick learner, and a problem solver. I worked on various projects related to the software domain which provided me a great deal of technical exposure along with the importance of working in a team and the value of client satisfaction.</p>
 
@@ -83,7 +83,8 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
           ${frExp.technologies.map(t => `<small class="tech">${t}</small>`).join('')}
         </li>
       </ul>
-    </ul>`
+    </ul>
+    `
 
     exp2.innerHTML += frExp.show === true ? `<div class="xproject">${osp}</div>` : ''
   }
@@ -126,7 +127,7 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
       </ul >
       <p><a href="${project.link}" alt="project link" target="_blank"><i class="devicon-github-original small"></i> ${project.link}</a></p>`
     
-    projectsDiv.innerHTML += project.show === true ? `<div class="xproject">${p}</div>` : ''
+    projectsDiv.innerHTML += project.show === true ? `<div>${p}</div>` : ''
   }
 
 </script>
