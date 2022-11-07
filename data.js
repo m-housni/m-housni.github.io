@@ -31,7 +31,7 @@ export const freelance = [
     description:
       "A web application that allows companies to manage their corporate social responsibility.",
     technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "#",
+    link: "https://github.com/m-housni/DomAgri",
     show: true,
     order: 2,
   },
