@@ -4,7 +4,7 @@ export const freelance = [
     description:
       "A gamified platform for developers to learn and practice their skills and get matched with recruiters.",
     technologies: ["HTML", "CSS", "Javascript", "PHP", "React"],
-    link: "https://www.google.com",
+    link: "#",
     show: true,
     order: 2,
   },
@@ -13,7 +13,7 @@ export const freelance = [
     description:
       "A web application that allows users to track their location and share it with their friends.",
     technologies: ["HTML", "CSS", "Javascript", "Svelte", "Laravel", "PHP"],
-    link: "https://www.google.com",
+    link: "#",
     show: true,
     order: 2,
   },
@@ -22,7 +22,7 @@ export const freelance = [
     description:
       "A web application that allows companies to manage their compliance and risk management.",
     technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "https://www.google.com",
+    link: "https://github.com/m-housni/komplians-saas",
     show: true,
     order: 2,
   },
@@ -31,7 +31,7 @@ export const freelance = [
     description:
       "A web application that allows companies to manage their corporate social responsibility.",
     technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "https://www.google.com",
+    link: "#",
     show: true,
     order: 2,
   },
@@ -40,7 +40,7 @@ export const freelance = [
     description:
       "A web application that allows users to simulate their needs and get a quotation.",
     technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "https://www.google.com",
+    link: "#",
     show: true,
     order: 2,
   },
@@ -48,8 +48,17 @@ export const freelance = [
     title: "SaaS Hospital Management System",
     description:
       "A web application that allows doctors and hospitals to manage their operations.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "https://www.google.com",
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "PHP",
+      "Laravel",
+      "Web Sockets",
+      "Pusher API",
+      "Vidal API",
+    ],
+    link: "https://github.com/m-housni/hms-100",
     show: true,
     order: 2,
   },
@@ -58,7 +67,7 @@ export const freelance = [
     description:
       "A web application that allows users to learn and interact with each other.",
     technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "https://www.google.com",
+    link: "#",
     show: true,
     order: 2,
   },
@@ -67,7 +76,7 @@ export const freelance = [
     description:
       "A web application that allows users to buy and sell products.",
     technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "https://www.google.com",
+    link: "#",
     show: true,
     order: 2,
   },

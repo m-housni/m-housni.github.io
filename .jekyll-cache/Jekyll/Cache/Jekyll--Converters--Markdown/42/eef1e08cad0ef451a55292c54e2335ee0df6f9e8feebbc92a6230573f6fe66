@@ -1,6 +1,6 @@
-I"<h2 class="heading">Profile</h2>
+I"A<h2 class="heading">Profile</h2>
 
-<p>I am a self-taught, an effective communicator, a quick learner, and a problem solver. I worked on various projects related to the software domain which provided me a great deal of technical exposure along with the importance of working in a team and the value of client satisfaction.</p>
+<p>I am a self-taught developer, a quick learner, and a problem solver. I worked on various projects related to the software domain which provided me a great deal of technical exposure along with the importance of working in a team and the value of client satisfaction.</p>
 
 <p>During my career, I was involved in tasks like:</p>
 
@@ -75,7 +75,7 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
 
   for (let i = 0; i < freelance.length; i++) { 
     const frExp = freelance[i] 
-    let osp = `<h3>${frExp.title}</h3>
+    let osp = `<a ${frExp.link} href="${frExp.link}" alt="project link" target="_blank"><h3>${frExp.title}</h3></a
     <p>${frExp.description}</p>
     <ul class="">
       <ul class="" 
@@ -84,6 +84,7 @@ So, I believe I am a good fit for technology-centric roles in your company. -->
         </li>
       </ul>
     </ul>`
+    
 
     exp2.innerHTML += frExp.show === true ? `<div class="xproject">${osp}</div>` : ''
   }
