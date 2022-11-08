@@ -12,7 +12,7 @@ export const freelance = [
     title: "Gamified Developers Platform",
     description:
       "A gamified platform for developers to learn and practice their skills and get matched with recruiters.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP", "React"],
+    technologies: ["HTML", "CSS", "Javascript", "PHP", "React", "Next"],
     link: "https://github.com/m-housni/topscorers-laravel-backend",
     show: true,
     order: 2,
