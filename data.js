@@ -1,10 +1,19 @@
 export const freelance = [
   {
+    title: "SUpply Management System",
+    description:
+      "An application that helps to manage the supply of products of an e-bikes supplier with dozens of points of sale.",
+    technologies: ["HTML", "CSS", "Javascript", "PHP", "Laravel", "AFAS API"],
+    link: "https://github.com/m-housni/kldp",
+    show: true,
+    order: 0,
+  },
+  {
     title: "Gamified Developers Platform",
     description:
       "A gamified platform for developers to learn and practice their skills and get matched with recruiters.",
     technologies: ["HTML", "CSS", "Javascript", "PHP", "React"],
-    link: "#",
+    link: "https://github.com/m-housni/topscorers-laravel-backend",
     show: true,
     order: 2,
   },
@@ -76,7 +85,7 @@ export const freelance = [
     description:
       "A web application that allows users to buy and sell products.",
     technologies: ["HTML", "CSS", "Javascript", "PHP"],
-    link: "#",
+    link: "https://github.com/m-housni/react-ecommerce",
     show: true,
     order: 2,
   },
