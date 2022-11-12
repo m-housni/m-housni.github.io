@@ -109,6 +109,24 @@ export const projects = [
     order: 0,
   },
   {
+    title: "twx-smarthome",
+    description:
+      "Model a smart home with an air conditionner, and electric counter...",
+    technologies: ["OOP", "ThingWorx", "IoT", "Javascript"],
+    link: "https://github.com/m-housni/twx-smarthome",
+    show: true,
+    order: 0,
+  },
+  {
+    title: "twx-motorc",
+    description:
+      "Build an analytical predective model for motor failure based on machine learning...",
+    technologies: ["OOP", "ThingWorx", "IoT", "Machine Learning", "Javascript"],
+    link: "https://github.com/m-housni/twx-motorc",
+    show: true,
+    order: 0,
+  },
+  {
     title: "commflix",
     description:
       "A simple Netflix clone to browse new movies and TV shows, view their trailers and details.",
