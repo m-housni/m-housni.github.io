@@ -1,3 +1,5 @@
+export const yearsOfExperience = new Date().getFullYear() - 2016;
+
 export const freelance = [
   {
     title: "SUpply Management System",

@@ -25,6 +25,20 @@ html {
     color: black;
 }
 
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ref-logo li {
+    width: 100px;
+    height: 20px;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
 .project {
   background-color: lightgray;
   color: black;
