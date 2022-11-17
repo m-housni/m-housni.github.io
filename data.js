@@ -2,7 +2,7 @@ export const yearsOfExperience = new Date().getFullYear() - 2016;
 
 export const freelance = [
   {
-    title: "SUpply Management System",
+    title: "Supply Management System",
     description:
       "An application that helps to manage the supply of products of an e-bikes supplier with dozens of points of sale.",
     technologies: ["HTML", "CSS", "Javascript", "PHP", "Laravel", "AFAS API"],
