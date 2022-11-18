@@ -17,6 +17,10 @@ html {
   font-size: 100%;
 }
 
+.page-break {
+  page-break-after: always;
+}
+
 .heading {
     background-color: lightgray;
     padding-left: 5px;
@@ -355,6 +359,20 @@ li {
   body {
     font-size: 14px;
   }
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+}
+
+#fixedContainer {
+  position: fixed;
+  width: 600px;
+  height: 200px;
+  right: 0%;
+  top: 0%;
+  margin-left: -300px;
+  /*half the width*/
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

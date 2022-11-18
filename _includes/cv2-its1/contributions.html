@@ -1,0 +1,31 @@
+<h2 class="heading space-between" id="contributions">
+  <span>Contributions</span>
+  <a href="#top">🡩</a>
+</h2>
+
+<div id="projectsDiv"></div>
+
+<script type="module">
+
+  import { projectsFiltred as projects, targetSkills } from '../../data.js'
+  const projectsDiv = document.getElementById('projectsDiv')
+
+  projects.sort((a, b) => a.order - b.order)
+
+
+  for(let i = 0; i < projects.length; i++) {
+    const project = projects[i]
+    let p = `<h3>${project.title}</h3>
+      <p>${project.description}</p>
+      <ul class="">
+        <ul class="">
+          <li>
+            ${project.technologies.map(t => `<small class="tech">${t}</small>`).join('')}
+          </li>
+        </ul>
+      </ul >
+      <p><a href="${project.link}" alt="project link" target="_blank"><i class="devicon-github-original small"></i> ${project.link}</a></p>`
+    
+    projectsDiv.innerHTML += project.show === true ? `<div>${p}</div>` : ''
+  }
+</script>

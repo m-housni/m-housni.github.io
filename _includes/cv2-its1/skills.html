@@ -1,0 +1,49 @@
+<h2 class="heading space-between" id="skills">
+  <span>Skills</span>
+  <a href="#top">🡩</a>
+</h2>
+<p>During my freelance journey, I have developed these soft/hard skills:</p>
+<div class="space-between">
+  <ul class="star" style="width: 33%;">
+    <strong>Soft Skills</strong>
+    <li>Communication</li>
+    <li>Teamwork</li>
+    <li>Problem-solving</li>
+    <li>Time management</li>
+    <li>Critical thinking</li>
+    <li>Decision-making</li>
+    <li>Organizational</li>
+    <li>Stress management</li>
+    <li>Adaptability</li>
+    <li>Conflict management</li>
+    <li>Leadership</li>
+    <li>Creativity</li>
+  </ul>
+  <ul class="star cloud" style="width: 67%;">
+    <strong>Hard Skills</strong>
+    <div id="skillsList"></div>
+  </ul>
+</div>
+
+<script type="module">
+
+  import { freelanceFiltred as freelance } from '../../data.js'
+
+  const skillsList = document.getElementById('skillsList')
+
+  freelance.sort((a, b) => a.order - b.order)
+
+  for (let i = 0; i < freelance.length; i++) {
+    const frExp = freelance[i]
+    let osp = `
+    <ul class="">
+      <ul class="space-between" 
+        <li>
+          ${frExp.technologies.map(t => `<small class="tech">${t}</small>`).join('')}
+        </li>
+      </ul>
+    </ul>`
+    skillsList.innerHTML += frExp.show === true ? `<div class="xproject">${osp}</div>` : ''
+  }
+
+</script>

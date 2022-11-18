@@ -1,6 +1,9 @@
+
+export const targetSkills = ["Javascript", "Node.js", "PHP"];
+
 export const yearsOfExperience = new Date().getFullYear() - 2016;
 
-export const freelance = [
+export const freelanceFiltred = [
   {
     title: "Supply Management System",
     description:
@@ -91,9 +94,14 @@ export const freelance = [
     show: true,
     order: 2,
   },
-];
+].filter(
+  (project) =>
+    project.technologies.includes(targetSkills[0]) ||
+    project.technologies.includes(targetSkills[1]) ||
+    project.technologies.includes(targetSkills[2])
+);
 
-export const projects = [
+export const projectsFiltred = [
   {
     title: "pomodoro-js",
     description:
@@ -191,4 +199,11 @@ export const projects = [
     show: true,
     order: 0,
   },
-];
+].filter(
+  (project) =>
+    project.technologies.includes(targetSkills[0]) ||
+    project.technologies.includes(targetSkills[1]) ||
+    project.technologies.includes(targetSkills[2])
+);
+
+// unique skills

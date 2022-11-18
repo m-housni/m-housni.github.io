@@ -20,32 +20,38 @@
 
   <body>
     
-    <div class="container">
+    <div class="container" id="top">
       <header class="masthead clearfix">
 
         <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
-
         <div class="site-info">
           <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
           <p class="site-description">{{ site.description }}</p>
           <p style="font-size: .1.1rem">
-            📱 +(212)0708113636 <br /> 📍 Casablanca, Morocco
+            ☎️ +(212🇲🇦) 07.08.11.36.36 <br /> 📧 Click <span style="color: lightblue;" onclick="isHuman()">here</span> to get my email. <strike>Bots</strike> :-) <br />⛳ Casablanca, Morocco
           </p>
           {% include my-links.html %}
         </div>
-
-        <nav style="display: none; text-align: right; display:block; font-size:1.2rem; max-width: 200px; float: right;">
-          <!-- <a href="">Download 🔽</a><br/>
-          <a href="">Print 🖨️</a> -->
-          
-          <!-- <a href="{{ site.baseurl }}/about">About</a>
+        <nav id="fixedContainer" style="text-align: right; display:block; font-size:.7rem; max-width: 200px; float: right;">
+          <a href="#profile">Profile</a>
+          <br/>
+          <a href="#experience">Experience</a>
           <br />
-          <a href="{{ site.baseurl }}/about">Experience</a>
+          <a href="#skills">Skills</a>
           <br />
-          <a href="{{ site.baseurl }}/about">Projects</a> -->
+          <a href="#projects">Projects</a>
+          <br />
+          <a href="#contributions">Contributions</a>
+          <br />
+          <a href="#certifications">Certifications</a>
+          <br />
+          <a href="#languages">Languages</a>
+          <br />
+          <a href="#education">Education</a>
+          <br />
+          <a href="#hobbies">Hobbies</a>
         </nav>
       </header>
-
       {{ content }}
     </div>
 

@@ -8,9 +8,17 @@ permalink: /about/
 
 {% include cv2-its1/experience.html %}
 
+<div class="page-break"></div>
+
+{% include cv2-its1/skills.html %}
+
 {% include cv2-its1/projects.html %}
 
-{% include cv2-its1/other.html %}
+{% include cv2-its1/contributions.html %}
+
+{% include cv2-its1/certifications.html %}
+
+{% include cv2-its1/languages.html %}
 
 {% include cv2-its1/education.html %}
 
