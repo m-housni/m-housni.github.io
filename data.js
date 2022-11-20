@@ -3,7 +3,7 @@ export const targetSkills = ["Javascript", "Node.js", "PHP"];
 
 export const yearsOfExperience = new Date().getFullYear() - 2016;
 
-export const freelanceFiltred = [
+export const projects = [
   {
     title: "Supply Management System",
     description:
@@ -94,14 +94,9 @@ export const freelanceFiltred = [
     show: true,
     order: 2,
   },
-].filter(
-  (project) =>
-    project.technologies.includes(targetSkills[0]) ||
-    project.technologies.includes(targetSkills[1]) ||
-    project.technologies.includes(targetSkills[2])
-);
+];
 
-export const projectsFiltred = [
+export const contributions = [
   {
     title: "pomodoro-js",
     description:
@@ -199,7 +194,55 @@ export const projectsFiltred = [
     show: true,
     order: 0,
   },
-].filter(
+];
+
+export const certifications = [
+  {
+    title: "CS101: Introduction to Computer Science I",
+    description:
+      "Introductory course that provides the basic concepts, nomenclature, and historical perspective of computers and computing. Includes an introduction to software development and Object-Oriented Programming.",
+    origin: "Saylor Academy",
+    link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
+    show: true,
+    order: 0,
+  },
+  {
+    title: "CS101: Introduction to Computer Science II",
+    description:
+      "Introductory course that provides the basic concepts, nomenclature, and historical perspective of computers and computing. Includes an introduction to software development and Object-Oriented Programming.",
+    origin: "Saylor Academy",
+    link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
+    show: true,
+    order: 0,
+  },
+  {
+    title: "Responsive Web Design",
+    description:
+      "In this Responsive Web Design Certification, you'll learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design. First, you'll build a cat photo app to learn the basics of HTML and CSS. Later, you'll learn modern techniques like CSS variables by building a penguin, and best practices for accessibility by building a quiz site. Finally, you'll learn how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.",
+    origin: "FreeCodeCamp",
+    link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
+    show: true,
+    order: 0,
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    description:
+      "While HTML and CSS control the content and styling of a page, JavaScript is used to make it interactive. In the JavaScript Algorithm and Data Structures Certification, you'll learn the fundamentals of JavaScript including variables, arrays, objects, loops, and functions. Once you have the fundamentals down, you'll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, you'll also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
+    origin: "FreeCodeCamp",
+    link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
+    show: true,
+    order: 0,
+  },
+];
+
+export const projectsFiltred = projects.filter(
+  (project) =>
+    project.technologies.includes(targetSkills[0]) ||
+    project.technologies.includes(targetSkills[1]) ||
+    project.technologies.includes(targetSkills[2])
+);
+
+export const contributionsFiltred = contributions.filter(
   (project) =>
     project.technologies.includes(targetSkills[0]) ||
     project.technologies.includes(targetSkills[1]) ||
@@ -207,3 +250,11 @@ export const projectsFiltred = [
 );
 
 // unique skills
+// we need to get the unique skills from the projects and contributions
+// so we loop through the projects and contributions and get the skills into an array
+// then we need to remove the duplicates
+// then  create new array of objects with the skills and the number of occurences
+// then sort the array by the number of occurences
+
+
+

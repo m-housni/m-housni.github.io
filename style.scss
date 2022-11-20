@@ -356,10 +356,22 @@ li {
   margin-left: 30px;
 }
 
+#fixedContainer {
+  position: fixed;
+  width: 600px;
+  height: 200px;
+  right: 20px;
+  top: calc(50% - 200px);
+  margin-left: -300px;
+  /*half the width*/
+  text-align: right;
+  display: block;
+  font-size: 1.3rem;
+  max-width: 200px;
+  float: right;
+}
+
 @media print {
-  nav {
-    // display: none;
-  }
   body {
     font-size: 14px;
   }
@@ -369,15 +381,7 @@ li {
   }
 }
 
-#fixedContainer {
-  position: fixed;
-  width: 600px;
-  height: 200px;
-  right: 0%;
-  top: 0%;
-  margin-left: -300px;
-  /*half the width*/
-}
+
 
 html {
   scroll-behavior: smooth;
