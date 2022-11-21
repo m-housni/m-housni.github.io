@@ -236,6 +236,22 @@ export const certifications = [
     show: true,
     order: 0,
   },
+  {
+    title: "Information Security",
+    description:
+      "In this course, you will learn the fundamentals of information security, security threats, modes of attack, and cryptographic models. Access control, identification, and authentication are also addressed. Network security and operating system (OS) hardening are explained along with intrusion detection and prevention. The course concludes with global privacy laws.",
+    origin: "Saylor Academy",
+    tags: [
+      "Information Security",
+      "Network Security",
+      "OS",
+      "Intrusion Detection",
+      "Global Privacy Laws",
+    ],
+    link: "https://learn.saylor.org/course/view.php?id=453",
+    show: true,
+    order: 0,
+  },
 ];
 
 export const projectsFiltred = projects.filter(
