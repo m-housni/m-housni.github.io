@@ -7,7 +7,7 @@ export const projects = [
     title: "Supply Management System",
     description:
       "An application that helps to manage the supply of products of an e-bikes supplier with dozens of points of sale.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP", "Laravel", "AFAS API"],
+    tags: ["HTML", "CSS", "Javascript", "PHP", "Laravel", "AFAS API"],
     link: "https://github.com/m-housni/kldp",
     show: true,
     order: 0,
@@ -16,7 +16,7 @@ export const projects = [
     title: "Gamified Developers Platform",
     description:
       "A gamified platform for developers to learn and practice their skills and get matched with recruiters.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP", "React", "Next"],
+    tags: ["HTML", "CSS", "Javascript", "PHP", "React", "Next"],
     link: "https://github.com/m-housni/topscorers-laravel-backend",
     show: true,
     order: 2,
@@ -25,7 +25,7 @@ export const projects = [
     title: "Geolocation Tracking System",
     description:
       "A web application that allows users to track their location and share it with their friends.",
-    technologies: ["HTML", "CSS", "Javascript", "Svelte", "Laravel", "PHP"],
+    tags: ["HTML", "CSS", "Javascript", "Svelte", "Laravel", "PHP"],
     link: "#",
     show: true,
     order: 2,
@@ -34,7 +34,7 @@ export const projects = [
     title: "Compliance and Risk Management System",
     description:
       "A web application that allows companies to manage their compliance and risk management.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    tags: ["HTML", "CSS", "Javascript", "PHP"],
     link: "https://github.com/m-housni/komplians-saas",
     show: true,
     order: 2,
@@ -43,7 +43,7 @@ export const projects = [
     title: "Corporate Social Responsibility Management System",
     description:
       "A web application that allows companies to manage their corporate social responsibility.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    tags: ["HTML", "CSS", "Javascript", "PHP"],
     link: "https://github.com/m-housni/DomAgri",
     show: true,
     order: 2,
@@ -52,7 +52,7 @@ export const projects = [
     title: "Online Simulator and Quotation System",
     description:
       "A web application that allows users to simulate their needs and get a quotation.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    tags: ["HTML", "CSS", "Javascript", "PHP"],
     link: "#",
     show: true,
     order: 2,
@@ -61,7 +61,7 @@ export const projects = [
     title: "SaaS Hospital Management System",
     description:
       "A web application that allows doctors and hospitals to manage their operations.",
-    technologies: [
+    tags: [
       "HTML",
       "CSS",
       "Javascript",
@@ -79,7 +79,7 @@ export const projects = [
     title: "Interactive e-learning platform",
     description:
       "A web application that allows users to learn and interact with each other.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    tags: ["HTML", "CSS", "Javascript", "PHP"],
     link: "#",
     show: true,
     order: 2,
@@ -88,7 +88,7 @@ export const projects = [
     title: "E-Commerce Platform",
     description:
       "A web application that allows users to buy and sell products.",
-    technologies: ["HTML", "CSS", "Javascript", "PHP"],
+    tags: ["HTML", "CSS", "Javascript", "PHP"],
     link: "https://github.com/m-housni/react-ecommerce",
     show: true,
     order: 2,
@@ -100,7 +100,7 @@ export const contributions = [
     title: "pomodoro-js",
     description:
       "A simple pomodoro platform to take your productivity to the next level.",
-    technologies: [
+    tags: [
       "HTML",
       "CSS",
       "Javascript",
@@ -116,7 +116,7 @@ export const contributions = [
     title: "twx-smarthome",
     description:
       "Model a smart home with an air conditionner, and electric counter...",
-    technologies: ["OOP", "ThingWorx", "IoT", "Javascript"],
+    tags: ["OOP", "ThingWorx", "IoT", "Javascript"],
     link: "https://github.com/m-housni/twx-smarthome",
     show: true,
     order: 0,
@@ -125,7 +125,7 @@ export const contributions = [
     title: "twx-motorc",
     description:
       "Build an analytical predective model for motor failure based on machine learning...",
-    technologies: ["OOP", "ThingWorx", "IoT", "Machine Learning", "Javascript"],
+    tags: ["OOP", "ThingWorx", "IoT", "Machine Learning", "Javascript"],
     link: "https://github.com/m-housni/twx-motorc",
     show: true,
     order: 0,
@@ -134,7 +134,7 @@ export const contributions = [
     title: "commflix",
     description:
       "A simple Netflix clone to browse new movies and TV shows, view their trailers and details.",
-    technologies: ["HTML", "CSS", "Javascript", "Svelte", "PHP", "TMDB API"],
+    tags: ["HTML", "CSS", "Javascript", "Svelte", "PHP", "TMDB API"],
     link: "https://github.com/m-housni/commflix",
     show: true,
     order: 1,
@@ -143,7 +143,7 @@ export const contributions = [
     title: "performance-counter",
     description:
       "Php package for developers to measure the performance of their code. ",
-    technologies: ["PHP", "Composer", "PHPUnit"],
+    tags: ["PHP", "Composer", "PHPUnit"],
     link: "https://github.com/m-housni/performance-counter",
     show: true,
     order: 1,
@@ -152,7 +152,7 @@ export const contributions = [
     title: "Koriym.PhpSkeleton",
     description:
       "Single-line command that will automatically setup for you all the needed code to create a modern, clutter-free and test-oriented PHP package.",
-    technologies: ["Php"],
+    tags: ["Php"],
     link: "https://github.com/m-housni/Koriym.PhpSkeleton",
     contributions: {
       commits: false,
@@ -167,7 +167,7 @@ export const contributions = [
     title: "Svelte",
     description:
       "compiler that takes your declarative components and converts them into efficient Javascript that surgically updates the DOM.",
-    technologies: ["TypeScript", "Javascript", "Svelte"],
+    tags: ["TypeScript", "Javascript", "Svelte"],
     link: "https://github.com/m-housni/svelte",
     contributions: [],
     show: true,
@@ -177,7 +177,7 @@ export const contributions = [
     title: "Laravel",
     description:
       "MVC web application framework with expressive, elegant syntax",
-    technologies: ["Php", "Blade"],
+    tags: ["Php", "Blade"],
     link: "https://github.com/m-housni/laravel",
     contributions: [],
     show: true,
@@ -187,7 +187,7 @@ export const contributions = [
     title: "js-visualizer-9000-client",
     description:
       "Step-by-step visualizer for Javascript code, showcasing the Task Queue, the Microtask Queue, the Event Loop, and the Call Stack",
-    technologies: ["Javascript", "HTML", "CSS"],
+    tags: ["Javascript", "HTML", "CSS"],
     link: "https://github.com/m-housni/js-visualizer-9000-client",
     contributions: [],
     show: true,
@@ -201,6 +201,7 @@ export const certifications = [
     description:
       "Introductory course that provides the basic concepts, nomenclature, and historical perspective of computers and computing. Includes an introduction to software development and Object-Oriented Programming.",
     origin: "Saylor Academy",
+    tags: ["Computer Science", "Programming", "Java", "OOP"],
     link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
     show: true,
     order: 0,
@@ -208,9 +209,10 @@ export const certifications = [
   {
     title: "CS101: Introduction to Computer Science II",
     description:
-      "Introductory course that provides the basic concepts, nomenclature, and historical perspective of computers and computing. Includes an introduction to software development and Object-Oriented Programming.",
+      "Explore this detailed survey of computing and programming, with an emphasis on understanding object-orientation and the Java and C++ computer programming languages. ",
     origin: "Saylor Academy",
-    link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
+    tags: ["Computer Science", "Programming", "Java", "OOP", "C++", "Java"],
+    link: "https://learn.saylor.org/mod/page/view.php?id=20639",
     show: true,
     order: 0,
   },
@@ -219,7 +221,8 @@ export const certifications = [
     description:
       "In this Responsive Web Design Certification, you'll learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design. First, you'll build a cat photo app to learn the basics of HTML and CSS. Later, you'll learn modern techniques like CSS variables by building a penguin, and best practices for accessibility by building a quiz site. Finally, you'll learn how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.",
     origin: "FreeCodeCamp",
-    link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
+    tags: ["HTML", "CSS", "Javascript", "RWD"],
+    link: "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
     show: true,
     order: 0,
   },
@@ -228,7 +231,8 @@ export const certifications = [
     description:
       "While HTML and CSS control the content and styling of a page, Javascript is used to make it interactive. In the Javascript Algorithm and Data Structures Certification, you'll learn the fundamentals of Javascript including variables, arrays, objects, loops, and functions. Once you have the fundamentals down, you'll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, you'll also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
     origin: "FreeCodeCamp",
-    link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
+    tags: ["Javascript", "Algorithms", "Data Structures", "OOP"],
+    link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
     show: true,
     order: 0,
   },
@@ -236,16 +240,16 @@ export const certifications = [
 
 export const projectsFiltred = projects.filter(
   (project) =>
-    project.technologies.includes(targetSkills[0]) ||
-    project.technologies.includes(targetSkills[1]) ||
-    project.technologies.includes(targetSkills[2])
+    project.tags.includes(targetSkills[0]) ||
+    project.tags.includes(targetSkills[1]) ||
+    project.tags.includes(targetSkills[2])
 );
 
 export const contributionsFiltred = contributions.filter(
   (project) =>
-    project.technologies.includes(targetSkills[0]) ||
-    project.technologies.includes(targetSkills[1]) ||
-    project.technologies.includes(targetSkills[2])
+    project.tags.includes(targetSkills[0]) ||
+    project.tags.includes(targetSkills[1]) ||
+    project.tags.includes(targetSkills[2])
 );
 
 // unique skills
@@ -253,17 +257,17 @@ export const contributionsFiltred = contributions.filter(
 // so we loop through the projects and contributions and get the skills into an array
 let skills = [];
 for (let project of projects) {
-  skills = [...skills, ...project.technologies];    
+  skills = [...skills, ...project.tags];
 }
-for(let contribution of contributions) {
-  skills = [...skills, ...contribution.technologies];
+for (let contribution of contributions) {
+  skills = [...skills, ...contribution.tags];
 }
 
 // then we need to remove the duplicates
 const uniqueSkills = [...new Set(skills)];
 
-const countSkills = {}
-for (let skill of skills) { 
+const countSkills = {};
+for (let skill of skills) {
   countSkills[skill] = (countSkills[skill] || 0) + 1;
 }
 
@@ -278,5 +282,4 @@ sortableCountSkills.sort(function (a, b) {
   return b[1] - a[1];
 });
 
-export const sortedSkills = sortableCountSkills.filter(skill => skill[1] > 0);
-
+export const sortedSkills = sortableCountSkills.filter((skill) => skill[1] > 0);
