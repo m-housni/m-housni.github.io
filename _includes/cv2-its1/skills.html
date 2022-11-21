@@ -4,7 +4,7 @@
 </h2>
 <p>During my freelance journey, I have developed these soft/hard skills:</p>
 <div class="space-between">
-  <ul class="star" style="width: 33%;">
+  <ul class="star" style="width: 25%;">
     <strong>Soft Skills</strong>
     <li>Communication</li>
     <li>Teamwork</li>
@@ -19,29 +19,32 @@
     <li>Leadership</li>
     <li>Creativity</li>
   </ul>
-  <ul class="star cloud" style="width: 67%;">
+  <ul style="width:50%">
     <strong>Hard Skills</strong>
-    <div id="skillsList"></div>
+    <li>
+      <img src="{{site.baseurl}}/fullstack.png" alt="">
+    </li>
+  </ul>
+  <ul style="width: 25%;">
+    <div id="skillsList" class="space-between"></div>
   </ul>
 </div>
 
 <script type="module">
 
-  import { freelanceFiltred as freelance } from '../../data.js'
+  import { sortedSkills } from '../../data.js'
 
   const skillsList = document.getElementById('skillsList')
 
-  for (let i = 0; i < freelance.length; i++) {
-    const frExp = freelance[i]
+  for (let i = 0; i < sortedSkills.length; i++) {
+    // if(i>=10) break
+    const skill = sortedSkills[i]
     let osp = `
-    <ul class="">
-      <ul class="space-between" 
-        <li>
-          ${frExp.technologies.map(t => `<small class="tech">${t}</small>`).join('')}
-        </li>
-      </ul>
-    </ul>`
-    skillsList.innerHTML += frExp.show === true ? `<div class="xproject">${osp}</div>` : ''
+        <span>
+          <small class="tech" style="font-size:${(1+(skill[1] < 5 ? skill[1] : 5) /10)/2}rem">${skill[0]}</small>
+        </span>`
+
+    skillsList.innerHTML += osp
   }
 
 </script>

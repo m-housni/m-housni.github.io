@@ -36,6 +36,7 @@ a[href="#top"], a[href="#top"]:hover {
 .space-between {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .ref-logo li {

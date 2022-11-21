@@ -1,4 +1,3 @@
-
 export const targetSkills = ["Javascript", "Node.js", "PHP"];
 
 export const yearsOfExperience = new Date().getFullYear() - 2016;
@@ -167,8 +166,8 @@ export const contributions = [
   {
     title: "Svelte",
     description:
-      "compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.",
-    technologies: ["TypeScript", "JavaScript", "Svelte"],
+      "compiler that takes your declarative components and converts them into efficient Javascript that surgically updates the DOM.",
+    technologies: ["TypeScript", "Javascript", "Svelte"],
     link: "https://github.com/m-housni/svelte",
     contributions: [],
     show: true,
@@ -187,8 +186,8 @@ export const contributions = [
   {
     title: "js-visualizer-9000-client",
     description:
-      "Step-by-step visualizer for JavaScript code, showcasing the Task Queue, the Microtask Queue, the Event Loop, and the Call Stack",
-    technologies: ["JavaScript", "HTML", "CSS"],
+      "Step-by-step visualizer for Javascript code, showcasing the Task Queue, the Microtask Queue, the Event Loop, and the Call Stack",
+    technologies: ["Javascript", "HTML", "CSS"],
     link: "https://github.com/m-housni/js-visualizer-9000-client",
     contributions: [],
     show: true,
@@ -225,9 +224,9 @@ export const certifications = [
     order: 0,
   },
   {
-    title: "JavaScript Algorithms and Data Structures",
+    title: "Javascript Algorithms and Data Structures",
     description:
-      "While HTML and CSS control the content and styling of a page, JavaScript is used to make it interactive. In the JavaScript Algorithm and Data Structures Certification, you'll learn the fundamentals of JavaScript including variables, arrays, objects, loops, and functions. Once you have the fundamentals down, you'll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, you'll also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
+      "While HTML and CSS control the content and styling of a page, Javascript is used to make it interactive. In the Javascript Algorithm and Data Structures Certification, you'll learn the fundamentals of Javascript including variables, arrays, objects, loops, and functions. Once you have the fundamentals down, you'll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, you'll also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
     origin: "FreeCodeCamp",
     link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
     show: true,
@@ -252,9 +251,32 @@ export const contributionsFiltred = contributions.filter(
 // unique skills
 // we need to get the unique skills from the projects and contributions
 // so we loop through the projects and contributions and get the skills into an array
+let skills = [];
+for (let project of projects) {
+  skills = [...skills, ...project.technologies];    
+}
+for(let contribution of contributions) {
+  skills = [...skills, ...contribution.technologies];
+}
+
 // then we need to remove the duplicates
-// then  create new array of objects with the skills and the number of occurences
-// then sort the array by the number of occurences
+const uniqueSkills = [...new Set(skills)];
 
+const countSkills = {}
+for (let skill of skills) { 
+  countSkills[skill] = (countSkills[skill] || 0) + 1;
+}
 
+// then we need to sort the skills by the number of occurences
+// const sortedSkills = Object.keys(countSkills).sort((a, b) => countSkills[b] - countSkills[a]);
+
+let sortableCountSkills = [];
+for (var skill in countSkills) {
+  sortableCountSkills.push([skill, countSkills[skill]]);
+}
+sortableCountSkills.sort(function (a, b) {
+  return b[1] - a[1];
+});
+
+export const sortedSkills = sortableCountSkills.filter(skill => skill[1] > 0);
 
