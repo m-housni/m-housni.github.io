@@ -255,7 +255,7 @@ export const certifications = [
   {
     title: "ThingWorx Fundamentals Certification",
     description:
-      " The ThingWorx Fundamentals Certification validates foundational-level knowledge taught in PTC University's LEARN Online Fundamentals curriculum. To successfully pass this exam, students should have a strong foundation of knowledge in ThingWorx. All included topics in this exam are covered in our Fundamentals series of courses:, Fundamentals Overview, Fundamentals of Modeling 1, Fundamentals of Modeling 2, Fundamentals of Creating a Mashup 1, Fundamentals of Creating a Mashup 2, Fundamentals of Connectivity, Fundamentals of Analytics, Fundamentals of Deployment",
+      "ThingWorx Certified Developer is a certification that validates the knowledge and skills required to develop applications on the ThingWorx platform. The ThingWorx platform is a complete, end-to-end technology platform designed for the industrial Internet of Things (IIoT). It delivers tools and technologies that empower businesses to rapidly develop and deploy powerful applications and augmented reality (AR) experiences.",
     origin: "PTC Academy",
     tags: ["IoT Framework", "ThingWorx", "OOP"],
     link: "https://trainingcentral.ptcu.com/learn/course/internal/view/elearning/239/thingworx-fundamentals-certification-exam-2022",
