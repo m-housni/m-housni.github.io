@@ -199,7 +199,7 @@ export const certifications = [
   {
     title: "CS101: Introduction to Computer Science I",
     description:
-      "Introductory course that provides the basic concepts, nomenclature, and historical perspective of computers and computing. Includes an introduction to software development and Object-Oriented Programming.",
+      "This course provided me with the basic concepts, nomenclature, and historical perspective of computers and computing, and also introduced me to software development and Object-Oriented Programming.",
     origin: "Saylor Academy",
     tags: ["Computer Science", "Programming", "Java", "OOP"],
     link: "https://certificates.saylor.org/e08de8e2-eedb-4a3d-b10a-9c9475a875b7#gs.j6x4wz",
@@ -209,7 +209,7 @@ export const certifications = [
   {
     title: "CS101: Introduction to Computer Science II",
     description:
-      "Explore this detailed survey of computing and programming, with an emphasis on understanding object-orientation and the Java and C++ computer programming languages. ",
+      "An in-depth look at computing and programming, with an emphasis on understanding object-orientation and the Java and C++ computer programming languages. ",
     origin: "Saylor Academy",
     tags: ["Computer Science", "Programming", "Java", "OOP", "C++", "Java"],
     link: "https://learn.saylor.org/mod/page/view.php?id=20639",
@@ -219,7 +219,7 @@ export const certifications = [
   {
     title: "Responsive Web Design",
     description:
-      "In this Responsive Web Design Certification, you'll learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design. First, you'll build a cat photo app to learn the basics of HTML and CSS. Later, you'll learn modern techniques like CSS variables by building a penguin, and best practices for accessibility by building a quiz site. Finally, you'll learn how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.",
+      "In this Responsive Web Design Certification, I learned HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets), and modern techniques like CSS variables, Flexbox, and CSS Grid.",
     origin: "FreeCodeCamp",
     tags: ["HTML", "CSS", "Javascript", "RWD"],
     link: "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
@@ -229,7 +229,7 @@ export const certifications = [
   {
     title: "Javascript Algorithms and Data Structures",
     description:
-      "While HTML and CSS control the content and styling of a page, Javascript is used to make it interactive. In the Javascript Algorithm and Data Structures Certification, you'll learn the fundamentals of Javascript including variables, arrays, objects, loops, and functions. Once you have the fundamentals down, you'll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, you'll also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
+      "I learn the fundamentals of Javascript including variables, arrays, objects, loops, and functions, I applied that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, I also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
     origin: "FreeCodeCamp",
     tags: ["Javascript", "Algorithms", "Data Structures", "OOP"],
     link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
@@ -239,7 +239,7 @@ export const certifications = [
   {
     title: "Information Security",
     description:
-      "In this course, you will learn the fundamentals of information security, security threats, modes of attack, and cryptographic models. Access control, identification, and authentication are also addressed. Network security and operating system (OS) hardening are explained along with intrusion detection and prevention. The course concludes with global privacy laws.",
+      "In this course, I learned the fundamentals of information security, security threats, modes of attack, and cryptographic models. Access control, identification, and authentication are also addressed. Network security and operating system (OS) hardening are explained along with intrusion detection and prevention. I also learned more about global privacy laws.",
     origin: "Saylor Academy",
     tags: [
       "Information Security",
@@ -255,7 +255,7 @@ export const certifications = [
   {
     title: "ThingWorx Fundamentals Certification",
     description:
-      "ThingWorx Certified Developer is a certification that validates the knowledge and skills required to develop applications on the ThingWorx platform. The ThingWorx platform is a complete, end-to-end technology platform designed for the industrial Internet of Things (IIoT). It delivers tools and technologies that empower businesses to rapidly develop and deploy powerful applications and augmented reality (AR) experiences.",
+      "I got the fundamental skills to develop applications on the ThingWorx platform, which is a complete, end-to-end technology platform designed for the industrial Internet of Things (IIoT).",
     origin: "PTC Academy",
     tags: ["IoT Framework", "ThingWorx", "OOP"],
     link: "https://trainingcentral.ptcu.com/learn/course/internal/view/elearning/239/thingworx-fundamentals-certification-exam-2022",
