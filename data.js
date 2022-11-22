@@ -252,6 +252,16 @@ export const certifications = [
     show: true,
     order: 0,
   },
+  {
+    title: "ThingWorx Fundamentals Certification",
+    description:
+      "ThingWorx Certified Developer is a certification that validates the knowledge and skills required to develop applications on the ThingWorx platform. The ThingWorx platform is a complete, end-to-end technology platform designed for the industrial Internet of Things (IIoT). It delivers tools and technologies that empower businesses to rapidly develop and deploy powerful applications and augmented reality (AR) experiences.",
+    origin: "PTC Academy",
+    tags: ["IoT Framework", "ThingWorx", "OOP"],
+    link: "https://trainingcentral.ptcu.com/learn/course/internal/view/elearning/239/thingworx-fundamentals-certification-exam-2022",
+    show: true,
+    order: 0,
+  },
 ];
 
 export const projectsFiltred = projects.filter(
