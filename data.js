@@ -229,7 +229,7 @@ export const certifications = [
   {
     title: "Javascript Algorithms and Data Structures",
     description:
-      "I learn the fundamentals of Javascript including variables, arrays, objects, loops, and functions, I applied that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, I also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
+      "I learned the fundamentals of Javascript including variables, arrays, objects, loops, and functions, I applied that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. Along the way, I also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).",
     origin: "FreeCodeCamp",
     tags: ["Javascript", "Algorithms", "Data Structures", "OOP"],
     link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
