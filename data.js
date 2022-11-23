@@ -258,7 +258,7 @@ export const certifications = [
       "I got the fundamental skills to develop applications on the ThingWorx platform, which is a complete, end-to-end technology platform designed for the industrial Internet of Things (IIoT).",
     origin: "PTC Academy",
     tags: ["IoT Framework", "ThingWorx", "OOP"],
-    link: "https://trainingcentral.ptcu.com/learn/course/internal/view/elearning/239/thingworx-fundamentals-certification-exam-2022",
+    link: "https://www.ptc.com/-/media/ptc-university/curriculum/thingworx/ptc-university-thingworx-curriculum-en.pdf",
     show: true,
     order: 0,
   },
