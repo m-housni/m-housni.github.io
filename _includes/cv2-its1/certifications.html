@@ -21,11 +21,11 @@
       <ul class="">
         <ul class="">
           <li>
-            ${certification.tags.map(t => `<small class="tech">${t}</small>`).join('')}
+            ${certification.tags.map(t => `<small class="tech" style="font-size:.6rem">${t}</small>`).join('')}
           </li>
         </ul>
       </ul >
-      <p><a href="${certification.link}" alt="certification link" target="_blank"><i class="devicon-github-original small"></i> ${certification.link}</a></p>`
+      <p><a href="${certification.link}" style="font-size:.6rem" alt="certification link" target="_blank"><i class="devicon-github-original small"></i> ${certification.link}</a></p>`
 
     certificationsDiv.innerHTML += certification.show === true ? `<div>${p}</div>` : ''
   }

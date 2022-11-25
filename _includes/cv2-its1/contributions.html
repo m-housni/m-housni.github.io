@@ -20,11 +20,11 @@
       <ul class="">
         <ul class="">
           <li>
-            ${project.tags.map(t => `<small class="tech">${t}</small>`).join('')}
+            ${project.tags.map(t => `<small class="tech" style="font-size:.6rem">${t}</small>`).join('')}
           </li>
         </ul>
       </ul >
-      <p><a href="${project.link}" alt="project link" target="_blank"><i class="devicon-github-original small"></i> ${project.link}</a></p>`
+      <p><a href="${project.link}" style="font-size:.6rem" alt="project link" target="_blank"><i class="devicon-github-original small"></i> ${project.link}</a></p>`
     
     projectsDiv.innerHTML += project.show === true ? `<div>${p}</div>` : ''
   }
