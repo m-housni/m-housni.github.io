@@ -262,6 +262,16 @@ export const certifications = [
     show: true,
     order: 0,
   },
+  {
+    title: "Agile Project Management and SCRUM",
+    description:
+      "I learned the principles of Agile software development! Discover how a SCRUM team plans a sprint, builds feedback into each cycle, creates retrospectives, and holds daily stand ups",
+    link: "https://learndigital.withgoogle.com/digitalgarage/course/learn-about-agile-project-management-and-scrum",
+    origin: "Google Digital Garage",
+    tags: ["Agile", "SCRUM", "Project Management"],
+    show: true,
+    order: 0,
+  },
 ];
 
 export const projectsFiltred = projects.filter(
@@ -287,6 +297,9 @@ for (let project of projects) {
 }
 for (let contribution of contributions) {
   skills = [...skills, ...contribution.tags];
+}
+for (let certification of certifications) {
+  skills = [...skills, ...certification.tags];
 }
 
 // then we need to remove the duplicates
