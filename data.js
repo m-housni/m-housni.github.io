@@ -265,7 +265,7 @@ export const certifications = [
   {
     title: "Agile Project Management and SCRUM",
     description:
-      "I learned the principles of Agile software development! Discover how a SCRUM team plans a sprint, builds feedback into each cycle, creates retrospectives, and holds daily stand ups",
+      "I learned the principles of Agile software development, discovered how a SCRUM team plans a sprint, builds feedback into each cycle, creates retrospectives, and holds daily stand ups",
     link: "https://learndigital.withgoogle.com/digitalgarage/course/learn-about-agile-project-management-and-scrum",
     origin: "Google Digital Garage",
     tags: ["Agile", "SCRUM", "Project Management"],
