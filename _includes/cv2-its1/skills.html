@@ -44,7 +44,7 @@
     const skill = sortedSkills[i]
     let osp = `
         <span>
-          <small class="tech" style="font-size:${(1+(skill[1] < 5 ? skill[1] : 5) /10)/2}rem">${skill[0]}</small>
+          <small class="btn btn${[1,2,3,4,5][Math.floor(Math.random() * 5)]}" style="font-size:${(1+(skill[1] < 5 ? skill[1] : 5) /10)/2}rem">${skill[0]}</small>
         </span>`
 
     skillsList.innerHTML += osp

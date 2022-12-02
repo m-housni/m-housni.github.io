@@ -100,6 +100,43 @@ a[href="#top"], a[href="#top"]:hover {
   background-color: gold;
 }
 
+.btn {
+  font-size: .9rem;
+  margin: 2px 5px;
+  padding: 1px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: greenyellow;
+}
+
+.btn2 {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Blue */
+.btn3 {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Red */
+.btn4 {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+/* Gray */
+.btn5 {
+  background-color: #555555;
+  color: white;
+}
+
+/* Black */
+
 body {
 	background: $white;
   font: 18px/1.4 $font;
