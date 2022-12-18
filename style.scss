@@ -186,7 +186,6 @@ h4 {
 }
 
 p {
-  text-align: justify;
   margin: 15px 0;
   color: $black;
 }
@@ -474,6 +473,9 @@ html {
     display: block;
   }
   .site-info {
+    font-size: .8rem;
+  }
+  .text-sm-mobile li {
     font-size: .8rem;
   }
 }
