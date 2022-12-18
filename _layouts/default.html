@@ -35,27 +35,12 @@
             <br />📌 Casablanca, Morocco
           </p>
           {% include my-links.html %}
+          <nav id="mobileNav" class="no-print">
+            {% include nav.html %}
+          </nav>
         </div>
         <nav id="fixedContainer" class="no-print">
-          <a href="#top">△</a>
-          <br>
-          <a href="#profile">Profile</a>
-          <br/>
-          <a href="#experience">Experience</a>
-          <br />
-          <a href="#skills">Skills</a>
-          <br />
-          <a href="#projects">Projects</a>
-          <br />
-          <a href="#contributions">Contributions</a>
-          <br />
-          <a href="#certifications">Certifications</a>
-          <br />
-          <a href="#languages">Languages</a>
-          <br />
-          <a href="#education">Education</a>
-          <br />
-          <a href="#hobbies">Hobbies</a>
+          {% include nav.html %}
         </nav>
       </header>
       {{ content }}

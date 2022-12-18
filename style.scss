@@ -461,6 +461,23 @@ html {
   scroll-behavior: smooth;
 }
 
+#mobileNav {
+  display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  #fixedContainer {
+    display: none;
+  }
+  #mobileNav {
+    display: block;
+  }
+  .site-info {
+    font-size: .8rem;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
