@@ -207,6 +207,16 @@ export const certifications = [
     order: 0,
   },
   {
+    title: "Implement your relational databases with SQL",
+    description:
+      "At the end of this course, I was able to: Create a database with MySQL. Manipulate data with CRUD operations. Perform advanced SQL queries. Transform the structure of a database.",
+    origin: "Openclassrooms",
+    tags: ["Relational Databases", "SQL", "MySQL"],
+    link: "https://openclassrooms.com/fr/courses/6971126-implementez-vos-bases-de-donnees-relationnelles-avec-sql",
+    show: true,
+    order: 0,
+  },
+  {
     title: "CS101: Introduction to Computer Science II",
     description:
       "An in-depth look at computing and programming, with an emphasis on understanding object-orientation and the Java and C++ computer programming languages. ",
