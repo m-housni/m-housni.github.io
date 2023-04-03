@@ -4,6 +4,15 @@ export const yearsOfExperience = new Date().getFullYear() - 2016;
 
 export const projects = [
   {
+    title: "Change Management System",
+    description:
+      "An application that helps to track all changes made to a plane during its manufacturing.",
+    tags: ["ThingWorx Composer", "Mashup Builder", "Javascript"],
+    link: "---",
+    show: true,
+    order: -1,
+  },
+  {
     title: "Supply Management System",
     description:
       "An application that helps to manage the supply of products of an e-bikes supplier with dozens of points of sale.",
@@ -119,7 +128,7 @@ export const contributions = [
     tags: ["OOP", "ThingWorx", "IoT", "Javascript"],
     link: "https://github.com/m-housni/twx-smarthome",
     show: true,
-    order: 0,
+    order: -1,
   },
   {
     title: "twx-motorc",
@@ -128,7 +137,7 @@ export const contributions = [
     tags: ["OOP", "ThingWorx", "IoT", "Machine Learning", "Javascript"],
     link: "https://github.com/m-housni/twx-motorc",
     show: true,
-    order: 0,
+    order: -1,
   },
   {
     title: "commflix",
@@ -270,7 +279,7 @@ export const certifications = [
     tags: ["IoT Framework", "ThingWorx", "OOP"],
     link: "https://www.ptc.com/-/media/ptc-university/curriculum/thingworx/ptc-university-thingworx-curriculum-en.pdf",
     show: true,
-    order: 0,
+    order: -1,
   },
   {
     title: "Agile Project Management and SCRUM",

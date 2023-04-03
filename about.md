@@ -10,7 +10,7 @@ permalink: /about/
 
 {% include cv2-its1/skills.html %}
 
-<div class="page-break"></div>
+<!-- <div class="page-break"></div> -->
 
 {% include cv2-its1/projects.html %}
 
