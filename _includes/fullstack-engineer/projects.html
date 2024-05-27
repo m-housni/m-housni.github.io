@@ -1,0 +1,35 @@
+<h2 class="heading space-between" id="projects">
+  <span>Projects</span>
+  <a href="#top">△</a>
+</h2>
+
+<div id="exp2"></div>
+
+<script type="module">
+
+  import { projectsFiltred as freelance, yearsOfExperience } from '../../data.js'
+
+  const yofexp = document.getElementById('yofexp')
+  yofexp.innerHTML = yearsOfExperience
+
+  const exp2 = document.getElementById('exp2')
+
+  freelance.sort((a, b) => a.order - b.order)
+
+  for (let i = 0; i < freelance.length; i++) {
+    const frExp = freelance[i]
+    let osp = `<a ${frExp.link} href="${frExp.link}" alt="project link" target="_blank"><h3>${frExp.title}</h3></a>
+    <p>${frExp.description}</p>
+    <ul class="">
+      <ul class="" 
+        <li>
+          ${frExp.tags.map(t => `<small class="tech" style="font-size:.6rem">${t}</small>`).join('')}
+        </li>
+      </ul>
+    </ul>`
+
+
+    exp2.innerHTML += frExp.show === true ? `<div class="xproject">${osp}</div>` : ''
+  }
+
+</script>

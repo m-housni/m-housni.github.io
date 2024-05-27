@@ -4,23 +4,23 @@ title:
 permalink: /about/
 ---
 
-{% include cv2-its1/profile.html %}
+{% include fullstack-engineer/profile.html %}
 
-{% include cv2-its1/experience.html %}
+{% include fullstack-engineer/experience.html %}
 
-{% include cv2-its1/skills.html %}
+{% include fullstack-engineer/skills.html %}
 
 <!-- <div class="page-break"></div> -->
 
-{% include cv2-its1/projects.html %}
+{% include fullstack-engineer/projects.html %}
 
-{% include cv2-its1/contributions.html %}
+{% include fullstack-engineer/contributions.html %}
 
-{% include cv2-its1/certifications.html %}
+{% include fullstack-engineer/certifications.html %}
 
-{% include cv2-its1/languages.html %}
+{% include fullstack-engineer/languages.html %}
 
-{% include cv2-its1/education.html %}
+{% include fullstack-engineer/education.html %}
 
-{% include cv2-its1/hobbies.html %}
+{% include fullstack-engineer/hobbies.html %}
 

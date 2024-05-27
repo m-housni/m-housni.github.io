@@ -1,0 +1,32 @@
+<h2 class="heading space-between" id="certifications">
+  <span>Certifications</span>
+  <a href="#top">△</a>
+</h2>
+
+<div id="certificationsDiv"></div>
+
+<script type="module">
+
+  import { certifications } from '../../data.js'
+  const certificationsDiv = document.getElementById('certificationsDiv')
+
+  certifications.sort((a, b) => a.order - b.order)
+
+
+  for (let i = 0; i < certifications.length; i++) {
+    const certification = certifications[i]
+    let p = `<h3>${certification.title}</h3>
+      <p><small class="origin">🥇 by ${certification.origin}</small></p>
+      <p>${certification.description}</p>
+      <ul class="">
+        <ul class="">
+          <li>
+            ${certification.tags.map(t => `<small class="tech" style="font-size:.6rem">${t}</small>`).join('')}
+          </li>
+        </ul>
+      </ul >
+      <p><a href="${certification.link}" style="font-size:.6rem" alt="certification link" target="_blank"><i class="devicon-github-original small"></i> ${certification.link}</a></p>`
+
+    certificationsDiv.innerHTML += certification.show === true ? `<div>${p}</div>` : ''
+  }
+</script>
