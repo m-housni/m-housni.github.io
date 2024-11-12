@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Housni - Full-Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Background effect with tech-themed SVG pattern */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Tech-themed texture */
+            opacity: 1;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="relative bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-white">
+
+    <!-- Container -->
+    <div class="flex flex-col items-center min-h-screen py-10 px-4">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4">Mohamed Housni</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300">Experienced Full-Stack Developer</p>
+        </header>
+
+        <!-- Main Section with Image and Summary -->
+        <main class="flex flex-col lg:flex-row bg-white dark:bg-zinc-800 rounded-lg shadow-lg overflow-hidden max-w-4xl w-full">
+
+            <!-- Image Section -->
+            <div class="lg:w-1/3 flex-shrink-0">
+                <img src="pic.png" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Text and Call-to-Action Section -->
+            <div class="flex flex-col justify-center p-8 md:p-12 lg:w-2/3 text-center lg:text-left">
+                <p class="text-lg leading-relaxed mb-6 text-gray-700 dark:text-gray-300">
+                    Full-Stack Developer with 8+ years of experience in designing, developing, and deploying web applications. Proficient in JavaScript (React, Node.js) and PHP (Laravel, Symfony), with expertise in both front-end and back-end technologies. Strong problem-solving skills and a passion for delivering high-quality, scalable solutions in Agile environments.
+
+                    <br><br>
+                    I’m currently considering new opportunities.
+                </p>
+                <a href="your-resume-link.pdf" target="_blank"
+                   class="inline-block bg-blue-500 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition duration-200 mt-4 lg:mt-0 lg:self-start">
+                    View My Resume
+                </a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-center text-gray-600 dark:text-gray-400">
+            <p>&copy; 2024 Mohamed Housni</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
