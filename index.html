@@ -61,5 +61,17 @@
 
     </div>
 
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Populate profile section
+        document.querySelector('#title').textContent = data.profile.title;
+
+        // Populate summary section
+        document.querySelector('#summary').textContent = data.summary;
+    </script>
+
 </body>
 </html>
