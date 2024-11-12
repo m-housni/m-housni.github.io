@@ -66,14 +66,14 @@
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
-        // Populate profile section
-        document.querySelector('#title').textContent = data.profile.title;
-
-        // Populate summary section
+        // Populate only title and summary
+        document.querySelector('#title').textContent = data.title;
         document.querySelector('#summary').textContent = data.summary;
-      }
-    })
-    </script>
+      })
+      .catch(error => console.error('Error loading JSON data:', error));
+  });
+</script>
+
 
 </body>
 </html>
