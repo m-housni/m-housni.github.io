@@ -1,1 +1,130 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Full-Stack JavaScript & PHP Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased leading-relaxed tracking-wide p-6">
+
+    <!-- Header Section with Photo -->
+    <header class="max-w-4xl mx-auto mb-8 p-6 bg-white shadow-lg rounded-lg">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+            <!-- Profile Photo Section -->
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+                <img src="{{asset('imgs/pic33.png')}}" alt="Profile Photo" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Profile Summary -->
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-bold">[Your Name]</h1>
+                <p class="text-lg font-medium text-gray-600">Full-Stack JavaScript & PHP Developer</p>
+                <p class="text-gray-600">
+                    Email: <a href="mailto:your-email@example.com" class="text-blue-600">your-email@example.com</a> |
+                    Phone: +123 456 7890
+                </p>
+                <a href="your-resume-url.pdf" class="text-blue-600 hover:underline mt-2">Download PDF Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="max-w-4xl mx-auto mb-8">
+        <h2 class="text-xl font-semibold mb-2">Professional Summary</h2>
+        <p class="text-gray-700">
+            Full-Stack Developer with 8+ years of experience in designing, developing, and deploying web applications. Proficient in JavaScript (React, Node.js) and PHP (Laravel, Symfony), with expertise in both front-end and back-end technologies. Strong problem-solving skills and a passion for delivering high-quality, scalable solutions in Agile environments.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="max-w-4xl mx-auto mb-8">
+        <h2 class="text-xl font-semibold mb-2">Technical Skills</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <h3 class="font-semibold">Languages & Frameworks</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>JavaScript (React, Node.js, Vue.js)</li>
+                    <li>PHP (Laravel, Symfony)</li>
+                    <li>HTML, CSS, Tailwind CSS</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold">Tools & Technologies</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>RESTful APIs, GraphQL</li>
+                    <li>SQL, MySQL, PostgreSQL</li>
+                    <li>Git, Docker, CI/CD (Jenkins, GitHub Actions)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="max-w-4xl mx-auto mb-8">
+        <h2 class="text-xl font-semibold mb-2">Professional Experience</h2>
+
+        <!-- Job 1 -->
+        <div class="mb-6">
+            <h3 class="font-semibold">Senior Full-Stack Developer - Tech Solutions Inc.</h3>
+            <p class="text-gray-600">April 2020 - Present</p>
+            <p class="text-gray-700">
+                Developing and maintaining high-traffic web applications for clients in the e-commerce and finance sectors.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+                <li>Built RESTful APIs and microservices in Node.js and PHP for efficient data processing.</li>
+                <li>Implemented dynamic, responsive user interfaces with React, enhancing user engagement by 20%.</li>
+                <li>Automated CI/CD pipelines using GitHub Actions, reducing deployment time by 30%.</li>
+            </ul>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="mb-6">
+            <h3 class="font-semibold">Full-Stack Developer - Web Innovations LLC</h3>
+            <p class="text-gray-600">June 2017 - March 2020</p>
+            <p class="text-gray-700">
+                Developed custom web applications and interactive tools for clients in healthcare and education.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+                <li>Led a team of 4 in building a patient management system using Laravel and Vue.js.</li>
+                <li>Integrated third-party APIs, including Stripe for payment processing and Twilio for SMS notifications.</li>
+                <li>Improved database performance and optimized MySQL queries, enhancing application speed by 25%.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="max-w-4xl mx-auto mb-8">
+        <h2 class="text-xl font-semibold mb-2">Education</h2>
+        <div class="mb-4">
+            <h3 class="font-semibold">Bachelor of Science in Computer Science</h3>
+            <p class="text-gray-600">State University - May 2014</p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="max-w-4xl mx-auto mb-8">
+        <h2 class="text-xl font-semibold mb-2">Projects</h2>
+
+        <div class="mb-4">
+            <h3 class="font-semibold">Real-Time Chat Application</h3>
+            <p class="text-gray-700">
+                Developed a real-time chat application with WebSocket integration using Node.js and React. Enabled seamless communication with custom chat rooms and message encryption.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <h3 class="font-semibold">E-Commerce Platform</h3>
+            <p class="text-gray-700">
+                Built an e-commerce platform using Laravel, including custom shopping cart functionality, product management, and payment gateway integration with Stripe.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer with References Available Statement -->
+    <footer class="max-w-4xl mx-auto text-center border-t-2 border-gray-200 pt-4 mt-8">
+        <p class="text-gray-600">References available upon request</p>
+    </footer>
+
+</body>
+</html>
