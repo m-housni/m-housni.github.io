@@ -61,7 +61,12 @@
 
     </div>
 
-    <script src="populateData.js"></script>
+    <script>
+      const script = document.createElement('script');
+      script.src = `populateData.js?t=${new Date().getTime()}`;
+      document.head.appendChild(script);
+    </script>
+
 
 
 </body>
