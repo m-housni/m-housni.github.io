@@ -164,7 +164,15 @@
 
     <!-- Footer with References Available Statement -->
     <footer class="max-w-4xl mx-auto text-center border-t-2 border-gray-200 pt-4 mt-8">
-        <p class="text-gray-600">References available upon request</p>
+        <p class="text-gray-600" ondblclick="switchEditMode()">References available upon request</p>
     </footer>
+
+    <script>
+        function switchEditMode() {
+            document.querySelectorAll("*").forEach((e) => {
+                e.setAttribute("contenteditable","true");
+            })
+        }
+    </script>
 </body>
 </html>
