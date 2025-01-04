@@ -262,13 +262,13 @@
             "id": 9,
             "title": "E-Commerce Website with Angular and Node.js",
             "description": "Developed a scalable, tailored e-commerce platform that boosted sales and supported rapid business growth.",
-            "link": "https://link-to-project-details.com/angular-node-ecommerce",
+            "link": "https://github.com/m-housni/altenshop-kata1",
             "tags": [
                 "E-Commerce",
                 "Angular",
                 "Node.js",
-                "Scalability",
-                "Web Development"
+                "RxJS",
+                "Postman"
             ]
         }
     ],
