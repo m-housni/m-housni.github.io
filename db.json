@@ -1,0 +1,315 @@
+{
+    "info": {
+        "name": "Mohamed Housni",
+        "title": "Fullstack Javascript Engineer",
+        "location": "Casablanca, MA",
+        "email": "mohamed.housni@um5s.net.ma",
+        "phone": "+212 7 08 11 36 36",
+        "website": "https://m-housni.github.io",
+        "linkedin": "https://www.linkedin.com/in/m-housni",
+        "github": "",
+        "summary": "I’m a Fullstack JavaScript Engineer with 9 years of experience building and scaling web applications. I specialize in both modern frontend frameworks like React and Angular and backend technologies such as Node.js, Express, and MongoDB. Over the years, I’ve worked on automating CI/CD pipelines, designing microservices, and improving application performance. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact. I’m passionate about clean, maintainable code, following best practices like TDD and scalable design patterns, and building software that truly meets user needs while staying technically robust."
+    },
+    "skills": {
+        "Languages": [
+            "JavaScript",
+            "TypeScript",
+            "Php",
+            "Java"
+        ],
+        "Frontend": [
+            "React",
+            "Angular",
+            "Vue",
+            "Svelte"
+        ],
+        "Backend": [
+            "Express",
+            "Koa",
+            "NestJS",
+            "AdonisJS"
+        ],
+        "Databases": [
+            "MongoDB",
+            "MySQL, PostgreSQL",
+            "Redis",
+            "Elasticsearch"
+        ],
+        "Tools": [
+            "Git, Git flow",
+            "Jenkins",
+            "Docker",
+            "Webpack, Babel"
+        ],
+        "Testing": [
+            "Jest",
+            "Mocha",
+            "Chai",
+            "Cypress"
+        ],
+        "Cloud": [
+            "AWS, GCP",
+            "Azure",
+            "Heroku",
+            "CPanel"
+        ],
+        "Methodologies": [
+            "Agile, Scrum",
+            "TDD",
+            "CI/CD",
+            "SOLID, Design Patterns"
+        ]
+    },
+    "experiences": {
+        "Inetum": {
+            "title": "Frontend Developer @ Inetum",
+            "location": "Casablanca, MA",
+            "dates": "11/2022 - 11/2024",
+            "description": "Developing and maintaining PLM applications in the manufacturing sector.",
+            "customers": [
+                "Airbus",
+                "Stelia Aerospace",
+                "Thales"
+            ],
+            "industries": [
+                "Manufacturing",
+                "Aerospace"
+            ],
+            "skills": "Javascript, HTML, CSS, JAVA, Thingworx, Windchill.",
+            "achievements": [
+                "Developed and maintained software functionalities.",
+                "Collaborated with cross-functional teams.",
+                "Led code reviews, troubleshooting and bug fixing.",
+                "Provided onboarding to new team members"
+            ]
+        },
+        "IntelciaITSolutions": {
+            "title": "Fullstack Developer @ Intelcia IT Solutions",
+            "location": "Casablanca, MA",
+            "dates": "06/2022 - 11/2022",
+            "description": "Developed SFR Lost Mobile Service.",
+            "customers": [
+                "Orange",
+                "Société Générale",
+                "BNP Paribas"
+            ],
+            "industries": [
+                "Banking",
+                "Telecommunications",
+                "Retail"
+            ],
+            "skills": "Angular, Node, Express, MongoDB, Php, Elasticsearch, JS, HTML, CSS, leafletJS, Twilio",
+            "achievements": [
+                "Designed and implemented the frontend",
+                "Designed and implemented the backend",
+                "Proved a performance enhancement compared to existing solution."
+            ]
+        },
+        "Komplians": {
+            "title": "Tech Lead @ Komplians",
+            "location": "Casablanca, MA",
+            "dates": "03/2019 - 11/2022",
+            "description": "Developed and maintained many solutions related to compliance, risk management, and more.",
+            "customers": [
+                "Orange",
+                "Société Générale",
+                "BNP Paribas"
+            ],
+            "industries": [
+                "Banking",
+                "Telecommunications",
+                "Retail"
+            ],
+            "skills": "Php, Laravel, Javascript, Angular, HTML, CSS, Node, Express, Moodle",
+            "achievements": [
+                "Developed a Compliance and Risk Management SaaS solution ( Komplians )",
+                "Developed a Corporate Social Responsibility Solution ( les domaines agricoles )",
+                "Maintained a CSR platform for responsible procurement ( GreenSupply )",
+                "Installed and managed a Moodle instance for an e-learning platform ( Certi-Trust )",
+                "Led a team of 3 junior developers"
+            ]
+        },
+        "SmartWorkers": {
+            "title": "Web Developer @ SmartWorkers",
+            "location": "Casablanca, MA (Fully Remote)",
+            "dates": "03/2016 - 04/2019",
+            "description": "Worked on different solutions both on the frontend and backend.",
+            "customers": [
+                "Orange",
+                "Société Générale",
+                "BNP Paribas"
+            ],
+            "industries": [
+                "Banking",
+                "Telecommunications",
+                "Retail"
+            ],
+            "skills": "Laravel, Php, Vue, React, Wordpress, Strapi, Node, Express, SQL, AFAS API",
+            "achievements": [
+                "Developed functionalities for a dealers portal for a dutch e-bikes supplier ( Klever Mobility ).",
+                "Led a team of 2 developers in building a patient management system. (helppo )",
+                "Developed the frontend and backend of a booking system ( roompot.nl )",
+                "Developed landing pages and websites using wordpress (bubbelbal.nl, ozylshop.com..)"
+            ]
+        }
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "CI/CD Automation with Jenkins",
+            "description": "Automated builds, tests, and deployments using Jenkins to reduce manual errors and improve release reliability.",
+            "link": "https://link-to-project-details.com/ci-cd-jenkins",
+            "tags": [
+                "CI/CD",
+                "Jenkins",
+                "Automation",
+                "DevOps",
+                "Deployment"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "High-Throughput Microservice with RabbitMQ",
+            "description": "Used RabbitMQ to decouple services, enabling scalable message-driven architecture for a high-traffic application.",
+            "link": "https://link-to-project-details.com/rabbitmq-microservice",
+            "tags": [
+                "Microservices",
+                "RabbitMQ",
+                "Message Queues",
+                "Scalability",
+                "High Traffic"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Feature Rollout Leadership",
+            "description": "Structured and led the delivery of a complex feature, ensuring on-time completion with minimal rework and high team morale.",
+            "link": "https://link-to-project-details.com/feature-rollout-leadership",
+            "tags": [
+                "Leadership",
+                "Feature Delivery",
+                "Team Collaboration",
+                "Project Management",
+                "Agile"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Frontend Migration with React Hooks",
+            "description": "Modernized a legacy React codebase by transitioning to hooks, improving performance and simplifying state management.",
+            "link": "https://link-to-project-details.com/react-hooks-migration",
+            "tags": [
+                "React",
+                "React Hooks",
+                "Frontend",
+                "Modernization",
+                "State Management"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Improving Codebase Readability and Performance",
+            "description": "Refactored a large codebase, introduced linting and TDD practices, resulting in better maintainability and fewer bugs.",
+            "link": "https://link-to-project-details.com/codebase-refactoring",
+            "tags": [
+                "Refactoring",
+                "Code Quality",
+                "Linting",
+                "TDD",
+                "Maintainability"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Backward Compatibility with Babel and Webpack",
+            "description": "Ensured modern JavaScript worked seamlessly across older browsers by configuring Babel and Webpack.",
+            "link": "https://link-to-project-details.com/babel-webpack-compatibility",
+            "tags": [
+                "JavaScript",
+                "Babel",
+                "Webpack",
+                "Compatibility",
+                "Browser Support"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Deploy a GitHub Repo to cPanel with GitHub Actions",
+            "description": "Created an automated CI/CD pipeline to deploy updates from GitHub to cPanel, reducing deployment time and errors.",
+            "link": "https://link-to-project-details.com/github-actions-cpanel",
+            "tags": [
+                "CI/CD",
+                "GitHub Actions",
+                "cPanel",
+                "Automation",
+                "Deployment"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "OpnForm Open-Source Form Builder",
+            "description": "Built a user-friendly, extensible form builder with no-code and developer-focused features, fostering an active open-source community.",
+            "link": "https://link-to-project-details.com/opnform",
+            "tags": [
+                "Open Source",
+                "Form Builder",
+                "No Code",
+                "Extensibility",
+                "Community"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "E-Commerce Website with Angular and Node.js",
+            "description": "Developed a scalable, tailored e-commerce platform that boosted sales and supported rapid business growth.",
+            "link": "https://link-to-project-details.com/angular-node-ecommerce",
+            "tags": [
+                "E-Commerce",
+                "Angular",
+                "Node.js",
+                "Scalability",
+                "Web Development"
+            ]
+        }
+    ],
+    "certifications": [
+        {
+            "title": "AWS Certified Solutions Architect - Associate",
+            "date": "2020",
+            "link": "https://www.youracclaim.com/badges/aws-certified-solutions-architect-associate"
+        },
+        {
+            "title": "Google Cloud Professional Cloud Architect",
+            "date": "2019",
+            "link": "https://www.youracclaim.com/badges/google-cloud-professional-cloud-architect"
+        },
+        {
+            "title": "Scrum Master Certification",
+            "date": "2018",
+            "link": "https://www.youracclaim.com/badges/scrum-master-certification"
+        }
+    ],
+    "education": {
+        "Master": {
+            "degree": "Master of Science in Computer Science",
+            "school": "University of California, Berkeley",
+            "dates": "2010 - 2012",
+            "location": "Berkeley, CA"
+        },
+        "Bachelor": {
+            "degree": "Bachelor of Science in Computer Engineering",
+            "school": "San Jose State University",
+            "dates": "2006 - 2010",
+            "location": "San Jose, CA"
+        }
+    },
+    "languages": {
+        "English": "Professional",
+        "French": "Professional",
+        "Arabic": "Native"
+    },
+    "interests": [
+        "Open Source",
+        "Tech Communities"
+    ]
+}
