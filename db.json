@@ -208,6 +208,18 @@
         },
         {
             "id": 5,
+            "title": "TaskFlow: A Full-Stack Angular & Node.js Todo App",
+            "description": "TaskFlow is a full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
+            "link": "https://github.com/m-housni/angular-todoapp",
+            "tags": [
+                "Angular",
+                "NodeJS",
+                "WebSockets",
+                "Docker"
+            ]
+        },
+        {
+            "id": 5,
             "title": "Improving Codebase Readability and Performance",
             "description": "Refactored a large codebase, introduced linting and TDD practices, resulting in better maintainability and fewer bugs.",
             "link": "https://link-to-project-details.com/codebase-refactoring",
