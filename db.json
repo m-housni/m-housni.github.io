@@ -195,6 +195,19 @@
         },
         {
             "id": 4,
+            "title": "Debounce Demo: Prevent Excessive API Calls on Button Clicks",
+            "description": "A minimal app that showcases debouncing to stop multiple API calls when a button is rapidly clicked. Once clicking pauses, a single API request is made, reducing server load and boosting performance.",
+            "link": "https://github.com/m-housni/Debounce-Demo-Prevent-Excessive-API-Calls-on-Button-Clicks",
+            "tags": [
+                "Debounce",
+                "API Calls",
+                "Performance",
+                "JavaScript",
+                "Optimization"
+            ]
+        }
+        {
+            "id": 4,
             "title": "Frontend Migration with React Hooks",
             "description": "Modernized a legacy React codebase by transitioning to hooks, improving performance and simplifying state management.",
             "link": "https://link-to-project-details.com/react-hooks-migration",
