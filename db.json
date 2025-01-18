@@ -167,25 +167,10 @@
                       "Authentication",
                       "Authorization",
                       "Docker",
-                      "Docker Compose",
                       "Prometheus",
                       "Grafana",
-                      "Middleware",
-                      "bcrypt",
-                      "dotenv",
-                      "Scalability",
-                      "Metrics Monitoring",
-                      "Load Testing",
-                      "Secure Cookies",
-                      "Environment Variables",
-                      "REST API",
-                      "Postman",
-                      "Full-Stack JavaScript",
-                      "High Performance",
-                      "Centralized Session Storage",
-                      "Protected Routes",
-                      "Monitoring Tools"
-                    ]
+                      "Metrics Monitoring"
+                ]
         },
         {
             "id": 1,
