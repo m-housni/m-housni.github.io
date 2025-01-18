@@ -157,8 +157,7 @@
         {
             "id": 1000,
             "title": "Scalable Session Management System with Express, Redis, and Monitoring Tools",
-            "description": "**Description:**  
-A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
+            "description": "A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
             "link": "https://github.com/m-housni/express-redis-session-management",
             "tags": [
                       "Node.js",
