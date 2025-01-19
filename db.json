@@ -5,61 +5,123 @@
         "location": "Casablanca, MA",
         "email": "mohamed.housni@um5s.net.ma",
         "phone": "+212 7 08 11 36 36",
-        "website": "https://m-housni.github.io",
-        "linkedin": "https://www.linkedin.com/in/m-housni",
-        "github": "",
-        "summary": "I’m a Fullstack JavaScript Engineer with 9 years of experience building and scaling web applications. I specialize in both modern frontend frameworks like React and Angular and backend technologies such as Node.js, Express, and MongoDB. Over the years, I’ve worked on automating CI/CD pipelines, designing microservices, and improving application performance. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact. I’m passionate about clean, maintainable code, following best practices like TDD and scalable design patterns, and building software that truly meets user needs while staying technically robust."
+        "website": "",
+        "linkedin": "https://linkedin.com/in/m-housni",
+        "github": "https://github.com/m-housni",
+        "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust."
     },
     "skills": {
         "Languages": [
             "TypeScript, JavaScript",
             "SQL, PLSQL, GraphQL",
             "HTML, CSS, SCSS",
-            "JSON, XML, YAML"
+            "JSON, XML, YAML",
+            "Java, PHP, Python"
         ],
         "Frontend": [
             "Angular",
             "React / Next",
             "Vue / Nuxt",
-            "Svelte / SvelteKit"
+            "Svelte / SvelteKit",
+            "Web Components"
         ],
         "Backend": [
             "Express",
             "Koa",
             "NestJS",
-            "MeteorJS"
+            "MeteorJS",
+            "AdonisJS"
         ],
         "Databases": [
             "MongoDB",
             "MySQL, PostgreSQL",
             "Redis",
-            "Elasticsearch"
+            "Elasticsearch",
+            "Firebase"
         ],
         "Tools": [
             "Git, Git flow",
             "Jenkins / Github Actions",
             "Docker",
-            "Webpack, Babel"
+            "Webpack",
+            "Babel"
         ],
         "Testing / Monitoring": [
             "Jest, Mocha",
             "Insomnia, Postman",
-            "Chai, Cypress",
-            "Prometheuse, Grafana"
+            "k6, JMeter",
+            "Prometheuse, Grafana",
+            "Sentry"
         ],
         "APIs": [
             "Rest, oData",
             "GraphQL",
             "WebSockets",
-            "Algolia, OpenAI"
+            "Algolia, OpenAI",
+            "Twilio, Stripe"
         ],
-        "Other": [
+        "Methodologies": [
             "Agile, Scrum, Waterfall",
             "TDD,DDD,CI/CD,OOP,SOLID",
-            "Architecture/Design Patterns",
-            "Php, Java, Python"
+            "Architectural Patterns",
+            "Design Patterns",
+            "System Design"
+        ],
+        "Soft Skills": [
+            "Problem Solving",
+            "Teamwork",
+            "Communication",
+            "Leadership",
+            "Time Management"
         ]
     },
+    "skillsCloud": [
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "PLSQL",
+        "GraphQL",
+        "HTML",
+        "CSS",
+        "SCSS",
+        "JSON",
+        "XML",
+        "YAML",
+        "Java",
+        "PHP",
+        "Python",
+        "Angular",
+        "React",
+        "Next",
+        "Vue",
+        "Nuxt",
+        "Svelte",
+        "SvelteKit",
+        "Web Components",
+        "Express",
+        "Koa",
+        "NestJS",
+        "MeteorJS",
+        "AdonisJS",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "Elasticsearch",
+        "Firebase",
+        "Git",
+        "Git flow",
+        "Jenkins",
+        "Github Actions",
+        "Docker",
+        "Webpack",
+        "Babel",
+        "Jest",
+        "Mocha",
+        "Insomnia",
+        "Postman",
+        "k6",
+        "JMeter"],
     "experiences": {
         "Inetum": {
             "title": "Frontend Developer @ Inetum",
@@ -334,22 +396,23 @@
     ],
     "education": {
         "Master": {
-            "degree": "Master of Science in Computer Science",
-            "school": "University of California, Berkeley",
-            "dates": "2010 - 2012",
-            "location": "Berkeley, CA"
+            "degree": "MSc in Science et Technologies du Logiciel",
+            "school": "Sorbonne Université - UPMC",
+            "dates": "2013-2015",
+            "location": "Paris, FR"
         },
         "Bachelor": {
-            "degree": "Bachelor of Science in Computer Engineering",
-            "school": "San Jose State University",
-            "dates": "2006 - 2010",
-            "location": "San Jose, CA"
+            "degree": "BSc in Industrial Engineering",
+            "school": "Universite Abdelmalek Essaadi - FST",
+            "dates": "2009-2012",
+            "location": "Tangier, MA"
         }
     },
     "languages": {
         "English": "Professional",
         "French": "Professional",
-        "Arabic": "Native"
+        "Arabic": "Native",
+        "Amazigh": "Native"
     },
     "interests": [
         "Open Source",

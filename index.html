@@ -7,14 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         @media print {
-            nav {
+            .hide-on-print {
                 display: none !important;
             }
+
+            .page-break {
+                page-break-after: always;
+            }
+        }
+
+        #summary b {
+            font-weight: 600;
         }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900 hidden">
-    <nav class="fixed top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-md rounded-l-lg p-4 hidden md:block lg:block">
+    <nav class="hide-on-print fixed top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-md rounded-l-lg p-4 hidden md:block lg:block">
         <ul class="space-y-2">
             <li><a href="#summary" class="text-blue-500">Summary</a></li>
             <li><a href="#skills" class="text-blue-500">Skills</a></li>
@@ -29,14 +37,14 @@
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
         <header class="mb-6 flex items-center justify-between">
             <div>
-            <h1 id="name" class="text-4xl font-bold"></h1>
-            <p id="title" class="text-xl"></p>
+            <h1 id="name" class="text-4xl font-extrabold"></h1>
+            <p id="title" class="text-xl font-extrabold italic"></p>
             <p id="location"></p>
-            <p><a id="email" class="text-blue-500"></a></p>
-            <p><a id="phone" class="text-blue-500"></a></p>
+            <p>Email: <a id="email" class="text-blue-500"></a></p>
+            <p>Mobile: <a id="phone" class="text-blue-500"></a></p>
             <p><a id="website" class="text-blue-500"></a></p>
-            <p><a id="linkedin" class="text-blue-500"></a></p>
-            <p><a id="github" class="text-blue-500"></a></p>
+            <p>Linkedin: <a id="linkedin" class="text-blue-500"></a></p>
+            <p>Github: <a id="github" class="text-blue-500"></a></p>
             </div>
             <div>
             <!-- <img id="profile-picture" src="./pic.png" alt="Profile Picture" class=""> -->
@@ -48,17 +56,23 @@
         </section>
         <section class="mb-6">
             <h2 class="text-2xl font-bold mb-2">Skills</h2>
-            <div class="grid grid-cols-4 gap-4" id="skills"></div>
+            <div class="grid grid-cols-3 gap-4" id="skills"></div>
+        </section>
+        <div class="page-break"></div>
+        <section class="hide-on-print mb-6">
+            <div class="grid grid-cols-7 gap-1" id="skillsCloud"></div>
         </section>
         <section class="mb-6">
             <h2 class="text-2xl font-bold mb-2">Experience</h2>
             <div id="experiences"></div>
         </section>
+        <div class="page-break"></div>
         <section class="mb-6">
             <h2 class="text-2xl font-bold mb-2">Latest Projects</h2>
             <div id="projects"></div>
         </section>
-        <section class="mb-6">
+        <div class="page-break"></div>
+        <section class="mb-6 hidden">
             <h2 class="text-2xl font-bold mb-2">Latest Certifications</h2>
             <div id="certifications"></div>
         </section>
@@ -93,7 +107,7 @@
                 document.getElementById('linkedin').href = data.info.linkedin;
                 document.getElementById('github').textContent = data.info.github;
                 document.getElementById('github').href = data.info.github;
-                document.getElementById('summary').textContent = data.info.summary;
+                document.getElementById('summary').innerHTML = data.info.summary;
 
                 const skillsContainer = document.getElementById('skills');
                 for (const [category, skills] of Object.entries(data.skills)) {
@@ -101,6 +115,16 @@
                     skillDiv.innerHTML = `<h3 class="font-semibold">${category.replace(/([A-Z])/g, ' $1')}</h3><ul class="list-disc list-inside">${skills.map(skill => `<li class="text-sm">${skill}</li>`).join('')}</ul>`;
                     skillsContainer.appendChild(skillDiv);
                 }
+
+                const skillsCloudContainer = document.getElementById('skillsCloud');
+                // get an arrany of unique skills ordered alphabetically
+                const skillsCloud = new Set(data.skillsCloud);
+                const orderedSkillsCloud = [...skillsCloud].map(skill => [skill, skill.toLowerCase()]).sort((a, b) => a[1].localeCompare(b[1])).map(skill => skill[0]);
+                orderedSkillsCloud.forEach(skill => {
+                    const skillDiv = document.createElement('div');
+                    skillDiv.innerHTML = `<span class="text-xs">${skill}</span>`;
+                    skillsCloudContainer.appendChild(skillDiv);
+                });
 
                 const experiencesContainer = document.getElementById('experiences');
                 for (const [company, experience] of Object.entries(data.experiences)) {
