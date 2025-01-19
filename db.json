@@ -260,13 +260,6 @@
             "tags": "Microservices, RabbitMQ, Message Queues, Scalability, High Traffic"
         },
         {
-            "importance": 20,
-            "title": "Feature Rollout Leadership",
-            "description": "Structured and led the delivery of a complex feature, ensuring on-time completion with minimal rework and high team morale.",
-            "link": "https://link-to-project-details.com/feature-rollout-leadership",
-            "tags": "Leadership, Feature Delivery, Team Collaboration, Project Management, Agile"
-        },
-        {
             "importance": 80,
             "title": "Debounce Demo: Prevent Excessive API Calls on Button Clicks",
             "description": "A minimal app that showcases debouncing to stop multiple API calls when a button is rapidly clicked. Once clicking pauses, a single API request is made, reducing server load and boosting performance.",
