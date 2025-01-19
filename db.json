@@ -243,160 +243,84 @@
             "title": "Scalable Session Management System with Express, Redis, and Monitoring Tools",
             "description": "A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
             "link": "https://github.com/m-housni/express-redis-session-management",
-            "tags": [
-                      "Node.js",
-                      "Express.js",
-                      "Redis",
-                      "Session Management",
-                      "Authentication",
-                      "Authorization",
-                      "Docker",
-                      "Prometheus",
-                      "Grafana",
-                      "Metrics Monitoring"
-                ]
+            "tags": "Node.js, Express.js, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
         },
         {
             "id": 1,
             "title": "CI/CD Automation with Jenkins",
             "description": "Automated builds, tests, and deployments using Jenkins to reduce manual errors and improve release reliability.",
             "link": "https://link-to-project-details.com/ci-cd-jenkins",
-            "tags": [
-                "CI/CD",
-                "Jenkins",
-                "Automation",
-                "DevOps",
-                "Deployment"
-            ]
+            "tags": "CI/CD, Jenkins, Automation, DevOps, Deployment"
         },
         {
             "id": 2,
             "title": "High-Throughput Microservice with RabbitMQ",
             "description": "Used RabbitMQ to decouple services, enabling scalable message-driven architecture for a high-traffic application.",
             "link": "https://link-to-project-details.com/rabbitmq-microservice",
-            "tags": [
-                "Microservices",
-                "RabbitMQ",
-                "Message Queues",
-                "Scalability",
-                "High Traffic"
-            ]
+            "tags": "Microservices, RabbitMQ, Message Queues, Scalability, High Traffic"
         },
         {
             "id": 3,
             "title": "Feature Rollout Leadership",
             "description": "Structured and led the delivery of a complex feature, ensuring on-time completion with minimal rework and high team morale.",
             "link": "https://link-to-project-details.com/feature-rollout-leadership",
-            "tags": [
-                "Leadership",
-                "Feature Delivery",
-                "Team Collaboration",
-                "Project Management",
-                "Agile"
-            ]
+            "tags": "Leadership, Feature Delivery, Team Collaboration, Project Management, Agile"
         },
         {
             "id": 4,
             "title": "Debounce Demo: Prevent Excessive API Calls on Button Clicks",
             "description": "A minimal app that showcases debouncing to stop multiple API calls when a button is rapidly clicked. Once clicking pauses, a single API request is made, reducing server load and boosting performance.",
             "link": "https://github.com/m-housni/Debounce-Demo-Prevent-Excessive-API-Calls-on-Button-Clicks",
-            "tags": [
-                "Debounce",
-                "API Calls",
-                "Performance",
-                "JavaScript",
-                "Optimization"
-            ]
+            "tags": "Debounce, API Calls, Performance, JavaScript, Optimization"
         },
         {
             "id": 4,
             "title": "Frontend Migration with React Hooks",
             "description": "Modernized a legacy React codebase by transitioning to hooks, improving performance and simplifying state management.",
             "link": "https://link-to-project-details.com/react-hooks-migration",
-            "tags": [
-                "React",
-                "React Hooks",
-                "Frontend",
-                "Modernization",
-                "State Management"
-            ]
+            "tags": "React, React Hooks, Frontend, Modernization, State Management"
         },
         {
             "id": 5,
             "title": "TaskFlow: A Full-Stack Angular & Node.js Todo App",
             "description": "TaskFlow is a full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
             "link": "https://github.com/m-housni/angular-todoapp",
-            "tags": [
-                "Angular",
-                "NodeJS",
-                "WebSockets",
-                "Docker"
-            ]
+            "tags": "Angular, NodeJS, WebSockets, Docker"
         },
         {
             "id": 5,
             "title": "Improving Codebase Readability and Performance",
             "description": "Refactored a large codebase, introduced linting and TDD practices, resulting in better maintainability and fewer bugs.",
             "link": "https://link-to-project-details.com/codebase-refactoring",
-            "tags": [
-                "Refactoring",
-                "Code Quality",
-                "Linting",
-                "TDD",
-                "Maintainability"
-            ]
+            "tags": "Refactoring, Code Quality, Linting, TDD, Maintainability"
         },
         {
             "id": 6,
             "title": "Backward Compatibility with Babel and Webpack",
             "description": "Ensured modern JavaScript worked seamlessly across older browsers by configuring Babel and Webpack.",
             "link": "https://link-to-project-details.com/babel-webpack-compatibility",
-            "tags": [
-                "JavaScript",
-                "Babel",
-                "Webpack",
-                "Compatibility",
-                "Browser Support"
-            ]
+            "tags": "JavaScript, Babel, Webpack, Compatibility, Browser Support"
         },
         {
             "id": 7,
             "title": "Deploy a GitHub Repo to cPanel with GitHub Actions",
             "description": "Created an automated CI/CD pipeline to deploy updates from GitHub to cPanel, reducing deployment time and errors.",
             "link": "https://link-to-project-details.com/github-actions-cpanel",
-            "tags": [
-                "CI/CD",
-                "GitHub Actions",
-                "cPanel",
-                "Automation",
-                "Deployment"
-            ]
+            "tags": "CI/CD, GitHub Actions, cPanel, Automation, Deployment"
         },
         {
             "id": 8,
             "title": "OpnForm Open-Source Form Builder",
             "description": "Built a user-friendly, extensible form builder with no-code and developer-focused features.",
             "link": "https://link-to-project-details.com/opnform",
-            "tags": [
-                "Open Source",
-                "Form Builder",
-                "No Code",
-                "Extensibility",
-                "Community"
-            ]
+            "tags": "Open Source, Form Builder, No Code, Extensibility, Community"
         },
         {
             "id": 9,
             "title": "E-Commerce Website with Angular and Node.js",
             "description": "Developed a scalable, tailored e-commerce platform that boosted sales and supported rapid business growth.",
             "link": "https://github.com/m-housni/altenshop-kata1",
-            "tags": [
-                "E-Commerce",
-                "Angular",
-                "Node.js",
-                "RxJS",
-                "Postman"
-            ]
+            "tags": "E-Commerce, Angular, Node.js, RxJS, Postman"
         }
     ],
     "certifications": [
