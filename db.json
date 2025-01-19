@@ -27,7 +27,7 @@
             "Express",
             "Koa",
             "NestJS",
-            "AdonisJS"
+            "MeteorJS"
         ],
         "Databases": [
             "MongoDB",
@@ -48,16 +48,16 @@
             "Prometheuse, Grafana"
         ],
         "APIs": [
-            "Rest, OData",
+            "Rest, oData",
+            "GraphQL",
             "WebSockets",
-            "Heroku",
-            "CPanel"
+            "Algolia, OpenAI"
         ],
-        "Methodologies": [
-            "Agile, Scrum",
-            "TDD",
-            "CI/CD",
-            "SOLID, Design Patterns"
+        "Other": [
+            "Agile, Scrum, Waterfall",
+            "TDD,DDD,CI/CD,OOP,SOLID",
+            "Architecture/Design Patterns",
+            "Php, Java, Python"
         ]
     },
     "experiences": {
