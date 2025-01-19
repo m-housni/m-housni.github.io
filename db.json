@@ -12,16 +12,16 @@
     },
     "skills": {
         "Languages": [
-            "JavaScript",
-            "TypeScript",
-            "Php",
-            "Java"
+            "TypeScript, JavaScript",
+            "SQL, PLSQL, GraphQL",
+            "HTML, CSS, SCSS",
+            "JSON, XML, YAML"
         ],
         "Frontend": [
-            "React",
             "Angular",
-            "Vue",
-            "Svelte"
+            "React / Next",
+            "Vue / Nuxt",
+            "Svelte / SvelteKit"
         ],
         "Backend": [
             "Express",
@@ -37,19 +37,19 @@
         ],
         "Tools": [
             "Git, Git flow",
-            "Jenkins",
+            "Jenkins / Github Actions",
             "Docker",
             "Webpack, Babel"
         ],
-        "Testing": [
-            "Jest",
-            "Mocha",
-            "Chai",
-            "Cypress"
+        "Testing / Monitoring": [
+            "Jest, Mocha",
+            "Insomnia, Postman",
+            "Chai, Cypress",
+            "Prometheuse, Grafana"
         ],
-        "Cloud": [
-            "AWS, GCP",
-            "Azure",
+        "APIs": [
+            "Rest, OData",
+            "WebSockets",
             "Heroku",
             "CPanel"
         ],
