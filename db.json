@@ -243,7 +243,7 @@
             "title": "Scalable Session Management System with Express, Redis, and Monitoring Tools",
             "description": "A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
             "link": "https://github.com/m-housni/express-redis-session-management",
-            "tags": "Node.js, Express.js, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
+            "tags": "nodemon, npm, bcrypt, connect-redis, dotenv, express, express-session, prom-client, redis, redis-info, Node.js, Express.js, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
         },
         {
             "id": 1,
