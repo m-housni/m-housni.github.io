@@ -99,6 +99,7 @@
         </section>
     </div>
     <script>
+        try {
         fetch('db.json')
             .then(response => response.json())
             .then(data => {
@@ -118,11 +119,16 @@
                 document.getElementById('github').href = data.info.github;
                 document.getElementById('summary').innerHTML = data.info.summary;
 
-                const skillsContainer = document.getElementById('skills');
-                for (const [category, skills] of Object.entries(data.skills)) {
-                    const skillDiv = document.createElement('div');
-                    skillDiv.innerHTML = `<h3 class="font-semibold">${category.replace(/([A-Z])/g, ' $1')}</h3><ul class="list-disc list-inside">${skills.map(skill => `<li class="text-sm">${skill}</li>`).join('')}</ul>`;
-                    skillsContainer.appendChild(skillDiv);
+                try {
+                    const skillsContainer = document.getElementById('skills');
+                    for (const [category, skills] of Object.entries(data.skills)) {
+                        const skillDiv = document.createElement('div');
+                        skillDiv.innerHTML = `<h3 class="font-semibold">${category.replace(/([A-Z])/g, ' $1')}</h3><ul class="list-disc list-inside">${skills.map(skill => `<li class="text-sm">${skill}</li>`).join('')}</ul>`;
+                        skillsContainer.appendChild(skillDiv);
+                        //func()
+                    }
+                } catch (error) {
+                    console.error(error);
                 }
 
                 const skillsCloudContainer = document.getElementById('skillsCloud');
@@ -188,6 +194,9 @@
                     interestsContainer.appendChild(interestLi);
                 });
             });
+        } catch (error) {
+            console.error(error)
+        }
     </script>
 </body>
 </html>
