@@ -239,84 +239,84 @@
     },
     "projects": [
         {
-            "importance": 89,
+            "timestamp": 1737415539,
             "title": "Dockerized React & Node.js Full-Stack App with Mysql",
-            "description": "A simple yet comprehensive Todo List application demonstrating modern Docker best practices, including Compose, Dockerfile usage, CI with GitHub Actions, and testing. It features a React frontend and Node.js backend, designed for ease of learning and development with containerized environments.",
+            "description": "This Docker Compose configuration setup orchestrates multiple services to create a seamless development environment for a todo application. Traefik serves as the reverse proxy, efficiently routing traffic between the backend API, frontend client, and phpMyAdmin interface. The MySQL service is configured with persistent storage, and development-specific settings enable real-time code synchronization and automatic rebuilding of services upon code changes.",
             "link": "https://github.com/m-housni/dockerized-todoapp/",
-            "tags": "Docker, Docker Compose, React, Node.js, MySQL, CI/CD, GitHub Actions, Containers, Compose, Dockerfile, Vite, Nodemon, TodoApp"
+            "tags": "Docker, Treafik, Reverse Proxy, Code Sync, Automatic rebuild, phpMyAdmin, Docker Compose, React, Node.js, MySQL, CI/CD, GitHub Actions, Containers, Compose, Dockerfile, Vite, Nodemon, TodoApp"
         },
         {
-            "importance": 100,
+            "timestamp": 1737415453,
             "title": "Scalable Session Management System with Express, Redis, and Monitoring Tools",
             "description": "A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
             "link": "https://github.com/m-housni/express-redis-session-management",
             "tags": "nodemon, npm, bcrypt, connect-redis, dotenv, express, express-session, prom-client, redis, redis-info, Node.js, Express.js, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
         },
         {
-            "importance": 1,
+            "timestamp": 1,
             "title": "CI/CD Automation with Jenkins",
             "description": "Automated builds, tests, and deployments using Jenkins to reduce manual errors and improve release reliability.",
             "link": "https://link-to-project-details.com/ci-cd-jenkins",
             "tags": "CI/CD, Jenkins, Automation, DevOps, Deployment"
         },
         {
-            "importance": 90,
+            "timestamp": 90,
             "title": "High-Throughput Microservice with RabbitMQ",
             "description": "Used RabbitMQ to decouple services, enabling scalable message-driven architecture for a high-traffic application.",
             "link": "https://link-to-project-details.com/rabbitmq-microservice",
             "tags": "Microservices, RabbitMQ, Message Queues, Scalability, High Traffic"
         },
         {
-            "importance": 80,
+            "timestamp": 80,
             "title": "Debounce Demo: Prevent Excessive API Calls on Button Clicks",
             "description": "A minimal app that showcases debouncing to stop multiple API calls when a button is rapidly clicked. Once clicking pauses, a single API request is made, reducing server load and boosting performance.",
             "link": "https://github.com/m-housni/Debounce-Demo-Prevent-Excessive-API-Calls-on-Button-Clicks",
             "tags": "Debounce, API Calls, Performance, JavaScript, Optimization"
         },
         {
-            "importance": 70,
+            "timestamp": 70,
             "title": "Frontend Migration with React Hooks",
             "description": "Modernized a legacy React codebase by transitioning to hooks, improving performance and simplifying state management.",
             "link": "https://link-to-project-details.com/react-hooks-migration",
             "tags": "React, React Hooks, Frontend, Modernization, State Management"
         },
         {
-            "importance": 81,
+            "timestamp": 81,
             "title": "TaskFlow: A Full-Stack Angular & Node.js Todo App",
             "description": "TaskFlow is a full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
             "link": "https://github.com/m-housni/angular-todoapp",
             "tags": "Angular, NodeJS, WebSockets, Docker"
         },
         {
-            "importance": 10,
+            "timestamp": 10,
             "title": "Improving Codebase Readability and Performance",
             "description": "Refactored a large codebase, introduced linting and TDD practices, resulting in better maintainability and fewer bugs.",
             "link": "https://link-to-project-details.com/codebase-refactoring",
             "tags": "Refactoring, Code Quality, Linting, TDD, Maintainability"
         },
         {
-            "importance": 11,
+            "timestamp": 11,
             "title": "Backward Compatibility with Babel and Webpack",
             "description": "Ensured modern JavaScript worked seamlessly across older browsers by configuring Babel and Webpack.",
             "link": "https://link-to-project-details.com/babel-webpack-compatibility",
             "tags": "JavaScript, Babel, Webpack, Compatibility, Browser Support"
         },
         {
-            "importance": 21,
+            "timestamp": 21,
             "title": "Deploy a GitHub Repo to cPanel with GitHub Actions",
             "description": "Created an automated CI/CD pipeline to deploy updates from GitHub to cPanel, reducing deployment time and errors.",
             "link": "https://link-to-project-details.com/github-actions-cpanel",
             "tags": "CI/CD, GitHub Actions, cPanel, Automation, Deployment"
         },
         {
-            "importance": 22,
+            "timestamp": 22,
             "title": "OpnForm Open-Source Form Builder",
             "description": "Built a user-friendly, extensible form builder with no-code and developer-focused features.",
             "link": "https://link-to-project-details.com/opnform",
             "tags": "Open Source, Form Builder, No Code, Extensibility, Community"
         },
         {
-            "importance": 99,
+            "timestamp": 99,
             "title": "E-Commerce Website with Angular and Node.js",
             "description": "Developed a scalable, tailored e-commerce platform that boosted sales and supported rapid business growth.",
             "link": "https://github.com/m-housni/altenshop-kata1",

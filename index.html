@@ -155,8 +155,8 @@
                 }
 
                 const projectsContainer = document.getElementById('projects');
-                // order the projects by importance
-                data.projects.sort((a, b) => b.importance - a.importance);
+                // order the projects by timestamp
+                data.projects.sort((a, b) => b.timestamp - a.timestamp);
                 data.projects.forEach(project => {
                     const projectDiv = document.createElement('div');
                     projectDiv.classList.add('mb-4');
