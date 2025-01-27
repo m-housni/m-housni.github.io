@@ -260,6 +260,13 @@
             "tags": "CI/CD, Jenkins, Automation, DevOps, Deployment"
         },
         {
+            "timestamp": 1737987383,
+            "title": "Redis Checkin Social App",
+            "description": "The project involves developing a social network application where users can 'check in' at various locations and provide star ratings (0 to 5) based on their experiences. The application leverages Redis as both a data store and a cache to manage data efficiently. The core entities in the application are Users, Locations, and Checkins, each mapped to Redis data types for optimal storage and retrieval. The application will also include an API to interact with the data and support asynchronous processing for real-time updates.",
+            "link": "https://github.com/m-housni/redis-checkin-social-app",
+            "tags": "Node, Redis Streams, Redis Pub/Sub, Redis Data Types, Social Network, Checkin, Ratings, API, Asynchronous Processing, Real-Time Updates, Data Storage, Data Retrieval, Cache, Data Store"
+        },
+        {
             "timestamp": 90,
             "title": "High-Throughput Microservice with RabbitMQ",
             "description": "Used RabbitMQ to decouple services, enabling scalable message-driven architecture for a high-traffic application.",
@@ -318,9 +325,9 @@
         {
             "timestamp": 99,
             "title": "E-Commerce Website with Angular and Node.js",
-            "description": "Developed a scalable, tailored e-commerce platform that boosted sales and supported rapid business growth.",
+            "description": "E-commerce platform that integrates both front-end and back-end development tasks. On the front-end, it features product listing, shopping cart functionalities, a contact form, pagination, filtering, and product quantity adjustments. The back-end is built using Node.js/Express, and includes API development with CRUD operations, JWT-based user authentication, and management of shopping carts and wishlists.",
             "link": "https://github.com/m-housni/e-commerce-angular-node",
-            "tags": "E-Commerce, Angular, Node.js, RxJS, Postman"
+            "tags": "E-Commerce, Angular, Node.js, RxJS, Postman, JWT Authentication, CRUD, API, Express, Shopping Cart, Wishlist, Pagination, Filtering, Contact Form, Front-End, Back-End, Full-Stack, PrimeNG, Observables, Reactive Programming, Signals, Events, Data Flow, State Management, Typescript, Dependency Injection"
         }
     ],
     "certifications": [
