@@ -10,6 +10,19 @@
         "github": "https://github.com/m-housni",
         "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust."
     },
+    "focusAreas": [
+        "Redis",
+        "Kafka",
+        "Docker",
+        "Microservices",
+        "Angular",
+        "React",
+        "Vanilla JS",
+        "OpenAI",
+        "GraphQL",
+        "Agentic AI",
+        "Cloud"
+    ],
     "skills": {
         "Languages": [
             "TypeScript, JavaScript",
@@ -264,7 +277,7 @@
             "title": "Redis Checkin Social App",
             "description": "The project involves developing a social network application where users can 'check in' at various locations and provide star ratings (0 to 5) based on their experiences. The application leverages Redis as both a data store and a cache to manage data efficiently. The core entities in the application are Users, Locations, and Checkins, each mapped to Redis data types for optimal storage and retrieval. The application will also include an API to interact with the data and support asynchronous processing for real-time updates.",
             "link": "https://github.com/m-housni/redis-checkin-social-app",
-            "tags": "Node, Redis Streams, Redis Pub/Sub, Redis Data Types, Social Network, Checkin, Ratings, API, Asynchronous Processing, Real-Time Updates, Data Storage, Data Retrieval, Cache, Data Store"
+            "tags": "ioredis, Redis JSON, Docker, Node, Redis Streams, Redis Pub/Sub, Redis Data Types, Social Network, Checkin, Ratings, API, Asynchronous Processing, Real-Time Updates, Data Storage, Data Retrieval, Cache, Data Store"
         },
         {
             "timestamp": 90,
