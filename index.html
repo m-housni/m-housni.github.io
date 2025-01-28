@@ -227,6 +227,12 @@
         } catch (error) {
             console.error(error)
         }
+
+        document.getElementById('name').addEventListener('dblclick', () => {
+            document.querySelectorAll('*').forEach(el => {
+                el.setAttribute('contenteditable', 'true');
+            });
+        });
     </script>
 </body>
 </html>
