@@ -301,11 +301,11 @@
             "tags": "React, React Hooks, Frontend, Modernization, State Management"
         },
         {
-            "timestamp": 81,
-            "title": "TaskFlow: A Full-Stack Angular & Node.js Todo App",
-            "description": "TaskFlow is a full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
-            "link": "https://github.com/m-housni/angular-todoapp",
-            "tags": "Angular, NodeJS, WebSockets, Docker"
+            "timestamp": 1738073454,
+            "title": "Fullstack TodoApp with Angular, Node.js, and SQLite",
+            "description": "Full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
+            "link": "https://github.com/m-housni/full-stack-todo-app-with-angular-node-sqlite",
+            "tags": "Angular, NodeJS, WebSockets, Docker, SQLite, RESTful APIs, Authentication, Dashboard, Full-Stack, Real-Time Updates"
         },
         {
             "timestamp": 10,
