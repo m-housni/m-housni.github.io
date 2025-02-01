@@ -252,6 +252,13 @@
     },
     "projects": [
         {
+            "timestamp": 1738425136,
+            "title": "Angular-Express Authentication Starter: JWT-Based Secure Login System",
+            "description": "Boilerplate project that integrates Angular and Express for user authentication. It features a login system where users enter credentials, which are validated by an Express backend using bcrypt. A JWT token is generated and returned to the frontend, where it is stored and used to manage authentication state through an Angular service and BehaviorSubject, ensuring UI updates.",
+            "link": "https://github.com/m-housni/angular-express-auth-starter",
+            "tags": "Angular, Express, Authentication, JWT, Node.js, bcrypt, User Login, Token-Based Authentication, Secure Login, Full-Stack, MEAN Stack, AuthService, BehaviorSubject, API Security"
+        },
+        {
             "timestamp": 1737415539,
             "title": "Dockerized React & Node.js Full-Stack App with Mysql",
             "description": "This Docker Compose configuration setup orchestrates multiple services to create a seamless development environment for a todo application. Traefik serves as the reverse proxy, efficiently routing traffic between the backend API, frontend client, and phpMyAdmin interface. The MySQL service is configured with persistent storage, and development-specific settings enable real-time code synchronization and automatic rebuilding of services upon code changes.",
@@ -302,10 +309,10 @@
         },
         {
             "timestamp": 1738073454,
-            "title": "Fullstack TodoApp with Angular, Node.js, and SQLite",
+            "title": "Fullstack TodoApp with Angular, Node.js, and Postgres",
             "description": "Full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
             "link": "https://github.com/m-housni/full-stack-todo-app-with-angular-node-sqlite",
-            "tags": "Angular, NodeJS, WebSockets, Docker, SQLite, RESTful APIs, Authentication, Dashboard, Full-Stack, Real-Time Updates"
+            "tags": "Angular, NodeJS, WebSockets, Docker, SQLite, RESTful APIs, Authentication, Dashboard, Full-Stack, Real-Time Updates, Postgres, Supabase"
         },
         {
             "timestamp": 10,
