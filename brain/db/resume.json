@@ -252,6 +252,13 @@
     },
     "projects": [
         {
+            "timestamp": 1739480776,
+            "title": "Vue-Java-Springboot Delivery Tracking System",
+            "description": "A full-stack delivery tracking system built with Vue.js and Java SpringBoot. The Vue frontend allows users to view and manage delivery orders with dynamic status updates, address modifications, and time slot adjustments. The Springboot backend handles API requests for fetching and updating deliveries, ensuring seamless communication between the UI and the database. The system supports role-based interactions for buyers and sellers, providing restricted input fields and actions based on user roles.",
+            "link": "https://github.com/m-housni/delivery-tracking-app-with-vue3-and-java-springboot/",
+            "tags": "Vue.js, Java, SpringBoot Delivery Tracking, Full-Stack, API, REST API, CRUD Operations, Axios, JavaScript"
+        },
+        {
             "timestamp": 1738425136,
             "title": "Angular-Express Authentication Starter: JWT-Based Secure Login System",
             "description": "Boilerplate project that integrates Angular and Express for user authentication. It features a login system where users enter credentials, which are validated by an Express backend using bcrypt. A JWT token is generated and returned to the frontend, where it is stored and used to manage authentication state through an Angular service and BehaviorSubject, ensuring UI updates.",
