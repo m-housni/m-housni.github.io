@@ -1,5 +1,293 @@
 [
   {
+    "question": "What is the primary purpose of rate limiting in web applications?",
+    "options": [
+      "To encrypt communication between client and server",
+      "To prevent abuse by limiting requests per user",
+      "To store session data securely",
+      "To replace traditional databases"
+    ],
+    "answer": "To prevent abuse by limiting requests per user",
+    "explanation": "Rate limiting restricts the number of requests a user can make within a specific time frame, preventing abuse such as DDoS attacks or brute force attempts.",
+    "tags": ["Rate Limiting", "Security", "Performance"]
+  },
+  {
+    "question": "Which library is commonly used for implementing rate limiting in Express.js?",
+    "options": [
+      "express-redis-cache",
+      "express-rate-limit",
+      "cloudflare-cdn",
+      "axios"
+    ],
+    "answer": "express-rate-limit",
+    "explanation": "`express-rate-limit` is a middleware library that allows you to easily implement rate limiting in Express.js applications.",
+    "tags": ["Express.js", "Rate Limiting", "Middleware"]
+  },
+  {
+    "question": "Why is Redis often used for rate limiting in distributed systems?",
+    "options": [
+      "It provides persistent storage for logs",
+      "It stores rate limits in-memory for high performance",
+      "It eliminates the need for APIs",
+      "It focuses on frontend development"
+    ],
+    "answer": "It stores rate limits in-memory for high performance",
+    "explanation": "Redis is ideal for rate limiting in distributed systems because it stores data in-memory, ensuring fast access and persistence across multiple servers.",
+    "tags": ["Redis", "Rate Limiting", "Distributed Systems"]
+  },
+  {
+    "question": "What happens when a user exceeds the rate limit defined in an Express.js application?",
+    "options": [
+      "The server sends a 200 OK response",
+      "The server sends a 429 Too Many Requests error",
+      "The server automatically restarts",
+      "The server redirects the user to a login page"
+    ],
+    "answer": "The server sends a 429 Too Many Requests error",
+    "explanation": "When a user exceeds the rate limit, the server responds with a 429 status code, indicating that too many requests have been made within the allowed time window.",
+    "tags": ["Express.js", "Rate Limiting", "Error Handling"]
+  },
+  {
+    "question": "Which caching strategy reduces database load by storing frequent queries in memory?",
+    "options": [
+      "Edge caching",
+      "In-memory caching with Redis",
+      "Database indexing",
+      "Frontend state management"
+    ],
+    "answer": "In-memory caching with Redis",
+    "explanation": "Redis provides in-memory caching, allowing frequent queries to be stored and retrieved quickly, reducing database load and improving application performance.",
+    "tags": ["Caching", "Redis", "Performance Optimization"]
+  },
+  {
+    "question": "What does the `setex` method in Redis do?",
+    "options": [
+      "Sets a key with no expiration",
+      "Sets a key with a specified expiration time (TTL)",
+      "Deletes a key from Redis",
+      "Encrypts sensitive data"
+    ],
+    "answer": "Sets a key with a specified expiration time (TTL)",
+    "explanation": "The `setex` method in Redis sets a key with a specified expiration time (in seconds), ensuring cached data is automatically removed after the TTL expires.",
+    "tags": ["Redis", "Caching", "TTL"]
+  },
+  {
+    "question": "Which HTTP header controls caching behavior in Cloudflare?",
+    "options": [
+      "Content-Type",
+      "Cache-Control",
+      "Authorization",
+      "X-RateLimit-Limit"
+    ],
+    "answer": "Cache-Control",
+    "explanation": "The `Cache-Control` header specifies caching rules, such as `public`, `max-age`, and `s-maxage`, which control how long responses are cached in Cloudflare.",
+    "tags": ["Cloudflare", "Caching", "HTTP Headers"]
+  },
+  {
+    "question": "What is the advantage of using Cloudflare's edge caching?",
+    "options": [
+      "It stores data locally on the user's device",
+      "It caches content globally for faster delivery",
+      "It replaces the need for Redis",
+      "It encrypts all API responses"
+    ],
+    "answer": "It caches content globally for faster delivery",
+    "explanation": "Cloudflare's edge caching stores content at geographically distributed locations, enabling faster delivery to users regardless of their location.",
+    "tags": ["Cloudflare", "Edge Caching", "Global Delivery"]
+  },
+  {
+    "question": "Which of the following best describes the difference between Redis caching and Cloudflare caching?",
+    "options": [
+      "Redis is used for frontend caching, while Cloudflare is for backend",
+      "Redis stores data in-memory on the server, while Cloudflare caches content at the edge",
+      "There is no difference; both serve the same purpose",
+      "Cloudflare eliminates the need for Redis"
+    ],
+    "answer": "Redis stores data in-memory on the server, while Cloudflare caches content at the edge",
+    "explanation": "Redis provides in-memory caching on the server side, while Cloudflare caches content at the edge, closer to the user, for faster global delivery.",
+    "tags": ["Redis", "Cloudflare", "Caching", "Comparison"]
+  },
+  {
+    "question": "What is the role of the `req.ip` property in rate limiting with Redis?",
+    "options": [
+      "To define the request body",
+      "To identify the user's IP address for rate limiting",
+      "To set the cache expiration time",
+      "To manage database connections"
+    ],
+    "answer": "To identify the user's IP address for rate limiting",
+    "explanation": "The `req.ip` property identifies the user's IP address, allowing rate limits to be applied per user in distributed systems.",
+    "tags": ["Redis", "Rate Limiting", "IP Identification"]
+  },
+  {
+    "question": "Which of the following is true about Cloudflare's DDoS protection?",
+    "options": [
+      "It blocks malicious traffic before it reaches the server",
+      "It increases the size of API responses",
+      "It requires manual configuration for every request",
+      "It replaces traditional firewalls entirely"
+    ],
+    "answer": "It blocks malicious traffic before it reaches the server",
+    "explanation": "Cloudflare's DDoS protection blocks malicious traffic at the edge, ensuring only legitimate requests reach your server.",
+    "tags": ["Cloudflare", "DDoS Protection", "Security"]
+  },
+  {
+    "question": "What is the purpose of the `consume` method in `rate-limiter-flexible`?",
+    "options": [
+      "To fetch data from Redis",
+      "To consume API responses directly",
+      "To deduct points from the user's rate limit quota",
+      "To generate random session IDs"
+    ],
+    "answer": "To deduct points from the user's rate limit quota",
+    "explanation": "The `consume` method in `rate-limiter-flexible` deducts points from the user's rate limit quota, ensuring compliance with defined limits.",
+    "tags": ["Rate Limiting", "Redis", "rate-limiter-flexible"]
+  },
+  {
+    "question": "Which of the following is a benefit of using Redis over Cloudflare for caching?",
+    "options": [
+      "Redis caches content globally at the edge",
+      "Redis provides more control over cache invalidation",
+      "Cloudflare cannot handle large-scale traffic",
+      "Redis eliminates the need for APIs"
+    ],
+    "answer": "Redis provides more control over cache invalidation",
+    "explanation": "While Cloudflare offers edge caching, Redis provides finer-grained control over cache invalidation and TTL settings, making it suitable for custom caching strategies.",
+    "tags": ["Redis", "Cloudflare", "Caching", "Comparison"]
+  },
+  {
+    "question": "What is the purpose of the `Cache-Control` header's `s-maxage` directive?",
+    "options": [
+      "To specify the maximum age for shared caches like Cloudflare",
+      "To define the encryption algorithm",
+      "To increase the size of API responses",
+      "To replace traditional databases"
+    ],
+    "answer": "To specify the maximum age for shared caches like Cloudflare",
+    "explanation": "The `s-maxage` directive in the `Cache-Control` header specifies the maximum age for shared caches (e.g., Cloudflare), overriding the `max-age` for proxy servers.",
+    "tags": ["Cloudflare", "Caching", "HTTP Headers"]
+  },
+  {
+    "question": "Which of the following is true about caching with Redis?",
+    "options": [
+      "It is slower than traditional databases",
+      "It stores data in-memory for fast retrieval",
+      "It eliminates the need for APIs",
+      "It focuses exclusively on frontend caching"
+    ],
+    "answer": "It stores data in-memory for fast retrieval",
+    "explanation": "Redis stores cached data in-memory, ensuring fast retrieval times for frequently accessed information.",
+    "tags": ["Redis", "Caching", "Performance"]
+  },
+  {
+    "question": "What is the role of `rate-limiter-flexible` in distributed rate limiting?",
+    "options": [
+      "To define caching strategies",
+      "To implement persistent rate limits across multiple servers",
+      "To replace the need for APIs",
+      "To manage database connections"
+    ],
+    "answer": "To implement persistent rate limits across multiple servers",
+    "explanation": "`rate-limiter-flexible` integrates with Redis to implement persistent rate limits across multiple servers in a distributed system.",
+    "tags": ["Rate Limiting", "Redis", "rate-limiter-flexible"]
+  },
+  {
+    "question": "Which of the following is a common use case for Cloudflare caching?",
+    "options": [
+      "Storing passwords securely",
+      "Caching static assets globally for faster delivery",
+      "Managing database migrations",
+      "Replacing traditional APIs"
+    ],
+    "answer": "Caching static assets globally for faster delivery",
+    "explanation": "Cloudflare is commonly used to cache static assets and API responses globally, ensuring faster delivery to users worldwide.",
+    "tags": ["Cloudflare", "Caching", "Static Assets"]
+  },
+  {
+    "question": "What happens when a cached response expires in Redis?",
+    "options": [
+      "The server sends a 404 Not Found error",
+      "The server fetches fresh data and updates the cache",
+      "The cache remains forever unless manually cleared",
+      "The server redirects the user to a login page"
+    ],
+    "answer": "The server fetches fresh data and updates the cache",
+    "explanation": "When a cached response expires in Redis, the server fetches fresh data from the source and updates the cache with the new response.",
+    "tags": ["Redis", "Caching", "Expiration"]
+  },
+  {
+    "question": "Which of the following is true about Redis's role in caching?",
+    "options": [
+      "It encrypts all API responses",
+      "It stores cached data in-memory for fast access",
+      "It replaces the need for Cloudflare",
+      "It focuses exclusively on frontend state management"
+    ],
+    "answer": "It stores cached data in-memory for fast access",
+    "explanation": "Redis stores cached data in-memory, providing fast access and reducing latency for frequent queries.",
+    "tags": ["Redis", "Caching", "In-Memory Storage"]
+  },
+  {
+    "question": "What is the main advantage of combining Redis and Cloudflare for caching?",
+    "options": [
+      "Redis handles edge caching, while Cloudflare manages in-memory storage",
+      "Cloudflare handles global distribution, while Redis provides fine-grained control",
+      "Both tools focus exclusively on frontend caching",
+      "They eliminate the need for APIs entirely"
+    ],
+    "answer": "Cloudflare handles global distribution, while Redis provides fine-grained control",
+    "explanation": "Cloudflare distributes cached content globally at the edge, while Redis provides fine-grained control over caching policies and TTL settings.",
+    "tags": ["Redis", "Cloudflare", "Caching", "Integration"]
+  },
+  {
+    "question": "Which HTTP status code indicates that a user has exceeded the rate limit?",
+    "options": [
+      "200 OK",
+      "404 Not Found",
+      "500 Internal Server Error",
+      "429 Too Many Requests"
+    ],
+    "answer": "429 Too Many Requests",
+    "explanation": "The 429 status code is returned when a user exceeds the defined rate limit, signaling that they should slow down their requests.",
+    "tags": ["Rate Limiting", "HTTP Status Codes", "Error Handling"]
+  },
+  {
+    "question": "What is the primary purpose of setting `Cache-Control: public, max-age=300, s-maxage=600` in an Express.js API?",
+    "options": [
+      "To encrypt API responses",
+      "To define caching rules for browsers and proxies",
+      "To increase the size of API responses",
+      "To replace Redis caching entirely"
+    ],
+    "answer": "To define caching rules for browsers and proxies",
+    "explanation": "The `Cache-Control` header defines caching rules, such as `max-age` for browser caching and `s-maxage` for shared caches like Cloudflare.",
+    "tags": ["Express.js", "Caching", "HTTP Headers"]
+  },
+  {
+    "question": "Which of the following is true about Redis's TTL (Time To Live) feature?",
+    "options": [
+      "It ensures data persists indefinitely",
+      "It specifies the expiration time for cached data",
+      "It replaces the need for APIs",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It specifies the expiration time for cached data",
+    "explanation": "Redis's TTL feature allows you to define the expiration time for cached data, ensuring stale data is automatically removed.",
+    "tags": ["Redis", "Caching", "TTL"]
+  },
+  {
+    "question": "What is the role of Cloudflare in improving web application performance?",
+    "options": [
+      "It encrypts all API communications",
+      "It acts as a global CDN for caching and distributing content",
+      "It replaces traditional databases",
+      "It focuses solely on rate limiting"
+    ],
+    "answer": "It acts as a global CDN for caching and distributing content",
+    "explanation": "Cloudflare serves as a global CDN, caching content at the edge and distributing it efficiently to users worldwide, improving performance and scalability.",
+    "tags": ["Cloudflare", "CDN", "Performance"]
+  },
+  {
     "question": "What is a vector in Linear Algebra?",
     "options": [
       "A scalar value representing magnitude",
