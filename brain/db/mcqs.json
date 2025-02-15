@@ -1,5 +1,617 @@
 [
   {
+    "question": "What is the primary purpose of load balancing in web applications?",
+    "options": [
+      "To encrypt communication between client and server",
+      "To distribute incoming traffic across multiple servers for improved performance and availability",
+      "To store session data securely",
+      "To replace traditional databases"
+    ],
+    "answer": "To distribute incoming traffic across multiple servers for improved performance and availability",
+    "explanation": "Load balancing distributes traffic among multiple backend servers, improving performance, preventing overload on a single server, and ensuring high availability.",
+    "tags": ["Load Balancing", "Nginx", "HAProxy", "Scalability"]
+  },
+  {
+    "question": "Which tool is commonly used as both a reverse proxy and a load balancer?",
+    "options": [
+      "HAProxy",
+      "Nginx",
+      "Redis",
+      "Docker"
+    ],
+    "answer": "Nginx",
+    "explanation": "Nginx is widely used as a reverse proxy and a load balancer, making it ideal for distributing traffic and serving static content efficiently.",
+    "tags": ["Nginx", "Reverse Proxy", "Load Balancer"]
+  },
+  {
+    "question": "What does the `upstream` directive in Nginx's configuration file define?",
+    "options": [
+      "The encryption algorithm for SSL termination",
+      "A group of backend servers to distribute traffic among",
+      "The maximum size of uploaded files",
+      "The location of static assets"
+    ],
+    "answer": "A group of backend servers to distribute traffic among",
+    "explanation": "The `upstream` directive in Nginx defines a group of backend servers that the load balancer will distribute traffic to using specified algorithms.",
+    "tags": ["Nginx", "Upstream", "Configuration"]
+  },
+  {
+    "question": "Which load balancing algorithm is used by default in HAProxy?",
+    "options": [
+      "Least connections",
+      "Round-robin",
+      "IP hash",
+      "Random"
+    ],
+    "answer": "Round-robin",
+    "explanation": "HAProxy uses the round-robin algorithm by default, which evenly distributes requests among backend servers in a sequential order.",
+    "tags": ["HAProxy", "Load Balancing", "Algorithms"]
+  },
+  {
+    "question": "What is the role of the `balance` directive in HAProxy's configuration?",
+    "options": [
+      "To specify the SSL certificate",
+      "To define the load balancing algorithm",
+      "To configure sticky sessions",
+      "To set the timeout for requests"
+    ],
+    "answer": "To define the load balancing algorithm",
+    "explanation": "The `balance` directive in HAProxy specifies the load balancing algorithm, such as round-robin, leastconn, or IP hash, to distribute traffic effectively.",
+    "tags": ["HAProxy", "Load Balancing", "Configuration"]
+  },
+  {
+    "question": "Which of the following is true about Nginx's load balancing capabilities?",
+    "options": [
+      "Nginx supports only Layer 4 (TCP) load balancing",
+      "Nginx can act as a reverse proxy and perform Layer 7 (HTTP) load balancing",
+      "Nginx eliminates the need for backend servers",
+      "Nginx focuses exclusively on database management"
+    ],
+    "answer": "Nginx can act as a reverse proxy and perform Layer 7 (HTTP) load balancing",
+    "explanation": "Nginx is capable of acting as a reverse proxy and performing Layer 7 (HTTP) load balancing, making it versatile for web-based applications.",
+    "tags": ["Nginx", "Layer 7", "Reverse Proxy"]
+  },
+  {
+    "question": "How do you restart Nginx after modifying its configuration?",
+    "options": [
+      "sudo systemctl restart nginx",
+      "sudo haproxy reload",
+      "sudo docker-compose up",
+      "sudo redis-server start"
+    ],
+    "answer": "sudo systemctl restart nginx",
+    "explanation": "After modifying Nginx's configuration, you must restart the service using `sudo systemctl restart nginx` to apply changes.",
+    "tags": ["Nginx", "Restart", "Configuration"]
+  },
+  {
+    "question": "Which layer does HAProxy support for load balancing?",
+    "options": [
+      "Only Layer 4 (TCP)",
+      "Both Layer 4 (TCP) and Layer 7 (HTTP)",
+      "Only Layer 7 (HTTP)",
+      "Neither Layer 4 nor Layer 7"
+    ],
+    "answer": "Both Layer 4 (TCP) and Layer 7 (HTTP)",
+    "explanation": "HAProxy supports both Layer 4 (TCP) and Layer 7 (HTTP) load balancing, providing flexibility for various types of traffic.",
+    "tags": ["HAProxy", "Layer Support", "Load Balancing"]
+  },
+  {
+    "question": "What is the main advantage of HAProxy over Nginx for load balancing?",
+    "options": [
+      "HAProxy provides better performance for high-speed, low-latency applications",
+      "HAProxy eliminates the need for SSL termination",
+      "HAProxy cannot handle HTTP traffic",
+      "HAProxy focuses exclusively on frontend development"
+    ],
+    "answer": "HAProxy provides better performance for high-speed, low-latency applications",
+    "explanation": "HAProxy is optimized for high-performance load balancing, making it ideal for handling high-speed, low-latency TCP/HTTP traffic in demanding environments.",
+    "tags": ["HAProxy", "Performance", "Comparison"]
+  },
+  {
+    "question": "Which of the following is true about sticky sessions in load balancing?",
+    "options": [
+      "Sticky sessions ensure that all requests from a user are routed to the same backend server",
+      "Sticky sessions increase the likelihood of server overload",
+      "Sticky sessions eliminate the need for load balancing",
+      "Sticky sessions focus exclusively on database connections"
+    ],
+    "answer": "Sticky sessions ensure that all requests from a user are routed to the same backend server",
+    "explanation": "Sticky sessions bind a user's requests to the same backend server, ensuring consistency in stateful applications like shopping carts or authentication systems.",
+    "tags": ["Load Balancing", "Sticky Sessions", "Backend Servers"]
+  },
+  {
+    "question": "What is the purpose of the `check` keyword in HAProxy's server definitions?",
+    "options": [
+      "To enable health checks for backend servers",
+      "To specify the encryption algorithm",
+      "To define the maximum number of requests per second",
+      "To configure SSL certificates"
+    ],
+    "answer": "To enable health checks for backend servers",
+    "explanation": "The `check` keyword in HAProxy enables health checks for backend servers, ensuring that only healthy servers receive traffic.",
+    "tags": ["HAProxy", "Health Checks", "Backend Servers"]
+  },
+  {
+    "question": "Which of the following best describes the difference between Nginx and HAProxy?",
+    "options": [
+      "Nginx supports only Layer 4 load balancing, while HAProxy supports both Layer 4 and Layer 7",
+      "Nginx can act as a reverse proxy, while HAProxy focuses exclusively on load balancing",
+      "HAProxy eliminates the need for SSL termination, while Nginx requires it",
+      "There is no difference; both serve the same purpose"
+    ],
+    "answer": "Nginx can act as a reverse proxy, while HAProxy focuses exclusively on load balancing",
+    "explanation": "Nginx is versatile, acting as both a reverse proxy and a load balancer, whereas HAProxy is specialized for high-performance load balancing at Layers 4 and 7.",
+    "tags": ["Nginx", "HAProxy", "Comparison"]
+  },
+  {
+    "question": "What is the role of the `proxy_pass` directive in Nginx's configuration?",
+    "options": [
+      "To define the load balancing algorithm",
+      "To specify the backend server group for traffic distribution",
+      "To encrypt communication between client and server",
+      "To manage database connections"
+    ],
+    "answer": "To specify the backend server group for traffic distribution",
+    "explanation": "The `proxy_pass` directive in Nginx specifies the backend server group (defined in `upstream`) where traffic should be forwarded for processing.",
+    "tags": ["Nginx", "proxy_pass", "Configuration"]
+  },
+  {
+    "question": "Which of the following is true about SSL termination in load balancing?",
+    "options": [
+      "SSL termination decrypts traffic at the load balancer, reducing CPU usage on backend servers",
+      "SSL termination increases the load on backend servers",
+      "SSL termination is not supported by Nginx or HAProxy",
+      "SSL termination replaces the need for firewalls"
+    ],
+    "answer": "SSL termination decrypts traffic at the load balancer, reducing CPU usage on backend servers",
+    "explanation": "SSL termination offloads decryption tasks to the load balancer, freeing up CPU resources on backend servers and simplifying security management.",
+    "tags": ["Load Balancing", "SSL Termination", "Security"]
+  },
+  {
+    "question": "What is the main benefit of using round-robin load balancing?",
+    "options": [
+      "It ensures that all backend servers receive an equal share of traffic",
+      "It prioritizes traffic based on server load",
+      "It binds users to specific backend servers",
+      "It eliminates the need for backend servers"
+    ],
+    "answer": "It ensures that all backend servers receive an equal share of traffic",
+    "explanation": "Round-robin load balancing distributes incoming traffic evenly among backend servers, ensuring balanced resource utilization.",
+    "tags": ["Load Balancing", "Round-Robin", "Algorithms"]
+  },
+  {
+    "question": "Which of the following is true about Nginx's `upstream` block?",
+    "options": [
+      "It defines a group of backend servers for load balancing",
+      "It configures SSL certificates for secure communication",
+      "It specifies the maximum request size",
+      "It manages database migrations"
+    ],
+    "answer": "It defines a group of backend servers for load balancing",
+    "explanation": "The `upstream` block in Nginx defines a group of backend servers, allowing the load balancer to distribute traffic among them.",
+    "tags": ["Nginx", "Upstream", "Load Balancing"]
+  },
+  {
+    "question": "How do you enable sticky sessions in HAProxy?",
+    "options": [
+      "Using the `balance` directive",
+      "Using the `cookie` directive",
+      "Using the `ssl` directive",
+      "Using the `upstream` block"
+    ],
+    "answer": "Using the `cookie` directive",
+    "explanation": "In HAProxy, sticky sessions are enabled using the `cookie` directive, which associates requests with specific backend servers via cookies.",
+    "tags": ["HAProxy", "Sticky Sessions", "Cookies"]
+  },
+  {
+    "question": "Which of the following is a key feature of HAProxy?",
+    "options": [
+      "Built-in support for serving static files",
+      "High-performance load balancing for TCP and HTTP traffic",
+      "Automatic generation of API documentation",
+      "Focus on frontend UI development"
+    ],
+    "answer": "High-performance load balancing for TCP and HTTP traffic",
+    "explanation": "HAProxy is renowned for its high-performance load balancing capabilities, supporting both TCP (Layer 4) and HTTP (Layer 7) traffic efficiently.",
+    "tags": ["HAProxy", "Performance", "Features"]
+  },
+  {
+    "question": "What is the purpose of health checks in load balancing?",
+    "options": [
+      "To encrypt communication between client and server",
+      "To monitor the status of backend servers and avoid sending traffic to unhealthy ones",
+      "To increase the size of API responses",
+      "To manage database connections"
+    ],
+    "answer": "To monitor the status of backend servers and avoid sending traffic to unhealthy ones",
+    "explanation": "Health checks ensure that only healthy backend servers receive traffic, improving reliability and preventing downtime due to failed servers.",
+    "tags": ["Load Balancing", "Health Checks", "Backend Servers"]
+  },
+  {
+    "question": "Which command is used to reload HAProxy's configuration without downtime?",
+    "options": [
+      "sudo systemctl restart haproxy",
+      "sudo systemctl reload haproxy",
+      "sudo nginx -s reload",
+      "sudo docker-compose up"
+    ],
+    "answer": "sudo systemctl reload haproxy",
+    "explanation": "To reload HAProxy's configuration without stopping the service, use `sudo systemctl reload haproxy`, ensuring seamless updates during production.",
+    "tags": ["HAProxy", "Reload", "Configuration"]
+  },
+  {
+    "question": "Which of the following is true about Layer 7 (HTTP) load balancing?",
+    "options": [
+      "It operates at the transport layer and balances TCP traffic",
+      "It inspects HTTP headers and content to make routing decisions",
+      "It eliminates the need for SSL termination",
+      "It focuses exclusively on database connections"
+    ],
+    "answer": "It inspects HTTP headers and content to make routing decisions",
+    "explanation": "Layer 7 (HTTP) load balancing examines HTTP headers and content to route traffic intelligently, enabling features like URL-based routing and SSL termination.",
+    "tags": ["Load Balancing", "Layer 7", "HTTP"]
+  },
+  {
+    "question": "What is the main disadvantage of not using load balancing in high-traffic applications?",
+    "options": [
+      "Increased risk of server overload and downtime",
+      "Improved performance due to reduced complexity",
+      "Elimination of the need for backend servers",
+      "Simplified configuration for SSL certificates"
+    ],
+    "answer": "Increased risk of server overload and downtime",
+    "explanation": "Without load balancing, high-traffic applications may overwhelm a single server, leading to overload and potential downtime.",
+    "tags": ["Load Balancing", "Scalability", "High Traffic"]
+  },
+  {
+    "question": "Which load balancing algorithm is suitable for applications where each request has similar resource requirements?",
+    "options": [
+      "Round-robin",
+      "Least connections",
+      "IP hash",
+      "Random"
+    ],
+    "answer": "Round-robin",
+    "explanation": "Round-robin is ideal for applications where each request consumes similar resources, as it evenly distributes traffic among backend servers.",
+    "tags": ["Load Balancing", "Algorithms", "Round-Robin"]
+  },
+  {
+    "question": "What is the role of the `listen` directive in Nginx's configuration?",
+    "options": [
+      "To specify the port where Nginx listens for incoming traffic",
+      "To define the encryption algorithm for SSL termination",
+      "To configure sticky sessions",
+      "To manage database connections"
+    ],
+    "answer": "To specify the port where Nginx listens for incoming traffic",
+    "explanation": "The `listen` directive in Nginx specifies the port or address where the server listens for incoming traffic, such as `listen 80;` for HTTP traffic.",
+    "tags": ["Nginx", "Listen", "Configuration"]
+  },
+  {
+    "question": "Which of the following is true about Layer 4 (TCP) load balancing?",
+    "options": [
+      "It operates at the application layer and inspects HTTP content",
+      "It balances traffic at the transport layer without inspecting HTTP headers",
+      "It eliminates the need for backend servers",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It balances traffic at the transport layer without inspecting HTTP headers",
+    "explanation": "Layer 4 (TCP) load balancing operates at the transport layer, distributing traffic based on network-level information without inspecting HTTP headers or content.",
+    "tags": ["Load Balancing", "Layer 4", "TCP"]
+  },
+  {
+    "question": "What is the primary purpose of API compression?",
+    "options": [
+      "To encrypt data transmitted between client and server",
+      "To reduce payload size for faster responses",
+      "To increase database load",
+      "To manage user authentication"
+    ],
+    "answer": "To reduce payload size for faster responses",
+    "explanation": "API compression reduces the size of the response payload, leading to faster transmission times, especially beneficial on slow networks.",
+    "tags": ["API Optimization", "Compression", "Performance"]
+  },
+  {
+    "question": "Which middleware is commonly used to enable Gzip compression in Express.js?",
+    "options": [
+      "express-rate-limit",
+      "compression",
+      "mongoose",
+      "body-parser"
+    ],
+    "answer": "compression",
+    "explanation": "The `compression` middleware in Express.js enables Gzip compression, automatically compressing outgoing responses to reduce their size.",
+    "tags": ["Express.js", "Compression", "Middleware"]
+  },
+  {
+    "question": "What is the main advantage of using pagination in APIs?",
+    "options": [
+      "It increases the size of API responses",
+      "It prevents overloading databases with large queries",
+      "It eliminates the need for caching",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It prevents overloading databases with large queries",
+    "explanation": "Pagination divides large datasets into smaller chunks, preventing database overload and improving API response times by fetching only the required data.",
+    "tags": ["API Optimization", "Pagination", "Database Load"]
+  },
+  {
+    "question": "How do you calculate the number of pages needed for pagination?",
+    "options": [
+      "pages = totalItems / limit",
+      "pages = skip * limit",
+      "pages = page + limit",
+      "pages = Math.ceil(totalItems / limit)"
+    ],
+    "answer": "pages = Math.ceil(totalItems / limit)",
+    "explanation": "The total number of pages is calculated as `Math.ceil(totalItems / limit)`, ensuring all items are covered even if the last page contains fewer items than the limit.",
+    "tags": ["Pagination", "Calculation", "API Optimization"]
+  },
+  {
+    "question": "Which query parameters are typically used for implementing pagination in APIs?",
+    "options": [
+      "page & limit",
+      "sort & filter",
+      "compress & throttle",
+      "encrypt & decrypt"
+    ],
+    "answer": "page & limit",
+    "explanation": "Pagination in APIs is usually implemented using `page` (current page number) and `limit` (number of items per page) query parameters.",
+    "tags": ["API Optimization", "Pagination", "Query Parameters"]
+  },
+  {
+    "question": "What is the role of throttling in API optimization?",
+    "options": [
+      "To increase the speed of API responses",
+      "To control the rate of incoming requests and prevent abuse",
+      "To store session data securely",
+      "To replace traditional databases"
+    ],
+    "answer": "To control the rate of incoming requests and prevent abuse",
+    "explanation": "Throttling limits the number of requests a user can make within a specified time window, preventing abuse such as brute force attacks or DDoS.",
+    "tags": ["API Optimization", "Throttling", "Rate Limiting"]
+  },
+  {
+    "question": "Which library is commonly used for throttling in Express.js?",
+    "options": [
+      "compression",
+      "mongoose",
+      "express-rate-limit",
+      "passport"
+    ],
+    "answer": "express-rate-limit",
+    "explanation": "`express-rate-limit` is a middleware library that allows you to easily implement throttling in Express.js applications, controlling request rates.",
+    "tags": ["Express.js", "Throttling", "Middleware"]
+  },
+  {
+    "question": "What happens when a user exceeds the throttling limit defined by `express-rate-limit`?",
+    "options": [
+      "The server sends a 200 OK response",
+      "The server sends a 429 Too Many Requests error",
+      "The server restarts automatically",
+      "The server redirects the user to a login page"
+    ],
+    "answer": "The server sends a 429 Too Many Requests error",
+    "explanation": "When a user exceeds the throttling limit, the server responds with a 429 status code, indicating that too many requests have been made within the allowed time frame.",
+    "tags": ["Throttling", "Error Handling", "Rate Limiting"]
+  },
+  {
+    "question": "Which method in Mongoose is used to implement pagination?",
+    "options": [
+      "find().skip().limit()",
+      "findOneAndUpdate()",
+      "aggregate()",
+      "countDocuments()"
+    ],
+    "answer": "find().skip().limit()",
+    "explanation": "In Mongoose, pagination is implemented using `find().skip().limit()`, where `skip` determines the offset and `limit` defines the number of items per page.",
+    "tags": ["Mongoose", "Pagination", "MongoDB"]
+  },
+  {
+    "question": "What does the `windowMs` option in `express-rate-limit` define?",
+    "options": [
+      "The maximum number of requests allowed",
+      "The duration of the time window for throttling",
+      "The encryption algorithm used",
+      "The size of compressed responses"
+    ],
+    "answer": "The duration of the time window for throttling",
+    "explanation": "The `windowMs` option in `express-rate-limit` specifies the duration of the time window (in milliseconds) during which the request limit applies.",
+    "tags": ["Throttling", "express-rate-limit", "Configuration"]
+  },
+  {
+    "question": "Which HTTP header indicates that the response has been compressed?",
+    "options": [
+      "Content-Type",
+      "Cache-Control",
+      "Content-Encoding",
+      "Authorization"
+    ],
+    "answer": "Content-Encoding",
+    "explanation": "The `Content-Encoding` header indicates that the response has been compressed, often set to `gzip` when using compression middleware.",
+    "tags": ["Compression", "HTTP Headers", "Gzip"]
+  },
+  {
+    "question": "What is the purpose of the `max` option in `express-rate-limit`?",
+    "options": [
+      "To define the maximum size of compressed responses",
+      "To specify the maximum number of requests allowed per time window",
+      "To set the maximum cache expiration time",
+      "To increase the database connection limit"
+    ],
+    "answer": "To specify the maximum number of requests allowed per time window",
+    "explanation": "The `max` option in `express-rate-limit` defines the maximum number of requests allowed per IP address within the specified time window.",
+    "tags": ["Throttling", "express-rate-limit", "Configuration"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between compression and pagination?",
+    "options": [
+      "Compression and pagination both aim to reduce database load",
+      "Compression reduces payload size, while pagination handles large datasets efficiently",
+      "There is no relationship between compression and pagination",
+      "Pagination replaces the need for compression"
+    ],
+    "answer": "Compression reduces payload size, while pagination handles large datasets efficiently",
+    "explanation": "Compression focuses on reducing the size of API responses, while pagination ensures efficient handling of large datasets by dividing them into manageable chunks.",
+    "tags": ["API Optimization", "Compression", "Pagination", "Comparison"]
+  },
+  {
+    "question": "What is the benefit of combining compression, pagination, and throttling in API design?",
+    "options": [
+      "It increases the complexity of the API unnecessarily",
+      "It enhances performance, scalability, and security simultaneously",
+      "It eliminates the need for a database",
+      "It simplifies frontend development"
+    ],
+    "answer": "It enhances performance, scalability, and security simultaneously",
+    "explanation": "Combining compression, pagination, and throttling optimizes API performance, improves scalability, and ensures security by controlling resource usage and preventing abuse.",
+    "tags": ["API Optimization", "Compression", "Pagination", "Throttling"]
+  },
+  {
+    "question": "Which of the following is true about API compression?",
+    "options": [
+      "It increases the size of API responses",
+      "It reduces the bandwidth required to transmit responses",
+      "It requires manual configuration for every response",
+      "It eliminates the need for pagination"
+    ],
+    "answer": "It reduces the bandwidth required to transmit responses",
+    "explanation": "API compression reduces the size of responses, minimizing bandwidth usage and speeding up data transfer, especially over slow networks.",
+    "tags": ["Compression", "Bandwidth", "Performance"]
+  },
+  {
+    "question": "What is the role of the `skip` parameter in MongoDB pagination?",
+    "options": [
+      "To define the number of items per page",
+      "To specify the maximum number of requests allowed",
+      "To skip a certain number of items before returning results",
+      "To encrypt sensitive data"
+    ],
+    "answer": "To skip a certain number of items before returning results",
+    "explanation": "The `skip` parameter in MongoDB skips a specified number of items in the dataset, allowing you to fetch results from a specific offset for pagination.",
+    "tags": ["Pagination", "MongoDB", "Mongoose"]
+  },
+  {
+    "question": "Which of the following is a common use case for throttling?",
+    "options": [
+      "Storing passwords securely",
+      "Preventing brute force attacks and DDoS",
+      "Encrypting communication between services",
+      "Managing file uploads"
+    ],
+    "answer": "Preventing brute force attacks and DDoS",
+    "explanation": "Throttling is widely used to prevent abuse, such as brute force attacks or DDoS, by limiting the number of requests a user can make within a time window.",
+    "tags": ["Throttling", "Security", "Rate Limiting"]
+  },
+  {
+    "question": "What is the primary goal of API optimization?",
+    "options": [
+      "To increase the complexity of API logic",
+      "To enhance performance, scalability, and efficiency",
+      "To eliminate the need for databases",
+      "To focus solely on frontend development"
+    ],
+    "answer": "To enhance performance, scalability, and efficiency",
+    "explanation": "API optimization aims to improve performance, ensure scalability, and increase efficiency by employing techniques like compression, pagination, and throttling.",
+    "tags": ["API Optimization", "Performance", "Scalability"]
+  },
+  {
+    "question": "Which of the following is true about paginated API responses?",
+    "options": [
+      "They return all data at once, increasing response time",
+      "They divide data into smaller chunks, improving response efficiency",
+      "They require Redis for implementation",
+      "They eliminate the need for throttling"
+    ],
+    "answer": "They divide data into smaller chunks, improving response efficiency",
+    "explanation": "Paginated API responses break down large datasets into smaller chunks, making it easier to handle and reducing the load on both the server and database.",
+    "tags": ["Pagination", "API Optimization", "Efficiency"]
+  },
+  {
+    "question": "What is the default time window for throttling in `express-rate-limit`?",
+    "options": [
+      "1 minute",
+      "5 minutes",
+      "1 hour",
+      "No default; must be explicitly defined"
+    ],
+    "answer": "No default; must be explicitly defined",
+    "explanation": "`express-rate-limit` does not have a default time window; the `windowMs` option must be explicitly defined based on your requirements.",
+    "tags": ["Throttling", "express-rate-limit", "Configuration"]
+  },
+  {
+    "question": "Which of the following is a benefit of using throttling in APIs?",
+    "options": [
+      "It allows unlimited requests from users",
+      "It prevents server overload by controlling request frequency",
+      "It increases the size of API responses",
+      "It simplifies database queries"
+    ],
+    "answer": "It prevents server overload by controlling request frequency",
+    "explanation": "Throttling helps protect servers from overload by controlling the frequency and volume of incoming requests, ensuring fair usage and preventing abuse.",
+    "tags": ["Throttling", "API Optimization", "Server Protection"]
+  },
+  {
+    "question": "What is the purpose of the `message` option in `express-rate-limit`?",
+    "options": [
+      "To define the encryption algorithm",
+      "To specify the custom error message when the rate limit is exceeded",
+      "To configure the size of compressed responses",
+      "To manage database connections"
+    ],
+    "answer": "To specify the custom error message when the rate limit is exceeded",
+    "explanation": "The `message` option in `express-rate-limit` allows you to define a custom error message that is returned when a user exceeds the rate limit.",
+    "tags": ["Throttling", "express-rate-limit", "Error Handling"]
+  },
+  {
+    "question": "Which of the following is true about API compression?",
+    "options": [
+      "It works only with text-based data formats",
+      "It significantly reduces response sizes, improving performance",
+      "It replaces the need for pagination",
+      "It encrypts sensitive data"
+    ],
+    "answer": "It significantly reduces response sizes, improving performance",
+    "explanation": "API compression, such as Gzip, reduces response sizes by compressing data, leading to faster transmission and improved performance.",
+    "tags": ["Compression", "Performance", "Gzip"]
+  },
+  {
+    "question": "What is the role of the `limit` parameter in API pagination?",
+    "options": [
+      "To define the maximum size of compressed responses",
+      "To specify the number of items returned per page",
+      "To encrypt communication between client and server",
+      "To manage database migrations"
+    ],
+    "answer": "To specify the number of items returned per page",
+    "explanation": "The `limit` parameter in API pagination defines how many items should be returned per page, giving clients control over the amount of data fetched.",
+    "tags": ["Pagination", "API Optimization", "Query Parameters"]
+  },
+  {
+    "question": "Which of the following is a key difference between compression and throttling?",
+    "options": [
+      "Compression focuses on reducing response size, while throttling controls request frequency",
+      "Compression increases response size, while throttling decreases it",
+      "There is no difference; both serve the same purpose",
+      "Throttling replaces the need for compression"
+    ],
+    "answer": "Compression focuses on reducing response size, while throttling controls request frequency",
+    "explanation": "Compression reduces the size of API responses, while throttling limits the number of requests a user can make within a time window, addressing different aspects of API optimization.",
+    "tags": ["Compression", "Throttling", "Comparison"]
+  },
+  {
+    "question": "What is the purpose of the `total` field in paginated API responses?",
+    "options": [
+      "To indicate the total number of items in the dataset",
+      "To define the maximum size of compressed responses",
+      "To specify the encryption algorithm",
+      "To manage database connections"
+    ],
+    "answer": "To indicate the total number of items in the dataset",
+    "explanation": "The `total` field in paginated API responses provides the total count of items in the dataset, helping clients understand the full scope of available data.",
+    "tags": ["Pagination", "API Optimization", "Response Fields"]
+  },
+  {
     "question": "What is the primary purpose of rate limiting in web applications?",
     "options": [
       "To encrypt communication between client and server",
