@@ -1,5 +1,269 @@
 [
   {
+    "question": "What is scalability in the context of system design?",
+    "options": [
+      "The ability of a system to handle increased load efficiently",
+      "The process of encrypting communication between services",
+      "The practice of writing monolithic applications",
+      "The focus on frontend development"
+    ],
+    "answer": "The ability of a system to handle increased load efficiently",
+    "explanation": "Scalability refers to a system's ability to handle an increasing amount of work by adding resources, ensuring efficient performance under higher loads.",
+    "tags": ["Scalability", "System Design", "Definition"]
+  },
+  {
+    "question": "Which architecture choice is best suited for startups or MVPs?",
+    "options": [
+      "Monolithic Architecture",
+      "Microservices Architecture",
+      "Serverless Architecture",
+      "Event-Driven Architecture"
+    ],
+    "answer": "Monolithic Architecture",
+    "explanation": "Monolithic architecture is ideal for startups or MVPs due to its simplicity, faster development, and easier deployment compared to microservices.",
+    "tags": ["Monolithic", "MVP", "Startups"]
+  },
+  {
+    "question": "What is the main disadvantage of Monolithic Architecture?",
+    "options": [
+      "Easier debugging and monitoring",
+      "Scalability bottlenecks as the system grows",
+      "Faster deployment times",
+      "Simplified database management"
+    ],
+    "answer": "Scalability bottlenecks as the system grows",
+    "explanation": "Monolithic systems can face scalability challenges when the application grows, as all components are tightly coupled and must scale together.",
+    "tags": ["Monolithic", "Disadvantages", "Scalability"]
+  },
+  {
+    "question": "Which of the following is true about Microservices Architecture?",
+    "options": [
+      "It combines all components into a single unified application",
+      "It divides the system into independent services that communicate via APIs",
+      "It eliminates the need for databases",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It divides the system into independent services that communicate via APIs",
+    "explanation": "Microservices architecture splits the system into smaller, independent services that communicate with each other through APIs, enabling scalable and resilient systems.",
+    "tags": ["Microservices", "Architecture", "Definition"]
+  },
+  {
+    "question": "What is the role of an API Gateway in Microservices Architecture?",
+    "options": [
+      "To store data persistently across services",
+      "To manage encryption and security certificates",
+      "To act as a central entry point for handling client requests",
+      "To replace traditional databases"
+    ],
+    "answer": "To act as a central entry point for handling client requests",
+    "explanation": "An API Gateway serves as the central entry point for client requests, routing them to the appropriate microservices and simplifying communication.",
+    "tags": ["API Gateway", "Microservices", "Routing"]
+  },
+  {
+    "question": "Which of the following tools is commonly used as an API Gateway in Microservices?",
+    "options": [
+      "Kong",
+      "MongoDB",
+      "Redis",
+      "Docker"
+    ],
+    "answer": "Kong",
+    "explanation": "Kong is a popular API Gateway tool used in microservices to route requests, enforce rate limiting, and manage authentication.",
+    "tags": ["API Gateway", "Kong", "Tools"]
+  },
+  {
+    "question": "What is the main advantage of using separate databases per service in Microservices?",
+    "options": [
+      "It simplifies the monolithic application structure",
+      "It allows independent scaling and reduces coupling between services",
+      "It increases the complexity of the system unnecessarily",
+      "It replaces the need for API Gateways"
+    ],
+    "answer": "It allows independent scaling and reduces coupling between services",
+    "explanation": "Using separate databases per service in microservices reduces coupling and enables each service to scale independently based on its specific needs.",
+    "tags": ["Microservices", "Database Decoupling", "Scalability"]
+  },
+  {
+    "question": "Which of the following is a challenge when transitioning from Monolith to Microservices?",
+    "options": [
+      "Simplified debugging and monitoring",
+      "Complex communication and coordination between services",
+      "Reduced development time",
+      "Elimination of the need for CI/CD pipelines"
+    ],
+    "answer": "Complex communication and coordination between services",
+    "explanation": "Transitioning to microservices introduces complexities in communication, coordination, and synchronization between independent services, requiring tools like Kafka or RabbitMQ.",
+    "tags": ["Microservices", "Transition", "Challenges"]
+  },
+  {
+    "question": "What is the purpose of asynchronous communication in Microservices?",
+    "options": [
+      "To ensure synchronous execution of tasks",
+      "To enable non-blocking communication between services",
+      "To replace traditional HTTP APIs",
+      "To simplify frontend state management"
+    ],
+    "answer": "To enable non-blocking communication between services",
+    "explanation": "Asynchronous communication in microservices allows non-blocking interactions, improving performance and reliability through tools like Kafka or RabbitMQ.",
+    "tags": ["Microservices", "Asynchronous Communication", "Performance"]
+  },
+  {
+    "question": "Which messaging system is commonly used for event-driven interactions in Microservices?",
+    "options": [
+      "Kafka",
+      "Express.js",
+      "MySQL",
+      "Nginx"
+    ],
+    "answer": "Kafka",
+    "explanation": "Kafka is a widely used messaging system for event-driven interactions in microservices, enabling reliable and scalable communication between services.",
+    "tags": ["Microservices", "Kafka", "Messaging System"]
+  },
+  {
+    "question": "What is the primary benefit of deploying microservices independently?",
+    "options": [
+      "Increased complexity in deployment",
+      "Ability to update and scale individual services without affecting others",
+      "Centralized control over all services",
+      "Focus exclusively on frontend development"
+    ],
+    "answer": "Ability to update and scale individual services without affecting others",
+    "explanation": "Independent deployment of microservices allows teams to update, deploy, and scale specific services without impacting the entire system, enhancing agility and maintainability.",
+    "tags": ["Microservices", "Deployment", "Independence"]
+  },
+  {
+    "question": "Which of the following is true about Monolithic Architecture?",
+    "options": [
+      "It is designed for large-scale, distributed systems",
+      "It is easier to develop and deploy initially but harder to scale",
+      "It eliminates the need for APIs",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It is easier to develop and deploy initially but harder to scale",
+    "explanation": "Monolithic architecture is simpler to develop and deploy at the start but becomes challenging to scale and maintain as the application grows.",
+    "tags": ["Monolithic", "Development", "Scalability"]
+  },
+  {
+    "question": "What is the role of Service Discovery in Microservices Architecture?",
+    "options": [
+      "To encrypt communication between services",
+      "To help services locate and communicate with each other dynamically",
+      "To replace the need for databases",
+      "To simplify frontend development"
+    ],
+    "answer": "To help services locate and communicate with each other dynamically",
+    "explanation": "Service Discovery ensures that services in a microservices architecture can find and communicate with each other dynamically, especially in cloud environments.",
+    "tags": ["Microservices", "Service Discovery", "Communication"]
+  },
+  {
+    "question": "Which of the following is a key characteristic of Microservices?",
+    "options": [
+      "Tight coupling between components",
+      "Independent deployment and scaling of services",
+      "Single unified codebase",
+      "Focus on static website hosting"
+    ],
+    "answer": "Independent deployment and scaling of services",
+    "explanation": "Microservices are characterized by their independence, allowing each service to be deployed, scaled, and maintained separately from others.",
+    "tags": ["Microservices", "Characteristics", "Independence"]
+  },
+  {
+    "question": "Which tool is commonly used for orchestrating microservices containers?",
+    "options": [
+      "Docker",
+      "Kubernetes",
+      "Redis",
+      "MongoDB"
+    ],
+    "answer": "Kubernetes",
+    "explanation": "Kubernetes is a powerful container orchestration tool used to manage and scale microservices containers in production environments.",
+    "tags": ["Microservices", "Kubernetes", "Container Orchestration"]
+  },
+  {
+    "question": "What is the main advantage of using an Event-Driven approach in Microservices?",
+    "options": [
+      "It ensures synchronous execution of tasks",
+      "It simplifies database management",
+      "It enables decoupled, scalable communication between services",
+      "It replaces the need for APIs"
+    ],
+    "answer": "It enables decoupled, scalable communication between services",
+    "explanation": "An Event-Driven approach in microservices decouples services, allowing them to communicate asynchronously and independently, improving scalability and fault tolerance.",
+    "tags": ["Microservices", "Event-Driven", "Decoupling"]
+  },
+  {
+    "question": "Which of the following is true about Monolithic Architecture?",
+    "options": [
+      "It supports independent scaling of different components",
+      "It is easier to debug and monitor due to its unified structure",
+      "It eliminates the need for APIs",
+      "It focuses exclusively on IoT devices"
+    ],
+    "answer": "It is easier to debug and monitor due to its unified structure",
+    "explanation": "Monolithic architecture is easier to debug and monitor because all components are part of a single application, reducing complexity in early stages.",
+    "tags": ["Monolithic", "Debugging", "Monitoring"]
+  },
+  {
+    "question": "What is the role of Docker in designing scalable systems?",
+    "options": [
+      "To manage database migrations",
+      "To containerize applications for consistent deployment",
+      "To replace the need for microservices",
+      "To simplify frontend development"
+    ],
+    "answer": "To containerize applications for consistent deployment",
+    "explanation": "Docker containerizes applications, ensuring they run consistently across different environments and simplifying deployment processes.",
+    "tags": ["Docker", "Containerization", "Deployment"]
+  },
+  {
+    "question": "Which of the following is a common use case for Microservices Architecture?",
+    "options": [
+      "Small-scale applications with minimal traffic",
+      "Large-scale, high-traffic enterprise applications",
+      "Static website hosting",
+      "Replacing traditional firewalls"
+    ],
+    "answer": "Large-scale, high-traffic enterprise applications",
+    "explanation": "Microservices architecture is well-suited for large-scale, high-traffic applications where independent scaling and resilience are critical.",
+    "tags": ["Microservices", "Use Cases", "Enterprise Applications"]
+  },
+  {
+    "question": "What is the purpose of Database Decoupling in Microservices?",
+    "options": [
+      "To increase the complexity of the system",
+      "To allow each service to have its own database, reducing dependencies",
+      "To replace the need for API Gateways",
+      "To simplify frontend state management"
+    ],
+    "answer": "To allow each service to have its own database, reducing dependencies",
+    "explanation": "Database decoupling in microservices ensures that each service has its own database, reducing dependencies and enabling independent scaling and evolution.",
+    "tags": ["Microservices", "Database Decoupling", "Dependencies"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between Monolithic and Microservices Architectures?",
+    "options": [
+      "Monolithic architecture evolves into microservices as the system grows",
+      "There is no relationship; both serve different purposes",
+      "Microservices eliminate the need for monolithic applications entirely",
+      "Monolithic architecture focuses exclusively on frontend development"
+    ],
+    "answer": "Monolithic architecture evolves into microservices as the system grows",
+    "explanation": "Many systems start as monoliths and transition to microservices as they grow, addressing scalability and maintainability challenges.",
+    "tags": ["Monolithic", "Microservices", "Comparison"]
+  },
+  {
+    "question": "What is the role of CI/CD Pipelines in designing scalable systems?",
+    "options": [
+      "To manually test and deploy applications",
+      "To automate testing, building, and deployment processes",
+      "To replace traditional databases",
+      "To simplify frontend development"
+    ],
+    "answer": "To automate testing, building, and deployment processes",
+    "explanation": "CI/CD pipelines automate testing, building, and deployment, ensuring faster and more reliable delivery of scalable systems.",
+    "tags": ["CI/CD", "Automation", "Scalability"]
+  },
+  {
     "question": "What is the primary purpose of the Publish-Subscribe (Pub/Sub) pattern?",
     "options": [
       "To send messages directly between two services",
