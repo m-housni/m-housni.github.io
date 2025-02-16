@@ -1,5 +1,545 @@
 [
   {
+    "question": "What is database sharding primarily used for?",
+    "options": [
+      "To encrypt communication between clients and servers",
+      "To split large datasets across multiple databases for horizontal scaling",
+      "To create multiple copies of a database for fault tolerance",
+      "To simplify database management"
+    ],
+    "answer": "To split large datasets across multiple databases for horizontal scaling",
+    "explanation": "Database sharding is a horizontal scaling technique that divides large datasets into smaller, more manageable pieces called shards, improving performance and scalability.",
+    "tags": ["Database Sharding", "Horizontal Scaling", "Performance"]
+  },
+  {
+    "question": "Which of the following best describes the challenge of implementing sharding?",
+    "options": [
+      "Sharding reduces query performance significantly",
+      "Cross-shard queries require additional handling and complexity",
+      "Sharding eliminates the need for replication",
+      "Sharding simplifies data routing logic"
+    ],
+    "answer": "Cross-shard queries require additional handling and complexity",
+    "explanation": "One of the main challenges of sharding is managing cross-shard queries, as they require additional logic to combine results from multiple shards.",
+    "tags": ["Database Sharding", "Challenges", "Cross-Shard Queries"]
+  },
+  {
+    "question": "What is the purpose of database replication?",
+    "options": [
+      "To reduce the size of individual databases",
+      "To create multiple copies of a database for high availability and read scaling",
+      "To replace traditional APIs with event-driven architectures",
+      "To focus exclusively on frontend development"
+    ],
+    "answer": "To create multiple copies of a database for high availability and read scaling",
+    "explanation": "Database replication creates copies of a database to improve fault tolerance, high availability, and read performance by distributing read loads across replicas.",
+    "tags": ["Database Replication", "Definition", "High Availability"]
+  },
+  {
+    "question": "Which type of replication involves one primary database handling writes while replicas handle reads?",
+    "options": [
+      "Master-Slave Replication",
+      "Master-Master Replication",
+      "Log-Based Replication",
+      "Shard-Based Replication"
+    ],
+    "answer": "Master-Slave Replication",
+    "explanation": "In Master-Slave Replication, the master database handles all write operations, while slave replicas handle read operations, improving read performance and fault tolerance.",
+    "tags": ["Database Replication", "Master-Slave", "Read Scaling"]
+  },
+  {
+    "question": "What is the main advantage of using Master-Master Replication over Master-Slave Replication?",
+    "options": [
+      "Improved write scalability due to multiple writable masters",
+      "Simplified failover handling",
+      "Reduced complexity in application logic",
+      "Elimination of the need for sharding"
+    ],
+    "answer": "Improved write scalability due to multiple writable masters",
+    "explanation": "Master-Master Replication allows multiple databases to handle both read and write operations, improving write scalability and supporting multi-region setups.",
+    "tags": ["Database Replication", "Master-Master", "Write Scalability"]
+  },
+  {
+    "question": "Which replication strategy records changes in logs and sends them to replicas?",
+    "options": [
+      "Master-Slave Replication",
+      "Master-Master Replication",
+      "Log-Based Replication",
+      "Shard-Based Replication"
+    ],
+    "answer": "Log-Based Replication",
+    "explanation": "Log-Based Replication records changes in logs (e.g., binlogs in MySQL) and replicates these changes to replicas, ensuring consistency across copies.",
+    "tags": ["Database Replication", "Log-Based", "Consistency"]
+  },
+  {
+    "question": "What is the role of `getUserShard(userId)` in the sharding example?",
+    "options": [
+      "It determines which shard to query based on user ID",
+      "It encrypts sensitive data",
+      "It manages database migrations",
+      "It replaces the need for replication"
+    ],
+    "answer": "It determines which shard to query based on user ID",
+    "explanation": "The `getUserShard(userId)` function determines the appropriate shard to query based on the user ID, enabling efficient data retrieval in a sharded database architecture.",
+    "tags": ["Database Sharding", "Routing Logic", "Node.js"]
+  },
+  {
+    "question": "Which of the following is a benefit of combining sharding and replication?",
+    "options": [
+      "It simplifies the system architecture significantly",
+      "It improves both scalability and high availability",
+      "It eliminates the need for load balancers",
+      "It focuses exclusively on frontend state management"
+    ],
+    "answer": "It improves both scalability and high availability",
+    "explanation": "Combining sharding and replication improves scalability by distributing data across shards and ensures high availability by creating redundant copies of each shard's data.",
+    "tags": ["Database Sharding", "Replication", "Scalability", "High Availability"]
+  },
+  {
+    "question": "What is the main challenge of using Master-Slave Replication?",
+    "options": [
+      "It increases write performance exponentially",
+      "It introduces data lag due to replication delays",
+      "It eliminates the need for sharding",
+      "It simplifies failover mechanisms"
+    ],
+    "answer": "It introduces data lag due to replication delays",
+    "explanation": "A common challenge in Master-Slave Replication is data lag, where there may be a delay in propagating changes from the master to the slaves.",
+    "tags": ["Database Replication", "Master-Slave", "Data Lag"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between sharding and replication?",
+    "options": [
+      "Sharding and replication are mutually exclusive techniques",
+      "Sharding splits data horizontally, while replication creates redundant copies for availability",
+      "Replication eliminates the need for sharding",
+      "Sharding replaces traditional databases entirely"
+    ],
+    "answer": "Sharding splits data horizontally, while replication creates redundant copies for availability",
+    "explanation": "Sharding distributes data horizontally across multiple databases, while replication creates redundant copies of data to ensure high availability and fault tolerance.",
+    "tags": ["Database Sharding", "Replication", "Comparison"]
+  },
+  {
+    "question": "What is the role of read replicas in a database system?",
+    "options": [
+      "To handle all write operations",
+      "To offload read operations from the master database",
+      "To store static assets like images and files",
+      "To replace the need for caching strategies"
+    ],
+    "answer": "To offload read operations from the master database",
+    "explanation": "Read replicas are used to offload read operations from the master database, improving read performance and reducing the load on the primary database.",
+    "tags": ["Database Replication", "Read Replicas", "Performance"]
+  },
+  {
+    "question": "Which of the following is true about data rebalancing in sharded databases?",
+    "options": [
+      "Data rebalancing is unnecessary in sharded databases",
+      "Data rebalancing is required when shards become unbalanced due to uneven data distribution",
+      "Data rebalancing eliminates the need for replication",
+      "Data rebalancing simplifies database encryption"
+    ],
+    "answer": "Data rebalancing is required when shards become unbalanced due to uneven data distribution",
+    "explanation": "Data rebalancing is necessary in sharded databases to redistribute data evenly across shards when the distribution becomes unbalanced.",
+    "tags": ["Database Sharding", "Data Rebalancing", "Scalability"]
+  },
+  {
+    "question": "What is the purpose of using Knex.js in the sharding example?",
+    "options": [
+      "To manage database connections and execute queries",
+      "To encrypt communication between services",
+      "To replace traditional REST APIs",
+      "To simplify frontend development"
+    ],
+    "answer": "To manage database connections and execute queries",
+    "explanation": "Knex.js is used to manage database connections and execute queries in the sharding example, allowing dynamic routing to different shards based on the user ID.",
+    "tags": ["Knex.js", "Database Sharding", "Query Execution"]
+  },
+  {
+    "question": "Which of the following is a key difference between sharding and replication?",
+    "options": [
+      "Sharding creates multiple copies of data, while replication splits data horizontally",
+      "Sharding splits data horizontally across databases, while replication creates redundant copies for availability",
+      "There is no difference; both serve the same purpose",
+      "Replication focuses exclusively on frontend development"
+    ],
+    "answer": "Sharding splits data horizontally across databases, while replication creates redundant copies for availability",
+    "explanation": "Sharding distributes data horizontally across multiple databases to improve scalability, while replication creates redundant copies of data to enhance availability and fault tolerance.",
+    "tags": ["Database Sharding", "Replication", "Comparison"]
+  },
+  {
+    "question": "What is the main disadvantage of Master-Slave Replication?",
+    "options": [
+      "It increases write performance unnecessarily",
+      "It introduces complexity in failover mechanisms",
+      "It eliminates the need for load balancers",
+      "It focuses exclusively on IoT devices"
+    ],
+    "answer": "It introduces complexity in failover mechanisms",
+    "explanation": "Master-Slave Replication requires complex failover mechanisms to switch to a replica in case the master fails, adding operational overhead.",
+    "tags": ["Database Replication", "Master-Slave", "Failover"]
+  },
+  {
+    "question": "Which of the following is true about Log-Based Replication?",
+    "options": [
+      "It records changes in logs and replicates them to replicas",
+      "It eliminates the need for a master database",
+      "It focuses exclusively on frontend state management",
+      "It simplifies database encryption"
+    ],
+    "answer": "It records changes in logs and replicates them to replicas",
+    "explanation": "Log-Based Replication records changes in logs (e.g., binlogs in MySQL or WAL in PostgreSQL) and replicates these changes to replicas, ensuring consistency across copies.",
+    "tags": ["Database Replication", "Log-Based", "Consistency"]
+  },
+  {
+    "question": "What is the role of the `createUser(name)` function in the replication example?",
+    "options": [
+      "To fetch data from read replicas",
+      "To insert data into the master database",
+      "To manage database migrations",
+      "To replace traditional APIs"
+    ],
+    "answer": "To insert data into the master database",
+    "explanation": "The `createUser(name)` function inserts data into the master database, which is then replicated to read replicas for improved availability and performance.",
+    "tags": ["Database Replication", "Master-Slave", "Write Operations"]
+  },
+  {
+    "question": "Which of the following is a benefit of Master-Master Replication?",
+    "options": [
+      "It simplifies data routing logic",
+      "It improves write scalability by allowing multiple writable masters",
+      "It eliminates the need for sharding",
+      "It focuses exclusively on frontend hosting"
+    ],
+    "answer": "It improves write scalability by allowing multiple writable masters",
+    "explanation": "Master-Master Replication allows multiple writable masters, improving write scalability and supporting multi-region setups for global applications.",
+    "tags": ["Database Replication", "Master-Master", "Write Scalability"]
+  },
+  {
+    "question": "What is the main challenge of implementing Master-Master Replication?",
+    "options": [
+      "It reduces write performance significantly",
+      "It introduces conflict resolution issues when multiple masters receive simultaneous writes",
+      "It eliminates the need for read replicas",
+      "It simplifies database encryption"
+    ],
+    "answer": "It introduces conflict resolution issues when multiple masters receive simultaneous writes",
+    "explanation": "A key challenge in Master-Master Replication is resolving conflicts that arise when multiple masters receive simultaneous write operations.",
+    "tags": ["Database Replication", "Master-Master", "Conflict Resolution"]
+  },
+  {
+    "question": "Which of the following is true about database sharding?",
+    "options": [
+      "Sharding reduces the need for replication",
+      "Sharding improves query performance by distributing data across multiple databases",
+      "Sharding eliminates the need for load balancers",
+      "Sharding focuses exclusively on frontend development"
+    ],
+    "answer": "Sharding improves query performance by distributing data across multiple databases",
+    "explanation": "Database sharding enhances query performance by splitting data horizontally across multiple databases, reducing the load on any single database instance.",
+    "tags": ["Database Sharding", "Performance", "Horizontal Scaling"]
+  },
+  {
+    "question": "What is a Distributed System?",
+    "options": [
+      "A system where all components run on a single server",
+      "A system consisting of multiple independent nodes working together as a single system",
+      "A system that focuses exclusively on frontend development",
+      "A system that eliminates the need for databases"
+    ],
+    "answer": "A system consisting of multiple independent nodes working together as a single system",
+    "explanation": "A Distributed System comprises multiple independent nodes (servers) that collaborate to function as a unified system, improving scalability, availability, and fault tolerance.",
+    "tags": ["Distributed Systems", "Definition", "Scalability"]
+  },
+  {
+    "question": "Which of the following is an advantage of Distributed Systems?",
+    "options": [
+      "Simplified codebase",
+      "High availability and fault tolerance",
+      "Reduced performance due to network latency",
+      "Elimination of APIs"
+    ],
+    "answer": "High availability and fault tolerance",
+    "explanation": "Distributed Systems enhance high availability and fault tolerance by distributing workloads across multiple nodes, ensuring the system remains operational even if some nodes fail.",
+    "tags": ["Distributed Systems", "Advantages", "Fault Tolerance"]
+  },
+  {
+    "question": "What is the primary purpose of an API Gateway in a Distributed System?",
+    "options": [
+      "To store data persistently",
+      "To act as a central entry point for routing requests to microservices",
+      "To replace the need for Docker containers",
+      "To manage frontend state"
+    ],
+    "answer": "To act as a central entry point for routing requests to microservices",
+    "explanation": "An API Gateway serves as the central entry point in a Distributed System, routing client requests to the appropriate microservices and simplifying communication.",
+    "tags": ["API Gateway", "Distributed Systems", "Routing"]
+  },
+  {
+    "question": "What does CQRS stand for?",
+    "options": [
+      "Command Query Responsibility Segregation",
+      "Centralized Query Response System",
+      "Cloud Query Resource Service",
+      "Continuous Query Resolution Strategy"
+    ],
+    "answer": "Command Query Responsibility Segregation",
+    "explanation": "CQRS stands for Command Query Responsibility Segregation, a pattern that separates read and write operations into distinct models to improve scalability and performance.",
+    "tags": ["CQRS", "Definition", "Pattern"]
+  },
+  {
+    "question": "Which of the following best describes the benefits of using CQRS?",
+    "options": [
+      "Optimized read/write performance and separate scalability strategies",
+      "Increased complexity without any performance improvements",
+      "Focus exclusively on database management",
+      "Replacement of traditional APIs"
+    ],
+    "answer": "Optimized read/write performance and separate scalability strategies",
+    "explanation": "CQRS optimizes read and write performance by separating them into different models, allowing independent scaling strategies for each operation.",
+    "tags": ["CQRS", "Benefits", "Performance"]
+  },
+  {
+    "question": "What is the role of the Command Service in CQRS?",
+    "options": [
+      "To handle read operations and fetch data",
+      "To handle write operations (create/update/delete)",
+      "To store static assets",
+      "To replace the need for databases"
+    ],
+    "answer": "To handle write operations (create/update/delete)",
+    "explanation": "In CQRS, the Command Service handles write operations such as creating, updating, or deleting data, while the Query Service focuses on reading data.",
+    "tags": ["CQRS", "Command Service", "Write Operations"]
+  },
+  {
+    "question": "What is Event Sourcing?",
+    "options": [
+      "A system that stores only the current state of data",
+      "A technique that stores all events (actions) in an event log for state reconstruction",
+      "A protocol for encrypting communication between services",
+      "A tool for managing frontend state"
+    ],
+    "answer": "A technique that stores all events (actions) in an event log for state reconstruction",
+    "explanation": "Event Sourcing involves storing all events (actions) in an event log, enabling the reconstruction of past states and providing a complete history of changes.",
+    "tags": ["Event Sourcing", "Definition", "State Reconstruction"]
+  },
+  {
+    "question": "Which of the following is a benefit of using Event Sourcing?",
+    "options": [
+      "Full history tracking and easy audit logs",
+      "Elimination of APIs",
+      "Simplified database queries",
+      "Focus exclusively on frontend development"
+    ],
+    "answer": "Full history tracking and easy audit logs",
+    "explanation": "Event Sourcing provides full history tracking, making it easier to audit logs and debug issues by replaying events to reconstruct past states.",
+    "tags": ["Event Sourcing", "Benefits", "Audit Logs"]
+  },
+  {
+    "question": "What is the main challenge when implementing Event Sourcing?",
+    "options": [
+      "It simplifies state management too much",
+      "It requires event replay to reconstruct the current state",
+      "It eliminates the need for distributed systems",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It requires event replay to reconstruct the current state",
+    "explanation": "One of the challenges of Event Sourcing is that the current state must be reconstructed by replaying all events from the event log, which can be computationally expensive.",
+    "tags": ["Event Sourcing", "Challenges", "State Reconstruction"]
+  },
+  {
+    "question": "How do CQRS and Event Sourcing complement each other?",
+    "options": [
+      "CQRS handles reads, while Event Sourcing handles writes",
+      "Event Sourcing eliminates the need for CQRS",
+      "CQRS replaces the need for databases in Event Sourcing",
+      "There is no relationship between CQRS and Event Sourcing"
+    ],
+    "answer": "CQRS handles reads, while Event Sourcing handles writes",
+    "explanation": "CQRS and Event Sourcing often work together: CQRS separates read and write operations, while Event Sourcing stores all write actions as events for state reconstruction.",
+    "tags": ["CQRS", "Event Sourcing", "Integration"]
+  },
+  {
+    "question": "Which of the following is true about combining CQRS and Event Sourcing?",
+    "options": [
+      "It simplifies the system architecture significantly",
+      "It allows writes to store events, and reads to fetch projected state",
+      "It eliminates the need for APIs",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It allows writes to store events, and reads to fetch projected state",
+    "explanation": "When combining CQRS and Event Sourcing, writes store events in an event log, and reads fetch the projected state, enabling efficient and scalable handling of both operations.",
+    "tags": ["CQRS", "Event Sourcing", "Combination"]
+  },
+  {
+    "question": "What is the role of the Query Service in CQRS?",
+    "options": [
+      "To handle write operations (create/update/delete)",
+      "To handle read operations and fetch data",
+      "To manage database migrations",
+      "To replace traditional firewalls"
+    ],
+    "answer": "To handle read operations and fetch data",
+    "explanation": "In CQRS, the Query Service is responsible for handling read operations, fetching data efficiently without affecting the write model.",
+    "tags": ["CQRS", "Query Service", "Read Operations"]
+  },
+  {
+    "question": "Which of the following is a key characteristic of Distributed Systems?",
+    "options": [
+      "All components are tightly coupled",
+      "Components run independently and communicate via APIs or messaging",
+      "They focus exclusively on frontend hosting",
+      "They eliminate the need for load balancers"
+    ],
+    "answer": "Components run independently and communicate via APIs or messaging",
+    "explanation": "Distributed Systems consist of independent components that communicate through APIs, messaging systems, or other mechanisms, ensuring scalability and fault tolerance.",
+    "tags": ["Distributed Systems", "Characteristics", "Communication"]
+  },
+  {
+    "question": "What is the purpose of horizontal scaling in Distributed Systems?",
+    "options": [
+      "To add more servers to handle increased load",
+      "To increase the complexity of the system unnecessarily",
+      "To replace the need for databases",
+      "To simplify frontend development"
+    ],
+    "answer": "To add more servers to handle increased load",
+    "explanation": "Horizontal scaling in Distributed Systems involves adding more servers to distribute the workload, improving performance and availability under higher loads.",
+    "tags": ["Distributed Systems", "Horizontal Scaling", "Performance"]
+  },
+  {
+    "question": "Which of the following is true about Event Logs in Event Sourcing?",
+    "options": [
+      "They store only the current state of data",
+      "They store all events (actions) for state reconstruction",
+      "They replace the need for RESTful APIs",
+      "They focus exclusively on frontend state management"
+    ],
+    "answer": "They store all events (actions) for state reconstruction",
+    "explanation": "In Event Sourcing, event logs store all events (actions) that have occurred, enabling state reconstruction and providing a complete history of changes.",
+    "tags": ["Event Sourcing", "Event Logs", "State Reconstruction"]
+  },
+  {
+    "question": "What is the main disadvantage of CQRS?",
+    "options": [
+      "It simplifies the system architecture too much",
+      "It introduces additional complexity in system design",
+      "It eliminates the need for APIs",
+      "It focuses exclusively on IoT devices"
+    ],
+    "answer": "It introduces additional complexity in system design",
+    "explanation": "While CQRS offers many advantages, it also introduces complexity in system design, especially when combined with Event Sourcing, requiring careful planning and implementation.",
+    "tags": ["CQRS", "Disadvantages", "Complexity"]
+  },
+  {
+    "question": "Which of the following is a common use case for combining CQRS and Event Sourcing?",
+    "options": [
+      "Static website hosting",
+      "Large-scale enterprise applications with complex business logic",
+      "Database encryption",
+      "Replacing traditional firewalls"
+    ],
+    "answer": "Large-scale enterprise applications with complex business logic",
+    "explanation": "CQRS and Event Sourcing are commonly used in large-scale enterprise applications to handle complex business logic, provide full history tracking, and optimize read/write performance.",
+    "tags": ["CQRS", "Event Sourcing", "Use Cases"]
+  },
+  {
+    "question": "What is the role of Event Replay in Event Sourcing?",
+    "options": [
+      "To encrypt sensitive data",
+      "To reconstruct the current state by replaying stored events",
+      "To replace the need for microservices",
+      "To simplify frontend development"
+    ],
+    "answer": "To reconstruct the current state by replaying stored events",
+    "explanation": "Event Replay in Event Sourcing involves reconstructing the current state of the system by replaying all stored events in chronological order.",
+    "tags": ["Event Sourcing", "Event Replay", "State Reconstruction"]
+  },
+  {
+    "question": "Which of the following is true about fault tolerance in Distributed Systems?",
+    "options": [
+      "It ensures the system remains operational even if some nodes fail",
+      "It increases the complexity of monolithic applications",
+      "It eliminates the need for APIs",
+      "It focuses exclusively on frontend state management"
+    ],
+    "answer": "It ensures the system remains operational even if some nodes fail",
+    "explanation": "Fault tolerance in Distributed Systems ensures that the system continues to operate reliably even when some nodes or components fail, improving overall availability.",
+    "tags": ["Distributed Systems", "Fault Tolerance", "Availability"]
+  },
+  {
+    "question": "What is the main goal of separating read and write models in CQRS?",
+    "options": [
+      "To increase the complexity of the system unnecessarily",
+      "To optimize performance by allowing independent scaling of read and write operations",
+      "To replace the need for databases",
+      "To simplify frontend development"
+    ],
+    "answer": "To optimize performance by allowing independent scaling of read and write operations",
+    "explanation": "Separating read and write models in CQRS enables optimized performance by allowing each model to scale independently based on its specific requirements.",
+    "tags": ["CQRS", "Read/Write Separation", "Performance"]
+  },
+  {
+    "question": "Which of the following is a challenge in designing Distributed Systems?",
+    "options": [
+      "Simplified debugging and monitoring",
+      "Network failures and consistency issues",
+      "Reduced performance due to tight coupling",
+      "Elimination of APIs"
+    ],
+    "answer": "Network failures and consistency issues",
+    "explanation": "Designing Distributed Systems introduces challenges like handling network failures, maintaining consistency, and managing communication between nodes.",
+    "tags": ["Distributed Systems", "Challenges", "Consistency"]
+  },
+  {
+    "question": "What is the role of the `addEvent` function in Event Sourcing?",
+    "options": [
+      "To encrypt communication between services",
+      "To store new events in the event log",
+      "To replace traditional databases",
+      "To simplify frontend development"
+    ],
+    "answer": "To store new events in the event log",
+    "explanation": "The `addEvent` function in Event Sourcing is responsible for storing new events in the event log, preserving the history of all actions in the system.",
+    "tags": ["Event Sourcing", "addEvent", "Event Log"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between CQRS and Microservices?",
+    "options": [
+      "Microservices eliminate the need for CQRS",
+      "CQRS is a pattern that aligns well with Microservices for improved scalability",
+      "There is no relationship; both serve different purposes",
+      "CQRS focuses exclusively on frontend development"
+    ],
+    "answer": "CQRS is a pattern that aligns well with Microservices for improved scalability",
+    "explanation": "CQRS complements Microservices by separating read and write operations, enabling better scalability and fault tolerance in distributed environments.",
+    "tags": ["CQRS", "Microservices", "Relationship"]
+  },
+  {
+    "question": "What is the main advantage of using Event Sourcing in Distributed Systems?",
+    "options": [
+      "It simplifies the system architecture",
+      "It provides full history tracking and supports event-driven architectures",
+      "It eliminates the need for APIs",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It provides full history tracking and supports event-driven architectures",
+    "explanation": "Event Sourcing provides full history tracking by storing all events, making it ideal for event-driven architectures in Distributed Systems.",
+    "tags": ["Event Sourcing", "Advantages", "History Tracking"]
+  },
+  {
+    "question": "Which of the following is true about the combination of CQRS and Event Sourcing?",
+    "options": [
+      "It simplifies the system by combining read and write operations",
+      "It allows writes to store events, and reads to fetch projected state",
+      "It eliminates the need for distributed systems",
+      "It focuses exclusively on static file hosting"
+    ],
+    "answer": "It allows writes to store events, and reads to fetch projected state",
+    "explanation": "In CQRS + Event Sourcing, writes store events in the event log, while reads fetch the projected state, enabling efficient and scalable handling of both operations.",
+    "tags": ["CQRS", "Event Sourcing", "Combination"]
+  },
+  {
     "question": "What is scalability in the context of system design?",
     "options": [
       "The ability of a system to handle increased load efficiently",
