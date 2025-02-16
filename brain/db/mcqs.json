@@ -1,5 +1,629 @@
 [
   {
+    "question": "What is the primary purpose of CI/CD pipelines in software development?",
+    "options": [
+      "To manually test and deploy code",
+      "To automate testing, building, and deployment processes",
+      "To manage database migrations exclusively",
+      "To replace traditional APIs"
+    ],
+    "answer": "To automate testing, building, and deployment processes",
+    "explanation": "CI/CD pipelines automate the processes of integrating code changes, running tests, and deploying applications, ensuring faster and more reliable delivery.",
+    "tags": ["CI/CD", "Automation", "Deployment"]
+  },
+  {
+    "question": "Which step in a CI/CD pipeline ensures that code changes are automatically tested before deployment?",
+    "options": [
+      "Building the Docker image",
+      "Running automated tests",
+      "Deploying to Kubernetes",
+      "Configuring GitHub Secrets"
+    ],
+    "answer": "Running automated tests",
+    "explanation": "Automated testing is a critical step in CI/CD pipelines, ensuring that code changes do not introduce bugs or regressions before deployment.",
+    "tags": ["CI/CD", "Testing", "Automation"]
+  },
+  {
+    "question": "What is the role of Docker in CI/CD pipelines?",
+    "options": [
+      "To encrypt communication between services",
+      "To containerize applications for consistent environments",
+      "To manage Kubernetes deployments",
+      "To handle frontend state management"
+    ],
+    "answer": "To containerize applications for consistent environments",
+    "explanation": "Docker containers ensure that applications run consistently across different environments by packaging all dependencies together.",
+    "tags": ["Docker", "Containerization", "CI/CD"]
+  },
+  {
+    "question": "Which command builds a Docker image for your application?",
+    "options": [
+      "docker push myapp",
+      "docker build -t myapp .",
+      "kubectl apply -f deployment.yaml",
+      "npm start"
+    ],
+    "answer": "docker build -t myapp .",
+    "explanation": "The `docker build -t myapp .` command builds a Docker image for your application, tagging it with the name `myapp` for easy reference.",
+    "tags": ["Docker", "Build", "Commands"]
+  },
+  {
+    "question": "What does the `replicas` field in a Kubernetes Deployment YAML file specify?",
+    "options": [
+      "The number of copies of the pod to run",
+      "The encryption algorithm for data",
+      "The maximum size of API responses",
+      "The type of service being deployed"
+    ],
+    "answer": "The number of copies of the pod to run",
+    "explanation": "The `replicas` field in a Kubernetes Deployment specifies how many copies (pods) of the application should be running at all times for scalability and redundancy.",
+    "tags": ["Kubernetes", "Deployment", "Replicas"]
+  },
+  {
+    "question": "Which Kubernetes object exposes your application to external traffic?",
+    "options": [
+      "Service",
+      "Pod",
+      "Secret",
+      "ConfigMap"
+    ],
+    "answer": "Service",
+    "explanation": "A Kubernetes Service exposes your application to external traffic, enabling access through a stable IP address or DNS name.",
+    "tags": ["Kubernetes", "Service", "Exposure"]
+  },
+  {
+    "question": "What is the purpose of the `LoadBalancer` type in a Kubernetes Service?",
+    "options": [
+      "To expose the service externally via a cloud load balancer",
+      "To encrypt sensitive data",
+      "To manage database connections",
+      "To replace Docker containers"
+    ],
+    "answer": "To expose the service externally via a cloud load balancer",
+    "explanation": "The `LoadBalancer` type in a Kubernetes Service creates an external load balancer in the cloud provider's infrastructure, making the service accessible globally.",
+    "tags": ["Kubernetes", "Service", "LoadBalancer"]
+  },
+  {
+    "question": "Which GitHub Actions event triggers a workflow when code is pushed to the `main` branch?",
+    "options": [
+      "on: pull_request",
+      "on: push",
+      "on: release",
+      "on: schedule"
+    ],
+    "answer": "on: push",
+    "explanation": "The `on: push` event in GitHub Actions triggers a workflow whenever code is pushed to the specified branch, such as `main`.",
+    "tags": ["GitHub Actions", "Triggers", "CI/CD"]
+  },
+  {
+    "question": "What is the role of `kubectl apply` in Kubernetes deployments?",
+    "options": [
+      "To delete existing pods",
+      "To create or update resources from YAML files",
+      "To restart the entire cluster",
+      "To manage database queries"
+    ],
+    "answer": "To create or update resources from YAML files",
+    "explanation": "The `kubectl apply` command creates or updates Kubernetes resources (e.g., Deployments, Services) based on the provided YAML configuration files.",
+    "tags": ["Kubernetes", "kubectl", "Deployment"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between Docker and Kubernetes?",
+    "options": [
+      "Kubernetes eliminates the need for Docker",
+      "Docker containers are deployed and managed by Kubernetes",
+      "There is no relationship; both serve different purposes",
+      "Docker manages Kubernetes clusters"
+    ],
+    "answer": "Docker containers are deployed and managed by Kubernetes",
+    "explanation": "Docker containers are used to package applications, while Kubernetes manages their deployment, scaling, and availability across a cluster.",
+    "tags": ["Docker", "Kubernetes", "Relationship"]
+  },
+  {
+    "question": "What is the purpose of the `containerPort` field in a Kubernetes Deployment YAML file?",
+    "options": [
+      "To define the port exposed by the container",
+      "To specify the encryption algorithm",
+      "To configure environment variables",
+      "To manage rate limiting"
+    ],
+    "answer": "To define the port exposed by the container",
+    "explanation": "The `containerPort` field in a Kubernetes Deployment specifies the port that the container exposes for incoming traffic.",
+    "tags": ["Kubernetes", "Deployment", "Ports"]
+  },
+  {
+    "question": "Which GitHub Actions step logs you into Docker Hub during a CI/CD pipeline?",
+    "options": [
+      "uses: docker/login-action@v2",
+      "run: echo \"${{ secrets.DOCKER_PASSWORD }}\" | docker login",
+      "uses: kubectl/setup@v1",
+      "run: npm install"
+    ],
+    "answer": "run: echo \"${{ secrets.DOCKER_PASSWORD }}\" | docker login",
+    "explanation": "In GitHub Actions, you can log into Docker Hub using the `echo \"${{ secrets.DOCKER_PASSWORD }}\" | docker login` command, leveraging secrets for secure authentication.",
+    "tags": ["GitHub Actions", "Docker", "Authentication"]
+  },
+  {
+    "question": "What is the main advantage of using GitHub Actions for CI/CD pipelines?",
+    "options": [
+      "It simplifies manual testing",
+      "It automates the entire build, test, and deployment process",
+      "It replaces the need for Docker",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It automates the entire build, test, and deployment process",
+    "explanation": "GitHub Actions automates the CI/CD pipeline, handling tasks like building Docker images, running tests, and deploying to platforms like Kubernetes.",
+    "tags": ["GitHub Actions", "CI/CD", "Automation"]
+  },
+  {
+    "question": "Which of the following is true about deploying to Kubernetes using GitHub Actions?",
+    "options": [
+      "GitHub Actions directly manages Kubernetes nodes",
+      "You must use `kubectl apply` to deploy resources",
+      "Kubernetes eliminates the need for Docker",
+      "GitHub Actions replaces Kubernetes entirely"
+    ],
+    "answer": "You must use `kubectl apply` to deploy resources",
+    "explanation": "To deploy to Kubernetes in a GitHub Actions pipeline, you use `kubectl apply` to create or update resources defined in YAML files.",
+    "tags": ["Kubernetes", "GitHub Actions", "Deployment"]
+  },
+  {
+    "question": "What is the role of `deployment.yaml` in Kubernetes?",
+    "options": [
+      "To store secrets securely",
+      "To define the structure of the CI/CD pipeline",
+      "To specify how the application should be deployed and scaled",
+      "To manage frontend state"
+    ],
+    "answer": "To specify how the application should be deployed and scaled",
+    "explanation": "The `deployment.yaml` file in Kubernetes defines the desired state of the application, including the number of replicas, container specifications, and scaling policies.",
+    "tags": ["Kubernetes", "Deployment", "YAML"]
+  },
+  {
+    "question": "Which of the following is a benefit of using Docker in CI/CD pipelines?",
+    "options": [
+      "It simplifies manual server configuration",
+      "It ensures consistent environments across development, testing, and production",
+      "It eliminates the need for Kubernetes",
+      "It focuses exclusively on frontend hosting"
+    ],
+    "answer": "It ensures consistent environments across development, testing, and production",
+    "explanation": "Docker containers provide consistent environments, ensuring that applications behave identically across different stages of the CI/CD pipeline.",
+    "tags": ["Docker", "CI/CD", "Consistency"]
+  },
+  {
+    "question": "What is the purpose of the `service.yaml` file in Kubernetes?",
+    "options": [
+      "To define the application's business logic",
+      "To expose the application to external traffic",
+      "To manage database connections",
+      "To replace traditional firewalls"
+    ],
+    "answer": "To expose the application to external traffic",
+    "explanation": "The `service.yaml` file in Kubernetes defines how to expose the application to external traffic, often using types like `LoadBalancer` or `ClusterIP`.",
+    "tags": ["Kubernetes", "Service", "Exposure"]
+  },
+  {
+    "question": "Which of the following best describes the difference between `Deployment` and `Service` in Kubernetes?",
+    "options": [
+      "Deployment handles scaling and deployment, while Service exposes the app to external traffic",
+      "There is no difference; both serve the same purpose",
+      "Service manages container images, while Deployment handles network traffic",
+      "Deployment focuses on frontend hosting, while Service manages backend databases"
+    ],
+    "answer": "Deployment handles scaling and deployment, while Service exposes the app to external traffic",
+    "explanation": "A Kubernetes Deployment manages the scaling and deployment of containers, while a Service exposes the application to external or internal traffic.",
+    "tags": ["Kubernetes", "Deployment", "Service", "Comparison"]
+  },
+  {
+    "question": "What is the role of `secrets` in GitHub Actions workflows?",
+    "options": [
+      "To store sensitive information securely, like Docker credentials",
+      "To define environment variables for local development",
+      "To manage Kubernetes nodes",
+      "To replace Docker containers"
+    ],
+    "answer": "To store sensitive information securely, like Docker credentials",
+    "explanation": "GitHub Actions secrets securely store sensitive information, such as Docker Hub credentials or API keys, which can be accessed within workflows.",
+    "tags": ["GitHub Actions", "Secrets", "Security"]
+  },
+  {
+    "question": "Which of the following is true about continuous deployment (CD)?",
+    "options": [
+      "CD automates the deployment of applications after successful tests",
+      "CD focuses exclusively on manual testing",
+      "CD eliminates the need for Docker",
+      "CD replaces traditional web servers"
+    ],
+    "answer": "CD automates the deployment of applications after successful tests",
+    "explanation": "Continuous Deployment (CD) automates the deployment process, ensuring that applications are deployed to production after passing automated tests.",
+    "tags": ["CI/CD", "Continuous Deployment", "Automation"]
+  },
+  {
+    "question": "What is the purpose of the `needs` keyword in a GitHub Actions workflow?",
+    "options": [
+      "To specify the encryption algorithm",
+      "To define the order of jobs in the workflow",
+      "To manage database migrations",
+      "To replace Kubernetes configurations"
+    ],
+    "answer": "To define the order of jobs in the workflow",
+    "explanation": "The `needs` keyword in GitHub Actions ensures that one job depends on the successful completion of another, maintaining a logical order in the workflow.",
+    "tags": ["GitHub Actions", "Workflow", "Job Dependencies"]
+  },
+  {
+    "question": "Which of the following is a key advantage of Kubernetes over Docker alone?",
+    "options": [
+      "Kubernetes provides orchestration and scaling for multiple containers",
+      "Docker eliminates the need for Kubernetes",
+      "There is no difference; both serve the same purpose",
+      "Kubernetes focuses exclusively on frontend hosting"
+    ],
+    "answer": "Kubernetes provides orchestration and scaling for multiple containers",
+    "explanation": "While Docker containerizes applications, Kubernetes orchestrates and scales them across multiple nodes, providing features like self-healing and load balancing.",
+    "tags": ["Kubernetes", "Docker", "Comparison"]
+  },
+  {
+    "question": "What is the main goal of using `kubectl apply` in a CI/CD pipeline?",
+    "options": [
+      "To manually test the application",
+      "To create or update Kubernetes resources from YAML files",
+      "To encrypt sensitive data",
+      "To replace Docker containers"
+    ],
+    "answer": "To create or update Kubernetes resources from YAML files",
+    "explanation": "The `kubectl apply` command creates or updates Kubernetes resources (like Deployments and Services) based on the definitions in YAML files.",
+    "tags": ["Kubernetes", "kubectl", "CI/CD"]
+  },
+  {
+    "question": "Which of the following is true about CI (Continuous Integration)?",
+    "options": [
+      "CI automates the integration of code changes with testing",
+      "CI focuses exclusively on manual deployment",
+      "CI eliminates the need for Docker",
+      "CI replaces traditional web hosting platforms"
+    ],
+    "answer": "CI automates the integration of code changes with testing",
+    "explanation": "Continuous Integration (CI) automates the process of integrating code changes, running tests, and ensuring application stability before deployment.",
+    "tags": ["CI/CD", "Continuous Integration", "Automation"]
+  },
+  {
+    "question": "What is the role of `actions/checkout@v3` in a GitHub Actions workflow?",
+    "options": [
+      "To encrypt sensitive data",
+      "To check out the repository code into the runner",
+      "To manage Kubernetes nodes",
+      "To replace Docker images"
+    ],
+    "answer": "To check out the repository code into the runner",
+    "explanation": "The `actions/checkout@v3` step in GitHub Actions checks out the repository code into the runner, allowing subsequent steps to access and work with the code.",
+    "tags": ["GitHub Actions", "Checkout", "Workflow"]
+  },
+  {
+    "question": "Which of the following is a common use case for combining Docker, Kubernetes, and GitHub Actions?",
+    "options": [
+      "To simplify manual server setup",
+      "To automate the entire CI/CD pipeline for scalable applications",
+      "To focus exclusively on frontend development",
+      "To eliminate the need for APIs"
+    ],
+    "answer": "To automate the entire CI/CD pipeline for scalable applications",
+    "explanation": "Combining Docker, Kubernetes, and GitHub Actions enables automation of the entire CI/CD pipeline, ensuring consistent, scalable, and efficient deployments.",
+    "tags": ["CI/CD", "Docker", "Kubernetes", "GitHub Actions"]
+  },
+  {
+    "question": "What is the primary purpose of deploying an application?",
+    "options": [
+      "To make the application accessible to users",
+      "To encrypt communication between services",
+      "To manage database connections locally",
+      "To replace traditional APIs"
+    ],
+    "answer": "To make the application accessible to users",
+    "explanation": "Deploying an application ensures it is hosted on a server or platform, making it accessible to users over the internet.",
+    "tags": ["Deployment", "AWS", "Vercel", "DigitalOcean"]
+  },
+  {
+    "question": "Which AWS service is used to host virtual servers for deploying applications?",
+    "options": [
+      "S3",
+      "EC2",
+      "Lambda",
+      "RDS"
+    ],
+    "answer": "EC2",
+    "explanation": "AWS EC2 provides virtual servers (instances) where you can deploy and run applications with full control over the environment.",
+    "tags": ["AWS", "EC2", "Virtual Servers"]
+  },
+  {
+    "question": "What is the role of Nginx in deploying a Node.js app on AWS EC2?",
+    "options": [
+      "To serve as a reverse proxy and handle incoming HTTP/HTTPS requests",
+      "To encrypt data stored in S3 buckets",
+      "To manage Lambda functions",
+      "To configure DigitalOcean droplets"
+    ],
+    "answer": "To serve as a reverse proxy and handle incoming HTTP/HTTPS requests",
+    "explanation": "Nginx acts as a reverse proxy in EC2 deployments, forwarding incoming HTTP/HTTPS requests to your Node.js app running on a local port.",
+    "tags": ["AWS", "EC2", "Nginx", "Reverse Proxy"]
+  },
+  {
+    "question": "Which command is used to connect to an AWS EC2 instance via SSH?",
+    "options": [
+      "ssh -i your-key.pem ubuntu@your-ec2-public-ip",
+      "aws s3 sync ./your-static-folder s3://your-bucket-name",
+      "vercel login",
+      "pm2 start server.js"
+    ],
+    "answer": "ssh -i your-key.pem ubuntu@your-ec2-public-ip",
+    "explanation": "The `ssh` command with the `.pem` key connects you to an AWS EC2 instance securely using SSH.",
+    "tags": ["AWS", "EC2", "SSH"]
+  },
+  {
+    "question": "What is the main advantage of deploying static files on AWS S3?",
+    "options": [
+      "It allows public hosting of files with high availability",
+      "It eliminates the need for databases",
+      "It simplifies backend development",
+      "It focuses exclusively on rate limiting"
+    ],
+    "answer": "It allows public hosting of files with high availability",
+    "explanation": "AWS S3 is ideal for hosting static files due to its scalability, durability, and ability to enable public access for global distribution.",
+    "tags": ["AWS", "S3", "Static Files"]
+  },
+  {
+    "question": "Which AWS service is best suited for deploying serverless functions?",
+    "options": [
+      "EC2",
+      "S3",
+      "Lambda",
+      "RDS"
+    ],
+    "answer": "Lambda",
+    "explanation": "AWS Lambda is designed for serverless computing, allowing you to deploy and execute code without managing servers.",
+    "tags": ["AWS", "Lambda", "Serverless"]
+  },
+  {
+    "question": "What does the `vercel` CLI tool help you do?",
+    "options": [
+      "Deploy frontend and serverless apps effortlessly",
+      "Manage AWS EC2 instances",
+      "Encrypt database connections",
+      "Handle Docker container orchestration"
+    ],
+    "answer": "Deploy frontend and serverless apps effortlessly",
+    "explanation": "The `vercel` CLI tool simplifies deploying Next.js and other frontend/serverless applications, providing automatic scaling and global CDN support.",
+    "tags": ["Vercel", "CLI", "Deployment"]
+  },
+  {
+    "question": "Which of the following best describes DigitalOcean Droplets?",
+    "options": [
+      "Managed databases for PostgreSQL and MySQL",
+      "Virtual servers similar to AWS EC2",
+      "A tool for encrypting API communications",
+      "A frontend framework like React or Vue"
+    ],
+    "answer": "Virtual servers similar to AWS EC2",
+    "explanation": "DigitalOcean Droplets are virtual private servers that provide a simpler alternative to AWS EC2 for hosting and deploying applications.",
+    "tags": ["DigitalOcean", "Droplets", "Virtual Servers"]
+  },
+  {
+    "question": "What is the purpose of PM2 in deploying Node.js applications?",
+    "options": [
+      "To encrypt sensitive data",
+      "To manage process stability and auto-restart the app",
+      "To deploy apps on AWS Lambda",
+      "To simplify database migrations"
+    ],
+    "answer": "To manage process stability and auto-restart the app",
+    "explanation": "PM2 is a process manager for Node.js applications, ensuring they run continuously and automatically restart in case of crashes.",
+    "tags": ["Node.js", "PM2", "Process Management"]
+  },
+  {
+    "question": "Which of the following is true about AWS RDS?",
+    "options": [
+      "It is used to host managed relational databases like PostgreSQL and MySQL",
+      "It replaces the need for EC2 instances",
+      "It focuses exclusively on frontend development",
+      "It manages DigitalOcean droplets"
+    ],
+    "answer": "It is used to host managed relational databases like PostgreSQL and MySQL",
+    "explanation": "AWS RDS provides managed relational database services, simplifying database deployment, operations, and scaling.",
+    "tags": ["AWS", "RDS", "Databases"]
+  },
+  {
+    "question": "What is the main difference between AWS EC2 and DigitalOcean Droplets?",
+    "options": [
+      "There is no difference; both serve the same purpose",
+      "DigitalOcean Droplets offer more advanced features than AWS EC2",
+      "AWS EC2 provides greater flexibility and scalability for cloud deployments",
+      "EC2 is only used for static file hosting"
+    ],
+    "answer": "AWS EC2 provides greater flexibility and scalability for cloud deployments",
+    "explanation": "While both EC2 and Droplets are virtual servers, AWS EC2 offers more flexibility, scalability, and integration with other AWS services.",
+    "tags": ["AWS", "EC2", "DigitalOcean", "Comparison"]
+  },
+  {
+    "question": "Which of the following is true about deploying a Next.js app on Vercel?",
+    "options": [
+      "Vercel simplifies deployment by handling infrastructure automatically",
+      "Vercel requires manual configuration of load balancers",
+      "Vercel is only suitable for backend-heavy applications",
+      "Vercel eliminates the need for a database"
+    ],
+    "answer": "Vercel simplifies deployment by handling infrastructure automatically",
+    "explanation": "Vercel automates the deployment process for Next.js apps, handling infrastructure, scaling, and global CDN distribution.",
+    "tags": ["Vercel", "Next.js", "Deployment"]
+  },
+  {
+    "question": "What is the role of the `--acl public-read` flag when uploading files to AWS S3?",
+    "options": [
+      "To restrict access to specific IP addresses",
+      "To make the uploaded files publicly accessible",
+      "To encrypt the files during upload",
+      "To configure rate limiting for API requests"
+    ],
+    "answer": "To make the uploaded files publicly accessible",
+    "explanation": "The `--acl public-read` flag ensures that files uploaded to AWS S3 are publicly accessible, enabling static website hosting.",
+    "tags": ["AWS", "S3", "Public Access"]
+  },
+  {
+    "question": "Which of the following best describes the difference between AWS S3 and AWS Lambda?",
+    "options": [
+      "S3 stores static files, while Lambda runs serverless functions",
+      "S3 encrypts data, while Lambda focuses on frontend development",
+      "There is no difference; both serve the same purpose",
+      "Lambda replaces the need for S3"
+    ],
+    "answer": "S3 stores static files, while Lambda runs serverless functions",
+    "explanation": "AWS S3 is used for storing and serving static files, while AWS Lambda executes serverless functions in response to events or API requests.",
+    "tags": ["AWS", "S3", "Lambda", "Comparison"]
+  },
+  {
+    "question": "What is the main advantage of using DigitalOcean App Platform over manually setting up Droplets?",
+    "options": [
+      "App Platform simplifies deployment by automating infrastructure setup",
+      "Droplets eliminate the need for process managers like PM2",
+      "App Platform focuses exclusively on database management",
+      "Droplets provide better performance for static websites"
+    ],
+    "answer": "App Platform simplifies deployment by automating infrastructure setup",
+    "explanation": "DigitalOcean App Platform automates many aspects of deployment, including infrastructure setup, scaling, and monitoring, reducing complexity compared to manual Droplet configurations.",
+    "tags": ["DigitalOcean", "App Platform", "Deployment"]
+  },
+  {
+    "question": "Which of the following is true about Vercel's deployment capabilities?",
+    "options": [
+      "Vercel supports both frontend and serverless backend deployments",
+      "Vercel is only suitable for static websites",
+      "Vercel requires manual setup of load balancers",
+      "Vercel eliminates the need for version control systems like Git"
+    ],
+    "answer": "Vercel supports both frontend and serverless backend deployments",
+    "explanation": "Vercel is versatile, supporting deployments for both frontend applications and serverless backend functions seamlessly.",
+    "tags": ["Vercel", "Deployment", "Serverless"]
+  },
+  {
+    "question": "What is the purpose of the `vercel init` command?",
+    "options": [
+      "To initialize a new Vercel project with sample configurations",
+      "To encrypt communication between client and server",
+      "To manage DigitalOcean droplets",
+      "To configure AWS EC2 instances"
+    ],
+    "answer": "To initialize a new Vercel project with sample configurations",
+    "explanation": "The `vercel init` command creates a new Vercel project with pre-configured examples, helping you get started quickly.",
+    "tags": ["Vercel", "CLI", "Initialization"]
+  },
+  {
+    "question": "Which of the following is a benefit of using AWS RDS over self-managed databases?",
+    "options": [
+      "RDS eliminates the need for backups and maintenance",
+      "RDS provides fully managed database services with automatic scaling",
+      "Self-managed databases offer better performance than RDS",
+      "RDS focuses exclusively on frontend development"
+    ],
+    "answer": "RDS provides fully managed database services with automatic scaling",
+    "explanation": "AWS RDS simplifies database management by offering fully managed services with features like automated backups, scaling, and security patches.",
+    "tags": ["AWS", "RDS", "Databases"]
+  },
+  {
+    "question": "Which of the following is true about deploying a Node.js app on DigitalOcean Droplets?",
+    "options": [
+      "You must manually install dependencies and configure the server",
+      "Droplets automatically handle all infrastructure and scaling needs",
+      "Droplets focus exclusively on frontend hosting",
+      "Droplets replace the need for a reverse proxy like Nginx"
+    ],
+    "answer": "You must manually install dependencies and configure the server",
+    "explanation": "When deploying on DigitalOcean Droplets, you are responsible for installing dependencies, configuring the server, and setting up tools like Nginx or PM2.",
+    "tags": ["DigitalOcean", "Droplets", "Manual Configuration"]
+  },
+  {
+    "question": "What is the main advantage of deploying a static site on AWS S3?",
+    "options": [
+      "S3 offers high availability and low latency for static content",
+      "S3 eliminates the need for a backend",
+      "S3 focuses exclusively on database hosting",
+      "S3 replaces traditional web servers like Nginx"
+    ],
+    "answer": "S3 offers high availability and low latency for static content",
+    "explanation": "AWS S3 is optimized for hosting static websites, providing high availability, scalability, and low-latency access to users worldwide.",
+    "tags": ["AWS", "S3", "Static Hosting"]
+  },
+  {
+    "question": "Which of the following is true about AWS Lambda?",
+    "options": [
+      "Lambda runs code in response to events or API requests without managing servers",
+      "Lambda is only suitable for hosting static websites",
+      "Lambda requires manual setup of load balancers",
+      "Lambda eliminates the need for databases"
+    ],
+    "answer": "Lambda runs code in response to events or API requests without managing servers",
+    "explanation": "AWS Lambda is a serverless compute service that runs your code in response to triggers like API Gateway events, eliminating the need to manage servers.",
+    "tags": ["AWS", "Lambda", "Serverless"]
+  },
+  {
+    "question": "Which of the following is a common use case for DigitalOcean Managed Databases?",
+    "options": [
+      "Hosting static websites",
+      "Managing relational databases like PostgreSQL or MySQL",
+      "Encrypting communication between clients and servers",
+      "Replacing traditional firewalls"
+    ],
+    "answer": "Managing relational databases like PostgreSQL or MySQL",
+    "explanation": "DigitalOcean Managed Databases simplify the deployment and management of relational databases like PostgreSQL and MySQL, ensuring reliability and scalability.",
+    "tags": ["DigitalOcean", "Managed Databases", "Use Cases"]
+  },
+  {
+    "question": "What is the role of the `proxy_pass` directive in Nginx when deploying on AWS EC2?",
+    "options": [
+      "To define the encryption algorithm",
+      "To forward incoming HTTP/HTTPS requests to the Node.js app",
+      "To manage database connections",
+      "To replace the need for AWS Lambda"
+    ],
+    "answer": "To forward incoming HTTP/HTTPS requests to the Node.js app",
+    "explanation": "The `proxy_pass` directive in Nginx forwards incoming HTTP/HTTPS requests to your Node.js app running on a local port within the EC2 instance.",
+    "tags": ["AWS", "EC2", "Nginx", "Reverse Proxy"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between AWS EC2 and Nginx?",
+    "options": [
+      "Nginx is used to manage EC2 instances",
+      "EC2 hosts the server, while Nginx serves as a reverse proxy",
+      "There is no relationship; both serve different purposes",
+      "Nginx replaces the need for EC2"
+    ],
+    "answer": "EC2 hosts the server, while Nginx serves as a reverse proxy",
+    "explanation": "In AWS EC2 deployments, Nginx acts as a reverse proxy, forwarding traffic to the application server running on the EC2 instance.",
+    "tags": ["AWS", "EC2", "Nginx", "Relationship"]
+  },
+  {
+    "question": "What is the main advantage of using Vercel over AWS EC2 for deploying Next.js apps?",
+    "options": [
+      "Vercel simplifies deployment with automatic scaling and CDN support",
+      "Vercel requires manual server configuration",
+      "EC2 offers better performance for frontend apps",
+      "Vercel eliminates the need for databases"
+    ],
+    "answer": "Vercel simplifies deployment with automatic scaling and CDN support",
+    "explanation": "Vercel automates the deployment process for Next.js apps, handling scaling, CDN distribution, and infrastructure management.",
+    "tags": ["Vercel", "Next.js", "AWS", "Comparison"]
+  },
+  {
+    "question": "Which of the following is true about deploying a database on AWS RDS?",
+    "options": [
+      "RDS provides managed database services with options for PostgreSQL, MySQL, etc.",
+      "RDS eliminates the need for encryption",
+      "RDS is only suitable for small-scale applications",
+      "RDS replaces traditional web hosting platforms"
+    ],
+    "answer": "RDS provides managed database services with options for PostgreSQL, MySQL, etc.",
+    "explanation": "AWS RDS offers managed database services, supporting popular engines like PostgreSQL, MySQL, and Aurora, while handling backups, scaling, and maintenance.",
+    "tags": ["AWS", "RDS", "Databases"]
+  },
+  {
     "question": "What is the primary purpose of load balancing in web applications?",
     "options": [
       "To encrypt communication between client and server",
