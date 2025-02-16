@@ -1,5 +1,617 @@
 [
   {
+    "question": "What is the primary purpose of the Publish-Subscribe (Pub/Sub) pattern?",
+    "options": [
+      "To send messages directly between two services",
+      "To allow publishers to send messages to channels/topics without knowing the subscribers",
+      "To store data persistently in a database",
+      "To replace traditional REST APIs"
+    ],
+    "answer": "To allow publishers to send messages to channels/topics without knowing the subscribers",
+    "explanation": "In the Pub/Sub pattern, publishers send messages to channels or topics, and subscribers receive them in real-time, decoupling the sender and receiver.",
+    "tags": ["Pub/Sub", "Redis", "MQTT", "Kafka"]
+  },
+  {
+    "question": "Which library is commonly used for implementing Pub/Sub with Redis in Node.js?",
+    "options": [
+      "mqtt",
+      "redis",
+      "kafkajs",
+      "express"
+    ],
+    "answer": "redis",
+    "explanation": "The `redis` library is used to interact with Redis for Pub/Sub functionality, allowing publishers and subscribers to communicate via channels.",
+    "tags": ["Redis", "Pub/Sub", "Node.js"]
+  },
+  {
+    "question": "What does the `publish` method do in Redis Pub/Sub?",
+    "options": [
+      "It subscribes to a channel",
+      "It sends a message to a specific channel",
+      "It encrypts communication between publisher and subscriber",
+      "It replaces the need for a database"
+    ],
+    "answer": "It sends a message to a specific channel",
+    "explanation": "The `publish` method in Redis Pub/Sub sends a message to a specified channel, which can then be received by any subscribers listening to that channel.",
+    "tags": ["Redis", "Pub/Sub", "Publish Method"]
+  },
+  {
+    "question": "Which protocol is MQTT primarily used for?",
+    "options": [
+      "Real-time chat applications",
+      "IoT devices and lightweight messaging",
+      "Big data processing",
+      "Database replication"
+    ],
+    "answer": "IoT devices and lightweight messaging",
+    "explanation": "MQTT is a lightweight messaging protocol designed for IoT devices, offering low power consumption and efficient communication over unreliable networks.",
+    "tags": ["MQTT", "IoT", "Lightweight Messaging"]
+  },
+  {
+    "question": "What is the role of the Mosquitto broker in MQTT?",
+    "options": [
+      "It acts as the central hub for publishing and subscribing",
+      "It manages database connections",
+      "It encrypts messages between publisher and subscriber",
+      "It replaces the need for Redis"
+    ],
+    "answer": "It acts as the central hub for publishing and subscribing",
+    "explanation": "The Mosquitto broker serves as the central hub in MQTT, managing the distribution of messages between publishers and subscribers.",
+    "tags": ["MQTT", "Mosquitto", "Broker"]
+  },
+  {
+    "question": "Which of the following best describes the difference between Redis Pub/Sub and Kafka?",
+    "options": [
+      "Redis Pub/Sub is persistent, while Kafka is in-memory",
+      "Redis Pub/Sub is in-memory and lightweight, while Kafka is persistent and scalable",
+      "There is no difference; both serve the same purpose",
+      "Kafka eliminates the need for a broker"
+    ],
+    "answer": "Redis Pub/Sub is in-memory and lightweight, while Kafka is persistent and scalable",
+    "explanation": "Redis Pub/Sub provides fast, in-memory messaging but lacks persistence. Kafka, on the other hand, offers persistent, scalable messaging for enterprise-grade applications.",
+    "tags": ["Redis", "Kafka", "Comparison"]
+  },
+  {
+    "question": "What is the main advantage of using Kafka over Redis Pub/Sub?",
+    "options": [
+      "Kafka supports only in-memory storage",
+      "Kafka provides high-throughput, persistent messaging",
+      "Redis Pub/Sub offers better scalability than Kafka",
+      "Kafka focuses exclusively on frontend development"
+    ],
+    "answer": "Kafka provides high-throughput, persistent messaging",
+    "explanation": "Kafka is designed for high-throughput, persistent messaging, making it ideal for large-scale event streaming and data pipelines.",
+    "tags": ["Kafka", "Persistence", "Scalability"]
+  },
+  {
+    "question": "Which method is used to subscribe to a topic in MQTT?",
+    "options": [
+      "subscribe()",
+      "connect()",
+      "publish()",
+      "disconnect()"
+    ],
+    "answer": "subscribe()",
+    "explanation": "The `subscribe()` method in MQTT allows a client to listen for messages on a specific topic, enabling real-time communication.",
+    "tags": ["MQTT", "Subscription", "Topics"]
+  },
+  {
+    "question": "What is the role of the `groupId` in Kafka consumers?",
+    "options": [
+      "It defines the encryption algorithm",
+      "It specifies the group to which the consumer belongs for load balancing",
+      "It replaces the need for Redis",
+      "It manages database migrations"
+    ],
+    "answer": "It specifies the group to which the consumer belongs for load balancing",
+    "explanation": "In Kafka, the `groupId` identifies the consumer group, enabling load balancing and ensuring that each message is consumed by only one member of the group.",
+    "tags": ["Kafka", "Consumer Groups", "Load Balancing"]
+  },
+  {
+    "question": "Which of the following is true about Redis Pub/Sub?",
+    "options": [
+      "Messages are stored persistently in Redis",
+      "Redis Pub/Sub provides lightweight, in-memory messaging",
+      "Redis Pub/Sub eliminates the need for a broker",
+      "Redis Pub/Sub focuses exclusively on IoT devices"
+    ],
+    "answer": "Redis Pub/Sub provides lightweight, in-memory messaging",
+    "explanation": "Redis Pub/Sub offers lightweight, in-memory messaging, making it suitable for real-time applications like chat systems and notifications.",
+    "tags": ["Redis", "Pub/Sub", "In-Memory Messaging"]
+  },
+  {
+    "question": "What is the purpose of the `fromBeginning: true` option in Kafka consumers?",
+    "options": [
+      "It ensures messages are delivered instantly",
+      "It allows consumers to read messages from the earliest available offset",
+      "It replaces the need for Redis Pub/Sub",
+      "It simplifies frontend development"
+    ],
+    "answer": "It allows consumers to read messages from the earliest available offset",
+    "explanation": "The `fromBeginning: true` option in Kafka ensures that consumers start reading messages from the earliest available offset, allowing access to historical data.",
+    "tags": ["Kafka", "Consumers", "Message Offsets"]
+  },
+  {
+    "question": "Which of the following is a common use case for Redis Pub/Sub?",
+    "options": [
+      "Large-scale big data processing",
+      "Real-time notifications and chat systems",
+      "IoT device communication",
+      "Persistent message storage"
+    ],
+    "answer": "Real-time notifications and chat systems",
+    "explanation": "Redis Pub/Sub is commonly used for real-time applications such as notifications, chat systems, and live updates due to its lightweight and fast nature.",
+    "tags": ["Redis", "Pub/Sub", "Use Cases"]
+  },
+  {
+    "question": "What does the `eachMessage` event handler do in Kafka consumers?",
+    "options": [
+      "It processes each message received from a topic",
+      "It encrypts communication between producer and consumer",
+      "It replaces the need for Redis Pub/Sub",
+      "It simplifies database management"
+    ],
+    "answer": "It processes each message received from a topic",
+    "explanation": "The `eachMessage` event handler in Kafka consumers processes each message received from a subscribed topic, enabling real-time message handling.",
+    "tags": ["Kafka", "Consumers", "Message Handling"]
+  },
+  {
+    "question": "Which of the following is true about MQTT?",
+    "options": [
+      "It is designed for IoT devices and lightweight messaging",
+      "It uses HTTP/2 for communication",
+      "It eliminates the need for a broker",
+      "It focuses exclusively on database replication"
+    ],
+    "answer": "It is designed for IoT devices and lightweight messaging",
+    "explanation": "MQTT is specifically designed for IoT devices and lightweight messaging, offering efficient communication over unreliable networks.",
+    "tags": ["MQTT", "IoT", "Lightweight Messaging"]
+  },
+  {
+    "question": "What is the role of the `client.publish()` method in MQTT?",
+    "options": [
+      "It sends a message to a specific topic",
+      "It subscribes to a topic",
+      "It manages database connections",
+      "It replaces the need for WebSockets"
+    ],
+    "answer": "It sends a message to a specific topic",
+    "explanation": "The `client.publish()` method in MQTT sends a message to a specific topic, enabling real-time communication with subscribers.",
+    "tags": ["MQTT", "Publishing", "Topics"]
+  },
+  {
+    "question": "Which of the following is a key feature of Kafka?",
+    "options": [
+      "Low-latency, in-memory messaging",
+      "Persistent, high-throughput event streaming",
+      "Encrypted communication between clients",
+      "Focus on frontend state management"
+    ],
+    "answer": "Persistent, high-throughput event streaming",
+    "explanation": "Kafka is known for its ability to handle persistent, high-throughput event streaming, making it ideal for big data and enterprise-grade applications.",
+    "tags": ["Kafka", "Persistence", "Event Streaming"]
+  },
+  {
+    "question": "What is the main disadvantage of Redis Pub/Sub compared to Kafka?",
+    "options": [
+      "Redis Pub/Sub is too complex to set up",
+      "Redis Pub/Sub lacks persistence and durability",
+      "Kafka is less secure than Redis Pub/Sub",
+      "Redis Pub/Sub cannot handle real-time messaging"
+    ],
+    "answer": "Redis Pub/Sub lacks persistence and durability",
+    "explanation": "While Redis Pub/Sub is fast and lightweight, it lacks persistence and durability, meaning messages are lost if the connection is interrupted.",
+    "tags": ["Redis", "Kafka", "Comparison"]
+  },
+  {
+    "question": "Which of the following is true about the Mosquitto broker?",
+    "options": [
+      "It acts as the central hub for MQTT communication",
+      "It eliminates the need for publishers and subscribers",
+      "It focuses exclusively on Redis integration",
+      "It replaces traditional databases"
+    ],
+    "answer": "It acts as the central hub for MQTT communication",
+    "explanation": "The Mosquitto broker serves as the central hub for MQTT communication, routing messages between publishers and subscribers.",
+    "tags": ["MQTT", "Mosquitto", "Broker"]
+  },
+  {
+    "question": "What is the role of the `message.value.toString()` method in Kafka consumers?",
+    "options": [
+      "It decrypts sensitive data",
+      "It converts the message payload to a string format",
+      "It manages database connections",
+      "It replaces the need for Redis Pub/Sub"
+    ],
+    "answer": "It converts the message payload to a string format",
+    "explanation": "In Kafka consumers, the `message.value.toString()` method converts the binary message payload into a human-readable string format.",
+    "tags": ["Kafka", "Consumers", "Message Handling"]
+  },
+  {
+    "question": "Which of the following is a benefit of using Kafka over Redis Pub/Sub?",
+    "options": [
+      "Kafka provides faster, in-memory messaging",
+      "Kafka offers persistent, scalable messaging for large datasets",
+      "Redis Pub/Sub eliminates the need for a broker",
+      "Redis Pub/Sub focuses exclusively on IoT devices"
+    ],
+    "answer": "Kafka offers persistent, scalable messaging for large datasets",
+    "explanation": "Kafka's persistence and scalability make it better suited for large datasets and enterprise-grade applications compared to Redis Pub/Sub.",
+    "tags": ["Kafka", "Redis", "Comparison"]
+  },
+  {
+    "question": "What is the purpose of the `client.on('message', callback)` event in MQTT?",
+    "options": [
+      "It triggers when a new message is received on a subscribed topic",
+      "It sends a message to a specific topic",
+      "It manages database connections",
+      "It replaces the need for WebSockets"
+    ],
+    "answer": "It triggers when a new message is received on a subscribed topic",
+    "explanation": "The `client.on('message', callback)` event in MQTT triggers whenever a new message is received on a subscribed topic, enabling real-time message handling.",
+    "tags": ["MQTT", "Message Handling", "Subscribers"]
+  },
+  {
+    "question": "Which of the following best describes the difference between Redis Pub/Sub and MQTT?",
+    "options": [
+      "Redis Pub/Sub requires a broker, while MQTT does not",
+      "Redis Pub/Sub is in-memory and lightweight, while MQTT is designed for IoT devices",
+      "MQTT eliminates the need for publishers and subscribers",
+      "Redis Pub/Sub focuses exclusively on database replication"
+    ],
+    "answer": "Redis Pub/Sub is in-memory and lightweight, while MQTT is designed for IoT devices",
+    "explanation": "Redis Pub/Sub is an in-memory, lightweight solution for real-time messaging, whereas MQTT is specifically designed for IoT devices and lightweight messaging over unreliable networks.",
+    "tags": ["Redis", "MQTT", "Comparison"]
+  },
+  {
+    "question": "What is the main advantage of using MQTT for IoT devices?",
+    "options": [
+      "It supports persistent message storage",
+      "It offers low power consumption and efficient communication",
+      "It eliminates the need for a broker",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It offers low power consumption and efficient communication",
+    "explanation": "MQTT is optimized for low power consumption and efficient communication, making it ideal for resource-constrained IoT devices.",
+    "tags": ["MQTT", "IoT", "Efficiency"]
+  },
+  {
+    "question": "Which of the following is true about Kafka's consumer groups?",
+    "options": [
+      "Each consumer group receives all messages from a topic",
+      "A consumer group ensures messages are distributed among its members",
+      "Kafka eliminates the need for consumer groups",
+      "Consumer groups focus exclusively on frontend state management"
+    ],
+    "answer": "A consumer group ensures messages are distributed among its members",
+    "explanation": "In Kafka, a consumer group distributes messages among its members, ensuring load balancing and fault tolerance for message consumption.",
+    "tags": ["Kafka", "Consumer Groups", "Load Balancing"]
+  },
+  {
+    "question": "What is the purpose of the `client.subscribe()` method in MQTT?",
+    "options": [
+      "It sends a message to a specific topic",
+      "It listens for messages on a specific topic",
+      "It manages database connections",
+      "It replaces the need for WebSockets"
+    ],
+    "answer": "It listens for messages on a specific topic",
+    "explanation": "The `client.subscribe()` method in MQTT allows a client to listen for messages on a specific topic, enabling targeted communication.",
+    "tags": ["MQTT", "Subscription", "Topics"]
+  },
+  {
+    "question": "Which of the following is true about Kafka's partitioning mechanism?",
+    "options": [
+      "Partitions increase latency in message delivery",
+      "Partitions enable parallelism and scalability in Kafka",
+      "Kafka eliminates the need for partitions",
+      "Partitions focus exclusively on frontend development"
+    ],
+    "answer": "Partitions enable parallelism and scalability in Kafka",
+    "explanation": "Kafka's partitioning mechanism divides topics into partitions, enabling parallelism and scalability for high-throughput messaging.",
+    "tags": ["Kafka", "Partitioning", "Scalability"]
+  },
+  {
+    "question": "What is the primary purpose of WebSockets in web development?",
+    "options": [
+      "To serve static files",
+      "To provide real-time, bidirectional communication between client and server",
+      "To encrypt communication between services",
+      "To replace traditional APIs"
+    ],
+    "answer": "To provide real-time, bidirectional communication between client and server",
+    "explanation": "WebSockets enable real-time, bidirectional communication, allowing both the client and server to send messages at any time without requiring a new HTTP request.",
+    "tags": ["WebSockets", "Socket.io", "Real-Time Communication"]
+  },
+  {
+    "question": "Which library simplifies WebSocket implementation in Node.js applications?",
+    "options": [
+      "Express.js",
+      "Socket.io",
+      "Nginx",
+      "MongoDB"
+    ],
+    "answer": "Socket.io",
+    "explanation": "Socket.io is a popular library that simplifies the implementation of WebSockets, providing features like automatic reconnection, fallback mechanisms, and broadcasting.",
+    "tags": ["Socket.io", "WebSockets", "Node.js"]
+  },
+  {
+    "question": "What does the `io.on('connection', callback)` event do in Socket.io?",
+    "options": [
+      "It listens for incoming HTTP requests",
+      "It triggers when a client connects to the WebSocket server",
+      "It manages database connections",
+      "It handles file uploads"
+    ],
+    "answer": "It triggers when a client connects to the WebSocket server",
+    "explanation": "The `io.on('connection', callback)` event in Socket.io is triggered whenever a client establishes a connection to the WebSocket server.",
+    "tags": ["Socket.io", "Connection Event", "WebSockets"]
+  },
+  {
+    "question": "Which method is used to broadcast a message to all connected clients in Socket.io?",
+    "options": [
+      "socket.send()",
+      "io.emit()",
+      "socket.write()",
+      "io.listen()"
+    ],
+    "answer": "io.emit()",
+    "explanation": "The `io.emit()` method in Socket.io broadcasts a message to all connected clients, including the sender, enabling real-time updates across multiple users.",
+    "tags": ["Socket.io", "Broadcasting", "Emit Method"]
+  },
+  {
+    "question": "What happens when a client disconnects from a Socket.io server?",
+    "options": [
+      "The server automatically restarts",
+      "The `disconnect` event is triggered on the server",
+      "The server sends an email notification",
+      "Nothing; the server ignores disconnections"
+    ],
+    "answer": "The `disconnect` event is triggered on the server",
+    "explanation": "When a client disconnects, the `disconnect` event is triggered on the server, allowing you to handle cleanup or logging tasks.",
+    "tags": ["Socket.io", "Disconnect Event", "WebSockets"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between Express.js and Socket.io?",
+    "options": [
+      "Socket.io replaces the need for Express.js",
+      "Socket.io integrates with Express.js to add WebSocket functionality",
+      "There is no relationship; both serve different purposes",
+      "Express.js eliminates the need for WebSockets"
+    ],
+    "answer": "Socket.io integrates with Express.js to add WebSocket functionality",
+    "explanation": "Socket.io can be integrated with Express.js to add WebSocket functionality, enabling real-time communication alongside traditional HTTP routes.",
+    "tags": ["Socket.io", "Express.js", "Integration"]
+  },
+  {
+    "question": "What is the role of the `socket.id` property in Socket.io?",
+    "options": [
+      "It stores the encryption key for secure communication",
+      "It uniquely identifies each connected client",
+      "It specifies the port number for the WebSocket server",
+      "It manages database connections"
+    ],
+    "answer": "It uniquely identifies each connected client",
+    "explanation": "The `socket.id` property in Socket.io uniquely identifies each connected client, allowing the server to track and communicate with individual clients.",
+    "tags": ["Socket.io", "Client Identification", "socket.id"]
+  },
+  {
+    "question": "How do you emit a message from the client to the server in Socket.io?",
+    "options": [
+      "socket.send('message')",
+      "socket.emit('message', data)",
+      "io.broadcast('message', data)",
+      "server.listen('message', data)"
+    ],
+    "answer": "socket.emit('message', data)",
+    "explanation": "On the client side, you use `socket.emit('event', data)` to send a message to the server, where 'event' is the event name and 'data' is the payload.",
+    "tags": ["Socket.io", "Client-Side", "Emit Method"]
+  },
+  {
+    "question": "Which of the following is true about Socket.io's `io.emit()` method?",
+    "options": [
+      "It sends a message only to the sender",
+      "It broadcasts a message to all connected clients, including the sender",
+      "It encrypts all WebSocket communications",
+      "It replaces traditional HTTP requests entirely"
+    ],
+    "answer": "It broadcasts a message to all connected clients, including the sender",
+    "explanation": "The `io.emit()` method in Socket.io broadcasts a message to all connected clients, including the sender, making it ideal for real-time updates like chat applications.",
+    "tags": ["Socket.io", "Broadcasting", "Emit Method"]
+  },
+  {
+    "question": "What is the purpose of the `socket.on('event', callback)` method in Socket.io?",
+    "options": [
+      "To define environment variables",
+      "To listen for events sent by the client or server",
+      "To manage database migrations",
+      "To optimize image loading"
+    ],
+    "answer": "To listen for events sent by the client or server",
+    "explanation": "The `socket.on('event', callback)` method in Socket.io listens for specific events sent by the client or server, enabling real-time interaction.",
+    "tags": ["Socket.io", "Event Handling", "socket.on"]
+  },
+  {
+    "question": "Which of the following is a common use case for WebSockets with Socket.io?",
+    "options": [
+      "Static website hosting",
+      "Real-time chat applications",
+      "Database encryption",
+      "Frontend state management"
+    ],
+    "answer": "Real-time chat applications",
+    "explanation": "WebSockets with Socket.io are widely used for real-time applications like chat apps, live updates, and multiplayer games, ensuring low-latency communication.",
+    "tags": ["WebSockets", "Socket.io", "Use Cases"]
+  },
+  {
+    "question": "What is the role of the `http.createServer(app)` function in the given example?",
+    "options": [
+      "It creates a WebSocket server directly",
+      "It initializes an HTTP server that Socket.io attaches to",
+      "It manages database connections",
+      "It replaces the need for Nginx"
+    ],
+    "answer": "It initializes an HTTP server that Socket.io attaches to",
+    "explanation": "In the example, `http.createServer(app)` initializes an HTTP server, which Socket.io uses as its transport layer for WebSocket communication.",
+    "tags": ["Socket.io", "HTTP Server", "Initialization"]
+  },
+  {
+    "question": "Which of the following is true about Socket.io's fallback mechanisms?",
+    "options": [
+      "Socket.io only supports WebSockets and has no fallback",
+      "Socket.io falls back to long polling if WebSockets are not supported",
+      "Socket.io replaces the need for HTTP entirely",
+      "Socket.io focuses exclusively on frontend development"
+    ],
+    "answer": "Socket.io falls back to long polling if WebSockets are not supported",
+    "explanation": "Socket.io provides fallback mechanisms like long polling for environments where native WebSockets are not supported, ensuring compatibility.",
+    "tags": ["Socket.io", "Fallback Mechanisms", "Compatibility"]
+  },
+  {
+    "question": "What is the main advantage of using WebSockets over traditional HTTP requests?",
+    "options": [
+      "WebSockets eliminate the need for databases",
+      "WebSockets allow real-time, bidirectional communication",
+      "WebSockets simplify static file hosting",
+      "WebSockets focus exclusively on backend development"
+    ],
+    "answer": "WebSockets allow real-time, bidirectional communication",
+    "explanation": "Unlike traditional HTTP requests, WebSockets enable real-time, bidirectional communication, reducing latency and improving performance for interactive applications.",
+    "tags": ["WebSockets", "Advantages", "Real-Time Communication"]
+  },
+  {
+    "question": "Which of the following is true about Socket.io rooms?",
+    "options": [
+      "Rooms allow grouping of clients for targeted communication",
+      "Rooms replace the need for namespaces",
+      "Rooms increase latency for large-scale applications",
+      "Rooms focus exclusively on frontend state management"
+    ],
+    "answer": "Rooms allow grouping of clients for targeted communication",
+    "explanation": "Socket.io rooms allow you to group clients into specific categories, enabling targeted communication within those groups.",
+    "tags": ["Socket.io", "Rooms", "Group Communication"]
+  },
+  {
+    "question": "How do you listen for incoming messages on the client side in Socket.io?",
+    "options": [
+      "socket.send('message')",
+      "socket.on('message', callback)",
+      "io.emit('message', data)",
+      "server.listen('message', data)"
+    ],
+    "answer": "socket.on('message', callback)",
+    "explanation": "On the client side, you use `socket.on('event', callback)` to listen for events emitted by the server, such as incoming messages.",
+    "tags": ["Socket.io", "Client-Side", "Event Listening"]
+  },
+  {
+    "question": "Which of the following best describes the difference between WebSockets and RESTful APIs?",
+    "options": [
+      "WebSockets provide real-time communication, while RESTful APIs rely on request-response cycles",
+      "RESTful APIs support bidirectional communication, while WebSockets do not",
+      "WebSockets eliminate the need for encryption, while RESTful APIs require SSL",
+      "There is no difference; both serve the same purpose"
+    ],
+    "answer": "WebSockets provide real-time communication, while RESTful APIs rely on request-response cycles",
+    "explanation": "WebSockets enable real-time, bidirectional communication, whereas RESTful APIs follow a request-response model, making them less suitable for low-latency applications.",
+    "tags": ["WebSockets", "RESTful APIs", "Comparison"]
+  },
+  {
+    "question": "What is the purpose of namespaces in Socket.io?",
+    "options": [
+      "To encrypt communication between clients and servers",
+      "To separate logical components or features in a WebSocket application",
+      "To manage database connections",
+      "To replace traditional HTTP routing"
+    ],
+    "answer": "To separate logical components or features in a WebSocket application",
+    "explanation": "Namespaces in Socket.io allow you to segment your WebSocket application into distinct channels, separating logical components or features for better organization.",
+    "tags": ["Socket.io", "Namespaces", "Logical Segmentation"]
+  },
+  {
+    "question": "Which of the following is true about Socket.io's `socket.disconnect()` method?",
+    "options": [
+      "It terminates the connection between the client and server",
+      "It encrypts the WebSocket communication",
+      "It increases the size of API responses",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It terminates the connection between the client and server",
+    "explanation": "The `socket.disconnect()` method in Socket.io explicitly terminates the connection between the client and server, cleaning up resources and handling graceful shutdowns.",
+    "tags": ["Socket.io", "Disconnection", "socket.disconnect"]
+  },
+  {
+    "question": "What is the role of the `socket.broadcast.emit()` method in Socket.io?",
+    "options": [
+      "It sends a message only to the sender",
+      "It broadcasts a message to all connected clients except the sender",
+      "It encrypts WebSocket communication",
+      "It replaces traditional HTTP requests"
+    ],
+    "answer": "It broadcasts a message to all connected clients except the sender",
+    "explanation": "The `socket.broadcast.emit()` method in Socket.io sends a message to all connected clients except the sender, ensuring efficient communication in multi-user scenarios.",
+    "tags": ["Socket.io", "Broadcasting", "broadcast.emit"]
+  },
+  {
+    "question": "Which of the following is a benefit of using WebSockets with Socket.io?",
+    "options": [
+      "They reduce the need for manual testing",
+      "They enable real-time communication with minimal latency",
+      "They simplify database management",
+      "They focus exclusively on frontend development"
+    ],
+    "answer": "They enable real-time communication with minimal latency",
+    "explanation": "WebSockets with Socket.io allow real-time communication between clients and servers, minimizing latency and improving user experience in interactive applications.",
+    "tags": ["WebSockets", "Socket.io", "Benefits"]
+  },
+  {
+    "question": "What is the purpose of the `const socket = io('http://localhost:3000')` line in the client-side code?",
+    "options": [
+      "To initialize a WebSocket connection to the server",
+      "To define environment variables",
+      "To manage database connections",
+      "To replace traditional HTTP requests"
+    ],
+    "answer": "To initialize a WebSocket connection to the server",
+    "explanation": "The `const socket = io('http://localhost:3000')` line initializes a WebSocket connection to the server running on `http://localhost:3000`, enabling real-time communication.",
+    "tags": ["Socket.io", "Client-Side", "WebSocket Connection"]
+  },
+  {
+    "question": "Which of the following is true about Socket.io's compatibility?",
+    "options": [
+      "Socket.io works only with Node.js applications",
+      "Socket.io supports multiple programming languages and platforms",
+      "Socket.io eliminates the need for WebSockets",
+      "Socket.io focuses exclusively on frontend development"
+    ],
+    "answer": "Socket.io supports multiple programming languages and platforms",
+    "explanation": "While Socket.io is commonly used with Node.js, it also supports clients written in other languages, ensuring cross-platform compatibility.",
+    "tags": ["Socket.io", "Compatibility", "Cross-Platform"]
+  },
+  {
+    "question": "What is the role of the `socket.id` property in Socket.io?",
+    "options": [
+      "It uniquely identifies each connected client",
+      "It defines the encryption algorithm",
+      "It specifies the maximum size of API responses",
+      "It manages database queries"
+    ],
+    "answer": "It uniquely identifies each connected client",
+    "explanation": "The `socket.id` property in Socket.io uniquely identifies each connected client, allowing the server to track and communicate with individual users.",
+    "tags": ["Socket.io", "Client Identification", "socket.id"]
+  },
+  {
+    "question": "Which of the following is a common use case for WebSockets with Socket.io?",
+    "options": [
+      "Hosting static websites",
+      "Implementing real-time notifications or updates",
+      "Managing database migrations",
+      "Replacing traditional firewalls"
+    ],
+    "answer": "Implementing real-time notifications or updates",
+    "explanation": "WebSockets with Socket.io are ideal for real-time applications like notifications, live updates, and collaborative tools, ensuring instant delivery of information.",
+    "tags": ["WebSockets", "Socket.io", "Use Cases"]
+  },
+  {
     "question": "What is the primary purpose of CI/CD pipelines in software development?",
     "options": [
       "To manually test and deploy code",
