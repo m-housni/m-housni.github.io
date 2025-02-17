@@ -253,6 +253,13 @@
     "projects": [
         {
             "timestamp": 1739480776,
+            "title": "Gherkin-Cucumber Demo",
+            "description": "This project demonstrates how to use Gherkin syntax with Cucumber.js for behavior-driven development (BDD) testing. It includes automated tests for a login feature using Puppeteer for browser automation and Chai for assertions..",
+            "link": "https://github.com/m-housni/delivery-tracking-app-with-vue3-and-java-springboot/",
+            "tags": "Gherkin, Cucumber, BDD, Testing, Automation, Puppeteer, Chai, JavaScript"
+        },
+        {
+            "timestamp": 1739480776,
             "title": "Vue-Java-Springboot Delivery Tracking System",
             "description": "A full-stack delivery tracking system built with Vue.js and Java SpringBoot. The Vue frontend allows users to view and manage delivery orders with dynamic status updates, address modifications, and time slot adjustments. The Springboot backend handles API requests for fetching and updating deliveries, ensuring seamless communication between the UI and the database. The system supports role-based interactions for buyers and sellers, providing restricted input fields and actions based on user roles.",
             "link": "https://github.com/m-housni/delivery-tracking-app-with-vue3-and-java-springboot/",

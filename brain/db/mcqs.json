@@ -1,5 +1,329 @@
 [
   {
+    "question": "What is the primary purpose of Gherkin in software development?",
+    "options": [
+      "To write test scenarios in plain, human-readable language",
+      "To encrypt sensitive data during testing",
+      "To manage database migrations",
+      "To replace traditional APIs"
+    ],
+    "answer": "To write test scenarios in plain, human-readable language",
+    "explanation": "Gherkin is a simple, natural language syntax used to write test scenarios in Behavior-Driven Development (BDD), making it easier for non-technical stakeholders to understand requirements.",
+    "tags": ["Gherkin", "BDD", "Natural Language"]
+  },
+  {
+    "question": "Which structure does Gherkin use to define test scenarios?",
+    "options": [
+      "Setup-Act-Assert",
+      "Arrange-Act-Assert",
+      "Given-When-Then",
+      "Request-Response-Validation"
+    ],
+    "answer": "Given-When-Then",
+    "explanation": "Gherkin uses the Given-When-Then structure to define test scenarios, where `Given` sets up the context, `When` defines the action, and `Then` specifies the expected outcome.",
+    "tags": ["Gherkin", "Structure", "Given-When-Then"]
+  },
+  {
+    "question": "What is the role of `.feature` files in Gherkin?",
+    "options": [
+      "To store step definitions written in code",
+      "To define test scenarios using Gherkin syntax",
+      "To manage database connections",
+      "To generate test reports"
+    ],
+    "answer": "To define test scenarios using Gherkin syntax",
+    "explanation": ".feature files contain test scenarios written in Gherkin syntax, describing the behavior of an application in a human-readable format.",
+    "tags": ["Gherkin", "Feature Files", "Test Scenarios"]
+  },
+  {
+    "question": "Which keyword is used in Gherkin to describe a specific test case or scenario?",
+    "options": [
+      "Feature",
+      "Scenario",
+      "Given",
+      "When"
+    ],
+    "answer": "Scenario",
+    "explanation": "The `Scenario` keyword in Gherkin is used to describe a specific test case or behavior that needs to be validated.",
+    "tags": ["Gherkin", "Keywords", "Scenarios"]
+  },
+  {
+    "question": "What is the main advantage of using Cucumber with Gherkin?",
+    "options": [
+      "It eliminates the need for automated tests",
+      "It automates functional tests based on Gherkin scenarios",
+      "It simplifies frontend development",
+      "It replaces traditional databases"
+    ],
+    "answer": "It automates functional tests based on Gherkin scenarios",
+    "explanation": "Cucumber parses Gherkin `.feature` files and executes automated functional tests based on the defined scenarios, improving collaboration between technical and non-technical teams.",
+    "tags": ["Cucumber", "Automation", "Functional Testing"]
+  },
+  {
+    "question": "Which of the following is true about the `Given` keyword in Gherkin?",
+    "options": [
+      "It defines the action being performed in the test",
+      "It sets up the initial context or state for the test",
+      "It specifies the expected outcome of the test",
+      "It manages database connections"
+    ],
+    "answer": "It sets up the initial context or state for the test",
+    "explanation": "The `Given` keyword in Gherkin is used to set up the initial context or state before performing actions or validations in a test scenario.",
+    "tags": ["Gherkin", "Keywords", "Given"]
+  },
+  {
+    "question": "What is the purpose of step definitions in Cucumber?",
+    "options": [
+      "To store feature files in a structured format",
+      "To implement the logic for each step in a Gherkin scenario",
+      "To generate test reports automatically",
+      "To manage frontend state"
+    ],
+    "answer": "To implement the logic for each step in a Gherkin scenario",
+    "explanation": "Step definitions are the code implementation of each step in a Gherkin scenario, bridging the gap between plain text descriptions and actual test execution.",
+    "tags": ["Cucumber", "Step Definitions", "Implementation"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between Gherkin and Cucumber?",
+    "options": [
+      "Gherkin eliminates the need for Cucumber",
+      "Gherkin provides the syntax for writing scenarios, while Cucumber executes them",
+      "There is no relationship; both serve different purposes",
+      "Cucumber replaces the need for traditional testing frameworks"
+    ],
+    "answer": "Gherkin provides the syntax for writing scenarios, while Cucumber executes them",
+    "explanation": "Gherkin is the language used to write test scenarios in `.feature` files, while Cucumber parses these files and executes the corresponding step definitions to automate tests.",
+    "tags": ["Gherkin", "Cucumber", "Relationship"]
+  },
+  {
+    "question": "Which of the following is a benefit of using Gherkin and Cucumber in BDD?",
+    "options": [
+      "It makes test cases readable by non-technical stakeholders",
+      "It increases the complexity of test cases",
+      "It eliminates the need for manual testing entirely",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It makes test cases readable by non-technical stakeholders",
+    "explanation": "One of the key benefits of Gherkin and Cucumber is that they allow test cases to be written in plain language, making them understandable to business analysts, testers, and developers alike.",
+    "tags": ["Gherkin", "Cucumber", "BDD", "Benefits"]
+  },
+  {
+    "question": "What is the role of the `@Then` annotation in Cucumber step definitions?",
+    "options": [
+      "To define the setup for a test scenario",
+      "To specify the expected outcome of a test scenario",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To specify the expected outcome of a test scenario",
+    "explanation": "The `@Then` annotation in Cucumber is used to define the expected outcome or assertion for a test scenario after performing the given actions.",
+    "tags": ["Cucumber", "Annotations", "Then"]
+  },
+  {
+    "question": "Which of the following is true about Master-Master Replication?",
+    "options": [
+      "It simplifies failover mechanisms",
+      "It allows multiple writable masters, improving write scalability",
+      "It eliminates the need for sharding",
+      "It focuses exclusively on frontend hosting"
+    ],
+    "answer": "It allows multiple writable masters, improving write scalability",
+    "explanation": "Master-Master Replication enables multiple writable masters, which can improve write scalability and support multi-region setups for global applications.",
+    "tags": ["Database Replication", "Master-Master", "Write Scalability"]
+  },
+  {
+    "question": "What is the purpose of the `TestRunner` class in Cucumber (Java)?",
+    "options": [
+      "To define step definitions for Gherkin scenarios",
+      "To execute all test scenarios defined in `.feature` files",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To execute all test scenarios defined in `.feature` files",
+    "explanation": "The `TestRunner` class in Cucumber (Java) integrates with JUnit or other testing frameworks to execute all test scenarios defined in `.feature` files and generate test reports.",
+    "tags": ["Cucumber", "TestRunner", "Execution"]
+  },
+  {
+    "question": "Which of the following is true about reusing step definitions in Cucumber?",
+    "options": [
+      "Step definitions cannot be reused across scenarios",
+      "Step definitions can be reused across multiple scenarios to avoid duplication",
+      "Reusing step definitions increases the complexity of tests unnecessarily",
+      "Step definitions focus exclusively on frontend state management"
+    ],
+    "answer": "Step definitions can be reused across multiple scenarios to avoid duplication",
+    "explanation": "Cucumber allows step definitions to be reused across multiple scenarios, reducing redundancy and promoting maintainable test code.",
+    "tags": ["Cucumber", "Step Definitions", "Reusability"]
+  },
+  {
+    "question": "What is the role of the `glue` option in Cucumber's `@CucumberOptions` annotation?",
+    "options": [
+      "To specify the location of `.feature` files",
+      "To define the location of step definition classes",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To define the location of step definition classes",
+    "explanation": "The `glue` option in Cucumber's `@CucumberOptions` annotation specifies the package or directory containing the step definition classes.",
+    "tags": ["Cucumber", "Annotations", "Glue"]
+  },
+  {
+    "question": "Which of the following is a common use case for Gherkin and Cucumber?",
+    "options": [
+      "Automating functional tests for web applications",
+      "Managing database migrations",
+      "Encrypting communication between services",
+      "Replacing RESTful APIs"
+    ],
+    "answer": "Automating functional tests for web applications",
+    "explanation": "Gherkin and Cucumber are commonly used to automate functional tests for web applications, ensuring that the application behaves as expected from a user perspective.",
+    "tags": ["Gherkin", "Cucumber", "Use Cases", "Functional Testing"]
+  },
+  {
+    "question": "What is the main challenge when implementing Gherkin-based testing?",
+    "options": [
+      "Writing test scenarios in plain English",
+      "Mapping Gherkin steps to actual code logic",
+      "Generating test reports automatically",
+      "Replacing traditional testing frameworks"
+    ],
+    "answer": "Mapping Gherkin steps to actual code logic",
+    "explanation": "A key challenge in Gherkin-based testing is mapping the plain-text steps in `.feature` files to their corresponding step definitions in code, ensuring accurate test execution.",
+    "tags": ["Gherkin", "Cucumber", "Challenges", "Step Mapping"]
+  },
+  {
+    "question": "Which of the following is true about Gherkin's support for multiple languages?",
+    "options": [
+      "Gherkin supports only English",
+      "Gherkin supports multiple languages, enabling global team collaboration",
+      "Gherkin eliminates the need for translation in international teams",
+      "Gherkin focuses exclusively on IoT devices"
+    ],
+    "answer": "Gherkin supports multiple languages, enabling global team collaboration",
+    "explanation": "Gherkin supports multiple languages, allowing teams worldwide to write test scenarios in their native language and fostering better collaboration.",
+    "tags": ["Gherkin", "Languages", "Global Collaboration"]
+  },
+  {
+    "question": "What happens when a Gherkin scenario fails during Cucumber execution?",
+    "options": [
+      "The test run continues to the next scenario",
+      "The entire test suite stops immediately",
+      "The failed scenario is ignored and not reported",
+      "The test suite replaces the need for manual testing"
+    ],
+    "answer": "The test run continues to the next scenario",
+    "explanation": "If a Gherkin scenario fails during Cucumber execution, the test run typically continues to the next scenario, providing detailed reports for analysis and debugging.",
+    "tags": ["Cucumber", "Execution", "Failure Handling"]
+  },
+  {
+    "question": "Which of the following is true about the `And` and `But` keywords in Gherkin?",
+    "options": [
+      "They replace the need for `Given`, `When`, and `Then`",
+      "They are synonyms for `Given`, `When`, or `Then` and improve readability",
+      "They manage database connections",
+      "They focus exclusively on frontend development"
+    ],
+    "answer": "They are synonyms for `Given`, `When`, or `Then` and improve readability",
+    "explanation": "The `And` and `But` keywords in Gherkin act as synonyms for `Given`, `When`, or `Then`, enhancing the readability and flow of test scenarios.",
+    "tags": ["Gherkin", "Keywords", "And/But"]
+  },
+  {
+    "question": "What is the purpose of the `features` option in Cucumber's `@CucumberOptions` annotation?",
+    "options": [
+      "To specify the location of step definition classes",
+      "To define the location of `.feature` files containing test scenarios",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To define the location of `.feature` files containing test scenarios",
+    "explanation": "The `features` option in Cucumber's `@CucumberOptions` annotation specifies the directory or file path containing the `.feature` files with test scenarios.",
+    "tags": ["Cucumber", "Annotations", "Features"]
+  },
+  {
+    "question": "Which of the following best describes the difference between Gherkin and Cucumber?",
+    "options": [
+      "Gherkin is a testing framework, while Cucumber is a language",
+      "Gherkin is the language for writing scenarios, while Cucumber is the tool for executing them",
+      "There is no difference; both serve the same purpose",
+      "Cucumber eliminates the need for Gherkin"
+    ],
+    "answer": "Gherkin is the language for writing scenarios, while Cucumber is the tool for executing them",
+    "explanation": "Gherkin is the language used to write test scenarios in `.feature` files, while Cucumber is the tool that parses these files and executes the corresponding step definitions.",
+    "tags": ["Gherkin", "Cucumber", "Comparison"]
+  },
+  {
+    "question": "What is the main advantage of using Cucumber over traditional testing frameworks?",
+    "options": [
+      "Cucumber requires no coding knowledge",
+      "Cucumber bridges the gap between technical and non-technical teams through natural language",
+      "Cucumber eliminates the need for test reports",
+      "Cucumber focuses exclusively on frontend testing"
+    ],
+    "answer": "Cucumber bridges the gap between technical and non-technical teams through natural language",
+    "explanation": "Cucumber improves collaboration by allowing test scenarios to be written in natural language, making them accessible to business stakeholders, testers, and developers.",
+    "tags": ["Cucumber", "Advantages", "Collaboration"]
+  },
+  {
+    "question": "Which of the following is true about the `Background` section in Gherkin?",
+    "options": [
+      "It defines steps that are executed before every scenario in a feature file",
+      "It replaces the need for `Given` steps in scenarios",
+      "It is used exclusively for backend testing",
+      "It eliminates the need for test automation"
+    ],
+    "answer": "It defines steps that are executed before every scenario in a feature file",
+    "explanation": "The `Background` section in Gherkin specifies steps that are executed before every scenario in a feature file, setting up a common context or state.",
+    "tags": ["Gherkin", "Background", "Test Setup"]
+  },
+  {
+    "question": "What is the role of the `hooks` in Cucumber?",
+    "options": [
+      "To define environment variables",
+      "To execute code before or after scenarios, features, or steps",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To execute code before or after scenarios, features, or steps",
+    "explanation": "Cucumber hooks allow you to execute code at specific points in the test lifecycle, such as before or after scenarios, features, or individual steps.",
+    "tags": ["Cucumber", "Hooks", "Lifecycle Management"]
+  },
+  {
+    "question": "Which of the following is a benefit of using Cucumber for BDD?",
+    "options": [
+      "It simplifies the process of writing unit tests",
+      "It encourages collaboration between developers, testers, and business stakeholders",
+      "It eliminates the need for manual testing entirely",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It encourages collaboration between developers, testers, and business stakeholders",
+    "explanation": "Cucumber promotes collaboration by enabling business stakeholders, testers, and developers to work together on defining and validating application behavior through Gherkin scenarios.",
+    "tags": ["Cucumber", "BDD", "Collaboration"]
+  },
+  {
+    "question": "What is the purpose of the `@Before` hook in Cucumber?",
+    "options": [
+      "To define the test scenario itself",
+      "To execute setup code before a scenario runs",
+      "To manage database migrations",
+      "To replace traditional APIs"
+    ],
+    "answer": "To execute setup code before a scenario runs",
+    "explanation": "The `@Before` hook in Cucumber is used to execute setup code, such as initializing test data or starting services, before a scenario begins.",
+    "tags": ["Cucumber", "Hooks", "Before Hook"]
+  },
+  {
+    "question": "Which of the following is true about Gherkin's `Scenario Outline` feature?",
+    "options": [
+      "It allows defining multiple scenarios with varying parameters",
+      "It eliminates the need for step definitions",
+      "It focuses exclusively on frontend state management",
+      "It replaces traditional APIs"
+    ],
+    "answer": "It allows defining multiple scenarios with varying parameters",
+    "explanation": "Gherkin's `Scenario Outline` feature allows you to define multiple scenarios with varying parameters using placeholders and example tables, reducing redundancy.",
+    "tags": ["Gherkin", "Scenario Outline", "Parameterization"]
+  },
+  {
     "question": "What is database sharding primarily used for?",
     "options": [
       "To encrypt communication between clients and servers",
