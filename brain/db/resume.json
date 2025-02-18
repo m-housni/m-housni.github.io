@@ -255,7 +255,7 @@
             "timestamp": 1739480776,
             "title": "Gherkin-Cucumber Demo",
             "description": "This project demonstrates how to use Gherkin syntax with Cucumber.js for behavior-driven development (BDD) testing. It includes automated tests for a login feature using Puppeteer for browser automation and Chai for assertions..",
-            "link": "https://github.com/m-housni/delivery-tracking-app-with-vue3-and-java-springboot/",
+            "link": "https://github.com/m-housni/gherkin-cucumber-demo",
             "tags": "Gherkin, Cucumber, BDD, Testing, Automation, Puppeteer, Chai, JavaScript"
         },
         {
