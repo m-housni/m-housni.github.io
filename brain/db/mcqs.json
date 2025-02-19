@@ -1,5 +1,663 @@
 [
   {
+    "question": "What is the primary purpose of Angular modules?",
+    "options": [
+      "To define the application's business logic exclusively",
+      "To organize an application into cohesive blocks of functionality",
+      "To manage database connections securely",
+      "To replace traditional APIs"
+    ],
+    "answer": "To organize an application into cohesive blocks of functionality",
+    "explanation": "Angular modules are containers that group components, directives, pipes, and services under a single unit, promoting modularity, scalability, and maintainability.",
+    "tags": ["Angular", "Modules", "NgModule"]
+  },
+  {
+    "question": "Which module is the entry point for every Angular application?",
+    "options": [
+      "Feature Module",
+      "Shared Module",
+      "Root Module (AppModule)",
+      "Core Module"
+    ],
+    "answer": "Root Module (AppModule)",
+    "explanation": "The root module, defined in `app.module.ts`, is the entry point for every Angular application and bootstraps the main component.",
+    "tags": ["Angular", "Modules", "Root Module"]
+  },
+  {
+    "question": "What does the `declarations` property in the `@NgModule` decorator specify?",
+    "options": [
+      "A list of components, directives, and pipes belonging to the module",
+      "External modules imported into the current module",
+      "Services available to the entire module or app",
+      "Routes defined for navigation"
+    ],
+    "answer": "A list of components, directives, and pipes belonging to the module",
+    "explanation": "The `declarations` property in the `@NgModule` decorator lists all components, directives, and pipes that belong to the module.",
+    "tags": ["Angular", "Modules", "@NgModule", "Declarations"]
+  },
+  {
+    "question": "Which type of Angular module is used to encapsulate specific features or domains?",
+    "options": [
+      "Root Module",
+      "Feature Module",
+      "Shared Module",
+      "Core Module"
+    ],
+    "answer": "Feature Module",
+    "explanation": "Feature modules encapsulate code for specific features or sections of the application, such as user management or authentication.",
+    "tags": ["Angular", "Modules", "Feature Module"]
+  },
+  {
+    "question": "What is the role of the `providers` property in the `@NgModule` decorator?",
+    "options": [
+      "Declares services available to the module or app",
+      "Lists external libraries imported into the module",
+      "Specifies the root component to bootstrap the app",
+      "Defines routes for navigation"
+    ],
+    "answer": "Declares services available to the module or app",
+    "explanation": "The `providers` property in the `@NgModule` decorator declares services that are available throughout the module or application.",
+    "tags": ["Angular", "Modules", "@NgModule", "Providers"]
+  },
+  {
+    "question": "What is the main advantage of lazy-loaded modules in Angular?",
+    "options": [
+      "They simplify the application structure unnecessarily",
+      "They reduce initial load time by loading modules on demand",
+      "They eliminate the need for templates",
+      "They focus exclusively on backend development"
+    ],
+    "answer": "They reduce initial load time by loading modules on demand",
+    "explanation": "Lazy-loaded modules improve performance by deferring the loading of feature-specific code until it is needed, reducing the initial bundle size.",
+    "tags": ["Angular", "Modules", "Lazy Loading"]
+  },
+  {
+    "question": "What is the purpose of templates in Angular?",
+    "options": [
+      "To define the structure and layout of the view displayed to the user",
+      "To manage database connections securely",
+      "To replace traditional HTML entirely",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To define the structure and layout of the view displayed to the user",
+    "explanation": "Templates in Angular define the UI structure and layout using HTML enhanced with Angular-specific syntax for data binding, directives, and event handling.",
+    "tags": ["Angular", "Templates", "Definition"]
+  },
+  {
+    "question": "Which of the following is an example of interpolation in Angular templates?",
+    "options": [
+      "{{ expression }}",
+      "[property]=\"expression\"",
+      "(event)=\"method()\"",
+      "[(ngModel)]=\"property\""
+    ],
+    "answer": "{{ expression }}",
+    "explanation": "Interpolation (`{{ expression }}`) displays data from the component in the template by evaluating the expression and rendering its result.",
+    "tags": ["Angular", "Templates", "Interpolation"]
+  },
+  {
+    "question": "What is the role of structural directives in Angular templates?",
+    "options": [
+      "To modify the appearance or behavior of elements without changing their structure",
+      "To dynamically add, remove, or repeat DOM elements based on logic",
+      "To replace traditional APIs",
+      "To manage database migrations"
+    ],
+    "answer": "To dynamically add, remove, or repeat DOM elements based on logic",
+    "explanation": "Structural directives like `*ngIf` and `*ngFor` alter the DOM structure by adding, removing, or repeating elements based on conditions or data.",
+    "tags": ["Angular", "Templates", "Structural Directives"]
+  },
+  {
+    "question": "Which directive would you use to conditionally render an element in Angular?",
+    "options": ["*ngFor", "*ngIf", "[ngClass]", "[(ngModel)]"],
+    "answer": "*ngIf",
+    "explanation": "The `*ngIf` directive conditionally renders an element in the DOM based on a given condition.",
+    "tags": ["Angular", "Templates", "*ngIf"]
+  },
+  {
+    "question": "What is the purpose of pipes in Angular templates?",
+    "options": [
+      "To encrypt communication between components",
+      "To transform data for display",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To transform data for display",
+    "explanation": "Pipes in Angular templates transform data for display, such as formatting dates, numbers, or strings.",
+    "tags": ["Angular", "Templates", "Pipes"]
+  },
+  {
+    "question": "What is the role of Angular services?",
+    "options": [
+      "To define the UI layout of components",
+      "To provide shared functionality or logic across multiple components",
+      "To manage database migrations",
+      "To replace traditional APIs"
+    ],
+    "answer": "To provide shared functionality or logic across multiple components",
+    "explanation": "Angular services centralize reusable logic, enabling shared functionality across components, directives, and other services.",
+    "tags": ["Angular", "Services", "Purpose"]
+  },
+  {
+    "question": "How are services typically injected into components in Angular?",
+    "options": [
+      "By manually creating instances in the constructor",
+      "Using Angular's Dependency Injection (DI) system",
+      "Through global variables",
+      "By replacing traditional APIs"
+    ],
+    "answer": "Using Angular's Dependency Injection (DI) system",
+    "explanation": "Services are injected into components using Angular's DI system, ensuring loose coupling and reusability.",
+    "tags": ["Angular", "Services", "Dependency Injection"]
+  },
+  {
+    "question": "What is the default scope of a service when provided in the root module?",
+    "options": [
+      "Component-specific scope",
+      "Application-wide singleton",
+      "Limited to a specific module",
+      "Focused exclusively on backend development"
+    ],
+    "answer": "Application-wide singleton",
+    "explanation": "When a service is provided in the root module (`providedIn: 'root'`), it becomes a singleton instance available throughout the application.",
+    "tags": ["Angular", "Services", "Singleton Scope"]
+  },
+  {
+    "question": "What is Dependency Injection (DI) in Angular?",
+    "options": [
+      "A mechanism for encrypting sensitive data",
+      "A design pattern for managing and providing dependencies to components and services",
+      "A protocol for secure communication",
+      "A tool for frontend state management"
+    ],
+    "answer": "A design pattern for managing and providing dependencies to components and services",
+    "explanation": "Dependency Injection (DI) in Angular is a design pattern that manages and provides dependencies, such as services, objects, or resources, to components and services.",
+    "tags": ["Angular", "Dependency Injection", "Definition"]
+  },
+  {
+    "question": "Which decorator marks a class as available for dependency injection in Angular?",
+    "options": ["@Injectable", "@Component", "@Directive", "@Pipe"],
+    "answer": "@Injectable",
+    "explanation": "The `@Injectable` decorator marks a class as available for dependency injection, allowing it to be injected into components or other services.",
+    "tags": ["Angular", "Dependency Injection", "@Injectable"]
+  },
+  {
+    "question": "What is the role of providers in Angular's DI system?",
+    "options": [
+      "To define how Angular creates and delivers dependencies",
+      "To manage database connections securely",
+      "To replace traditional APIs",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To define how Angular creates and delivers dependencies",
+    "explanation": "Providers in Angular's DI system tell Angular how to create and deliver dependencies, such as services, to components or other parts of the application.",
+    "tags": ["Angular", "Dependency Injection", "Providers"]
+  },
+  {
+    "question": "Which injector level creates singleton instances available throughout the application?",
+    "options": [
+      "Child Injector",
+      "Root Injector",
+      "Component Injector",
+      "Directive Injector"
+    ],
+    "answer": "Root Injector",
+    "explanation": "The root injector creates singleton instances of services that are available throughout the application when provided at the root level.",
+    "tags": ["Angular", "Dependency Injection", "Injectors"]
+  },
+  {
+    "question": "What is Angular CLI primarily used for?",
+    "options": [
+      "Managing database connections securely",
+      "Streamlining the development workflow of Angular applications",
+      "Replacing traditional APIs",
+      "Focusing exclusively on backend development"
+    ],
+    "answer": "Streamlining the development workflow of Angular applications",
+    "explanation": "Angular CLI automates common development tasks, such as project creation, code generation, testing, and building, streamlining the development process.",
+    "tags": ["Angular", "Angular CLI", "Purpose"]
+  },
+  {
+    "question": "Which command generates a new Angular project with Angular CLI?",
+    "options": [
+      "ng generate project-name",
+      "ng new project-name",
+      "ng build project-name",
+      "ng serve project-name"
+    ],
+    "answer": "ng new project-name",
+    "explanation": "The `ng new project-name` command generates a new Angular project with all necessary files and configurations.",
+    "tags": ["Angular", "Angular CLI", "Commands", "ng new"]
+  },
+  {
+    "question": "What is the purpose of the `ng serve` command in Angular CLI?",
+    "options": [
+      "To deploy the application to a production server",
+      "To start a live development server with hot module replacement",
+      "To generate boilerplate code for components",
+      "To manage database migrations"
+    ],
+    "answer": "To start a live development server with hot module replacement",
+    "explanation": "The `ng serve` command starts a live development server that automatically reflects changes in the browser during development.",
+    "tags": ["Angular", "Angular CLI", "Commands", "ng serve"]
+  },
+  {
+    "question": "Which command generates a new component in Angular CLI?",
+    "options": [
+      "ng generate component my-component",
+      "ng create component my-component",
+      "ng add component my-component",
+      "ng install component my-component"
+    ],
+    "answer": "ng generate component my-component",
+    "explanation": "The `ng generate component my-component` command generates a new component with boilerplate code and necessary files.",
+    "tags": ["Angular", "Angular CLI", "Commands", "ng generate"]
+  },
+  {
+    "question": "What is the role of environment-specific configuration files in Angular CLI?",
+    "options": [
+      "To store sensitive data like passwords",
+      "To define settings for different environments (e.g., development, production)",
+      "To replace traditional APIs",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To define settings for different environments (e.g., development, production)",
+    "explanation": "Environment-specific configuration files (e.g., `environment.ts`, `environment.prod.ts`) allow developers to define settings tailored to different environments.",
+    "tags": ["Angular", "Angular CLI", "Environment Configuration"]
+  },
+  {
+    "question": "Which Angular CLI command builds the application for production with optimizations?",
+    "options": ["ng test", "ng lint", "ng build --prod", "ng deploy"],
+    "answer": "ng build --prod",
+    "explanation": "The `ng build --prod` command compiles and optimizes the application for production, applying optimizations like AOT compilation and minification.",
+    "tags": ["Angular", "Angular CLI", "Commands", "ng build"]
+  },
+  {
+    "question": "What is the benefit of using Angular CLI for development?",
+    "options": [
+      "It simplifies repetitive tasks and ensures consistency",
+      "It eliminates the need for templates",
+      "It replaces traditional APIs",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It simplifies repetitive tasks and ensures consistency",
+    "explanation": "Angular CLI automates repetitive tasks like project setup, code generation, and building, ensuring consistency and adherence to best practices.",
+    "tags": ["Angular", "Angular CLI", "Benefits"]
+  },
+  {
+    "question": "Which of the following is true about Angular's hierarchical DI system?",
+    "options": [
+      "It creates a single injector for the entire application",
+      "It allows child injectors to override or create dependencies for specific scopes",
+      "It eliminates the need for services",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It allows child injectors to override or create dependencies for specific scopes",
+    "explanation": "Angular's hierarchical DI system enables child injectors to override or define dependencies specific to certain components or modules, enhancing flexibility.",
+    "tags": ["Angular", "Dependency Injection", "Hierarchical DI"]
+  },
+  {
+    "question": "What is the purpose of the `useFactory` provider option in Angular?",
+    "options": [
+      "To define a factory function for creating dependencies",
+      "To manage database connections securely",
+      "To replace traditional APIs",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To define a factory function for creating dependencies",
+    "explanation": "The `useFactory` provider option in Angular allows defining a factory function to create dependencies, offering more control over dependency instantiation.",
+    "tags": ["Angular", "Dependency Injection", "useFactory"]
+  },
+  {
+    "question": "Which of the following is an example of two-way data binding in Angular?",
+    "options": [
+      "{{ expression }}",
+      "[property]=\"expression\"",
+      "[(ngModel)]=\"property\"",
+      "(event)=\"method()\""
+    ],
+    "answer": "[(ngModel)]=\"property\"",
+    "explanation": "Two-way data binding in Angular uses the `[(ngModel)]` syntax to synchronize data between the component and the view bidirectionally.",
+    "tags": ["Angular", "Data Binding", "Two-Way Binding"]
+  },
+  {
+    "question": "What is the primary purpose of an Angular component?",
+    "options": [
+      "To define the application's business logic exclusively",
+      "To encapsulate UI and behavior into reusable and manageable units",
+      "To manage database connections securely",
+      "To replace traditional APIs"
+    ],
+    "answer": "To encapsulate UI and behavior into reusable and manageable units",
+    "explanation": "Angular components are designed to encapsulate both the UI (template) and behavior (TypeScript class), promoting modularity and reusability.",
+    "tags": ["Angular", "Components", "Purpose"]
+  },
+  {
+    "question": "Which part of an Angular component defines its structure and layout?",
+    "options": [
+      "HTML Template",
+      "TypeScript Class",
+      "CSS/SCSS Styles",
+      "Database Query Language"
+    ],
+    "answer": "HTML Template",
+    "explanation": "The HTML template in an Angular component defines the structure and layout of the view, either inline or as an external file.",
+    "tags": ["Angular", "Components", "HTML Template"]
+  },
+  {
+    "question": "What does the `selector` property in the `@Component` decorator specify?",
+    "options": [
+      "The CSS styles applied to the component",
+      "The custom HTML tag used to embed the component in templates",
+      "The database connection details",
+      "The encryption algorithm used"
+    ],
+    "answer": "The custom HTML tag used to embed the component in templates",
+    "explanation": "The `selector` property in the `@Component` decorator specifies the custom HTML tag name used to embed the component in other templates.",
+    "tags": ["Angular", "Components", "Selector"]
+  },
+  {
+    "question": "Which lifecycle hook is called after a component is initialized?",
+    "options": ["ngOnDestroy", "ngOnInit", "ngOnChanges", "ngAfterViewInit"],
+    "answer": "ngOnInit",
+    "explanation": "The `ngOnInit` lifecycle hook is called after a component is initialized, making it ideal for setting up initial data or subscriptions.",
+    "tags": ["Angular", "Lifecycle Hooks", "ngOnInit"]
+  },
+  {
+    "question": "What is the role of the `styleUrls` property in the `@Component` decorator?",
+    "options": [
+      "To define the component's template",
+      "To specify external style files specific to the component",
+      "To manage database migrations",
+      "To replace traditional APIs"
+    ],
+    "answer": "To specify external style files specific to the component",
+    "explanation": "The `styleUrls` property in the `@Component` decorator specifies external CSS/SCSS files that define styles scoped to the component.",
+    "tags": ["Angular", "Components", "StyleUrls"]
+  },
+  {
+    "question": "What is a directive in Angular?",
+    "options": [
+      "A service that handles business logic",
+      "A class that manipulates DOM elements or extends their behavior",
+      "A database query language",
+      "A protocol for secure communication"
+    ],
+    "answer": "A class that manipulates DOM elements or extends their behavior",
+    "explanation": "A directive in Angular is a class that allows manipulation of the DOM or extension of element behavior, enhancing flexibility in building dynamic applications.",
+    "tags": ["Angular", "Directives", "Definition"]
+  },
+  {
+    "question": "Which type of directive is responsible for creating UI elements with templates and logic?",
+    "options": [
+      "Structural Directive",
+      "Attribute Directive",
+      "Component Directive",
+      "Custom Directive"
+    ],
+    "answer": "Component Directive",
+    "explanation": "A component directive is a special type of directive in Angular that includes its own template and logic, serving as the core building block for UI components.",
+    "tags": ["Angular", "Directives", "Component Directive"]
+  },
+  {
+    "question": "What is the purpose of structural directives in Angular?",
+    "options": [
+      "To modify the appearance or behavior of elements without altering their structure",
+      "To dynamically add or remove elements from the DOM",
+      "To replace traditional APIs",
+      "To manage database connections"
+    ],
+    "answer": "To dynamically add or remove elements from the DOM",
+    "explanation": "Structural directives like `*ngIf`, `*ngFor`, and `*ngSwitch` alter the DOM structure by adding or removing elements based on conditions or data.",
+    "tags": ["Angular", "Directives", "Structural Directives"]
+  },
+  {
+    "question": "Which structural directive conditionally renders an element in Angular?",
+    "options": ["*ngFor", "*ngIf", "[ngClass]", "[(ngModel)]"],
+    "answer": "*ngIf",
+    "explanation": "The `*ngIf` directive conditionally includes or excludes an element in the DOM based on a given condition.",
+    "tags": ["Angular", "Directives", "*ngIf"]
+  },
+  {
+    "question": "What is the role of attribute directives in Angular?",
+    "options": [
+      "To create new components dynamically",
+      "To modify the appearance or behavior of elements without changing their structure",
+      "To replace traditional APIs",
+      "To manage database connections"
+    ],
+    "answer": "To modify the appearance or behavior of elements without changing their structure",
+    "explanation": "Attribute directives, such as `[ngClass]` and `[ngStyle]`, modify the appearance or behavior of elements without altering their DOM structure.",
+    "tags": ["Angular", "Directives", "Attribute Directives"]
+  },
+  {
+    "question": "Which of the following is an example of an attribute directive in Angular?",
+    "options": ["*ngIf", "*ngFor", "[ngClass]", "[(ngModel)]"],
+    "answer": "[ngClass]",
+    "explanation": "`[ngClass]` is an example of an attribute directive that dynamically applies CSS classes to elements based on expressions.",
+    "tags": ["Angular", "Directives", "[ngClass]"]
+  },
+  {
+    "question": "What is the syntax for two-way data binding in Angular?",
+    "options": [
+      "{{ expression }}",
+      "[property]=\"expression\"",
+      "(event)=\"method()\"",
+      "[(ngModel)]=\"property\""
+    ],
+    "answer": "[(ngModel)]=\"property\"",
+    "explanation": "Two-way data binding in Angular uses the `[(ngModel)]` syntax, combining property and event binding to synchronize data between the component and the view.",
+    "tags": ["Angular", "Data Binding", "Two-Way Binding"]
+  },
+  {
+    "question": "Which data binding type synchronizes data from the component to the view?",
+    "options": [
+      "Interpolation",
+      "Event Binding",
+      "Two-way Binding",
+      "Service Binding"
+    ],
+    "answer": "Interpolation",
+    "explanation": "Interpolation (`{{ expression }}`) synchronizes data from the component to the view by displaying the result of the expression in the template.",
+    "tags": ["Angular", "Data Binding", "Interpolation"]
+  },
+  {
+    "question": "What is the purpose of property binding in Angular?",
+    "options": [
+      "To listen for user events and trigger methods",
+      "To bind a component property to an HTML element property",
+      "To replace traditional APIs",
+      "To manage database connections"
+    ],
+    "answer": "To bind a component property to an HTML element property",
+    "explanation": "Property binding (`[property]=\"expression\"`) binds a component property to an HTML element property, enabling dynamic updates to the DOM.",
+    "tags": ["Angular", "Data Binding", "Property Binding"]
+  },
+  {
+    "question": "Which data binding type listens for events in the template and triggers methods in the component?",
+    "options": [
+      "Interpolation",
+      "Property Binding",
+      "Event Binding",
+      "Two-way Binding"
+    ],
+    "answer": "Event Binding",
+    "explanation": "Event binding (`(event)=\"method()`\") listens for events in the template and triggers corresponding methods in the component.",
+    "tags": ["Angular", "Data Binding", "Event Binding"]
+  },
+  {
+    "question": "What is required to use two-way data binding in Angular?",
+    "options": [
+      "FormsModule must be imported",
+      "HttpClientModule must be imported",
+      "RouterModule must be imported",
+      "No additional modules are required"
+    ],
+    "answer": "FormsModule must be imported",
+    "explanation": "To use two-way data binding (`[(ngModel)]`), the `FormsModule` must be imported in the application module.",
+    "tags": ["Angular", "Data Binding", "Two-Way Binding", "FormsModule"]
+  },
+  {
+    "question": "How does Angular's change detection mechanism work?",
+    "options": [
+      "By manually updating the DOM whenever data changes",
+      "Through automatic tracking of changes using Zone.js",
+      "By replacing the need for data binding",
+      "By focusing exclusively on backend development"
+    ],
+    "answer": "Through automatic tracking of changes using Zone.js",
+    "explanation": "Angular's change detection mechanism automatically tracks changes in the component's data using Zone.js and updates the view accordingly.",
+    "tags": ["Angular", "Change Detection", "Zone.js"]
+  },
+  {
+    "question": "Which of the following best describes the direction of interpolation data binding?",
+    "options": [
+      "View → Component",
+      "Component ↔ View",
+      "Component → View",
+      "No data flow"
+    ],
+    "answer": "Component → View",
+    "explanation": "Interpolation (`{{ expression }}`) flows data one-way from the component to the view, displaying the result of the expression in the template.",
+    "tags": ["Angular", "Data Binding", "Interpolation"]
+  },
+  {
+    "question": "What is the purpose of the `@HostListener` decorator in custom attribute directives?",
+    "options": [
+      "To define the component's template",
+      "To listen for host element events and respond accordingly",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To listen for host element events and respond accordingly",
+    "explanation": "The `@HostListener` decorator in custom attribute directives listens for events on the host element and executes specified methods when those events occur.",
+    "tags": ["Angular", "Directives", "@HostListener"]
+  },
+  {
+    "question": "Which directive would you use to iterate over a collection and render elements dynamically?",
+    "options": ["*ngIf", "*ngFor", "[ngClass]", "[(ngModel)]"],
+    "answer": "*ngFor",
+    "explanation": "The `*ngFor` directive iterates over a collection and dynamically renders an element for each item, enabling list rendering in Angular templates.",
+    "tags": ["Angular", "Directives", "*ngFor"]
+  },
+  {
+    "question": "What is the main advantage of encapsulating styles within a component?",
+    "options": [
+      "It simplifies the application structure unnecessarily",
+      "It prevents styles from leaking into other components",
+      "It eliminates the need for templates",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It prevents styles from leaking into other components",
+    "explanation": "Encapsulating styles within a component ensures that CSS rules apply only to that component, preventing them from affecting other parts of the application.",
+    "tags": ["Angular", "Components", "Styles", "Encapsulation"]
+  },
+  {
+    "question": "Which lifecycle hook is triggered when an input property changes in a component?",
+    "options": ["ngOnInit", "ngOnChanges", "ngOnDestroy", "ngAfterViewInit"],
+    "answer": "ngOnChanges",
+    "explanation": "The `ngOnChanges` lifecycle hook is called whenever an input property of a component changes, allowing developers to react to property updates.",
+    "tags": ["Angular", "Lifecycle Hooks", "ngOnChanges"]
+  },
+  {
+    "question": "What is the role of the `Renderer2` service in custom attribute directives?",
+    "options": [
+      "To define the component's template",
+      "To manipulate DOM elements safely and efficiently",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To manipulate DOM elements safely and efficiently",
+    "explanation": "The `Renderer2` service in Angular allows safe and efficient manipulation of DOM elements within custom attribute directives, ensuring cross-platform compatibility.",
+    "tags": ["Angular", "Directives", "Renderer2"]
+  },
+  {
+    "question": "Which of the following is true about two-way data binding in Angular?",
+    "options": [
+      "It combines property and event binding to synchronize data between the component and the view",
+      "It replaces the need for interpolation",
+      "It eliminates the need for services",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It combines property and event binding to synchronize data between the component and the view",
+    "explanation": "Two-way data binding in Angular (`[(ngModel)]`) combines property and event binding to keep the model and view synchronized dynamically.",
+    "tags": ["Angular", "Data Binding", "Two-Way Binding"]
+  },
+  {
+    "question": "What is the purpose of the `@Directive` decorator in Angular?",
+    "options": [
+      "To define metadata for a component",
+      "To declare a custom directive that manipulates the DOM or extends behavior",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To declare a custom directive that manipulates the DOM or extends behavior",
+    "explanation": "The `@Directive` decorator is used to define custom directives that manipulate the DOM or extend the behavior of elements without a dedicated template.",
+    "tags": ["Angular", "Directives", "@Directive"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between components and directives in Angular?",
+    "options": [
+      "Every directive is a component, but not every component is a directive",
+      "Every component is a directive, but not every directive is a component",
+      "There is no relationship; both serve different purposes",
+      "Directives replace the need for components entirely"
+    ],
+    "answer": "Every component is a directive, but not every directive is a component",
+    "explanation": "In Angular, every component is a directive with a template, but not all directives are components. Attribute and structural directives exist independently of templates.",
+    "tags": ["Angular", "Components", "Directives", "Relationship"]
+  },
+  {
+    "question": "What is the purpose of the `templateUrl` property in the `@Component` decorator?",
+    "options": [
+      "To define the component's logic",
+      "To specify the external HTML file for the component's template",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To specify the external HTML file for the component's template",
+    "explanation": "The `templateUrl` property in the `@Component` decorator points to an external HTML file containing the component's template.",
+    "tags": ["Angular", "Components", "templateUrl"]
+  },
+  {
+    "question": "Which lifecycle hook is called before a component is destroyed?",
+    "options": ["ngOnDestroy", "ngOnInit", "ngOnChanges", "ngAfterViewInit"],
+    "answer": "ngOnDestroy",
+    "explanation": "The `ngOnDestroy` lifecycle hook is called just before a component is destroyed, allowing cleanup of resources or subscriptions.",
+    "tags": ["Angular", "Lifecycle Hooks", "ngOnDestroy"]
+  },
+  {
+    "question": "What is the main benefit of separating concerns in Angular components?",
+    "options": [
+      "It simplifies the application structure unnecessarily",
+      "It enhances modularity and maintainability",
+      "It eliminates the need for templates",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It enhances modularity and maintainability",
+    "explanation": "Separating concerns in Angular components—by organizing logic, templates, and styles—enhances modularity and makes the application easier to maintain and scale.",
+    "tags": ["Angular", "Components", "Separation of Concerns"]
+  },
+  {
+    "question": "Which directive would you use to conditionally display one of many elements in Angular?",
+    "options": ["*ngIf", "*ngFor", "*ngSwitch", "[ngClass]"],
+    "answer": "*ngSwitch",
+    "explanation": "The `*ngSwitch` directive conditionally displays one of many elements based on a value, making it suitable for scenarios requiring multiple conditional branches.",
+    "tags": ["Angular", "Directives", "*ngSwitch"]
+  },
+  {
+    "question": "What is the role of the `styleUrls` array in the `@Component` decorator?",
+    "options": [
+      "To define the component's logic",
+      "To specify external style files scoped to the component",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To specify external style files scoped to the component",
+    "explanation": "The `styleUrls` array in the `@Component` decorator specifies external CSS/SCSS files that define styles scoped to the component.",
+    "tags": ["Angular", "Components", "styleUrls"]
+  },
+  {
     "question": "What is the primary architectural pattern used in Angular applications?",
     "options": [
       "Monolithic architecture",
