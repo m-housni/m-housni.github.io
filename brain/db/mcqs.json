@@ -1,5 +1,312 @@
 [
   {
+    "question": "What is Podman primarily used for?",
+    "options": [
+      "Managing databases",
+      "Running, building, and managing containers without a daemon",
+      "Encrypting communication between services",
+      "Handling frontend state management"
+    ],
+    "answer": "Running, building, and managing containers without a daemon",
+    "explanation": "Podman is a container management tool that allows users to run, build, and manage containers without requiring a central daemon, making it more secure and efficient.",
+    "tags": ["Podman", "Container Management", "Daemonless"]
+  },
+  {
+    "question": "Which of the following is a key feature of Podman compared to Docker?",
+    "options": [
+      "Support for only root users",
+      "Daemonless architecture",
+      "Lack of support for pods",
+      "Incompatibility with Docker commands"
+    ],
+    "answer": "Daemonless architecture",
+    "explanation": "Unlike Docker, Podman uses a daemonless architecture, where each container runs as a child process, enhancing security and reducing resource overhead.",
+    "tags": ["Podman", "Daemonless", "Comparison"]
+  },
+  {
+    "question": "What does the `podman --version` command do?",
+    "options": [
+      "Checks the version of the Nginx container",
+      "Displays the installed version of Podman",
+      "Pulls an image from a registry",
+      "Runs a container in detached mode"
+    ],
+    "answer": "Displays the installed version of Podman",
+    "explanation": "The `podman --version` command displays the currently installed version of Podman, ensuring you're using the correct version for your workflow.",
+    "tags": ["Podman", "Commands", "Version Check"]
+  },
+  {
+    "question": "Which command pulls an image from a container registry in Podman?",
+    "options": [
+      "podman pull nginx",
+      "podman push nginx",
+      "podman build nginx",
+      "podman stop nginx"
+    ],
+    "answer": "podman pull nginx",
+    "explanation": "The `podman pull nginx` command retrieves the Nginx image from a container registry, such as Docker Hub, making it available for local use.",
+    "tags": ["Podman", "Commands", "Image Management"]
+  },
+  {
+    "question": "What does the `-d` flag in `podman run -d --name my-nginx -p 8080:80 nginx` do?",
+    "options": [
+      "Runs the container in interactive mode",
+      "Runs the container in detached mode",
+      "Deletes the container after execution",
+      "Debugs the container's processes"
+    ],
+    "answer": "Runs the container in detached mode",
+    "explanation": "The `-d` flag in Podman ensures the container runs in the background (detached mode), allowing continuous operation without tying up the terminal.",
+    "tags": ["Podman", "Commands", "Detached Mode"]
+  },
+  {
+    "question": "Which command lists all running containers in Podman?",
+    "options": ["podman pod ps", "podman ps", "podman images", "podman rm"],
+    "answer": "podman ps",
+    "explanation": "The `podman ps` command lists all currently running containers, providing details like container ID, name, and status.",
+    "tags": ["Podman", "Commands", "Container Listing"]
+  },
+  {
+    "question": "How do you stop and remove a container named `my-nginx` in Podman?",
+    "options": [
+      "podman stop my-nginx && podman rm my-nginx",
+      "podman kill my-nginx",
+      "podman delete my-nginx",
+      "podman pause my-nginx"
+    ],
+    "answer": "podman stop my-nginx && podman rm my-nginx",
+    "explanation": "To stop and remove a container in Podman, use `podman stop my-nginx` to halt the container and `podman rm my-nginx` to remove it.",
+    "tags": ["Podman", "Commands", "Stopping/Removing Containers"]
+  },
+  {
+    "question": "What is the purpose of a Pod in Podman?",
+    "options": [
+      "A single container running in isolation",
+      "A group of containers sharing networking and storage resources",
+      "A database management system",
+      "A protocol for encrypting communication"
+    ],
+    "answer": "A group of containers sharing networking and storage resources",
+    "explanation": "A Pod in Podman is a collection of containers that share the same network namespace, storage, and other resources, similar to Kubernetes Pods.",
+    "tags": ["Podman", "Pods", "Shared Resources"]
+  },
+  {
+    "question": "Which command creates a Pod in Podman?",
+    "options": [
+      "podman create-pod",
+      "podman pod create",
+      "podman run-pod",
+      "podman start-pod"
+    ],
+    "answer": "podman pod create",
+    "explanation": "The `podman pod create` command creates a new Pod, which can host multiple containers sharing resources.",
+    "tags": ["Podman", "Commands", "Pod Creation"]
+  },
+  {
+    "question": "What does the `--pod` flag in Podman do?",
+    "options": [
+      "Creates a new Pod",
+      "Specifies the Pod in which a container should run",
+      "Lists all Pods",
+      "Deletes a Pod"
+    ],
+    "answer": "Specifies the Pod in which a container should run",
+    "explanation": "The `--pod` flag in Podman specifies the Pod in which a container should be started, enabling shared networking and storage among containers.",
+    "tags": ["Podman", "Flags", "Pod Specification"]
+  },
+  {
+    "question": "Which command builds a custom image in Podman?",
+    "options": [
+      "podman pull",
+      "podman push",
+      "podman build -t myapp .",
+      "podman rm"
+    ],
+    "answer": "podman build -t myapp .",
+    "explanation": "The `podman build -t myapp .` command builds a custom image from a Dockerfile or other build context, tagging it as `myapp` for easy reference.",
+    "tags": ["Podman", "Commands", "Image Building"]
+  },
+  {
+    "question": "How do you push an image to a container registry in Podman?",
+    "options": [
+      "podman pull myapp docker.io/username/myapp",
+      "podman push myapp docker.io/username/myapp",
+      "podman build -t myapp docker.io/username/myapp",
+      "podman rm myapp"
+    ],
+    "answer": "podman push myapp docker.io/username/myapp",
+    "explanation": "The `podman push myapp docker.io/username/myapp` command uploads the locally built `myapp` image to the specified container registry.",
+    "tags": ["Podman", "Commands", "Image Pushing"]
+  },
+  {
+    "question": "What is the main advantage of Podman's rootless mode?",
+    "options": [
+      "It simplifies the container build process",
+      "It enhances security by running containers without root privileges",
+      "It eliminates the need for networking",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It enhances security by running containers without root privileges",
+    "explanation": "Podman's rootless mode allows containers to run as non-root users, improving security and reducing the risk of privilege escalation.",
+    "tags": ["Podman", "Rootless Mode", "Security"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between Podman and Kubernetes?",
+    "options": [
+      "Podman replaces Kubernetes entirely",
+      "Podman is better suited for Kubernetes environments due to its pod support",
+      "There is no relationship; both serve different purposes",
+      "Kubernetes eliminates the need for Podman"
+    ],
+    "answer": "Podman is better suited for Kubernetes environments due to its pod support",
+    "explanation": "Podman's support for pods makes it more compatible with Kubernetes environments, allowing developers to test pod-based architectures locally.",
+    "tags": ["Podman", "Kubernetes", "Pod Support"]
+  },
+  {
+    "question": "What does the `podman pod ps` command display?",
+    "options": [
+      "All running containers",
+      "All created Pods and their details",
+      "All pulled images",
+      "All deleted containers"
+    ],
+    "answer": "All created Pods and their details",
+    "explanation": "The `podman pod ps` command lists all created Pods along with their IDs, names, and statuses, helping manage pod-based workflows.",
+    "tags": ["Podman", "Commands", "Pod Listing"]
+  },
+  {
+    "question": "Which of the following is true about Podman's compatibility with Docker commands?",
+    "options": [
+      "Podman supports only a subset of Docker commands",
+      "Podman fully supports Docker commands and images",
+      "Podman requires rewriting all Docker commands",
+      "Podman focuses exclusively on frontend development"
+    ],
+    "answer": "Podman fully supports Docker commands and images",
+    "explanation": "Podman is designed to be Docker-compatible, supporting most Docker commands and images while offering additional features like rootless mode and daemonless operation.",
+    "tags": ["Podman", "Docker Compatibility", "Commands"]
+  },
+  {
+    "question": "What is the role of the `-p` flag in `podman run -d --name my-nginx -p 8080:80 nginx`?",
+    "options": [
+      "Specifies the container's environment variables",
+      "Maps port 8080 on the host to port 80 in the container",
+      "Defines the container's storage volume",
+      "Sets the container's CPU limits"
+    ],
+    "answer": "Maps port 8080 on the host to port 80 in the container",
+    "explanation": "The `-p` flag in Podman maps a port on the host machine (e.g., 8080) to a port inside the container (e.g., 80), enabling external access to the containerized application.",
+    "tags": ["Podman", "Commands", "Port Mapping"]
+  },
+  {
+    "question": "Which of the following is a benefit of Podman's daemonless architecture?",
+    "options": [
+      "Increased complexity in container management",
+      "Improved security and reduced resource overhead",
+      "Elimination of the need for networking",
+      "Focus exclusively on frontend development"
+    ],
+    "answer": "Improved security and reduced resource overhead",
+    "explanation": "Podman's daemonless architecture improves security by avoiding a central daemon and reduces resource overhead by managing containers directly as child processes.",
+    "tags": ["Podman", "Daemonless Architecture", "Benefits"]
+  },
+  {
+    "question": "What is the purpose of the `podman ps --pod` command?",
+    "options": [
+      "Lists all Pods",
+      "Lists containers within a specific Pod",
+      "Pulls an image from a registry",
+      "Removes all stopped containers"
+    ],
+    "answer": "Lists containers within a specific Pod",
+    "explanation": "The `podman ps --pod` command lists all containers running within a specific Pod, helping monitor and manage pod-based workflows.",
+    "tags": ["Podman", "Commands", "Pod Containers"]
+  },
+  {
+    "question": "Which of the following is true about Podman's support for pods?",
+    "options": [
+      "Podman does not support pods",
+      "Podman supports pods, allowing multiple containers to share resources",
+      "Pods in Podman are incompatible with Kubernetes",
+      "Podman replaces the need for pods entirely"
+    ],
+    "answer": "Podman supports pods, allowing multiple containers to share resources",
+    "explanation": "Podman supports pods, enabling multiple containers to share networking, storage, and other resources, aligning well with Kubernetes-style architectures.",
+    "tags": ["Podman", "Pods", "Resource Sharing"]
+  },
+  {
+    "question": "What is the main difference between Podman and Docker?",
+    "options": [
+      "Podman requires a daemon, while Docker does not",
+      "Podman runs containers as non-root users by default, enhancing security",
+      "Podman cannot pull Docker images",
+      "There is no difference; both serve the same purpose"
+    ],
+    "answer": "Podman runs containers as non-root users by default, enhancing security",
+    "explanation": "One of the main differences is that Podman runs containers as non-root users by default, improving security compared to Docker's traditional root-based approach.",
+    "tags": ["Podman", "Docker", "Comparison", "Security"]
+  },
+  {
+    "question": "Which command starts a container inside a specific Pod?",
+    "options": [
+      "podman start --pod mypod",
+      "podman run --pod mypod --name web nginx",
+      "podman pod run mypod",
+      "podman attach mypod"
+    ],
+    "answer": "podman run --pod mypod --name web nginx",
+    "explanation": "The `podman run --pod mypod --name web nginx` command starts a container named `web` inside the specified Pod (`mypod`), ensuring shared resources among containers.",
+    "tags": ["Podman", "Commands", "Pod Container Management"]
+  },
+  {
+    "question": "What is the role of the `--name` flag in Podman?",
+    "options": [
+      "Defines the container's name for easier reference",
+      "Specifies the container's network interface",
+      "Sets the container's CPU limits",
+      "Manages database connections"
+    ],
+    "answer": "Defines the container's name for easier reference",
+    "explanation": "The `--name` flag in Podman assigns a human-readable name to the container, making it easier to reference during management tasks.",
+    "tags": ["Podman", "Flags", "Container Naming"]
+  },
+  {
+    "question": "Which of the following is true about Podman's rootless mode?",
+    "options": [
+      "It increases the risk of privilege escalation",
+      "It allows containers to run without root privileges, improving security",
+      "It eliminates the need for containerization",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It allows containers to run without root privileges, improving security",
+    "explanation": "Podman's rootless mode enables containers to run as non-root users, reducing the risk of privilege escalation and enhancing overall system security.",
+    "tags": ["Podman", "Rootless Mode", "Security"]
+  },
+  {
+    "question": "What is the purpose of the `podman build` command?",
+    "options": [
+      "Pulls an image from a registry",
+      "Builds a custom image from a Dockerfile or build context",
+      "Lists all running containers",
+      "Removes all stopped containers"
+    ],
+    "answer": "Builds a custom image from a Dockerfile or build context",
+    "explanation": "The `podman build` command builds a custom image based on a Dockerfile or other build context, preparing it for deployment or further use.",
+    "tags": ["Podman", "Commands", "Image Building"]
+  },
+  {
+    "question": "Which of the following is a real-world use case for Podman's pod support?",
+    "options": [
+      "Running a single container in isolation",
+      "Creating a group of containers (e.g., web server + database) sharing resources",
+      "Managing database migrations",
+      "Replacing traditional APIs"
+    ],
+    "answer": "Creating a group of containers (e.g., web server + database) sharing resources",
+    "explanation": "Podman's pod support allows creating groups of containers (e.g., a web server and database) that share resources like networking and storage, mimicking Kubernetes Pods.",
+    "tags": ["Podman", "Pods", "Real-World Use Case"]
+  },
+  {
     "question": "What is Domain-Driven Design (DDD)?",
     "options": [
       "A software development approach that focuses on database design",
@@ -337,12 +644,7 @@
   },
   {
     "question": "Which keyword is used in Gherkin to describe a specific test case or scenario?",
-    "options": [
-      "Feature",
-      "Scenario",
-      "Given",
-      "When"
-    ],
+    "options": ["Feature", "Scenario", "Given", "When"],
     "answer": "Scenario",
     "explanation": "The `Scenario` keyword in Gherkin is used to describe a specific test case or behavior that needs to be validated.",
     "tags": ["Gherkin", "Keywords", "Scenarios"]
@@ -717,7 +1019,12 @@
     ],
     "answer": "It improves both scalability and high availability",
     "explanation": "Combining sharding and replication improves scalability by distributing data across shards and ensures high availability by creating redundant copies of each shard's data.",
-    "tags": ["Database Sharding", "Replication", "Scalability", "High Availability"]
+    "tags": [
+      "Database Sharding",
+      "Replication",
+      "Scalability",
+      "High Availability"
+    ]
   },
   {
     "question": "What is the main challenge of using Master-Slave Replication?",
@@ -1225,12 +1532,7 @@
   },
   {
     "question": "Which of the following tools is commonly used as an API Gateway in Microservices?",
-    "options": [
-      "Kong",
-      "MongoDB",
-      "Redis",
-      "Docker"
-    ],
+    "options": ["Kong", "MongoDB", "Redis", "Docker"],
     "answer": "Kong",
     "explanation": "Kong is a popular API Gateway tool used in microservices to route requests, enforce rate limiting, and manage authentication.",
     "tags": ["API Gateway", "Kong", "Tools"]
@@ -1273,12 +1575,7 @@
   },
   {
     "question": "Which messaging system is commonly used for event-driven interactions in Microservices?",
-    "options": [
-      "Kafka",
-      "Express.js",
-      "MySQL",
-      "Nginx"
-    ],
+    "options": ["Kafka", "Express.js", "MySQL", "Nginx"],
     "answer": "Kafka",
     "explanation": "Kafka is a widely used messaging system for event-driven interactions in microservices, enabling reliable and scalable communication between services.",
     "tags": ["Microservices", "Kafka", "Messaging System"]
@@ -1333,12 +1630,7 @@
   },
   {
     "question": "Which tool is commonly used for orchestrating microservices containers?",
-    "options": [
-      "Docker",
-      "Kubernetes",
-      "Redis",
-      "MongoDB"
-    ],
+    "options": ["Docker", "Kubernetes", "Redis", "MongoDB"],
     "answer": "Kubernetes",
     "explanation": "Kubernetes is a powerful container orchestration tool used to manage and scale microservices containers in production environments.",
     "tags": ["Microservices", "Kubernetes", "Container Orchestration"]
@@ -1441,12 +1733,7 @@
   },
   {
     "question": "Which library is commonly used for implementing Pub/Sub with Redis in Node.js?",
-    "options": [
-      "mqtt",
-      "redis",
-      "kafkajs",
-      "express"
-    ],
+    "options": ["mqtt", "redis", "kafkajs", "express"],
     "answer": "redis",
     "explanation": "The `redis` library is used to interact with Redis for Pub/Sub functionality, allowing publishers and subscribers to communicate via channels.",
     "tags": ["Redis", "Pub/Sub", "Node.js"]
@@ -1513,12 +1800,7 @@
   },
   {
     "question": "Which method is used to subscribe to a topic in MQTT?",
-    "options": [
-      "subscribe()",
-      "connect()",
-      "publish()",
-      "disconnect()"
-    ],
+    "options": ["subscribe()", "connect()", "publish()", "disconnect()"],
     "answer": "subscribe()",
     "explanation": "The `subscribe()` method in MQTT allows a client to listen for messages on a specific topic, enabling real-time communication.",
     "tags": ["MQTT", "Subscription", "Topics"]
@@ -1753,12 +2035,7 @@
   },
   {
     "question": "Which library simplifies WebSocket implementation in Node.js applications?",
-    "options": [
-      "Express.js",
-      "Socket.io",
-      "Nginx",
-      "MongoDB"
-    ],
+    "options": ["Express.js", "Socket.io", "Nginx", "MongoDB"],
     "answer": "Socket.io",
     "explanation": "Socket.io is a popular library that simplifies the implementation of WebSockets, providing features like automatic reconnection, fallback mechanisms, and broadcasting.",
     "tags": ["Socket.io", "WebSockets", "Node.js"]
@@ -1777,12 +2054,7 @@
   },
   {
     "question": "Which method is used to broadcast a message to all connected clients in Socket.io?",
-    "options": [
-      "socket.send()",
-      "io.emit()",
-      "socket.write()",
-      "io.listen()"
-    ],
+    "options": ["socket.send()", "io.emit()", "socket.write()", "io.listen()"],
     "answer": "io.emit()",
     "explanation": "The `io.emit()` method in Socket.io broadcasts a message to all connected clients, including the sender, enabling real-time updates across multiple users.",
     "tags": ["Socket.io", "Broadcasting", "Emit Method"]
@@ -2101,12 +2373,7 @@
   },
   {
     "question": "Which Kubernetes object exposes your application to external traffic?",
-    "options": [
-      "Service",
-      "Pod",
-      "Secret",
-      "ConfigMap"
-    ],
+    "options": ["Service", "Pod", "Secret", "ConfigMap"],
     "answer": "Service",
     "explanation": "A Kubernetes Service exposes your application to external traffic, enabling access through a stable IP address or DNS name.",
     "tags": ["Kubernetes", "Service", "Exposure"]
@@ -2125,12 +2392,7 @@
   },
   {
     "question": "Which GitHub Actions event triggers a workflow when code is pushed to the `main` branch?",
-    "options": [
-      "on: pull_request",
-      "on: push",
-      "on: release",
-      "on: schedule"
-    ],
+    "options": ["on: pull_request", "on: push", "on: release", "on: schedule"],
     "answer": "on: push",
     "explanation": "The `on: push` event in GitHub Actions triggers a workflow whenever code is pushed to the specified branch, such as `main`.",
     "tags": ["GitHub Actions", "Triggers", "CI/CD"]
@@ -2365,12 +2627,7 @@
   },
   {
     "question": "Which AWS service is used to host virtual servers for deploying applications?",
-    "options": [
-      "S3",
-      "EC2",
-      "Lambda",
-      "RDS"
-    ],
+    "options": ["S3", "EC2", "Lambda", "RDS"],
     "answer": "EC2",
     "explanation": "AWS EC2 provides virtual servers (instances) where you can deploy and run applications with full control over the environment.",
     "tags": ["AWS", "EC2", "Virtual Servers"]
@@ -2413,12 +2670,7 @@
   },
   {
     "question": "Which AWS service is best suited for deploying serverless functions?",
-    "options": [
-      "EC2",
-      "S3",
-      "Lambda",
-      "RDS"
-    ],
+    "options": ["EC2", "S3", "Lambda", "RDS"],
     "answer": "Lambda",
     "explanation": "AWS Lambda is designed for serverless computing, allowing you to deploy and execute code without managing servers.",
     "tags": ["AWS", "Lambda", "Serverless"]
@@ -2677,12 +2929,7 @@
   },
   {
     "question": "Which tool is commonly used as both a reverse proxy and a load balancer?",
-    "options": [
-      "HAProxy",
-      "Nginx",
-      "Redis",
-      "Docker"
-    ],
+    "options": ["HAProxy", "Nginx", "Redis", "Docker"],
     "answer": "Nginx",
     "explanation": "Nginx is widely used as a reverse proxy and a load balancer, making it ideal for distributing traffic and serving static content efficiently.",
     "tags": ["Nginx", "Reverse Proxy", "Load Balancer"]
@@ -2701,12 +2948,7 @@
   },
   {
     "question": "Which load balancing algorithm is used by default in HAProxy?",
-    "options": [
-      "Least connections",
-      "Round-robin",
-      "IP hash",
-      "Random"
-    ],
+    "options": ["Least connections", "Round-robin", "IP hash", "Random"],
     "answer": "Round-robin",
     "explanation": "HAProxy uses the round-robin algorithm by default, which evenly distributes requests among backend servers in a sequential order.",
     "tags": ["HAProxy", "Load Balancing", "Algorithms"]
@@ -2929,12 +3171,7 @@
   },
   {
     "question": "Which load balancing algorithm is suitable for applications where each request has similar resource requirements?",
-    "options": [
-      "Round-robin",
-      "Least connections",
-      "IP hash",
-      "Random"
-    ],
+    "options": ["Round-robin", "Least connections", "IP hash", "Random"],
     "answer": "Round-robin",
     "explanation": "Round-robin is ideal for applications where each request consumes similar resources, as it evenly distributes traffic among backend servers.",
     "tags": ["Load Balancing", "Algorithms", "Round-Robin"]
@@ -2977,12 +3214,7 @@
   },
   {
     "question": "Which middleware is commonly used to enable Gzip compression in Express.js?",
-    "options": [
-      "express-rate-limit",
-      "compression",
-      "mongoose",
-      "body-parser"
-    ],
+    "options": ["express-rate-limit", "compression", "mongoose", "body-parser"],
     "answer": "compression",
     "explanation": "The `compression` middleware in Express.js enables Gzip compression, automatically compressing outgoing responses to reduce their size.",
     "tags": ["Express.js", "Compression", "Middleware"]
@@ -3037,12 +3269,7 @@
   },
   {
     "question": "Which library is commonly used for throttling in Express.js?",
-    "options": [
-      "compression",
-      "mongoose",
-      "express-rate-limit",
-      "passport"
-    ],
+    "options": ["compression", "mongoose", "express-rate-limit", "passport"],
     "answer": "express-rate-limit",
     "explanation": "`express-rate-limit` is a middleware library that allows you to easily implement throttling in Express.js applications, controlling request rates.",
     "tags": ["Express.js", "Throttling", "Middleware"]
