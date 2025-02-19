@@ -1,5 +1,305 @@
 [
   {
+    "question": "What is Domain-Driven Design (DDD)?",
+    "options": [
+      "A software development approach that focuses on database design",
+      "An approach to software development that emphasizes understanding and modeling the business domain",
+      "A design pattern for building user interfaces",
+      "A protocol for encrypting communication between services"
+    ],
+    "answer": "An approach to software development that emphasizes understanding and modeling the business domain",
+    "explanation": "Domain-Driven Design (DDD) is a software development methodology that focuses on deeply understanding the business domain and modeling it accurately in software.",
+    "tags": ["DDD", "Definition", "Business Domain"]
+  },
+  {
+    "question": "What does the term 'Domain' refer to in DDD?",
+    "options": [
+      "The core problem space or business area being addressed by the software",
+      "The technology stack used for development",
+      "The physical infrastructure where the application runs",
+      "The encryption mechanism for secure data transfer"
+    ],
+    "answer": "The core problem space or business area being addressed by the software",
+    "explanation": "In DDD, the 'Domain' refers to the core problem space or business area, such as an e-commerce platform or a logistics system.",
+    "tags": ["DDD", "Domain", "Problem Space"]
+  },
+  {
+    "question": "What is a Bounded Context in DDD?",
+    "options": [
+      "A specific part of the domain with its own model and rules",
+      "A database table containing all entities",
+      "A network boundary for microservices",
+      "A protocol for real-time communication"
+    ],
+    "answer": "A specific part of the domain with its own model and rules",
+    "explanation": "A Bounded Context in DDD defines a specific part of the domain with its own model, language, and rules, ensuring clarity and separation of concerns.",
+    "tags": ["DDD", "Bounded Context", "Separation of Concerns"]
+  },
+  {
+    "question": "Which of the following best describes an Entity in DDD?",
+    "options": [
+      "An object with a unique identity that persists over time (e.g., Customer)",
+      "An object defined solely by its attributes (e.g., Address)",
+      "A cluster of objects treated as a single unit (e.g., Order with OrderItems)",
+      "A shared language used by developers and domain experts"
+    ],
+    "answer": "An object with a unique identity that persists over time (e.g., Customer)",
+    "explanation": "An Entity in DDD is an object with a unique identity that persists over time and can be tracked across different operations, such as a 'Customer' in an e-commerce system.",
+    "tags": ["DDD", "Entities", "Identity"]
+  },
+  {
+    "question": "What is a Value Object in DDD?",
+    "options": [
+      "An object with a unique identity that persists over time",
+      "An object defined by its attributes and has no independent identity (e.g., Address)",
+      "A collection of related objects treated as a single unit",
+      "A repository for accessing domain objects"
+    ],
+    "answer": "An object defined by its attributes and has no independent identity (e.g., Address)",
+    "explanation": "A Value Object in DDD is an object defined by its attributes and lacks a unique identity, such as 'Address' or 'Money'.",
+    "tags": ["DDD", "Value Objects", "Attributes"]
+  },
+  {
+    "question": "What is an Aggregate in DDD?",
+    "options": [
+      "A single object with a unique identity",
+      "A collection of related objects treated as a single unit with one Aggregate Root",
+      "A database query result set",
+      "A protocol for real-time communication"
+    ],
+    "answer": "A collection of related objects treated as a single unit with one Aggregate Root",
+    "explanation": "An Aggregate in DDD is a cluster of related objects treated as a single unit, with one Aggregate Root responsible for maintaining consistency within the group.",
+    "tags": ["DDD", "Aggregates", "Aggregate Root"]
+  },
+  {
+    "question": "What is the role of a Repository in DDD?",
+    "options": [
+      "To define the business logic of the application",
+      "To provide a pattern for accessing domain objects (e.g., fetching Orders from a database)",
+      "To manage network communication between microservices",
+      "To replace traditional APIs"
+    ],
+    "answer": "To provide a pattern for accessing domain objects (e.g., fetching Orders from a database)",
+    "explanation": "A Repository in DDD provides a pattern for accessing and persisting domain objects, abstracting away the underlying storage mechanism.",
+    "tags": ["DDD", "Repositories", "Data Access"]
+  },
+  {
+    "question": "What are Domain Events in DDD?",
+    "options": [
+      "Events that capture significant occurrences in the business domain (e.g., OrderPlaced)",
+      "Database migration scripts",
+      "Frontend events triggered by user actions",
+      "Protocols for securing communication"
+    ],
+    "answer": "Events that capture significant occurrences in the business domain (e.g., OrderPlaced)",
+    "explanation": "Domain Events in DDD represent significant occurrences in the business domain, such as 'OrderPlaced' or 'OrderShipped', enabling event-driven architectures.",
+    "tags": ["DDD", "Domain Events", "Event-Driven"]
+  },
+  {
+    "question": "What is Ubiquitous Language in DDD?",
+    "options": [
+      "A programming language used exclusively in DDD",
+      "A shared language between developers and domain experts to ensure clarity",
+      "A database query language",
+      "A protocol for real-time communication"
+    ],
+    "answer": "A shared language between developers and domain experts to ensure clarity",
+    "explanation": "Ubiquitous Language in DDD is a shared language between developers and domain experts, ensuring everyone uses the same terms and concepts when discussing the system.",
+    "tags": ["DDD", "Ubiquitous Language", "Collaboration"]
+  },
+  {
+    "question": "Which of the following is a Bounded Context in an e-commerce system?",
+    "options": [
+      "The entire e-commerce platform",
+      "The Ordering context (handling orders, payments)",
+      "The customer's personal information",
+      "The encryption mechanism for secure transactions"
+    ],
+    "answer": "The Ordering context (handling orders, payments)",
+    "explanation": "A Bounded Context in DDD is a specific part of the domain with its own model and rules. In an e-commerce system, 'Ordering' could be a Bounded Context handling orders and payments.",
+    "tags": ["DDD", "Bounded Context", "E-commerce Example"]
+  },
+  {
+    "question": "What is the purpose of an Aggregate Root in DDD?",
+    "options": [
+      "To define the encryption algorithm",
+      "To act as the entry point for operations within an Aggregate",
+      "To store static assets like images",
+      "To replace traditional APIs"
+    ],
+    "answer": "To act as the entry point for operations within an Aggregate",
+    "explanation": "The Aggregate Root in DDD acts as the entry point for operations within an Aggregate, ensuring consistency and encapsulating business logic.",
+    "tags": ["DDD", "Aggregate Root", "Consistency"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between Entities and Aggregates in DDD?",
+    "options": [
+      "Entities are always aggregates themselves",
+      "Aggregates consist of one or more entities and value objects",
+      "There is no relationship; both serve different purposes",
+      "Aggregates replace the need for entities"
+    ],
+    "answer": "Aggregates consist of one or more entities and value objects",
+    "explanation": "An Aggregate in DDD may consist of one or more Entities and Value Objects, grouped together under an Aggregate Root to maintain consistency.",
+    "tags": ["DDD", "Entities", "Aggregates", "Relationship"]
+  },
+  {
+    "question": "What is the main advantage of using DDD in complex systems?",
+    "options": [
+      "It simplifies the system architecture unnecessarily",
+      "It ensures alignment between software and business needs through deep domain understanding",
+      "It eliminates the need for databases",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It ensures alignment between software and business needs through deep domain understanding",
+    "explanation": "DDD's primary advantage is its ability to align software with business needs by deeply understanding and modeling the domain, ensuring maintainability and scalability.",
+    "tags": ["DDD", "Advantages", "Alignment"]
+  },
+  {
+    "question": "Which of the following is true about Value Objects in DDD?",
+    "options": [
+      "They have a unique identity and persist over time",
+      "They are defined by their attributes and lack independent identity (e.g., Address, Money)",
+      "They replace the need for Entities",
+      "They focus exclusively on frontend state management"
+    ],
+    "answer": "They are defined by their attributes and lack independent identity (e.g., Address, Money)",
+    "explanation": "Value Objects in DDD are defined by their attributes and do not have a unique identity, making them suitable for representing concepts like 'Address' or 'Money'.",
+    "tags": ["DDD", "Value Objects", "Attributes"]
+  },
+  {
+    "question": "What happens when an Aggregate Root enforces consistency within its boundaries?",
+    "options": [
+      "It allows any object inside the aggregate to be modified independently",
+      "It ensures that changes within the aggregate maintain data integrity",
+      "It eliminates the need for repositories",
+      "It replaces the need for domain events"
+    ],
+    "answer": "It ensures that changes within the aggregate maintain data integrity",
+    "explanation": "An Aggregate Root enforces consistency within its boundaries, ensuring that changes made to objects within the aggregate maintain data integrity and avoid conflicts.",
+    "tags": ["DDD", "Aggregate Root", "Consistency"]
+  },
+  {
+    "question": "Which of the following is a real-world example of a Domain Event in DDD?",
+    "options": [
+      "OrderPlaced",
+      "Database migration script",
+      "User interface update",
+      "Network packet transmission"
+    ],
+    "answer": "OrderPlaced",
+    "explanation": "A Domain Event like 'OrderPlaced' captures significant occurrences in the business domain, enabling event-driven interactions and triggering downstream processes.",
+    "tags": ["DDD", "Domain Events", "Real-World Example"]
+  },
+  {
+    "question": "What is the role of Ubiquitous Language in DDD?",
+    "options": [
+      "To create a shared understanding between developers and domain experts",
+      "To manage database connections",
+      "To replace traditional APIs",
+      "To simplify frontend development"
+    ],
+    "answer": "To create a shared understanding between developers and domain experts",
+    "explanation": "Ubiquitous Language in DDD fosters collaboration by creating a shared vocabulary between developers and domain experts, reducing misunderstandings.",
+    "tags": ["DDD", "Ubiquitous Language", "Collaboration"]
+  },
+  {
+    "question": "Which of the following is a Bounded Context in a shipping logistics system?",
+    "options": [
+      "The entire logistics platform",
+      "The Shipping context (logistics and delivery)",
+      "The encryption mechanism for secure transactions",
+      "The frontend framework for UI rendering"
+    ],
+    "answer": "The Shipping context (logistics and delivery)",
+    "explanation": "A Bounded Context in DDD isolates a specific part of the domain, such as 'Shipping' in a logistics system, which handles logistics and delivery.",
+    "tags": ["DDD", "Bounded Context", "Logistics Example"]
+  },
+  {
+    "question": "What is the purpose of a Repository in DDD?",
+    "options": [
+      "To define the encryption algorithm",
+      "To provide a pattern for accessing and persisting domain objects",
+      "To replace the need for domain models",
+      "To manage frontend state"
+    ],
+    "answer": "To provide a pattern for accessing and persisting domain objects",
+    "explanation": "A Repository in DDD abstracts the persistence layer, providing a clean interface for accessing and persisting domain objects like 'Orders' or 'Customers'.",
+    "tags": ["DDD", "Repositories", "Persistence"]
+  },
+  {
+    "question": "Which of the following is true about Entities in DDD?",
+    "options": [
+      "They are immutable and cannot be updated",
+      "They have a unique identity and can persist over time (e.g., Customer, Product)",
+      "They replace the need for Value Objects",
+      "They focus exclusively on frontend development"
+    ],
+    "answer": "They have a unique identity and can persist over time (e.g., Customer, Product)",
+    "explanation": "Entities in DDD have a unique identity and can persist over time, making them suitable for representing objects like 'Customer' or 'Product' in a domain model.",
+    "tags": ["DDD", "Entities", "Identity"]
+  },
+  {
+    "question": "What is the main challenge of implementing DDD in large systems?",
+    "options": [
+      "Simplified system architecture",
+      "Increased complexity due to multiple bounded contexts and domain models",
+      "Elimination of the need for testing",
+      "Focus exclusively on backend development"
+    ],
+    "answer": "Increased complexity due to multiple bounded contexts and domain models",
+    "explanation": "Implementing DDD in large systems introduces complexity due to the need to manage multiple bounded contexts, domain models, and their interactions effectively.",
+    "tags": ["DDD", "Challenges", "Complexity"]
+  },
+  {
+    "question": "Which of the following is a benefit of separating domains into Bounded Contexts?",
+    "options": [
+      "It increases coupling between different parts of the system",
+      "It reduces complexity by isolating different parts of the domain",
+      "It eliminates the need for domain experts",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It reduces complexity by isolating different parts of the domain",
+    "explanation": "Separating domains into Bounded Contexts reduces complexity by isolating different parts of the domain, ensuring each context has its own model and rules.",
+    "tags": ["DDD", "Bounded Context", "Complexity Reduction"]
+  },
+  {
+    "question": "What is the role of Domain Events in DDD?",
+    "options": [
+      "To define the structure of database tables",
+      "To capture significant occurrences in the business domain (e.g., OrderPlaced, PaymentProcessed)",
+      "To manage frontend state transitions",
+      "To replace traditional APIs"
+    ],
+    "answer": "To capture significant occurrences in the business domain (e.g., OrderPlaced, PaymentProcessed)",
+    "explanation": "Domain Events in DDD capture important occurrences in the business domain, enabling event-driven architectures and triggering downstream processes.",
+    "tags": ["DDD", "Domain Events", "Event-Driven"]
+  },
+  {
+    "question": "Which of the following is true about Aggregate Roots in DDD?",
+    "options": [
+      "They are always Value Objects",
+      "They act as the entry point for operations within an Aggregate",
+      "They replace the need for Bounded Contexts",
+      "They focus exclusively on frontend development"
+    ],
+    "answer": "They act as the entry point for operations within an Aggregate",
+    "explanation": "An Aggregate Root in DDD serves as the entry point for operations within an Aggregate, ensuring consistency and encapsulating business logic.",
+    "tags": ["DDD", "Aggregate Root", "Operations"]
+  },
+  {
+    "question": "What is the purpose of Ubiquitous Language in DDD?",
+    "options": [
+      "To define the encryption algorithm",
+      "To create a shared understanding between developers and domain experts",
+      "To replace traditional APIs",
+      "To simplify frontend development"
+    ],
+    "answer": "To create a shared understanding between developers and domain experts",
+    "explanation": "Ubiquitous Language in DDD ensures clear communication between developers and domain experts by defining a common vocabulary for the domain.",
+    "tags": ["DDD", "Ubiquitous Language", "Shared Understanding"]
+  },
+  {
     "question": "What is the primary purpose of Gherkin in software development?",
     "options": [
       "To write test scenarios in plain, human-readable language",
