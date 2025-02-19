@@ -1,5 +1,657 @@
 [
   {
+    "question": "What is the primary architectural pattern used in Angular applications?",
+    "options": [
+      "Monolithic architecture",
+      "Component-based architecture",
+      "Microservices architecture",
+      "Event-driven architecture"
+    ],
+    "answer": "Component-based architecture",
+    "explanation": "Angular applications are built using a component-based architecture, which promotes modularity, reusability, and scalability by dividing the application into reusable components.",
+    "tags": ["Angular", "Architecture", "Component-Based"]
+  },
+  {
+    "question": "What is the purpose of Angular modules (NgModules)?",
+    "options": [
+      "To define the UI layout of the application",
+      "To organize the application into cohesive blocks of functionality",
+      "To handle database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To organize the application into cohesive blocks of functionality",
+    "explanation": "Angular modules (NgModules) help organize the application into logical blocks of functionality, grouping related components, services, and directives together.",
+    "tags": ["Angular", "Modules", "NgModules"]
+  },
+  {
+    "question": "Which module bootstraps the Angular application?",
+    "options": [
+      "Feature Module",
+      "AppModule (Root Module)",
+      "Shared Module",
+      "Lazy-loaded Module"
+    ],
+    "answer": "AppModule (Root Module)",
+    "explanation": "The AppModule, also known as the root module, is responsible for bootstrapping the Angular application and setting up its initial configuration.",
+    "tags": ["Angular", "AppModule", "Bootstrapping"]
+  },
+  {
+    "question": "What does the NgModule decorator declare in Angular?",
+    "options": [
+      "Only the components used in the application",
+      "Metadata such as declarations, imports, and providers",
+      "Only the routes for navigation",
+      "Only the styles applied to the application"
+    ],
+    "answer": "Metadata such as declarations, imports, and providers",
+    "explanation": "The NgModule decorator declares metadata about the module, including components, directives, pipes, imports, and service providers, enabling Angular to understand how to assemble the application.",
+    "tags": ["Angular", "NgModule", "Metadata"]
+  },
+  {
+    "question": "What is the role of a component in Angular?",
+    "options": [
+      "To define the application's business logic exclusively",
+      "To encapsulate UI and behavior for specific parts of the application",
+      "To manage database connections",
+      "To replace traditional HTML templates"
+    ],
+    "answer": "To encapsulate UI and behavior for specific parts of the application",
+    "explanation": "Components in Angular encapsulate both the UI (HTML template) and behavior (TypeScript class), allowing developers to build modular and reusable parts of the application.",
+    "tags": ["Angular", "Components", "UI/Behavior"]
+  },
+  {
+    "question": "Which of the following is NOT part of an Angular component?",
+    "options": [
+      "HTML Template",
+      "TypeScript Class",
+      "CSS/SCSS Styles",
+      "Database Query Language"
+    ],
+    "answer": "Database Query Language",
+    "explanation": "An Angular component consists of an HTML template, TypeScript class, and CSS/SCSS styles. Database query languages are not directly part of the component structure.",
+    "tags": ["Angular", "Components", "Structure"]
+  },
+  {
+    "question": "What is the purpose of data binding in Angular templates?",
+    "options": [
+      "To encrypt communication between components",
+      "To synchronize data between the component and the view",
+      "To manage database migrations",
+      "To replace traditional APIs"
+    ],
+    "answer": "To synchronize data between the component and the view",
+    "explanation": "Data binding in Angular templates allows synchronization between the component's logic and the view, enabling dynamic updates in the UI based on changes in the underlying data.",
+    "tags": ["Angular", "Templates", "Data Binding"]
+  },
+  {
+    "question": "Which type of data binding allows two-way synchronization between the model and the view in Angular?",
+    "options": [
+      "Property Binding",
+      "Interpolation",
+      "Two-way Binding",
+      "Event Binding"
+    ],
+    "answer": "Two-way Binding",
+    "explanation": "Two-way binding in Angular synchronizes data between the model and the view in both directions, often using the `[(ngModel)]` syntax.",
+    "tags": ["Angular", "Data Binding", "Two-Way Binding"]
+  },
+  {
+    "question": "What is the purpose of structural directives in Angular?",
+    "options": [
+      "To modify the appearance or behavior of elements",
+      "To alter the DOM structure conditionally or iteratively",
+      "To transform data for display",
+      "To manage database connections"
+    ],
+    "answer": "To alter the DOM structure conditionally or iteratively",
+    "explanation": "Structural directives like `*ngIf` and `*ngFor` modify the DOM structure by adding, removing, or iterating over elements based on conditions or data.",
+    "tags": ["Angular", "Directives", "Structural Directives"]
+  },
+  {
+    "question": "Which directive would you use to conditionally render an element in Angular?",
+    "options": ["[ngClass]", "*ngIf", "[ngStyle]", "[(ngModel)]"],
+    "answer": "*ngIf",
+    "explanation": "The `*ngIf` directive is used to conditionally render an element in the DOM based on a given condition.",
+    "tags": ["Angular", "Directives", "*ngIf"]
+  },
+  {
+    "question": "What is the purpose of services in Angular?",
+    "options": [
+      "To define the UI layout of components",
+      "To handle business logic and shared data between components",
+      "To manage database migrations",
+      "To replace traditional HTML templates"
+    ],
+    "answer": "To handle business logic and shared data between components",
+    "explanation": "Services in Angular are used to encapsulate business logic, share data between components, and provide reusable functionality across the application.",
+    "tags": ["Angular", "Services", "Business Logic"]
+  },
+  {
+    "question": "How are services injected into components in Angular?",
+    "options": [
+      "Through the constructor using Dependency Injection (DI)",
+      "By manually creating instances in the component",
+      "Using global variables",
+      "Through event listeners"
+    ],
+    "answer": "Through the constructor using Dependency Injection (DI)",
+    "explanation": "Services are injected into components through the constructor using Angular's Dependency Injection (DI) system, ensuring loose coupling and promoting maintainability.",
+    "tags": ["Angular", "Services", "Dependency Injection"]
+  },
+  {
+    "question": "What is the purpose of pipes in Angular?",
+    "options": [
+      "To define the application's business logic",
+      "To transform data for display in templates",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To transform data for display in templates",
+    "explanation": "Pipes in Angular are used to transform data for display in templates, such as formatting dates, converting strings to uppercase, or implementing custom transformations.",
+    "tags": ["Angular", "Pipes", "Data Transformation"]
+  },
+  {
+    "question": "Which of the following is an example of a built-in pipe in Angular?",
+    "options": ["{{ value | date }}", "*ngIf", "[ngClass]", "[(ngModel)]"],
+    "answer": "{{ value | date }}",
+    "explanation": "The `{{ value | date }}` syntax demonstrates the use of Angular's built-in `date` pipe, which formats date values for display in templates.",
+    "tags": ["Angular", "Pipes", "Built-in Pipes"]
+  },
+  {
+    "question": "What is the purpose of routing in Angular?",
+    "options": [
+      "To define the application's business logic",
+      "To manage navigation and views within a Single Page Application (SPA)",
+      "To encrypt communication between components",
+      "To replace traditional APIs"
+    ],
+    "answer": "To manage navigation and views within a Single Page Application (SPA)",
+    "explanation": "Routing in Angular manages navigation and dynamically loads different views/components within a Single Page Application (SPA), improving user experience.",
+    "tags": ["Angular", "Routing", "SPA"]
+  },
+  {
+    "question": "Which feature of Angular routing allows loading modules/components only when needed?",
+    "options": [
+      "Route Guards",
+      "Lazy Loading",
+      "Preloading Strategy",
+      "Child Routes"
+    ],
+    "answer": "Lazy Loading",
+    "explanation": "Lazy loading in Angular routing allows modules or components to be loaded only when they are accessed, reducing initial load time and improving performance.",
+    "tags": ["Angular", "Routing", "Lazy Loading"]
+  },
+  {
+    "question": "What is the role of route guards in Angular?",
+    "options": [
+      "To enhance the appearance of components",
+      "To control access to routes based on conditions (e.g., authentication)",
+      "To manage database connections securely",
+      "To replace traditional APIs"
+    ],
+    "answer": "To control access to routes based on conditions (e.g., authentication)",
+    "explanation": "Route guards in Angular control access to routes based on specific conditions, such as requiring authentication before accessing certain pages.",
+    "tags": ["Angular", "Routing", "Route Guards"]
+  },
+  {
+    "question": "What is the purpose of Dependency Injection (DI) in Angular?",
+    "options": [
+      "To encrypt sensitive data",
+      "To provide components with required dependencies without hardcoding them",
+      "To manage database migrations",
+      "To replace traditional APIs"
+    ],
+    "answer": "To provide components with required dependencies without hardcoding them",
+    "explanation": "Dependency Injection (DI) in Angular ensures that components and services receive their dependencies dynamically, promoting loose coupling and better maintainability.",
+    "tags": ["Angular", "Dependency Injection", "DI"]
+  },
+  {
+    "question": "Where are providers specified in Angular to make services available?",
+    "options": [
+      "In the component's constructor",
+      "In the NgModule's `providers` array",
+      "In the HTML template",
+      "In the database configuration"
+    ],
+    "answer": "In the NgModule's `providers` array",
+    "explanation": "Providers in Angular are specified in the NgModule's `providers` array or at the component level to make services available for injection via the DI system.",
+    "tags": ["Angular", "Services", "Providers"]
+  },
+  {
+    "question": "What is the role of Angular CLI in application development?",
+    "options": [
+      "To manage database connections securely",
+      "To automate tasks like scaffolding, building, testing, and deployment",
+      "To replace traditional APIs",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To automate tasks like scaffolding, building, testing, and deployment",
+    "explanation": "Angular CLI simplifies development by automating tasks such as generating components, services, and modules, as well as building, testing, and deploying the application.",
+    "tags": ["Angular", "Angular CLI", "Automation"]
+  },
+  {
+    "question": "Which of the following best describes the flow of an Angular application after bootstrapping?",
+    "options": [
+      "The browser loads all components simultaneously",
+      "The Router loads components based on the URL and updates the view",
+      "The application relies solely on server-side rendering",
+      "The browser replaces the need for routing"
+    ],
+    "answer": "The Router loads components based on the URL and updates the view",
+    "explanation": "After bootstrapping, the Angular Router determines which components to load based on the current URL and updates the view accordingly, enabling navigation within a Single Page Application (SPA).",
+    "tags": ["Angular", "Routing", "Flow"]
+  },
+  {
+    "question": "What is the purpose of lazy loading in Angular?",
+    "options": [
+      "To load all modules at application startup",
+      "To load modules/components only when they are needed, improving performance",
+      "To encrypt communication between components",
+      "To replace traditional APIs"
+    ],
+    "answer": "To load modules/components only when they are needed, improving performance",
+    "explanation": "Lazy loading in Angular defers the loading of modules or components until they are actually needed, reducing the initial load time and enhancing application performance.",
+    "tags": ["Angular", "Routing", "Lazy Loading"]
+  },
+  {
+    "question": "Which of the following is true about Angular's architecture?",
+    "options": [
+      "It eliminates the need for templates entirely",
+      "It promotes modularity through components, services, and modules",
+      "It focuses exclusively on backend development",
+      "It replaces the need for dependency injection"
+    ],
+    "answer": "It promotes modularity through components, services, and modules",
+    "explanation": "Angular's architecture emphasizes modularity by organizing the application into components, services, and modules, making it easier to scale and maintain.",
+    "tags": ["Angular", "Architecture", "Modularity"]
+  },
+  {
+    "question": "What is the role of the `selector` property in an Angular component?",
+    "options": [
+      "To define the component's template",
+      "To specify the CSS styles applied to the component",
+      "To declare the name used to insert the component into the DOM",
+      "To manage database connections"
+    ],
+    "answer": "To declare the name used to insert the component into the DOM",
+    "explanation": "The `selector` property in an Angular component specifies the name used to include the component in the DOM, enabling its usage in templates.",
+    "tags": ["Angular", "Components", "Selector"]
+  },
+  {
+    "question": "Which of the following is true about attribute directives in Angular?",
+    "options": [
+      "They modify the DOM structure directly",
+      "They alter the appearance or behavior of elements",
+      "They replace the need for templates",
+      "They manage database connections securely"
+    ],
+    "answer": "They alter the appearance or behavior of elements",
+    "explanation": "Attribute directives in Angular, such as `[ngClass]` or `[ngStyle]`, modify the appearance or behavior of elements without changing the DOM structure.",
+    "tags": ["Angular", "Directives", "Attribute Directives"]
+  },
+  {
+    "question": "What is Angular primarily used for?",
+    "options": [
+      "Building back-end server applications",
+      "Developing dynamic, modern front-end web applications",
+      "Managing databases in cloud environments",
+      "Encrypting communication between services"
+    ],
+    "answer": "Developing dynamic, modern front-end web applications",
+    "explanation": "Angular is a TypeScript-based front-end framework developed by Google, designed for building dynamic and modern web applications.",
+    "tags": ["Angular", "Front-End Framework", "Definition"]
+  },
+  {
+    "question": "Which programming language does Angular use?",
+    "options": ["JavaScript", "Python", "TypeScript", "Java"],
+    "answer": "TypeScript",
+    "explanation": "Angular uses TypeScript, a superset of JavaScript that provides static typing and better tooling for large-scale applications.",
+    "tags": ["Angular", "TypeScript", "Language"]
+  },
+  {
+    "question": "What architecture does Angular adopt?",
+    "options": [
+      "MVC (Model-View-Controller)",
+      "Component-based architecture",
+      "Microservices architecture",
+      "Event-driven architecture"
+    ],
+    "answer": "Component-based architecture",
+    "explanation": "Angular adopts a component-based architecture, which is more modular and scalable compared to AngularJS's MVC architecture.",
+    "tags": ["Angular", "Architecture", "Component-Based"]
+  },
+  {
+    "question": "How does Angular's data flow differ from AngularJS?",
+    "options": [
+      "AngularJS uses unidirectional data flow, while Angular uses two-way data binding.",
+      "Both Angular and AngularJS use two-way data binding exclusively.",
+      "Angular uses unidirectional data flow with Zone.js and change detection, improving performance over AngularJS's two-way data binding.",
+      "Angular eliminates the need for data binding entirely."
+    ],
+    "answer": "Angular uses unidirectional data flow with Zone.js and change detection, improving performance over AngularJS's two-way data binding.",
+    "explanation": "Angular employs a unidirectional data flow using Zone.js and change detection, which enhances performance compared to AngularJS's two-way data binding mechanism.",
+    "tags": ["Angular", "Data Flow", "Performance"]
+  },
+  {
+    "question": "Which templating syntax is used in Angular?",
+    "options": [
+      "AngularJS directives like `ng-bind` and `ng-model`",
+      "Angular-specific syntax like `*ngIf` and `*ngFor`",
+      "React JSX syntax",
+      "Vue.js templating syntax"
+    ],
+    "answer": "Angular-specific syntax like `*ngIf` and `*ngFor`",
+    "explanation": "Angular uses its own templating syntax, such as `*ngIf` for conditional rendering and `*ngFor` for iterating over lists, providing better modularity and encapsulation.",
+    "tags": ["Angular", "Templating", "Syntax"]
+  },
+  {
+    "question": "What is Dependency Injection (DI) in Angular?",
+    "options": [
+      "A mechanism for encrypting sensitive data",
+      "A system for managing database connections",
+      "A way to provide components with dependencies without hardcoding them",
+      "A protocol for real-time communication"
+    ],
+    "answer": "A way to provide components with dependencies without hardcoding them",
+    "explanation": "Dependency Injection (DI) in Angular allows components to receive dependencies dynamically, promoting loose coupling and better maintainability.",
+    "tags": ["Angular", "Dependency Injection", "DI"]
+  },
+  {
+    "question": "Which of the following best describes Angular CLI?",
+    "options": [
+      "A library for encrypting data in Angular applications",
+      "A command-line interface tool for scaffolding, testing, and building Angular applications",
+      "A database management tool for Angular applications",
+      "A protocol for secure communication"
+    ],
+    "answer": "A command-line interface tool for scaffolding, testing, and building Angular applications",
+    "explanation": "Angular CLI is a powerful tool that simplifies development tasks like project creation, testing, and building Angular applications.",
+    "tags": ["Angular", "Angular CLI", "Tooling"]
+  },
+  {
+    "question": "What is Angular primarily used for?",
+    "options": [
+      "Building back-end server applications",
+      "Developing dynamic, modern front-end web applications",
+      "Managing databases in cloud environments",
+      "Encrypting communication between services"
+    ],
+    "answer": "Developing dynamic, modern front-end web applications",
+    "explanation": "Angular is a TypeScript-based front-end framework developed by Google, designed for building dynamic and modern web applications.",
+    "tags": ["Angular", "Front-End Framework", "Definition"]
+  },
+  {
+    "question": "Which programming language does Angular use?",
+    "options": ["JavaScript", "Python", "TypeScript", "Java"],
+    "answer": "TypeScript",
+    "explanation": "Angular uses TypeScript, a superset of JavaScript that provides static typing and better tooling for large-scale applications.",
+    "tags": ["Angular", "TypeScript", "Language"]
+  },
+  {
+    "question": "What architecture does Angular adopt?",
+    "options": [
+      "MVC (Model-View-Controller)",
+      "Component-based architecture",
+      "Microservices architecture",
+      "Event-driven architecture"
+    ],
+    "answer": "Component-based architecture",
+    "explanation": "Angular adopts a component-based architecture, which is more modular and scalable compared to AngularJS's MVC architecture.",
+    "tags": ["Angular", "Architecture", "Component-Based"]
+  },
+  {
+    "question": "How does Angular's data flow differ from AngularJS?",
+    "options": [
+      "AngularJS uses unidirectional data flow, while Angular uses two-way data binding.",
+      "Both Angular and AngularJS use two-way data binding exclusively.",
+      "Angular uses unidirectional data flow with Zone.js and change detection, improving performance over AngularJS's two-way data binding.",
+      "Angular eliminates the need for data binding entirely."
+    ],
+    "answer": "Angular uses unidirectional data flow with Zone.js and change detection, improving performance over AngularJS's two-way data binding.",
+    "explanation": "Angular employs a unidirectional data flow using Zone.js and change detection, which enhances performance compared to AngularJS's two-way data binding mechanism.",
+    "tags": ["Angular", "Data Flow", "Performance"]
+  },
+  {
+    "question": "Which templating syntax is used in Angular?",
+    "options": [
+      "AngularJS directives like `ng-bind` and `ng-model`",
+      "Angular-specific syntax like `*ngIf` and `*ngFor`",
+      "React JSX syntax",
+      "Vue.js templating syntax"
+    ],
+    "answer": "Angular-specific syntax like `*ngIf` and `*ngFor`",
+    "explanation": "Angular uses its own templating syntax, such as `*ngIf` for conditional rendering and `*ngFor` for iterating over lists, providing better modularity and encapsulation.",
+    "tags": ["Angular", "Templating", "Syntax"]
+  },
+  {
+    "question": "What is Dependency Injection (DI) in Angular?",
+    "options": [
+      "A mechanism for encrypting sensitive data",
+      "A system for managing database connections",
+      "A way to provide components with dependencies without hardcoding them",
+      "A protocol for real-time communication"
+    ],
+    "answer": "A way to provide components with dependencies without hardcoding them",
+    "explanation": "Dependency Injection (DI) in Angular allows components to receive dependencies dynamically, promoting loose coupling and better maintainability.",
+    "tags": ["Angular", "Dependency Injection", "DI"]
+  },
+  {
+    "question": "Which of the following best describes Angular CLI?",
+    "options": [
+      "A library for encrypting data in Angular applications",
+      "A command-line interface tool for scaffolding, testing, and building Angular applications",
+      "A database management tool for Angular applications",
+      "A protocol for secure communication"
+    ],
+    "answer": "A command-line interface tool for scaffolding, testing, and building Angular applications",
+    "explanation": "Angular CLI is a powerful tool that simplifies development tasks like project creation, testing, and building Angular applications.",
+    "tags": ["Angular", "Angular CLI", "Tooling"]
+  },
+  {
+    "question": "How does Angular's mobile support compare to AngularJS?",
+    "options": [
+      "AngularJS is optimized for mobile development, while Angular lacks mobile support.",
+      "Angular is designed with mobile-first considerations, whereas AngularJS is not optimized for mobile development.",
+      "Both Angular and AngularJS are equally optimized for mobile development.",
+      "Mobile support is irrelevant to both frameworks."
+    ],
+    "answer": "Angular is designed with mobile-first considerations, whereas AngularJS is not optimized for mobile development.",
+    "explanation": "Angular was designed with mobile-first considerations, making it more suitable for mobile development compared to AngularJS, which did not prioritize mobile optimization.",
+    "tags": ["Angular", "Mobile Support", "Comparison"]
+  },
+  {
+    "question": "Which statement is true about backward compatibility between Angular and AngularJS?",
+    "options": [
+      "AngularJS applications can run seamlessly on Angular with no changes.",
+      "Angular and AngularJS are completely incompatible due to their architectural differences.",
+      "Angular provides tools to ensure full backward compatibility with AngularJS.",
+      "Backward compatibility is only relevant for backend frameworks."
+    ],
+    "answer": "Angular and AngularJS are completely incompatible due to their architectural differences.",
+    "explanation": "Angular and AngularJS are fundamentally different frameworks, and there is no direct backward compatibility between them. Migrating from AngularJS to Angular often requires rewriting parts of the application.",
+    "tags": ["Angular", "Backward Compatibility", "Comparison"]
+  },
+  {
+    "question": "What advantage does Angular's hierarchical DI system offer over AngularJS's DI?",
+    "options": [
+      "It simplifies the application structure unnecessarily.",
+      "It provides a more robust and flexible dependency injection mechanism.",
+      "It eliminates the need for dependency injection entirely.",
+      "It focuses exclusively on backend development."
+    ],
+    "answer": "It provides a more robust and flexible dependency injection mechanism.",
+    "explanation": "Angular's hierarchical DI system offers a more robust and flexible way to inject dependencies compared to AngularJS's less sophisticated DI approach.",
+    "tags": ["Angular", "Dependency Injection", "Hierarchical DI"]
+  },
+  {
+    "question": "Which of the following is a key difference in performance between Angular and AngularJS?",
+    "options": [
+      "AngularJS performs better in complex applications due to its two-way data binding.",
+      "Angular improves performance through unidirectional data flow and efficient change detection mechanisms.",
+      "Both frameworks have identical performance characteristics.",
+      "Performance improvements are only relevant for backend frameworks."
+    ],
+    "answer": "Angular improves performance through unidirectional data flow and efficient change detection mechanisms.",
+    "explanation": "Angular's unidirectional data flow and use of Zone.js for change detection significantly improve performance, especially in complex applications, compared to AngularJS's two-way data binding.",
+    "tags": ["Angular", "Performance", "Change Detection"]
+  },
+  {
+    "question": "Why was Angular rewritten from scratch instead of continuing with AngularJS?",
+    "options": [
+      "To address limitations and scalability issues in AngularJS.",
+      "Because AngularJS was too performant for modern applications.",
+      "To eliminate the need for front-end frameworks.",
+      "To focus exclusively on backend development."
+    ],
+    "answer": "To address limitations and scalability issues in AngularJS.",
+    "explanation": "Angular was rewritten from scratch to overcome the limitations of AngularJS, such as poor scalability, performance bottlenecks, and lack of modern features.",
+    "tags": ["Angular", "AngularJS", "Rewrite", "Scalability"]
+  },
+  {
+    "question": "Which of the following is true about AngularJS's architecture?",
+    "options": [
+      "It uses a component-based architecture similar to Angular.",
+      "It follows the MVC (Model-View-Controller) architecture.",
+      "It eliminates the need for templates entirely.",
+      "It focuses exclusively on backend development."
+    ],
+    "answer": "It follows the MVC (Model-View-Controller) architecture.",
+    "explanation": "AngularJS adheres to the MVC (Model-View-Controller) architecture, whereas Angular uses a component-based architecture.",
+    "tags": ["AngularJS", "Architecture", "MVC"]
+  },
+  {
+    "question": "What is the role of Zone.js in Angular?",
+    "options": [
+      "To manage database connections securely.",
+      "To handle encryption and decryption of sensitive data.",
+      "To track asynchronous operations and trigger change detection efficiently.",
+      "To replace traditional APIs with event-driven architectures."
+    ],
+    "answer": "To track asynchronous operations and trigger change detection efficiently.",
+    "explanation": "Zone.js in Angular tracks asynchronous operations and ensures efficient change detection, contributing to the framework's improved performance.",
+    "tags": ["Angular", "Zone.js", "Change Detection"]
+  },
+  {
+    "question": "Which of the following best describes Angular's approach to templating?",
+    "options": [
+      "Angular relies solely on third-party libraries for templating.",
+      "Angular uses its own templating syntax, including directives like `*ngIf` and `*ngFor`.",
+      "Angular continues to use AngularJS's templating syntax for backward compatibility.",
+      "Templating is irrelevant to Angular's architecture."
+    ],
+    "answer": "Angular uses its own templating syntax, including directives like `*ngIf` and `*ngFor`.",
+    "explanation": "Angular introduces its own templating syntax, leveraging directives like `*ngIf` and `*ngFor` for better modularity and encapsulation.",
+    "tags": ["Angular", "Templating", "Directives"]
+  },
+  {
+    "question": "What is the primary benefit of Angular's component-based architecture?",
+    "options": [
+      "It simplifies the application structure unnecessarily.",
+      "It promotes modularity and reusability, making the application more scalable.",
+      "It eliminates the need for HTML templates.",
+      "It focuses exclusively on backend development."
+    ],
+    "answer": "It promotes modularity and reusability, making the application more scalable.",
+    "explanation": "Angular's component-based architecture encourages modularity and reusability, enabling developers to build scalable and maintainable applications.",
+    "tags": ["Angular", "Component-Based Architecture", "Modularity"]
+  },
+  {
+    "question": "Which of the following statements about AngularJS's two-way data binding is true?",
+    "options": [
+      "It improves performance in complex applications.",
+      "It can lead to performance bottlenecks in large-scale applications due to heavy DOM updates.",
+      "It eliminates the need for templates entirely.",
+      "Two-way data binding is irrelevant to front-end frameworks."
+    ],
+    "answer": "It can lead to performance bottlenecks in large-scale applications due to heavy DOM updates.",
+    "explanation": "AngularJS's two-way data binding can cause performance issues in complex applications because it involves constant synchronization between the model and view, leading to heavy DOM updates.",
+    "tags": ["AngularJS", "Two-Way Data Binding", "Performance"]
+  },
+  {
+    "question": "What does Angular CLI help developers do?",
+    "options": [
+      "Manage database migrations automatically.",
+      "Scaffold, test, and build Angular applications with standardized tools.",
+      "Replace traditional APIs with WebSocket-based communication.",
+      "Focus exclusively on backend development."
+    ],
+    "answer": "Scaffold, test, and build Angular applications with standardized tools.",
+    "explanation": "Angular CLI provides tools for generating components, running tests, and building Angular applications, ensuring consistency and speeding up development.",
+    "tags": ["Angular", "Angular CLI", "Tooling"]
+  },
+  {
+    "question": "Which of the following is true about Angular's change detection mechanism?",
+    "options": [
+      "It relies on two-way data binding, similar to AngularJS.",
+      "It uses unidirectional data flow and Zone.js for efficient change detection.",
+      "Change detection is unnecessary in Angular due to its simpler architecture.",
+      "It focuses exclusively on backend state management."
+    ],
+    "answer": "It uses unidirectional data flow and Zone.js for efficient change detection.",
+    "explanation": "Angular's change detection mechanism leverages unidirectional data flow and Zone.js to efficiently track and update changes in the application.",
+    "tags": ["Angular", "Change Detection", "Zone.js"]
+  },
+  {
+    "question": "What is the main disadvantage of AngularJS's two-way data binding?",
+    "options": [
+      "It simplifies the application structure too much.",
+      "It can degrade performance in complex applications due to frequent DOM updates.",
+      "It eliminates the need for templates entirely.",
+      "Two-way data binding is irrelevant to modern front-end development."
+    ],
+    "answer": "It can degrade performance in complex applications due to frequent DOM updates.",
+    "explanation": "AngularJS's two-way data binding synchronizes the model and view constantly, which can slow down performance in large-scale applications with many bindings.",
+    "tags": ["AngularJS", "Two-Way Data Binding", "Performance"]
+  },
+  {
+    "question": "Which of the following is a feature introduced in Angular but not available in AngularJS?",
+    "options": [
+      "MVC architecture",
+      "Hierarchical Dependency Injection",
+      "HTML templates",
+      "Support for RESTful APIs"
+    ],
+    "answer": "Hierarchical Dependency Injection",
+    "explanation": "Angular introduces a hierarchical Dependency Injection system, offering greater flexibility and robustness compared to AngularJS's simpler DI mechanism.",
+    "tags": ["Angular", "AngularJS", "Dependency Injection", "Comparison"]
+  },
+  {
+    "question": "Why is TypeScript preferred in Angular over plain JavaScript used in AngularJS?",
+    "options": [
+      "TypeScript eliminates the need for HTML templates.",
+      "TypeScript provides static typing and better tooling, enhancing developer productivity.",
+      "TypeScript is easier to learn than JavaScript.",
+      "TypeScript replaces the need for front-end frameworks."
+    ],
+    "answer": "TypeScript provides static typing and better tooling, enhancing developer productivity.",
+    "explanation": "TypeScript, being a statically typed superset of JavaScript, offers better tooling, compile-time checks, and improved maintainability, making it the preferred choice for Angular.",
+    "tags": ["Angular", "TypeScript", "Static Typing"]
+  },
+  {
+    "question": "Which of the following is true about Angular's mobile-first design philosophy?",
+    "options": [
+      "AngularJS also follows a mobile-first design philosophy.",
+      "Angular is optimized for mobile-first development, unlike AngularJS.",
+      "Mobile-first design is irrelevant to front-end frameworks.",
+      "Angular eliminates the need for responsive design."
+    ],
+    "answer": "Angular is optimized for mobile-first development, unlike AngularJS.",
+    "explanation": "Angular was designed with mobile-first considerations, ensuring better performance and responsiveness on mobile devices compared to AngularJS.",
+    "tags": ["Angular", "Mobile-First", "Optimization"]
+  },
+  {
+    "question": "What is the purpose of Angular's *ngIf directive?",
+    "options": [
+      "To iterate over lists in the template.",
+      "To conditionally render elements in the template.",
+      "To define routes in the application.",
+      "To manage database connections securely."
+    ],
+    "answer": "To conditionally render elements in the template.",
+    "explanation": "The *ngIf directive in Angular is used to conditionally render elements in the HTML template based on a given condition.",
+    "tags": ["Angular", "Directives", "*ngIf"]
+  },
+  {
     "question": "What is Podman primarily used for?",
     "options": [
       "Managing databases",
