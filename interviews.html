@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Mohamed Housni - Fullstack Javascript Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
-        @media print {
-            .hide-on-print, .hidden-on-load  {
-                display: none !important;
-            }
-
-            .page-break {
-                page-break-after: always;
-            }
-        }
-
+      @media print {
+        .hide-on-print,
         .hidden-on-load {
-            display: none;
+          display: none !important;
         }
 
-        #summary b {
-            font-weight: 600;
+        .page-break {
+          page-break-after: always;
         }
+      }
+
+      .hidden-on-load {
+        display: none;
+      }
+
+      #summary b {
+        font-weight: 600;
+      }
     </style>
-</head>
-<body class="bg-gray-100 text-gray-900 hidden">
-    <div id="mcqs" class="m-6"></div>
-    <div id="tags" class="m-6"></div>
+  </head>
+  <body class="bg-gray-100 text-gray-900 hidden">
+    <div class="grid grid-cols-2 gap-6 m-6">
+      <div id="mcqs"></div>
+      <div id="tags"></div>
+    </div>
     <script src="./brain/scripts/interviews.js"></script>
-</body>
+  </body>
 </html>
