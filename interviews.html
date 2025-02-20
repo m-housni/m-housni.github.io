@@ -31,12 +31,38 @@
       #summary b {
         font-weight: 600;
       }
+
+      /* Custom scrollbar styles */
+      #mcqs::-webkit-scrollbar,
+      #tags::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      #mcqs::-webkit-scrollbar-thumb,
+      #tags::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+      }
+
+      #mcqs::-webkit-scrollbar-thumb:hover,
+      #tags::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      #mcqs::-webkit-scrollbar-track,
+      #tags::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
     </style>
   </head>
   <body class="bg-gray-100 text-gray-900 hidden">
+    <div class="text-center bg-black text-white p-4 sticky top-0 z-50">
+      <span id="topics" class="mx-1"></span> :
+      <span id="totalQuestions" class="mx-1"></span>
+    </div>
     <div class="grid grid-cols-2 gap-6 m-6">
-      <div id="mcqs"></div>
-      <div id="tags"></div>
+      <div id="mcqs" class="h-screen overflow-y-auto"></div>
+      <div id="tags" class="h-screen overflow-y-auto"></div>
     </div>
     <script src="./brain/scripts/interviews.js"></script>
   </body>

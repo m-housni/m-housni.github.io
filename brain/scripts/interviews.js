@@ -12,6 +12,8 @@ try {
       mcqs.push(...data);
       displayQuestion(mcqs);
       getTags();
+      totalQuestions();
+      topicsCount();
     });
 } catch (error) {
   console.error(error);
@@ -65,4 +67,18 @@ function getTags() {
     tagsContainer.innerHTML += `<span onclick="filterByTag('${key}')"   class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs mr-2 cursor-pointer">${key} (${value})</span>`;
   });
   tagsContainer.innerHTML += "</div>";
+}
+
+function totalQuestions() {
+  const totalQuestions = document.getElementById("totalQuestions");
+  totalQuestions.innerText = mcqsAll.length;
+}
+
+function topicsCount() {
+  const topics = document.getElementById("topics");
+  // filter tags having more than five questions
+  const filteredTags = new Map(
+    [...tags.entries()].filter(([key, value]) => value >= 3)
+  );
+  topics.innerText = filteredTags.size;
 }
