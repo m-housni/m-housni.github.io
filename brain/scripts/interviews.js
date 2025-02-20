@@ -27,17 +27,18 @@ function displayQuestion(data) {
   data.forEach((mcq) => {
     const questionDiv = document.createElement("div");
     questionDiv.innerHTML +=
+      `<div class="mb-4 text-nowrap">${mcq.tags
+        .map((e) => {
+          return `<span onclick="filterByTag('${e}')" class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs mr-2 cursor-pointer">${e}</span>`;
+        })
+        .join("")}</div>` +
       `<h3 class="font-semibold">${mcq.question}</h3>` +
       `<ul class="list-disc list-inside">${mcq.options
         .map((option) => `<li class="text-sm">${option}</li>`)
         .join("")}</ul>` +
       `<div class="mt-4">${mcq.answer}</div>` +
       `<div class="mt-4">${mcq.explanation}</div>` +
-      `<div class="mt-4 text-nowrap">${mcq.tags
-        .map((e) => {
-          return `<span onclick="filterByTag('${e}')" class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs mr-2 cursor-pointer">${e}</span>`;
-        })
-        .join("")}</div><hr class="my-5">`;
+      `<hr class="my-5">`;
     mcqsContainer.appendChild(questionDiv);
   });
 }
