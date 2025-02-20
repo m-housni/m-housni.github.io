@@ -1,5 +1,583 @@
 [
   {
+    "question": "Tell me about a time you had to deal with a difficult coworker.",
+    "options": [
+      "I ignored the coworker and focused on my tasks independently.",
+      "I addressed the issue directly and worked to find common ground.",
+      "I reported the coworker to HR without trying to resolve it myself.",
+      "I avoided all interactions with the coworker to prevent conflicts."
+    ],
+    "answer": "I addressed the issue directly and worked to find common ground.",
+    "explanation": "This response demonstrates strong interpersonal skills and a proactive approach to resolving conflicts constructively.",
+    "tags": ["Behavioral", "Conflict Resolution", "Coworkers"]
+  },
+  {
+    "question": "Describe a situation where you had to manage multiple priorities.",
+    "options": [
+      "I prioritized tasks based on deadlines and importance, ensuring timely delivery.",
+      "I delegated all tasks to others and focused only on one priority.",
+      "I worked overtime to complete everything without prioritizing.",
+      "I ignored some tasks and focused only on the most urgent ones."
+    ],
+    "answer": "I prioritized tasks based on deadlines and importance, ensuring timely delivery.",
+    "explanation": "Effectively managing multiple priorities involves strategic planning and execution, as shown in this answer.",
+    "tags": ["Behavioral", "Prioritization", "Task Management"]
+  },
+  {
+    "question": "Give an example of a time you showed leadership.",
+    "options": [
+      "I led a team project and ensured everyone contributed effectively.",
+      "I waited for someone else to take charge and followed their lead.",
+      "I avoided taking responsibility and let the manager handle everything.",
+      "I only focused on my individual tasks without considering team dynamics."
+    ],
+    "answer": "I led a team project and ensured everyone contributed effectively.",
+    "explanation": "Leadership involves taking initiative, guiding others, and ensuring collaboration, which is reflected in this answer.",
+    "tags": ["Behavioral", "Leadership", "Team Dynamics"]
+  },
+  {
+    "question": "Tell me about a time you failed and what you learned from it.",
+    "options": [
+      "I failed to meet a deadline but learned to better manage my time.",
+      "I blamed others for the failure and did not reflect on my role.",
+      "I ignored the failure and moved on without learning anything.",
+      "I never fail, so I don't have any examples."
+    ],
+    "answer": "I failed to meet a deadline but learned to better manage my time.",
+    "explanation": "Acknowledging failure and demonstrating growth through lessons learned highlights resilience and adaptability.",
+    "tags": ["Behavioral", "Failure", "Learning"]
+  },
+  {
+    "question": "Describe a situation where you went above and beyond for a customer or colleague.",
+    "options": [
+      "I stayed late to help a colleague complete a critical task.",
+      "I did the bare minimum required by my job description.",
+      "I ignored the request because it was outside my responsibilities.",
+      "I delegated the task to someone else without getting involved."
+    ],
+    "answer": "I stayed late to help a colleague complete a critical task.",
+    "explanation": "Going above and beyond shows commitment, empathy, and a willingness to contribute beyond basic expectations.",
+    "tags": ["Behavioral", "Customer Service", "Colleagues"]
+  },
+  {
+    "question": "Tell me about a time you made a mistake at work. How did you handle it?",
+    "options": [
+      "I admitted the mistake, corrected it, and implemented preventive measures.",
+      "I hid the mistake and hoped no one would notice.",
+      "I blamed the tools or systems for the error.",
+      "I made no mistakes, so I have no examples."
+    ],
+    "answer": "I admitted the mistake, corrected it, and implemented preventive measures.",
+    "explanation": "Handling mistakes responsibly and learning from them demonstrates accountability and problem-solving skills.",
+    "tags": ["Behavioral", "Mistakes", "Problem Solving"]
+  },
+  {
+    "question": "Have you ever had to deal with a difficult manager? How did you handle it?",
+    "options": [
+      "I communicated openly and sought clarity on expectations.",
+      "I complained to other colleagues and avoided addressing the issue directly.",
+      "I resigned immediately without attempting resolution.",
+      "I ignored the manager's feedback entirely."
+    ],
+    "answer": "I communicated openly and sought clarity on expectations.",
+    "explanation": "Open communication and seeking understanding are key to resolving conflicts with managers effectively.",
+    "tags": ["Behavioral", "Manager Relationships", "Communication"]
+  },
+  {
+    "question": "Give an example of a time you worked successfully in a team.",
+    "options": [
+      "I collaborated with teammates, shared ideas, and ensured we met our goals together.",
+      "I worked independently and let the team follow my lead.",
+      "I avoided teamwork and focused solely on my individual tasks.",
+      "I let others do the work while I took credit for the results."
+    ],
+    "answer": "I collaborated with teammates, shared ideas, and ensured we met our goals together.",
+    "explanation": "Successful teamwork involves collaboration, communication, and shared responsibility, as demonstrated in this response.",
+    "tags": ["Behavioral", "Teamwork", "Collaboration"]
+  },
+  {
+    "question": "Tell me about a time you had to meet a tight deadline.",
+    "options": [
+      "I prioritized tasks, focused on critical deliverables, and delivered on time.",
+      "I panicked and missed the deadline completely.",
+      "I ignored the deadline and worked at my usual pace.",
+      "I delegated all tasks and avoided personal involvement."
+    ],
+    "answer": "I prioritized tasks, focused on critical deliverables, and delivered on time.",
+    "explanation": "Meeting tight deadlines requires effective time management and focus, which is showcased in this answer.",
+    "tags": ["Behavioral", "Deadlines", "Time Management"]
+  },
+  {
+    "question": "Describe a time when you had to convince someone to see things your way.",
+    "options": [
+      "I presented data and logical arguments to persuade them effectively.",
+      "I used emotional manipulation to force my perspective.",
+      "I gave up and accepted their viewpoint without discussion.",
+      "I avoided the conversation entirely."
+    ],
+    "answer": "I presented data and logical arguments to persuade them effectively.",
+    "explanation": "Using data and logic to influence others demonstrates strong persuasion and communication skills.",
+    "tags": ["Behavioral", "Persuasion", "Communication"]
+  },
+  {
+    "question": "Tell me about a time you had to adapt to a major change at work.",
+    "options": [
+      "I embraced the change, educated myself, and adjusted my approach accordingly.",
+      "I resisted the change and refused to adapt.",
+      "I ignored the change and continued working as before.",
+      "I left the company because I couldn't handle the change."
+    ],
+    "answer": "I embraced the change, educated myself, and adjusted my approach accordingly.",
+    "explanation": "Adapting to change involves flexibility, learning, and adjusting behavior, as highlighted in this response.",
+    "tags": ["Behavioral", "Adaptability", "Change Management"]
+  },
+  {
+    "question": "Give an example of a time you had to solve a complex problem.",
+    "options": [
+      "I broke the problem into smaller parts, analyzed each part, and developed a solution systematically.",
+      "I gave up and asked someone else to solve it.",
+      "I ignored the complexity and provided a superficial solution.",
+      "I avoided solving the problem altogether."
+    ],
+    "answer": "I broke the problem into smaller parts, analyzed each part, and developed a solution systematically.",
+    "explanation": "Solving complex problems requires systematic thinking and a structured approach, as illustrated in this answer.",
+    "tags": ["Behavioral", "Problem Solving", "Complexity"]
+  },
+  {
+    "question": "Describe a situation where you handled a dissatisfied customer or client.",
+    "options": [
+      "I listened actively, empathized, and resolved their concerns promptly.",
+      "I dismissed their complaints and focused on other customers.",
+      "I passed the issue to someone else without addressing it myself.",
+      "I ignored the customer entirely."
+    ],
+    "answer": "I listened actively, empathized, and resolved their concerns promptly.",
+    "explanation": "Handling dissatisfied customers involves active listening, empathy, and prompt resolution, as shown in this response.",
+    "tags": ["Behavioral", "Customer Service", "Empathy"]
+  },
+  {
+    "question": "Have you ever had to take on a task outside of your job description? How did you handle it?",
+    "options": [
+      "I took ownership of the task, educated myself, and completed it successfully.",
+      "I refused to take on the task and stuck to my job description.",
+      "I delegated the task to someone else without contributing.",
+      "I ignored the task and hoped it would go away."
+    ],
+    "answer": "I took ownership of the task, educated myself, and completed it successfully.",
+    "explanation": "Taking on tasks outside your job description shows flexibility, initiative, and a willingness to learn new skills.",
+    "tags": ["Behavioral", "Initiative", "Flexibility"]
+  },
+  {
+    "question": "Tell me about a time you had to work under pressure.",
+    "options": [
+      "I remained calm, focused on priorities, and delivered results efficiently.",
+      "I froze and could not function under pressure.",
+      "I avoided the pressure by delegating all tasks to others.",
+      "I ignored the pressure and worked at my usual pace."
+    ],
+    "answer": "I remained calm, focused on priorities, and delivered results efficiently.",
+    "explanation": "Working under pressure requires composure, focus, and efficient execution, as demonstrated in this answer.",
+    "tags": ["Behavioral", "Pressure", "Stress Management"]
+  },
+  {
+    "question": "Describe a situation where you had to use creativity to solve a problem.",
+    "options": [
+      "I brainstormed unique solutions and implemented an innovative approach.",
+      "I followed standard procedures without thinking creatively.",
+      "I gave up and let someone else solve the problem.",
+      "I avoided creative thinking and focused only on technical solutions."
+    ],
+    "answer": "I brainstormed unique solutions and implemented an innovative approach.",
+    "explanation": "Creative problem-solving involves thinking outside the box and proposing innovative solutions, as reflected in this response.",
+    "tags": ["Behavioral", "Creativity", "Problem Solving"]
+  },
+  {
+    "question": "Give an example of a time when you made a process more efficient.",
+    "options": [
+      "I identified bottlenecks, proposed improvements, and implemented changes that enhanced productivity.",
+      "I ignored inefficiencies and continued with the existing process.",
+      "I outsourced the process to avoid dealing with it myself.",
+      "I avoided making any changes to the process."
+    ],
+    "answer": "I identified bottlenecks, proposed improvements, and implemented changes that enhanced productivity.",
+    "explanation": "Improving processes involves identifying inefficiencies and implementing meaningful changes, showcasing analytical and improvement-oriented skills.",
+    "tags": ["Behavioral", "Process Improvement", "Efficiency"]
+  },
+  {
+    "question": "Tell me about a time you had to handle a conflict within your team.",
+    "options": [
+      "I mediated the conflict, facilitated open communication, and helped reach a resolution.",
+      "I escalated the conflict to higher management without addressing it directly.",
+      "I ignored the conflict and hoped it would resolve itself.",
+      "I sided with one party and disregarded the other's perspective."
+    ],
+    "answer": "I mediated the conflict, facilitated open communication, and helped reach a resolution.",
+    "explanation": "Handling team conflicts involves mediation, open communication, and finding resolutions collaboratively, as highlighted in this answer.",
+    "tags": ["Behavioral", "Conflict Resolution", "Team Dynamics"]
+  },
+  {
+    "question": "Describe a time when you had to learn a new skill quickly.",
+    "options": [
+      "I dedicated time to learning resources, practiced intensively, and became proficient rapidly.",
+      "I procrastinated and failed to learn the skill in time.",
+      "I avoided learning the skill and relied on others to complete the task.",
+      "I claimed I already knew the skill without actually learning it."
+    ],
+    "answer": "I dedicated time to learning resources, practiced intensively, and became proficient rapidly.",
+    "explanation": "Rapid skill acquisition requires dedication, practice, and resourcefulness, as demonstrated in this response.",
+    "tags": ["Behavioral", "Skill Acquisition", "Learning"]
+  },
+  {
+    "question": "Give an example of a time you received constructive criticism and how you responded.",
+    "options": [
+      "I accepted the feedback, reflected on it, and made improvements accordingly.",
+      "I dismissed the feedback and continued with my original approach.",
+      "I argued against the feedback and blamed others for my shortcomings.",
+      "I ignored the feedback entirely."
+    ],
+    "answer": "I accepted the feedback, reflected on it, and made improvements accordingly.",
+    "explanation": "Responding positively to constructive criticism involves reflection and improvement, showcasing professionalism and growth mindset.",
+    "tags": ["Behavioral", "Feedback", "Professionalism"]
+  },
+  {
+    "question": "Tell me about a time you had to collaborate with someone who had a different working style.",
+    "options": [
+      "I adapted to their style, found common ground, and ensured productive collaboration.",
+      "I criticized their style and insisted they adapt to mine.",
+      "I avoided collaboration and worked independently.",
+      "I complained to management about their working style."
+    ],
+    "answer": "I adapted to their style, found common ground, and ensured productive collaboration.",
+    "explanation": "Collaborating with different working styles requires adaptability and compromise, as shown in this response.",
+    "tags": ["Behavioral", "Collaboration", "Adaptability"]
+  },
+  {
+    "question": "Describe a situation where you had to take initiative without being asked.",
+    "options": [
+      "I proactively identified a need, proposed a solution, and executed it successfully.",
+      "I waited for instructions and did nothing until asked.",
+      "I avoided taking initiative and let others handle the situation.",
+      "I ignored the situation entirely."
+    ],
+    "answer": "I proactively identified a need, proposed a solution, and executed it successfully.",
+    "explanation": "Taking initiative involves identifying needs, proposing solutions, and executing them without explicit instructions, demonstrating self-motivation.",
+    "tags": ["Behavioral", "Initiative", "Self-Motivation"]
+  },
+  {
+    "question": "Give an example of a time when you had to explain something complex to a non-expert.",
+    "options": [
+      "I simplified the concept, used analogies, and ensured the person understood fully.",
+      "I used technical jargon and confused the person further.",
+      "I avoided explaining and let them figure it out themselves.",
+      "I delegated the explanation to someone else."
+    ],
+    "answer": "I simplified the concept, used analogies, and ensured the person understood fully.",
+    "explanation": "Explaining complex topics clearly and using relatable analogies demonstrates strong communication and teaching skills.",
+    "tags": ["Behavioral", "Communication", "Complex Topics"]
+  },
+  {
+    "question": "Tell me about a time you had to manage competing deadlines.",
+    "options": [
+      "I prioritized tasks, allocated resources effectively, and met all deadlines successfully.",
+      "I missed all deadlines due to poor planning.",
+      "I ignored the competing deadlines and focused on one task only.",
+      "I delegated all tasks and avoided managing deadlines."
+    ],
+    "answer": "I prioritized tasks, allocated resources effectively, and met all deadlines successfully.",
+    "explanation": "Managing competing deadlines involves prioritization, resource allocation, and successful execution, as shown in this response.",
+    "tags": ["Behavioral", "Deadline Management", "Prioritization"]
+  },
+  {
+    "question": "Have you ever had to implement feedback from a performance review? How did you do it?",
+    "options": [
+      "I created an action plan, set goals, and tracked progress systematically.",
+      "I ignored the feedback and continued working as before.",
+      "I disagreed with the feedback and refused to implement it.",
+      "I delegated the implementation to someone else."
+    ],
+    "answer": "I created an action plan, set goals, and tracked progress systematically.",
+    "explanation": "Implementing feedback involves creating actionable plans and tracking progress, showcasing adaptability and professionalism.",
+    "tags": ["Behavioral", "Feedback Implementation", "Performance Reviews"]
+  },
+  {
+    "question": "Why is it important to stay updated on the latest trends in full-stack development?",
+    "options": [
+      "To focus exclusively on backend development",
+      "To enhance career progression and adapt to industry demands",
+      "To eliminate the need for continuous learning",
+      "To replace traditional APIs"
+    ],
+    "answer": "To enhance career progression and adapt to industry demands",
+    "explanation": "Staying updated on the latest trends in full-stack development helps developers align with industry needs, improve their skills, and progress in their careers.",
+    "tags": ["Full-Stack Development", "Trends", "Career Progression"]
+  },
+  {
+    "question": "Which emerging trend involves integrating predictive analytics and personalized user experiences into applications?",
+    "options": [
+      "Mixed Reality (MR)",
+      "Artificial Intelligence (AI)",
+      "Blockchain",
+      "Low-Code Development"
+    ],
+    "answer": "Artificial Intelligence (AI)",
+    "explanation": "Artificial Intelligence (AI) is becoming increasingly prevalent in full-stack development, enabling features like predictive analytics and personalized user experiences.",
+    "tags": ["Full-Stack Development", "Emerging Trends", "AI"]
+  },
+  {
+    "question": "What does Mixed Reality (MR) technology combine to create immersive applications?",
+    "options": [
+      "Augmented Reality (AR) and Virtual Reality (VR)",
+      "Frontend and Backend technologies",
+      "Database management and cloud computing",
+      "Serverless architecture and blockchain"
+    ],
+    "answer": "Augmented Reality (AR) and Virtual Reality (VR)",
+    "explanation": "Mixed Reality (MR) combines Augmented Reality (AR) and Virtual Reality (VR) to create immersive applications that blend the physical and digital worlds.",
+    "tags": ["Full-Stack Development", "Emerging Trends", "Mixed Reality"]
+  },
+  {
+    "question": "How does serverless architecture benefit full-stack developers?",
+    "options": [
+      "By requiring them to manage server infrastructure manually",
+      "By allowing them to focus solely on frontend development",
+      "By enabling them to write code without managing server infrastructure",
+      "By eliminating the need for continuous integration"
+    ],
+    "answer": "By enabling them to write code without managing server infrastructure",
+    "explanation": "Serverless architecture allows developers to focus on writing code without worrying about server management, streamlining the development process.",
+    "tags": [
+      "Full-Stack Development",
+      "Emerging Trends",
+      "Serverless Architecture"
+    ]
+  },
+  {
+    "question": "What recent update has expanded React's capabilities into full-stack development?",
+    "options": [
+      "The introduction of React Server Components and Server Actions",
+      "The removal of support for state management",
+      "The exclusive focus on frontend development",
+      "The replacement of JavaScript with Python"
+    ],
+    "answer": "The introduction of React Server Components and Server Actions",
+    "explanation": "React's recent updates, including React Server Components and Server Actions, have positioned it as a more comprehensive framework for full-stack development by integrating frontend and backend functionalities.",
+    "tags": ["Full-Stack Development", "React", "Full-Stack Framework"]
+  },
+  {
+    "question": "Which resource provides curated articles, books, and tech quotes to help you stay informed about full-stack trends?",
+    "options": [
+      "Developer Tech News",
+      "FullStack Bulletin",
+      "Frontegg Blog",
+      "Softweb Solutions"
+    ],
+    "answer": "FullStack Bulletin",
+    "explanation": "FullStack Bulletin is a weekly newsletter that curates top articles, books, and inspirational tech quotes, helping developers stay abreast of industry trends.",
+    "tags": ["Full-Stack Development", "Resources", "FullStack Bulletin"]
+  },
+  {
+    "question": "What is the primary purpose of low-code platforms in full-stack development?",
+    "options": [
+      "To encrypt communication between services",
+      "To accelerate application development through rapid prototyping",
+      "To replace traditional databases entirely",
+      "To focus exclusively on IoT development"
+    ],
+    "answer": "To accelerate application development through rapid prototyping",
+    "explanation": "Low-code platforms enable rapid prototyping and deployment, reducing development time and effort while maintaining functionality.",
+    "tags": ["Full-Stack Development", "Emerging Trends", "Low-Code Platforms"]
+  },
+  {
+    "question": "Which influential developer is known for creating popular web development courses?",
+    "options": ["Gergely Orosz", "Wes Bos", "Addy Osmani", "Dan Abramov"],
+    "answer": "Wes Bos",
+    "explanation": "Wes Bos is renowned for creating popular web development courses that help developers learn modern technologies effectively.",
+    "tags": ["Full-Stack Development", "Influencers", "Wes Bos"]
+  },
+  {
+    "question": "What is the STAR method used for in interview preparation?",
+    "options": [
+      "To describe your favorite coding languages",
+      "To detail your Situation, Task, Action, and Result in problem-solving scenarios",
+      "To showcase your knowledge of blockchain protocols",
+      "To replace traditional resumes entirely"
+    ],
+    "answer": "To detail your Situation, Task, Action, and Result in problem-solving scenarios",
+    "explanation": "The STAR method (Situation, Task, Action, Result) is a structured approach to answering behavioral interview questions, highlighting your ability to solve problems effectively.",
+    "tags": ["Full-Stack Development", "Interview Preparation", "STAR Method"]
+  },
+  {
+    "question": "Which project idea demonstrates proficiency in AI-driven web applications?",
+    "options": [
+      "A static website portfolio",
+      "A blockchain-based voting system",
+      "An IoT dashboard for device monitoring",
+      "A web app utilizing machine learning algorithms for personalized recommendations"
+    ],
+    "answer": "A web app utilizing machine learning algorithms for personalized recommendations",
+    "explanation": "Developing an AI-driven web application, such as one providing personalized recommendations, showcases expertise in integrating machine learning algorithms into full-stack projects.",
+    "tags": ["Full-Stack Development", "Project Ideas", "AI"]
+  },
+  {
+    "question": "Why is blockchain technology gaining traction in full-stack development?",
+    "options": [
+      "Because it eliminates the need for frontend development",
+      "Because it enables decentralized applications (dApps) with enhanced security",
+      "Because it focuses exclusively on IoT development",
+      "Because it replaces traditional databases entirely"
+    ],
+    "answer": "Because it enables decentralized applications (dApps) with enhanced security",
+    "explanation": "Blockchain technology is increasingly being adopted in full-stack development due to its ability to support secure decentralized applications (dApps).",
+    "tags": ["Full-Stack Development", "Emerging Trends", "Blockchain"]
+  },
+  {
+    "question": "What is the main advantage of using React Server Components in full-stack development?",
+    "options": [
+      "They require manual server management",
+      "They reduce complexity by integrating frontend and backend logic",
+      "They eliminate the need for CSS styling",
+      "They focus exclusively on database encryption"
+    ],
+    "answer": "They reduce complexity by integrating frontend and backend logic",
+    "explanation": "React Server Components streamline full-stack development by integrating frontend and backend functionalities, reducing the complexity of managing separate applications.",
+    "tags": ["Full-Stack Development", "React", "React Server Components"]
+  },
+  {
+    "question": "Which influencer specializes in web performance and optimization?",
+    "options": ["Sarah Drasner", "Addy Osmani", "Dan Abramov", "Gergely Orosz"],
+    "answer": "Addy Osmani",
+    "explanation": "Addy Osmani, a Senior Staff Software Engineer at Google, is well-known for his work on web performance and optimization techniques.",
+    "tags": ["Full-Stack Development", "Influencers", "Addy Osmani"]
+  },
+  {
+    "question": "What is the role of continuous learning in enhancing a full-stack developer's resume?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It demonstrates commitment to staying current with industry trends and acquiring new skills",
+      "It eliminates the need for coding altogether",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It demonstrates commitment to staying current with industry trends and acquiring new skills",
+    "explanation": "Continuous learning highlights a developer's dedication to adapting to new technologies and trends, making their resume more attractive to potential employers.",
+    "tags": [
+      "Full-Stack Development",
+      "Resume Enhancement",
+      "Continuous Learning"
+    ]
+  },
+  {
+    "question": "Which platform provides the latest news and insights on app development, including AI and cloud computing?",
+    "options": [
+      "FullStack Bulletin",
+      "Developer Tech News",
+      "Frontegg Blog",
+      "Softweb Solutions"
+    ],
+    "answer": "Developer Tech News",
+    "explanation": "Developer Tech News offers up-to-date articles and insights on various aspects of app development, including AI, cloud computing, and other relevant topics.",
+    "tags": ["Full-Stack Development", "Resources", "Developer Tech News"]
+  },
+  {
+    "question": "What is the significance of showcasing versatility in your full-stack development profile?",
+    "options": [
+      "It limits your skillset to either frontend or backend",
+      "It emphasizes your ability to handle both client-side and server-side tasks effectively",
+      "It eliminates the need for collaboration with other developers",
+      "It focuses exclusively on database management"
+    ],
+    "answer": "It emphasizes your ability to handle both client-side and server-side tasks effectively",
+    "explanation": "Highlighting versatility in your profile underscores your capability to tackle both frontend and backend tasks, making you a valuable asset in agile project settings.",
+    "tags": ["Full-Stack Development", "Resume Enhancement", "Versatility"]
+  },
+  {
+    "question": "Which project idea best illustrates your expertise in IoT development?",
+    "options": [
+      "A blockchain-based voting system",
+      "A static website portfolio",
+      "An IoT dashboard for real-time device monitoring",
+      "A traditional REST API implementation"
+    ],
+    "answer": "An IoT dashboard for real-time device monitoring",
+    "explanation": "Creating an IoT dashboard that monitors and controls devices in real-time demonstrates proficiency in interacting with IoT devices and developing dynamic applications.",
+    "tags": ["Full-Stack Development", "Project Ideas", "IoT"]
+  },
+  {
+    "question": "What is the primary purpose of following thought leaders in the full-stack development community?",
+    "options": [
+      "To gain insights into outdated technologies",
+      "To obtain valuable perspectives and knowledge on emerging trends",
+      "To replace the need for practical experience",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To obtain valuable perspectives and knowledge on emerging trends",
+    "explanation": "Following thought leaders provides access to cutting-edge ideas, tools, and practices, keeping you informed about the latest developments in full-stack development.",
+    "tags": ["Full-Stack Development", "Influencers", "Thought Leaders"]
+  },
+  {
+    "question": "Which resource lists top full-stack developers to follow for industry insights?",
+    "options": [
+      "FullStack Bulletin",
+      "Frontegg Blog",
+      "Developer Tech News",
+      "Softweb Solutions"
+    ],
+    "answer": "Frontegg Blog",
+    "explanation": "The Frontegg Blog provides a list of top full-stack developers to follow, offering valuable perspectives and knowledge on industry advancements.",
+    "tags": ["Full-Stack Development", "Resources", "Frontegg Blog"]
+  },
+  {
+    "question": "What is the main benefit of adopting serverless architecture in full-stack development?",
+    "options": [
+      "It increases the complexity of managing servers",
+      "It allows developers to write code without managing server infrastructure",
+      "It eliminates the need for frontend frameworks",
+      "It focuses exclusively on database encryption"
+    ],
+    "answer": "It allows developers to write code without managing server infrastructure",
+    "explanation": "Serverless architecture abstracts server management, enabling developers to focus on writing code and delivering functionality without worrying about infrastructure.",
+    "tags": [
+      "Full-Stack Development",
+      "Emerging Trends",
+      "Serverless Architecture"
+    ]
+  },
+  {
+    "question": "Which project idea highlights your ability to develop secure, decentralized applications?",
+    "options": [
+      "An AI-driven recommendation engine",
+      "A blockchain-based voting system",
+      "A traditional SQL database application",
+      "A static HTML website"
+    ],
+    "answer": "A blockchain-based voting system",
+    "explanation": "Building a blockchain-based voting system demonstrates expertise in creating secure, decentralized applications, leveraging blockchain technology effectively.",
+    "tags": ["Full-Stack Development", "Project Ideas", "Blockchain"]
+  },
+  {
+    "question": "How can full-stack developers leverage low-code platforms?",
+    "options": [
+      "By replacing all coding with drag-and-drop interfaces",
+      "By accelerating development through rapid prototyping and deployment",
+      "By focusing exclusively on frontend development",
+      "By eliminating the need for testing"
+    ],
+    "answer": "By accelerating development through rapid prototyping and deployment",
+    "explanation": "Low-code platforms empower full-stack developers to accelerate development by facilitating rapid prototyping and deployment, while still allowing customization where needed.",
+    "tags": ["Full-Stack Development", "Emerging Trends", "Low-Code Platforms"]
+  },
+  {
+    "question": "Which of the following best describes the shift towards full-stack development in the industry?",
+    "options": [
+      "A move away from agile development environments",
+      "An emphasis on developers handling both frontend and backend tasks for increased agility",
+      "A focus exclusively on backend technologies",
+      "A reduction in the importance of continuous learning"
+    ],
+    "answer": "An emphasis on developers handling both frontend and backend tasks for increased agility",
+    "explanation": "The industry is shifting towards valuing full-stack developers who can handle both frontend and backend tasks, promoting agility and versatility in dynamic project settings.",
+    "tags": ["Full-Stack Development", "Industry Shift", "Agility"]
+  },
+  {
     "question": "What is the primary purpose of Angular modules?",
     "options": [
       "To define the application's business logic exclusively",
