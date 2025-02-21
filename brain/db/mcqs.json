@@ -1,5 +1,625 @@
 [
   {
+    "question": "What is Generative AI (GenAI)?",
+    "options": [
+      "A type of AI that focuses solely on classification tasks",
+      "An AI technology that generates new content, such as text, images, or code, based on learned patterns",
+      "A framework for building traditional databases",
+      "A protocol for secure communication between services"
+    ],
+    "answer": "An AI technology that generates new content, such as text, images, or code, based on learned patterns",
+    "explanation": "Generative AI (GenAI) refers to AI models that can create new content by learning from existing data, including text, images, audio, and code.",
+    "tags": ["Generative AI", "Definition", "Content Generation"]
+  },
+  {
+    "question": "Which of the following is a common use case for Generative AI?",
+    "options": [
+      "Database management",
+      "Generating realistic images or art",
+      "Encrypting sensitive information",
+      "Replacing traditional APIs"
+    ],
+    "answer": "Generating realistic images or art",
+    "explanation": "Generative AI is widely used for creating realistic images, art, music, text, and other forms of content by leveraging models like GANs (Generative Adversarial Networks) or transformers.",
+    "tags": ["Generative AI", "Use Cases", "Content Creation"]
+  },
+  {
+    "question": "What is the role of a Diffusion Model in Generative AI?",
+    "options": [
+      "To classify data into predefined categories",
+      "To generate high-quality images by iteratively refining noise",
+      "To manage database connections securely",
+      "To replace traditional front-end frameworks"
+    ],
+    "answer": "To generate high-quality images by iteratively refining noise",
+    "explanation": "Diffusion Models are a class of generative models that generate high-quality images by iteratively denoising random noise, making them popular for image generation tasks.",
+    "tags": ["Generative AI", "Diffusion Models", "Image Generation"]
+  },
+  {
+    "question": "Which Generative AI model is known for its ability to generate human-like text?",
+    "options": [
+      "GPT (Generative Pre-trained Transformer)",
+      "ResNet",
+      "YOLO",
+      "SVM"
+    ],
+    "answer": "GPT (Generative Pre-trained Transformer)",
+    "explanation": "GPT (Generative Pre-trained Transformer) is a series of language models developed by OpenAI that excel at generating coherent and human-like text.",
+    "tags": ["Generative AI", "GPT", "Text Generation"]
+  },
+  {
+    "question": "What is the purpose of Generative Adversarial Networks (GANs)?",
+    "options": [
+      "To encrypt communication between AI systems",
+      "To generate realistic content by competing two neural networks",
+      "To replace traditional APIs with AI-driven endpoints",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To generate realistic content by competing two neural networks",
+    "explanation": "GANs consist of two neural networks: a generator and a discriminator. The generator creates synthetic content, while the discriminator evaluates its realism, leading to improved generation over time.",
+    "tags": ["Generative AI", "GANs", "Content Generation"]
+  },
+  {
+    "question": "Which of the following best describes the difference between Generative AI and Discriminative AI?",
+    "options": [
+      "Generative AI replaces the need for discriminative AI entirely",
+      "Discriminative AI generates content, while Generative AI focuses on classification",
+      "Generative AI creates new content, while discriminative AI focuses on distinguishing between classes",
+      "There is no difference; both serve the same purpose"
+    ],
+    "answer": "Generative AI creates new content, while discriminative AI focuses on distinguishing between classes",
+    "explanation": "Generative AI focuses on creating new content (e.g., images, text), while discriminative AI is designed to classify or predict outcomes based on input data.",
+    "tags": ["Generative AI", "Discriminative AI", "Comparison"]
+  },
+  {
+    "question": "What is the main advantage of using Large Language Models (LLMs) in Generative AI?",
+    "options": [
+      "They simplify the application structure unnecessarily",
+      "They enable the generation of contextually relevant and diverse text",
+      "They eliminate the need for templates in Angular",
+      "They focus exclusively on backend development"
+    ],
+    "answer": "They enable the generation of contextually relevant and diverse text",
+    "explanation": "Large Language Models (LLMs) like GPT, LLaMA, and others allow GenAI to generate contextually relevant, diverse, and human-like text across various domains.",
+    "tags": ["Generative AI", "LLMs", "Text Generation"]
+  },
+  {
+    "question": "Which technique is commonly used in Generative AI for improving image quality?",
+    "options": [
+      "Supervised Learning",
+      "Diffusion Models",
+      "K-Means Clustering",
+      "Linear Regression"
+    ],
+    "answer": "Diffusion Models",
+    "explanation": "Diffusion Models are widely used in Generative AI for image generation tasks, iteratively refining noise to produce high-quality images.",
+    "tags": ["Generative AI", "Diffusion Models", "Image Quality"]
+  },
+  {
+    "question": "What is the role of fine-tuning in Generative AI models?",
+    "options": [
+      "To train a model from scratch without pre-existing knowledge",
+      "To adapt a pre-trained model to a specific domain or task",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage database connections securely"
+    ],
+    "answer": "To adapt a pre-trained model to a specific domain or task",
+    "explanation": "Fine-tuning involves adapting a pre-trained Generative AI model to a specific domain or task, improving its performance and relevance for specialized applications.",
+    "tags": ["Generative AI", "Fine-Tuning", "Model Adaptation"]
+  },
+  {
+    "question": "Which of the following is true about the capabilities of Generative AI?",
+    "options": [
+      "It can only generate text-based content",
+      "It is limited to generating static images",
+      "It can generate various types of content, including text, images, and code",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It can generate various types of content, including text, images, and code",
+    "explanation": "Generative AI is versatile and can generate multiple types of content, such as natural language text, images, audio, video, and even code snippets.",
+    "tags": ["Generative AI", "Capabilities", "Content Types"]
+  },
+  {
+    "question": "What is the primary purpose of using prompts in Generative AI?",
+    "options": [
+      "To define the encryption algorithm",
+      "To provide input instructions or context for generating content",
+      "To replace traditional APIs",
+      "To manage database migrations"
+    ],
+    "answer": "To provide input instructions or context for generating content",
+    "explanation": "Prompts in Generative AI act as input instructions or context, guiding the model to generate specific types of content tailored to user needs.",
+    "tags": ["Generative AI", "Prompts", "Input Context"]
+  },
+  {
+    "question": "Which of the following is a key challenge in training Generative AI models?",
+    "options": [
+      "Ensuring models generate content that aligns with ethical standards",
+      "Eliminating the need for templates in Angular",
+      "Replacing traditional APIs entirely",
+      "Focusing exclusively on backend development"
+    ],
+    "answer": "Ensuring models generate content that aligns with ethical standards",
+    "explanation": "A major challenge in training Generative AI models is ensuring that generated content adheres to ethical guidelines and avoids harmful or biased outputs.",
+    "tags": ["Generative AI", "Training Challenges", "Ethics"]
+  },
+  {
+    "question": "What is the role of reinforcement learning in Generative AI?",
+    "options": [
+      "To encrypt sensitive data during content generation",
+      "To enhance the model's ability to generate content through iterative feedback",
+      "To replace traditional HTML templates",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To enhance the model's ability to generate content through iterative feedback",
+    "explanation": "Reinforcement learning can be used in Generative AI to improve content generation through iterative feedback, allowing models to learn from their outputs and refine them over time.",
+    "tags": ["Generative AI", "Reinforcement Learning", "Feedback Loop"]
+  },
+  {
+    "question": "Which of the following is true about the scalability of Generative AI models?",
+    "options": [
+      "Scalability is irrelevant to Generative AI",
+      "Generative AI models can scale horizontally to handle larger datasets and more complex tasks",
+      "Generative AI eliminates the need for scaling",
+      "Generative AI focuses exclusively on frontend development"
+    ],
+    "answer": "Generative AI models can scale horizontally to handle larger datasets and more complex tasks",
+    "explanation": "Generative AI models can be scaled horizontally to process larger datasets and perform more complex tasks, improving their performance and versatility.",
+    "tags": ["Generative AI", "Scalability", "Horizontal Scaling"]
+  },
+  {
+    "question": "What is the purpose of tokenization in Generative AI for text processing?",
+    "options": [
+      "To manage database connections securely",
+      "To break text into smaller units (tokens) for efficient processing",
+      "To replace traditional APIs",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To break text into smaller units (tokens) for efficient processing",
+    "explanation": "Tokenization in Generative AI splits text into smaller units called tokens, enabling models to process and generate text more efficiently.",
+    "tags": ["Generative AI", "Tokenization", "Text Processing"]
+  },
+  {
+    "question": "Which of the following is a benefit of using Generative AI in software development?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It automates the creation of documentation, code, and UI designs",
+      "It eliminates the need for front-end frameworks",
+      "It focuses exclusively on IoT device management"
+    ],
+    "answer": "It automates the creation of documentation, code, and UI designs",
+    "explanation": "Generative AI can automate the generation of documentation, code snippets, and even UI designs, enhancing productivity in software development.",
+    "tags": ["Generative AI", "Software Development", "Automation"]
+  },
+  {
+    "question": "What is the role of embeddings in Generative AI models?",
+    "options": [
+      "To store sensitive data securely",
+      "To represent input data as dense vectors for efficient processing",
+      "To replace traditional APIs",
+      "To manage database connections"
+    ],
+    "answer": "To represent input data as dense vectors for efficient processing",
+    "explanation": "Embeddings in Generative AI models convert input data (e.g., text, images) into dense vector representations, enabling efficient processing and understanding of the data.",
+    "tags": ["Generative AI", "Embeddings", "Data Representation"]
+  },
+  {
+    "question": "Which of the following is true about the impact of Generative AI on industries?",
+    "options": [
+      "It has no significant impact on any industry",
+      "It transforms industries by enabling personalized content, automation, and innovation",
+      "It replaces the need for human creativity entirely",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It transforms industries by enabling personalized content, automation, and innovation",
+    "explanation": "Generative AI is revolutionizing industries by enabling personalized content generation, automating creative tasks, and fostering innovation in areas like healthcare, entertainment, and education.",
+    "tags": ["Generative AI", "Industry Impact", "Personalization"]
+  },
+  {
+    "question": "What is the purpose of attention mechanisms in transformer-based Generative AI models?",
+    "options": [
+      "To manage database connections securely",
+      "To focus on relevant parts of the input when generating output",
+      "To replace traditional APIs",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To focus on relevant parts of the input when generating output",
+    "explanation": "Attention mechanisms in transformer-based models allow the model to weigh the importance of different parts of the input when generating output, improving contextual understanding and quality.",
+    "tags": ["Generative AI", "Transformers", "Attention Mechanisms"]
+  },
+  {
+    "question": "Which of the following is a limitation of current Generative AI models?",
+    "options": [
+      "They cannot generate text or images",
+      "They may produce biased or incorrect outputs if trained on flawed data",
+      "They eliminate the need for human oversight entirely",
+      "They focus exclusively on frontend development"
+    ],
+    "answer": "They may produce biased or incorrect outputs if trained on flawed data",
+    "explanation": "Generative AI models can inadvertently produce biased or incorrect outputs if trained on flawed or unrepresentative datasets, highlighting the importance of ethical considerations.",
+    "tags": ["Generative AI", "Limitations", "Bias"]
+  },
+  {
+    "question": "What is the role of fine-tuning in Generative AI for real-world applications?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To adapt pre-trained models to specific domains or tasks",
+      "To simplify database management",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To adapt pre-trained models to specific domains or tasks",
+    "explanation": "Fine-tuning allows developers to adapt large pre-trained Generative AI models to specific domains or tasks, improving their relevance and accuracy for real-world applications.",
+    "tags": ["Generative AI", "Fine-Tuning", "Real-World Applications"]
+  },
+  {
+    "question": "Which of the following is true about the integration of Generative AI in web applications?",
+    "options": [
+      "It eliminates the need for front-end frameworks",
+      "It enhances user experiences by providing dynamic and personalized content",
+      "It replaces the need for server-side logic",
+      "It focuses exclusively on IoT development"
+    ],
+    "answer": "It enhances user experiences by providing dynamic and personalized content",
+    "explanation": "Integrating Generative AI into web applications improves user experiences by offering dynamic, interactive, and personalized content tailored to individual users.",
+    "tags": ["Generative AI", "Web Applications", "User Experience"]
+  },
+  {
+    "question": "What is a design pattern in software development?",
+    "options": [
+      "A pre-written code snippet that can be reused across applications",
+      "A standardized solution to common software design problems",
+      "A specific algorithm used for solving computational problems",
+      "A tool for encrypting communication between services"
+    ],
+    "answer": "A standardized solution to common software design problems",
+    "explanation": "Design patterns provide reusable solutions to recurring problems in software design, promoting best practices and improving code quality.",
+    "tags": ["Design Patterns", "Definition", "Software Design"]
+  },
+  {
+    "question": "Which design pattern ensures that a class has only one instance and provides a global point of access to it?",
+    "options": [
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Observer Pattern",
+      "Decorator Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "The Singleton Pattern guarantees that a class has only one instance and provides a global point of access, often used for managing shared resources like configurations or connections.",
+    "tags": ["Design Patterns", "Singleton", "Creational Patterns"]
+  },
+  {
+    "question": "What is the purpose of the Factory Pattern?",
+    "options": [
+      "To create objects without specifying the exact class of object that will be created",
+      "To ensure a class has only one instance",
+      "To observe changes in an object's state",
+      "To replace traditional APIs"
+    ],
+    "answer": "To create objects without specifying the exact class of object that will be created",
+    "explanation": "The Factory Pattern abstracts the creation of objects, allowing flexibility in creating different types of objects without exposing their instantiation logic.",
+    "tags": ["Design Patterns", "Factory Pattern", "Creational Patterns"]
+  },
+  {
+    "question": "Which design pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified?",
+    "options": [
+      "Strategy Pattern",
+      "Observer Pattern",
+      "Command Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Observer Pattern",
+    "explanation": "The Observer Pattern establishes a one-to-many relationship between objects, enabling automatic updates when the state of the observed object changes.",
+    "tags": ["Design Patterns", "Observer Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "What is the primary goal of the Dependency Injection (DI) pattern?",
+    "options": [
+      "To manage database connections securely",
+      "To decouple components from their dependencies, promoting modularity and testability",
+      "To replace traditional APIs",
+      "To focus exclusively on backend development"
+    ],
+    "answer": "To decouple components from their dependencies, promoting modularity and testability",
+    "explanation": "Dependency Injection (DI) is a design pattern that decouples components from their dependencies, making the code more modular, testable, and maintainable.",
+    "tags": ["Design Patterns", "Dependency Injection", "Modularity"]
+  },
+  {
+    "question": "Which design pattern allows behavior to be added to individual objects dynamically?",
+    "options": [
+      "Decorator Pattern",
+      "Facade Pattern",
+      "Proxy Pattern",
+      "Iterator Pattern"
+    ],
+    "answer": "Decorator Pattern",
+    "explanation": "The Decorator Pattern enables adding behavior to individual objects dynamically without affecting other objects of the same class, promoting flexibility and extensibility.",
+    "tags": ["Design Patterns", "Decorator Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "What is the purpose of the Command Pattern?",
+    "options": [
+      "To encapsulate requests as objects, allowing parameterization of clients with queues, requests, and operations",
+      "To ensure a class has only one instance",
+      "To create objects without specifying their exact class",
+      "To replace traditional APIs"
+    ],
+    "answer": "To encapsulate requests as objects, allowing parameterization of clients with queues, requests, and operations",
+    "explanation": "The Command Pattern encapsulates requests as objects, enabling parameterization, queuing, and undo/redo functionality for commands.",
+    "tags": ["Design Patterns", "Command Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "Which design pattern converts the interface of a class into another interface that clients expect?",
+    "options": [
+      "Adapter Pattern",
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Observer Pattern"
+    ],
+    "answer": "Adapter Pattern",
+    "explanation": "The Adapter Pattern translates one interface into another, allowing incompatible interfaces to work together seamlessly.",
+    "tags": ["Design Patterns", "Adapter Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "What is the main advantage of using the Strategy Pattern?",
+    "options": [
+      "It creates a single instance of a class for global access",
+      "It allows defining a family of algorithms and selecting one at runtime",
+      "It replaces the need for templates in Angular",
+      "It eliminates the need for front-end frameworks"
+    ],
+    "answer": "It allows defining a family of algorithms and selecting one at runtime",
+    "explanation": "The Strategy Pattern defines a family of interchangeable algorithms and lets the client choose the appropriate one at runtime, enhancing flexibility.",
+    "tags": ["Design Patterns", "Strategy Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "Which design pattern provides a simplified interface to a complex subsystem?",
+    "options": [
+      "Facade Pattern",
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern"
+    ],
+    "answer": "Facade Pattern",
+    "explanation": "The Facade Pattern offers a unified, simplified interface to a complex subsystem, reducing complexity and improving usability.",
+    "tags": ["Design Patterns", "Facade Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "What is the role of the Builder Pattern?",
+    "options": [
+      "To create complex objects step-by-step, hiding the construction details",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To create complex objects step-by-step, hiding the construction details",
+    "explanation": "The Builder Pattern constructs complex objects incrementally, hiding the construction process and providing finer control over object creation.",
+    "tags": ["Design Patterns", "Builder Pattern", "Creational Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to represent an operation to be performed on elements of a structure?",
+    "options": [
+      "Visitor Pattern",
+      "Command Pattern",
+      "Observer Pattern",
+      "Singleton Pattern"
+    ],
+    "answer": "Visitor Pattern",
+    "explanation": "The Visitor Pattern represents an operation to be performed on elements of a structure, allowing new operations to be added without modifying the classes of the elements.",
+    "tags": ["Design Patterns", "Visitor Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "What is the purpose of the Proxy Pattern?",
+    "options": [
+      "To create a placeholder for another object to control access to it",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To create a placeholder for another object to control access to it",
+    "explanation": "The Proxy Pattern provides a surrogate or placeholder for another object, controlling access and adding functionality such as lazy loading or security checks.",
+    "tags": ["Design Patterns", "Proxy Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to define a one-to-many relationship between objects, where changes in one object trigger updates in others?",
+    "options": [
+      "Observer Pattern",
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Observer Pattern",
+    "explanation": "The Observer Pattern establishes a one-to-many relationship, ensuring that dependent objects are automatically updated when the observed object changes.",
+    "tags": ["Design Patterns", "Observer Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "What is the role of the Composite Pattern?",
+    "options": [
+      "To compose objects into tree structures to represent part-whole hierarchies",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To compose objects into tree structures to represent part-whole hierarchies",
+    "explanation": "The Composite Pattern allows composing objects into tree structures, treating individual objects and compositions uniformly, often used in UI frameworks.",
+    "tags": ["Design Patterns", "Composite Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to separate the construction of a complex object from its representation?",
+    "options": [
+      "Builder Pattern",
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Builder Pattern",
+    "explanation": "The Builder Pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations.",
+    "tags": ["Design Patterns", "Builder Pattern", "Creational Patterns"]
+  },
+  {
+    "question": "What is the purpose of the Iterator Pattern?",
+    "options": [
+      "To provide a way to access elements of a collection sequentially without exposing its underlying structure",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To provide a way to access elements of a collection sequentially without exposing its underlying structure",
+    "explanation": "The Iterator Pattern enables sequential access to elements of a collection, abstracting its internal structure and simplifying traversal.",
+    "tags": ["Design Patterns", "Iterator Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to encapsulate request processing logic?",
+    "options": [
+      "Command Pattern",
+      "Observer Pattern",
+      "Singleton Pattern",
+      "Factory Pattern"
+    ],
+    "answer": "Command Pattern",
+    "explanation": "The Command Pattern encapsulates request processing logic, enabling decoupling between the sender and receiver of a request.",
+    "tags": ["Design Patterns", "Command Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "What is the main benefit of the Adapter Pattern?",
+    "options": [
+      "It simplifies the application structure unnecessarily",
+      "It allows incompatible interfaces to work together by converting one interface into another",
+      "It eliminates the need for templates entirely",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It allows incompatible interfaces to work together by converting one interface into another",
+    "explanation": "The Adapter Pattern bridges incompatible interfaces, enabling them to collaborate effectively without modifying their original implementations.",
+    "tags": ["Design Patterns", "Adapter Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "Which design pattern ensures loose coupling between the sender and receiver of events?",
+    "options": [
+      "Observer Pattern",
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Observer Pattern",
+    "explanation": "The Observer Pattern promotes loose coupling by allowing senders to notify receivers of changes without knowing their concrete classes.",
+    "tags": ["Design Patterns", "Observer Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "What is the role of the Prototype Pattern?",
+    "options": [
+      "To create objects by cloning existing instances rather than instantiating new ones",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To create objects by cloning existing instances rather than instantiating new ones",
+    "explanation": "The Prototype Pattern creates objects by cloning existing instances, reducing the overhead of creating new objects from scratch.",
+    "tags": ["Design Patterns", "Prototype Pattern", "Creational Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to define a family of related objects and ensure they work together?",
+    "options": [
+      "Abstract Factory Pattern",
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Abstract Factory Pattern",
+    "explanation": "The Abstract Factory Pattern defines a family of related objects and ensures they collaborate effectively, often used in UI frameworks for platform-specific widgets.",
+    "tags": [
+      "Design Patterns",
+      "Abstract Factory Pattern",
+      "Creational Patterns"
+    ]
+  },
+  {
+    "question": "What is the main advantage of the Facade Pattern?",
+    "options": [
+      "It simplifies interaction with a complex subsystem by providing a unified interface",
+      "It ensures a class has only one instance",
+      "It replaces traditional APIs",
+      "It manages database connections securely"
+    ],
+    "answer": "It simplifies interaction with a complex subsystem by providing a unified interface",
+    "explanation": "The Facade Pattern simplifies interaction with a complex subsystem by offering a simplified, high-level interface.",
+    "tags": ["Design Patterns", "Facade Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to attach additional responsibilities to an object dynamically?",
+    "options": [
+      "Decorator Pattern",
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Decorator Pattern",
+    "explanation": "The Decorator Pattern attaches additional responsibilities to objects dynamically, promoting open-closed principle compliance.",
+    "tags": ["Design Patterns", "Decorator Pattern", "Structural Patterns"]
+  },
+  {
+    "question": "What is the purpose of the State Pattern?",
+    "options": [
+      "To allow an object to alter its behavior when its internal state changes",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To allow an object to alter its behavior when its internal state changes",
+    "explanation": "The State Pattern enables objects to change their behavior based on their internal state, promoting flexibility and avoiding large conditional statements.",
+    "tags": ["Design Patterns", "State Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to encapsulate the logic for creating objects?",
+    "options": [
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Observer Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Factory Pattern",
+    "explanation": "The Factory Pattern encapsulates the logic for creating objects, providing flexibility in object creation and reducing coupling.",
+    "tags": ["Design Patterns", "Factory Pattern", "Creational Patterns"]
+  },
+  {
+    "question": "What is the main goal of the Mediator Pattern?",
+    "options": [
+      "To centralize communication between multiple objects, reducing direct coupling",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To centralize communication between multiple objects, reducing direct coupling",
+    "explanation": "The Mediator Pattern centralizes communication among objects, promoting loose coupling and simplifying interactions.",
+    "tags": ["Design Patterns", "Mediator Pattern", "Behavioral Patterns"]
+  },
+  {
+    "question": "Which design pattern is used to define a series of steps for executing a task?",
+    "options": [
+      "Template Method Pattern",
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Template Method Pattern",
+    "explanation": "The Template Method Pattern defines a skeleton of an algorithm in a base class, allowing subclasses to redefine certain steps without changing the overall structure.",
+    "tags": [
+      "Design Patterns",
+      "Template Method Pattern",
+      "Behavioral Patterns"
+    ]
+  },
+  {
+    "question": "What is the role of the Flyweight Pattern?",
+    "options": [
+      "To use sharing to support large numbers of fine-grained objects efficiently",
+      "To ensure a class has only one instance",
+      "To replace traditional APIs",
+      "To manage database connections securely"
+    ],
+    "answer": "To use sharing to support large numbers of fine-grained objects efficiently",
+    "explanation": "The Flyweight Pattern minimizes memory usage by sharing common data among multiple objects, making it ideal for systems with many similar objects.",
+    "tags": ["Design Patterns", "Flyweight Pattern", "Structural Patterns"]
+  },
+  {
     "question": "Tell me about a time you had to deal with a difficult coworker.",
     "options": [
       "I ignored the coworker and focused on my tasks independently.",
