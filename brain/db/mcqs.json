@@ -1,5 +1,658 @@
 [
   {
+    "question": "What is Ahead-of-Time (AOT) compilation in Angular?",
+    "options": [
+      "A tool for managing database connections securely",
+      "A process that pre-compiles Angular templates during the build phase to improve rendering speed",
+      "A protocol for secure communication between services",
+      "A feature that replaces traditional APIs"
+    ],
+    "answer": "A process that pre-compiles Angular templates during the build phase to improve rendering speed",
+    "explanation": "Ahead-of-Time (AOT) compilation pre-compiles Angular templates during the build process, reducing the application's bundle size and improving rendering performance.",
+    "tags": ["Angular", "Performance Optimization", "AOT Compilation"]
+  },
+  {
+    "question": "Which strategy helps reduce initial load time by loading modules only when needed?",
+    "options": [
+      "Eager loading",
+      "Lazy loading",
+      "Static loading",
+      "Dynamic scripting"
+    ],
+    "answer": "Lazy loading",
+    "explanation": "Lazy loading defers the loading of feature modules until they are required, reducing the initial load time and improving application performance.",
+    "tags": ["Angular", "Lazy Loading", "Performance Optimization"]
+  },
+  {
+    "question": "What is the purpose of the `ChangeDetectionStrategy.OnPush` in Angular?",
+    "options": [
+      "To force Angular to check for changes in all components",
+      "To optimize change detection by checking for changes only when inputs change",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To optimize change detection by checking for changes only when inputs change",
+    "explanation": "The `ChangeDetectionStrategy.OnPush` optimizes Angular's change detection mechanism by checking for changes only when component inputs are updated.",
+    "tags": ["Angular", "Change Detection", "OnPush Strategy"]
+  },
+  {
+    "question": "Which type of pipe should you use to ensure Angular executes it only when input values change?",
+    "options": ["Impure pipe", "Pure pipe", "Custom pipe", "Replacement pipe"],
+    "answer": "Pure pipe",
+    "explanation": "Pure pipes in Angular execute only when their input values change, making them more efficient for immutable transformations compared to impure pipes.",
+    "tags": ["Angular", "Pipes", "Pure Pipes"]
+  },
+  {
+    "question": "What is the role of the `trackBy` function in Angular's `*ngFor` directive?",
+    "options": [
+      "To encrypt sensitive data during transmission",
+      "To identify items uniquely, enhancing rendering performance in lists",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To identify items uniquely, enhancing rendering performance in lists",
+    "explanation": "The `trackBy` function in Angular's `*ngFor` directive helps identify items uniquely, preventing unnecessary DOM updates and improving rendering performance for large lists.",
+    "tags": ["Angular", "Templates", "trackBy Function"]
+  },
+  {
+    "question": "Why is unsubscribing from Observables important in Angular?",
+    "options": [
+      "To prevent memory leaks caused by lingering subscriptions",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To prevent memory leaks caused by lingering subscriptions",
+    "explanation": "Unsubscribing from Observables in Angular ensures that subscriptions are properly cleaned up, preventing memory leaks and improving application stability.",
+    "tags": ["Angular", "Observables", "Memory Management"]
+  },
+  {
+    "question": "Which Angular CLI command generates a new feature module with routing support?",
+    "options": [
+      "ng generate service",
+      "ng generate component",
+      "ng generate module feature --routing",
+      "ng generate pipe"
+    ],
+    "answer": "ng generate module feature --routing",
+    "explanation": "The `ng generate module feature --routing` command creates a new feature module along with its own routing file, facilitating modular development and lazy loading.",
+    "tags": ["Angular", "CLI", "Feature Module Generation"]
+  },
+  {
+    "question": "What is the main benefit of implementing Server-Side Rendering (SSR) in Angular using Angular Universal?",
+    "options": [
+      "It eliminates the need for front-end frameworks",
+      "It enhances SEO and improves initial load performance by rendering pages on the server",
+      "It focuses exclusively on backend development",
+      "It replaces traditional APIs"
+    ],
+    "answer": "It enhances SEO and improves initial load performance by rendering pages on the server",
+    "explanation": "Server-Side Rendering (SSR) with Angular Universal improves SEO and reduces initial load times by rendering pages on the server before sending them to the client.",
+    "tags": ["Angular", "SSR", "Angular Universal"]
+  },
+  {
+    "question": "How do you configure lazy loading for a feature module in Angular?",
+    "options": [
+      "Using the `loadChildren` property in the route configuration",
+      "By importing the module directly into the AppModule",
+      "Through static imports in the template",
+      "By focusing exclusively on backend development"
+    ],
+    "answer": "Using the `loadChildren` property in the route configuration",
+    "explanation": "Lazy loading in Angular is configured using the `loadChildren` property in the route configuration, allowing feature modules to be loaded dynamically when needed.",
+    "tags": ["Angular", "Lazy Loading", "Routing Configuration"]
+  },
+  {
+    "question": "What is the purpose of the `RouterOutlet` directive in Angular?",
+    "options": [
+      "To define clickable links for navigation",
+      "To act as a placeholder where routed components will be displayed",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To act as a placeholder where routed components will be displayed",
+    "explanation": "The `RouterOutlet` directive serves as a placeholder in the template where the routed components will be rendered, enabling dynamic navigation within the application.",
+    "tags": ["Angular", "Routing", "RouterOutlet Directive"]
+  },
+  {
+    "question": "Which directive is used to create navigation links in Angular?",
+    "options": ["RouterLink", "RouterOutlet", "NgIf", "NgFor"],
+    "answer": "RouterLink",
+    "explanation": "The `RouterLink` directive is used to create navigation links in Angular, updating the URL and loading the corresponding component without refreshing the page.",
+    "tags": ["Angular", "Routing", "RouterLink Directive"]
+  },
+  {
+    "question": "What is the role of Route Guards in Angular?",
+    "options": [
+      "To define the structure of a component's template",
+      "To control access to routes based on conditions like authentication",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To control access to routes based on conditions like authentication",
+    "explanation": "Route Guards in Angular allow developers to control access to specific routes based on conditions such as user authentication or roles, ensuring secure navigation.",
+    "tags": ["Angular", "Routing", "Route Guards"]
+  },
+  {
+    "question": "Which of the following is true about handling route parameters in Angular?",
+    "options": [
+      "Route parameters can be captured and utilized to display dynamic content",
+      "Route parameters eliminate the need for lazy loading",
+      "Route parameters replace traditional APIs",
+      "Route parameters focus exclusively on front-end development"
+    ],
+    "answer": "Route parameters can be captured and utilized to display dynamic content",
+    "explanation": "Angular allows capturing route parameters (e.g., `user/:id`) and using them to display dynamic content, enhancing the flexibility of Single Page Applications (SPAs).",
+    "tags": ["Angular", "Routing", "Route Parameters"]
+  },
+  {
+    "question": "What is the primary advantage of using pure pipes in Angular?",
+    "options": [
+      "They simplify manual testing processes",
+      "They execute only when input values change, improving performance",
+      "They replace traditional APIs entirely",
+      "They focus exclusively on backend development"
+    ],
+    "answer": "They execute only when input values change, improving performance",
+    "explanation": "Pure pipes in Angular execute only when their input values change, reducing unnecessary computations and improving overall application performance.",
+    "tags": ["Angular", "Pipes", "Pure Pipes"]
+  },
+  {
+    "question": "Which lifecycle hook is commonly used to unsubscribe from Observables in Angular?",
+    "options": ["ngOnInit", "ngOnDestroy", "ngAfterViewInit", "ngDoCheck"],
+    "answer": "ngOnDestroy",
+    "explanation": "The `ngOnDestroy` lifecycle hook is typically used to unsubscribe from Observables, ensuring proper cleanup and preventing memory leaks.",
+    "tags": ["Angular", "Lifecycle Hooks", "ngOnDestroy"]
+  },
+  {
+    "question": "What is the purpose of the `redirectTo` property in Angular route definitions?",
+    "options": [
+      "To define the default route when no path is specified",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define the default route when no path is specified",
+    "explanation": "The `redirectTo` property in Angular route definitions specifies the default route to navigate to when no path is provided or a redirect is necessary.",
+    "tags": ["Angular", "Routing", "redirectTo Property"]
+  },
+  {
+    "question": "Which of the following is true about the wildcard route (`**`) in Angular routing?",
+    "options": [
+      "It matches any undefined route and can display a 'Page Not Found' component",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It matches any undefined route and can display a 'Page Not Found' component",
+    "explanation": "The wildcard route (`**`) in Angular routing matches any undefined or unmatched routes, often used to display a 'Page Not Found' component.",
+    "tags": ["Angular", "Routing", "Wildcard Route"]
+  },
+  {
+    "question": "What is the role of the `ActivatedRoute` service in Angular?",
+    "options": [
+      "To manage database connections securely",
+      "To provide information about the current route, including parameters and query strings",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To provide information about the current route, including parameters and query strings",
+    "explanation": "The `ActivatedRoute` service in Angular provides details about the current route, such as parameters, query strings, and route snapshots, enabling dynamic content rendering.",
+    "tags": ["Angular", "Routing", "ActivatedRoute Service"]
+  },
+  {
+    "question": "Which of the following is a common technique to minimize bundle sizes in Angular applications?",
+    "options": [
+      "Removing unused code through tree shaking",
+      "Encrypting communication between services",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Managing front-end state exclusively"
+    ],
+    "answer": "Removing unused code through tree shaking",
+    "explanation": "Minimizing bundle sizes in Angular involves techniques like tree shaking (removing unused code), leveraging lazy loading, and analyzing bundles for optimization opportunities.",
+    "tags": ["Angular", "Performance Optimization", "Bundle Minimization"]
+  },
+  {
+    "question": "What is the main advantage of lazy loading feature modules in Angular?",
+    "options": [
+      "It simplifies the application structure unnecessarily",
+      "It reduces initial load time by loading modules on demand",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It reduces initial load time by loading modules on demand",
+    "explanation": "Lazy loading in Angular defers the loading of feature modules until they are accessed, significantly reducing the initial load time and improving performance.",
+    "tags": ["Angular", "Lazy Loading", "Performance Optimization"]
+  },
+  {
+    "question": "Which Angular CLI command builds the application with production optimizations?",
+    "options": ["ng serve", "ng test", "ng build --prod", "ng deploy"],
+    "answer": "ng build --prod",
+    "explanation": "The `ng build --prod` command compiles the Angular application with production optimizations, including AOT compilation, minification, and tree shaking.",
+    "tags": ["Angular", "CLI", "Production Builds"]
+  },
+  {
+    "question": "What is the purpose of the `forRoot` method in Angular routing?",
+    "options": [
+      "To configure routes at the application's root level",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To configure routes at the application's root level",
+    "explanation": "The `forRoot` method in Angular routing is used to configure routes at the application's root level, providing a single entry point for routing setup.",
+    "tags": ["Angular", "Routing", "forRoot Method"]
+  },
+  {
+    "question": "Which of the following best describes the role of Angular Universal?",
+    "options": [
+      "It enables Server-Side Rendering (SSR) for Angular applications",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It enables Server-Side Rendering (SSR) for Angular applications",
+    "explanation": "Angular Universal facilitates Server-Side Rendering (SSR), improving SEO and reducing initial load times by rendering Angular applications on the server.",
+    "tags": ["Angular", "SSR", "Angular Universal"]
+  },
+  {
+    "question": "What is the role of the `pathMatch: 'full'` option in Angular route definitions?",
+    "options": [
+      "To ensure the entire path matches before applying a redirect",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure the entire path matches before applying a redirect",
+    "explanation": "The `pathMatch: 'full'` option in Angular ensures that the entire URL path must match before applying a redirect, avoiding partial matches.",
+    "tags": ["Angular", "Routing", "pathMatch Option"]
+  },
+  {
+    "question": "Which of the following is true about optimizing template expressions in Angular?",
+    "options": [
+      "Perform heavy computations in the component class instead of directly in the template",
+      "Replace traditional APIs with AI-driven solutions",
+      "Manage front-end state exclusively",
+      "Focus solely on hardware optimization"
+    ],
+    "answer": "Perform heavy computations in the component class instead of directly in the template",
+    "explanation": "Optimizing template expressions in Angular involves moving heavy computations from the template to the component class, reducing the overhead during change detection.",
+    "tags": ["Angular", "Templates", "Template Optimization"]
+  },
+  {
+    "question": "What is the purpose of the `providedIn: 'root'` metadata in Angular services?",
+    "options": [
+      "To register a service as a singleton available throughout the application",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To register a service as a singleton available throughout the application",
+    "explanation": "The `providedIn: 'root'` metadata in Angular registers a service as a singleton, making it available application-wide without needing to add it to the providers array.",
+    "tags": ["Angular", "Services", "Dependency Injection"]
+  },
+  {
+    "question": "Which Angular CLI command is used to analyze bundle sizes and identify optimization opportunities?",
+    "options": ["ng test", "ng build --prod", "ng serve", "ng analyze"],
+    "answer": "ng build --prod",
+    "explanation": "While there is no direct `ng analyze` command, running `ng build --prod` produces optimized bundles, which can then be analyzed using tools like Source Map Explorer to identify optimization opportunities.",
+    "tags": ["Angular", "CLI", "Bundle Analysis"]
+  },
+  {
+    "question": "What is the role of route guards in Angular?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To control access to routes based on conditions like authentication",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To control access to routes based on conditions like authentication",
+    "explanation": "Route guards in Angular control access to routes based on specific conditions, such as user authentication or permissions, ensuring secure navigation.",
+    "tags": ["Angular", "Routing", "Route Guards"]
+  },
+  {
+    "question": "Which of the following is a key feature of Angular CLI?",
+    "options": [
+      "Automates tasks like project creation, building, testing, and deployment",
+      "Replaces traditional APIs with AI-driven solutions",
+      "Manages front-end state exclusively",
+      "Focuses solely on hardware optimization"
+    ],
+    "answer": "Automates tasks like project creation, building, testing, and deployment",
+    "explanation": "Angular CLI automates essential tasks such as project scaffolding, building, testing, and deployment, streamlining the development workflow.",
+    "tags": ["Angular", "CLI", "Automation"]
+  },
+  {
+    "question": "What is the purpose of the `ng lint` command in Angular CLI?",
+    "options": [
+      "To ensure code quality by running static analysis",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure code quality by running static analysis",
+    "explanation": "The `ng lint` command in Angular CLI performs static analysis on the codebase, enforcing coding standards and identifying potential issues early in development.",
+    "tags": ["Angular", "CLI", "Code Quality"]
+  },
+  {
+    "question": "Which of the following is true about Angular's hierarchical injector system?",
+    "options": [
+      "Child injectors can override dependencies provided by parent injectors",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "Child injectors can override dependencies provided by parent injectors",
+    "explanation": "Angular's hierarchical injector system allows child injectors to override or extend dependencies provided by parent injectors, offering flexibility in dependency management.",
+    "tags": ["Angular", "Dependency Injection", "Hierarchical Injector"]
+  },
+  {
+    "question": "What is an Observable in the context of RxJS?",
+    "options": [
+      "A tool for managing database connections securely",
+      "A stream of data that can be subscribed to and processed asynchronously",
+      "A protocol for secure communication between services",
+      "A front-end framework for building user interfaces"
+    ],
+    "answer": "A stream of data that can be subscribed to and processed asynchronously",
+    "explanation": "In RxJS, an Observable is a stream of data that can be subscribed to, allowing developers to process asynchronous events or sequences of values efficiently.",
+    "tags": ["RxJS", "Observables", "Asynchronous Programming"]
+  },
+  {
+    "question": "Which of the following best describes RxJS?",
+    "options": [
+      "A library for encrypting sensitive data during transmission",
+      "A reactive programming library for handling asynchronous data streams using Observables",
+      "A front-end framework for building static websites",
+      "A database management system"
+    ],
+    "answer": "A reactive programming library for handling asynchronous data streams using Observables",
+    "explanation": "RxJS (Reactive Extensions for JavaScript) is a library for reactive programming, enabling efficient handling of asynchronous data streams through Observables and operators.",
+    "tags": ["RxJS", "Definition", "Reactive Programming"]
+  },
+  {
+    "question": "What is the role of the `subscribe` method in RxJS?",
+    "options": [
+      "To define the structure of a component's template",
+      "To listen to and process data emitted by an Observable",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage database connections securely"
+    ],
+    "answer": "To listen to and process data emitted by an Observable",
+    "explanation": "The `subscribe` method in RxJS allows you to listen to and process data emitted by an Observable, making it essential for handling asynchronous operations.",
+    "tags": ["RxJS", "Observables", "subscribe Method"]
+  },
+  {
+    "question": "Which operator in RxJS is used to transform each value emitted by an Observable?",
+    "options": ["map", "filter", "reduce", "forEach"],
+    "answer": "map",
+    "explanation": "The `map` operator in RxJS transforms each value emitted by an Observable into a new value, often used for modifying or projecting data streams.",
+    "tags": ["RxJS", "Operators", "map"]
+  },
+  {
+    "question": "What is the purpose of the `filter` operator in RxJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To encrypt communication between services",
+      "To include only certain values from an Observable based on a condition",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To include only certain values from an Observable based on a condition",
+    "explanation": "The `filter` operator in RxJS emits only those values from the Observable that satisfy a specified condition, allowing for selective processing of data streams.",
+    "tags": ["RxJS", "Operators", "filter"]
+  },
+  {
+    "question": "Which of the following is true about Observables compared to Promises?",
+    "options": [
+      "Promises handle multiple values over time, while Observables handle only a single value",
+      "Observables handle multiple values over time, while Promises handle only a single value",
+      "There is no difference; both serve the same purpose",
+      "Promises replace the need for Observables entirely"
+    ],
+    "answer": "Observables handle multiple values over time, while Promises handle only a single value",
+    "explanation": "Unlike Promises, which resolve to a single value, Observables can emit multiple values over time, making them more suitable for handling continuous streams of data.",
+    "tags": ["RxJS", "Observables", "Promises"]
+  },
+  {
+    "question": "What is the role of the `from` function in RxJS?",
+    "options": [
+      "To create an Observable from an array, promise, or iterable",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create an Observable from an array, promise, or iterable",
+    "explanation": "The `from` function in RxJS creates an Observable from various input sources, such as arrays, promises, or iterables, enabling reactive programming patterns.",
+    "tags": ["RxJS", "Functions", "from"]
+  },
+  {
+    "question": "Which operator in RxJS is used to combine multiple Observables into one?",
+    "options": ["mergeMap", "combineLatest", "switchMap", "tap"],
+    "answer": "combineLatest",
+    "explanation": "The `combineLatest` operator in RxJS combines multiple Observables into one by emitting a value each time any of the source Observables emits a value.",
+    "tags": ["RxJS", "Operators", "combineLatest"]
+  },
+  {
+    "question": "What is the purpose of the `switchMap` operator in RxJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To cancel previous inner subscriptions if a new value arrives",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To cancel previous inner subscriptions if a new value arrives",
+    "explanation": "The `switchMap` operator in RxJS cancels ongoing inner subscriptions and switches to a new Observable if a new value is emitted, making it ideal for handling dependent asynchronous operations.",
+    "tags": ["RxJS", "Operators", "switchMap"]
+  },
+  {
+    "question": "Which of the following is true about the `tap` operator in RxJS?",
+    "options": [
+      "It modifies the emitted values before passing them downstream",
+      "It performs side effects without modifying the emitted values",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It focuses exclusively on front-end development"
+    ],
+    "answer": "It performs side effects without modifying the emitted values",
+    "explanation": "The `tap` operator in RxJS allows performing side effects, such as logging or triggering actions, without altering the emitted values in the data stream.",
+    "tags": ["RxJS", "Operators", "tap"]
+  },
+  {
+    "question": "What is the role of the `mergeMap` operator in RxJS?",
+    "options": [
+      "To flatten and merge multiple Observables into one",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To flatten and merge multiple Observables into one",
+    "explanation": "The `mergeMap` operator in RxJS flattens and merges multiple Observables into one, allowing developers to handle nested asynchronous operations effectively.",
+    "tags": ["RxJS", "Operators", "mergeMap"]
+  },
+  {
+    "question": "Which of the following best describes the `catchError` operator in RxJS?",
+    "options": [
+      "Handles errors emitted by an Observable and provides an alternative response",
+      "Encrypts sensitive data during transmission",
+      "Replaces traditional APIs with AI-driven solutions",
+      "Manages front-end state exclusively"
+    ],
+    "answer": "Handles errors emitted by an Observable and provides an alternative response",
+    "explanation": "The `catchError` operator in RxJS handles errors emitted by an Observable and allows providing an alternative response or retrying the operation.",
+    "tags": ["RxJS", "Operators", "catchError"]
+  },
+  {
+    "question": "What is the purpose of the `of` function in RxJS?",
+    "options": [
+      "To create an Observable that emits a sequence of values",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create an Observable that emits a sequence of values",
+    "explanation": "The `of` function in RxJS creates an Observable that emits a sequence of specified values, making it useful for testing or simple data streams.",
+    "tags": ["RxJS", "Functions", "of"]
+  },
+  {
+    "question": "Which of the following is true about the `fromEvent` function in RxJS?",
+    "options": [
+      "Creates an Observable from DOM events or other event-like structures",
+      "Replaces traditional APIs with AI-driven solutions",
+      "Manages front-end state exclusively",
+      "Focuses solely on hardware optimization"
+    ],
+    "answer": "Creates an Observable from DOM events or other event-like structures",
+    "explanation": "The `fromEvent` function in RxJS creates an Observable from DOM events or other event-like structures, enabling reactive handling of user interactions.",
+    "tags": ["RxJS", "Functions", "fromEvent"]
+  },
+  {
+    "question": "What is the main advantage of using Observables in Angular?",
+    "options": [
+      "They simplify manual testing processes",
+      "They provide a powerful way to handle asynchronous data streams and events",
+      "They eliminate the need for templates in Angular",
+      "They focus exclusively on backend development"
+    ],
+    "answer": "They provide a powerful way to handle asynchronous data streams and events",
+    "explanation": "Observables in Angular enable efficient handling of asynchronous data streams and events, promoting clean and maintainable code for complex applications.",
+    "tags": ["RxJS", "Observables", "Asynchronous Data Streams"]
+  },
+  {
+    "question": "Which operator in RxJS is used to ignore all values except the last emitted value before completing?",
+    "options": ["last", "takeLast", "takeUntil", "distinctUntilChanged"],
+    "answer": "last",
+    "explanation": "The `last` operator in RxJS ensures that only the last emitted value from an Observable is processed before completion.",
+    "tags": ["RxJS", "Operators", "last"]
+  },
+  {
+    "question": "What is the role of the `debounceTime` operator in RxJS?",
+    "options": [
+      "To delay emissions until a specified time has passed without new emissions",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To delay emissions until a specified time has passed without new emissions",
+    "explanation": "The `debounceTime` operator in RxJS delays emissions until a specified period of silence occurs, commonly used for optimizing user input handling like search queries.",
+    "tags": ["RxJS", "Operators", "debounceTime"]
+  },
+  {
+    "question": "Which of the following is true about cold vs. hot Observables?",
+    "options": [
+      "Cold Observables start emitting data when subscribed, while hot Observables emit data regardless of subscription",
+      "Hot Observables replace the need for cold Observables entirely",
+      "There is no difference; both serve the same purpose",
+      "Cold Observables focus exclusively on front-end development"
+    ],
+    "answer": "Cold Observables start emitting data when subscribed, while hot Observables emit data regardless of subscription",
+    "explanation": "Cold Observables emit data only upon subscription, whereas hot Observables emit data continuously, regardless of whether subscribers are present.",
+    "tags": ["RxJS", "Observables", "Cold vs Hot"]
+  },
+  {
+    "question": "What is the purpose of the `async` pipe in Angular templates?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To subscribe to an Observable and automatically update the UI with emitted values",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To subscribe to an Observable and automatically update the UI with emitted values",
+    "explanation": "The `async` pipe in Angular templates subscribes to an Observable and updates the UI with emitted values, simplifying asynchronous data binding.",
+    "tags": ["Angular", "Templates", "async Pipe"]
+  },
+  {
+    "question": "Which operator in RxJS is used to combine multiple Observables and emit their combined results?",
+    "options": ["combineLatest", "mergeMap", "switchMap", "tap"],
+    "answer": "combineLatest",
+    "explanation": "The `combineLatest` operator in RxJS combines multiple Observables and emits their combined results whenever any of the source Observables emit a value.",
+    "tags": ["RxJS", "Operators", "combineLatest"]
+  },
+  {
+    "question": "What is the role of the `distinctUntilChanged` operator in RxJS?",
+    "options": [
+      "To filter out duplicate consecutive values from an Observable",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To filter out duplicate consecutive values from an Observable",
+    "explanation": "The `distinctUntilChanged` operator in RxJS filters out consecutive duplicate values from an Observable, ensuring only unique values are processed.",
+    "tags": ["RxJS", "Operators", "distinctUntilChanged"]
+  },
+  {
+    "question": "Which of the following is true about the `retry` operator in RxJS?",
+    "options": [
+      "It retries failed HTTP requests or Observable operations a specified number of times",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It retries failed HTTP requests or Observable operations a specified number of times",
+    "explanation": "The `retry` operator in RxJS attempts to re-execute a failed Observable operation a specified number of times before giving up.",
+    "tags": ["RxJS", "Operators", "retry"]
+  },
+  {
+    "question": "What is the main benefit of using RxJS Observables in Angular applications?",
+    "options": [
+      "They simplify the application structure unnecessarily",
+      "They provide a robust mechanism for handling asynchronous data streams and improving code readability",
+      "They eliminate the need for dependency injection",
+      "They focus exclusively on backend development"
+    ],
+    "answer": "They provide a robust mechanism for handling asynchronous data streams and improving code readability",
+    "explanation": "RxJS Observables offer a powerful and readable way to handle asynchronous data streams, making them indispensable in Angular for tasks like API calls and event handling.",
+    "tags": ["RxJS", "Observables", "Benefits"]
+  },
+  {
+    "question": "Which operator in RxJS is used to stop listening to an Observable after a specific condition is met?",
+    "options": ["takeWhile", "takeUntil", "filter", "tap"],
+    "answer": "takeUntil",
+    "explanation": "The `takeUntil` operator in RxJS stops listening to an Observable when a specified stopping condition is met, preventing memory leaks and unnecessary computations.",
+    "tags": ["RxJS", "Operators", "takeUntil"]
+  },
+  {
+    "question": "What is the purpose of the `shareReplay` operator in RxJS?",
+    "options": [
+      "To cache and replay emitted values to new subscribers",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To cache and replay emitted values to new subscribers",
+    "explanation": "The `shareReplay` operator in RxJS caches emitted values and replays them to new subscribers, reducing redundant API calls or computations.",
+    "tags": ["RxJS", "Operators", "shareReplay"]
+  },
+  {
+    "question": "Which of the following best describes the `concatMap` operator in RxJS?",
+    "options": [
+      "Processes Observables sequentially, one after another",
+      "Flattens and merges multiple Observables into one",
+      "Replaces traditional APIs with AI-driven solutions",
+      "Manages front-end state exclusively"
+    ],
+    "answer": "Processes Observables sequentially, one after another",
+    "explanation": "The `concatMap` operator in RxJS processes Observables in sequence, ensuring that one Observable completes before the next begins.",
+    "tags": ["RxJS", "Operators", "concatMap"]
+  },
+  {
+    "question": "What is the role of the `interval` function in RxJS?",
+    "options": [
+      "Creates an Observable that emits sequential numbers at specified time intervals",
+      "Replaces traditional APIs with AI-driven solutions",
+      "Manages front-end state exclusively",
+      "Focuses solely on hardware optimization"
+    ],
+    "answer": "Creates an Observable that emits sequential numbers at specified time intervals",
+    "explanation": "The `interval` function in RxJS creates an Observable that emits sequential numbers at fixed time intervals, useful for timers or periodic data fetching.",
+    "tags": ["RxJS", "Functions", "interval"]
+  },
+  {
+    "question": "Which operator in RxJS is used to handle errors and continue processing subsequent emissions?",
+    "options": ["catchError", "retryWhen", "onErrorResumeNext", "finally"],
+    "answer": "retryWhen",
+    "explanation": "The `retryWhen` operator in RxJS allows custom error handling logic and continues processing subsequent emissions after retrying failed operations.",
+    "tags": ["RxJS", "Operators", "retryWhen"]
+  },
+  {
     "question": "What is an algorithm in the context of software engineering?",
     "options": [
       "A protocol for secure communication between services",
