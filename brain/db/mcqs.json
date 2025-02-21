@@ -1,5 +1,923 @@
 [
   {
+    "question": "What is an algorithm in the context of software engineering?",
+    "options": [
+      "A protocol for secure communication between services",
+      "A set of rules or instructions designed to solve a specific problem or perform a task",
+      "A tool for managing front-end state exclusively",
+      "A database management system"
+    ],
+    "answer": "A set of rules or instructions designed to solve a specific problem or perform a task",
+    "explanation": "An algorithm is a well-defined sequence of steps or rules that solves a particular problem or performs a specific task, forming the foundation of software engineering.",
+    "tags": ["Algorithms", "Definition", "Problem Solving"]
+  },
+  {
+    "question": "Which algorithm is commonly used for sorting elements in an array?",
+    "options": [
+      "Binary Search",
+      "Quick Sort",
+      "Dijkstra's Algorithm",
+      "K-Means Clustering"
+    ],
+    "answer": "Quick Sort",
+    "explanation": "Quick Sort is a widely used sorting algorithm that employs a divide-and-conquer strategy to efficiently sort elements in an array or list.",
+    "tags": ["Algorithms", "Sorting", "Quick Sort"]
+  },
+  {
+    "question": "What is the time complexity of the Bubble Sort algorithm?",
+    "options": ["O(n)", "O(n^2)", "O(log n)", "O(2^n)"],
+    "answer": "O(n^2)",
+    "explanation": "Bubble Sort has a time complexity of O(n^2) in the worst and average cases, making it inefficient for large datasets but useful for educational purposes.",
+    "tags": ["Algorithms", "Time Complexity", "Bubble Sort"]
+  },
+  {
+    "question": "Which algorithm is best suited for finding the shortest path in a graph with non-negative edge weights?",
+    "options": [
+      "Depth-First Search (DFS)",
+      "Dijkstra's Algorithm",
+      "Merge Sort",
+      "K-Means Clustering"
+    ],
+    "answer": "Dijkstra's Algorithm",
+    "explanation": "Dijkstra's Algorithm is specifically designed to find the shortest path in a graph with non-negative edge weights, using a greedy approach.",
+    "tags": ["Algorithms", "Graph Algorithms", "Dijkstra's Algorithm"]
+  },
+  {
+    "question": "What is the primary purpose of the Binary Search algorithm?",
+    "options": [
+      "To encrypt data securely",
+      "To search for an element in a sorted array efficiently",
+      "To manage database connections",
+      "To replace traditional APIs"
+    ],
+    "answer": "To search for an element in a sorted array efficiently",
+    "explanation": "Binary Search is an efficient algorithm for searching elements in a sorted array by repeatedly dividing the search interval in half, achieving O(log n) time complexity.",
+    "tags": ["Algorithms", "Search Algorithms", "Binary Search"]
+  },
+  {
+    "question": "Which algorithm is often used for pattern matching in strings?",
+    "options": [
+      "Kadane's Algorithm",
+      "Knuth-Morris-Pratt (KMP) Algorithm",
+      "Merge Sort",
+      "Dijkstra's Algorithm"
+    ],
+    "answer": "Knuth-Morris-Pratt (KMP) Algorithm",
+    "explanation": "The Knuth-Morris-Pratt (KMP) Algorithm is a string-searching algorithm that efficiently searches for patterns within a text by avoiding unnecessary comparisons.",
+    "tags": ["Algorithms", "String Algorithms", "KMP Algorithm"]
+  },
+  {
+    "question": "What is the main advantage of the Merge Sort algorithm?",
+    "options": [
+      "It eliminates the need for sorting entirely",
+      "It provides stable sorting with O(n log n) time complexity",
+      "It focuses exclusively on front-end development",
+      "It replaces traditional databases"
+    ],
+    "answer": "It provides stable sorting with O(n log n) time complexity",
+    "explanation": "Merge Sort is a stable, efficient sorting algorithm with O(n log n) time complexity, making it suitable for large datasets and scenarios requiring stability.",
+    "tags": ["Algorithms", "Sorting", "Merge Sort"]
+  },
+  {
+    "question": "Which algorithm is used for traversing or searching tree or graph data structures?",
+    "options": [
+      "Depth-First Search (DFS)",
+      "Bubble Sort",
+      "K-Means Clustering",
+      "Linear Regression"
+    ],
+    "answer": "Depth-First Search (DFS)",
+    "explanation": "Depth-First Search (DFS) is a graph traversal algorithm that explores as far as possible along each branch before backtracking, making it ideal for tree or graph exploration.",
+    "tags": ["Algorithms", "Graph Traversal", "DFS"]
+  },
+  {
+    "question": "What is the role of Dynamic Programming in algorithm design?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To solve problems by breaking them into overlapping subproblems and storing intermediate results",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To solve problems by breaking them into overlapping subproblems and storing intermediate results",
+    "explanation": "Dynamic Programming optimizes problem-solving by breaking tasks into smaller, overlapping subproblems and storing intermediate results to avoid redundant computations.",
+    "tags": ["Algorithms", "Dynamic Programming", "Optimization"]
+  },
+  {
+    "question": "Which algorithm is used for detecting cycles in a graph?",
+    "options": [
+      "Floyd-Warshall Algorithm",
+      "Kadane's Algorithm",
+      "Cycle Detection Algorithm (using DFS or BFS)",
+      "Merge Sort"
+    ],
+    "answer": "Cycle Detection Algorithm (using DFS or BFS)",
+    "explanation": "Cycle detection algorithms, often implemented using Depth-First Search (DFS) or Breadth-First Search (BFS), are used to determine whether a graph contains any cycles.",
+    "tags": ["Algorithms", "Graph Algorithms", "Cycle Detection"]
+  },
+  {
+    "question": "What is the primary goal of the Greedy Algorithm paradigm?",
+    "options": [
+      "To encrypt sensitive data during transmission",
+      "To make locally optimal choices at each step with the hope of finding a global optimum",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end frameworks"
+    ],
+    "answer": "To make locally optimal choices at each step with the hope of finding a global optimum",
+    "explanation": "Greedy Algorithms aim to find a globally optimal solution by making locally optimal choices at each step, often used in problems like minimum spanning trees and knapsack problems.",
+    "tags": ["Algorithms", "Greedy Algorithms", "Optimization"]
+  },
+  {
+    "question": "Which algorithm is used for solving the traveling salesman problem approximately?",
+    "options": [
+      "K-Means Clustering",
+      "Nearest Neighbor Heuristic",
+      "Merge Sort",
+      "Dijkstra's Algorithm"
+    ],
+    "answer": "Nearest Neighbor Heuristic",
+    "explanation": "The Nearest Neighbor Heuristic is a common approximation algorithm for solving the traveling salesman problem by iteratively selecting the nearest unvisited city.",
+    "tags": ["Algorithms", "Heuristics", "Traveling Salesman Problem"]
+  },
+  {
+    "question": "What is the purpose of the K-Means Clustering algorithm?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To partition data into k distinct clusters based on similarity",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To partition data into k distinct clusters based on similarity",
+    "explanation": "K-Means Clustering is an unsupervised learning algorithm used to group similar data points into k clusters, often applied in machine learning and data analysis.",
+    "tags": ["Algorithms", "Clustering", "K-Means"]
+  },
+  {
+    "question": "Which algorithm is used for finding the maximum subarray sum in an array?",
+    "options": [
+      "Kadane's Algorithm",
+      "Bubble Sort",
+      "Dijkstra's Algorithm",
+      "Linear Regression"
+    ],
+    "answer": "Kadane's Algorithm",
+    "explanation": "Kadane's Algorithm efficiently finds the maximum subarray sum in an array with O(n) time complexity, making it a popular choice for this problem.",
+    "tags": ["Algorithms", "Array Algorithms", "Kadane's Algorithm"]
+  },
+  {
+    "question": "What is the role of the A* Search Algorithm?",
+    "options": [
+      "To encrypt communication between services",
+      "To find the shortest path in a weighted graph with heuristics",
+      "To manage front-end state exclusively",
+      "To replace traditional APIs"
+    ],
+    "answer": "To find the shortest path in a weighted graph with heuristics",
+    "explanation": "The A* Search Algorithm combines Dijkstra's Algorithm with heuristics to find the shortest path in a weighted graph, often used in route planning and game development.",
+    "tags": ["Algorithms", "Graph Algorithms", "A* Search"]
+  },
+  {
+    "question": "Which algorithm is used for solving the knapsack problem?",
+    "options": [
+      "Bubble Sort",
+      "Dynamic Programming",
+      "K-Means Clustering",
+      "Linear Regression"
+    ],
+    "answer": "Dynamic Programming",
+    "explanation": "Dynamic Programming is frequently used to solve the knapsack problem by breaking it into subproblems and storing intermediate results to optimize performance.",
+    "tags": ["Algorithms", "Dynamic Programming", "Knapsack Problem"]
+  },
+  {
+    "question": "What is the purpose of the Breadth-First Search (BFS) algorithm?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To traverse or search a graph level by level, ensuring the shortest path in unweighted graphs",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To traverse or search a graph level by level, ensuring the shortest path in unweighted graphs",
+    "explanation": "Breadth-First Search (BFS) explores a graph level by level, making it ideal for finding the shortest path in unweighted graphs.",
+    "tags": ["Algorithms", "Graph Traversal", "BFS"]
+  },
+  {
+    "question": "Which algorithm is used for minimizing the number of colors needed to color a graph?",
+    "options": [
+      "Graph Coloring Algorithm",
+      "Bubble Sort",
+      "Dijkstra's Algorithm",
+      "K-Means Clustering"
+    ],
+    "answer": "Graph Coloring Algorithm",
+    "explanation": "The Graph Coloring Algorithm determines the minimum number of colors required to color a graph such that no two adjacent vertices share the same color.",
+    "tags": ["Algorithms", "Graph Algorithms", "Graph Coloring"]
+  },
+  {
+    "question": "What is the role of the Divide and Conquer paradigm in algorithm design?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To break a problem into smaller subproblems, solve them independently, and combine their solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To break a problem into smaller subproblems, solve them independently, and combine their solutions",
+    "explanation": "Divide and Conquer divides a problem into smaller subproblems, solves them recursively, and combines their solutions, commonly seen in algorithms like Quick Sort and Merge Sort.",
+    "tags": ["Algorithms", "Divide and Conquer", "Paradigm"]
+  },
+  {
+    "question": "Which algorithm is used for detecting anomalies in large datasets?",
+    "options": [
+      "K-Means Clustering",
+      "Outlier Detection Algorithms",
+      "Merge Sort",
+      "Linear Regression"
+    ],
+    "answer": "Outlier Detection Algorithms",
+    "explanation": "Outlier Detection Algorithms identify unusual patterns or anomalies in large datasets, playing a crucial role in data analysis and quality control.",
+    "tags": ["Algorithms", "Data Analysis", "Outlier Detection"]
+  },
+  {
+    "question": "What is the purpose of the Floyd-Warshall Algorithm?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To find all-pairs shortest paths in a weighted graph",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To find all-pairs shortest paths in a weighted graph",
+    "explanation": "The Floyd-Warshall Algorithm computes the shortest paths between all pairs of vertices in a weighted graph, even handling negative weights (but not negative cycles).",
+    "tags": ["Algorithms", "Graph Algorithms", "Floyd-Warshall"]
+  },
+  {
+    "question": "Which algorithm is used for compressing data efficiently?",
+    "options": [
+      "Huffman Coding",
+      "Bubble Sort",
+      "Dijkstra's Algorithm",
+      "K-Means Clustering"
+    ],
+    "answer": "Huffman Coding",
+    "explanation": "Huffman Coding is a lossless data compression algorithm that assigns variable-length codes to input characters based on their frequency, optimizing storage space.",
+    "tags": ["Algorithms", "Compression", "Huffman Coding"]
+  },
+  {
+    "question": "What is the role of the Backtracking Algorithm?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To explore all possible solutions systematically, often used in puzzles and constraint satisfaction problems",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To explore all possible solutions systematically, often used in puzzles and constraint satisfaction problems",
+    "explanation": "Backtracking is a systematic way to find all (or some) solutions to computational problems, particularly useful in puzzles, games, and constraint satisfaction problems.",
+    "tags": ["Algorithms", "Backtracking", "Systematic Exploration"]
+  },
+  {
+    "question": "Which algorithm is used for efficiently finding prime numbers up to a given limit?",
+    "options": [
+      "Sieve of Eratosthenes",
+      "Bubble Sort",
+      "Dijkstra's Algorithm",
+      "K-Means Clustering"
+    ],
+    "answer": "Sieve of Eratosthenes",
+    "explanation": "The Sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to a specified integer limit, using an iterative marking process.",
+    "tags": ["Algorithms", "Prime Numbers", "Sieve of Eratosthenes"]
+  },
+  {
+    "question": "What is the primary goal of computer science?",
+    "options": [
+      "To focus exclusively on hardware development",
+      "To study the theory, design, development, and application of computational systems",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage database connections securely"
+    ],
+    "answer": "To study the theory, design, development, and application of computational systems",
+    "explanation": "Computer science encompasses the study of algorithms, computation, and information processing, along with the practical aspects of designing, developing, and applying computational systems.",
+    "tags": ["Computer Science", "Definition", "Computational Systems"]
+  },
+  {
+    "question": "Which of the following best describes an algorithm in computer science?",
+    "options": [
+      "A collection of random numbers used for encryption",
+      "A set of instructions that solves a problem or performs a task in a finite number of steps",
+      "A protocol for secure communication between services",
+      "A tool for managing front-end state"
+    ],
+    "answer": "A set of instructions that solves a problem or performs a task in a finite number of steps",
+    "explanation": "An algorithm is a well-defined sequence of steps that solves a specific problem or performs a task efficiently, often forming the basis of software development.",
+    "tags": ["Computer Science", "Algorithms", "Problem Solving"]
+  },
+  {
+    "question": "What is the role of data structures in computer science?",
+    "options": [
+      "To encrypt sensitive data during transmission",
+      "To organize and store data in a way that allows efficient access and modification",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage database migrations"
+    ],
+    "answer": "To organize and store data in a way that allows efficient access and modification",
+    "explanation": "Data structures are fundamental in computer science for organizing and storing data efficiently, enabling faster operations like searching, sorting, and accessing data.",
+    "tags": ["Computer Science", "Data Structures", "Efficiency"]
+  },
+  {
+    "question": "Which concept in computer science deals with the efficiency of algorithms?",
+    "options": [
+      "Artificial Intelligence",
+      "Networking",
+      "Complexity Theory",
+      "Database Management"
+    ],
+    "answer": "Complexity Theory",
+    "explanation": "Complexity theory analyzes the time and space efficiency of algorithms, helping developers choose the most optimal solution for a given problem.",
+    "tags": ["Computer Science", "Complexity Theory", "Algorithm Efficiency"]
+  },
+  {
+    "question": "What is the purpose of object-oriented programming (OOP) in computer science?",
+    "options": [
+      "To focus exclusively on procedural code execution",
+      "To provide a paradigm for modeling real-world entities as objects with properties and behaviors",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage database connections securely"
+    ],
+    "answer": "To provide a paradigm for modeling real-world entities as objects with properties and behaviors",
+    "explanation": "Object-oriented programming (OOP) allows developers to model real-world entities as objects, encapsulating data and behavior, and promoting modularity and reusability.",
+    "tags": ["Computer Science", "OOP", "Programming Paradigms"]
+  },
+  {
+    "question": "Which of the following best describes the difference between hardware and software?",
+    "options": [
+      "Hardware refers to physical components of a computer, while software consists of programs and data executed by the hardware",
+      "There is no difference; both serve the same purpose",
+      "Software eliminates the need for hardware entirely",
+      "Hardware focuses exclusively on backend development"
+    ],
+    "answer": "Hardware refers to physical components of a computer, while software consists of programs and data executed by the hardware",
+    "explanation": "In computer science, hardware includes physical components like processors and memory, while software comprises programs and data that run on the hardware.",
+    "tags": ["Computer Science", "Hardware vs Software", "System Architecture"]
+  },
+  {
+    "question": "What is the role of databases in computer science?",
+    "options": [
+      "To serve as a container for storing and retrieving structured data",
+      "To replace traditional APIs",
+      "To manage front-end state exclusively",
+      "To focus solely on network protocols"
+    ],
+    "answer": "To serve as a container for storing and retrieving structured data",
+    "explanation": "Databases are essential in computer science for storing, organizing, and retrieving structured data efficiently, supporting applications ranging from web apps to enterprise systems.",
+    "tags": ["Computer Science", "Databases", "Data Storage"]
+  },
+  {
+    "question": "Which of the following is true about artificial intelligence (AI) in computer science?",
+    "options": [
+      "AI involves creating systems capable of performing tasks that typically require human intelligence",
+      "AI eliminates the need for traditional programming",
+      "AI focuses exclusively on database management",
+      "AI replaces the need for networking protocols"
+    ],
+    "answer": "AI involves creating systems capable of performing tasks that typically require human intelligence",
+    "explanation": "Artificial intelligence (AI) is a field of computer science focused on developing systems that can mimic human cognitive functions, such as learning, reasoning, and decision-making.",
+    "tags": ["Computer Science", "Artificial Intelligence", "Definition"]
+  },
+  {
+    "question": "What is the purpose of networking in computer science?",
+    "options": [
+      "To encrypt communication between services",
+      "To facilitate the exchange of data between devices over a network",
+      "To replace traditional APIs",
+      "To manage front-end frameworks"
+    ],
+    "answer": "To facilitate the exchange of data between devices over a network",
+    "explanation": "Networking in computer science enables devices to communicate and exchange data over networks, forming the foundation for internet-based applications and distributed systems.",
+    "tags": ["Computer Science", "Networking", "Data Exchange"]
+  },
+  {
+    "question": "Which of the following best describes the concept of parallel computing?",
+    "options": [
+      "Executing multiple processes simultaneously to improve performance",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Focusing exclusively on front-end development",
+      "Managing database connections securely"
+    ],
+    "answer": "Executing multiple processes simultaneously to improve performance",
+    "explanation": "Parallel computing involves executing multiple processes or threads concurrently, leveraging multi-core processors to enhance performance and solve complex problems faster.",
+    "tags": ["Computer Science", "Parallel Computing", "Performance"]
+  },
+  {
+    "question": "What is the role of compilers in computer science?",
+    "options": [
+      "To convert high-level programming languages into machine code",
+      "To replace traditional APIs",
+      "To manage front-end state exclusively",
+      "To focus solely on database encryption"
+    ],
+    "answer": "To convert high-level programming languages into machine code",
+    "explanation": "Compilers translate high-level programming languages (e.g., C++, Java) into low-level machine code that can be executed by computers, bridging the gap between human-readable code and hardware instructions.",
+    "tags": ["Computer Science", "Compilers", "Code Translation"]
+  },
+  {
+    "question": "Which of the following is true about cloud computing in computer science?",
+    "options": [
+      "Cloud computing provides on-demand access to shared resources like servers, storage, and databases",
+      "Cloud computing eliminates the need for local hardware entirely",
+      "Cloud computing focuses exclusively on front-end development",
+      "Cloud computing replaces traditional APIs"
+    ],
+    "answer": "Cloud computing provides on-demand access to shared resources like servers, storage, and databases",
+    "explanation": "Cloud computing offers scalable, on-demand access to shared resources, including servers, storage, and databases, reducing infrastructure costs and improving flexibility.",
+    "tags": ["Computer Science", "Cloud Computing", "Scalability"]
+  },
+  {
+    "question": "What is the purpose of version control systems (VCS) in computer science?",
+    "options": [
+      "To manage changes to source code over time and collaborate effectively",
+      "To replace traditional APIs",
+      "To manage front-end state exclusively",
+      "To focus solely on database encryption"
+    ],
+    "answer": "To manage changes to source code over time and collaborate effectively",
+    "explanation": "Version control systems (VCS) like Git help developers track changes to source code, collaborate on projects, and maintain a history of modifications.",
+    "tags": ["Computer Science", "Version Control", "Collaboration"]
+  },
+  {
+    "question": "Which of the following best describes the concept of abstraction in computer science?",
+    "options": [
+      "Abstraction involves hiding unnecessary details and focusing on essential features",
+      "Abstraction eliminates the need for algorithms",
+      "Abstraction focuses exclusively on front-end development",
+      "Abstraction replaces traditional APIs"
+    ],
+    "answer": "Abstraction involves hiding unnecessary details and focusing on essential features",
+    "explanation": "Abstraction is a fundamental concept in computer science that simplifies complex systems by hiding unnecessary details and emphasizing essential features.",
+    "tags": ["Computer Science", "Abstraction", "Simplification"]
+  },
+  {
+    "question": "What is the role of operating systems in computer science?",
+    "options": [
+      "To manage hardware and software resources and provide common services for applications",
+      "To replace traditional APIs",
+      "To focus exclusively on front-end development",
+      "To manage database connections securely"
+    ],
+    "answer": "To manage hardware and software resources and provide common services for applications",
+    "explanation": "Operating systems (OS) act as intermediaries between hardware and software, managing resources like memory, CPU, and I/O devices while providing services for applications.",
+    "tags": ["Computer Science", "Operating Systems", "Resource Management"]
+  },
+  {
+    "question": "Which of the following is true about cybersecurity in computer science?",
+    "options": [
+      "Cybersecurity focuses on protecting systems, networks, and data from digital attacks",
+      "Cybersecurity eliminates the need for traditional programming",
+      "Cybersecurity focuses exclusively on front-end development",
+      "Cybersecurity replaces traditional APIs"
+    ],
+    "answer": "Cybersecurity focuses on protecting systems, networks, and data from digital attacks",
+    "explanation": "Cybersecurity is a critical area of computer science that ensures the protection of systems, networks, and data against unauthorized access, breaches, and attacks.",
+    "tags": ["Computer Science", "Cybersecurity", "Protection"]
+  },
+  {
+    "question": "What is the purpose of virtualization in computer science?",
+    "options": [
+      "To create multiple virtual instances of hardware or software resources",
+      "To replace traditional APIs",
+      "To manage front-end state exclusively",
+      "To focus solely on database encryption"
+    ],
+    "answer": "To create multiple virtual instances of hardware or software resources",
+    "explanation": "Virtualization allows creating virtual instances of hardware or software resources, improving resource utilization and enabling technologies like cloud computing and containerization.",
+    "tags": ["Computer Science", "Virtualization", "Resource Utilization"]
+  },
+  {
+    "question": "Which of the following best describes the concept of recursion in computer science?",
+    "options": [
+      "Recursion involves a function calling itself directly or indirectly to solve subproblems",
+      "Recursion eliminates the need for loops",
+      "Recursion focuses exclusively on front-end development",
+      "Recursion replaces traditional APIs"
+    ],
+    "answer": "Recursion involves a function calling itself directly or indirectly to solve subproblems",
+    "explanation": "Recursion is a programming technique where a function calls itself to break down a problem into smaller subproblems, often used in algorithms like tree traversal or factorial calculations.",
+    "tags": ["Computer Science", "Recursion", "Programming Techniques"]
+  },
+  {
+    "question": "What is the role of cryptography in computer science?",
+    "options": [
+      "Cryptography ensures secure communication by transforming data into unreadable formats",
+      "Cryptography eliminates the need for traditional programming",
+      "Cryptography focuses exclusively on front-end development",
+      "Cryptography replaces traditional APIs"
+    ],
+    "answer": "Cryptography ensures secure communication by transforming data into unreadable formats",
+    "explanation": "Cryptography is a key area in computer science that secures communication by encrypting data, making it unreadable to unauthorized parties.",
+    "tags": ["Computer Science", "Cryptography", "Security"]
+  },
+  {
+    "question": "Which of the following is true about the Turing Machine in computer science?",
+    "options": [
+      "The Turing Machine is a theoretical model of computation that defines algorithms",
+      "The Turing Machine eliminates the need for algorithms",
+      "The Turing Machine focuses exclusively on front-end development",
+      "The Turing Machine replaces traditional APIs"
+    ],
+    "answer": "The Turing Machine is a theoretical model of computation that defines algorithms",
+    "explanation": "The Turing Machine is a foundational concept in computer science, serving as a theoretical model for understanding computation and algorithms.",
+    "tags": ["Computer Science", "Turing Machine", "Computation Theory"]
+  },
+  {
+    "question": "What is the purpose of Big O notation in computer science?",
+    "options": [
+      "Big O notation measures the efficiency of algorithms in terms of time and space complexity",
+      "Big O notation eliminates the need for algorithms",
+      "Big O notation focuses exclusively on front-end development",
+      "Big O notation replaces traditional APIs"
+    ],
+    "answer": "Big O notation measures the efficiency of algorithms in terms of time and space complexity",
+    "explanation": "Big O notation is used in computer science to describe the performance or complexity of algorithms, helping developers choose the most efficient solution.",
+    "tags": ["Computer Science", "Big O Notation", "Algorithm Analysis"]
+  },
+  {
+    "question": "Which of the following best describes the concept of polymorphism in object-oriented programming?",
+    "options": [
+      "Polymorphism allows objects of different types to be treated as objects of a common type",
+      "Polymorphism eliminates the need for data structures",
+      "Polymorphism focuses exclusively on front-end development",
+      "Polymorphism replaces traditional APIs"
+    ],
+    "answer": "Polymorphism allows objects of different types to be treated as objects of a common type",
+    "explanation": "Polymorphism in object-oriented programming enables objects of different classes to be handled through a common interface, enhancing flexibility and reusability.",
+    "tags": ["Computer Science", "Polymorphism", "OOP Concepts"]
+  },
+  {
+    "question": "What is the role of artificial neural networks in computer science?",
+    "options": [
+      "Artificial neural networks model biological neural systems to solve complex problems like image recognition and natural language processing",
+      "Artificial neural networks eliminate the need for traditional programming",
+      "Artificial neural networks focus exclusively on front-end development",
+      "Artificial neural networks replace traditional APIs"
+    ],
+    "answer": "Artificial neural networks model biological neural systems to solve complex problems like image recognition and natural language processing",
+    "explanation": "Artificial neural networks simulate biological neurons to process data and solve complex problems, playing a crucial role in machine learning and AI.",
+    "tags": [
+      "Computer Science",
+      "Artificial Neural Networks",
+      "Machine Learning"
+    ]
+  },
+  {
+    "question": "Which of the following is true about distributed systems in computer science?",
+    "options": [
+      "Distributed systems consist of multiple independent nodes working together to achieve a common goal",
+      "Distributed systems eliminate the need for networking",
+      "Distributed systems focus exclusively on front-end development",
+      "Distributed systems replace traditional APIs"
+    ],
+    "answer": "Distributed systems consist of multiple independent nodes working together to achieve a common goal",
+    "explanation": "Distributed systems involve multiple nodes (computers) collaborating to perform tasks, ensuring scalability, fault tolerance, and high availability.",
+    "tags": ["Computer Science", "Distributed Systems", "Scalability"]
+  },
+  {
+    "question": "What is the purpose of computational thinking in computer science?",
+    "options": [
+      "To apply logical reasoning and problem-solving techniques to understand and solve problems",
+      "To replace traditional APIs",
+      "To focus exclusively on front-end development",
+      "To manage database connections securely"
+    ],
+    "answer": "To apply logical reasoning and problem-solving techniques to understand and solve problems",
+    "explanation": "Computational thinking involves breaking down problems, identifying patterns, and designing algorithms to solve them systematically, forming the basis of computer science.",
+    "tags": ["Computer Science", "Computational Thinking", "Problem Solving"]
+  },
+  {
+    "question": "Which of the following best describes the concept of encapsulation in object-oriented programming?",
+    "options": [
+      "Encapsulation hides internal implementation details and exposes only necessary interfaces",
+      "Encapsulation eliminates the need for data structures",
+      "Encapsulation focuses exclusively on front-end development",
+      "Encapsulation replaces traditional APIs"
+    ],
+    "answer": "Encapsulation hides internal implementation details and exposes only necessary interfaces",
+    "explanation": "Encapsulation in OOP restricts direct access to some of an object's components, exposing only necessary interfaces and hiding internal implementation details.",
+    "tags": ["Computer Science", "Encapsulation", "OOP Concepts"]
+  },
+  {
+    "question": "What is the role of the Internet Protocol (IP) in computer science?",
+    "options": [
+      "IP facilitates communication between devices over a network by assigning unique addresses",
+      "IP eliminates the need for traditional programming",
+      "IP focuses exclusively on front-end development",
+      "IP replaces traditional APIs"
+    ],
+    "answer": "IP facilitates communication between devices over a network by assigning unique addresses",
+    "explanation": "The Internet Protocol (IP) assigns unique addresses to devices, enabling communication and data transfer across networks.",
+    "tags": ["Computer Science", "Internet Protocol", "Networking"]
+  },
+  {
+    "question": "Which of the following is true about the role of APIs in computer science?",
+    "options": [
+      "APIs allow different software systems to communicate and interact with each other",
+      "APIs eliminate the need for algorithms",
+      "APIs focus exclusively on front-end development",
+      "APIs replace traditional databases"
+    ],
+    "answer": "APIs allow different software systems to communicate and interact with each other",
+    "explanation": "Application Programming Interfaces (APIs) enable different software systems to interact, facilitating modular and scalable development.",
+    "tags": ["Computer Science", "APIs", "Software Communication"]
+  },
+  {
+    "question": "What is Nginx primarily used for in web infrastructure?",
+    "options": [
+      "Database management",
+      "Serving as a high-performance web server and reverse proxy",
+      "Frontend framework development",
+      "Replacing traditional APIs"
+    ],
+    "answer": "Serving as a high-performance web server and reverse proxy",
+    "explanation": "Nginx is a high-performance web server and reverse proxy that efficiently handles concurrent connections, serves static files, and balances loads across multiple servers.",
+    "tags": ["Nginx", "Web Server", "Reverse Proxy"]
+  },
+  {
+    "question": "Which feature of Nginx allows it to cache responses from backend servers?",
+    "options": [
+      "Static file handling",
+      "Load balancing",
+      "Reverse proxy with caching",
+      "Mail proxy support"
+    ],
+    "answer": "Reverse proxy with caching",
+    "explanation": "Nginx can act as a reverse proxy and cache responses from backend servers, reducing the load on those servers and improving performance.",
+    "tags": ["Nginx", "Caching", "Reverse Proxy"]
+  },
+  {
+    "question": "How does Nginx enhance reliability and efficiency in web applications?",
+    "options": [
+      "By encrypting all client-server communication",
+      "By distributing client requests across multiple servers (load balancing)",
+      "By replacing traditional databases",
+      "By focusing exclusively on frontend development"
+    ],
+    "answer": "By distributing client requests across multiple servers (load balancing)",
+    "explanation": "Nginx's load balancing feature distributes client requests across multiple servers, ensuring no single server becomes overwhelmed, thus enhancing reliability and efficiency.",
+    "tags": ["Nginx", "Load Balancing", "Efficiency"]
+  },
+  {
+    "question": "Which directive in the Nginx configuration specifies the port number the server listens on?",
+    "options": ["server_name", "listen", "proxy_pass", "worker_connections"],
+    "answer": "listen",
+    "explanation": "The `listen` directive in an Nginx configuration specifies the port number the server listens on, such as port 80 for HTTP traffic.",
+    "tags": ["Nginx", "Configuration", "listen Directive"]
+  },
+  {
+    "question": "What does the `proxy_pass` directive do in Nginx?",
+    "options": [
+      "It defines the maximum number of worker processes",
+      "It forwards client requests to a specified backend server",
+      "It sets the SSL/TLS certificate path",
+      "It manages static file directories"
+    ],
+    "answer": "It forwards client requests to a specified backend server",
+    "explanation": "The `proxy_pass` directive in Nginx forwards client requests to a specified backend server, enabling reverse proxy functionality.",
+    "tags": ["Nginx", "Reverse Proxy", "proxy_pass Directive"]
+  },
+  {
+    "question": "Which of the following best describes the role of the `worker_processes` directive in Nginx?",
+    "options": [
+      "Defines the domain name for the server",
+      "Specifies the number of worker processes to handle requests",
+      "Sets the root directory for static files",
+      "Configures SSL/TLS settings"
+    ],
+    "answer": "Specifies the number of worker processes to handle requests",
+    "explanation": "The `worker_processes` directive in Nginx determines how many worker processes are spawned to handle incoming requests, impacting performance and resource usage.",
+    "tags": ["Nginx", "Performance", "worker_processes Directive"]
+  },
+  {
+    "question": "How does Nginx improve performance when serving static content?",
+    "options": [
+      "By requiring manual optimization of each file",
+      "By directly serving static files like HTML, CSS, and JavaScript without relying on backend servers",
+      "By encrypting static files before serving",
+      "By replacing traditional APIs"
+    ],
+    "answer": "By directly serving static files like HTML, CSS, and JavaScript without relying on backend servers",
+    "explanation": "Nginx efficiently serves static files such as HTML, CSS, JavaScript, and images directly to clients, reducing the need for backend processing and improving performance.",
+    "tags": ["Nginx", "Static Files", "Performance"]
+  },
+  {
+    "question": "Which command starts the Nginx service?",
+    "options": [
+      "sudo nginx -s stop",
+      "sudo nginx",
+      "sudo nginx -s reload",
+      "sudo nginx -c /path/to/nginx.conf"
+    ],
+    "answer": "sudo nginx",
+    "explanation": "The `sudo nginx` command starts the Nginx service, making it ready to serve requests according to its configuration.",
+    "tags": ["Nginx", "Commands", "Starting Nginx"]
+  },
+  {
+    "question": "What is the purpose of the `try_files` directive in Nginx?",
+    "options": [
+      "To define SSL/TLS certificates",
+      "To attempt serving files in a specified order and return a fallback if none are found",
+      "To configure WebSockets support",
+      "To replace traditional APIs"
+    ],
+    "answer": "To attempt serving files in a specified order and return a fallback if none are found",
+    "explanation": "The `try_files` directive attempts to serve files in a specified order and provides a fallback response (e.g., 404) if none of the files are found.",
+    "tags": ["Nginx", "Static Files", "try_files Directive"]
+  },
+  {
+    "question": "Which command reloads the Nginx configuration without stopping the service?",
+    "options": [
+      "sudo nginx -s stop",
+      "sudo nginx",
+      "sudo nginx -s reload",
+      "sudo nginx -t"
+    ],
+    "answer": "sudo nginx -s reload",
+    "explanation": "The `sudo nginx -s reload` command reloads the Nginx configuration without interrupting ongoing requests, ensuring seamless updates.",
+    "tags": ["Nginx", "Commands", "Reloading Configuration"]
+  },
+  {
+    "question": "What does the `proxy_set_header` directive in Nginx do?",
+    "options": [
+      "It defines the maximum number of worker connections",
+      "It forwards additional headers to the proxied server",
+      "It serves static files directly to clients",
+      "It replaces traditional APIs"
+    ],
+    "answer": "It forwards additional headers to the proxied server",
+    "explanation": "The `proxy_set_header` directive in Nginx allows forwarding additional headers (e.g., Host, X-Real-IP) to the backend server during reverse proxying.",
+    "tags": ["Nginx", "Reverse Proxy", "proxy_set_header Directive"]
+  },
+  {
+    "question": "Which feature of Nginx ensures secure data transmission over the network?",
+    "options": [
+      "WebSockets support",
+      "SSL/TLS support",
+      "Handling static files",
+      "Replacing traditional APIs"
+    ],
+    "answer": "SSL/TLS support",
+    "explanation": "Nginx offers robust SSL/TLS support, enabling secure encrypted communication between clients and servers.",
+    "tags": ["Nginx", "Security", "SSL/TLS"]
+  },
+  {
+    "question": "What is the primary advantage of using Nginx for WebSockets?",
+    "options": [
+      "It simplifies database management",
+      "It facilitates full-duplex communication channels over a single TCP connection",
+      "It eliminates the need for front-end frameworks",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It facilitates full-duplex communication channels over a single TCP connection",
+    "explanation": "Nginx supports WebSockets, allowing full-duplex communication channels over a single TCP connection, which is essential for real-time applications.",
+    "tags": ["Nginx", "WebSockets", "Real-Time Communication"]
+  },
+  {
+    "question": "Which of the following is true about Nginx's hierarchical structure?",
+    "options": [
+      "Nginx only supports flat configurations without hierarchy",
+      "Nginx organizes configurations into blocks like `http`, `server`, and `location`",
+      "Nginx eliminates the need for configuration files entirely",
+      "Nginx focuses exclusively on backend development"
+    ],
+    "answer": "Nginx organizes configurations into blocks like `http`, `server`, and `location`",
+    "explanation": "Nginx configurations are organized hierarchically into blocks such as `http`, `server`, and `location`, enabling fine-grained control over server behavior.",
+    "tags": ["Nginx", "Configuration", "Hierarchical Structure"]
+  },
+  {
+    "question": "What does the `server_name` directive in Nginx specify?",
+    "options": [
+      "The number of worker processes",
+      "The domain name associated with the server block",
+      "The root directory for static files",
+      "The encryption algorithm for SSL/TLS"
+    ],
+    "answer": "The domain name associated with the server block",
+    "explanation": "The `server_name` directive in Nginx specifies the domain name or IP address associated with the server block, helping route requests correctly.",
+    "tags": ["Nginx", "Configuration", "server_name Directive"]
+  },
+  {
+    "question": "Which of the following best describes Nginx's ability to handle concurrent connections?",
+    "options": [
+      "Nginx struggles with concurrent connections due to its single-threaded nature",
+      "Nginx efficiently handles a large number of concurrent connections using an event-driven architecture",
+      "Nginx requires external tools to manage concurrent connections",
+      "Nginx focuses exclusively on backend development"
+    ],
+    "answer": "Nginx efficiently handles a large number of concurrent connections using an event-driven architecture",
+    "explanation": "Nginx uses an event-driven, asynchronous architecture to handle a large number of concurrent connections efficiently, making it ideal for high-traffic websites.",
+    "tags": ["Nginx", "Concurrency", "Event-Driven Architecture"]
+  },
+  {
+    "question": "Which of the following commands stops the Nginx service?",
+    "options": [
+      "sudo nginx",
+      "sudo nginx -s stop",
+      "sudo nginx -s reload",
+      "sudo nginx -t"
+    ],
+    "answer": "sudo nginx -s stop",
+    "explanation": "The `sudo nginx -s stop` command gracefully stops the Nginx service, halting all active connections.",
+    "tags": ["Nginx", "Commands", "Stopping Nginx"]
+  },
+  {
+    "question": "What is the role of the `worker_connections` directive in Nginx?",
+    "options": [
+      "It defines the domain name for the server",
+      "It sets the maximum number of simultaneous connections per worker process",
+      "It configures SSL/TLS certificates",
+      "It replaces traditional APIs"
+    ],
+    "answer": "It sets the maximum number of simultaneous connections per worker process",
+    "explanation": "The `worker_connections` directive in Nginx specifies the maximum number of simultaneous connections that each worker process can handle.",
+    "tags": ["Nginx", "Performance", "worker_connections Directive"]
+  },
+  {
+    "question": "Which of the following is a common use case for Nginx as a reverse proxy?",
+    "options": [
+      "Managing database migrations",
+      "Forwarding client requests to backend servers while caching responses",
+      "Encrypting communication between microservices",
+      "Replacing traditional APIs"
+    ],
+    "answer": "Forwarding client requests to backend servers while caching responses",
+    "explanation": "As a reverse proxy, Nginx forwards client requests to backend servers, caches responses, and optimizes performance for high-traffic applications.",
+    "tags": ["Nginx", "Reverse Proxy", "Use Cases"]
+  },
+  {
+    "question": "What is the purpose of the `root` directive in Nginx?",
+    "options": [
+      "It defines the SSL/TLS certificate path",
+      "It specifies the directory from which static files are served",
+      "It manages database connections securely",
+      "It replaces traditional APIs"
+    ],
+    "answer": "It specifies the directory from which static files are served",
+    "explanation": "The `root` directive in Nginx specifies the document root directory from which static files are served to clients.",
+    "tags": ["Nginx", "Static Files", "root Directive"]
+  },
+  {
+    "question": "Which of the following is true about Nginx's mail proxy capabilities?",
+    "options": [
+      "Nginx can act as a mail proxy to relay email traffic securely",
+      "Nginx eliminates the need for mail servers entirely",
+      "Nginx focuses exclusively on frontend development",
+      "Nginx replaces traditional APIs"
+    ],
+    "answer": "Nginx can act as a mail proxy to relay email traffic securely",
+    "explanation": "In addition to being a web server and reverse proxy, Nginx can also function as a mail proxy, relaying email traffic securely and efficiently.",
+    "tags": ["Nginx", "Mail Proxy", "Capabilities"]
+  },
+  {
+    "question": "What is the role of the `index` directive in Nginx?",
+    "options": [
+      "It specifies the default index files to serve when accessing a directory",
+      "It defines the SSL/TLS certificate path",
+      "It manages database connections securely",
+      "It replaces traditional APIs"
+    ],
+    "answer": "It specifies the default index files to serve when accessing a directory",
+    "explanation": "The `index` directive in Nginx specifies the default index files (e.g., `index.html`) to serve when a client accesses a directory.",
+    "tags": ["Nginx", "Static Files", "index Directive"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between Nginx and backend servers?",
+    "options": [
+      "Nginx replaces the need for backend servers entirely",
+      "Nginx acts as a reverse proxy, forwarding requests to backend servers while caching responses",
+      "Nginx focuses exclusively on frontend state management",
+      "Nginx eliminates the need for APIs"
+    ],
+    "answer": "Nginx acts as a reverse proxy, forwarding requests to backend servers while caching responses",
+    "explanation": "Nginx often functions as a reverse proxy, forwarding client requests to backend servers and caching responses to reduce server load and improve performance.",
+    "tags": ["Nginx", "Reverse Proxy", "Backend Servers"]
+  },
+  {
+    "question": "Which of the following is true about Nginx's SSL/TLS support?",
+    "options": [
+      "Nginx cannot handle SSL/TLS encryption",
+      "Nginx offers robust SSL/TLS support for secure communication",
+      "Nginx eliminates the need for secure communication",
+      "Nginx focuses exclusively on backend development"
+    ],
+    "answer": "Nginx offers robust SSL/TLS support for secure communication",
+    "explanation": "Nginx provides strong SSL/TLS support, enabling secure encrypted communication between clients and servers.",
+    "tags": ["Nginx", "Security", "SSL/TLS"]
+  },
+  {
+    "question": "Which command tests the syntax of the Nginx configuration file?",
+    "options": [
+      "sudo nginx -s stop",
+      "sudo nginx -s reload",
+      "sudo nginx -t",
+      "sudo nginx"
+    ],
+    "answer": "sudo nginx -t",
+    "explanation": "The `sudo nginx -t` command tests the syntax of the Nginx configuration file, ensuring correctness before applying changes.",
+    "tags": ["Nginx", "Commands", "Configuration Testing"]
+  },
+  {
     "question": "What is Generative AI (GenAI)?",
     "options": [
       "A type of AI that focuses solely on classification tasks",
