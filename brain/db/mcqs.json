@@ -1,5 +1,771 @@
 [
   {
+    "question": "What is a JSON Web Token (JWT)?",
+    "options": [
+      "A database management system",
+      "A protocol for secure communication between services",
+      "An encrypted file format for storing sensitive data",
+      "A compact, URL-safe means of representing claims to be transferred between two parties"
+    ],
+    "answer": "A compact, URL-safe means of representing claims to be transferred between two parties",
+    "explanation": "A JSON Web Token (JWT) is a compact, URL-safe mechanism for transferring information between parties as a JSON object, commonly used for authentication and information exchange.",
+    "tags": ["JWT", "Definition", "Authentication"]
+  },
+  {
+    "question": "Which parts make up a JWT?",
+    "options": [
+      "Header, Payload, and Signature",
+      "Only Header and Payload",
+      "Only Signature",
+      "Database Query and Response"
+    ],
+    "answer": "Header, Payload, and Signature",
+    "explanation": "A JWT consists of three parts: Header, Payload, and Signature, separated by dots (`.`), ensuring its integrity and security.",
+    "tags": ["JWT", "Structure", "Parts"]
+  },
+  {
+    "question": "What is the purpose of the Header in a JWT?",
+    "options": [
+      "To store sensitive user data",
+      "To define the type of token and the signing algorithm",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To define the type of token and the signing algorithm",
+    "explanation": "The Header in a JWT specifies the token's type (usually `JWT`) and the signing algorithm used (e.g., HMAC or RSA).",
+    "tags": ["JWT", "Header", "Signing Algorithm"]
+  },
+  {
+    "question": "Which part of a JWT contains the actual data or claims?",
+    "options": ["Header", "Payload", "Signature", "Database Query"],
+    "answer": "Payload",
+    "explanation": "The Payload in a JWT contains the actual data or claims being transmitted, such as user information or permissions.",
+    "tags": ["JWT", "Payload", "Claims"]
+  },
+  {
+    "question": "What is the role of the Signature in a JWT?",
+    "options": [
+      "To encrypt sensitive data during transmission",
+      "To verify the token's authenticity and ensure it hasn't been tampered with",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To verify the token's authenticity and ensure it hasn't been tampered with",
+    "explanation": "The Signature in a JWT ensures the token's authenticity and integrity by signing the encoded Header and Payload with a secret key or private key.",
+    "tags": ["JWT", "Signature", "Security"]
+  },
+  {
+    "question": "Which of the following is true about JWT claims?",
+    "options": [
+      "Claims are pieces of information (statements) asserted about a subject and stored in the Payload",
+      "Claims replace traditional APIs with AI-driven solutions",
+      "Claims manage front-end state exclusively",
+      "Claims focus solely on hardware optimization"
+    ],
+    "answer": "Claims are pieces of information (statements) asserted about a subject and stored in the Payload",
+    "explanation": "JWT claims are pieces of information (e.g., user ID, roles) stored in the Payload section of the token, enabling secure data transfer.",
+    "tags": ["JWT", "Claims", "Payload"]
+  },
+  {
+    "question": "What is the primary use case of JWT in web applications?",
+    "options": [
+      "Managing database connections securely",
+      "Facilitating user authentication and authorization",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Focusing exclusively on backend development"
+    ],
+    "answer": "Facilitating user authentication and authorization",
+    "explanation": "JWT is widely used for user authentication and authorization, allowing clients to securely transmit their identity and permissions across networks.",
+    "tags": ["JWT", "Use Cases", "Authentication"]
+  },
+  {
+    "question": "Which algorithm is commonly used to sign a JWT?",
+    "options": [
+      "HMAC (Hash-based Message Authentication Code)",
+      "AES (Advanced Encryption Standard)",
+      "RSA (Rivest-Shamir-Adleman)",
+      "Both HMAC and RSA"
+    ],
+    "answer": "Both HMAC and RSA",
+    "explanation": "JWTs can be signed using symmetric algorithms like HMAC or asymmetric algorithms like RSA, depending on the security requirements.",
+    "tags": ["JWT", "Signing Algorithms", "HMAC", "RSA"]
+  },
+  {
+    "question": "What is the purpose of the `exp` claim in a JWT?",
+    "options": [
+      "To specify the token's expiration time",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the token's expiration time",
+    "explanation": "The `exp` (expiration time) claim in a JWT defines when the token becomes invalid, enhancing security by limiting its lifespan.",
+    "tags": ["JWT", "Claims", "Expiration Time"]
+  },
+  {
+    "question": "Which of the following best describes the difference between session-based and token-based authentication?",
+    "options": [
+      "Session-based auth relies on server-side storage, while token-based auth uses self-contained tokens like JWT",
+      "There is no difference; both serve the same purpose",
+      "Token-based auth eliminates the need for databases entirely",
+      "Session-based auth focuses exclusively on frontend development"
+    ],
+    "answer": "Session-based auth relies on server-side storage, while token-based auth uses self-contained tokens like JWT",
+    "explanation": "In session-based authentication, sessions are stored server-side, whereas token-based authentication (e.g., JWT) uses self-contained tokens that do not require server storage.",
+    "tags": ["JWT", "Authentication", "Session vs Token"]
+  },
+  {
+    "question": "What is the main advantage of using JWT for authentication?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It eliminates the need for server-side session storage, reducing overhead",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively"
+    ],
+    "answer": "It eliminates the need for server-side session storage, reducing overhead",
+    "explanation": "JWT reduces server overhead by avoiding the need for session storage, as all necessary information is contained within the token itself.",
+    "tags": ["JWT", "Authentication", "Advantages"]
+  },
+  {
+    "question": "Which of the following is true about JWT's structure?",
+    "options": [
+      "It is a single, unstructured string",
+      "It consists of three Base64-encoded parts: Header, Payload, and Signature",
+      "It is a binary file format",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It consists of three Base64-encoded parts: Header, Payload, and Signature",
+    "explanation": "A JWT is composed of three Base64-encoded sections: Header, Payload, and Signature, making it compact and URL-safe.",
+    "tags": ["JWT", "Structure", "Base64 Encoding"]
+  },
+  {
+    "question": "What is the role of the `iss` (issuer) claim in a JWT?",
+    "options": [
+      "To specify the entity that issued the token",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the entity that issued the token",
+    "explanation": "The `iss` (issuer) claim identifies the party that issued the JWT, helping verify its origin.",
+    "tags": ["JWT", "Claims", "Issuer"]
+  },
+  {
+    "question": "Which of the following is a standard claim in a JWT?",
+    "options": ["name", "iat (issued at)", "password", "database"],
+    "answer": "iat (issued at)",
+    "explanation": "Standard JWT claims include `iat` (issued at), `exp` (expiration time), `sub` (subject), and others, ensuring interoperability and security.",
+    "tags": ["JWT", "Claims", "Standard Claims"]
+  },
+  {
+    "question": "How do you decode a JWT without verifying its signature?",
+    "options": [
+      "Using a JWT decoding library",
+      "By manually decrypting it with a secret key",
+      "Through traditional APIs",
+      "By focusing exclusively on backend development"
+    ],
+    "answer": "Using a JWT decoding library",
+    "explanation": "You can decode a JWT's Header and Payload without verifying its signature using libraries like `jsonwebtoken` (Node.js) or online tools.",
+    "tags": ["JWT", "Decoding", "Libraries"]
+  },
+  {
+    "question": "What is the purpose of the `sub` (subject) claim in a JWT?",
+    "options": [
+      "To specify the token's subject, usually the user or resource being authenticated",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the token's subject, usually the user or resource being authenticated",
+    "explanation": "The `sub` (subject) claim in a JWT identifies the principal (e.g., user) or resource being authenticated.",
+    "tags": ["JWT", "Claims", "Subject"]
+  },
+  {
+    "question": "Which of the following is true about JWT's security?",
+    "options": [
+      "JWTs are inherently secure and cannot be tampered with",
+      "JWTs must be signed or encrypted to prevent tampering and unauthorized access",
+      "JWTs eliminate the need for encryption entirely",
+      "JWTs focus exclusively on frontend development"
+    ],
+    "answer": "JWTs must be signed or encrypted to prevent tampering and unauthorized access",
+    "explanation": "While JWTs are designed to be secure, they must be signed or encrypted using a secret or private key to prevent tampering and unauthorized access.",
+    "tags": ["JWT", "Security", "Signing"]
+  },
+  {
+    "question": "What is the role of the `aud` (audience) claim in a JWT?",
+    "options": [
+      "To specify the intended recipient of the token",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the intended recipient of the token",
+    "explanation": "The `aud` (audience) claim in a JWT specifies the intended recipient(s) of the token, ensuring it is used only by authorized parties.",
+    "tags": ["JWT", "Claims", "Audience"]
+  },
+  {
+    "question": "Which of the following is a benefit of using JWT for stateless authentication?",
+    "options": [
+      "It simplifies the application structure unnecessarily",
+      "It enables scalable authentication without maintaining session state on the server",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It focuses exclusively on IoT development"
+    ],
+    "answer": "It enables scalable authentication without maintaining session state on the server",
+    "explanation": "JWT supports stateless authentication, where the server does not need to maintain session state, improving scalability and reducing server load.",
+    "tags": ["JWT", "Stateless Auth", "Scalability"]
+  },
+  {
+    "question": "What is the primary disadvantage of using JWT for large payloads?",
+    "options": [
+      "JWTs become too large and inefficient for transmission",
+      "JWTs replace the need for traditional APIs",
+      "JWTs focus exclusively on frontend development",
+      "JWTs eliminate the need for encryption"
+    ],
+    "answer": "JWTs become too large and inefficient for transmission",
+    "explanation": "If the payload in a JWT is too large, it can increase the token's size, making it less efficient for transmission over HTTP headers.",
+    "tags": ["JWT", "Payload Size", "Disadvantages"]
+  },
+  {
+    "question": "Which of the following is true about JWT's signing process?",
+    "options": [
+      "The signing process involves hashing the Header and Payload with a secret or private key",
+      "JWTs are unsigned by default and require manual encryption",
+      "JWTs replace the need for traditional APIs",
+      "JWTs focus exclusively on backend development"
+    ],
+    "answer": "The signing process involves hashing the Header and Payload with a secret or private key",
+    "explanation": "The JWT signing process involves hashing the Base64-encoded Header and Payload with a secret (HMAC) or private key (RSA/ECDSA) to create the Signature.",
+    "tags": ["JWT", "Signing Process", "Security"]
+  },
+  {
+    "question": "What is the role of the `jti` (JWT ID) claim in a JWT?",
+    "options": [
+      "To uniquely identify the token for tracking purposes",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To uniquely identify the token for tracking purposes",
+    "explanation": "The `jti` (JWT ID) claim provides a unique identifier for the token, useful for tracking and revocation.",
+    "tags": ["JWT", "Claims", "JWT ID"]
+  },
+  {
+    "question": "Which of the following is a common use case for JWT?",
+    "options": [
+      "Encrypting sensitive data during transmission",
+      "Facilitating secure authentication and authorization in web applications",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Focusing exclusively on backend development"
+    ],
+    "answer": "Facilitating secure authentication and authorization in web applications",
+    "explanation": "JWTs are widely used for secure authentication and authorization in web applications, enabling stateless and scalable solutions.",
+    "tags": ["JWT", "Use Cases", "Authentication"]
+  },
+  {
+    "question": "What is the purpose of the `nbf` (not before) claim in a JWT?",
+    "options": [
+      "To specify the time before which the token should not be accepted",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the time before which the token should not be accepted",
+    "explanation": "The `nbf` (not before) claim in a JWT defines the time before which the token is not valid, preventing premature access.",
+    "tags": ["JWT", "Claims", "Not Before"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between JWT and OAuth2?",
+    "options": [
+      "JWT replaces OAuth2 entirely",
+      "JWT is often used in conjunction with OAuth2 for secure token-based authentication",
+      "OAuth2 eliminates the need for JWT",
+      "JWT focuses exclusively on frontend development"
+    ],
+    "answer": "JWT is often used in conjunction with OAuth2 for secure token-based authentication",
+    "explanation": "JWT is frequently used alongside OAuth2 to provide secure, token-based authentication for web applications.",
+    "tags": ["JWT", "OAuth2", "Relationship"]
+  },
+  {
+    "question": "What is the role of the `kid` (key ID) header parameter in a JWT?",
+    "options": [
+      "To identify the key used to sign or encrypt the token",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To identify the key used to sign or encrypt the token",
+    "explanation": "The `kid` (key ID) parameter in the JWT Header identifies the key used to sign or encrypt the token, facilitating key rotation and management.",
+    "tags": ["JWT", "Header Parameters", "Key ID"]
+  },
+  {
+    "question": "Which of the following is true about JWT's encoding format?",
+    "options": [
+      "JWTs are encoded using Base64Url encoding to ensure they are compact and URL-safe",
+      "JWTs are binary files that require special decoding libraries",
+      "JWTs replace the need for traditional APIs",
+      "JWTs focus exclusively on frontend development"
+    ],
+    "answer": "JWTs are encoded using Base64Url encoding to ensure they are compact and URL-safe",
+    "explanation": "JWTs use Base64Url encoding for their Header and Payload, ensuring the token is compact and safe for transmission in URLs or HTTP headers.",
+    "tags": ["JWT", "Encoding Format", "Base64Url"]
+  },
+  {
+    "question": "What is the purpose of the `typ` (type) header parameter in a JWT?",
+    "options": [
+      "To specify the media type of the token, usually 'JWT'",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the media type of the token, usually 'JWT'",
+    "explanation": "The `typ` (type) parameter in the JWT Header specifies the media type of the token, typically set to 'JWT' to indicate its format.",
+    "tags": ["JWT", "Header Parameters", "Type"]
+  },
+  {
+    "question": "Which of the following is true about JWT's immutability?",
+    "options": [
+      "JWTs cannot be altered once signed without invalidating the signature",
+      "JWTs can be modified freely without affecting their validity",
+      "JWTs replace the need for traditional APIs",
+      "JWTs focus exclusively on frontend development"
+    ],
+    "answer": "JWTs cannot be altered once signed without invalidating the signature",
+    "explanation": "Once signed, any alteration to a JWT's Header or Payload will invalidate its signature, ensuring the token's immutability and integrity.",
+    "tags": ["JWT", "Immutability", "Security"]
+  },
+  {
+    "question": "What is the role of the `alg` (algorithm) header parameter in a JWT?",
+    "options": [
+      "To specify the algorithm used to sign or encrypt the token",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the algorithm used to sign or encrypt the token",
+    "explanation": "The `alg` (algorithm) parameter in the JWT Header specifies the algorithm used to sign or encrypt the token, ensuring proper verification.",
+    "tags": ["JWT", "Header Parameters", "Algorithm"]
+  },
+  {
+    "question": "Which of the following is a common vulnerability associated with JWT?",
+    "options": [
+      "Using the 'none' algorithm without proper validation",
+      "Storing sensitive data in the Payload without encryption",
+      "Both A and B",
+      "JWTs are immune to vulnerabilities"
+    ],
+    "answer": "Both A and B",
+    "explanation": "Common JWT vulnerabilities include using the 'none' algorithm without validation and storing sensitive data in the Payload without encryption, highlighting the importance of secure implementation.",
+    "tags": ["JWT", "Vulnerabilities", "Security"]
+  },
+  {
+    "question": "What is the purpose of the `iat` (issued at) claim in a JWT?",
+    "options": [
+      "To specify the timestamp when the token was issued",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the timestamp when the token was issued",
+    "explanation": "The `iat` (issued at) claim in a JWT records the timestamp when the token was issued, aiding in token validation and expiration checks.",
+    "tags": ["JWT", "Claims", "Issued At"]
+  },
+  {
+    "question": "What is SQL?",
+    "options": [
+      "A programming language used exclusively for front-end development",
+      "A domain-specific language used for managing and querying relational databases",
+      "A framework for building web applications",
+      "A tool for encrypting communication between services"
+    ],
+    "answer": "A domain-specific language used for managing and querying relational databases",
+    "explanation": "SQL (Structured Query Language) is a domain-specific language designed for managing data in relational database management systems (RDBMS).",
+    "tags": ["SQL", "Definition", "Basic"]
+  },
+  {
+    "question": "Which SQL statement is used to retrieve data from a database?",
+    "options": ["INSERT INTO", "SELECT", "UPDATE", "DELETE"],
+    "answer": "SELECT",
+    "explanation": "The `SELECT` statement is used to query data from one or more tables in a database.",
+    "tags": ["SQL", "Queries", "Basic"]
+  },
+  {
+    "question": "What is the purpose of the WHERE clause in SQL?",
+    "options": [
+      "To define the structure of a table",
+      "To filter records based on specified conditions",
+      "To sort the results of a query",
+      "To replace traditional APIs"
+    ],
+    "answer": "To filter records based on specified conditions",
+    "explanation": "The `WHERE` clause in SQL is used to filter records in a query based on specific conditions, ensuring only relevant data is retrieved.",
+    "tags": ["SQL", "Clauses", "Basic"]
+  },
+  {
+    "question": "Which SQL clause is used to sort the result set?",
+    "options": ["ORDER BY", "GROUP BY", "HAVING", "JOIN"],
+    "answer": "ORDER BY",
+    "explanation": "The `ORDER BY` clause in SQL sorts the result set based on one or more columns, either in ascending or descending order.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "What is the difference between INNER JOIN and OUTER JOIN?",
+    "options": [
+      "INNER JOIN returns only matching rows, while OUTER JOIN returns all rows from one or both tables",
+      "There is no difference; both serve the same purpose",
+      "INNER JOIN eliminates duplicates, while OUTER JOIN focuses on encryption",
+      "INNER JOIN replaces traditional APIs, while OUTER JOIN manages front-end state"
+    ],
+    "answer": "INNER JOIN returns only matching rows, while OUTER JOIN returns all rows from one or both tables",
+    "explanation": "An `INNER JOIN` retrieves only the matching rows between two tables, whereas an `OUTER JOIN` includes all rows from one or both tables, even if there are no matches.",
+    "tags": ["SQL", "Joins", "Intermediate"]
+  },
+  {
+    "question": "Which SQL function is used to calculate the average value of a numeric column?",
+    "options": ["COUNT()", "SUM()", "AVG()", "MAX()"],
+    "answer": "AVG()",
+    "explanation": "The `AVG()` function in SQL calculates the average value of a numeric column in a table.",
+    "tags": ["SQL", "Functions", "Basic"]
+  },
+  {
+    "question": "What is the purpose of the GROUP BY clause in SQL?",
+    "options": [
+      "To group rows that have the same values in specified columns into summary rows",
+      "To filter records based on conditions",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To group rows that have the same values in specified columns into summary rows",
+    "explanation": "The `GROUP BY` clause in SQL groups rows with the same values in specified columns, often used with aggregate functions like `SUM()` or `COUNT()`.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "Which SQL statement is used to insert new records into a table?",
+    "options": ["UPDATE", "DELETE", "INSERT INTO", "SELECT"],
+    "answer": "INSERT INTO",
+    "explanation": "The `INSERT INTO` statement is used to add new records to a table in the database.",
+    "tags": ["SQL", "Data Manipulation", "Basic"]
+  },
+  {
+    "question": "What is the role of the HAVING clause in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To filter groups after they have been aggregated using GROUP BY",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To filter groups after they have been aggregated using GROUP BY",
+    "explanation": "The `HAVING` clause in SQL filters groups created by the `GROUP BY` clause, allowing you to apply conditions to aggregated data.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "Which SQL keyword is used to eliminate duplicate rows from a result set?",
+    "options": ["DISTINCT", "UNIQUE", "DROP", "DELETE"],
+    "answer": "DISTINCT",
+    "explanation": "The `DISTINCT` keyword ensures that duplicate rows are removed from the result set, returning only unique values.",
+    "tags": ["SQL", "Keywords", "Basic"]
+  },
+  {
+    "question": "What is the purpose of subqueries in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To embed one query within another, enabling complex filtering or calculations",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To embed one query within another, enabling complex filtering or calculations",
+    "explanation": "Subqueries in SQL allow embedding one query inside another, providing flexibility for complex filtering, calculations, or data retrieval.",
+    "tags": ["SQL", "Subqueries", "Advanced"]
+  },
+  {
+    "question": "Which SQL statement is used to modify existing records in a table?",
+    "options": ["INSERT INTO", "UPDATE", "DELETE", "SELECT"],
+    "answer": "UPDATE",
+    "explanation": "The `UPDATE` statement modifies existing records in a table, allowing you to change specific fields based on conditions.",
+    "tags": ["SQL", "Data Manipulation", "Basic"]
+  },
+  {
+    "question": "What is the role of indexes in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To improve query performance by creating faster lookup structures",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To improve query performance by creating faster lookup structures",
+    "explanation": "Indexes in SQL enhance query performance by creating optimized data structures for faster lookups and retrievals.",
+    "tags": ["SQL", "Indexes", "Intermediate"]
+  },
+  {
+    "question": "Which SQL clause is used to limit the number of rows returned by a query?",
+    "options": ["LIMIT", "WHERE", "ORDER BY", "HAVING"],
+    "answer": "LIMIT",
+    "explanation": "The `LIMIT` clause restricts the number of rows returned by a query, making it useful for paginated results or reducing result size.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "What is the difference between UNION and UNION ALL in SQL?",
+    "options": [
+      "UNION combines multiple result sets and removes duplicates, while UNION ALL includes all rows, including duplicates",
+      "There is no difference; both serve the same purpose",
+      "UNION replaces traditional APIs, while UNION ALL manages front-end state",
+      "UNION focuses exclusively on backend development"
+    ],
+    "answer": "UNION combines multiple result sets and removes duplicates, while UNION ALL includes all rows, including duplicates",
+    "explanation": "The `UNION` operator combines multiple result sets and removes duplicate rows, whereas `UNION ALL` includes all rows, even duplicates, improving performance for large datasets.",
+    "tags": ["SQL", "Operators", "Intermediate"]
+  },
+  {
+    "question": "Which SQL statement is used to delete records from a table?",
+    "options": ["INSERT INTO", "UPDATE", "DELETE", "SELECT"],
+    "answer": "DELETE",
+    "explanation": "The `DELETE` statement removes records from a table based on specified conditions, ensuring data integrity and maintenance.",
+    "tags": ["SQL", "Data Manipulation", "Basic"]
+  },
+  {
+    "question": "What is the purpose of transactions in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage a series of database operations as a single unit of work, ensuring atomicity and consistency",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage a series of database operations as a single unit of work, ensuring atomicity and consistency",
+    "explanation": "Transactions in SQL group multiple database operations into a single unit of work, ensuring atomicity, consistency, isolation, and durability (ACID properties).",
+    "tags": ["SQL", "Transactions", "Advanced"]
+  },
+  {
+    "question": "Which SQL clause is used to restrict the number of rows returned in a result set?",
+    "options": ["WHERE", "TOP", "ORDER BY", "HAVING"],
+    "answer": "TOP",
+    "explanation": "The `TOP` clause (or equivalent like `LIMIT` in some databases) restricts the number of rows returned in a result set, often used for paginated queries.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "What is the role of views in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To create virtual tables based on the result of a query, simplifying complex queries",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create virtual tables based on the result of a query, simplifying complex queries",
+    "explanation": "Views in SQL act as virtual tables derived from the result of a query, enabling simplified access to complex or frequently used datasets.",
+    "tags": ["SQL", "Views", "Intermediate"]
+  },
+  {
+    "question": "Which SQL function is used to count the number of rows in a table?",
+    "options": ["COUNT()", "SUM()", "AVG()", "MAX()"],
+    "answer": "COUNT()",
+    "explanation": "The `COUNT()` function in SQL counts the number of rows in a table or the number of non-null values in a specific column.",
+    "tags": ["SQL", "Functions", "Basic"]
+  },
+  {
+    "question": "What is normalization in SQL, and why is it important?",
+    "options": [
+      "Normalization eliminates redundant data by organizing tables into related but distinct entities",
+      "Normalization replaces traditional APIs with AI-driven solutions",
+      "Normalization focuses exclusively on front-end development",
+      "Normalization eliminates the need for database connections"
+    ],
+    "answer": "Normalization eliminates redundant data by organizing tables into related but distinct entities",
+    "explanation": "Normalization in SQL reduces redundancy and dependency by organizing tables into well-defined relationships, improving data integrity and efficiency.",
+    "tags": ["SQL", "Normalization", "Advanced"]
+  },
+  {
+    "question": "Which SQL statement is used to create a new table?",
+    "options": ["CREATE TABLE", "ALTER TABLE", "DROP TABLE", "TRUNCATE TABLE"],
+    "answer": "CREATE TABLE",
+    "explanation": "The `CREATE TABLE` statement defines a new table in the database, specifying its structure and constraints.",
+    "tags": ["SQL", "Table Management", "Basic"]
+  },
+  {
+    "question": "What is the role of triggers in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To execute stored procedures automatically when certain events occur (e.g., INSERT, UPDATE, DELETE)",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To execute stored procedures automatically when certain events occur (e.g., INSERT, UPDATE, DELETE)",
+    "explanation": "Triggers in SQL are special types of stored procedures that automatically execute in response to specific events, such as inserts, updates, or deletions.",
+    "tags": ["SQL", "Triggers", "Advanced"]
+  },
+  {
+    "question": "Which SQL clause is used to combine rows from two or more tables based on a related column?",
+    "options": ["JOIN", "WHERE", "ORDER BY", "HAVING"],
+    "answer": "JOIN",
+    "explanation": "The `JOIN` clause in SQL combines rows from two or more tables based on a related column, enabling efficient data retrieval across related datasets.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "What is the purpose of the DISTINCT keyword in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To return only unique values from a query result set",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To return only unique values from a query result set",
+    "explanation": "The `DISTINCT` keyword ensures that only unique values are returned in a query result set, eliminating duplicates.",
+    "tags": ["SQL", "Keywords", "Basic"]
+  },
+  {
+    "question": "Which SQL statement is used to modify the structure of an existing table?",
+    "options": ["CREATE TABLE", "ALTER TABLE", "DROP TABLE", "TRUNCATE TABLE"],
+    "answer": "ALTER TABLE",
+    "explanation": "The `ALTER TABLE` statement modifies the structure of an existing table, such as adding, modifying, or deleting columns or constraints.",
+    "tags": ["SQL", "Table Management", "Intermediate"]
+  },
+  {
+    "question": "What is the role of stored procedures in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To encapsulate reusable logic or queries, improving performance and maintainability",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To encapsulate reusable logic or queries, improving performance and maintainability",
+    "explanation": "Stored procedures in SQL encapsulate reusable logic or queries, enhancing performance, security, and maintainability of the database.",
+    "tags": ["SQL", "Stored Procedures", "Advanced"]
+  },
+  {
+    "question": "Which SQL clause is used to filter groups after aggregation?",
+    "options": ["WHERE", "HAVING", "ORDER BY", "LIMIT"],
+    "answer": "HAVING",
+    "explanation": "The `HAVING` clause filters groups after aggregation using aggregate functions like `SUM()` or `COUNT()`, similar to the `WHERE` clause but applied after grouping.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "What is the difference between TRUNCATE and DELETE in SQL?",
+    "options": [
+      "TRUNCATE removes all rows from a table without logging individual row deletions, while DELETE logs each deletion",
+      "There is no difference; both serve the same purpose",
+      "TRUNCATE replaces traditional APIs, while DELETE manages front-end state",
+      "TRUNCATE focuses exclusively on backend development"
+    ],
+    "answer": "TRUNCATE removes all rows from a table without logging individual row deletions, while DELETE logs each deletion",
+    "explanation": "The `TRUNCATE` statement quickly deletes all rows in a table without logging individual deletions, whereas `DELETE` allows conditional removal and logs each operation.",
+    "tags": ["SQL", "Data Manipulation", "Intermediate"]
+  },
+  {
+    "question": "What is the purpose of the EXISTS clause in SQL?",
+    "options": [
+      "To check for the existence of rows in a subquery, enabling conditional filtering",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To check for the existence of rows in a subquery, enabling conditional filtering",
+    "explanation": "The `EXISTS` clause checks whether a subquery returns any rows, allowing for conditional filtering based on the presence of data.",
+    "tags": ["SQL", "Clauses", "Advanced"]
+  },
+  {
+    "question": "Which SQL function is used to concatenate strings?",
+    "options": ["CONCAT()", "SUM()", "AVG()", "COUNT()"],
+    "answer": "CONCAT()",
+    "explanation": "The `CONCAT()` function in SQL concatenates two or more strings into a single string, enabling flexible text manipulation.",
+    "tags": ["SQL", "Functions", "Basic"]
+  },
+  {
+    "question": "What is the role of the CASE statement in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To perform conditional logic within a query, enabling dynamic data transformations",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To perform conditional logic within a query, enabling dynamic data transformations",
+    "explanation": "The `CASE` statement in SQL performs conditional logic within a query, allowing for dynamic transformations or calculations based on conditions.",
+    "tags": ["SQL", "Conditional Logic", "Intermediate"]
+  },
+  {
+    "question": "Which SQL statement is used to permanently remove a table from the database?",
+    "options": ["CREATE TABLE", "ALTER TABLE", "DROP TABLE", "TRUNCATE TABLE"],
+    "answer": "DROP TABLE",
+    "explanation": "The `DROP TABLE` statement permanently removes a table and its associated data from the database schema.",
+    "tags": ["SQL", "Table Management", "Intermediate"]
+  },
+  {
+    "question": "What is the purpose of indexing in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To optimize query performance by creating faster lookup structures",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To optimize query performance by creating faster lookup structures",
+    "explanation": "Indexes in SQL improve query performance by creating optimized data structures for faster lookups and retrievals.",
+    "tags": ["SQL", "Indexes", "Intermediate"]
+  },
+  {
+    "question": "Which SQL keyword is used to lock a table during transactions?",
+    "options": ["LOCK", "TRANSACTION", "COMMIT", "ROLLBACK"],
+    "answer": "LOCK",
+    "explanation": "The `LOCK` keyword in SQL locks a table during transactions, ensuring data consistency and preventing concurrent modifications.",
+    "tags": ["SQL", "Transactions", "Advanced"]
+  },
+  {
+    "question": "What is the role of the PRIMARY KEY constraint in SQL?",
+    "options": [
+      "To ensure each row in a table has a unique identifier",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure each row in a table has a unique identifier",
+    "explanation": "The `PRIMARY KEY` constraint uniquely identifies each row in a table, ensuring data integrity and facilitating efficient data retrieval.",
+    "tags": ["SQL", "Constraints", "Basic"]
+  },
+  {
+    "question": "Which SQL clause is used to specify conditions for filtering grouped data?",
+    "options": ["WHERE", "HAVING", "ORDER BY", "LIMIT"],
+    "answer": "HAVING",
+    "explanation": "The `HAVING` clause specifies conditions for filtering grouped data after aggregation, often used with `GROUP BY`.",
+    "tags": ["SQL", "Clauses", "Intermediate"]
+  },
+  {
+    "question": "What is the purpose of the FOREIGN KEY constraint in SQL?",
+    "options": [
+      "To establish relationships between tables by referencing primary keys",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To establish relationships between tables by referencing primary keys",
+    "explanation": "The `FOREIGN KEY` constraint establishes relationships between tables by referencing the primary key of another table, maintaining referential integrity.",
+    "tags": ["SQL", "Constraints", "Intermediate"]
+  },
+  {
+    "question": "Which SQL function is used to calculate the total sum of a numeric column?",
+    "options": ["COUNT()", "SUM()", "AVG()", "MAX()"],
+    "answer": "SUM()",
+    "explanation": "The `SUM()` function in SQL calculates the total sum of a numeric column, often used in conjunction with `GROUP BY` or `HAVING`.",
+    "tags": ["SQL", "Functions", "Basic"]
+  },
+  {
+    "question": "What is the role of the WITH clause in SQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define temporary result sets (Common Table Expressions) for reuse within a query",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define temporary result sets (Common Table Expressions) for reuse within a query",
+    "explanation": "The `WITH` clause in SQL defines Common Table Expressions (CTEs), which are temporary result sets that can be reused within a query.",
+    "tags": ["SQL", "Clauses", "Advanced"]
+  },
+  {
+    "question": "Which SQL statement is used to rename a table?",
+    "options": ["RENAME TABLE", "ALTER TABLE", "DROP TABLE", "CREATE TABLE"],
+    "answer": "RENAME TABLE",
+    "explanation": "The `RENAME TABLE` statement changes the name of an existing table in the database schema.",
+    "tags": ["SQL", "Table Management", "Intermediate"]
+  },
+  {
     "question": "What is Ahead-of-Time (AOT) compilation in Angular?",
     "options": [
       "A tool for managing database connections securely",
@@ -15979,5 +16745,390 @@
     "answer": "C) Decrypting SSL/TLS traffic at the proxy server",
     "explanation": "SSL termination refers to the reverse proxy handling SSL/TLS decryption, so the backend servers receive plain HTTP traffic, reducing their computational load.",
     "tags": ["Networking", "Reverse Proxy", "Security"]
+  },
+  {
+    "question": "What is a data structure in computer science?",
+    "options": [
+      "A protocol for secure communication between services",
+      "A way to organize and store data efficiently for specific applications",
+      "A front-end framework for building user interfaces",
+      "A database management system"
+    ],
+    "answer": "A way to organize and store data efficiently for specific applications",
+    "explanation": "A data structure is a specialized format for organizing, managing, and storing data efficiently, enabling optimal performance for various applications.",
+    "tags": ["Data Structures", "Definition", "Efficiency"]
+  },
+  {
+    "question": "Which data structure is best suited for implementing a Last-In-First-Out (LIFO) behavior?",
+    "options": ["Queue", "Stack", "Linked List", "Binary Tree"],
+    "answer": "Stack",
+    "explanation": "A stack implements LIFO behavior, where the last element added is the first one to be removed, making it ideal for tasks like function call management or undo operations.",
+    "tags": ["Data Structures", "Stack", "LIFO"]
+  },
+  {
+    "question": "What is the primary application of a hash table?",
+    "options": [
+      "To encrypt sensitive data during transmission",
+      "To provide fast access to data using key-value pairs",
+      "To manage front-end state exclusively",
+      "To replace traditional APIs with AI-driven solutions"
+    ],
+    "answer": "To provide fast access to data using key-value pairs",
+    "explanation": "Hash tables allow for efficient data retrieval by mapping keys to values, ensuring constant-time complexity for insertions, deletions, and lookups.",
+    "tags": ["Data Structures", "Hash Table", "Key-Value Pairs"]
+  },
+  {
+    "question": "Which data structure is commonly used for breadth-first traversal of graphs?",
+    "options": ["Stack", "Queue", "Array", "Tree"],
+    "answer": "Queue",
+    "explanation": "A queue is used for breadth-first traversal of graphs, as it processes nodes level by level, ensuring all neighbors are visited before moving to the next layer.",
+    "tags": ["Data Structures", "Graph Traversal", "Queue"]
+  },
+  {
+    "question": "What is the role of a linked list in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store elements sequentially with dynamic memory allocation",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store elements sequentially with dynamic memory allocation",
+    "explanation": "A linked list stores elements in sequential order but dynamically allocates memory, making it suitable for scenarios where the size of the data is unknown or variable.",
+    "tags": ["Data Structures", "Linked List", "Dynamic Memory Allocation"]
+  },
+  {
+    "question": "Which data structure is most efficient for searching in large datasets?",
+    "options": ["Array", "Binary Search Tree", "Stack", "Queue"],
+    "answer": "Binary Search Tree",
+    "explanation": "A Binary Search Tree (BST) is highly efficient for searching in large datasets, providing logarithmic time complexity for search operations when balanced.",
+    "tags": ["Data Structures", "Searching", "Binary Search Tree"]
+  },
+  {
+    "question": "What is the primary application of a priority queue?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage tasks based on their priority levels",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage tasks based on their priority levels",
+    "explanation": "A priority queue organizes tasks or elements based on their priority, ensuring that higher-priority items are processed first, often implemented using heaps.",
+    "tags": ["Data Structures", "Priority Queue", "Task Management"]
+  },
+  {
+    "question": "Which data structure is best suited for implementing a First-In-First-Out (FIFO) behavior?",
+    "options": ["Stack", "Queue", "Hash Table", "Binary Tree"],
+    "answer": "Queue",
+    "explanation": "A queue follows FIFO behavior, where the first element added is the first one to be removed, making it ideal for task scheduling or message queues.",
+    "tags": ["Data Structures", "Queue", "FIFO"]
+  },
+  {
+    "question": "What is the purpose of a binary tree in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store hierarchical data and enable efficient search, insertion, and deletion",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store hierarchical data and enable efficient search, insertion, and deletion",
+    "explanation": "A binary tree stores hierarchical data, allowing for efficient operations such as search, insertion, and deletion, especially when balanced.",
+    "tags": ["Data Structures", "Binary Tree", "Hierarchical Data"]
+  },
+  {
+    "question": "Which data structure is commonly used for caching recently accessed data?",
+    "options": ["Array", "Stack", "Hash Table", "Queue"],
+    "answer": "Hash Table",
+    "explanation": "Hash tables are frequently used for caching due to their fast lookup times, enabling efficient storage and retrieval of recently accessed data.",
+    "tags": ["Data Structures", "Caching", "Hash Table"]
+  },
+  {
+    "question": "What is the role of an adjacency list in graph representation?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To represent a graph as a collection of lists describing the set of neighbors for each vertex",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To represent a graph as a collection of lists describing the set of neighbors for each vertex",
+    "explanation": "An adjacency list represents a graph as a collection of lists, where each list contains the neighbors of a vertex, making it space-efficient for sparse graphs.",
+    "tags": ["Data Structures", "Graph Representation", "Adjacency List"]
+  },
+  {
+    "question": "Which data structure is ideal for representing relationships between objects in a network?",
+    "options": ["Array", "Graph", "Stack", "Queue"],
+    "answer": "Graph",
+    "explanation": "Graphs are ideal for representing relationships between objects in a network, capturing connections and interactions effectively.",
+    "tags": ["Data Structures", "Graph", "Network Relationships"]
+  },
+  {
+    "question": "What is the main advantage of using a doubly linked list over a singly linked list?",
+    "options": [
+      "It allows traversal in both forward and backward directions",
+      "It eliminates the need for dynamic memory allocation",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It focuses exclusively on front-end development"
+    ],
+    "answer": "It allows traversal in both forward and backward directions",
+    "explanation": "A doubly linked list includes pointers to both the next and previous nodes, enabling traversal in both directions, which can be useful for certain algorithms.",
+    "tags": ["Data Structures", "Doubly Linked List", "Traversal"]
+  },
+  {
+    "question": "Which data structure is commonly used for implementing recursive algorithms?",
+    "options": ["Array", "Stack", "Queue", "Hash Table"],
+    "answer": "Stack",
+    "explanation": "A stack is often used to implement recursive algorithms, as it mimics the call stack by maintaining the order of execution for function calls.",
+    "tags": ["Data Structures", "Stack", "Recursion"]
+  },
+  {
+    "question": "What is the role of a trie (prefix tree) in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store strings with common prefixes for efficient retrieval",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store strings with common prefixes for efficient retrieval",
+    "explanation": "A trie (prefix tree) stores strings with common prefixes, enabling efficient retrieval and autocomplete functionality, particularly useful in search applications.",
+    "tags": ["Data Structures", "Trie", "String Storage"]
+  },
+  {
+    "question": "Which data structure is best suited for implementing a dynamic array with resizable capacity?",
+    "options": ["Array", "Linked List", "Vector", "Stack"],
+    "answer": "Vector",
+    "explanation": "A vector (dynamic array) automatically resizes its capacity when needed, making it suitable for scenarios requiring flexible storage with random access.",
+    "tags": ["Data Structures", "Dynamic Array", "Resizable Capacity"]
+  },
+  {
+    "question": "What is the primary application of a heap data structure?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To implement priority queues and find the minimum or maximum element efficiently",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To implement priority queues and find the minimum or maximum element efficiently",
+    "explanation": "Heaps are used to implement priority queues and efficiently find the minimum or maximum element, maintaining a tree-like structure with specific ordering properties.",
+    "tags": ["Data Structures", "Heap", "Priority Queue"]
+  },
+  {
+    "question": "Which data structure is ideal for storing key-value pairs with unique keys?",
+    "options": ["Array", "Hash Table", "Stack", "Queue"],
+    "answer": "Hash Table",
+    "explanation": "A hash table stores key-value pairs with unique keys, enabling fast access, insertion, and deletion through hashing functions.",
+    "tags": ["Data Structures", "Hash Table", "Key-Value Pairs"]
+  },
+  {
+    "question": "What is the role of a graph in real-world applications?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To model complex relationships, such as social networks or road maps",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To model complex relationships, such as social networks or road maps",
+    "explanation": "Graphs are widely used to model complex relationships in real-world applications, including social networks, road maps, and dependency trees.",
+    "tags": ["Data Structures", "Graph", "Real-World Applications"]
+  },
+  {
+    "question": "Which data structure is commonly used for implementing undo/redo functionality in applications?",
+    "options": ["Array", "Stack", "Queue", "Hash Table"],
+    "answer": "Stack",
+    "explanation": "A stack is ideal for implementing undo/redo functionality, as it follows the Last-In-First-Out (LIFO) principle, tracking changes in reverse order.",
+    "tags": ["Data Structures", "Stack", "Undo/Redo"]
+  },
+  {
+    "question": "What is the primary purpose of a queue in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage tasks or elements in a First-In-First-Out (FIFO) order",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage tasks or elements in a First-In-First-Out (FIFO) order",
+    "explanation": "A queue processes elements in the order they were added, following the FIFO principle, making it suitable for task scheduling or message queues.",
+    "tags": ["Data Structures", "Queue", "FIFO"]
+  },
+  {
+    "question": "Which data structure is best suited for implementing a cache with fixed size and eviction policy?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Hash Table",
+      "LRU Cache (using Hash Table + Doubly Linked List)"
+    ],
+    "answer": "LRU Cache (using Hash Table + Doubly Linked List)",
+    "explanation": "An LRU (Least Recently Used) cache combines a hash table for quick lookups and a doubly linked list for maintaining access order, enabling efficient fixed-size caching.",
+    "tags": ["Data Structures", "LRU Cache", "Caching"]
+  },
+  {
+    "question": "What is the role of a red-black tree in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To maintain a self-balancing binary search tree for efficient operations",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To maintain a self-balancing binary search tree for efficient operations",
+    "explanation": "A red-black tree is a self-balancing binary search tree that ensures logarithmic time complexity for insertion, deletion, and search operations.",
+    "tags": ["Data Structures", "Red-Black Tree", "Balanced Trees"]
+  },
+  {
+    "question": "Which data structure is commonly used for implementing autocomplete features?",
+    "options": ["Array", "Trie", "Stack", "Queue"],
+    "answer": "Trie",
+    "explanation": "A trie (prefix tree) is ideal for implementing autocomplete features, as it efficiently stores strings with common prefixes and retrieves suggestions quickly.",
+    "tags": ["Data Structures", "Trie", "Autocomplete"]
+  },
+  {
+    "question": "What is the purpose of a disjoint-set (union-find) data structure?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage collections of disjoint sets and perform union and find operations efficiently",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage collections of disjoint sets and perform union and find operations efficiently",
+    "explanation": "A disjoint-set (union-find) data structure manages collections of disjoint sets, enabling efficient union and find operations, often used in network connectivity problems.",
+    "tags": ["Data Structures", "Disjoint-Set", "Union-Find"]
+  },
+  {
+    "question": "Which data structure is ideal for representing hierarchical data in applications?",
+    "options": ["Array", "Binary Tree", "Stack", "Queue"],
+    "answer": "Binary Tree",
+    "explanation": "Binary trees are ideal for representing hierarchical data, such as file systems or organization charts, allowing for efficient traversal and manipulation.",
+    "tags": ["Data Structures", "Binary Tree", "Hierarchical Data"]
+  },
+  {
+    "question": "What is the role of a suffix tree in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store all suffixes of a string for pattern matching and substring searches",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store all suffixes of a string for pattern matching and substring searches",
+    "explanation": "A suffix tree stores all suffixes of a string, enabling efficient pattern matching and substring searches, often used in bioinformatics and text processing.",
+    "tags": ["Data Structures", "Suffix Tree", "Pattern Matching"]
+  },
+  {
+    "question": "Which data structure is commonly used for implementing depth-first traversal of graphs?",
+    "options": ["Queue", "Stack", "Array", "Hash Table"],
+    "answer": "Stack",
+    "explanation": "A stack is commonly used for depth-first traversal of graphs, maintaining the order of exploration and backtracking efficiently.",
+    "tags": ["Data Structures", "Graph Traversal", "Stack"]
+  },
+  {
+    "question": "What is the primary application of a Bloom filter in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To check membership of elements in a set with probabilistic accuracy",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To check membership of elements in a set with probabilistic accuracy",
+    "explanation": "A Bloom filter is a probabilistic data structure used to test whether an element is a member of a set, offering space efficiency at the cost of potential false positives.",
+    "tags": ["Data Structures", "Bloom Filter", "Probabilistic Data Structures"]
+  },
+  {
+    "question": "Which data structure is ideal for storing and retrieving data in constant time?",
+    "options": ["Array", "Hash Table", "Stack", "Queue"],
+    "answer": "Hash Table",
+    "explanation": "A hash table provides constant-time data storage and retrieval by using a hash function to map keys to indices, assuming no significant collisions.",
+    "tags": ["Data Structures", "Hash Table", "Constant Time"]
+  },
+  {
+    "question": "What is the role of a skip list in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To maintain sorted data with efficient search, insertion, and deletion operations",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To maintain sorted data with efficient search, insertion, and deletion operations",
+    "explanation": "A skip list is a probabilistic data structure that maintains sorted data and enables efficient search, insertion, and deletion operations, similar to balanced trees.",
+    "tags": ["Data Structures", "Skip List", "Sorted Data"]
+  },
+  {
+    "question": "Which data structure is commonly used for implementing a symbol table?",
+    "options": ["Array", "Binary Search Tree", "Stack", "Queue"],
+    "answer": "Binary Search Tree",
+    "explanation": "A binary search tree is commonly used for implementing symbol tables, allowing for efficient storage and retrieval of key-value pairs.",
+    "tags": ["Data Structures", "Binary Search Tree", "Symbol Table"]
+  },
+  {
+    "question": "What is the purpose of a segment tree in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To efficiently answer range queries on arrays, such as sum or minimum",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To efficiently answer range queries on arrays, such as sum or minimum",
+    "explanation": "A segment tree is used to efficiently answer range queries on arrays, such as finding the sum or minimum value within a specified range.",
+    "tags": ["Data Structures", "Segment Tree", "Range Queries"]
+  },
+  {
+    "question": "Which data structure is best suited for implementing a web browser's history feature?",
+    "options": ["Array", "Stack", "Queue", "Hash Table"],
+    "answer": "Stack",
+    "explanation": "A stack is ideal for implementing a web browser's history feature, as it follows the Last-In-First-Out (LIFO) principle, allowing users to navigate back and forth through pages.",
+    "tags": ["Data Structures", "Stack", "Browser History"]
+  },
+  {
+    "question": "What is the role of a Fenwick tree (Binary Indexed Tree) in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To efficiently compute prefix sums and update elements in an array",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To efficiently compute prefix sums and update elements in an array",
+    "explanation": "A Fenwick tree (Binary Indexed Tree) efficiently computes prefix sums and updates elements in an array, often used in competitive programming and range query problems.",
+    "tags": ["Data Structures", "Fenwick Tree", "Prefix Sums"]
+  },
+  {
+    "question": "Which data structure is commonly used for implementing a spell checker?",
+    "options": ["Array", "Trie", "Stack", "Queue"],
+    "answer": "Trie",
+    "explanation": "A trie (prefix tree) is commonly used for implementing spell checkers, as it efficiently stores and retrieves words with shared prefixes.",
+    "tags": ["Data Structures", "Trie", "Spell Checker"]
+  },
+  {
+    "question": "What is the primary application of a B-tree in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store large amounts of data on disk with efficient search and insertion",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store large amounts of data on disk with efficient search and insertion",
+    "explanation": "A B-tree is designed for storing large datasets on disk, enabling efficient search, insertion, and deletion operations even with massive amounts of data.",
+    "tags": ["Data Structures", "B-Tree", "Disk Storage"]
+  },
+  {
+    "question": "Which data structure is best suited for implementing a recommendation engine?",
+    "options": ["Array", "Graph", "Stack", "Queue"],
+    "answer": "Graph",
+    "explanation": "Graphs are ideal for recommendation engines, as they can model relationships between items and users, enabling efficient computation of recommendations.",
+    "tags": ["Data Structures", "Graph", "Recommendation Engine"]
+  },
+  {
+    "question": "What is the role of a min-heap in data structures?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To maintain a collection of elements where the smallest element can always be retrieved efficiently",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To maintain a collection of elements where the smallest element can always be retrieved efficiently",
+    "explanation": "A min-heap is a complete binary tree that maintains the smallest element at the root, allowing for efficient retrieval and updates.",
+    "tags": ["Data Structures", "Min-Heap", "Heap Operations"]
+  },
+  {
+    "question": "Which data structure is commonly used for implementing a web crawler?",
+    "options": ["Array", "Graph", "Stack", "Queue"],
+    "answer": "Graph",
+    "explanation": "A graph is commonly used for implementing web crawlers, as it models the structure of the web and facilitates traversal of interconnected pages.",
+    "tags": ["Data Structures", "Graph", "Web Crawler"]
   }
 ]
