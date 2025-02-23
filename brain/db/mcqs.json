@@ -17130,5 +17130,1521 @@
     "answer": "Graph",
     "explanation": "A graph is commonly used for implementing web crawlers, as it models the structure of the web and facilitates traversal of interconnected pages.",
     "tags": ["Data Structures", "Graph", "Web Crawler"]
+  },
+  {
+    "question": "What is a hashing algorithm?",
+    "options": [
+      "A protocol for secure communication between services",
+      "A mathematical function that maps data of arbitrary size to fixed-size values, ensuring uniqueness",
+      "A database management system",
+      "A tool for encrypting sensitive data"
+    ],
+    "answer": "A mathematical function that maps data of arbitrary size to fixed-size values, ensuring uniqueness",
+    "explanation": "A hashing algorithm is a function that converts input data of any size into a fixed-size output (hash), often used for data integrity, password storage, and more.",
+    "tags": ["Hashing", "Definition", "Algorithms"]
+  },
+  {
+    "question": "Which hashing algorithm is widely used for securing passwords in web applications?",
+    "options": ["MD5", "SHA-256", "bcrypt", "AES"],
+    "answer": "bcrypt",
+    "explanation": "bcrypt is specifically designed for password hashing due to its salted hashing mechanism and resistance to brute-force attacks, making it ideal for securing passwords.",
+    "tags": ["Hashing", "bcrypt", "Password Security"]
+  },
+  {
+    "question": "What is the primary purpose of MD5?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To generate a 128-bit hash value for verifying data integrity",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To generate a 128-bit hash value for verifying data integrity",
+    "explanation": "MD5 generates a 128-bit hash value, commonly used for verifying data integrity. However, it is no longer recommended for security-sensitive applications due to vulnerabilities.",
+    "tags": ["Hashing", "MD5", "Data Integrity"]
+  },
+  {
+    "question": "Which hashing algorithm produces a 256-bit hash and is considered secure for cryptographic purposes?",
+    "options": ["MD5", "SHA-256", "bcrypt", "Base64"],
+    "answer": "SHA-256",
+    "explanation": "SHA-256 is a cryptographic hashing algorithm that produces a 256-bit hash, widely used for secure data verification and digital signatures.",
+    "tags": ["Hashing", "SHA-256", "Cryptographic Hashing"]
+  },
+  {
+    "question": "What is the main advantage of using SHA-3 over SHA-2?",
+    "options": [
+      "Improved performance with reduced computational overhead",
+      "Enhanced security with better resistance to collision attacks",
+      "Elimination of the need for encryption",
+      "Focus exclusively on backend development"
+    ],
+    "answer": "Enhanced security with better resistance to collision attacks",
+    "explanation": "SHA-3 offers improved security compared to SHA-2, providing better resistance to collision attacks while maintaining compatibility with existing systems.",
+    "tags": ["Hashing", "SHA-3", "Security"]
+  },
+  {
+    "question": "Which of the following is true about bcrypt?",
+    "options": [
+      "It is primarily used for generating file checksums",
+      "It incorporates salting to protect against rainbow table attacks",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It incorporates salting to protect against rainbow table attacks",
+    "explanation": "bcrypt includes a built-in salting mechanism, making it highly resistant to rainbow table attacks and suitable for secure password storage.",
+    "tags": ["Hashing", "bcrypt", "Salting"]
+  },
+  {
+    "question": "What is the role of salting in hashing algorithms?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To add random data to the input before hashing, enhancing security",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To add random data to the input before hashing, enhancing security",
+    "explanation": "Salting involves adding random data to the input before hashing, preventing attackers from using precomputed hash tables (rainbow tables) to reverse hashes.",
+    "tags": ["Hashing", "Salting", "Security"]
+  },
+  {
+    "question": "Which hashing algorithm is best suited for generating file checksums?",
+    "options": ["bcrypt", "SHA-256", "MD5", "Base64"],
+    "answer": "SHA-256",
+    "explanation": "While MD5 can be used for file checksums, SHA-256 is preferred due to its higher security and resistance to collisions, ensuring data integrity effectively.",
+    "tags": ["Hashing", "File Checksums", "SHA-256"]
+  },
+  {
+    "question": "What is the main disadvantage of using MD5 for hashing?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It is vulnerable to collision attacks, making it unsuitable for security-sensitive applications",
+      "It focuses exclusively on frontend development",
+      "It replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "It is vulnerable to collision attacks, making it unsuitable for security-sensitive applications",
+    "explanation": "MD5 is vulnerable to collision attacks, where two different inputs can produce the same hash, rendering it insecure for modern applications.",
+    "tags": ["Hashing", "MD5", "Disadvantages"]
+  },
+  {
+    "question": "When should you use SHA-256 instead of bcrypt?",
+    "options": [
+      "For securing passwords in web applications",
+      "For generating file checksums or verifying data integrity",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "For generating file checksums or verifying data integrity",
+    "explanation": "SHA-256 is ideal for generating file checksums or verifying data integrity, whereas bcrypt is specifically designed for password hashing.",
+    "tags": ["Hashing", "SHA-256", "Use Cases"]
+  },
+  {
+    "question": "What is the purpose of hashing in computer science?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To map data of arbitrary size to fixed-size values for tasks like data integrity and authentication",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To map data of arbitrary size to fixed-size values for tasks like data integrity and authentication",
+    "explanation": "Hashing maps data of any size to fixed-size values, enabling tasks such as data integrity checks, password storage, and digital signatures.",
+    "tags": ["Hashing", "Purpose", "Data Mapping"]
+  },
+  {
+    "question": "Which of the following is true about the comparison between SHA-256 and bcrypt?",
+    "options": [
+      "SHA-256 is slower and more computationally expensive than bcrypt",
+      "bcrypt is specifically designed for password hashing, while SHA-256 is used for general-purpose cryptographic hashing",
+      "SHA-256 replaces the need for bcrypt entirely",
+      "Both are equally suitable for securing passwords"
+    ],
+    "answer": "bcrypt is specifically designed for password hashing, while SHA-256 is used for general-purpose cryptographic hashing",
+    "explanation": "bcrypt is tailored for password hashing with features like salting and adjustable complexity, whereas SHA-256 serves broader cryptographic purposes like data integrity verification.",
+    "tags": ["Hashing", "Comparison", "SHA-256 vs bcrypt"]
+  },
+  {
+    "question": "What is the role of Base64 encoding in hashing?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To encode binary data into a text format, often used alongside hashing for secure transmission",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To encode binary data into a text format, often used alongside hashing for secure transmission",
+    "explanation": "Base64 encoding converts binary data into a text format, making it suitable for transmitting hashed data securely over networks or storing it in databases.",
+    "tags": ["Hashing", "Base64", "Encoding"]
+  },
+  {
+    "question": "Which hashing algorithm is most resistant to brute-force attacks?",
+    "options": ["MD5", "SHA-1", "bcrypt", "Base64"],
+    "answer": "bcrypt",
+    "explanation": "bcrypt is designed to resist brute-force attacks through its slow hashing process and salting mechanism, making it ideal for password storage.",
+    "tags": ["Hashing", "bcrypt", "Brute-Force Resistance"]
+  },
+  {
+    "question": "What is the main difference between hashing and encryption?",
+    "options": [
+      "Hashing is irreversible, while encryption is reversible",
+      "There is no difference; both serve the same purpose",
+      "Encryption replaces the need for hashing entirely",
+      "Hashing focuses exclusively on frontend development"
+    ],
+    "answer": "Hashing is irreversible, while encryption is reversible",
+    "explanation": "Hashing transforms input data into a fixed-size hash irreversibly, while encryption encodes data reversibly for secure transmission.",
+    "tags": ["Hashing", "Encryption", "Comparison"]
+  },
+  {
+    "question": "Which hashing algorithm is best suited for digital signatures?",
+    "options": ["MD5", "bcrypt", "SHA-256", "Base64"],
+    "answer": "SHA-256",
+    "explanation": "SHA-256 is widely used for digital signatures due to its cryptographic strength and ability to produce unique, fixed-size hashes.",
+    "tags": ["Hashing", "SHA-256", "Digital Signatures"]
+  },
+  {
+    "question": "What is the role of collision resistance in hashing algorithms?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure that two different inputs do not produce the same hash output",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure that two different inputs do not produce the same hash output",
+    "explanation": "Collision resistance ensures that two distinct inputs will not produce the same hash output, critical for maintaining data integrity and security.",
+    "tags": ["Hashing", "Collision Resistance", "Security"]
+  },
+  {
+    "question": "Which of the following is true about the use of hashing in blockchain technology?",
+    "options": [
+      "Hashing eliminates the need for encryption in blockchains",
+      "Hashing is used to create unique identifiers for blocks, ensuring immutability and integrity",
+      "Hashing focuses exclusively on frontend development",
+      "Hashing replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Hashing is used to create unique identifiers for blocks, ensuring immutability and integrity",
+    "explanation": "In blockchain, hashing creates unique identifiers for blocks, linking them together and ensuring immutability and integrity of the chain.",
+    "tags": ["Hashing", "Blockchain", "Use Cases"]
+  },
+  {
+    "question": "What is the purpose of HMAC (Hash-based Message Authentication Code)?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide a secure way to verify both the data integrity and authenticity of a message",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide a secure way to verify both the data integrity and authenticity of a message",
+    "explanation": "HMAC combines hashing and encryption to verify both the integrity and authenticity of a message, ensuring secure communication.",
+    "tags": ["Hashing", "HMAC", "Message Authentication"]
+  },
+  {
+    "question": "Which of the following is a common application of hashing in databases?",
+    "options": [
+      "Encrypting sensitive data fields",
+      "Indexing records for faster retrieval based on hash values",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Managing front-end state exclusively"
+    ],
+    "answer": "Indexing records for faster retrieval based on hash values",
+    "explanation": "Hashing is often used in databases for indexing records, allowing for faster lookups and retrieval by mapping keys to hash values.",
+    "tags": ["Hashing", "Databases", "Indexing"]
+  },
+  {
+    "question": "What is the role of hashing in password storage?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store passwords securely by converting them into irreversible hash values",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store passwords securely by converting them into irreversible hash values",
+    "explanation": "Hashing passwords ensures they are stored securely as irreversible hash values, protecting user credentials even if the database is compromised.",
+    "tags": ["Hashing", "Password Storage", "Security"]
+  },
+  {
+    "question": "Which of the following is true about the trade-offs between MD5 and SHA-256?",
+    "options": [
+      "MD5 is slower but more secure than SHA-256",
+      "SHA-256 is slower but more secure than MD5, making it suitable for security-sensitive applications",
+      "There is no difference; both serve the same purpose",
+      "MD5 replaces the need for SHA-256 entirely"
+    ],
+    "answer": "SHA-256 is slower but more secure than MD5, making it suitable for security-sensitive applications",
+    "explanation": "SHA-256 is slower but significantly more secure than MD5, offering better resistance to collisions and making it ideal for security-sensitive applications.",
+    "tags": ["Hashing", "Comparison", "MD5 vs SHA-256"]
+  },
+  {
+    "question": "What is the main benefit of using Argon2 over bcrypt?",
+    "options": [
+      "Argon2 is simpler and easier to implement",
+      "Argon2 provides enhanced resistance to GPU-based brute-force attacks",
+      "Argon2 eliminates the need for encryption",
+      "Argon2 focuses exclusively on frontend development"
+    ],
+    "answer": "Argon2 provides enhanced resistance to GPU-based brute-force attacks",
+    "explanation": "Argon2, the winner of the Password Hashing Competition, offers better resistance to GPU-based brute-force attacks compared to bcrypt, making it a modern choice for password hashing.",
+    "tags": ["Hashing", "Argon2", "Password Hashing"]
+  },
+  {
+    "question": "Which hashing algorithm is best suited for securing sensitive data like passwords?",
+    "options": ["MD5", "SHA-1", "bcrypt", "Base64"],
+    "answer": "bcrypt",
+    "explanation": "bcrypt is specifically designed for securing sensitive data like passwords, incorporating salting and adjustable complexity to resist attacks.",
+    "tags": ["Hashing", "bcrypt", "Sensitive Data"]
+  },
+  {
+    "question": "What is the role of hashing in digital forensics?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To verify the integrity of files and ensure they have not been tampered with",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To verify the integrity of files and ensure they have not been tampered with",
+    "explanation": "Hashing in digital forensics verifies file integrity by comparing hash values before and after transmission or storage, ensuring data has not been altered.",
+    "tags": ["Hashing", "Digital Forensics", "File Integrity"]
+  },
+  {
+    "question": "Which of the following is true about the use of hashing in distributed systems?",
+    "options": [
+      "Hashing eliminates the need for load balancers",
+      "Hashing is used to distribute data evenly across nodes using consistent hashing",
+      "Hashing focuses exclusively on frontend development",
+      "Hashing replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Hashing is used to distribute data evenly across nodes using consistent hashing",
+    "explanation": "In distributed systems, hashing ensures even distribution of data across nodes using techniques like consistent hashing, improving scalability and fault tolerance.",
+    "tags": ["Hashing", "Distributed Systems", "Consistent Hashing"]
+  },
+  {
+    "question": "What is the purpose of the 'salt' in password hashing?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To add random data to the password before hashing, preventing precomputed attacks",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To add random data to the password before hashing, preventing precomputed attacks",
+    "explanation": "Salting adds random data to passwords before hashing, ensuring that even identical passwords produce different hash outputs and thwarting precomputed attacks.",
+    "tags": ["Hashing", "Salting", "Password Security"]
+  },
+  {
+    "question": "Which hashing algorithm is most suitable for verifying the integrity of downloaded files?",
+    "options": ["MD5", "SHA-256", "bcrypt", "Base64"],
+    "answer": "SHA-256",
+    "explanation": "SHA-256 is commonly used for verifying file integrity due to its strong collision resistance and fixed-size output, ensuring downloaded files match their original versions.",
+    "tags": ["Hashing", "SHA-256", "File Integrity"]
+  },
+  {
+    "question": "What is the main difference between bcrypt and scrypt?",
+    "options": [
+      "scrypt is simpler and easier to implement than bcrypt",
+      "scrypt requires more memory and computational resources, making it harder to attack",
+      "There is no difference; both serve the same purpose",
+      "bcrypt replaces the need for scrypt entirely"
+    ],
+    "answer": "scrypt requires more memory and computational resources, making it harder to attack",
+    "explanation": "scrypt is designed to require more memory and computational resources than bcrypt, increasing its resistance to hardware-based attacks like those using GPUs or FPGAs.",
+    "tags": ["Hashing", "Comparison", "bcrypt vs scrypt"]
+  },
+  {
+    "question": "Which of the following is true about the use of hashing in caching mechanisms?",
+    "options": [
+      "Hashing eliminates the need for encryption in caches",
+      "Hashing is used to generate unique cache keys for efficient data retrieval",
+      "Hashing focuses exclusively on frontend development",
+      "Hashing replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Hashing is used to generate unique cache keys for efficient data retrieval",
+    "explanation": "Hashing in caching mechanisms generates unique keys for stored data, enabling fast and efficient retrieval without duplicating entries.",
+    "tags": ["Hashing", "Caching", "Cache Keys"]
+  },
+  {
+    "question": "What is the role of hashing in token-based authentication systems?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To generate unique tokens by hashing user credentials and session data",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To generate unique tokens by hashing user credentials and session data",
+    "explanation": "In token-based authentication, hashing is used to generate unique, secure tokens by combining user credentials and session data, ensuring tamper-proof authentication.",
+    "tags": ["Hashing", "Token-Based Auth", "Authentication"]
+  },
+  {
+    "question": "What is ES6?",
+    "options": [
+      "A protocol for secure communication between services",
+      "The sixth edition of ECMAScript, introducing modern features to JavaScript",
+      "A front-end framework for building user interfaces",
+      "A database management system"
+    ],
+    "answer": "The sixth edition of ECMAScript, introducing modern features to JavaScript",
+    "explanation": "ES6 (ECMAScript 2015) is the sixth major version of the ECMAScript standard, adding modern features like let/const, arrow functions, template literals, and more.",
+    "tags": ["ES6", "Definition", "JavaScript"]
+  },
+  {
+    "question": "Which feature introduced in ES6 allows you to declare block-scoped variables?",
+    "options": ["var", "let", "function", "class"],
+    "answer": "let",
+    "explanation": "The `let` keyword in ES6 allows you to declare block-scoped variables, addressing issues with variable hoisting and scope leakage from `var`.",
+    "tags": ["ES6", "Variables", "let"]
+  },
+  {
+    "question": "What is the difference between `let` and `const` in ES6?",
+    "options": [
+      "`const` is used for immutable values, while `let` allows reassignment",
+      "`let` is used for global variables, while `const` is for local variables",
+      "`const` replaces traditional APIs, while `let` focuses on backend development",
+      "There is no difference; both serve the same purpose"
+    ],
+    "answer": "`const` is used for immutable values, while `let` allows reassignment",
+    "explanation": "In ES6, `const` declares variables with a constant value that cannot be reassigned, while `let` allows reassignment within its block scope.",
+    "tags": ["ES6", "Variables", "let vs const"]
+  },
+  {
+    "question": "Which ES6 feature simplifies function definitions by using shorter syntax?",
+    "options": ["Arrow Functions", "Template Literals", "Classes", "Modules"],
+    "answer": "Arrow Functions",
+    "explanation": "Arrow functions provide a concise syntax for defining functions, eliminating the need for the `function` keyword and binding `this` lexically.",
+    "tags": ["ES6", "Arrow Functions", "Syntax"]
+  },
+  {
+    "question": "What is the primary advantage of using arrow functions over traditional functions?",
+    "options": [
+      "They automatically bind the `this` context to the surrounding lexical scope",
+      "They replace traditional APIs entirely",
+      "They manage front-end state exclusively",
+      "They focus solely on hardware optimization"
+    ],
+    "answer": "They automatically bind the `this` context to the surrounding lexical scope",
+    "explanation": "Arrow functions do not have their own `this` context but inherit it from the enclosing scope, making them ideal for callbacks and event handlers.",
+    "tags": ["ES6", "Arrow Functions", "this Binding"]
+  },
+  {
+    "question": "Which ES6 feature allows embedding expressions inside string literals?",
+    "options": [
+      "Template Literals",
+      "String Concatenation",
+      "Regular Expressions",
+      "Array Destructuring"
+    ],
+    "answer": "Template Literals",
+    "explanation": "Template literals use backticks (`) and allow embedding expressions using `${}` syntax, providing a cleaner way to create dynamic strings.",
+    "tags": ["ES6", "Template Literals", "Dynamic Strings"]
+  },
+  {
+    "question": "What is the role of destructuring in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To extract values from arrays or objects into distinct variables",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To extract values from arrays or objects into distinct variables",
+    "explanation": "Destructuring in ES6 simplifies extracting values from arrays or objects into separate variables, improving code readability and reducing boilerplate.",
+    "tags": ["ES6", "Destructuring", "Arrays and Objects"]
+  },
+  {
+    "question": "Which ES6 feature introduces a formal way to define classes in JavaScript?",
+    "options": ["Arrow Functions", "Classes", "Modules", "Promises"],
+    "answer": "Classes",
+    "explanation": "ES6 introduced the `class` keyword, providing a formal syntax for defining classes and constructors, enabling object-oriented programming in JavaScript.",
+    "tags": ["ES6", "Classes", "OOP"]
+  },
+  {
+    "question": "What is the purpose of default parameters in ES6 functions?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To assign a default value to a parameter if none is provided during the function call",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To assign a default value to a parameter if none is provided during the function call",
+    "explanation": "Default parameters in ES6 allow assigning default values to function parameters, ensuring flexibility when calling functions with missing arguments.",
+    "tags": ["ES6", "Functions", "Default Parameters"]
+  },
+  {
+    "question": "Which ES6 feature enables importing and exporting modules for better code organization?",
+    "options": ["Classes", "Modules", "Promises", "Arrow Functions"],
+    "answer": "Modules",
+    "explanation": "ES6 modules allow importing and exporting functionality between files, promoting modularity and reusability in JavaScript applications.",
+    "tags": ["ES6", "Modules", "Code Organization"]
+  },
+  {
+    "question": "What is the main advantage of using `const` over `var`?",
+    "options": [
+      "`const` ensures variables are immutable and cannot be reassigned",
+      "`const` replaces traditional APIs with AI-driven solutions",
+      "`const` manages front-end state exclusively",
+      "`const` focuses solely on hardware optimization"
+    ],
+    "answer": "`const` ensures variables are immutable and cannot be reassigned",
+    "explanation": "Using `const` ensures that the variable's value cannot be reassigned after its initial assignment, promoting safer coding practices.",
+    "tags": ["ES6", "Variables", "const"]
+  },
+  {
+    "question": "Which ES6 feature provides a way to handle asynchronous operations without callback hell?",
+    "options": ["Promises", "Arrow Functions", "Template Literals", "Modules"],
+    "answer": "Promises",
+    "explanation": "Promises in ES6 provide a structured way to handle asynchronous operations, avoiding deeply nested callbacks and improving code readability.",
+    "tags": ["ES6", "Promises", "Asynchronous Operations"]
+  },
+  {
+    "question": "What is the purpose of rest parameters in ES6 functions?",
+    "options": [
+      "To collect an indefinite number of arguments into an array",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To collect an indefinite number of arguments into an array",
+    "explanation": "Rest parameters in ES6 allow collecting multiple arguments into an array, simplifying handling of variadic functions.",
+    "tags": ["ES6", "Functions", "Rest Parameters"]
+  },
+  {
+    "question": "Which ES6 feature allows spreading elements of an array or object into another array or object?",
+    "options": [
+      "Spread Operator",
+      "Destructuring",
+      "Arrow Functions",
+      "Classes"
+    ],
+    "answer": "Spread Operator",
+    "explanation": "The spread operator (`...`) in ES6 allows spreading elements of an array or object into another array or object, simplifying merging and copying.",
+    "tags": ["ES6", "Spread Operator", "Arrays and Objects"]
+  },
+  {
+    "question": "What is the role of the `import` statement in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To import functionality from other modules or files",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To import functionality from other modules or files",
+    "explanation": "The `import` statement in ES6 allows importing specific exports from other modules or files, promoting modular and reusable code.",
+    "tags": ["ES6", "Modules", "Import Statement"]
+  },
+  {
+    "question": "Which ES6+ feature simplifies working with asynchronous operations by using synchronous-like syntax?",
+    "options": ["Async/Await", "Promises", "Generators", "Map/Set"],
+    "answer": "Async/Await",
+    "explanation": "Async/Await in ES6+ simplifies asynchronous code by allowing it to be written in a synchronous-like style, improving readability and maintainability.",
+    "tags": ["ES6+", "Async/Await", "Asynchronous Operations"]
+  },
+  {
+    "question": "What is the purpose of the `export` statement in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To expose functionality from a module or file for others to use",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To expose functionality from a module or file for others to use",
+    "explanation": "The `export` statement in ES6 makes variables, functions, or classes available for import in other files or modules, enhancing modularity.",
+    "tags": ["ES6", "Modules", "Export Statement"]
+  },
+  {
+    "question": "Which ES6+ feature provides an efficient way to store key-value pairs with non-string keys?",
+    "options": ["Object", "Map", "Array", "Set"],
+    "answer": "Map",
+    "explanation": "The `Map` object in ES6+ allows storing key-value pairs with any type of key, unlike plain objects which only support string or symbol keys.",
+    "tags": ["ES6+", "Map", "Key-Value Pairs"]
+  },
+  {
+    "question": "What is the role of the `Set` object in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store unique values of any type in a collection",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store unique values of any type in a collection",
+    "explanation": "The `Set` object in ES6 stores unique values of any type, ensuring no duplicates in a collection.",
+    "tags": ["ES6", "Set", "Unique Values"]
+  },
+  {
+    "question": "Which ES6 feature allows iterating over iterable objects like arrays, maps, and sets?",
+    "options": [
+      "For...in loop",
+      "For...of loop",
+      "While loop",
+      "Do...while loop"
+    ],
+    "answer": "For...of loop",
+    "explanation": "The `for...of` loop in ES6 iterates over iterable objects such as arrays, maps, and sets, providing a cleaner syntax than traditional loops.",
+    "tags": ["ES6", "Loops", "For...of"]
+  },
+  {
+    "question": "What is the purpose of the `Promise.all()` method in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To execute multiple promises concurrently and wait for all to resolve",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To execute multiple promises concurrently and wait for all to resolve",
+    "explanation": "The `Promise.all()` method executes multiple promises concurrently and resolves when all promises in the array are resolved, enabling parallel execution.",
+    "tags": ["ES6", "Promises", "Concurrency"]
+  },
+  {
+    "question": "Which ES6+ feature provides a way to define private class fields?",
+    "options": [
+      "Public Fields",
+      "Private Fields (#field)",
+      "Static Methods",
+      "Getters/Setters"
+    ],
+    "answer": "Private Fields (#field)",
+    "explanation": "ES6+ introduced private class fields using the `#` prefix, ensuring encapsulation and preventing external access to internal data.",
+    "tags": ["ES6+", "Private Fields", "Encapsulation"]
+  },
+  {
+    "question": "What is the main benefit of using template literals over concatenation?",
+    "options": [
+      "Improved readability and support for multi-line strings",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Managing front-end state exclusively",
+      "Focusing solely on hardware optimization"
+    ],
+    "answer": "Improved readability and support for multi-line strings",
+    "explanation": "Template literals improve code readability by supporting multi-line strings and embedded expressions, replacing cumbersome concatenation.",
+    "tags": ["ES6", "Template Literals", "Readability"]
+  },
+  {
+    "question": "Which ES6 feature simplifies passing and receiving an arbitrary number of arguments?",
+    "options": [
+      "Rest Parameters",
+      "Default Parameters",
+      "Arrow Functions",
+      "Destructuring"
+    ],
+    "answer": "Rest Parameters",
+    "explanation": "Rest parameters simplify handling an arbitrary number of arguments by collecting them into an array.",
+    "tags": ["ES6", "Functions", "Rest Parameters"]
+  },
+  {
+    "question": "What is the role of the `async` keyword in ES6+?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To mark a function as returning a promise and enable the use of `await`",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To mark a function as returning a promise and enable the use of `await`",
+    "explanation": "The `async` keyword marks a function as asynchronous, returning a promise, and allows the use of `await` for awaiting asynchronous operations.",
+    "tags": ["ES6+", "Async/Await", "Asynchronous Operations"]
+  },
+  {
+    "question": "Which ES6+ feature provides a shorthand syntax for defining object properties?",
+    "options": [
+      "Computed Property Names",
+      "Property Shorthand",
+      "Spread Operator",
+      "Destructuring"
+    ],
+    "answer": "Property Shorthand",
+    "explanation": "Property shorthand in ES6 allows defining object properties with the same name as variables, reducing verbosity. Example: `{ key }` instead of `{ key: key }`.",
+    "tags": ["ES6", "Objects", "Property Shorthand"]
+  },
+  {
+    "question": "What is the purpose of computed property names in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To dynamically compute property names in object literals",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To dynamically compute property names in object literals",
+    "explanation": "Computed property names in ES6 allow dynamically specifying property names in object literals using expressions or variables.",
+    "tags": ["ES6", "Objects", "Computed Property Names"]
+  },
+  {
+    "question": "Which ES6+ feature simplifies working with iterators and generators?",
+    "options": ["Async/Await", "Generators", "Maps", "Sets"],
+    "answer": "Generators",
+    "explanation": "Generators in ES6+ allow creating iterators with the `function*` syntax, enabling pauseable function execution and managing complex asynchronous flows.",
+    "tags": ["ES6+", "Generators", "Iterators"]
+  },
+  {
+    "question": "What is the main advantage of using `Map` over plain objects in ES6?",
+    "options": [
+      "Support for non-string keys and easier iteration",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Managing front-end state exclusively",
+      "Focusing solely on hardware optimization"
+    ],
+    "answer": "Support for non-string keys and easier iteration",
+    "explanation": "The `Map` object in ES6 supports keys of any type (not just strings or symbols) and provides methods for easier iteration compared to plain objects.",
+    "tags": ["ES6", "Map", "Advantages"]
+  },
+  {
+    "question": "Which ES6 feature allows destructuring arrays into individual variables?",
+    "options": [
+      "Object Destructuring",
+      "Array Destructuring",
+      "Spread Operator",
+      "Arrow Functions"
+    ],
+    "answer": "Array Destructuring",
+    "explanation": "Array destructuring in ES6 allows extracting elements from arrays into distinct variables, simplifying access to array contents.",
+    "tags": ["ES6", "Destructuring", "Array Destructuring"]
+  },
+  {
+    "question": "What is the role of the `Symbol` primitive type in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To create unique and immutable values used as object property keys",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create unique and immutable values used as object property keys",
+    "explanation": "Symbols in ES6 are unique and immutable primitives, often used as object property keys to avoid naming conflicts.",
+    "tags": ["ES6", "Symbol", "Immutability"]
+  },
+  {
+    "question": "Which ES6+ feature provides a concise way to write getter and setter methods?",
+    "options": [
+      "Getters/Setters",
+      "Private Fields",
+      "Static Methods",
+      "Arrow Functions"
+    ],
+    "answer": "Getters/Setters",
+    "explanation": "ES6+ getters and setters provide a concise way to define methods for accessing and modifying object properties, improving encapsulation.",
+    "tags": ["ES6+", "Objects", "Getters/Setters"]
+  },
+  {
+    "question": "What is the purpose of the `find()` method in ES6 arrays?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To return the first element in the array that satisfies a condition",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To return the first element in the array that satisfies a condition",
+    "explanation": "The `find()` method in ES6 returns the first element in an array that satisfies a given condition, simplifying search operations.",
+    "tags": ["ES6", "Arrays", "find() Method"]
+  },
+  {
+    "question": "Which ES6 feature simplifies writing multi-line strings?",
+    "options": [
+      "Template Literals",
+      "String Concatenation",
+      "Escape Sequences",
+      "Array Joining"
+    ],
+    "answer": "Template Literals",
+    "explanation": "Template literals in ES6 support multi-line strings and embedded expressions, making it easier to write and format complex strings.",
+    "tags": ["ES6", "Template Literals", "Multi-Line Strings"]
+  },
+  {
+    "question": "What is the role of the `Proxy` object in ES6?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To intercept and redefine fundamental operations on objects",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To intercept and redefine fundamental operations on objects",
+    "explanation": "The `Proxy` object in ES6 allows intercepting and redefining fundamental operations on objects, such as property access or assignment.",
+    "tags": ["ES6", "Proxy", "Interception"]
+  },
+  {
+    "question": "Which ES6+ feature simplifies handling asynchronous operations with error handling?",
+    "options": ["Async/Await", "Promises", "Callbacks", "Event Listeners"],
+    "answer": "Async/Await",
+    "explanation": "Async/Await simplifies asynchronous operations by enabling synchronous-like syntax with built-in error handling through `try...catch` blocks.",
+    "tags": ["ES6+", "Async/Await", "Error Handling"]
+  },
+  {
+    "question": "What is JavaScript primarily used for?",
+    "options": [
+      "Managing database connections securely",
+      "Creating dynamic, interactive web pages and applications",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Focusing exclusively on backend development"
+    ],
+    "answer": "Creating dynamic, interactive web pages and applications",
+    "explanation": "JavaScript is a versatile programming language primarily used for creating dynamic, interactive web pages and applications by manipulating DOM elements, handling events, and making asynchronous requests.",
+    "tags": ["JavaScript", "Definition", "Web Development"]
+  },
+  {
+    "question": "Which of the following best describes the difference between `var`, `let`, and `const` in JavaScript?",
+    "options": [
+      "`var` has function scope, while `let` and `const` have block scope; `const` disallows reassignment",
+      "`let` and `const` are identical, while `var` is outdated",
+      "`var` replaces traditional APIs, while `let` and `const` manage front-end state",
+      "There is no difference; all serve the same purpose"
+    ],
+    "answer": "`var` has function scope, while `let` and `const` have block scope; `const` disallows reassignment",
+    "explanation": "In JavaScript, `var` has function scope, whereas `let` and `const` have block scope. Additionally, `const` ensures that the variable cannot be reassigned after its initial assignment.",
+    "tags": ["JavaScript", "Variables", "Scope"]
+  },
+  {
+    "question": "What is the purpose of arrow functions in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide a concise syntax for defining functions with lexical `this` binding",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide a concise syntax for defining functions with lexical `this` binding",
+    "explanation": "Arrow functions in JavaScript offer a shorter syntax for defining functions and bind the `this` keyword lexically, avoiding issues with `this` in traditional function expressions.",
+    "tags": ["JavaScript", "Arrow Functions", "Syntax"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to define reusable blocks of code?",
+    "options": ["Promises", "Functions", "Classes", "Modules"],
+    "answer": "Functions",
+    "explanation": "Functions in JavaScript allow you to define reusable blocks of code, enabling modularity and reducing duplication in your application logic.",
+    "tags": ["JavaScript", "Functions", "Reusability"]
+  },
+  {
+    "question": "What is the role of `async/await` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To simplify handling of asynchronous operations with synchronous-like syntax",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To simplify handling of asynchronous operations with synchronous-like syntax",
+    "explanation": "`async/await` in JavaScript simplifies asynchronous operations by allowing you to write them in a synchronous-like style, improving readability and maintainability.",
+    "tags": ["JavaScript", "Async/Await", "Asynchronous Operations"]
+  },
+  {
+    "question": "Which of the following is true about JavaScript's event loop?",
+    "options": [
+      "It processes the call stack and handles asynchronous tasks in the task queue",
+      "It eliminates the need for asynchronous programming",
+      "It focuses exclusively on frontend development",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It processes the call stack and handles asynchronous tasks in the task queue",
+    "explanation": "The event loop in JavaScript processes the call stack and handles asynchronous tasks from the task queue, ensuring non-blocking behavior in single-threaded environments.",
+    "tags": ["JavaScript", "Event Loop", "Asynchronous Programming"]
+  },
+  {
+    "question": "What is the purpose of `Promise` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To handle asynchronous operations and avoid callback hell",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle asynchronous operations and avoid callback hell",
+    "explanation": "Promises in JavaScript are used to handle asynchronous operations, providing a cleaner way to manage callbacks and avoid deeply nested structures (callback hell).",
+    "tags": ["JavaScript", "Promises", "Asynchronous Programming"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to destructure arrays or objects into individual variables?",
+    "options": ["Destructuring", "Arrow Functions", "Classes", "Modules"],
+    "answer": "Destructuring",
+    "explanation": "Destructuring in JavaScript allows you to extract elements from arrays or properties from objects into distinct variables, simplifying access to data.",
+    "tags": ["JavaScript", "Destructuring", "Arrays and Objects"]
+  },
+  {
+    "question": "What is the main advantage of using `const` over `var` in JavaScript?",
+    "options": [
+      "`const` ensures variables are immutable and cannot be reassigned",
+      "`const` replaces traditional APIs with AI-driven solutions",
+      "`const` manages front-end state exclusively",
+      "`const` focuses solely on hardware optimization"
+    ],
+    "answer": "`const` ensures variables are immutable and cannot be reassigned",
+    "explanation": "Using `const` ensures that variables cannot be reassigned after their initial declaration, promoting safer coding practices and reducing bugs.",
+    "tags": ["JavaScript", "Variables", "Const"]
+  },
+  {
+    "question": "Which JavaScript feature enables encapsulating functionality within classes?",
+    "options": ["Classes", "Functions", "Modules", "Promises"],
+    "answer": "Classes",
+    "explanation": "JavaScript classes allow encapsulating functionality and state within objects, facilitating object-oriented programming patterns and reusable code structures.",
+    "tags": ["JavaScript", "Classes", "OOP"]
+  },
+  {
+    "question": "What is the role of the `prototype` property in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define methods and properties shared by all instances of a constructor function",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define methods and properties shared by all instances of a constructor function",
+    "explanation": "The `prototype` property in JavaScript allows you to add methods and properties to all instances of a constructor function, enabling inheritance and shared functionality.",
+    "tags": ["JavaScript", "Prototype", "Inheritance"]
+  },
+  {
+    "question": "Which JavaScript method is used to iterate over an array and execute a function for each element?",
+    "options": ["forEach", "map", "filter", "reduce"],
+    "answer": "forEach",
+    "explanation": "The `forEach` method in JavaScript iterates over an array and executes a provided function for each element, making it ideal for simple iteration tasks.",
+    "tags": ["JavaScript", "Array Methods", "Iteration"]
+  },
+  {
+    "question": "What is the purpose of `template literals` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To create strings with embedded expressions and multi-line support",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create strings with embedded expressions and multi-line support",
+    "explanation": "Template literals in JavaScript allow creating strings with embedded expressions and support multi-line strings, replacing older concatenation techniques.",
+    "tags": ["JavaScript", "Template Literals", "String Manipulation"]
+  },
+  {
+    "question": "Which JavaScript feature provides a way to import and export modules for better organization?",
+    "options": ["ES6 Modules", "Callbacks", "Promises", "Arrow Functions"],
+    "answer": "ES6 Modules",
+    "explanation": "ES6 Modules in JavaScript enable importing and exporting functionality across files, promoting modularity and reusability in applications.",
+    "tags": ["JavaScript", "ES6 Modules", "Modularity"]
+  },
+  {
+    "question": "What is the main benefit of using `let` over `var` in JavaScript?",
+    "options": [
+      "`let` has block scope, avoiding hoisting issues and unintended behavior",
+      "`let` replaces traditional APIs with AI-driven solutions",
+      "`let` manages front-end state exclusively",
+      "`let` focuses solely on hardware optimization"
+    ],
+    "answer": "`let` has block scope, avoiding hoisting issues and unintended behavior",
+    "explanation": "The `let` keyword in JavaScript introduces block scope, preventing issues caused by `var`'s function scope and hoisting behavior.",
+    "tags": ["JavaScript", "Variables", "Let vs Var"]
+  },
+  {
+    "question": "Which JavaScript method is used to transform elements of an array into a new array?",
+    "options": ["map", "forEach", "filter", "reduce"],
+    "answer": "map",
+    "explanation": "The `map` method in JavaScript transforms each element of an array into a new array based on a provided function, enabling efficient data manipulation.",
+    "tags": ["JavaScript", "Array Methods", "Transformation"]
+  },
+  {
+    "question": "What is the role of `closure` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To encapsulate variables within a function and retain access even after the function execution",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To encapsulate variables within a function and retain access even after the function execution",
+    "explanation": "A closure in JavaScript allows a function to access its outer function's variables even after the outer function has finished executing, enabling powerful patterns like data hiding and currying.",
+    "tags": ["JavaScript", "Closure", "Function Scope"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to define default values for function parameters?",
+    "options": [
+      "Default Parameters",
+      "Rest Parameters",
+      "Spread Operator",
+      "Callback Functions"
+    ],
+    "answer": "Default Parameters",
+    "explanation": "Default parameters in JavaScript allow specifying default values for function arguments, ensuring flexibility when calling functions with missing arguments.",
+    "tags": ["JavaScript", "Functions", "Default Parameters"]
+  },
+  {
+    "question": "What is the purpose of `spread operator` (`...`) in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To expand elements of an iterable (e.g., array or object) into individual elements",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To expand elements of an iterable (e.g., array or object) into individual elements",
+    "explanation": "The spread operator (`...`) in JavaScript expands elements of an iterable (e.g., array or object) into individual elements, simplifying copying, merging, and function calls.",
+    "tags": ["JavaScript", "Spread Operator", "Iterables"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to combine multiple objects into one?",
+    "options": [
+      "Object.assign",
+      "Spread Operator",
+      "Destructuring",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "Both `Object.assign` and the spread operator can merge multiple objects into one, while destructuring extracts properties from objects or arrays.",
+    "tags": ["JavaScript", "Objects", "Merging"]
+  },
+  {
+    "question": "What is the main advantage of using `rest parameters` in JavaScript functions?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To collect an indefinite number of arguments into an array",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To collect an indefinite number of arguments into an array",
+    "explanation": "Rest parameters in JavaScript allow collecting an arbitrary number of arguments into an array, simplifying variadic functions.",
+    "tags": ["JavaScript", "Functions", "Rest Parameters"]
+  },
+  {
+    "question": "Which JavaScript method is used to filter elements of an array based on a condition?",
+    "options": ["filter", "map", "forEach", "reduce"],
+    "answer": "filter",
+    "explanation": "The `filter` method in JavaScript creates a new array containing only the elements that pass a specified condition, enabling selective data processing.",
+    "tags": ["JavaScript", "Array Methods", "Filtering"]
+  },
+  {
+    "question": "What is the role of `setTimeout` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To execute a function after a specified delay",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To execute a function after a specified delay",
+    "explanation": "The `setTimeout` function in JavaScript schedules a function to execute after a specified delay, enabling delayed or timed actions in applications.",
+    "tags": ["JavaScript", "Timers", "setTimeout"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to create iterators for custom objects?",
+    "options": ["Generators", "Promises", "Classes", "Modules"],
+    "answer": "Generators",
+    "explanation": "Generators in JavaScript allow creating iterators for custom objects, pausing and resuming function execution with the `yield` keyword.",
+    "tags": ["JavaScript", "Generators", "Iteration"]
+  },
+  {
+    "question": "What is the purpose of ` Immediately Invoked Function Expressions (IIFE)` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To execute a function immediately and encapsulate variables within its scope",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To execute a function immediately and encapsulate variables within its scope",
+    "explanation": "An IIFE in JavaScript is a function that executes immediately upon creation, encapsulating variables within its own scope to avoid polluting the global namespace.",
+    "tags": ["JavaScript", "IIFE", "Encapsulation"]
+  },
+  {
+    "question": "Which JavaScript method is used to reduce an array into a single value?",
+    "options": ["reduce", "map", "filter", "forEach"],
+    "answer": "reduce",
+    "explanation": "The `reduce` method in JavaScript applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.",
+    "tags": ["JavaScript", "Array Methods", "Reduction"]
+  },
+  {
+    "question": "What is the main benefit of using `ES6 Classes` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide a formal syntax for defining objects and their behaviors",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide a formal syntax for defining objects and their behaviors",
+    "explanation": "ES6 Classes in JavaScript provide a formal syntax for defining objects and their behaviors, simplifying object-oriented programming patterns.",
+    "tags": ["JavaScript", "ES6 Classes", "OOP"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to define constants and prevent reassignment?",
+    "options": ["const", "let", "var", "None of the above"],
+    "answer": "const",
+    "explanation": "The `const` keyword in JavaScript defines constants that cannot be reassigned, ensuring immutability and reducing bugs.",
+    "tags": ["JavaScript", "Variables", "Const"]
+  },
+  {
+    "question": "What is the role of `JSON.stringify` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To convert a JavaScript object into a JSON string",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To convert a JavaScript object into a JSON string",
+    "explanation": "The `JSON.stringify` method in JavaScript converts a JavaScript object into a JSON string, making it suitable for storage or transmission over networks.",
+    "tags": ["JavaScript", "JSON", "Serialization"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to defer the loading of scripts until they are needed?",
+    "options": [
+      "Lazy Loading",
+      "Dynamic Imports",
+      "Modules",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "Lazy loading, dynamic imports, and ES6 modules in JavaScript allow deferring script loading until they are required, improving performance and resource utilization.",
+    "tags": ["JavaScript", "Performance", "Lazy Loading"]
+  },
+  {
+    "question": "What is the purpose of `try...catch` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To handle runtime errors gracefully and execute fallback logic",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle runtime errors gracefully and execute fallback logic",
+    "explanation": "The `try...catch` statement in JavaScript allows you to handle runtime errors gracefully, catching exceptions and executing fallback logic if necessary.",
+    "tags": ["JavaScript", "Error Handling", "Try Catch"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to dynamically import modules at runtime?",
+    "options": ["Dynamic Imports", "Static Imports", "Modules", "Promises"],
+    "answer": "Dynamic Imports",
+    "explanation": "Dynamic imports in JavaScript allow loading modules asynchronously at runtime, improving performance by deferring the loading of unused code.",
+    "tags": ["JavaScript", "Dynamic Imports", "Modules"]
+  },
+  {
+    "question": "What is the main advantage of using `ES6 Template Literals` over string concatenation?",
+    "options": [
+      "Improved readability and support for embedded expressions and multi-line strings",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Managing front-end state exclusively",
+      "Focusing solely on hardware optimization"
+    ],
+    "answer": "Improved readability and support for embedded expressions and multi-line strings",
+    "explanation": "ES6 Template Literals improve code readability by supporting embedded expressions and multi-line strings, replacing cumbersome concatenation techniques.",
+    "tags": ["JavaScript", "Template Literals", "String Manipulation"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to manage asynchronous operations with error handling?",
+    "options": ["Promises", "Callbacks", "Classes", "Modules"],
+    "answer": "Promises",
+    "explanation": "Promises in JavaScript provide a structured way to manage asynchronous operations and include built-in error handling mechanisms through `.then()` and `.catch()`.",
+    "tags": ["JavaScript", "Promises", "Asynchronous Programming"]
+  },
+  {
+    "question": "What is the role of `map` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To transform elements of an array into a new array based on a provided function",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To transform elements of an array into a new array based on a provided function",
+    "explanation": "The `map` method in JavaScript transforms each element of an array into a new array based on the logic provided in a callback function.",
+    "tags": ["JavaScript", "Array Methods", "Mapping"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to group related functionality into reusable units?",
+    "options": ["Modules", "Classes", "Functions", "Promises"],
+    "answer": "Modules",
+    "explanation": "JavaScript modules allow grouping related functionality into reusable units, enabling better organization and maintenance of codebases.",
+    "tags": ["JavaScript", "Modules", "Code Organization"]
+  },
+  {
+    "question": "What is the purpose of `addEventListener` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To attach event listeners to DOM elements and respond to user interactions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To attach event listeners to DOM elements and respond to user interactions",
+    "explanation": "The `addEventListener` method in JavaScript attaches event listeners to DOM elements, enabling developers to respond to user interactions such as clicks or key presses.",
+    "tags": ["JavaScript", "Event Listeners", "DOM Interaction"]
+  },
+  {
+    "question": "Which JavaScript feature allows you to define asynchronous functions that return promises?",
+    "options": ["Async/Await", "Promises", "Classes", "Modules"],
+    "answer": "Async/Await",
+    "explanation": "The `async/await` feature in JavaScript allows defining asynchronous functions that return promises, improving readability and maintainability of async code.",
+    "tags": ["JavaScript", "Async/Await", "Asynchronous Programming"]
+  },
+  {
+    "question": "What is the main advantage of using `arrow functions` over traditional function expressions?",
+    "options": [
+      "Arrow functions provide a concise syntax and lexically bind the `this` context",
+      "Arrow functions eliminate the need for modules",
+      "Arrow functions manage front-end state exclusively",
+      "Arrow functions focus solely on hardware optimization"
+    ],
+    "answer": "Arrow functions provide a concise syntax and lexically bind the `this` context",
+    "explanation": "Arrow functions in JavaScript offer a concise syntax and lexically bind the `this` keyword, avoiding common pitfalls with traditional function expressions.",
+    "tags": ["JavaScript", "Arrow Functions", "Syntax"]
+  },
+  {
+    "question": "Which JavaScript method is used to find the first element in an array that satisfies a condition?",
+    "options": ["find", "filter", "map", "reduce"],
+    "answer": "find",
+    "explanation": "The `find` method in JavaScript returns the first element in an array that satisfies a given condition, enabling efficient searching.",
+    "tags": ["JavaScript", "Array Methods", "Searching"]
+  },
+  {
+    "question": "What is the role of `JSON.parse` in JavaScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To convert a JSON string into a JavaScript object",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To convert a JSON string into a JavaScript object",
+    "explanation": "The `JSON.parse` method in JavaScript converts a JSON string into a JavaScript object, enabling easy manipulation of structured data.",
+    "tags": ["JavaScript", "JSON", "Deserialization"]
+  },
+  {
+    "question": "What is TypeScript?",
+    "options": [
+      "A protocol for secure communication between services",
+      "A statically-typed superset of JavaScript that compiles to plain JavaScript",
+      "A front-end framework for building user interfaces",
+      "A database management system"
+    ],
+    "answer": "A statically-typed superset of JavaScript that compiles to plain JavaScript",
+    "explanation": "TypeScript is a statically-typed programming language that builds on JavaScript, adding features like type annotations, interfaces, and classes, while compiling down to plain JavaScript.",
+    "tags": ["TypeScript", "Definition", "Statically Typed"]
+  },
+  {
+    "question": "Which feature distinguishes TypeScript from JavaScript?",
+    "options": [
+      "Dynamic typing",
+      "Static typing and type annotations",
+      "Support for web development",
+      "Focus exclusively on backend development"
+    ],
+    "answer": "Static typing and type annotations",
+    "explanation": "TypeScript introduces static typing and type annotations, allowing developers to catch type-related errors during development rather than at runtime, enhancing code quality and maintainability.",
+    "tags": ["TypeScript", "Static Typing", "Type Annotations"]
+  },
+  {
+    "question": "What is the purpose of interfaces in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define contracts for objects or functions, ensuring consistency and structure",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define contracts for objects or functions, ensuring consistency and structure",
+    "explanation": "Interfaces in TypeScript define contracts for objects or functions, specifying the structure and types of properties or parameters, which helps ensure consistency and improve code readability.",
+    "tags": ["TypeScript", "Interfaces", "Contracts"]
+  },
+  {
+    "question": "Which of the following best describes the role of type inference in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To automatically determine the type of variables based on their initial values",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To automatically determine the type of variables based on their initial values",
+    "explanation": "Type inference in TypeScript allows the compiler to deduce the type of a variable automatically based on its initial value, reducing the need for explicit type annotations in many cases.",
+    "tags": ["TypeScript", "Type Inference", "Compiler Features"]
+  },
+  {
+    "question": "What is the main advantage of using TypeScript over plain JavaScript?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It provides static typing, improving code safety and maintainability",
+      "It replaces traditional APIs entirely",
+      "It focuses exclusively on IoT development"
+    ],
+    "answer": "It provides static typing, improving code safety and maintainability",
+    "explanation": "TypeScript's static typing helps catch errors early in the development process, making the code safer and easier to maintain compared to plain JavaScript.",
+    "tags": ["TypeScript", "Advantages", "Static Typing"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining reusable blueprints for objects?",
+    "options": ["Classes", "Functions", "Modules", "Promises"],
+    "answer": "Classes",
+    "explanation": "TypeScript classes allow defining reusable blueprints for objects, encapsulating data and behavior within a single unit, promoting object-oriented programming patterns.",
+    "tags": ["TypeScript", "Classes", "OOP"]
+  },
+  {
+    "question": "What is the role of enums in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define a group of named constants, improving code clarity and readability",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define a group of named constants, improving code clarity and readability",
+    "explanation": "Enums in TypeScript provide a way to define a set of named constants, making the code more readable and reducing the use of magic numbers or strings.",
+    "tags": ["TypeScript", "Enums", "Constants"]
+  },
+  {
+    "question": "Which TypeScript feature ensures compatibility with existing JavaScript libraries?",
+    "options": [
+      "Type aliases",
+      "Declaration files (.d.ts)",
+      "Generics",
+      "Decorators"
+    ],
+    "answer": "Declaration files (.d.ts)",
+    "explanation": "TypeScript declaration files (`.d.ts`) describe the shape of existing JavaScript libraries, enabling type checking and IntelliSense support without modifying the original code.",
+    "tags": ["TypeScript", "Declaration Files", "Compatibility"]
+  },
+  {
+    "question": "What is the purpose of generics in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To create reusable components or functions that work with multiple types",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create reusable components or functions that work with multiple types",
+    "explanation": "Generics in TypeScript allow creating reusable components or functions that can operate on different types, improving flexibility and type safety.",
+    "tags": ["TypeScript", "Generics", "Reusability"]
+  },
+  {
+    "question": "Which TypeScript feature allows you to define optional properties in an interface?",
+    "options": [
+      "Optional chaining",
+      "Nullable types",
+      "Union types",
+      "Optional properties"
+    ],
+    "answer": "Optional properties",
+    "explanation": "TypeScript interfaces support optional properties by appending a `?` to the property name, allowing partial definitions of objects.",
+    "tags": ["TypeScript", "Interfaces", "Optional Properties"]
+  },
+  {
+    "question": "What is the role of the `as` keyword in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To perform type assertions, explicitly casting a variable to a specific type",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To perform type assertions, explicitly casting a variable to a specific type",
+    "explanation": "The `as` keyword in TypeScript performs type assertions, allowing you to explicitly cast a variable to a specific type when the compiler cannot infer it automatically.",
+    "tags": ["TypeScript", "Type Assertions", "Casting"]
+  },
+  {
+    "question": "Which TypeScript feature enables writing cross-platform code?",
+    "options": [
+      "ES6 Modules",
+      "TypeScript transpilation",
+      "Angular CLI",
+      "React hooks"
+    ],
+    "answer": "TypeScript transpilation",
+    "explanation": "TypeScript transpiles to plain JavaScript, enabling cross-platform compatibility by targeting various ECMAScript versions or environments.",
+    "tags": ["TypeScript", "Transpilation", "Cross-Platform"]
+  },
+  {
+    "question": "What is the purpose of union types in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define a type that can be one of several possible types",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define a type that can be one of several possible types",
+    "explanation": "Union types in TypeScript allow defining a type that can take on one of several specified types, providing flexibility while maintaining type safety.",
+    "tags": ["TypeScript", "Union Types", "Flexibility"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining custom types for function parameters or return values?",
+    "options": ["Type annotations", "Decorators", "Mixins", "Callbacks"],
+    "answer": "Type annotations",
+    "explanation": "Type annotations in TypeScript let you specify custom types for function parameters or return values, ensuring type safety and better developer experience.",
+    "tags": ["TypeScript", "Type Annotations", "Function Parameters"]
+  },
+  {
+    "question": "What is the role of namespaces in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To organize code into logical groups, avoiding naming conflicts",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To organize code into logical groups, avoiding naming conflicts",
+    "explanation": "Namespaces in TypeScript help organize code into logical groups, preventing naming conflicts and improving modularity, though ES6 modules are now preferred.",
+    "tags": ["TypeScript", "Namespaces", "Code Organization"]
+  },
+  {
+    "question": "Which TypeScript feature allows you to define reusable type aliases?",
+    "options": ["Interfaces", "Classes", "Type aliases", "Decorators"],
+    "answer": "Type aliases",
+    "explanation": "Type aliases in TypeScript allow defining reusable type definitions, combining primitive types, unions, tuples, or other complex types into a single alias.",
+    "tags": ["TypeScript", "Type Aliases", "Reusability"]
+  },
+  {
+    "question": "What is the purpose of decorators in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To add metadata or modify the behavior of classes, methods, or properties",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To add metadata or modify the behavior of classes, methods, or properties",
+    "explanation": "Decorators in TypeScript are functions that add metadata or modify the behavior of classes, methods, properties, or parameters, often used in Angular for component configuration.",
+    "tags": ["TypeScript", "Decorators", "Metadata"]
+  },
+  {
+    "question": "Which of the following is true about TypeScript's structural type system?",
+    "options": [
+      "It focuses exclusively on frontend development",
+      "It determines type compatibility based on the structure of the types rather than their names",
+      "It replaces traditional APIs entirely",
+      "It eliminates the need for encryption"
+    ],
+    "answer": "It determines type compatibility based on the structure of the types rather than their names",
+    "explanation": "TypeScript uses a structural type system, meaning type compatibility is determined based on the structure of the types rather than their declared names.",
+    "tags": ["TypeScript", "Structural Typing", "Type System"]
+  },
+  {
+    "question": "What is the role of the `never` type in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To represent a type that has no possible values, useful for exhaustive checks",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To represent a type that has no possible values, useful for exhaustive checks",
+    "explanation": "The `never` type in TypeScript represents a type that has no possible values, often used in switch statements or function return types to ensure exhaustive checks.",
+    "tags": ["TypeScript", "Never Type", "Exhaustive Checks"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining functions that accept parameters of varying types?",
+    "options": ["Generics", "Union types", "Type aliases", "Decorators"],
+    "answer": "Generics",
+    "explanation": "Generics in TypeScript enable defining functions or classes that work with any type, allowing parameters or return values to vary depending on usage.",
+    "tags": ["TypeScript", "Generics", "Varying Types"]
+  },
+  {
+    "question": "What is the main benefit of using TypeScript's strict mode?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It enforces stricter type checking, catching potential errors early",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively"
+    ],
+    "answer": "It enforces stricter type checking, catching potential errors early",
+    "explanation": "TypeScript's strict mode enforces stricter type checking, ensuring all variables are initialized and types are adhered to, reducing runtime errors.",
+    "tags": ["TypeScript", "Strict Mode", "Type Checking"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining the shape of objects or arrays without implementing them?",
+    "options": ["Interfaces", "Classes", "Modules", "Promises"],
+    "answer": "Interfaces",
+    "explanation": "Interfaces in TypeScript define the shape of objects or arrays, acting as contracts for ensuring consistent structure without requiring implementation details.",
+    "tags": ["TypeScript", "Interfaces", "Shape Definition"]
+  },
+  {
+    "question": "What is the role of tuple types in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define arrays with fixed lengths and specific types for each element",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define arrays with fixed lengths and specific types for each element",
+    "explanation": "Tuple types in TypeScript allow defining arrays with fixed lengths and specific types for each element, ensuring precise type control in collections.",
+    "tags": ["TypeScript", "Tuple Types", "Collections"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining asynchronous functions that return Promises?",
+    "options": ["Async/Await", "Decorators", "Interfaces", "Type aliases"],
+    "answer": "Async/Await",
+    "explanation": "TypeScript supports `async/await` syntax, allowing you to write asynchronous functions that return Promises in a synchronous-like style, improving code readability.",
+    "tags": ["TypeScript", "Async/Await", "Asynchronous Programming"]
+  },
+  {
+    "question": "What is the purpose of the `keyof` operator in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To extract the keys of an object type as a union type",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To extract the keys of an object type as a union type",
+    "explanation": "The `keyof` operator in TypeScript extracts the keys of an object type as a union type, facilitating dynamic property access and type-safe operations.",
+    "tags": ["TypeScript", "Keyof Operator", "Object Keys"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining computed property names in objects?",
+    "options": [
+      "Mapped types",
+      "Computed property names",
+      "Type aliases",
+      "Decorators"
+    ],
+    "answer": "Computed property names",
+    "explanation": "TypeScript supports computed property names, allowing dynamic keys in object literals, similar to JavaScript but with type safety.",
+    "tags": ["TypeScript", "Computed Property Names", "Dynamic Keys"]
+  },
+  {
+    "question": "What is the role of mapped types in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To transform existing types by iterating over their properties",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To transform existing types by iterating over their properties",
+    "explanation": "Mapped types in TypeScript allow transforming existing types by iterating over their properties, such as creating readonly or partial versions of objects.",
+    "tags": ["TypeScript", "Mapped Types", "Type Transformation"]
+  },
+  {
+    "question": "Which TypeScript feature ensures backward compatibility with JavaScript?",
+    "options": [
+      "Type annotations",
+      "TypeScript transpilation",
+      "Decorators",
+      "Namespaces"
+    ],
+    "answer": "TypeScript transpilation",
+    "explanation": "TypeScript transpiles to plain JavaScript, ensuring backward compatibility with older ECMAScript versions and JavaScript libraries.",
+    "tags": ["TypeScript", "Transpilation", "Backward Compatibility"]
+  },
+  {
+    "question": "What is the purpose of the `readonly` modifier in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To mark properties or methods as immutable after initialization",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To mark properties or methods as immutable after initialization",
+    "explanation": "The `readonly` modifier in TypeScript ensures that properties or methods cannot be reassigned after their initial value is set, promoting immutability.",
+    "tags": ["TypeScript", "Readonly Modifier", "Immutability"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining functions that accept a fixed number of arguments of specific types?",
+    "options": ["Tuples", "Generics", "Type aliases", "Decorators"],
+    "answer": "Tuples",
+    "explanation": "Tuples in TypeScript allow defining arrays with a fixed number of elements and specific types for each position, ensuring precise argument handling.",
+    "tags": ["TypeScript", "Tuples", "Fixed Arguments"]
+  },
+  {
+    "question": "What is the role of the `index signature` in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define dynamic keys for objects with a specific value type",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define dynamic keys for objects with a specific value type",
+    "explanation": "An index signature in TypeScript allows defining dynamic keys for objects, ensuring all values under those keys adhere to a specific type.",
+    "tags": ["TypeScript", "Index Signature", "Dynamic Keys"]
+  },
+  {
+    "question": "Which TypeScript feature allows defining multiple return types for a function?",
+    "options": ["Union types", "Generics", "Type aliases", "Decorators"],
+    "answer": "Union types",
+    "explanation": "Union types in TypeScript allow defining functions that can return multiple types, such as `string | number`, ensuring flexibility while maintaining type safety.",
+    "tags": ["TypeScript", "Union Types", "Multiple Return Types"]
+  },
+  {
+    "question": "What is the purpose of the `type` keyword in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define custom type aliases for complex types",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define custom type aliases for complex types",
+    "explanation": "The `type` keyword in TypeScript allows defining custom type aliases, simplifying complex type definitions and improving code readability.",
+    "tags": ["TypeScript", "Type Keyword", "Custom Types"]
+  },
+  {
+    "question": "Which TypeScript feature allows extending the functionality of existing classes?",
+    "options": ["Inheritance", "Composition", "Mixins", "Decorators"],
+    "answer": "Inheritance",
+    "explanation": "TypeScript supports inheritance through the `extends` keyword, allowing classes to inherit properties and methods from parent classes.",
+    "tags": ["TypeScript", "Inheritance", "Class Extension"]
+  },
+  {
+    "question": "What is the role of the `--strict` flag in TypeScript?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To enforce stricter type-checking rules during compilation",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To enforce stricter type-checking rules during compilation",
+    "explanation": "The `--strict` flag in TypeScript enforces stricter type-checking rules, helping catch potential errors early in the development process.",
+    "tags": ["TypeScript", "Strict Flag", "Compilation"]
   }
 ]
