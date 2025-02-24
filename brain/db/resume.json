@@ -1,408 +1,334 @@
 {
-    "info": {
-        "name": "Mohamed Housni",
-        "title": "Fullstack Javascript Engineer",
-        "location": "Casablanca, MA",
-        "email": "mohamed.housni@um5s.net.ma",
-        "phone": "+212 7 08 11 36 36",
-        "website": "",
-        "linkedin": "https://linkedin.com/in/m-housni",
-        "github": "https://github.com/m-housni",
-        "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust."
-    },
-    "focusAreas": [
-        "Redis",
-        "Kafka",
-        "Docker",
-        "Microservices",
-        "Angular",
-        "React",
-        "Vanilla JS",
-        "OpenAI",
-        "GraphQL",
-        "Agentic AI",
-        "Cloud"
+  "info": {
+    "name": "Mohamed Housni",
+    "title": "Fullstack Javascript Engineer",
+    "location": "Casablanca, MA",
+    "email": "mohamed.housni@um5s.net.ma",
+    "phone": "+212 7 08 11 36 36",
+    "website": "",
+    "linkedin": "https://linkedin.com/in/m-housni",
+    "github": "https://github.com/m-housni",
+    "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust."
+  },
+  "focusAreas": [
+    "Redis",
+    "Kafka",
+    "Docker",
+    "Microservices",
+    "Angular",
+    "React",
+    "Vanilla JS",
+    "OpenAI",
+    "GraphQL",
+    "Agentic AI",
+    "Cloud"
+  ],
+  "skills": {
+    "Languages": [
+      "TypeScript, JavaScript",
+      "SQL, PLSQL, GraphQL",
+      "HTML, CSS, SCSS",
+      "JSON, XML, YAML",
+      "Java, PHP, Python"
     ],
-    "skills": {
-        "Languages": [
-            "TypeScript, JavaScript",
-            "SQL, PLSQL, GraphQL",
-            "HTML, CSS, SCSS",
-            "JSON, XML, YAML",
-            "Java, PHP, Python"
-        ],
-        "Frontend": [
-            "Angular",
-            "React / Next",
-            "Vue / Nuxt",
-            "Svelte / SvelteKit",
-            "Web Components"
-        ],
-        "Backend": [
-            "Express",
-            "Koa",
-            "NestJS",
-            "MeteorJS",
-            "AdonisJS"
-        ],
-        "Databases": [
-            "MongoDB",
-            "MySQL, PostgreSQL",
-            "Redis",
-            "Elasticsearch",
-            "Firebase"
-        ],
-        "Tools": [
-            "Git, Git flow",
-            "Jenkins / Github Actions",
-            "Docker",
-            "Webpack",
-            "Babel"
-        ],
-        "Testing / Monitoring": [
-            "Jest, Mocha",
-            "Insomnia, Postman",
-            "k6, JMeter",
-            "Prometheuse, Grafana",
-            "Sentry"
-        ],
-        "APIs": [
-            "Rest, oData",
-            "GraphQL",
-            "WebSockets",
-            "Algolia, OpenAI",
-            "Twilio, Stripe"
-        ],
-        "Methodologies": [
-            "Agile, Scrum, Waterfall",
-            "TDD,DDD,CI/CD,OOP,SOLID",
-            "Architectural Patterns",
-            "Design Patterns",
-            "System Design"
-        ],
-        "Soft Skills": [
-            "Problem Solving",
-            "Teamwork",
-            "Communication",
-            "Leadership",
-            "Time Management"
-        ]
-    },
-    "skillsCloud": [
-        "TypeScript",
-        "Redis",
-        "Persistency",
-        "Caching",
-        "RDB",
-        "AOF",
-        "RDBMS",
-        "NoSQL",
-        "MongoDB",
-        "Elasticsearch",
-        "Firebase",
-        "WebSockets",
-        "Algolia",
-        "JavaScript",
-        "SQL",
-        "Thingworx",
-        "Windchill",
-        "oData",
-        "Algolia",
-        "OpenAI",
-        "Twilio",
-        "Stripe",
-        "Rest",
-        "Oracle Databases",
-        "SQL Server",
-        "PLSQL",
-        "GraphQL",
-        "HTML",
-        "CSS",
-        "SCSS",
-        "JSON",
-        "XML",
-        "YAML",
-        "Java",
-        "PHP",
-        "Python",
-        "Angular",
-        "React",
-        "Next",
-        "Vue",
-        "Nuxt",
-        "Svelte",
-        "SvelteKit",
-        "Web Components",
-        "Express",
-        "Koa",
-        "NestJS",
-        "MeteorJS",
-        "AdonisJS",
-        "MongoDB",
-        "MySQL",
-        "PostgreSQL",
-        "Redis",
-        "Elasticsearch",
-        "Firebase",
-        "Git",
-        "Git flow",
-        "Jenkins",
-        "Github Actions",
-        "Docker",
-        "Webpack",
-        "Babel",
-        "Jest",
-        "Mocha",
-        "Insomnia",
-        "Postman",
-        "k6",
-        "JMeter"],
-    "experiences": {
-        "Inetum": {
-            "title": "Frontend Developer @ Inetum",
-            "location": "Casablanca, MA",
-            "dates": "11/2022 - 11/2024",
-            "description": "Developing and maintaining PLM applications in the manufacturing sector.",
-            "customers": [
-                "Airbus",
-                "Stelia Aerospace",
-                "Thales"
-            ],
-            "industries": [
-                "Manufacturing",
-                "Aerospace"
-            ],
-            "skills": "Javascript, HTML, CSS, JAVA, Thingworx, Windchill.",
-            "achievements": [
-                "Developed and maintained software functionalities.",
-                "Collaborated with cross-functional teams.",
-                "Led code reviews, troubleshooting and bug fixing.",
-                "Provided onboarding to new team members"
-            ]
-        },
-        "IntelciaITSolutions": {
-            "title": "Fullstack Developer @ Intelcia IT Solutions",
-            "location": "Casablanca, MA",
-            "dates": "06/2022 - 11/2022",
-            "description": "Developed SFR Lost Mobile Service.",
-            "customers": [
-                "Orange",
-                "Société Générale",
-                "BNP Paribas"
-            ],
-            "industries": [
-                "Banking",
-                "Telecommunications",
-                "Retail"
-            ],
-            "skills": "Angular, Node, Express, MongoDB, Php, Elasticsearch, JS, HTML, CSS, leafletJS, Twilio",
-            "achievements": [
-                "Designed and implemented the frontend",
-                "Designed and implemented the backend",
-                "Proved a performance enhancement compared to existing solution."
-            ]
-        },
-        "Komplians": {
-            "title": "Tech Lead @ Komplians",
-            "location": "Casablanca, MA",
-            "dates": "03/2019 - 11/2022",
-            "description": "Developed and maintained many solutions related to compliance, risk management, and more.",
-            "customers": [
-                "Orange",
-                "Société Générale",
-                "BNP Paribas"
-            ],
-            "industries": [
-                "Banking",
-                "Telecommunications",
-                "Retail"
-            ],
-            "skills": "Php, Laravel, Javascript, Angular, HTML, CSS, Node, Express, Moodle",
-            "achievements": [
-                "Developed a Compliance and Risk Management SaaS solution ( Komplians )",
-                "Developed a Corporate Social Responsibility Solution ( les domaines agricoles )",
-                "Maintained a CSR platform for responsible procurement ( GreenSupply )",
-                "Installed and managed a Moodle instance for an e-learning platform ( Certi-Trust )",
-                "Led a team of 3 junior developers"
-            ]
-        },
-        "SmartWorkers": {
-            "title": "Web Developer @ SmartWorkers",
-            "location": "Casablanca, MA (Fully Remote)",
-            "dates": "03/2016 - 04/2019",
-            "description": "Worked on different solutions both on the frontend and backend.",
-            "customers": [
-                "Orange",
-                "Société Générale",
-                "BNP Paribas"
-            ],
-            "industries": [
-                "Banking",
-                "Telecommunications",
-                "Retail"
-            ],
-            "skills": "Laravel, Php, Vue, React, Wordpress, Strapi, Node, Express, SQL, AFAS API",
-            "achievements": [
-                "Developed functionalities for a dealers portal for a dutch e-bikes supplier ( Klever Mobility ).",
-                "Led a team of 2 developers in building a patient management system. (helppo )",
-                "Developed the frontend and backend of a booking system ( roompot.nl )",
-                "Developed landing pages and websites using wordpress (bubbelbal.nl, ozylshop.com..)"
-            ]
-        }
-    },
-    "projects": [
-        {
-            "timestamp": 1739480776,
-            "title": "Gherkin-Cucumber Demo",
-            "description": "This project demonstrates how to use Gherkin syntax with Cucumber.js for behavior-driven development (BDD) testing. It includes automated tests for a login feature using Puppeteer for browser automation and Chai for assertions..",
-            "link": "https://github.com/m-housni/gherkin-cucumber-demo",
-            "tags": "Gherkin, Cucumber, BDD, Testing, Automation, Puppeteer, Chai, JavaScript"
-        },
-        {
-            "timestamp": 1739480776,
-            "title": "Vue-Java-Springboot Delivery Tracking System",
-            "description": "A full-stack delivery tracking system built with Vue.js and Java SpringBoot. The Vue frontend allows users to view and manage delivery orders with dynamic status updates, address modifications, and time slot adjustments. The Springboot backend handles API requests for fetching and updating deliveries, ensuring seamless communication between the UI and the database. The system supports role-based interactions for buyers and sellers, providing restricted input fields and actions based on user roles.",
-            "link": "https://github.com/m-housni/delivery-tracking-app-with-vue3-and-java-springboot/",
-            "tags": "Vue.js, Java, SpringBoot Delivery Tracking, Full-Stack, API, REST API, CRUD Operations, Axios, JavaScript"
-        },
-        {
-            "timestamp": 1738425136,
-            "title": "Angular-Express Authentication Starter: JWT-Based Secure Login System",
-            "description": "Boilerplate project that integrates Angular and Express for user authentication. It features a login system where users enter credentials, which are validated by an Express backend using bcrypt. A JWT token is generated and returned to the frontend, where it is stored and used to manage authentication state through an Angular service and BehaviorSubject, ensuring UI updates.",
-            "link": "https://github.com/m-housni/angular-express-auth-starter",
-            "tags": "Angular, Express, Authentication, JWT, Node.js, bcrypt, User Login, Token-Based Authentication, Secure Login, Full-Stack, MEAN Stack, AuthService, BehaviorSubject, API Security"
-        },
-        {
-            "timestamp": 1737415539,
-            "title": "Dockerized React & Node.js Full-Stack App with Mysql",
-            "description": "This Docker Compose configuration setup orchestrates multiple services to create a seamless development environment for a todo application. Traefik serves as the reverse proxy, efficiently routing traffic between the backend API, frontend client, and phpMyAdmin interface. The MySQL service is configured with persistent storage, and development-specific settings enable real-time code synchronization and automatic rebuilding of services upon code changes.",
-            "link": "https://github.com/m-housni/dockerized-todoapp/",
-            "tags": "Docker, Treafik, Reverse Proxy, Code Sync, Automatic rebuild, phpMyAdmin, Docker Compose, React, Node.js, MySQL, CI/CD, GitHub Actions, Containers, Compose, Dockerfile, Vite, Nodemon, TodoApp"
-        },
-        {
-            "timestamp": 1737415453,
-            "title": "Scalable Session Management System with Express, Redis, and Monitoring Tools",
-            "description": "A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
-            "link": "https://github.com/m-housni/express-redis-session-management",
-            "tags": "nodemon, npm, bcrypt, connect-redis, dotenv, express, express-session, prom-client, redis, redis-info, Node.js, Express.js, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
-        },
-        {
-            "timestamp": 1,
-            "title": "CI/CD Automation with Jenkins",
-            "description": "Automated builds, tests, and deployments using Jenkins to reduce manual errors and improve release reliability.",
-            "link": "https://link-to-project-details.com/ci-cd-jenkins",
-            "tags": "CI/CD, Jenkins, Automation, DevOps, Deployment"
-        },
-        {
-            "timestamp": 1737987383,
-            "title": "Redis Checkin Social App",
-            "description": "The project involves developing a social network application where users can 'check in' at various locations and provide star ratings (0 to 5) based on their experiences. The application leverages Redis as both a data store and a cache to manage data efficiently. The core entities in the application are Users, Locations, and Checkins, each mapped to Redis data types for optimal storage and retrieval. The application will also include an API to interact with the data and support asynchronous processing for real-time updates.",
-            "link": "https://github.com/m-housni/redis-checkin-social-app",
-            "tags": "ioredis, Redis JSON, Docker, Node, Redis Streams, Redis Pub/Sub, Redis Data Types, Social Network, Checkin, Ratings, API, Asynchronous Processing, Real-Time Updates, Data Storage, Data Retrieval, Cache, Data Store"
-        },
-        {
-            "timestamp": 90,
-            "title": "High-Throughput Microservice with RabbitMQ",
-            "description": "Used RabbitMQ to decouple services, enabling scalable message-driven architecture for a high-traffic application.",
-            "link": "https://link-to-project-details.com/rabbitmq-microservice",
-            "tags": "Microservices, RabbitMQ, Message Queues, Scalability, High Traffic"
-        },
-        {
-            "timestamp": 80,
-            "title": "Debounce Demo: Prevent Excessive API Calls on Button Clicks",
-            "description": "A minimal app that showcases debouncing to stop multiple API calls when a button is rapidly clicked. Once clicking pauses, a single API request is made, reducing server load and boosting performance.",
-            "link": "https://github.com/m-housni/Debounce-Demo-Prevent-Excessive-API-Calls-on-Button-Clicks",
-            "tags": "Debounce, API Calls, Performance, JavaScript, Optimization"
-        },
-        {
-            "timestamp": 70,
-            "title": "Frontend Migration with React Hooks",
-            "description": "Modernized a legacy React codebase by transitioning to hooks, improving performance and simplifying state management.",
-            "link": "https://link-to-project-details.com/react-hooks-migration",
-            "tags": "React, React Hooks, Frontend, Modernization, State Management"
-        },
-        {
-            "timestamp": 1738073454,
-            "title": "Fullstack TodoApp with Angular, Node.js, and Postgres",
-            "description": "Full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
-            "link": "https://github.com/m-housni/full-stack-todo-app-with-angular-node-sqlite",
-            "tags": "Angular, NodeJS, WebSockets, Docker, SQLite, RESTful APIs, Authentication, Dashboard, Full-Stack, Real-Time Updates, Postgres, Supabase"
-        },
-        {
-            "timestamp": 10,
-            "title": "Improving Codebase Readability and Performance",
-            "description": "Refactored a large codebase, introduced linting and TDD practices, resulting in better maintainability and fewer bugs.",
-            "link": "https://link-to-project-details.com/codebase-refactoring",
-            "tags": "Refactoring, Code Quality, Linting, TDD, Maintainability"
-        },
-        {
-            "timestamp": 11,
-            "title": "Backward Compatibility with Babel and Webpack",
-            "description": "Ensured modern JavaScript worked seamlessly across older browsers by configuring Babel and Webpack.",
-            "link": "https://link-to-project-details.com/babel-webpack-compatibility",
-            "tags": "JavaScript, Babel, Webpack, Compatibility, Browser Support"
-        },
-        {
-            "timestamp": 21,
-            "title": "Deploy a GitHub Repo to cPanel with GitHub Actions",
-            "description": "Created an automated CI/CD pipeline to deploy updates from GitHub to cPanel, reducing deployment time and errors.",
-            "link": "https://link-to-project-details.com/github-actions-cpanel",
-            "tags": "CI/CD, GitHub Actions, cPanel, Automation, Deployment"
-        },
-        {
-            "timestamp": 22,
-            "title": "OpnForm Open-Source Form Builder",
-            "description": "Built a user-friendly, extensible form builder with no-code and developer-focused features.",
-            "link": "https://link-to-project-details.com/opnform",
-            "tags": "Open Source, Form Builder, No Code, Extensibility, Community"
-        },
-        {
-            "timestamp": 99,
-            "title": "E-Commerce Website with Angular and Node.js",
-            "description": "E-commerce platform that integrates both front-end and back-end development tasks. On the front-end, it features product listing, shopping cart functionalities, a contact form, pagination, filtering, and product quantity adjustments. The back-end is built using Node.js/Express, and includes API development with CRUD operations, JWT-based user authentication, and management of shopping carts and wishlists.",
-            "link": "https://github.com/m-housni/e-commerce-angular-node",
-            "tags": "E-Commerce, Angular, Node.js, RxJS, Postman, JWT Authentication, CRUD, API, Express, Shopping Cart, Wishlist, Pagination, Filtering, Contact Form, Front-End, Back-End, Full-Stack, PrimeNG, Observables, Reactive Programming, Signals, Events, Data Flow, State Management, Typescript, Dependency Injection"
-        }
+    "Frontend": [
+      "Angular",
+      "React / Next",
+      "Vue / Nuxt",
+      "Svelte / SvelteKit",
+      "Web Components"
     ],
-    "certifications": [
-        {
-            "title": "AWS Certified Solutions Architect - Associate",
-            "date": "2020",
-            "link": "https://www.youracclaim.com/badges/aws-certified-solutions-architect-associate"
-        },
-        {
-            "title": "Google Cloud Professional Cloud Architect",
-            "date": "2019",
-            "link": "https://www.youracclaim.com/badges/google-cloud-professional-cloud-architect"
-        },
-        {
-            "title": "Scrum Master Certification",
-            "date": "2018",
-            "link": "https://www.youracclaim.com/badges/scrum-master-certification"
-        }
+    "Backend": ["Express", "Koa", "NestJS", "MeteorJS", "AdonisJS"],
+    "Databases": [
+      "MongoDB",
+      "MySQL, PostgreSQL",
+      "Redis",
+      "Elasticsearch",
+      "Firebase"
     ],
-    "education": {
-        "Master": {
-            "degree": "MSc in Science et Technologies du Logiciel",
-            "school": "Sorbonne Université - UPMC",
-            "dates": "2013-2015",
-            "location": "Paris, FR"
-        },
-        "Bachelor": {
-            "degree": "BSc in Industrial Engineering",
-            "school": "Universite Abdelmalek Essaadi - FST",
-            "dates": "2009-2012",
-            "location": "Tangier, MA"
-        }
-    },
-    "languages": {
-        "English": "Professional",
-        "French": "Professional",
-        "Arabic": "Native",
-        "Amazigh": "Native"
-    },
-    "interests": [
-        "Open Source",
-        "Tech Communities"
+    "Tools": [
+      "Git, Git flow",
+      "Jenkins / Github Actions",
+      "Docker",
+      "Webpack",
+      "Babel"
+    ],
+    "Testing / Monitoring": [
+      "Jest, Mocha",
+      "Insomnia, Postman",
+      "k6, JMeter",
+      "Prometheuse, Grafana",
+      "Sentry"
+    ],
+    "APIs": [
+      "Rest, oData",
+      "GraphQL",
+      "WebSockets",
+      "Algolia, OpenAI",
+      "Twilio, Stripe"
+    ],
+    "Methodologies": [
+      "Agile, Scrum, Waterfall",
+      "TDD,DDD,CI/CD,OOP,SOLID",
+      "Architectural Patterns",
+      "Design Patterns",
+      "System Design"
+    ],
+    "Soft Skills": [
+      "Problem Solving",
+      "Teamwork",
+      "Communication",
+      "Leadership",
+      "Time Management"
     ]
+  },
+  "skillsCloud": [
+    "TypeScript",
+    "Redis",
+    "Persistency",
+    "Caching",
+    "RDB",
+    "AOF",
+    "RDBMS",
+    "NoSQL",
+    "MongoDB",
+    "Elasticsearch",
+    "Firebase",
+    "WebSockets",
+    "Algolia",
+    "JavaScript",
+    "SQL",
+    "Thingworx",
+    "Windchill",
+    "oData",
+    "Algolia",
+    "OpenAI",
+    "Twilio",
+    "Stripe",
+    "Rest",
+    "Oracle Databases",
+    "SQL Server",
+    "PLSQL",
+    "GraphQL",
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JSON",
+    "XML",
+    "YAML",
+    "Java",
+    "PHP",
+    "Python",
+    "Angular",
+    "React",
+    "Next",
+    "Vue",
+    "Nuxt",
+    "Svelte",
+    "SvelteKit",
+    "Web Components",
+    "Express",
+    "Koa",
+    "NestJS",
+    "MeteorJS",
+    "AdonisJS",
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL",
+    "Redis",
+    "Elasticsearch",
+    "Firebase",
+    "Git",
+    "Git flow",
+    "Jenkins",
+    "Github Actions",
+    "Docker",
+    "Webpack",
+    "Babel",
+    "Jest",
+    "Mocha",
+    "Insomnia",
+    "Postman",
+    "k6",
+    "JMeter"
+  ],
+  "experiences": {
+    "Inetum": {
+      "title": "Frontend Developer @ Inetum",
+      "location": "Casablanca, MA",
+      "dates": "11/2022 - 11/2024",
+      "description": "Developing and maintaining PLM applications in the manufacturing sector.",
+      "customers": ["Airbus", "Stelia Aerospace", "Thales"],
+      "industries": ["Manufacturing", "Aerospace"],
+      "skills": "Javascript, HTML, CSS, JAVA, Thingworx, Windchill.",
+      "achievements": [
+        "Developed and maintained software functionalities.",
+        "Collaborated with cross-functional teams.",
+        "Led code reviews, troubleshooting and bug fixing.",
+        "Provided onboarding to new team members"
+      ]
+    },
+    "IntelciaITSolutions": {
+      "title": "Fullstack Developer @ Intelcia IT Solutions",
+      "location": "Casablanca, MA",
+      "dates": "06/2022 - 11/2022",
+      "description": "Developed SFR Lost Mobile Service.",
+      "customers": ["Orange", "Société Générale", "BNP Paribas"],
+      "industries": ["Banking", "Telecommunications", "Retail"],
+      "skills": "Angular, Node, Express, MongoDB, Php, Elasticsearch, JS, HTML, CSS, leafletJS, Twilio",
+      "achievements": [
+        "Designed and implemented the frontend",
+        "Designed and implemented the backend",
+        "Proved a performance enhancement compared to existing solution."
+      ]
+    },
+    "Komplians": {
+      "title": "Tech Lead @ Komplians",
+      "location": "Casablanca, MA",
+      "dates": "03/2019 - 11/2022",
+      "description": "Developed and maintained many solutions related to compliance, risk management, and more.",
+      "customers": ["Orange", "Société Générale", "BNP Paribas"],
+      "industries": ["Banking", "Telecommunications", "Retail"],
+      "skills": "Php, Laravel, Javascript, Angular, HTML, CSS, Node, Express, Moodle",
+      "achievements": [
+        "Developed a Compliance and Risk Management SaaS solution ( Komplians )",
+        "Developed a Corporate Social Responsibility Solution ( les domaines agricoles )",
+        "Maintained a CSR platform for responsible procurement ( GreenSupply )",
+        "Installed and managed a Moodle instance for an e-learning platform ( Certi-Trust )",
+        "Led a team of 3 junior developers"
+      ]
+    },
+    "SmartWorkers": {
+      "title": "Web Developer @ SmartWorkers",
+      "location": "Casablanca, MA (Fully Remote)",
+      "dates": "03/2016 - 04/2019",
+      "description": "Worked on different solutions both on the frontend and backend.",
+      "customers": ["Orange", "Société Générale", "BNP Paribas"],
+      "industries": ["Banking", "Telecommunications", "Retail"],
+      "skills": "Laravel, Php, Vue, React, Wordpress, Strapi, Node, Express, SQL, AFAS API",
+      "achievements": [
+        "Developed functionalities for a dealers portal for a dutch e-bikes supplier ( Klever Mobility ).",
+        "Led a team of 2 developers in building a patient management system. (helppo )",
+        "Developed the frontend and backend of a booking system ( roompot.nl )",
+        "Developed landing pages and websites using wordpress (bubbelbal.nl, ozylshop.com..)"
+      ]
+    }
+  },
+  "projects": [
+    {
+      "timestamp": 1739480776,
+      "title": "Image Processing with Worker Threads",
+      "description": "his project demonstrates how to use Node.js Worker Threads to offload CPU-intensive image processing tasks, improving application responsiveness and performance.",
+      "link": "https://github.com/m-housni/image-processing-workers-demo",
+      "tags": "Node.js, Express.js, Worker Threads, Parallel Processing, Sharp, Multer, Concurrency"
+    },
+    {
+      "timestamp": 1739480776,
+      "title": "Gherkin-Cucumber Demo",
+      "description": "This project demonstrates how to use Gherkin syntax with Cucumber.js for behavior-driven development (BDD) testing. It includes automated tests for a login feature using Puppeteer for browser automation and Chai for assertions..",
+      "link": "https://github.com/m-housni/gherkin-cucumber-demo",
+      "tags": "Gherkin, Cucumber, BDD, Testing, Automation, Puppeteer, Chai, JavaScript"
+    },
+    {
+      "timestamp": 1739480776,
+      "title": "Vue-Java-Springboot Delivery Tracking System",
+      "description": "A full-stack delivery tracking system built with Vue.js and Java SpringBoot. The Vue frontend allows users to view and manage delivery orders with dynamic status updates, address modifications, and time slot adjustments. The Springboot backend handles API requests for fetching and updating deliveries, ensuring seamless communication between the UI and the database. The system supports role-based interactions for buyers and sellers, providing restricted input fields and actions based on user roles.",
+      "link": "https://github.com/m-housni/delivery-tracking-app-with-vue3-and-java-springboot/",
+      "tags": "Vue.js, Java, SpringBoot Delivery Tracking, Full-Stack, API, REST API, CRUD Operations, Axios, JavaScript"
+    },
+    {
+      "timestamp": 1738425136,
+      "title": "Angular-Express Authentication Starter: JWT-Based Secure Login System",
+      "description": "Boilerplate project that integrates Angular and Express for user authentication. It features a login system where users enter credentials, which are validated by an Express backend using bcrypt. A JWT token is generated and returned to the frontend, where it is stored and used to manage authentication state through an Angular service and BehaviorSubject, ensuring UI updates.",
+      "link": "https://github.com/m-housni/angular-express-auth-starter",
+      "tags": "Angular, Express, Authentication, JWT, Node.js, bcrypt, User Login, Token-Based Authentication, Secure Login, Full-Stack, MEAN Stack, AuthService, BehaviorSubject, API Security"
+    },
+    {
+      "timestamp": 1737415539,
+      "title": "Dockerized React & Node.js Full-Stack App with Mysql",
+      "description": "This Docker Compose configuration setup orchestrates multiple services to create a seamless development environment for a todo application. Traefik serves as the reverse proxy, efficiently routing traffic between the backend API, frontend client, and phpMyAdmin interface. The MySQL service is configured with persistent storage, and development-specific settings enable real-time code synchronization and automatic rebuilding of services upon code changes.",
+      "link": "https://github.com/m-housni/dockerized-todoapp/",
+      "tags": "Docker, Treafik, Reverse Proxy, Code Sync, Automatic rebuild, phpMyAdmin, Docker Compose, React, Node.js, MySQL, CI/CD, GitHub Actions, Containers, Compose, Dockerfile, Vite, Nodemon, TodoApp"
+    },
+    {
+      "timestamp": 1737415453,
+      "title": "Scalable Session Management System with Express, Redis, and Monitoring Tools",
+      "description": "A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
+      "link": "https://github.com/m-housni/express-redis-session-management",
+      "tags": "nodemon, npm, bcrypt, connect-redis, dotenv, express, express-session, prom-client, redis, redis-info, Node.js, Express.js, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
+    },
+    {
+      "timestamp": 1,
+      "title": "CI/CD Automation with Jenkins",
+      "description": "Automated builds, tests, and deployments using Jenkins to reduce manual errors and improve release reliability.",
+      "link": "https://link-to-project-details.com/ci-cd-jenkins",
+      "tags": "CI/CD, Jenkins, Automation, DevOps, Deployment"
+    },
+    {
+      "timestamp": 1737987383,
+      "title": "Redis Checkin Social App",
+      "description": "The project involves developing a social network application where users can 'check in' at various locations and provide star ratings (0 to 5) based on their experiences. The application leverages Redis as both a data store and a cache to manage data efficiently. The core entities in the application are Users, Locations, and Checkins, each mapped to Redis data types for optimal storage and retrieval. The application will also include an API to interact with the data and support asynchronous processing for real-time updates.",
+      "link": "https://github.com/m-housni/redis-checkin-social-app",
+      "tags": "ioredis, Redis JSON, Docker, Node, Redis Streams, Redis Pub/Sub, Redis Data Types, Social Network, Checkin, Ratings, API, Asynchronous Processing, Real-Time Updates, Data Storage, Data Retrieval, Cache, Data Store"
+    },
+    {
+      "timestamp": 80,
+      "title": "Debounce Demo: Prevent Excessive API Calls on Button Clicks",
+      "description": "A minimal app that showcases debouncing to stop multiple API calls when a button is rapidly clicked. Once clicking pauses, a single API request is made, reducing server load and boosting performance.",
+      "link": "https://github.com/m-housni/Debounce-Demo-Prevent-Excessive-API-Calls-on-Button-Clicks",
+      "tags": "Debounce, API Calls, Performance, JavaScript, Optimization"
+    },
+    {
+      "timestamp": 1738073454,
+      "title": "Fullstack TodoApp with Angular, Node.js, and Postgres",
+      "description": "Full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
+      "link": "https://github.com/m-housni/full-stack-todo-app-with-angular-node-sqlite",
+      "tags": "Angular, NodeJS, WebSockets, Docker, SQLite, RESTful APIs, Authentication, Dashboard, Full-Stack, Real-Time Updates, Postgres, Supabase"
+    },
+    {
+      "timestamp": 99,
+      "title": "E-Commerce Website with Angular and Node.js",
+      "description": "E-commerce platform that integrates both front-end and back-end development tasks. On the front-end, it features product listing, shopping cart functionalities, a contact form, pagination, filtering, and product quantity adjustments. The back-end is built using Node.js/Express, and includes API development with CRUD operations, JWT-based user authentication, and management of shopping carts and wishlists.",
+      "link": "https://github.com/m-housni/e-commerce-angular-node",
+      "tags": "E-Commerce, Angular, Node.js, RxJS, Postman, JWT Authentication, CRUD, API, Express, Shopping Cart, Wishlist, Pagination, Filtering, Contact Form, Front-End, Back-End, Full-Stack, PrimeNG, Observables, Reactive Programming, Signals, Events, Data Flow, State Management, Typescript, Dependency Injection"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Solutions Architect - Associate",
+      "date": "2020",
+      "link": "https://www.youracclaim.com/badges/aws-certified-solutions-architect-associate"
+    },
+    {
+      "title": "Google Cloud Professional Cloud Architect",
+      "date": "2019",
+      "link": "https://www.youracclaim.com/badges/google-cloud-professional-cloud-architect"
+    },
+    {
+      "title": "Scrum Master Certification",
+      "date": "2018",
+      "link": "https://www.youracclaim.com/badges/scrum-master-certification"
+    }
+  ],
+  "education": {
+    "Master": {
+      "degree": "MSc in Science et Technologies du Logiciel",
+      "school": "Sorbonne Université - UPMC",
+      "dates": "2013-2015",
+      "location": "Paris, FR"
+    },
+    "Bachelor": {
+      "degree": "BSc in Industrial Engineering",
+      "school": "Universite Abdelmalek Essaadi - FST",
+      "dates": "2009-2012",
+      "location": "Tangier, MA"
+    }
+  },
+  "languages": {
+    "English": "Professional",
+    "French": "Professional",
+    "Arabic": "Native",
+    "Amazigh": "Native"
+  },
+  "interests": ["Open Source", "Tech Communities"]
 }
