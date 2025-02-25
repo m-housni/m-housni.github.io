@@ -8,7 +8,7 @@
     "website": "",
     "linkedin": "https://linkedin.com/in/m-housni",
     "github": "https://github.com/m-housni",
-    "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust."
+    "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust.<br><br>I'm open to both <b>CDI and freelance opportunities</b>."
   },
   "focusAreas": [
     "Redis",
@@ -154,7 +154,7 @@
   ],
   "experiences": {
     "Inetum": {
-      "title": "Frontend Developer @ Inetum",
+      "title": "Frontend Developer @ Inetum (Freelance)",
       "location": "Casablanca, MA",
       "dates": "11/2022 - 11/2024",
       "description": "Developing and maintaining PLM applications in the manufacturing sector.",
@@ -169,7 +169,7 @@
       ]
     },
     "IntelciaITSolutions": {
-      "title": "Fullstack Developer @ Intelcia IT Solutions",
+      "title": "Fullstack Developer @ Intelcia IT Solutions (Freelance)",
       "location": "Casablanca, MA",
       "dates": "06/2022 - 11/2022",
       "description": "Developed SFR Lost Mobile Service.",
@@ -183,7 +183,7 @@
       ]
     },
     "Komplians": {
-      "title": "Tech Lead @ Komplians",
+      "title": "Co-founder & Tech Lead @ Komplians ( Freelance )",
       "location": "Casablanca, MA",
       "dates": "03/2019 - 11/2022",
       "description": "Developed and maintained many solutions related to compliance, risk management, and more.",
@@ -199,7 +199,7 @@
       ]
     },
     "SmartWorkers": {
-      "title": "Web Developer @ SmartWorkers",
+      "title": "Web Developer @ SmartWorkers ( Contractor )",
       "location": "Casablanca, MA (Fully Remote)",
       "dates": "03/2016 - 04/2019",
       "description": "Worked on different solutions both on the frontend and backend.",
@@ -215,6 +215,13 @@
     }
   },
   "projects": [
+    {
+      "timestamp": 1740728027,
+      "title": "Okta SAML implementation for SSO",
+      "description": "This project demonstrates the implementation of SAML (Security Assertion Markup Language) for Single Sign-On (SSO) authentication.",
+      "link": "https://github.com/m-housni/okta-saml-demo-using-node-passport",
+      "tags": "Node.js, SAML, Okta, Single Sign-On, Authentication, Security, passport, passport-saml"
+    },
     {
       "timestamp": 1039480776,
       "title": "Users Restfull API built with NestJS",
