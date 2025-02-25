@@ -18685,12 +18685,7 @@
   },
   {
     "question": "Which method is used to handle errors in a Promise chain?",
-    "options": [
-      ".catch()",
-      ".finally()",
-      ".then()",
-      ".resolve()"
-    ],
+    "options": [".catch()", ".finally()", ".then()", ".resolve()"],
     "answer": ".catch()",
     "explanation": "The `.catch()` method is specifically designed to handle errors in a Promise chain, ensuring proper error handling and preventing unhandled rejections.",
     "tags": ["JavaScript", "Promises", "Error Handling"]
@@ -18982,5 +18977,1344 @@
     "answer": "It executes after the Promise is settled, regardless of fulfillment or rejection",
     "explanation": "The `Promise.prototype.finally()` method executes after the Promise is settled (fulfilled or rejected), making it suitable for cleanup tasks like hiding loaders.",
     "tags": ["JavaScript", "Promises", "Finally Method"]
+  },
+  {
+    "question": "Quelle est la principale mission d'un Développeur Node.js ?",
+    "options": [
+      "Créer des interfaces utilisateur dynamiques en utilisant des frameworks frontend.",
+      "Concevoir, développer et maintenir des applications backend robustes et performantes avec Node.js.",
+      "Gérer les bases de données uniquement en SQL.",
+      "Remplacer les systèmes traditionnels par des solutions AI-driven."
+    ],
+    "answer": "Concevoir, développer et maintenir des applications backend robustes et performantes avec Node.js.",
+    "explanation": "Un Développeur Node.js est responsable de la conception, du développement et de la maintenance des applications backend en utilisant Node.js, tout en s'assurant de leur intégration avec les systèmes frontend et tiers.",
+    "tags": ["Node.js", "Mission", "Backend"]
+  },
+  {
+    "question": "Quels types d'APIs un Développeur Node.js doit-il concevoir et développer ?",
+    "options": [
+      "Seulement des API SOAP.",
+      "Des API RESTful et éventuellement des services en temps réel avec WebSockets.",
+      "Des API graphiques pour les interfaces utilisateur.",
+      "Des API pour remplacer les bases de données relationnelles."
+    ],
+    "answer": "Des API RESTful et éventuellement des services en temps réel avec WebSockets.",
+    "explanation": "Les API RESTful sont couramment développées par les Développeurs Node.js. Ils peuvent également travailler avec des technologies comme WebSockets pour des communications bidirectionnelles en temps réel.",
+    "tags": ["Node.js", "APIs", "RESTful", "WebSockets"]
+  },
+  {
+    "question": "Quelle est l'importance des tests unitaires dans le travail d'un Développeur Node.js ?",
+    "options": [
+      "Ils ne sont pas nécessaires pour le développement backend.",
+      "Ils assurent la qualité du code et permettent une maintenance plus facile.",
+      "Ils remplacent les processus DevOps dans le développement Node.js.",
+      "Ils se concentrent uniquement sur les aspects frontend."
+    ],
+    "answer": "Ils assurent la qualité du code et permettent une maintenance plus facile.",
+    "explanation": "Les tests unitaires jouent un rôle crucial dans le développement backend car ils garantissent que chaque partie du code fonctionne correctement et facilitent les mises à jour futures.",
+    "tags": ["Node.js", "Tests Unitaires", "Qualité du Code"]
+  },
+  {
+    "question": "Quelles bases de données un Développeur Node.js devrait-il maîtriser ?",
+    "options": [
+      "Uniquement les bases de données NoSQL comme MongoDB.",
+      "Uniquement les bases de données SQL comme MySQL ou PostgreSQL.",
+      "Les bases de données SQL (MySQL, PostgreSQL) et NoSQL (MongoDB, Redis).",
+      "Les bases de données frontales."
+    ],
+    "answer": "Les bases de données SQL (MySQL, PostgreSQL) et NoSQL (MongoDB, Redis).",
+    "explanation": "Un Développeur Node.js doit être compétent dans l'intégration et l'optimisation des bases de données SQL (comme MySQL ou PostgreSQL) et NoSQL (comme MongoDB ou Redis) pour assurer des performances optimales.",
+    "tags": ["Node.js", "Bases de Données", "SQL", "NoSQL"]
+  },
+  {
+    "question": "Quel framework Node.js est couramment utilisé pour le développement d'applications backend ?",
+    "options": ["Vue.js", "Express.js", "Angular", "React"],
+    "answer": "Express.js",
+    "explanation": "Express.js est un framework populaire pour le développement d'applications backend avec Node.js, offrant des outils flexibles pour créer des API RESTful et gérer les routes.",
+    "tags": ["Node.js", "Frameworks", "Express.js"]
+  },
+  {
+    "question": "Pourquoi est-il important de suivre les dernières tendances technologiques en tant que Développeur Node.js ?",
+    "options": [
+      "Pour remplacer les systèmes existants par des solutions AI-driven.",
+      "Pour enrichir les projets et processus avec des innovations technologiques.",
+      "Pour se concentrer exclusivement sur les aspects frontend.",
+      "Pour simplifier la gestion des bases de données."
+    ],
+    "answer": "Pour enrichir les projets et processus avec des innovations technologiques.",
+    "explanation": "Suivre les tendances technologiques permet d'améliorer continuellement les projets et processus grâce à l'adoption de nouvelles pratiques et outils.",
+    "tags": ["Node.js", "Tendances Technologiques", "Innovation"]
+  },
+  {
+    "question": "Quelle est la responsabilité d'un Développeur Node.js concernant les problèmes de performance et de sécurité ?",
+    "options": [
+      "Ignorer ces problèmes car ils relèvent du développeur frontend.",
+      "Identifier et résoudre ces problèmes pour garantir une application backend fiable.",
+      "Utiliser uniquement des bibliothèques tierces pour résoudre ces problèmes.",
+      "Se focaliser uniquement sur le développement sans considérer la sécurité."
+    ],
+    "answer": "Identifier et résoudre ces problèmes pour garantir une application backend fiable.",
+    "explanation": "Un Développeur Node.js doit identifier et résoudre efficacement les problèmes liés à la performance, à la sécurité et à la compatibilité pour garantir une application backend stable et sécurisée.",
+    "tags": ["Node.js", "Performance", "Sécurité"]
+  },
+  {
+    "question": "Quelle est l'utilité des outils DevOps pour un Développeur Node.js ?",
+    "options": [
+      "Ils permettent de remplacer les tests unitaires.",
+      "Ils automatisent le déploiement et la mise en production des applications.",
+      "Ils se concentrent uniquement sur le développement frontend.",
+      "Ils éliminent la nécessité de collaborer avec des équipes multidisciplinaires."
+    ],
+    "answer": "Ils automatisent le déploiement et la mise en production des applications.",
+    "explanation": "Les outils DevOps tels que Docker, Kubernetes et CI/CD pipelines aident à automatiser le déploiement, la mise en production et la maintenance des applications Node.js.",
+    "tags": ["Node.js", "DevOps", "Automatisation"]
+  },
+  {
+    "question": "Quelle méthode un Développeur Node.js peut-il utiliser pour authentifier les utilisateurs ?",
+    "options": [
+      "OAuth et JWT.",
+      "Uniquement les cookies HTTP.",
+      "Les systèmes de fichiers locaux.",
+      "Les protocoles obsolètes comme Basic Auth."
+    ],
+    "answer": "OAuth et JWT.",
+    "explanation": "Les outils comme OAuth et JWT sont largement adoptés pour gérer l'authentification et la sécurité des utilisateurs dans les applications Node.js.",
+    "tags": ["Node.js", "Authentification", "OAuth", "JWT"]
+  },
+  {
+    "question": "Quelle est la signification du workflow Agile/Scrum dans le contexte d'un Développeur Node.js ?",
+    "options": [
+      "Il remplace les bonnes pratiques de codage.",
+      "Il facilite le travail en équipe et l'adaptation rapide aux changements.",
+      "Il élimine la nécessité de collaboration avec d'autres équipes.",
+      "Il se concentre uniquement sur le développement frontend."
+    ],
+    "answer": "Il facilite le travail en équipe et l'adaptation rapide aux changements.",
+    "explanation": "Le workflow Agile/Scrum encourage une collaboration fluide entre les membres de l'équipe et permet des itérations rapides pour répondre aux besoins changeants des utilisateurs et clients.",
+    "tags": ["Node.js", "Agile/Scrum", "Collaboration"]
+  },
+  {
+    "question": "Quelle est l'importance de la documentation dans le travail d'un Développeur Node.js ?",
+    "options": [
+      "Elle n'est pas importante dans le développement backend.",
+      "Elle garantit une compréhension claire des API et des modules pour les autres développeurs et parties prenantes.",
+      "Elle remplace les tests unitaires dans le cycle de développement.",
+      "Elle se concentre uniquement sur les aspects frontend."
+    ],
+    "answer": "Elle garantit une compréhension claire des API et des modules pour les autres développeurs et parties prenantes.",
+    "explanation": "La documentation est essentielle pour expliquer le fonctionnement des API et des modules backend, facilitant ainsi leur utilisation par d'autres développeurs et équipes.",
+    "tags": ["Node.js", "Documentation", "Clarté"]
+  },
+  {
+    "question": "Quelle est la durée minimale d'expérience requise pour ce poste de Développeur Node.js ?",
+    "options": [
+      "Aucune expérience n'est nécessaire.",
+      "Au moins 2-3 ans d'expérience en développement backend avec Node.js.",
+      "Au moins 5 ans d'expérience en développement frontend.",
+      "L'expérience n'est pas pertinente pour ce poste."
+    ],
+    "answer": "Au moins 2-3 ans d'expérience en développement backend avec Node.js.",
+    "explanation": "Le profil recherché pour ce poste exige une solide expérience en développement backend avec Node.js, généralement d'au moins 2-3 ans.",
+    "tags": ["Node.js", "Expérience", "Profil Recherché"]
+  },
+  {
+    "question": "Quelle est la responsabilité d'un Développeur Node.js vis-à-vis de l'intégration frontend ?",
+    "options": [
+      "Ignorer complètement l'intégration frontend.",
+      "Collaborer avec les équipes frontend pour garantir une intégration fluide entre les interfaces utilisateur et le backend.",
+      "Développer uniquement des interfaces utilisateur sans interaction avec le backend.",
+      "Focaliser uniquement sur le développement de bases de données."
+    ],
+    "answer": "Collaborer avec les équipes frontend pour garantir une intégration fluide entre les interfaces utilisateur et le backend.",
+    "explanation": "Un Développeur Node.js doit travailler en étroite collaboration avec les équipes frontend pour garantir une intégration harmonieuse entre les interfaces utilisateur et le backend.",
+    "tags": ["Node.js", "Frontend", "Intégration"]
+  },
+  {
+    "question": "Quelle est la définition d'une API RESTful dans le cadre du développement Node.js ?",
+    "options": [
+      "Une interface utilisateur graphique pour les applications web.",
+      "Un ensemble d'outils pour gérer les bases de données NoSQL.",
+      "Un système permettant de communiquer entre des applications via des requêtes HTTP.",
+      "Un protocole de communication frontal uniquement."
+    ],
+    "answer": "Un système permettant de communiquer entre des applications via des requêtes HTTP.",
+    "explanation": "Les API RESTful permettent aux applications de communiquer via des requêtes HTTP standardisées, facilitant ainsi l'échange de données entre différents systèmes.",
+    "tags": ["Node.js", "API RESTful", "Communication"]
+  },
+  {
+    "question": "Quelle est l'importance du versionnement de code (Git) dans le travail d'un Développeur Node.js ?",
+    "options": [
+      "Il est inutile pour le développement backend.",
+      "Il permet de suivre et de gérer les modifications apportées au code source.",
+      "Il remplace les bases de données dans le développement Node.js.",
+      "Il se concentre uniquement sur les aspects frontend."
+    ],
+    "answer": "Il permet de suivre et de gérer les modifications apportées au code source.",
+    "explanation": "Le versionnement de code avec Git est crucial pour suivre les changements, collaborer avec des équipes multidisciplinaires et maintenir une trace des évolutions du projet.",
+    "tags": ["Node.js", "Git", "Versionnement"]
+  },
+  {
+    "question": "Quelle est la différence entre OAuth et JWT dans le contexte de l'authentification ?",
+    "options": [
+      "OAuth est un protocole d'authentification, tandis que JWT est un format de token pour transmettre des informations sécurisées.",
+      "JWT remplace complètement OAuth dans toutes les situations.",
+      "OAuth et JWT se concentrent uniquement sur le développement frontend.",
+      "Il n'y a aucune différence entre OAuth et JWT."
+    ],
+    "answer": "OAuth est un protocole d'authentification, tandis que JWT est un format de token pour transmettre des informations sécurisées.",
+    "explanation": "OAuth est un protocole qui permet l'autorisation déléguée, tandis que JWT (JSON Web Token) est un format de token compact et sécurisé pour transmettre des informations entre parties.",
+    "tags": ["Node.js", "Authentification", "OAuth", "JWT"]
+  },
+  {
+    "question": "Quelle est la raison principale d'utiliser Docker dans le développement Node.js ?",
+    "options": [
+      "Pour remplacer les bases de données.",
+      "Pour encapsuler l'application et ses dépendances dans un conteneur reproductible.",
+      "Pour se concentrer uniquement sur le développement frontend.",
+      "Pour éliminer la nécessité de tests unitaires."
+    ],
+    "answer": "Pour encapsuler l'application et ses dépendances dans un conteneur reproductible.",
+    "explanation": "Docker permet d'encapsuler une application Node.js et ses dépendances dans un conteneur isolé, facilitant ainsi le déploiement et la reproduction de l'environnement.",
+    "tags": ["Node.js", "Docker", "Conteneurisation"]
+  },
+  {
+    "question": "Quelle est la responsabilité d'un Développeur Node.js concernant les analyses des besoins techniques et fonctionnels ?",
+    "options": [
+      "Ignorer les besoins des utilisateurs finaux.",
+      "Participer activement à l'analyse pour proposer des solutions adaptées.",
+      "Laisser cette analyse aux équipes frontend uniquement.",
+      "Se limiter à l'utilisation de bibliothèques tierces sans comprendre les besoins."
+    ],
+    "answer": "Participer activement à l'analyse pour proposer des solutions adaptées.",
+    "explanation": "Un Développeur Node.js doit participer à l'analyse des besoins techniques et fonctionnels pour proposer des solutions backend pertinentes et efficaces.",
+    "tags": ["Node.js", "Analyse des Besoins", "Solutions Adaptées"]
+  },
+  {
+    "question": "Quelle est l'utilité des route guards dans le développement Node.js ?",
+    "options": [
+      "Pour contrôler l'accès aux routes basé sur des conditions comme l'authentification.",
+      "Pour remplacer les bases de données relationnelles.",
+      "Pour se concentrer uniquement sur les aspects frontend.",
+      "Pour ignorer les bonnes pratiques de codage."
+    ],
+    "answer": "Pour contrôler l'accès aux routes basé sur des conditions comme l'authentification.",
+    "explanation": "Les route guards permettent de contrôler l'accès aux différentes routes d'une application, souvent en vérifiant l'authentification ou les autorisations de l'utilisateur.",
+    "tags": ["Node.js", "Route Guards", "Authentification"]
+  },
+  {
+    "question": "Quelle est la finalité de l'intégration continue (CI) dans le développement Node.js ?",
+    "options": [
+      "Ignorer les tests et la maintenance du code.",
+      "Automatiser les tests et les déploiements pour garantir la qualité du code.",
+      "Se focaliser uniquement sur le développement frontend.",
+      "Remplacer les outils traditionnels de gestion de base de données."
+    ],
+    "answer": "Automatiser les tests et les déploiements pour garantir la qualité du code.",
+    "explanation": "L'intégration continue (CI) permet d'automatiser les tests et les processus de build/deployment, garantissant ainsi une livraison constante et de qualité du code backend.",
+    "tags": ["Node.js", "Intégration Continue", "Automatisation"]
+  },
+  {
+    "question": "What is JWT (JSON Web Token)?",
+    "options": [
+      "A protocol for secure communication between services",
+      "An encrypted file format for storing sensitive data",
+      "A compact, URL-safe means of representing claims to be transferred between two parties",
+      "A database management system"
+    ],
+    "answer": "A compact, URL-safe means of representing claims to be transferred between two parties",
+    "explanation": "JWT (JSON Web Token) is a compact, URL-safe mechanism for transmitting information between parties as a JSON object, commonly used for authentication and information exchange.",
+    "tags": ["JWT", "Definition", "Authentication"]
+  },
+  {
+    "question": "Which of the following best describes the structure of a JWT?",
+    "options": [
+      "Header, Payload, and Signature",
+      "Only Header and Payload",
+      "Database Query and Response",
+      "Encrypted Key and Value Pair"
+    ],
+    "answer": "Header, Payload, and Signature",
+    "explanation": "A JWT consists of three parts: Header (metadata), Payload (claims/data), and Signature (for verification). These parts are separated by dots (`.`) and are Base64-encoded.",
+    "tags": ["JWT", "Structure", "Parts"]
+  },
+  {
+    "question": "What is the primary use case of JWT in web applications?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To facilitate user authentication and authorization",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To facilitate user authentication and authorization",
+    "explanation": "JWT is widely used for user authentication and authorization in web applications, allowing clients to securely transmit their identity and permissions across networks.",
+    "tags": ["JWT", "Use Cases", "Authentication"]
+  },
+  {
+    "question": "What is OAuth?",
+    "options": [
+      "A database management system",
+      "A protocol for secure communication between services",
+      "A framework for building user interfaces",
+      "An open standard for authorization that allows third-party access to resources without sharing credentials"
+    ],
+    "answer": "An open standard for authorization that allows third-party access to resources without sharing credentials",
+    "explanation": "OAuth is an open-standard authorization protocol that enables third-party services to access resources on behalf of users without requiring them to share their credentials.",
+    "tags": ["OAuth", "Definition", "Authorization"]
+  },
+  {
+    "question": "Which of the following best describes the difference between JWT and OAuth?",
+    "options": [
+      "JWT is a token format, while OAuth is an authorization framework that can use JWT tokens",
+      "There is no difference; both serve the same purpose",
+      "OAuth replaces traditional APIs, while JWT manages front-end state",
+      "JWT focuses exclusively on backend development, while OAuth focuses on frontend"
+    ],
+    "answer": "JWT is a token format, while OAuth is an authorization framework that can use JWT tokens",
+    "explanation": "JWT is a specific token format used for transferring claims, whereas OAuth is a broader authorization framework that often uses JWT tokens for secure access to resources.",
+    "tags": ["JWT", "OAuth", "Comparison"]
+  },
+  {
+    "question": "Which component of OAuth allows users to delegate access to their resources?",
+    "options": [
+      "Access Token",
+      "Authorization Server",
+      "Resource Owner",
+      "Client Application"
+    ],
+    "answer": "Access Token",
+    "explanation": "In OAuth, the Access Token is issued to the client application after successful authentication, allowing it to access protected resources on behalf of the user (Resource Owner).",
+    "tags": ["OAuth", "Access Token", "Delegation"]
+  },
+  {
+    "question": "What is the role of the Authorization Server in OAuth?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To issue access tokens after verifying the user's credentials",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To issue access tokens after verifying the user's credentials",
+    "explanation": "The Authorization Server in OAuth verifies the user's credentials and issues an Access Token, enabling secure access to resources without exposing sensitive information.",
+    "tags": ["OAuth", "Authorization Server", "Security"]
+  },
+  {
+    "question": "Which claim in a JWT specifies the expiration time of the token?",
+    "options": [
+      "`iat` (issued at)",
+      "`exp` (expiration time)",
+      "`sub` (subject)",
+      "`aud` (audience)"
+    ],
+    "answer": "`exp` (expiration time)",
+    "explanation": "The `exp` (expiration time) claim in a JWT defines when the token becomes invalid, ensuring its limited lifespan and enhancing security.",
+    "tags": ["JWT", "Claims", "Expiration Time"]
+  },
+  {
+    "question": "What is the purpose of the `aud` (audience) claim in a JWT?",
+    "options": [
+      "To specify the intended recipient of the token",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the intended recipient of the token",
+    "explanation": "The `aud` (audience) claim in a JWT identifies the intended recipients of the token, ensuring it is used only by authorized parties.",
+    "tags": ["JWT", "Claims", "Audience"]
+  },
+  {
+    "question": "Which OAuth flow is typically used for server-side applications?",
+    "options": [
+      "Implicit Flow",
+      "Authorization Code Flow",
+      "Password Flow",
+      "Client Credentials Flow"
+    ],
+    "answer": "Authorization Code Flow",
+    "explanation": "The Authorization Code Flow in OAuth is designed for server-side applications, providing enhanced security by exchanging an authorization code for an access token.",
+    "tags": ["OAuth", "Flows", "Authorization Code"]
+  },
+  {
+    "question": "What is the main advantage of using JWT over session-based authentication?",
+    "options": [
+      "JWT eliminates the need for server-side session storage, reducing overhead",
+      "JWT replaces traditional APIs entirely",
+      "JWT manages front-end state exclusively",
+      "JWT focuses solely on hardware optimization"
+    ],
+    "answer": "JWT eliminates the need for server-side session storage, reducing overhead",
+    "explanation": "JWT tokens are self-contained and do not require server-side session storage, making them ideal for stateless authentication and reducing server overhead.",
+    "tags": ["JWT", "Advantages", "Session-Based Auth"]
+  },
+  {
+    "question": "Which OAuth flow is suitable for client-side applications (e.g., SPAs)?",
+    "options": [
+      "Authorization Code Flow",
+      "Implicit Flow",
+      "Password Flow",
+      "Client Credentials Flow"
+    ],
+    "answer": "Implicit Flow",
+    "explanation": "The Implicit Flow in OAuth is designed for client-side applications like SPAs, where the access token is directly returned to the client without an intermediate authorization code.",
+    "tags": ["OAuth", "Flows", "Implicit Flow"]
+  },
+  {
+    "question": "What is the role of the `sub` (subject) claim in a JWT?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To identify the principal subject of the token, such as the user or resource",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To identify the principal subject of the token, such as the user or resource",
+    "explanation": "The `sub` (subject) claim in a JWT identifies the principal subject of the token, typically the user or resource being authenticated.",
+    "tags": ["JWT", "Claims", "Subject"]
+  },
+  {
+    "question": "Which OAuth flow is used for machine-to-machine communication?",
+    "options": [
+      "Implicit Flow",
+      "Authorization Code Flow",
+      "Password Flow",
+      "Client Credentials Flow"
+    ],
+    "answer": "Client Credentials Flow",
+    "explanation": "The Client Credentials Flow in OAuth is specifically designed for machine-to-machine communication, where the client application directly obtains an access token without user involvement.",
+    "tags": ["OAuth", "Flows", "Client Credentials"]
+  },
+  {
+    "question": "What is the main disadvantage of using JWT for large payloads?",
+    "options": [
+      "JWTs become too large and inefficient for transmission",
+      "JWTs replace traditional APIs entirely",
+      "JWTs manage front-end state exclusively",
+      "JWTs focus solely on hardware optimization"
+    ],
+    "answer": "JWTs become too large and inefficient for transmission",
+    "explanation": "If the payload in a JWT is too large, it can increase the token's size, making it less efficient for transmission over HTTP headers or URLs.",
+    "tags": ["JWT", "Disadvantages", "Payload Size"]
+  },
+  {
+    "question": "Which OAuth flow requires the client application to obtain an authorization code before receiving an access token?",
+    "options": [
+      "Implicit Flow",
+      "Authorization Code Flow",
+      "Password Flow",
+      "Client Credentials Flow"
+    ],
+    "answer": "Authorization Code Flow",
+    "explanation": "The Authorization Code Flow in OAuth requires the client application to first obtain an authorization code from the authorization server before exchanging it for an access token.",
+    "tags": ["OAuth", "Flows", "Authorization Code"]
+  },
+  {
+    "question": "What is the role of the `iss` (issuer) claim in a JWT?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To specify the entity that issued the token",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the entity that issued the token",
+    "explanation": "The `iss` (issuer) claim in a JWT identifies the party that issued the token, helping verify its origin and authenticity.",
+    "tags": ["JWT", "Claims", "Issuer"]
+  },
+  {
+    "question": "Which OAuth flow is used for authenticating users with username and password directly?",
+    "options": [
+      "Implicit Flow",
+      "Authorization Code Flow",
+      "Password Flow",
+      "Client Credentials Flow"
+    ],
+    "answer": "Password Flow",
+    "explanation": "The Password Flow in OAuth allows users to authenticate directly using their username and password, though it is less secure and should be used cautiously.",
+    "tags": ["OAuth", "Flows", "Password Flow"]
+  },
+  {
+    "question": "What is the purpose of signing a JWT?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure the integrity and authenticity of the token",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure the integrity and authenticity of the token",
+    "explanation": "Signing a JWT ensures its integrity and authenticity by hashing the Header and Payload with a secret or private key, preventing tampering and unauthorized access.",
+    "tags": ["JWT", "Signing", "Security"]
+  },
+  {
+    "question": "Which of the following is true about OAuth's Refresh Tokens?",
+    "options": [
+      "Refresh Tokens allow obtaining new Access Tokens without re-authenticating the user",
+      "Refresh Tokens replace traditional APIs with AI-driven solutions",
+      "Refresh Tokens manage front-end state exclusively",
+      "Refresh Tokens focus solely on hardware optimization"
+    ],
+    "answer": "Refresh Tokens allow obtaining new Access Tokens without re-authenticating the user",
+    "explanation": "OAuth Refresh Tokens enable clients to obtain new Access Tokens without requiring users to re-authenticate, maintaining long-term access securely.",
+    "tags": ["OAuth", "Refresh Tokens", "Long-Term Access"]
+  },
+  {
+    "question": "Which algorithm is commonly used to sign a JWT?",
+    "options": [
+      "HMAC (Hash-based Message Authentication Code)",
+      "AES (Advanced Encryption Standard)",
+      "RSA (Rivest-Shamir-Adleman)",
+      "Both HMAC and RSA"
+    ],
+    "answer": "Both HMAC and RSA",
+    "explanation": "JWTs can be signed using symmetric algorithms like HMAC or asymmetric algorithms like RSA/ECDSA, depending on the security requirements and use case.",
+    "tags": ["JWT", "Signing Algorithms", "HMAC", "RSA"]
+  },
+  {
+    "question": "What is the main benefit of using OAuth over basic authentication?",
+    "options": [
+      "OAuth eliminates the need for encryption",
+      "OAuth provides a secure way to delegate access without exposing credentials",
+      "OAuth manages front-end state exclusively",
+      "OAuth focuses solely on IoT development"
+    ],
+    "answer": "OAuth provides a secure way to delegate access without exposing credentials",
+    "explanation": "OAuth allows secure delegation of access to resources without requiring users to expose their credentials, improving security and flexibility.",
+    "tags": ["OAuth", "Advantages", "Basic Auth"]
+  },
+  {
+    "question": "Which of the following is true about JWT's immutability?",
+    "options": [
+      "JWTs cannot be altered once signed without invalidating the signature",
+      "JWTs replace traditional APIs with AI-driven solutions",
+      "JWTs manage front-end state exclusively",
+      "JWTs focus solely on hardware optimization"
+    ],
+    "answer": "JWTs cannot be altered once signed without invalidating the signature",
+    "explanation": "Once signed, any alteration to a JWT's Header or Payload will invalidate its signature, ensuring the token's immutability and integrity.",
+    "tags": ["JWT", "Immutability", "Security"]
+  },
+  {
+    "question": "What is the role of Route Guards in Angular, and how does it relate to OAuth?",
+    "options": [
+      "Route Guards protect routes in Angular, often using OAuth tokens to verify user access",
+      "Route Guards replace traditional APIs with AI-driven solutions",
+      "Route Guards manage front-end state exclusively",
+      "Route Guards focus solely on hardware optimization"
+    ],
+    "answer": "Route Guards protect routes in Angular, often using OAuth tokens to verify user access",
+    "explanation": "In Angular, Route Guards control access to routes, often leveraging OAuth tokens to verify user permissions and ensure secure navigation.",
+    "tags": ["Angular", "OAuth", "Route Guards", "Security"]
+  },
+  {
+    "question": "Which of the following is a common application of JWT?",
+    "options": [
+      "Securing API endpoints with token-based authentication",
+      "Replacing traditional APIs with AI-driven solutions",
+      "Managing front-end state exclusively",
+      "Focusing solely on hardware optimization"
+    ],
+    "answer": "Securing API endpoints with token-based authentication",
+    "explanation": "JWT is commonly used for securing API endpoints by implementing token-based authentication, ensuring secure and stateless communication between clients and servers.",
+    "tags": ["JWT", "Applications", "API Security"]
+  },
+  {
+    "question": "Which OAuth flow is suitable for confidential clients with secure storage capabilities?",
+    "options": [
+      "Implicit Flow",
+      "Authorization Code Flow",
+      "Password Flow",
+      "Client Credentials Flow"
+    ],
+    "answer": "Authorization Code Flow",
+    "explanation": "The Authorization Code Flow in OAuth is ideal for confidential clients with secure storage capabilities, as it avoids exposing access tokens directly to the client.",
+    "tags": ["OAuth", "Flows", "Confidential Clients"]
+  },
+  {
+    "question": "What is the purpose of the `jti` (JWT ID) claim in a JWT?",
+    "options": [
+      "To uniquely identify the token for tracking purposes",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To uniquely identify the token for tracking purposes",
+    "explanation": "The `jti` (JWT ID) claim provides a unique identifier for the token, useful for tracking and revocation purposes.",
+    "tags": ["JWT", "Claims", "JWT ID"]
+  },
+  {
+    "question": "Which of the following is true about combining JWT and OAuth?",
+    "options": [
+      "JWT tokens can be used as Access Tokens in OAuth flows",
+      "OAuth eliminates the need for JWT entirely",
+      "JWT replaces traditional APIs with AI-driven solutions",
+      "OAuth focuses exclusively on frontend development"
+    ],
+    "answer": "JWT tokens can be used as Access Tokens in OAuth flows",
+    "explanation": "JWT tokens are often used as Access Tokens in OAuth flows, providing a compact and secure way to transmit user information and permissions.",
+    "tags": ["JWT", "OAuth", "Combination"]
+  },
+  {
+    "question": "What is NestJS?",
+    "options": [
+      "A front-end framework for building user interfaces",
+      "A protocol for secure communication between services",
+      "A progressive Node.js framework for building efficient, scalable server-side applications",
+      "A database management system"
+    ],
+    "answer": "A progressive Node.js framework for building efficient, scalable server-side applications",
+    "explanation": "NestJS is a Node.js framework that uses modern JavaScript features and design patterns to build efficient, scalable, and maintainable server-side applications.",
+    "tags": ["NestJS", "Definition", "Node.js Framework"]
+  },
+  {
+    "question": "Which architectural pattern does NestJS follow?",
+    "options": [
+      "Monolithic architecture",
+      "Microservices architecture",
+      "MVC (Model-View-Controller) architecture",
+      "Layered architecture"
+    ],
+    "answer": "MVC (Model-View-Controller) architecture",
+    "explanation": "NestJS follows the MVC architectural pattern, organizing code into models, controllers, and services to promote separation of concerns and modularity.",
+    "tags": ["NestJS", "Architecture", "MVC"]
+  },
+  {
+    "question": "What is the role of the `@Module` decorator in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define metadata about a module, such as its components, imports, and providers",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define metadata about a module, such as its components, imports, and providers",
+    "explanation": "The `@Module` decorator in NestJS defines metadata for a module, specifying its controllers, providers, imports, and exports, enabling modular application design.",
+    "tags": ["NestJS", "Modules", "@Module Decorator"]
+  },
+  {
+    "question": "Which of the following best describes the purpose of controllers in NestJS?",
+    "options": [
+      "To handle business logic and shared data between components",
+      "To manage database connections securely",
+      "To handle incoming HTTP requests and return responses",
+      "To replace traditional APIs entirely"
+    ],
+    "answer": "To handle incoming HTTP requests and return responses",
+    "explanation": "Controllers in NestJS are responsible for handling incoming HTTP requests, processing them, and returning appropriate responses using route handlers.",
+    "tags": ["NestJS", "Controllers", "HTTP Requests"]
+  },
+  {
+    "question": "What is the role of providers (services) in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To encapsulate business logic and provide reusable functionality across the application",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To encapsulate business logic and provide reusable functionality across the application",
+    "explanation": "Providers (or services) in NestJS encapsulate business logic, making it reusable and testable. They can be injected into controllers or other services using Dependency Injection.",
+    "tags": ["NestJS", "Providers", "Services"]
+  },
+  {
+    "question": "How does NestJS implement dependency injection?",
+    "options": [
+      "Using the `@Injectable` decorator to mark classes as injectable",
+      "By replacing traditional APIs with AI-driven solutions",
+      "By managing front-end state exclusively",
+      "By focusing solely on hardware optimization"
+    ],
+    "answer": "Using the `@Injectable` decorator to mark classes as injectable",
+    "explanation": "NestJS implements dependency injection by marking classes with the `@Injectable` decorator, allowing them to be injected into controllers or other services via Angular's DI system.",
+    "tags": ["NestJS", "Dependency Injection", "@Injectable"]
+  },
+  {
+    "question": "Which NestJS feature simplifies the creation of RESTful APIs?",
+    "options": [
+      "Routing decorators like `@Get`, `@Post`, etc.",
+      "Database migrations",
+      "Frontend component generation",
+      "Hardware encryption"
+    ],
+    "answer": "Routing decorators like `@Get`, `@Post`, etc.",
+    "explanation": "NestJS provides routing decorators (`@Get`, `@Post`, etc.) that simplify the creation of RESTful APIs by defining endpoints and their associated logic.",
+    "tags": ["NestJS", "RESTful APIs", "Routing Decorators"]
+  },
+  {
+    "question": "What is the purpose of the `@Injectable()` decorator in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To mark a class as available for dependency injection",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To mark a class as available for dependency injection",
+    "explanation": "The `@Injectable()` decorator in NestJS marks a class as available for dependency injection, ensuring it can be used across the application as a singleton or scoped service.",
+    "tags": ["NestJS", "Dependency Injection", "@Injectable"]
+  },
+  {
+    "question": "Which NestJS module is commonly used for handling HTTP requests?",
+    "options": ["CoreModule", "SharedModule", "HttpModule", "DatabaseModule"],
+    "answer": "HttpModule",
+    "explanation": "The `HttpModule` in NestJS provides tools for making HTTP requests to external services or APIs, often used in conjunction with services for data fetching.",
+    "tags": ["NestJS", "HttpModule", "HTTP Requests"]
+  },
+  {
+    "question": "What is the main advantage of using NestJS over plain Express.js?",
+    "options": [
+      "NestJS eliminates the need for backend development",
+      "NestJS offers a more structured and modular architecture with built-in support for DI and middleware",
+      "NestJS focuses exclusively on frontend development",
+      "NestJS replaces traditional APIs entirely"
+    ],
+    "answer": "NestJS offers a more structured and modular architecture with built-in support for DI and middleware",
+    "explanation": "NestJS provides a structured and modular architecture, leveraging dependency injection and middleware out of the box, which enhances scalability and maintainability compared to plain Express.js.",
+    "tags": ["NestJS", "Advantages", "Express.js Comparison"]
+  },
+  {
+    "question": "Which of the following is true about NestJS's support for microservices?",
+    "options": [
+      "NestJS supports only RESTful APIs and cannot be used for microservices",
+      "NestJS provides robust support for microservices through modules like `ClientsModule` and `MicroservicesModule`",
+      "NestJS focuses exclusively on frontend development",
+      "NestJS replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "NestJS provides robust support for microservices through modules like `ClientsModule` and `MicroservicesModule`",
+    "explanation": "NestJS includes built-in support for microservices, allowing developers to create distributed systems using message-based communication through modules like `ClientsModule` and `MicroservicesModule`.",
+    "tags": ["NestJS", "Microservices", "Support"]
+  },
+  {
+    "question": "What is the role of guards in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To control access to routes or methods based on conditions like authentication",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To control access to routes or methods based on conditions like authentication",
+    "explanation": "Guards in NestJS allow you to control access to routes or methods, often used for implementing authentication or authorization mechanisms.",
+    "tags": ["NestJS", "Guards", "Access Control"]
+  },
+  {
+    "question": "Which NestJS feature allows you to validate incoming request data?",
+    "options": [
+      "Validation pipes",
+      "Database constraints",
+      "Frontend form validation",
+      "Hardware encryption"
+    ],
+    "answer": "Validation pipes",
+    "explanation": "NestJS provides validation pipes that automatically validate incoming request data against predefined schemas, ensuring data integrity and security.",
+    "tags": ["NestJS", "Validation Pipes", "Data Validation"]
+  },
+  {
+    "question": "What is the purpose of interceptors in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To intercept and modify incoming and outgoing requests or responses",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To intercept and modify incoming and outgoing requests or responses",
+    "explanation": "Interceptors in NestJS allow you to intercept and modify requests or responses, enabling cross-cutting concerns like logging, caching, or transformation of data.",
+    "tags": ["NestJS", "Interceptors", "Request/Response Modification"]
+  },
+  {
+    "question": "Which NestJS module is used for connecting to databases?",
+    "options": [
+      "DatabaseModule",
+      "TypeOrmModule",
+      "HttpClientModule",
+      "FrontendModule"
+    ],
+    "answer": "TypeOrmModule",
+    "explanation": "The `TypeOrmModule` in NestJS simplifies database connections and ORM integration, supporting relational and NoSQL databases.",
+    "tags": ["NestJS", "TypeOrmModule", "Database Integration"]
+  },
+  {
+    "question": "What is the role of the `@nestjs/common` package in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide common utilities like decorators, pipes, and guards",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide common utilities like decorators, pipes, and guards",
+    "explanation": "The `@nestjs/common` package provides essential utilities like decorators (`@Injectable`, `@Controller`), pipes, guards, and exception filters, forming the foundation of NestJS applications.",
+    "tags": ["NestJS", "@nestjs/common", "Utilities"]
+  },
+  {
+    "question": "Which of the following is true about NestJS's hierarchical module system?",
+    "options": [
+      "Modules cannot share providers or services",
+      "Modules can import and export providers, promoting reusability and modularity",
+      "Modules replace traditional APIs entirely",
+      "Modules focus exclusively on frontend development"
+    ],
+    "answer": "Modules can import and export providers, promoting reusability and modularity",
+    "explanation": "NestJS's hierarchical module system allows modules to import and export providers, promoting code reuse, modularity, and clean architecture.",
+    "tags": ["NestJS", "Modules", "Modularity"]
+  },
+  {
+    "question": "What is the purpose of the `@nestjs/config` module in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage configuration settings and environment variables seamlessly",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage configuration settings and environment variables seamlessly",
+    "explanation": "The `@nestjs/config` module in NestJS simplifies the management of configuration settings and environment variables, ensuring consistency across environments.",
+    "tags": ["NestJS", "@nestjs/config", "Configuration Management"]
+  },
+  {
+    "question": "Which of the following is a key feature of NestJS's exception handling mechanism?",
+    "options": [
+      "Exceptions must be handled manually in every controller",
+      "Exception filters centralize error handling logic, improving maintainability",
+      "Exceptions focus exclusively on frontend development",
+      "Exceptions replace traditional APIs entirely"
+    ],
+    "answer": "Exception filters centralize error handling logic, improving maintainability",
+    "explanation": "NestJS's exception handling mechanism uses exception filters to centralize error handling logic, reducing boilerplate code and improving maintainability.",
+    "tags": ["NestJS", "Exception Handling", "Error Management"]
+  },
+  {
+    "question": "Which NestJS feature enables global state management?",
+    "options": [
+      "Stateful controllers",
+      "Global services using dependency injection",
+      "Frontend context management",
+      "Hardware encryption"
+    ],
+    "answer": "Global services using dependency injection",
+    "explanation": "NestJS leverages dependency injection to enable global state management by providing singleton services that can be shared across the application.",
+    "tags": ["NestJS", "Global State", "Dependency Injection"]
+  },
+  {
+    "question": "What is the role of the `@nestjs/swagger` package in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To generate API documentation automatically using Swagger/OpenAPI",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To generate API documentation automatically using Swagger/OpenAPI",
+    "explanation": "The `@nestjs/swagger` package in NestJS integrates Swagger/OpenAPI for generating API documentation automatically, enhancing developer experience and API usability.",
+    "tags": ["NestJS", "@nestjs/swagger", "API Documentation"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between controllers and services in NestJS?",
+    "options": [
+      "Controllers and services serve the same purpose in NestJS",
+      "Controllers handle HTTP requests, while services encapsulate business logic and shared functionality",
+      "Controllers replace the need for services entirely",
+      "Services manage front-end state exclusively"
+    ],
+    "answer": "Controllers handle HTTP requests, while services encapsulate business logic and shared functionality",
+    "explanation": "In NestJS, controllers handle HTTP requests and responses, while services encapsulate business logic and shared functionality, promoting separation of concerns.",
+    "tags": ["NestJS", "Controllers vs Services", "Separation of Concerns"]
+  },
+  {
+    "question": "What is the purpose of pipes in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To transform and validate incoming request data before it reaches the controller",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To transform and validate incoming request data before it reaches the controller",
+    "explanation": "Pipes in NestJS transform and validate incoming request data, ensuring it meets predefined criteria before being processed by the controller.",
+    "tags": ["NestJS", "Pipes", "Data Transformation"]
+  },
+  {
+    "question": "Which NestJS feature facilitates event-driven architectures?",
+    "options": [
+      "WebSocket gateway support",
+      "Database query optimization",
+      "Frontend lifecycle hooks",
+      "Hardware encryption"
+    ],
+    "answer": "WebSocket gateway support",
+    "explanation": "NestJS provides WebSocket gateway support, enabling real-time, event-driven communication between clients and servers.",
+    "tags": ["NestJS", "WebSocket Gateway", "Event-Driven Architecture"]
+  },
+  {
+    "question": "What is the role of the `@nestjs/platform-express` package in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To integrate Express.js functionalities into a NestJS application",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To integrate Express.js functionalities into a NestJS application",
+    "explanation": "The `@nestjs/platform-express` package integrates Express.js functionalities into NestJS, allowing developers to leverage existing middleware and plugins.",
+    "tags": ["NestJS", "@nestjs/platform-express", "Express Integration"]
+  },
+  {
+    "question": "Which of the following is true about NestJS's testing capabilities?",
+    "options": [
+      "Testing is not supported in NestJS",
+      "NestJS provides built-in tools for unit and integration testing, including mocking dependencies",
+      "Testing focuses exclusively on frontend development",
+      "Testing replaces traditional APIs entirely"
+    ],
+    "answer": "NestJS provides built-in tools for unit and integration testing, including mocking dependencies",
+    "explanation": "NestJS includes robust testing tools that facilitate unit and integration testing, with support for mocking dependencies and testing individual components or modules.",
+    "tags": ["NestJS", "Testing", "Unit Testing"]
+  },
+  {
+    "question": "What is the purpose of the `@nestjs/microservices` module in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To enable the creation of microservices with message-based communication",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To enable the creation of microservices with message-based communication",
+    "explanation": "The `@nestjs/microservices` module in NestJS allows developers to create microservices with message-based communication, facilitating distributed system development.",
+    "tags": ["NestJS", "@nestjs/microservices", "Microservices"]
+  },
+  {
+    "question": "Which of the following is true about NestJS's use of TypeScript?",
+    "options": [
+      "TypeScript is optional and can be replaced with Python",
+      "NestJS fully utilizes TypeScript's static typing and advanced features, improving code quality and maintainability",
+      "TypeScript is irrelevant to backend development",
+      "TypeScript replaces traditional APIs entirely"
+    ],
+    "answer": "NestJS fully utilizes TypeScript's static typing and advanced features, improving code quality and maintainability",
+    "explanation": "NestJS leverages TypeScript's static typing and advanced features, enhancing code quality, readability, and maintainability.",
+    "tags": ["NestJS", "TypeScript", "Static Typing"]
+  },
+  {
+    "question": "What is the role of the `app.module.ts` file in a NestJS application?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define the root module and configure the application's core functionality",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define the root module and configure the application's core functionality",
+    "explanation": "The `app.module.ts` file in NestJS defines the root module, configuring the application's core functionality and importing necessary modules.",
+    "tags": ["NestJS", "Root Module", "AppModule"]
+  },
+  {
+    "question": "Which of the following is true about NestJS's support for asynchronous operations?",
+    "options": [
+      "Asynchronous operations are not supported in NestJS",
+      "NestJS supports asynchronous operations natively using Promises or Observables",
+      "Asynchronous operations focus exclusively on frontend development",
+      "Asynchronous operations replace traditional APIs entirely"
+    ],
+    "answer": "NestJS supports asynchronous operations natively using Promises or Observables",
+    "explanation": "NestJS natively supports asynchronous operations using Promises or Observables, making it ideal for handling non-blocking tasks like database queries or API calls.",
+    "tags": ["NestJS", "Asynchronous Operations", "Promises/Observables"]
+  },
+  {
+    "question": "What is the purpose of the `@nestjs/common/HttpModule` in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To make HTTP requests to external services or APIs",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To make HTTP requests to external services or APIs",
+    "explanation": "The `@nestjs/common/HttpModule` in NestJS simplifies making HTTP requests to external services or APIs, integrating seamlessly with services for data fetching.",
+    "tags": ["NestJS", "HttpModule", "External APIs"]
+  },
+  {
+    "question": "Which of the following is true about NestJS's support for GraphQL?",
+    "options": [
+      "GraphQL is not supported in NestJS",
+      "NestJS provides built-in support for GraphQL through the `@nestjs/graphql` package",
+      "GraphQL focuses exclusively on frontend development",
+      "GraphQL replaces traditional APIs entirely"
+    ],
+    "answer": "NestJS provides built-in support for GraphQL through the `@nestjs/graphql` package",
+    "explanation": "NestJS supports GraphQL through the `@nestjs/graphql` package, allowing developers to define resolvers and schemas easily for building GraphQL-based APIs.",
+    "tags": ["NestJS", "GraphQL", "Support"]
+  },
+  {
+    "question": "Which design pattern is primarily used in Angular to manage dependencies between components and services?",
+    "options": [
+      "Singleton Pattern",
+      "Observer Pattern",
+      "Factory Pattern",
+      "Dependency Injection Pattern"
+    ],
+    "answer": "Dependency Injection Pattern",
+    "explanation": "Angular heavily relies on the Dependency Injection (DI) pattern to provide components and services with their required dependencies, promoting modularity and testability.",
+    "tags": ["Angular", "Design Patterns", "Dependency Injection"]
+  },
+  {
+    "question": "What design pattern does React use to manage state and behavior in functional components?",
+    "options": [
+      "Command Pattern",
+      "Decorator Pattern",
+      "Hooks Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Hooks Pattern",
+    "explanation": "React introduced Hooks in version 16.8, allowing functional components to manage state and side effects, thus implementing a variation of the Hooks pattern.",
+    "tags": ["React", "Design Patterns", "Hooks"]
+  },
+  {
+    "question": "Which design pattern is commonly used in Node.js to handle asynchronous operations?",
+    "options": [
+      "EventEmitter Pattern",
+      "Observer Pattern",
+      "Factory Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "EventEmitter Pattern",
+    "explanation": "Node.js frequently uses the EventEmitter pattern, where events are emitted and listened to by various parts of the application, enabling efficient handling of asynchronous tasks.",
+    "tags": ["Node.js", "Design Patterns", "EventEmitter"]
+  },
+  {
+    "question": "In Express.js, which design pattern is used to structure middleware and route handlers?",
+    "options": [
+      "Chain of Responsibility Pattern",
+      "Strategy Pattern",
+      "Pipeline Pattern",
+      "Template Method Pattern"
+    ],
+    "answer": "Pipeline Pattern",
+    "explanation": "Express.js follows the Pipeline pattern, where middleware and route handlers are structured as a series of steps that process incoming requests and outgoing responses sequentially.",
+    "tags": ["Express.js", "Design Patterns", "Pipeline"]
+  },
+  {
+    "question": "Which design pattern does NestJS use to organize its architecture into reusable units of functionality?",
+    "options": [
+      "Module Pattern",
+      "Factory Pattern",
+      "Builder Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Module Pattern",
+    "explanation": "NestJS implements the Module pattern, grouping components, controllers, services, and providers into cohesive units of functionality using the `@Module` decorator.",
+    "tags": ["NestJS", "Design Patterns", "Module Pattern"]
+  },
+  {
+    "question": "What design pattern is used in Angular's `@Input` and `@Output` decorators for component communication?",
+    "options": [
+      "Observer Pattern",
+      "Mediator Pattern",
+      "State Pattern",
+      "Decorator Pattern"
+    ],
+    "answer": "Observer Pattern",
+    "explanation": "Angular's `@Input` and `@Output` decorators implement the Observer pattern, allowing parent and child components to communicate via event emissions and property bindings.",
+    "tags": ["Angular", "Design Patterns", "Observer Pattern"]
+  },
+  {
+    "question": "Which design pattern is most closely associated with React's Context API for state management?",
+    "options": [
+      "Singleton Pattern",
+      "Provider Pattern",
+      "Factory Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Provider Pattern",
+    "explanation": "React's Context API follows the Provider pattern, enabling global state management by providing shared data to multiple components without prop drilling.",
+    "tags": ["React", "Design Patterns", "Context API", "Provider Pattern"]
+  },
+  {
+    "question": "In Node.js, which design pattern is often used to encapsulate database logic and business rules?",
+    "options": [
+      "Repository Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Command Pattern"
+    ],
+    "answer": "Repository Pattern",
+    "explanation": "The Repository pattern is commonly used in Node.js applications to encapsulate database logic and business rules, making code more modular and testable.",
+    "tags": ["Node.js", "Design Patterns", "Repository Pattern"]
+  },
+  {
+    "question": "Which design pattern does Express.js follow when defining routes with functions like `app.get()` or `app.post()`?",
+    "options": [
+      "Controller Pattern",
+      "Router Pattern",
+      "Strategy Pattern",
+      "Factory Pattern"
+    ],
+    "answer": "Router Pattern",
+    "explanation": "Express.js adheres to the Router pattern, where routes are defined as methods (`app.get()`, `app.post()`) that map HTTP verbs to handler functions.",
+    "tags": ["Express.js", "Design Patterns", "Router Pattern"]
+  },
+  {
+    "question": "What design pattern does NestJS use to define reusable logic for cross-cutting concerns like logging or caching?",
+    "options": [
+      "Interceptor Pattern",
+      "Adapter Pattern",
+      "Decorator Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Interceptor Pattern",
+    "explanation": "NestJS uses the Interceptor pattern to define reusable logic for cross-cutting concerns such as logging, caching, or transforming request/response data.",
+    "tags": ["NestJS", "Design Patterns", "Interceptor Pattern"]
+  },
+  {
+    "question": "Which design pattern is implemented in Angular through its change detection mechanism?",
+    "options": [
+      "Observer Pattern",
+      "Mediator Pattern",
+      "State Pattern",
+      "Iterator Pattern"
+    ],
+    "answer": "Observer Pattern",
+    "explanation": "Angular's change detection mechanism implements the Observer pattern, notifying components of changes in their data model and updating the view accordingly.",
+    "tags": [
+      "Angular",
+      "Design Patterns",
+      "Observer Pattern",
+      "Change Detection"
+    ]
+  },
+  {
+    "question": "In React, which design pattern is used to break down complex UIs into smaller, reusable pieces?",
+    "options": [
+      "Component-Based Pattern",
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Component-Based Pattern",
+    "explanation": "React follows the Component-Based pattern, breaking down complex UIs into smaller, independent, and reusable components.",
+    "tags": ["React", "Design Patterns", "Component-Based Pattern"]
+  },
+  {
+    "question": "Which design pattern is used in Node.js to ensure that only one instance of a class or object exists throughout the application?",
+    "options": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Prototype Pattern",
+      "Builder Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "The Singleton pattern is often used in Node.js to ensure that only one instance of a class or object (e.g., configuration or database connection) exists throughout the application.",
+    "tags": ["Node.js", "Design Patterns", "Singleton Pattern"]
+  },
+  {
+    "question": "What design pattern does Express.js use to separate concerns between routing logic and business logic?",
+    "options": [
+      "Controller Pattern",
+      "MVC (Model-View-Controller) Pattern",
+      "Mediator Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "MVC (Model-View-Controller) Pattern",
+    "explanation": "Express.js loosely follows the MVC pattern, separating routing logic (controller) from business logic (model) and rendering logic (view).",
+    "tags": ["Express.js", "Design Patterns", "MVC Pattern"]
+  },
+  {
+    "question": "Which design pattern does NestJS use to define reusable classes that can be injected into other parts of the application?",
+    "options": [
+      "Factory Pattern",
+      "Service Locator Pattern",
+      "Dependency Injection Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": "Dependency Injection Pattern",
+    "explanation": "NestJS uses the Dependency Injection (DI) pattern to define reusable services or providers that can be injected into components, controllers, or other services.",
+    "tags": ["NestJS", "Design Patterns", "Dependency Injection"]
+  },
+  {
+    "question": "In Angular, which design pattern is implemented through the `ngFor` directive?",
+    "options": [
+      "Iterator Pattern",
+      "Factory Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Iterator Pattern",
+    "explanation": "The `ngFor` directive in Angular implements the Iterator pattern, allowing you to iterate over collections and render items dynamically in the template.",
+    "tags": ["Angular", "Design Patterns", "Iterator Pattern", "ngFor"]
+  },
+  {
+    "question": "Which design pattern is used in React to encapsulate complex logic and share it across components?",
+    "options": [
+      "Custom Hook Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Custom Hook Pattern",
+    "explanation": "React's Custom Hooks allow encapsulating complex logic and sharing it across components, implementing a variation of the Custom Hook pattern for reusability.",
+    "tags": ["React", "Design Patterns", "Custom Hooks"]
+  },
+  {
+    "question": "Which design pattern is commonly used in Node.js to handle file system operations or database queries?",
+    "options": [
+      "Callback Pattern",
+      "Promise Pattern",
+      "Async/Await Pattern",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "Node.js supports the Callback, Promise, and Async/Await patterns for handling asynchronous operations like file system operations or database queries, enhancing flexibility and readability.",
+    "tags": ["Node.js", "Design Patterns", "Asynchronous Patterns"]
+  },
+  {
+    "question": "What design pattern does Express.js use to extend the functionality of the `req` and `res` objects?",
+    "options": [
+      "Middleware Pattern",
+      "Decorator Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Middleware Pattern",
+    "explanation": "Express.js uses the Middleware pattern to extend the functionality of the `req` and `res` objects, enabling custom behavior during request/response processing.",
+    "tags": ["Express.js", "Design Patterns", "Middleware Pattern"]
+  },
+  {
+    "question": "Which design pattern does NestJS use to control access to certain routes or features based on conditions?",
+    "options": [
+      "Guard Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern",
+      "Strategy Pattern"
+    ],
+    "answer": "Guard Pattern",
+    "explanation": "NestJS implements the Guard pattern to control access to routes or features, often used for authentication or authorization checks.",
+    "tags": ["NestJS", "Design Patterns", "Guard Pattern"]
+  },
+  {
+    "question": "In Angular, which design pattern is implemented through the `ngIf` directive?",
+    "options": [
+      "Conditional Rendering Pattern",
+      "Factory Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Conditional Rendering Pattern",
+    "explanation": "The `ngIf` directive in Angular implements the Conditional Rendering pattern, allowing you to conditionally render elements in the DOM based on logic.",
+    "tags": ["Angular", "Design Patterns", "Conditional Rendering", "ngIf"]
+  },
+  {
+    "question": "Which design pattern is used in React to manage side effects in functional components?",
+    "options": [
+      "Effect Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Effect Pattern",
+    "explanation": "React's `useEffect` hook implements the Effect pattern, managing side effects such as data fetching, subscriptions, or manual DOM mutations in functional components.",
+    "tags": ["React", "Design Patterns", "Effect Pattern", "useEffect"]
+  },
+  {
+    "question": "Which design pattern is commonly used in Node.js to handle errors and ensure proper resource cleanup?",
+    "options": [
+      "Error Handling Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Error Handling Pattern",
+    "explanation": "Node.js uses the Error Handling pattern, typically involving try-catch blocks, error-first callbacks, or promises, to handle errors and ensure proper resource cleanup.",
+    "tags": ["Node.js", "Design Patterns", "Error Handling"]
+  },
+  {
+    "question": "What design pattern does Express.js use to structure applications with reusable routes?",
+    "options": [
+      "Router Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Router Pattern",
+    "explanation": "Express.js uses the Router pattern to structure applications with reusable routes, allowing developers to define route handlers in separate modules.",
+    "tags": ["Express.js", "Design Patterns", "Router Pattern"]
+  },
+  {
+    "question": "Which design pattern does NestJS use to define reusable templates for common functionalities?",
+    "options": [
+      "Shared Module Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Shared Module Pattern",
+    "explanation": "NestJS implements the Shared Module pattern by creating modules that contain reusable components, directives, pipes, or services, promoting modularity and reusability.",
+    "tags": ["NestJS", "Design Patterns", "Shared Module Pattern"]
+  },
+  {
+    "question": "In Angular, which design pattern is implemented through the `@Injectable` decorator?",
+    "options": [
+      "Service Locator Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Service Locator Pattern",
+    "explanation": "The `@Injectable` decorator in Angular implements the Service Locator pattern, enabling dependency injection and centralizing service creation.",
+    "tags": ["Angular", "Design Patterns", "Service Locator", "@Injectable"]
+  },
+  {
+    "question": "Which design pattern is used in React to compose higher-order components (HOCs)?",
+    "options": [
+      "Composition Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Composition Pattern",
+    "explanation": "React's higher-order components (HOCs) implement the Composition pattern, allowing you to compose new components by wrapping existing ones with additional functionality.",
+    "tags": ["React", "Design Patterns", "Composition Pattern", "HOCs"]
+  },
+  {
+    "question": "Which design pattern is used in Node.js to handle streams of data efficiently?",
+    "options": [
+      "Stream Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Stream Pattern",
+    "explanation": "Node.js uses the Stream pattern to handle large amounts of data efficiently by processing it in chunks, reducing memory usage and improving performance.",
+    "tags": ["Node.js", "Design Patterns", "Stream Pattern"]
+  },
+  {
+    "question": "What design pattern does Express.js use to separate concerns between route definitions and business logic?",
+    "options": [
+      "Separation of Concerns Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Separation of Concerns Pattern",
+    "explanation": "Express.js promotes the Separation of Concerns pattern by separating route definitions (controllers) from business logic (models), ensuring cleaner and maintainable code.",
+    "tags": ["Express.js", "Design Patterns", "Separation of Concerns"]
+  },
+  {
+    "question": "Which design pattern does NestJS use to encapsulate logic for specific HTTP methods?",
+    "options": [
+      "Controller Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Controller Pattern",
+    "explanation": "NestJS uses the Controller pattern to encapsulate logic for specific HTTP methods, separating concerns and organizing route handlers effectively.",
+    "tags": ["NestJS", "Design Patterns", "Controller Pattern"]
+  },
+  {
+    "question": "In Angular, which design pattern is implemented through the `trackBy` function in `*ngFor`?",
+    "options": [
+      "Optimized Rendering Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Optimized Rendering Pattern",
+    "explanation": "The `trackBy` function in Angular's `*ngFor` implements the Optimized Rendering pattern, ensuring efficient updates to lists by identifying items uniquely.",
+    "tags": ["Angular", "Design Patterns", "Optimized Rendering", "trackBy"]
+  },
+  {
+    "question": "Which design pattern is used in React to manage global state across components?",
+    "options": [
+      "Global State Management Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern",
+      "Proxy Pattern"
+    ],
+    "answer": "Global State Management Pattern",
+    "explanation": "React's global state management libraries (e.g., Redux, MobX) implement the Global State Management pattern, enabling centralized state management across components.",
+    "tags": ["React", "Design Patterns", "Global State Management"]
   }
 ]
