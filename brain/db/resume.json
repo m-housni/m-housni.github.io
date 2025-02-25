@@ -216,6 +216,13 @@
   },
   "projects": [
     {
+      "timestamp": 1039480776,
+      "title": "Users Restfull API built with NestJS",
+      "description": "This is a simple API built with NestJS for managing users.",
+      "link": "https://github.com/m-housni/nest-users-api",
+      "tags": "Node.js, NestJS, RESTful API, TypeScript, CRUD, uuid, Dependency Injection, NestJS Modules, NestJS Services, NestJS Controllers"
+    },
+    {
       "timestamp": 1739480776,
       "title": "Image Processing with Worker Threads",
       "description": "his project demonstrates how to use Node.js Worker Threads to offload CPU-intensive image processing tasks, improving application responsiveness and performance.",
