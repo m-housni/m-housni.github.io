@@ -18646,5 +18646,341 @@
     "answer": "To enforce stricter type-checking rules during compilation",
     "explanation": "The `--strict` flag in TypeScript enforces stricter type-checking rules, helping catch potential errors early in the development process.",
     "tags": ["TypeScript", "Strict Flag", "Compilation"]
+  },
+  {
+    "question": "What is a Promise in JavaScript?",
+    "options": [
+      "A protocol for secure communication between services",
+      "An object representing the eventual completion or failure of an asynchronous operation and its resulting value",
+      "A front-end framework for building user interfaces",
+      "A database management system"
+    ],
+    "answer": "An object representing the eventual completion or failure of an asynchronous operation and its resulting value",
+    "explanation": "A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value, providing a cleaner way to handle asynchronous code.",
+    "tags": ["JavaScript", "Promises", "Asynchronous Operations"]
+  },
+  {
+    "question": "Which of the following best describes the states of a Promise?",
+    "options": [
+      "Pending, Fulfilled, Rejected",
+      "Resolved, Rejected, Completed",
+      "Active, Inactive, Terminated",
+      "Running, Stopped, Paused"
+    ],
+    "answer": "Pending, Fulfilled, Rejected",
+    "explanation": "A Promise can be in one of three states: Pending (initial state), Fulfilled (operation completed successfully), or Rejected (operation failed).",
+    "tags": ["JavaScript", "Promises", "Promise States"]
+  },
+  {
+    "question": "What is the purpose of the `.then()` method in Promises?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To execute a callback function when the Promise is fulfilled",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To execute a callback function when the Promise is fulfilled",
+    "explanation": "The `.then()` method in Promises is used to define a callback function that executes when the Promise is successfully fulfilled, receiving the resolved value as input.",
+    "tags": ["JavaScript", "Promises", "Then Method"]
+  },
+  {
+    "question": "Which method is used to handle errors in a Promise chain?",
+    "options": [
+      ".catch()",
+      ".finally()",
+      ".then()",
+      ".resolve()"
+    ],
+    "answer": ".catch()",
+    "explanation": "The `.catch()` method is specifically designed to handle errors in a Promise chain, ensuring proper error handling and preventing unhandled rejections.",
+    "tags": ["JavaScript", "Promises", "Error Handling"]
+  },
+  {
+    "question": "What is the role of the `.finally()` method in Promises?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To execute a function regardless of whether the Promise is fulfilled or rejected",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To execute a function regardless of whether the Promise is fulfilled or rejected",
+    "explanation": "The `.finally()` method in Promises allows executing a function after the Promise settles, regardless of whether it was fulfilled or rejected, making it ideal for cleanup tasks.",
+    "tags": ["JavaScript", "Promises", "Finally Method"]
+  },
+  {
+    "question": "Which of the following best describes the difference between `Promise.all()` and `Promise.race()`?",
+    "options": [
+      "`Promise.all()` waits for all Promises to resolve, while `Promise.race()` resolves as soon as the first Promise completes",
+      "`Promise.all()` replaces traditional APIs, while `Promise.race()` focuses on frontend development",
+      "`Promise.all()` and `Promise.race()` serve the same purpose",
+      "`Promise.all()` focuses exclusively on backend development"
+    ],
+    "answer": "`Promise.all()` waits for all Promises to resolve, while `Promise.race()` resolves as soon as the first Promise completes",
+    "explanation": "`Promise.all()` resolves only after all Promises in the array are resolved, whereas `Promise.race()` resolves as soon as the first Promise in the array completes (either fulfilled or rejected).",
+    "tags": ["JavaScript", "Promises", "Promise.all vs Promise.race"]
+  },
+  {
+    "question": "What happens when a Promise is rejected?",
+    "options": [
+      "The `.then()` method is executed with the rejection reason",
+      "The `.catch()` method is executed with the rejection reason",
+      "The Promise automatically retries the operation",
+      "The Promise eliminates the need for error handling"
+    ],
+    "answer": "The `.catch()` method is executed with the rejection reason",
+    "explanation": "When a Promise is rejected, the `.catch()` method is invoked, allowing you to handle the rejection reason and manage errors effectively.",
+    "tags": ["JavaScript", "Promises", "Rejection"]
+  },
+  {
+    "question": "Which method is used to create a new Promise in JavaScript?",
+    "options": [
+      "new Promise()",
+      "Promise.create()",
+      "Promise.init()",
+      "Promise.resolve()"
+    ],
+    "answer": "new Promise()",
+    "explanation": "A new Promise is created using the `new Promise()` constructor, which takes an executor function with `resolve` and `reject` callbacks as arguments.",
+    "tags": ["JavaScript", "Promises", "Creating Promises"]
+  },
+  {
+    "question": "What is the main advantage of using Promises over traditional callbacks?",
+    "options": [
+      "Promises simplify handling multiple asynchronous operations by avoiding deeply nested callbacks ('callback hell')",
+      "Promises eliminate the need for encryption",
+      "Promises focus exclusively on IoT development",
+      "Promises replace traditional APIs entirely"
+    ],
+    "answer": "Promises simplify handling multiple asynchronous operations by avoiding deeply nested callbacks ('callback hell')",
+    "explanation": "Promises provide a structured way to handle asynchronous operations, avoiding deeply nested callbacks ('callback hell') and improving code readability.",
+    "tags": ["JavaScript", "Promises", "Advantages"]
+  },
+  {
+    "question": "Which of the following is true about chaining Promises?",
+    "options": [
+      "Chaining allows multiple `.then()` calls to be executed sequentially, enabling better flow control",
+      "Chaining replaces traditional APIs with AI-driven solutions",
+      "Chaining focuses exclusively on frontend development",
+      "Chaining eliminates the need for error handling"
+    ],
+    "answer": "Chaining allows multiple `.then()` calls to be executed sequentially, enabling better flow control",
+    "explanation": "Promise chaining allows multiple `.then()` methods to be executed sequentially, enabling better flow control and reducing boilerplate code.",
+    "tags": ["JavaScript", "Promises", "Chaining"]
+  },
+  {
+    "question": "What is the purpose of the `Promise.resolve()` method?",
+    "options": [
+      "To immediately reject a Promise",
+      "To immediately fulfill a Promise with a specified value",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To immediately fulfill a Promise with a specified value",
+    "explanation": "The `Promise.resolve()` method creates a Promise that is immediately fulfilled with a specified value, simplifying synchronous-to-asynchronous conversions.",
+    "tags": ["JavaScript", "Promises", "Resolve Method"]
+  },
+  {
+    "question": "Which method is used to convert a value into a Promise?",
+    "options": [
+      "Promise.wrap()",
+      "Promise.convert()",
+      "Promise.resolve()",
+      "Promise.create()"
+    ],
+    "answer": "Promise.resolve()",
+    "explanation": "The `Promise.resolve()` method converts a value into a Promise, which is useful for synchronizing synchronous and asynchronous operations.",
+    "tags": ["JavaScript", "Promises", "Conversion"]
+  },
+  {
+    "question": "What is the role of the `Promise.reject()` method?",
+    "options": [
+      "To immediately reject a Promise with a specified reason",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To immediately reject a Promise with a specified reason",
+    "explanation": "The `Promise.reject()` method creates a Promise that is immediately rejected with a specified reason, allowing for explicit error handling.",
+    "tags": ["JavaScript", "Promises", "Reject Method"]
+  },
+  {
+    "question": "Which of the following is true about `Promise.all()`?",
+    "options": [
+      "`Promise.all()` resolves only when all Promises in the array are resolved",
+      "`Promise.all()` resolves as soon as the first Promise in the array is resolved",
+      "`Promise.all()` eliminates the need for encryption",
+      "`Promise.all()` focuses exclusively on backend development"
+    ],
+    "answer": "`Promise.all()` resolves only when all Promises in the array are resolved",
+    "explanation": "`Promise.all()` resolves only after all Promises in the array are successfully resolved, returning an array of their results.",
+    "tags": ["JavaScript", "Promises", "Promise.all"]
+  },
+  {
+    "question": "What is the purpose of the `Promise.race()` method?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To resolve or reject as soon as the first Promise in the array settles",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To resolve or reject as soon as the first Promise in the array settles",
+    "explanation": "The `Promise.race()` method resolves or rejects as soon as the first Promise in the array settles, making it useful for timeout scenarios or prioritizing quick responses.",
+    "tags": ["JavaScript", "Promises", "Promise.race"]
+  },
+  {
+    "question": "Which of the following is true about the executor function passed to a Promise?",
+    "options": [
+      "It runs asynchronously and receives `resolve` and `reject` functions as arguments",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It runs asynchronously and receives `resolve` and `reject` functions as arguments",
+    "explanation": "The executor function passed to a Promise runs immediately and receives `resolve` and `reject` functions as arguments to control the Promise's fate.",
+    "tags": ["JavaScript", "Promises", "Executor Function"]
+  },
+  {
+    "question": "What is the main disadvantage of not handling a rejected Promise?",
+    "options": [
+      "Uncaught rejections can cause runtime errors and crash the application",
+      "Promises replace traditional APIs entirely",
+      "Promises focus exclusively on frontend development",
+      "Promises eliminate the need for encryption"
+    ],
+    "answer": "Uncaught rejections can cause runtime errors and crash the application",
+    "explanation": "If a rejected Promise is not handled properly (e.g., using `.catch()`), it can lead to uncaught runtime errors, potentially crashing the application.",
+    "tags": ["JavaScript", "Promises", "Error Handling"]
+  },
+  {
+    "question": "Which of the following is true about chaining `.then()` methods?",
+    "options": [
+      "Each `.then()` returns a new Promise, allowing further chaining",
+      "Chaining replaces traditional APIs with AI-driven solutions",
+      "Chaining focuses exclusively on frontend development",
+      "Chaining eliminates the need for error handling"
+    ],
+    "answer": "Each `.then()` returns a new Promise, allowing further chaining",
+    "explanation": "Each `.then()` method in a Promise chain returns a new Promise, enabling sequential execution and further chaining for complex asynchronous workflows.",
+    "tags": ["JavaScript", "Promises", "Chaining"]
+  },
+  {
+    "question": "What is the role of the `async/await` syntax in relation to Promises?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide a synchronous-like syntax for handling asynchronous Promises",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide a synchronous-like syntax for handling asynchronous Promises",
+    "explanation": "`async/await` simplifies working with Promises by allowing asynchronous operations to be written in a synchronous-like style, improving code readability.",
+    "tags": ["JavaScript", "Promises", "Async/Await"]
+  },
+  {
+    "question": "Which of the following is true about the `.finally()` method in Promises?",
+    "options": [
+      "It executes after the Promise is either fulfilled or rejected, regardless of the outcome",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It executes after the Promise is either fulfilled or rejected, regardless of the outcome",
+    "explanation": "The `.finally()` method executes after the Promise is settled (fulfilled or rejected), often used for cleanup tasks like closing connections or hiding loaders.",
+    "tags": ["JavaScript", "Promises", "Finally Method"]
+  },
+  {
+    "question": "What is the purpose of the `catch()` method in Promises?",
+    "options": [
+      "To handle errors or rejected states in a Promise chain",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle errors or rejected states in a Promise chain",
+    "explanation": "The `catch()` method in Promises is used to handle errors or rejected states in a Promise chain, ensuring graceful error handling.",
+    "tags": ["JavaScript", "Promises", "Catch Method"]
+  },
+  {
+    "question": "Which of the following is true about the `Promise.allSettled()` method?",
+    "options": [
+      "It resolves only when all Promises in the array are fulfilled or rejected, returning an array of their outcomes",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It resolves only when all Promises in the array are fulfilled or rejected, returning an array of their outcomes",
+    "explanation": "`Promise.allSettled()` resolves when all Promises in the array settle (fulfill or reject), returning an array of objects describing each Promise's outcome.",
+    "tags": ["JavaScript", "Promises", "Promise.allSettled"]
+  },
+  {
+    "question": "What is the main benefit of using Promises in JavaScript?",
+    "options": [
+      "They simplify handling asynchronous operations and improve code readability",
+      "They replace traditional APIs with AI-driven solutions",
+      "They manage front-end state exclusively",
+      "They focus solely on hardware optimization"
+    ],
+    "answer": "They simplify handling asynchronous operations and improve code readability",
+    "explanation": "Promises simplify asynchronous programming by providing a structured way to handle operations and their outcomes, improving code readability and maintainability.",
+    "tags": ["JavaScript", "Promises", "Benefits"]
+  },
+  {
+    "question": "Which of the following is true about `Promise.any()`?",
+    "options": [
+      "It resolves as soon as any Promise in the array is fulfilled",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It resolves as soon as any Promise in the array is fulfilled",
+    "explanation": "`Promise.any()` resolves as soon as any Promise in the array is fulfilled, ignoring rejections unless all Promises are rejected.",
+    "tags": ["JavaScript", "Promises", "Promise.any"]
+  },
+  {
+    "question": "What is the role of the `Promise.prototype.then()` method?",
+    "options": [
+      "To specify handlers for both fulfillment and rejection of a Promise",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify handlers for both fulfillment and rejection of a Promise",
+    "explanation": "The `Promise.prototype.then()` method specifies handlers for both the fulfillment and rejection of a Promise, enabling chaining and flow control.",
+    "tags": ["JavaScript", "Promises", "Then Method"]
+  },
+  {
+    "question": "Which of the following is true about the `Promise.all()` method?",
+    "options": [
+      "`Promise.all()` rejects immediately if any Promise in the array is rejected",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "`Promise.all()` rejects immediately if any Promise in the array is rejected",
+    "explanation": "`Promise.all()` rejects the entire chain immediately if any Promise in the array is rejected, requiring proper error handling for robust applications.",
+    "tags": ["JavaScript", "Promises", "Promise.all"]
+  },
+  {
+    "question": "What is the purpose of the `Promise.prototype.catch()` method?",
+    "options": [
+      "To handle errors or rejected states in a Promise chain",
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle errors or rejected states in a Promise chain",
+    "explanation": "The `Promise.prototype.catch()` method is used to handle errors or rejected states in a Promise chain, ensuring proper fallback logic.",
+    "tags": ["JavaScript", "Promises", "Catch Method"]
+  },
+  {
+    "question": "Which of the following is true about the `Promise.prototype.finally()` method?",
+    "options": [
+      "It executes after the Promise is settled, regardless of fulfillment or rejection",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It executes after the Promise is settled, regardless of fulfillment or rejection",
+    "explanation": "The `Promise.prototype.finally()` method executes after the Promise is settled (fulfilled or rejected), making it suitable for cleanup tasks like hiding loaders.",
+    "tags": ["JavaScript", "Promises", "Finally Method"]
   }
 ]
