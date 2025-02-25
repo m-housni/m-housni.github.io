@@ -22036,7 +22036,7 @@
     "options": [
       ".client.js",
       ".server.js",
-      ".sc.js", 
+      ".sc.js",
       "No special extension needed"
     ],
     "answer": "No special extension needed",
@@ -22045,12 +22045,7 @@
   },
   {
     "question": "Which browser API is inaccessible in Server Components?",
-    "options": [
-      "fetch()",
-      "localStorage",
-      "console.log",
-      "Error boundaries"
-    ],
+    "options": ["fetch()", "localStorage", "console.log", "Error boundaries"],
     "answer": "localStorage",
     "explanation": "Browser APIs like localStorage are unavailable in Server Components as they execute on the server.",
     "tags": ["React", "Server Components", "Limitations"]
@@ -22081,12 +22076,7 @@
   },
   {
     "question": "Which framework first popularized React Server Components?",
-    "options": [
-      "Create React App",
-      "Next.js",
-      "Gatsby",
-      "Remix"
-    ],
+    "options": ["Create React App", "Next.js", "Gatsby", "Remix"],
     "answer": "Next.js",
     "explanation": "Next.js 13+ implemented React Server Components as a core feature, driving their mainstream adoption.",
     "tags": ["React", "Server Components", "Frameworks"]
@@ -22105,12 +22095,7 @@
   },
   {
     "question": "Which library is commonly used for writing unit tests in NestJS?",
-    "options": [
-      "Mocha",
-      "Jest (@nestjs/testing)",
-      "Supertest",
-      "Cypress"
-    ],
+    "options": ["Mocha", "Jest (@nestjs/testing)", "Supertest", "Cypress"],
     "answer": "Jest (@nestjs/testing)",
     "explanation": "Jest, integrated via `@nestjs/testing`, is widely used for writing unit tests in NestJS applications due to its simplicity and powerful features like mocking dependencies.",
     "tags": ["NestJS", "Testing", "Jest"]
@@ -22177,12 +22162,7 @@
   },
   {
     "question": "Which platform is commonly used for deploying NestJS applications?",
-    "options": [
-      "AWS",
-      "DigitalOcean",
-      "Vercel",
-      "All of the above"
-    ],
+    "options": ["AWS", "DigitalOcean", "Vercel", "All of the above"],
     "answer": "All of the above",
     "explanation": "NestJS applications can be deployed on platforms like AWS, DigitalOcean, and Vercel, depending on the project requirements and scalability needs.",
     "tags": ["NestJS", "Deployment", "Platforms"]
@@ -22201,12 +22181,7 @@
   },
   {
     "question": "Which tool is best suited for creating efficient and lightweight logs in NestJS?",
-    "options": [
-      "Console.log",
-      "Pino",
-      "Winston",
-      "Supertest"
-    ],
+    "options": ["Console.log", "Pino", "Winston", "Supertest"],
     "answer": "Pino",
     "explanation": "Pino is known for its high-performance logging capabilities, making it ideal for lightweight and efficient logging in NestJS applications.",
     "tags": ["NestJS", "Logging", "Pino"]
@@ -22273,12 +22248,7 @@
   },
   {
     "question": "Which deployment platform is primarily designed for frontend applications but also supports backend deployments like NestJS?",
-    "options": [
-      "AWS",
-      "DigitalOcean",
-      "Vercel",
-      "Heroku"
-    ],
+    "options": ["AWS", "DigitalOcean", "Vercel", "Heroku"],
     "answer": "Vercel",
     "explanation": "Vercel is primarily designed for frontend applications but also supports backend deployments, including serverless functions and full-stack applications like NestJS.",
     "tags": ["NestJS", "Deployment", "Vercel"]
@@ -22402,5 +22372,105 @@
     "answer": "Vercel supports serverless deployments, making it suitable for lightweight NestJS apps",
     "explanation": "Vercel supports serverless deployments, which can be leveraged for lightweight and modular NestJS applications, especially those with minimal backend requirements.",
     "tags": ["NestJS", "Deployment", "Vercel", "Serverless"]
+  },
+  {
+    "question": "Which ES version first introduced the 'strict mode' directive?",
+    "options": ["ES1 (1997)", "ES5 (2009)", "ES6 (2015)", "ES2016"],
+    "answer": "ES5 (2009)",
+    "explanation": "Strict mode was added in ES5 to enforce stricter parsing and error handling, preventing certain unsafe actions.",
+    "tags": ["JavaScript", "ES5", "JavaScript Features"]
+  },
+  {
+    "question": "What major feature was introduced in ES6 (ES2015) that changed variable declaration?",
+    "options": [
+      "var keyword",
+      "let and const keywords",
+      "global variables",
+      "type annotations"
+    ],
+    "answer": "let and const keywords",
+    "explanation": "ES6 introduced block-scoped variables with let and constant variables with const, replacing var's function-scoped behavior.",
+    "tags": ["JavaScript", "ES6", "ES2015", "Variables"]
+  },
+  {
+    "question": "Which ES2016 feature simplified mathematical exponentiation?",
+    "options": [
+      "Math.pow() extension",
+      "** operator",
+      "^^ operator",
+      "exponent() method"
+    ],
+    "answer": "** operator",
+    "explanation": "ES2016 added the exponentiation operator (x ** y) as shorthand for Math.pow(x, y).",
+    "tags": ["JavaScript", "ES2016", "Operators"]
+  },
+  {
+    "question": "What asynchronous programming feature was standardized in ES2017?",
+    "options": ["Promises", "async/await", "callbacks", "generators"],
+    "answer": "async/await",
+    "explanation": "ES2017 formalized async functions and await expressions for cleaner asynchronous code handling.",
+    "tags": ["JavaScript", "ES2017", "Asynchronous"]
+  },
+  {
+    "question": "Which ES2018 feature improved object manipulation?",
+    "options": [
+      "Class syntax",
+      "Object rest/spread properties",
+      "Optional chaining",
+      "Proxy objects"
+    ],
+    "answer": "Object rest/spread properties",
+    "explanation": "ES2018 extended spread (...) and rest operators to work with object properties ({...obj}).",
+    "tags": ["JavaScript", "ES2018", "Objects"]
+  },
+  {
+    "question": "What ES2019 feature simplified array manipulation?",
+    "options": [
+      "Array.map()",
+      "Array.flat()",
+      "Array.compose()",
+      "Array.group()"
+    ],
+    "answer": "Array.flat()",
+    "explanation": "ES2019 introduced flat() to flatten nested arrays and flatMap() for combined mapping/flattening.",
+    "tags": ["JavaScript", "ES2019", "Arrays"]
+  },
+  {
+    "question": "Which ES2020 feature improved null/undefined checks?",
+    "options": [
+      "Optional chaining (?.)",
+      "Null coalescing (??)",
+      "Both A and B",
+      "Type guards"
+    ],
+    "answer": "Both A and B",
+    "explanation": "ES2020 added both optional chaining (obj?.prop) and nullish coalescing (??) for safer null/undefined handling.",
+    "tags": ["JavaScript", "ES2020", "Operators"]
+  },
+  {
+    "question": "What ES5 array method allows iterative processing?",
+    "options": ["forEach()", "reduce()", "map()", "All of the above"],
+    "answer": "All of the above",
+    "explanation": "ES5 introduced these functional array methods: forEach, map, filter, reduce, some, and every.",
+    "tags": ["JavaScript", "ES5", "Arrays"]
+  },
+  {
+    "question": "Which ES6 feature introduced syntax for class-based objects?",
+    "options": [
+      "Prototype inheritance",
+      "class keyword",
+      "Object.create()",
+      "factory functions"
+    ],
+    "answer": "class keyword",
+    "explanation": "ES6 added class syntax (class, extends, constructor) as syntactic sugar over prototype-based inheritance.",
+    "tags": ["JavaScript", "ES6", "OOP"]
+  },
+  {
+    "question": "What ES2020 feature enabled dynamic module loading?",
+    "options": ["import()", "require()", "module.load()", "include()"],
+    "answer": "import()",
+    "explanation": "ES2020 added dynamic imports with import(), allowing asynchronous module loading at runtime.",
+    "tags": ["JavaScript", "ES2020", "Modules"]
   }
 ]
