@@ -20994,5 +20994,981 @@
     "answer": "PostgreSQL, with tools like TimescaleDB and Citus",
     "explanation": "PostgreSQL is highly extensible, with a wide range of third-party tools like TimescaleDB for time-series data and Citus for distributed databases.",
     "tags": ["PostgreSQL", "Extensibility", "Third-Party Tools"]
+  },
+  {
+    "question": "What is the purpose of integrating PostgreSQL with TypeORM in a NestJS application?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide an ORM (Object-Relational Mapping) layer for managing PostgreSQL databases",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide an ORM (Object-Relational Mapping) layer for managing PostgreSQL databases",
+    "explanation": "TypeORM is an ORM library that simplifies database operations in PostgreSQL by allowing developers to interact with relational data using TypeScript or JavaScript classes.",
+    "tags": ["NestJS", "PostgreSQL", "TypeORM", "Database Integration"]
+  },
+  {
+    "question": "Which library is commonly used for MongoDB integration in NestJS applications?",
+    "options": ["Prisma", "Mongoose", "TypeORM", "Sequelize"],
+    "answer": "Mongoose",
+    "explanation": "Mongoose is a popular library for MongoDB integration in NestJS, providing schema-based solutions and facilitating data modeling and validation.",
+    "tags": ["NestJS", "MongoDB", "Mongoose", "Database Integration"]
+  },
+  {
+    "question": "What is the primary role of @nestjs/jwt in authentication?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To implement JWT-based authentication for securing API endpoints",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To implement JWT-based authentication for securing API endpoints",
+    "explanation": "@nestjs/jwt provides tools for generating and validating JSON Web Tokens (JWTs), enabling secure authentication and authorization mechanisms in NestJS applications.",
+    "tags": ["NestJS", "Authentication", "JWT", "Security"]
+  },
+  {
+    "question": "Which feature of NestJS allows implementing role-based access control?",
+    "options": ["Middleware", "CanActivate guards", "Interceptors", "Pipes"],
+    "answer": "CanActivate guards",
+    "explanation": "NestJS's `CanActivate` guards are used to implement role-based access control by defining conditions under which users can access specific routes or resources.",
+    "tags": ["NestJS", "Authorization", "Role-Based Access Control", "Guards"]
+  },
+  {
+    "question": "What is the purpose of route parameters in NestJS (@Param())?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To capture dynamic values from the URL and use them in route handlers",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To capture dynamic values from the URL and use them in route handlers",
+    "explanation": "Route parameters (`@Param()`) in NestJS allow capturing dynamic values from the URL, such as IDs or usernames, and passing them to controller methods for processing.",
+    "tags": ["NestJS", "Routing", "Route Parameters", "@Param()"]
+  },
+  {
+    "question": "How does @Query() work in NestJS routing?",
+    "options": [
+      "It replaces traditional APIs with AI-driven solutions",
+      "It captures query string parameters from the URL and passes them to route handlers",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It captures query string parameters from the URL and passes them to route handlers",
+    "explanation": "`@Query()` in NestJS extracts query string parameters from the URL, enabling developers to handle filters, pagination, or other request-specific data in route handlers.",
+    "tags": ["NestJS", "Routing", "Query Strings", "@Query()"]
+  },
+  {
+    "question": "What is the role of middleware in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To process incoming requests and outgoing responses globally or at specific points",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To process incoming requests and outgoing responses globally or at specific points",
+    "explanation": "Middleware in NestJS processes HTTP requests and responses, enabling tasks like logging, authentication, or modifying request/response objects before they reach the controller.",
+    "tags": ["NestJS", "Middleware", "HTTP Requests", "Global Processing"]
+  },
+  {
+    "question": "Which feature of NestJS allows you to intercept and modify requests or responses?",
+    "options": ["Interceptors", "Middleware", "Pipes", "Guards"],
+    "answer": "Interceptors",
+    "explanation": "Interceptors in NestJS allow intercepting and modifying incoming requests or outgoing responses, often used for logging, caching, or transforming data.",
+    "tags": ["NestJS", "Interceptors", "Request/Response Modification"]
+  },
+  {
+    "question": "What is the main advantage of using Mongoose for MongoDB integration in NestJS?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It provides schema-based data modeling and validation for MongoDB",
+      "It replaces traditional APIs entirely",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It provides schema-based data modeling and validation for MongoDB",
+    "explanation": "Mongoose offers schema-based solutions for MongoDB, enabling data modeling, validation, and interaction with NoSQL databases in a structured manner.",
+    "tags": ["NestJS", "MongoDB", "Mongoose", "Schema Validation"]
+  },
+  {
+    "question": "Which package in NestJS simplifies JWT-based authentication?",
+    "options": [
+      "@nestjs/passport",
+      "@nestjs/jwt",
+      "@nestjs/config",
+      "@nestjs/common"
+    ],
+    "answer": "@nestjs/jwt",
+    "explanation": "@nestjs/jwt provides utilities for generating and verifying JSON Web Tokens (JWTs), making it easier to implement token-based authentication in NestJS applications.",
+    "tags": ["NestJS", "Authentication", "@nestjs/jwt", "JWT"]
+  },
+  {
+    "question": "What is the role of @nestjs/passport in NestJS authentication?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To integrate Passport.js strategies for authenticating users",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To integrate Passport.js strategies for authenticating users",
+    "explanation": "@nestjs/passport integrates Passport.js strategies into NestJS, enabling flexible authentication mechanisms like OAuth, JWT, or local strategies.",
+    "tags": ["NestJS", "Authentication", "@nestjs/passport", "Passport.js"]
+  },
+  {
+    "question": "Which NestJS guard ensures role-based access control?",
+    "options": ["AuthGuard", "RolesGuard", "JwtGuard", "AdminGuard"],
+    "answer": "RolesGuard",
+    "explanation": "A `RolesGuard` in NestJS checks user roles and permissions to ensure only authorized users can access specific routes or resources.",
+    "tags": ["NestJS", "Guards", "Role-Based Access Control", "Authorization"]
+  },
+  {
+    "question": "How do you define a route parameter in a NestJS controller method?",
+    "options": [
+      "Using the @Body() decorator",
+      "Using the @Param() decorator",
+      "Using the @Query() decorator",
+      "Using the @Headers() decorator"
+    ],
+    "answer": "Using the @Param() decorator",
+    "explanation": "The `@Param()` decorator in NestJS extracts route parameters (e.g., `/user/:id`) and makes them available within the controller method.",
+    "tags": ["NestJS", "Routing", "@Param()", "Route Parameters"]
+  },
+  {
+    "question": "What is the purpose of query strings in NestJS routing?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To pass additional data in the URL for filtering or pagination",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To pass additional data in the URL for filtering or pagination",
+    "explanation": "Query strings in NestJS routing allow passing additional data in the URL (e.g., `/api/items?page=2&limit=10`) for tasks like filtering, sorting, or pagination.",
+    "tags": ["NestJS", "Routing", "Query Strings", "@Query()"]
+  },
+  {
+    "question": "Which of the following best describes the difference between middleware and interceptors in NestJS?",
+    "options": [
+      "Middleware processes all requests globally, while interceptors target specific controllers or methods",
+      "There is no difference; both serve the same purpose",
+      "Interceptors replace traditional APIs, while middleware manages front-end state",
+      "Middleware focuses exclusively on backend development"
+    ],
+    "answer": "Middleware processes all requests globally, while interceptors target specific controllers or methods",
+    "explanation": "Middleware in NestJS processes all incoming requests globally or at specific points, whereas interceptors are more granular and target specific controllers or methods for request/response modification.",
+    "tags": [
+      "NestJS",
+      "Middleware vs Interceptors",
+      "Global vs Granular Processing"
+    ]
+  },
+  {
+    "question": "What is the role of CanActivate guards in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To control access to routes based on conditions like authentication or roles",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To control access to routes based on conditions like authentication or roles",
+    "explanation": "CanActivate guards in NestJS determine whether a user can access a specific route, often used for authentication or role-based access control.",
+    "tags": ["NestJS", "Guards", "CanActivate", "Access Control"]
+  },
+  {
+    "question": "Which of the following is true about handling route parameters in NestJS?",
+    "options": [
+      "Route parameters can be captured and utilized in controller methods using @Param()",
+      "Route parameters replace traditional APIs with AI-driven solutions",
+      "Route parameters manage front-end state exclusively",
+      "Route parameters focus solely on hardware optimization"
+    ],
+    "answer": "Route parameters can be captured and utilized in controller methods using @Param()",
+    "explanation": "In NestJS, route parameters (e.g., `/user/:id`) are captured using the `@Param()` decorator and passed to controller methods for further processing.",
+    "tags": ["NestJS", "Routing", "Route Parameters", "@Param()"]
+  },
+  {
+    "question": "What is the main advantage of using interceptors over middleware in NestJS?",
+    "options": [
+      "Interceptors are simpler to implement than middleware",
+      "Interceptors can target specific controllers or methods, while middleware applies globally",
+      "Interceptors eliminate the need for encryption",
+      "Interceptors focus exclusively on frontend development"
+    ],
+    "answer": "Interceptors can target specific controllers or methods, while middleware applies globally",
+    "explanation": "Interceptors in NestJS offer more flexibility by targeting specific controllers or methods, whereas middleware typically applies to all incoming requests globally.",
+    "tags": ["NestJS", "Interceptors", "Middleware", "Targeted Processing"]
+  },
+  {
+    "question": "Which of the following is true about Mongoose schemas?",
+    "options": [
+      "Mongoose schemas enforce data validation and structure for MongoDB collections",
+      "Mongoose schemas replace traditional APIs with AI-driven solutions",
+      "Mongoose schemas manage front-end state exclusively",
+      "Mongoose schemas focus solely on hardware optimization"
+    ],
+    "answer": "Mongoose schemas enforce data validation and structure for MongoDB collections",
+    "explanation": "Mongoose schemas define the structure and validation rules for MongoDB collections, ensuring consistency and integrity of stored data.",
+    "tags": ["NestJS", "MongoDB", "Mongoose", "Schemas"]
+  },
+  {
+    "question": "What is the role of Passport.js in @nestjs/passport?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide authentication strategies for securing routes and endpoints",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide authentication strategies for securing routes and endpoints",
+    "explanation": "Passport.js, integrated via @nestjs/passport, provides various authentication strategies (e.g., JWT, OAuth, local) to secure routes and endpoints in NestJS applications.",
+    "tags": ["NestJS", "Authentication", "Passport.js", "@nestjs/passport"]
+  },
+  {
+    "question": "Which of the following is true about lazy loading modules in NestJS?",
+    "options": [
+      "Lazy loading reduces initial bundle size by deferring module loading until required",
+      "Lazy loading eliminates the need for database integration",
+      "Lazy loading focuses exclusively on frontend development",
+      "Lazy loading replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Lazy loading reduces initial bundle size by deferring module loading until required",
+    "explanation": "Lazy loading in NestJS defers the loading of feature modules until they are accessed, reducing the initial bundle size and improving application performance.",
+    "tags": ["NestJS", "Lazy Loading", "Performance Optimization"]
+  },
+  {
+    "question": "What is the purpose of query string parameters in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To pass optional or additional data in the URL for filtering, sorting, or pagination",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To pass optional or additional data in the URL for filtering, sorting, or pagination",
+    "explanation": "Query string parameters in NestJS allow passing optional or additional data in the URL (e.g., `/api/items?sort=asc&page=2`) for tasks like filtering, sorting, or paginating results.",
+    "tags": ["NestJS", "Routing", "Query Strings", "@Query()"]
+  },
+  {
+    "question": "Which of the following is true about using TypeORM with PostgreSQL?",
+    "options": [
+      "TypeORM provides an abstraction layer for interacting with PostgreSQL using entities and repositories",
+      "TypeORM replaces traditional APIs with AI-driven solutions",
+      "TypeORM manages front-end state exclusively",
+      "TypeORM focuses solely on hardware optimization"
+    ],
+    "answer": "TypeORM provides an abstraction layer for interacting with PostgreSQL using entities and repositories",
+    "explanation": "TypeORM abstracts PostgreSQL interactions by using entities and repositories, enabling developers to perform CRUD operations without writing raw SQL queries.",
+    "tags": ["NestJS", "PostgreSQL", "TypeORM", "Database Abstraction"]
+  },
+  {
+    "question": "What is the role of authentication guards in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To protect routes by verifying user credentials or tokens",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To protect routes by verifying user credentials or tokens",
+    "explanation": "Authentication guards in NestJS ensure that only authenticated users can access protected routes by verifying credentials or tokens (e.g., JWT).",
+    "tags": ["NestJS", "Guards", "Authentication", "Route Protection"]
+  },
+  {
+    "question": "Which of the following is true about JWT authentication in NestJS?",
+    "options": [
+      "JWT authentication uses tokens to securely transmit user information and permissions",
+      "JWT authentication eliminates the need for encryption",
+      "JWT authentication manages front-end state exclusively",
+      "JWT authentication replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "JWT authentication uses tokens to securely transmit user information and permissions",
+    "explanation": "JWT authentication in NestJS involves issuing and verifying tokens to securely transmit user information and permissions between client and server.",
+    "tags": ["NestJS", "Authentication", "JWT", "Token Security"]
+  },
+  {
+    "question": "What is the main advantage of using @nestjs/jwt for authentication?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It provides built-in support for JWT generation and verification",
+      "It eliminates the need for database connections",
+      "It focuses exclusively on IoT development"
+    ],
+    "answer": "It provides built-in support for JWT generation and verification",
+    "explanation": "@nestjs/jwt simplifies JWT-based authentication by providing utilities for token generation and verification, ensuring secure communication.",
+    "tags": ["NestJS", "Authentication", "@nestjs/jwt", "JWT Generation"]
+  },
+  {
+    "question": "Which of the following is true about Role-Based Access Control (RBAC) in NestJS?",
+    "options": [
+      "RBAC can be implemented using CanActivate guards to check user roles and permissions",
+      "RBAC eliminates the need for encryption",
+      "RBAC focuses exclusively on frontend development",
+      "RBAC replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "RBAC can be implemented using CanActivate guards to check user roles and permissions",
+    "explanation": "Role-Based Access Control (RBAC) in NestJS can be implemented using `CanActivate` guards, which verify user roles and permissions before granting access to routes.",
+    "tags": ["NestJS", "Authorization", "RBAC", "CanActivate"]
+  },
+  {
+    "question": "What is the primary purpose of using RabbitMQ or Kafka in a microservices architecture with NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To facilitate message-based communication between microservices",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To facilitate message-based communication between microservices",
+    "explanation": "RabbitMQ and Kafka are used in NestJS to enable event-driven, message-based communication between microservices, ensuring scalability and decoupling.",
+    "tags": ["NestJS", "Microservices", "RabbitMQ", "Kafka"]
+  },
+  {
+    "question": "Which NestJS module simplifies integration with RabbitMQ or Kafka for building microservices?",
+    "options": [
+      "@nestjs/microservices",
+      "@nestjs/common",
+      "@nestjs/config",
+      "@nestjs/platform-express"
+    ],
+    "answer": "@nestjs/microservices",
+    "explanation": "The `@nestjs/microservices` module provides tools for integrating RabbitMQ, Kafka, or other message brokers into NestJS applications, enabling efficient microservices communication.",
+    "tags": ["NestJS", "Microservices", "@nestjs/microservices"]
+  },
+  {
+    "question": "What is the role of event-driven architecture in microservices?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To enable asynchronous communication and decouple services",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To enable asynchronous communication and decouple services",
+    "explanation": "Event-driven architecture in microservices promotes asynchronous communication, allowing services to operate independently and respond to events without tight coupling.",
+    "tags": ["NestJS", "Microservices", "Event-Driven Architecture"]
+  },
+  {
+    "question": "Which decorator is used to implement WebSockets in a NestJS application?",
+    "options": [
+      "@WebSocketGateway()",
+      "@Controller()",
+      "@Injectable()",
+      "@Module()"
+    ],
+    "answer": "@WebSocketGateway()",
+    "explanation": "The `@WebSocketGateway()` decorator in NestJS is used to define WebSocket gateways for real-time communication, enabling bidirectional data exchange.",
+    "tags": ["NestJS", "WebSockets", "@WebSocketGateway()"]
+  },
+  {
+    "question": "What is the main advantage of using WebSockets in NestJS for real-time applications?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It allows full-duplex communication between client and server",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It allows full-duplex communication between client and server",
+    "explanation": "WebSockets in NestJS provide full-duplex communication channels over a single TCP connection, making them ideal for real-time applications like chat or live updates.",
+    "tags": ["NestJS", "WebSockets", "Real-Time Communication"]
+  },
+  {
+    "question": "Which NestJS module is commonly used for Redis caching?",
+    "options": [
+      "@nestjs/cache",
+      "@nestjs/redis",
+      "cache-manager",
+      "@nestjs/cache-manager"
+    ],
+    "answer": "cache-manager",
+    "explanation": "The `cache-manager` package, often integrated with `@nestjs/cache`, enables Redis caching in NestJS applications, improving performance by storing frequently accessed data in memory.",
+    "tags": ["NestJS", "Caching", "Redis", "cache-manager"]
+  },
+  {
+    "question": "What is the role of rate-limiting in NestJS applications?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To limit the number of requests a client can make within a specified time frame",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To limit the number of requests a client can make within a specified time frame",
+    "explanation": "Rate-limiting in NestJS, implemented using `@nestjs/throttler`, prevents abuse by limiting the number of requests a client can make within a defined time period.",
+    "tags": [
+      "NestJS",
+      "Performance Optimization",
+      "Rate-Limiting",
+      "@nestjs/throttler"
+    ]
+  },
+  {
+    "question": "Which NestJS module provides built-in support for rate-limiting?",
+    "options": [
+      "@nestjs/common",
+      "@nestjs/throttler",
+      "@nestjs/config",
+      "@nestjs/platform-express"
+    ],
+    "answer": "@nestjs/throttler",
+    "explanation": "The `@nestjs/throttler` module provides built-in support for rate-limiting, helping protect applications from excessive traffic or malicious attacks.",
+    "tags": ["NestJS", "Rate-Limiting", "@nestjs/throttler"]
+  },
+  {
+    "question": "What is the purpose of Redis caching in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store frequently accessed data in memory, reducing database load and improving performance",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store frequently accessed data in memory, reducing database load and improving performance",
+    "explanation": "Redis caching in NestJS stores frequently accessed data in memory, minimizing database queries and enhancing application performance.",
+    "tags": ["NestJS", "Redis", "Caching", "Performance Optimization"]
+  },
+  {
+    "question": "Which of the following best describes the use of @WebSocketGateway() in NestJS?",
+    "options": [
+      "To define controllers for handling HTTP requests",
+      "To create WebSocket endpoints for real-time communication",
+      "To manage front-end state exclusively",
+      "To replace traditional APIs entirely"
+    ],
+    "answer": "To create WebSocket endpoints for real-time communication",
+    "explanation": "The `@WebSocketGateway()` decorator in NestJS defines WebSocket endpoints, enabling real-time communication between clients and servers.",
+    "tags": [
+      "NestJS",
+      "WebSockets",
+      "@WebSocketGateway()",
+      "Real-Time Communication"
+    ]
+  },
+  {
+    "question": "What is the role of @WebSocketServer() in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To inject the underlying WebSocket server instance for advanced control",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To inject the underlying WebSocket server instance for advanced control",
+    "explanation": "The `@WebSocketServer()` decorator in NestJS injects the WebSocket server instance (e.g., Server from `ws` or `socket.io`) for advanced configuration and control.",
+    "tags": ["NestJS", "WebSockets", "@WebSocketServer()", "Advanced Control"]
+  },
+  {
+    "question": "Which of the following is true about Redis caching in NestJS?",
+    "options": [
+      "Redis caching eliminates the need for databases entirely",
+      "Redis caching stores data in memory, improving read performance for frequently accessed data",
+      "Redis caching focuses exclusively on frontend development",
+      "Redis caching replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Redis caching stores data in memory, improving read performance for frequently accessed data",
+    "explanation": "Redis caching in NestJS stores data in memory, reducing the need for repeated database queries and significantly improving read performance for frequently accessed data.",
+    "tags": ["NestJS", "Redis", "Caching", "Memory Storage"]
+  },
+  {
+    "question": "What is the main benefit of using an event-driven architecture in microservices?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It enhances scalability and fault tolerance by decoupling services",
+      "It eliminates the need for encryption",
+      "It focuses exclusively on IoT development"
+    ],
+    "answer": "It enhances scalability and fault tolerance by decoupling services",
+    "explanation": "An event-driven architecture in microservices improves scalability and fault tolerance by decoupling services, allowing them to communicate asynchronously via events.",
+    "tags": [
+      "NestJS",
+      "Microservices",
+      "Event-Driven Architecture",
+      "Scalability"
+    ]
+  },
+  {
+    "question": "Which of the following is true about implementing WebSockets in NestJS?",
+    "options": [
+      "WebSockets require manual setup without any NestJS-specific tools",
+      "WebSockets are implemented using the `@WebSocketGateway()` and `@SubscribeMessage()` decorators",
+      "WebSockets focus exclusively on frontend development",
+      "WebSockets replace traditional APIs entirely"
+    ],
+    "answer": "WebSockets are implemented using the `@WebSocketGateway()` and `@SubscribeMessage()` decorators",
+    "explanation": "In NestJS, WebSockets are implemented using the `@WebSocketGateway()` decorator to define the gateway and `@SubscribeMessage()` to handle incoming messages.",
+    "tags": [
+      "NestJS",
+      "WebSockets",
+      "@WebSocketGateway()",
+      "@SubscribeMessage()"
+    ]
+  },
+  {
+    "question": "What is the role of the `@SubscribeMessage()` decorator in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define methods that handle specific WebSocket message events",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define methods that handle specific WebSocket message events",
+    "explanation": "The `@SubscribeMessage()` decorator in NestJS defines methods that handle specific WebSocket message events, enabling real-time communication logic.",
+    "tags": ["NestJS", "WebSockets", "@SubscribeMessage()", "Message Handling"]
+  },
+  {
+    "question": "Which of the following is true about caching in NestJS?",
+    "options": [
+      "Caching is irrelevant to backend development",
+      "Caching with Redis reduces database load and improves response times",
+      "Caching replaces traditional APIs entirely",
+      "Caching focuses exclusively on frontend development"
+    ],
+    "answer": "Caching with Redis reduces database load and improves response times",
+    "explanation": "Caching in NestJS, especially with Redis, minimizes database load by storing frequently accessed data in memory, leading to faster response times.",
+    "tags": ["NestJS", "Caching", "Redis", "Performance Optimization"]
+  },
+  {
+    "question": "What is the purpose of the `TTL` (Time-to-Live) setting in Redis caching?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To specify how long cached data remains valid before expiration",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify how long cached data remains valid before expiration",
+    "explanation": "The `TTL` (Time-to-Live) setting in Redis determines how long cached data remains valid before expiring, ensuring fresh data is retrieved periodically.",
+    "tags": ["NestJS", "Redis", "Caching", "TTL"]
+  },
+  {
+    "question": "What is the primary purpose of using RabbitMQ or Kafka with @nestjs/microservices in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To implement event-driven architecture and facilitate message-based communication between microservices",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To implement event-driven architecture and facilitate message-based communication between microservices",
+    "explanation": "RabbitMQ and Kafka, integrated via @nestjs/microservices, enable event-driven architecture by facilitating message-based communication between microservices, enhancing scalability and decoupling.",
+    "tags": ["NestJS", "Microservices", "RabbitMQ", "Kafka"]
+  },
+  {
+    "question": "Which decorator is used to implement WebSockets in a NestJS application?",
+    "options": [
+      "@Controller()",
+      "@WebSocketGateway()",
+      "@Injectable()",
+      "@Module()"
+    ],
+    "answer": "@WebSocketGateway()",
+    "explanation": "The `@WebSocketGateway()` decorator in NestJS is used to create WebSocket gateways, enabling real-time communication and event handling in applications.",
+    "tags": ["NestJS", "WebSockets", "@WebSocketGateway"]
+  },
+  {
+    "question": "What is the role of Redis caching in performance optimization for NestJS applications?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store frequently accessed data in memory, reducing database load and improving response times",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store frequently accessed data in memory, reducing database load and improving response times",
+    "explanation": "Redis caching, often used with `cache-manager` or `@nestjs/cache`, stores frequently accessed data in memory, reducing the need for repeated database queries and enhancing application performance.",
+    "tags": ["NestJS", "Performance Optimization", "Redis Caching"]
+  },
+  {
+    "question": "Which NestJS module is commonly used for implementing rate-limiting to prevent abuse?",
+    "options": [
+      "@nestjs/common",
+      "@nestjs/throttler",
+      "@nestjs/config",
+      "@nestjs/microservices"
+    ],
+    "answer": "@nestjs/throttler",
+    "explanation": "The `@nestjs/throttler` module provides rate-limiting functionality, allowing developers to control the number of requests a client can make within a specified time frame, preventing abuse and ensuring fairness.",
+    "tags": ["NestJS", "Performance Optimization", "Rate-Limiting"]
+  },
+  {
+    "question": "What is the main advantage of using an event-driven architecture in microservices?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It promotes loose coupling between services, enabling independent scaling and development",
+      "It manages front-end state exclusively",
+      "It focuses solely on IoT development"
+    ],
+    "answer": "It promotes loose coupling between services, enabling independent scaling and development",
+    "explanation": "An event-driven architecture in microservices promotes loose coupling, allowing services to communicate asynchronously through events, which enhances scalability and flexibility.",
+    "tags": ["NestJS", "Microservices", "Event-Driven Architecture"]
+  },
+  {
+    "question": "Which of the following best describes the use of Kafka in microservices?",
+    "options": [
+      "Kafka replaces traditional APIs with AI-driven solutions",
+      "Kafka acts as a distributed event streaming platform, enabling scalable and fault-tolerant communication between microservices",
+      "Kafka manages front-end state exclusively",
+      "Kafka focuses solely on hardware optimization"
+    ],
+    "answer": "Kafka acts as a distributed event streaming platform, enabling scalable and fault-tolerant communication between microservices",
+    "explanation": "Kafka is a distributed event streaming platform that enables scalable, fault-tolerant communication between microservices by managing event queues and topics.",
+    "tags": ["NestJS", "Microservices", "Kafka"]
+  },
+  {
+    "question": "What is the role of RabbitMQ in microservices communication?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To act as a message broker, facilitating asynchronous communication between microservices",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To act as a message broker, facilitating asynchronous communication between microservices",
+    "explanation": "RabbitMQ serves as a message broker in microservices, enabling asynchronous communication and decoupling services through message queues.",
+    "tags": ["NestJS", "Microservices", "RabbitMQ"]
+  },
+  {
+    "question": "Which decorator is used to handle WebSocket events in a gateway class?",
+    "options": [
+      "@MessagePattern()",
+      "@SubscribeMessage()",
+      "@Get()",
+      "@Post()"
+    ],
+    "answer": "@SubscribeMessage()",
+    "explanation": "The `@SubscribeMessage()` decorator in NestJS is used to define methods that handle WebSocket events in a gateway class, enabling real-time communication.",
+    "tags": ["NestJS", "WebSockets", "@SubscribeMessage"]
+  },
+  {
+    "question": "What is the purpose of Redis caching in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store session data securely",
+      "To cache frequently accessed data in memory, reducing latency",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To cache frequently accessed data in memory, reducing latency",
+    "explanation": "Redis caching in NestJS stores frequently accessed data in memory, reducing the need for repeated database queries and lowering response latency.",
+    "tags": ["NestJS", "Performance Optimization", "Redis Caching"]
+  },
+  {
+    "question": "Which NestJS module simplifies the implementation of rate-limiting?",
+    "options": [
+      "@nestjs/common",
+      "@nestjs/throttler",
+      "@nestjs/cache",
+      "@nestjs/microservices"
+    ],
+    "answer": "@nestjs/throttler",
+    "explanation": "The `@nestjs/throttler` module simplifies rate-limiting implementation, controlling the number of requests per client and preventing abuse.",
+    "tags": ["NestJS", "Performance Optimization", "Rate-Limiting"]
+  },
+  {
+    "question": "What is the main benefit of using WebSockets in real-time applications?",
+    "options": [
+      "They eliminate the need for encryption",
+      "They enable full-duplex communication, allowing real-time updates without polling",
+      "They manage front-end state exclusively",
+      "They focus solely on hardware optimization"
+    ],
+    "answer": "They enable full-duplex communication, allowing real-time updates without polling",
+    "explanation": "WebSockets provide full-duplex communication channels over a single TCP connection, enabling real-time updates and reducing the need for constant polling.",
+    "tags": ["NestJS", "WebSockets", "Real-Time Communication"]
+  },
+  {
+    "question": "Which of the following is true about the `@nestjs/microservices` module?",
+    "options": [
+      "It replaces traditional APIs with AI-driven solutions",
+      "It provides tools for building microservices with message-based communication using RabbitMQ or Kafka",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It provides tools for building microservices with message-based communication using RabbitMQ or Kafka",
+    "explanation": "The `@nestjs/microservices` module allows building microservices with message-based communication, integrating platforms like RabbitMQ or Kafka seamlessly.",
+    "tags": ["NestJS", "Microservices", "@nestjs/microservices"]
+  },
+  {
+    "question": "What is the role of the `@WebSocketGateway()` decorator in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define a class as a WebSocket gateway, enabling real-time communication",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define a class as a WebSocket gateway, enabling real-time communication",
+    "explanation": "The `@WebSocketGateway()` decorator in NestJS defines a class as a WebSocket gateway, enabling real-time communication between clients and servers.",
+    "tags": ["NestJS", "WebSockets", "@WebSocketGateway"]
+  },
+  {
+    "question": "Which of the following is true about Redis in the context of caching?",
+    "options": [
+      "Redis eliminates the need for databases entirely",
+      "Redis is an in-memory data store that improves performance by caching frequently accessed data",
+      "Redis focuses exclusively on frontend development",
+      "Redis replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Redis is an in-memory data store that improves performance by caching frequently accessed data",
+    "explanation": "Redis is an in-memory data store that accelerates application performance by caching frequently accessed data, reducing the load on backend databases.",
+    "tags": ["NestJS", "Redis", "Caching"]
+  },
+  {
+    "question": "What is the purpose of the `@SubscribeMessage()` decorator in a WebSocket gateway?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define methods that handle specific WebSocket events or messages",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define methods that handle specific WebSocket events or messages",
+    "explanation": "The `@SubscribeMessage()` decorator in a WebSocket gateway defines methods that handle specific events or messages, enabling real-time communication logic.",
+    "tags": ["NestJS", "WebSockets", "@SubscribeMessage"]
+  },
+  {
+    "question": "Which of the following best describes the role of RabbitMQ in microservices?",
+    "options": [
+      "RabbitMQ acts as a centralized database for storing service data",
+      "RabbitMQ serves as a message broker, facilitating communication between microservices through queues",
+      "RabbitMQ replaces traditional APIs with AI-driven solutions",
+      "RabbitMQ focuses exclusively on frontend development"
+    ],
+    "answer": "RabbitMQ serves as a message broker, facilitating communication between microservices through queues",
+    "explanation": "RabbitMQ acts as a message broker, enabling microservices to communicate asynchronously through message queues, improving scalability and reliability.",
+    "tags": ["NestJS", "Microservices", "RabbitMQ"]
+  },
+  {
+    "question": "What is the main advantage of using Kafka over RabbitMQ in microservices?",
+    "options": [
+      "Kafka eliminates the need for encryption",
+      "Kafka supports high-throughput, distributed messaging, making it ideal for large-scale systems",
+      "Kafka manages front-end state exclusively",
+      "Kafka replaces traditional APIs entirely"
+    ],
+    "answer": "Kafka supports high-throughput, distributed messaging, making it ideal for large-scale systems",
+    "explanation": "Kafka is designed for high-throughput, distributed messaging, making it ideal for large-scale systems where performance and scalability are critical.",
+    "tags": ["NestJS", "Microservices", "Kafka"]
+  },
+  {
+    "question": "Which NestJS feature ensures efficient caching of frequently accessed data?",
+    "options": [
+      "Decorators",
+      "Redis integration (e.g., `cache-manager` or `@nestjs/cache`)",
+      "Middleware",
+      "Interceptors"
+    ],
+    "answer": "Redis integration (e.g., `cache-manager` or `@nestjs/cache`) ",
+    "explanation": "Redis integration in NestJS, using libraries like `cache-manager` or `@nestjs/cache`, ensures efficient caching of frequently accessed data, reducing latency and database load.",
+    "tags": ["NestJS", "Performance Optimization", "Redis Integration"]
+  },
+  {
+    "question": "What is the role of rate-limiting in a NestJS application?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To control the number of requests per client, preventing abuse and ensuring fairness",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To control the number of requests per client, preventing abuse and ensuring fairness",
+    "explanation": "Rate-limiting in NestJS, implemented using `@nestjs/throttler`, controls the number of requests per client, preventing abuse and ensuring fair resource usage.",
+    "tags": ["NestJS", "Performance Optimization", "Rate-Limiting"]
+  },
+  {
+    "question": "Which of the following is true about implementing WebSockets in NestJS?",
+    "options": [
+      "WebSockets replace traditional APIs entirely",
+      "WebSockets enable real-time communication between clients and servers using the `@WebSocketGateway()` and `@SubscribeMessage()` decorators",
+      "WebSockets manage front-end state exclusively",
+      "WebSockets focus solely on hardware optimization"
+    ],
+    "answer": "WebSockets enable real-time communication between clients and servers using the `@WebSocketGateway()` and `@SubscribeMessage()` decorators",
+    "explanation": "In NestJS, WebSockets are implemented using the `@WebSocketGateway()` and `@SubscribeMessage()` decorators, enabling real-time communication for applications like chat or live updates.",
+    "tags": ["NestJS", "WebSockets", "Real-Time Communication"]
+  },
+  {
+    "question": "What is the main benefit of using an event-driven architecture in microservices?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It promotes loose coupling and scalability, allowing services to communicate asynchronously",
+      "It eliminates the need for databases",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It promotes loose coupling and scalability, allowing services to communicate asynchronously",
+    "explanation": "An event-driven architecture in microservices promotes loose coupling and scalability, enabling services to communicate asynchronously and independently.",
+    "tags": ["NestJS", "Microservices", "Event-Driven Architecture"]
+  },
+  {
+    "question": "Which of the following is true about caching in NestJS with Redis?",
+    "options": [
+      "Caching with Redis eliminates the need for encryption",
+      "Caching with Redis improves performance by storing data in memory and reducing database queries",
+      "Caching with Redis manages front-end state exclusively",
+      "Caching with Redis replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Caching with Redis improves performance by storing data in memory and reducing database queries",
+    "explanation": "Caching in NestJS with Redis improves performance by storing data in memory, reducing the need for repeated database queries and lowering response times.",
+    "tags": ["NestJS", "Redis", "Caching"]
+  },
+  {
+    "question": "What is the purpose of the `@nestjs/throttler` module in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To implement rate-limiting and control request frequency from clients",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To implement rate-limiting and control request frequency from clients",
+    "explanation": "The `@nestjs/throttler` module implements rate-limiting in NestJS, controlling the frequency of requests from clients and preventing potential abuse.",
+    "tags": ["NestJS", "Performance Optimization", "Rate-Limiting"]
+  },
+  {
+    "question": "Which of the following is true about lazy loading modules in conjunction with microservices?",
+    "options": [
+      "Lazy loading eliminates the need for microservices",
+      "Lazy loading reduces initial bundle size, while microservices improve modularity and scalability",
+      "Lazy loading focuses exclusively on frontend development",
+      "Lazy loading replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Lazy loading reduces initial bundle size, while microservices improve modularity and scalability",
+    "explanation": "Lazy loading reduces the initial bundle size by deferring module loading, while microservices enhance modularity and scalability by breaking down applications into smaller, independent services.",
+    "tags": ["NestJS", "Lazy Loading", "Microservices"]
+  },
+  {
+    "question": "What is the role of the `cache-manager` library in NestJS?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide caching mechanisms for improving application performance",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide caching mechanisms for improving application performance",
+    "explanation": "The `cache-manager` library in NestJS provides caching mechanisms, such as Redis or in-memory stores, to improve application performance by reducing redundant computations or database queries.",
+    "tags": ["NestJS", "Performance Optimization", "Cache-Manager"]
+  },
+  {
+    "question": "Which of the following is true about Kafka's role in microservices?",
+    "options": [
+      "Kafka eliminates the need for encryption",
+      "Kafka acts as a distributed event streaming platform, enabling high-throughput messaging between services",
+      "Kafka manages front-end state exclusively",
+      "Kafka replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Kafka acts as a distributed event streaming platform, enabling high-throughput messaging between services",
+    "explanation": "Kafka serves as a distributed event streaming platform, enabling high-throughput messaging between microservices, making it suitable for large-scale, data-intensive applications.",
+    "tags": ["NestJS", "Microservices", "Kafka"]
+  },
+  {
+    "question": "What is the main advantage of using RabbitMQ over Kafka in microservices?",
+    "options": [
+      "RabbitMQ eliminates the need for encryption",
+      "RabbitMQ is simpler to set up and better suited for small-to-medium-sized applications",
+      "RabbitMQ manages front-end state exclusively",
+      "RabbitMQ replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "RabbitMQ is simpler to set up and better suited for small-to-medium-sized applications",
+    "explanation": "RabbitMQ is generally easier to set up and more suitable for small-to-medium-sized applications, whereas Kafka is designed for high-throughput, distributed systems.",
+    "tags": ["NestJS", "Microservices", "RabbitMQ vs Kafka"]
+  },
+  {
+    "question": "What key problem does GraphQL solve that REST APIs typically face?",
+    "options": [
+      "Eliminates the need for HTTP protocols",
+      "Requires multiple round-trips to fetch related resources",
+      "Allows clients to request exactly what they need, reducing over-fetching",
+      "Automatically generates database schemas"
+    ],
+    "answer": "Allows clients to request exactly what they need, reducing over-fetching",
+    "explanation": "GraphQL's main advantage is letting clients specify exact data requirements, solving REST's common over-fetching/under-fetching issues.",
+    "tags": ["REST", "GraphQL", "API Design"]
+  },
+  {
+    "question": "How do REST APIs typically handle versioning compared to GraphQL?",
+    "options": [
+      "REST uses versioned endpoints (e.g., /v1/users)",
+      "GraphQL requires complete API rewrites for updates",
+      "REST never requires versioning",
+      "GraphQL uses HTTP headers for version control"
+    ],
+    "answer": "REST uses versioned endpoints (e.g., /v1/users)",
+    "explanation": "REST commonly versions via URL endpoints, while GraphQL encourages evolving schemas without versioning.",
+    "tags": ["API Versioning", "REST", "GraphQL"]
+  },
+  {
+    "question": "What architectural difference exists between REST and GraphQL?",
+    "options": [
+      "REST uses a single endpoint, GraphQL uses multiple",
+      "GraphQL uses a single endpoint, REST uses multiple",
+      "Both use identical endpoint structures",
+      "GraphQL requires DNS-level routing"
+    ],
+    "answer": "GraphQL uses a single endpoint, REST uses multiple",
+    "explanation": "REST relies on multiple endpoints (/users, /posts), while GraphQL uses a single endpoint for all operations.",
+    "tags": ["API Architecture", "REST", "GraphQL"]
+  },
+  {
+    "question": "How do error handling approaches differ between REST and GraphQL?",
+    "options": [
+      "REST always returns 200 status codes",
+      "GraphQL uses HTTP status codes exclusively",
+      "REST uses HTTP status codes, GraphQL returns errors in response body",
+      "GraphQL doesn't support error handling"
+    ],
+    "answer": "REST uses HTTP status codes, GraphQL returns errors in response body",
+    "explanation": "REST leverages HTTP status codes (404, 500), while GraphQL typically returns 200 OK with errors in the response body.",
+    "tags": ["Error Handling", "REST", "GraphQL"]
+  },
+  {
+    "question": "Which API style has built-in caching advantages?",
+    "options": [
+      "GraphQL due to its query structure",
+      "REST due to HTTP caching mechanisms",
+      "Both have identical caching capabilities",
+      "Neither supports caching"
+    ],
+    "answer": "REST due to HTTP caching mechanisms",
+    "explanation": "REST benefits from native HTTP caching at the network level, while GraphQL caching requires custom implementation.",
+    "tags": ["Caching", "REST", "GraphQL"]
+  },
+  {
+    "question": "Which approach is generally better suited for mobile applications with limited bandwidth?",
+    "options": [
+      "REST due to its simplicity",
+      "GraphQL due to payload minimization",
+      "SOAP for better security",
+      "All are equally suitable"
+    ],
+    "answer": "GraphQL due to payload minimization",
+    "explanation": "GraphQL's ability to request only needed data makes it more efficient for bandwidth-constrained environments.",
+    "tags": ["Mobile Development", "REST", "GraphQL"]
+  },
+  {
+    "question": "What is a potential downside of GraphQL compared to REST?",
+    "options": [
+      "Harder to monitor and analyze",
+      "No support for mutations",
+      "Cannot be secured with authentication",
+      "Requires constant schema updates"
+    ],
+    "answer": "Harder to monitor and analyze",
+    "explanation": "GraphQL's single endpoint and dynamic queries make traditional monitoring/tooling more challenging compared to REST's explicit endpoints.",
+    "tags": ["API Monitoring", "REST", "GraphQL"]
+  },
+  {
+    "question": "Which API type is generally better for complex systems with multiple data sources?",
+    "options": [
+      "REST due to its simplicity",
+      "GraphQL due to query aggregation",
+      "Both handle this equally well",
+      "Neither supports multiple data sources"
+    ],
+    "answer": "GraphQL due to query aggregation",
+    "explanation": "GraphQL's ability to aggregate data from multiple sources in a single request makes it strong for complex systems.",
+    "tags": ["System Architecture", "REST", "GraphQL"]
+  },
+  {
+    "question": "What security advantage does REST typically have over GraphQL?",
+    "options": [
+      "Built-in SQL injection protection",
+      "Simpler to implement rate limiting",
+      "Automatic CSRF protection",
+      "No security advantages"
+    ],
+    "answer": "Simpler to implement rate limiting",
+    "explanation": "REST's explicit endpoints make rate limiting easier compared to GraphQL's single endpoint with dynamic queries.",
+    "tags": ["API Security", "REST", "GraphQL"]
+  },
+  {
+    "question": "How do REST and GraphQL handle relationships between resources?",
+    "options": [
+      "Both require multiple round-trips",
+      "REST uses hypermedia (HATEOAS), GraphQL uses nested queries",
+      "GraphQL requires separate endpoints for relationships",
+      "Neither supports resource relationships"
+    ],
+    "answer": "REST uses hypermedia (HATEOAS), GraphQL uses nested queries",
+    "explanation": "REST traditionally uses hypermedia links between resources, while GraphQL allows nested queries in a single request.",
+    "tags": ["Data Relationships", "REST", "GraphQL"]
   }
 ]
