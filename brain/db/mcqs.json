@@ -20316,5 +20316,683 @@
     "answer": "Global State Management Pattern",
     "explanation": "React's global state management libraries (e.g., Redux, MobX) implement the Global State Management pattern, enabling centralized state management across components.",
     "tags": ["React", "Design Patterns", "Global State Management"]
+  },
+  {
+    "question": "What is a database?",
+    "options": [
+      "A protocol for secure communication between services",
+      "A structured collection of data that allows efficient storage, retrieval, and management",
+      "A front-end framework for building user interfaces",
+      "A tool for encrypting sensitive information"
+    ],
+    "answer": "A structured collection of data that allows efficient storage, retrieval, and management",
+    "explanation": "A database is a system designed to store, manage, and retrieve data efficiently, enabling applications to interact with large datasets.",
+    "tags": ["Databases", "Definition", "Data Management"]
+  },
+  {
+    "question": "Which category does MySQL belong to?",
+    "options": [
+      "NoSQL Database",
+      "Relational Database (SQL)",
+      "Graph Database",
+      "Time-Series Database"
+    ],
+    "answer": "Relational Database (SQL)",
+    "explanation": "MySQL is a relational database management system (RDBMS) that uses SQL for querying and managing data, organizing it into tables with predefined schemas.",
+    "tags": ["Databases", "Categories", "MySQL"]
+  },
+  {
+    "question": "What is the primary purpose of NoSQL databases?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To handle unstructured or semi-structured data at scale",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle unstructured or semi-structured data at scale",
+    "explanation": "NoSQL databases are designed to handle large volumes of unstructured or semi-structured data, making them ideal for modern applications like social media, IoT, and big data analytics.",
+    "tags": ["Databases", "NoSQL", "Unstructured Data"]
+  },
+  {
+    "question": "Which type of database is best suited for storing hierarchical data, such as social networks or recommendation systems?",
+    "options": [
+      "Relational Database",
+      "Graph Database",
+      "Key-Value Store",
+      "Document-Oriented Database"
+    ],
+    "answer": "Graph Database",
+    "explanation": "Graph databases, like Neo4j, are optimized for storing and querying hierarchical or interconnected data, making them ideal for social networks and recommendation systems.",
+    "tags": ["Databases", "Graph Database", "Hierarchical Data"]
+  },
+  {
+    "question": "What is the role of ACID properties in databases?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure transactions are processed reliably and consistently",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure transactions are processed reliably and consistently",
+    "explanation": "ACID (Atomicity, Consistency, Isolation, Durability) properties guarantee reliable transaction processing in databases, ensuring data integrity even during failures.",
+    "tags": ["Databases", "ACID Properties", "Transactions"]
+  },
+  {
+    "question": "Which database feature ensures data consistency by preventing concurrent modifications?",
+    "options": ["Indexes", "Locking mechanisms", "Encryption", "Caching"],
+    "answer": "Locking mechanisms",
+    "explanation": "Locking mechanisms in databases prevent multiple users or processes from modifying the same data simultaneously, ensuring consistency and avoiding race conditions.",
+    "tags": ["Databases", "Concurrency Control", "Locking"]
+  },
+  {
+    "question": "What is the main difference between SQL and NoSQL databases?",
+    "options": [
+      "SQL databases use tables with predefined schemas, while NoSQL databases handle unstructured or flexible data models",
+      "There is no difference; both serve the same purpose",
+      "NoSQL replaces traditional APIs entirely",
+      "SQL focuses exclusively on frontend development"
+    ],
+    "answer": "SQL databases use tables with predefined schemas, while NoSQL databases handle unstructured or flexible data models",
+    "explanation": "SQL databases organize data into tables with fixed schemas, whereas NoSQL databases support flexible, schema-less data models, making them suitable for diverse use cases.",
+    "tags": ["Databases", "SQL vs NoSQL", "Data Models"]
+  },
+  {
+    "question": "Which database category is best suited for real-time analytics and time-stamped data?",
+    "options": [
+      "Relational Database",
+      "Time-Series Database",
+      "Key-Value Store",
+      "Document-Oriented Database"
+    ],
+    "answer": "Time-Series Database",
+    "explanation": "Time-series databases, like InfluxDB or TimescaleDB, are optimized for handling time-stamped data and real-time analytics, making them ideal for monitoring and IoT applications.",
+    "tags": ["Databases", "Time-Series Database", "Real-Time Analytics"]
+  },
+  {
+    "question": "What is the role of indexing in databases?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To improve query performance by creating faster lookup structures",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To improve query performance by creating faster lookup structures",
+    "explanation": "Indexing in databases creates optimized data structures for faster lookups, significantly improving query performance for large datasets.",
+    "tags": ["Databases", "Indexing", "Query Performance"]
+  },
+  {
+    "question": "Which database category is most suitable for storing documents or JSON-like objects?",
+    "options": [
+      "Relational Database",
+      "Document-Oriented Database",
+      "Graph Database",
+      "Key-Value Store"
+    ],
+    "answer": "Document-Oriented Database",
+    "explanation": "Document-oriented databases, like MongoDB, store data in flexible document formats (e.g., JSON), making them ideal for applications requiring dynamic schemas.",
+    "tags": ["Databases", "Document-Oriented Database", "JSON Storage"]
+  },
+  {
+    "question": "What is the purpose of normalization in relational databases?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To reduce redundancy and dependency by organizing data into related tables",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To reduce redundancy and dependency by organizing data into related tables",
+    "explanation": "Normalization in relational databases minimizes redundancy and dependency by organizing data into well-defined relationships across multiple tables.",
+    "tags": ["Databases", "Normalization", "Redundancy Reduction"]
+  },
+  {
+    "question": "Which database feature allows you to define reusable blocks of code?",
+    "options": ["Stored Procedures", "Encryption", "Indexes", "Caching"],
+    "answer": "Stored Procedures",
+    "explanation": "Stored procedures in databases allow defining reusable blocks of code that can be executed repeatedly, reducing duplication and improving performance.",
+    "tags": ["Databases", "Stored Procedures", "Code Reusability"]
+  },
+  {
+    "question": "What is the role of caching in database systems?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store frequently accessed data in memory for faster retrieval",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store frequently accessed data in memory for faster retrieval",
+    "explanation": "Caching in database systems stores frequently accessed data in memory, reducing the need for disk I/O and improving overall application performance.",
+    "tags": ["Databases", "Caching", "Performance Optimization"]
+  },
+  {
+    "question": "Which database category is best suited for high-performance key-value storage?",
+    "options": [
+      "Relational Database",
+      "Key-Value Store",
+      "Graph Database",
+      "Document-Oriented Database"
+    ],
+    "answer": "Key-Value Store",
+    "explanation": "Key-value stores, like Redis or DynamoDB, are optimized for high-performance storage and retrieval of key-value pairs, often used for caching or session management.",
+    "tags": ["Databases", "Key-Value Store", "High-Performance Storage"]
+  },
+  {
+    "question": "What is the purpose of a database schema?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define the structure and organization of data in a database",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define the structure and organization of data in a database",
+    "explanation": "A database schema defines the structure, organization, and relationships of data in a database, ensuring consistency and integrity across tables or collections.",
+    "tags": ["Databases", "Schema", "Data Organization"]
+  },
+  {
+    "question": "Which database category is most suitable for e-commerce applications requiring complex transactions?",
+    "options": [
+      "Relational Database",
+      "NoSQL Database",
+      "Graph Database",
+      "Time-Series Database"
+    ],
+    "answer": "Relational Database",
+    "explanation": "Relational databases, like PostgreSQL or Oracle, are ideal for e-commerce applications due to their strong support for complex transactions and ACID compliance.",
+    "tags": ["Databases", "Relational Database", "E-commerce"]
+  },
+  {
+    "question": "What is the role of foreign keys in relational databases?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To establish relationships between tables by referencing primary keys",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To establish relationships between tables by referencing primary keys",
+    "explanation": "Foreign keys in relational databases enforce referential integrity by linking one table's column to another table's primary key, ensuring data consistency.",
+    "tags": ["Databases", "Foreign Keys", "Referential Integrity"]
+  },
+  {
+    "question": "Which database category is best suited for applications requiring full-text search capabilities?",
+    "options": [
+      "Relational Database",
+      "NoSQL Database",
+      "Search Engine Database",
+      "Graph Database"
+    ],
+    "answer": "Search Engine Database",
+    "explanation": "Search engine databases, like Elasticsearch, are specifically designed for full-text search and analysis, making them ideal for applications requiring advanced search features.",
+    "tags": ["Databases", "Search Engine Database", "Full-Text Search"]
+  },
+  {
+    "question": "What is the main advantage of using a distributed database system?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It provides scalability and fault tolerance by distributing data across multiple nodes",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It provides scalability and fault tolerance by distributing data across multiple nodes",
+    "explanation": "Distributed database systems enhance scalability and fault tolerance by spreading data and workloads across multiple nodes, ensuring high availability and performance.",
+    "tags": ["Databases", "Distributed Databases", "Scalability"]
+  },
+  {
+    "question": "Which database feature ensures data durability after a transaction is committed?",
+    "options": ["Logging", "Indexing", "Encryption", "Caching"],
+    "answer": "Logging",
+    "explanation": "Logging mechanisms in databases ensure data durability by recording all changes made during a transaction, allowing recovery in case of failures.",
+    "tags": ["Databases", "Durability", "Transaction Logging"]
+  },
+  {
+    "question": "Which database category is most suitable for applications requiring flexible schema designs?",
+    "options": [
+      "Relational Database",
+      "NoSQL Database",
+      "Graph Database",
+      "Time-Series Database"
+    ],
+    "answer": "NoSQL Database",
+    "explanation": "NoSQL databases, such as MongoDB or Couchbase, support flexible schema designs, making them ideal for applications with evolving or unstructured data requirements.",
+    "tags": ["Databases", "NoSQL", "Flexible Schema"]
+  },
+  {
+    "question": "What is the purpose of sharding in database systems?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To partition data across multiple nodes for improved scalability",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To partition data across multiple nodes for improved scalability",
+    "explanation": "Sharding partitions data horizontally across multiple nodes, enhancing scalability and performance for large-scale applications.",
+    "tags": ["Databases", "Sharding", "Scalability"]
+  },
+  {
+    "question": "Which database category is most suitable for applications requiring fast in-memory operations?",
+    "options": [
+      "Relational Database",
+      "Key-Value Store",
+      "Graph Database",
+      "Document-Oriented Database"
+    ],
+    "answer": "Key-Value Store",
+    "explanation": "Key-value stores, like Redis or Memcached, are optimized for fast in-memory operations, making them perfect for caching, session management, or real-time data processing.",
+    "tags": ["Databases", "Key-Value Store", "In-Memory Operations"]
+  },
+  {
+    "question": "What is the role of replication in database systems?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To create copies of data across multiple nodes for redundancy and fault tolerance",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create copies of data across multiple nodes for redundancy and fault tolerance",
+    "explanation": "Replication in databases creates copies of data across multiple nodes, ensuring redundancy and fault tolerance while improving read performance.",
+    "tags": ["Databases", "Replication", "Fault Tolerance"]
+  },
+  {
+    "question": "Which database category is most suitable for applications requiring graph-based relationships?",
+    "options": [
+      "Relational Database",
+      "NoSQL Database",
+      "Graph Database",
+      "Key-Value Store"
+    ],
+    "answer": "Graph Database",
+    "explanation": "Graph databases, like Neo4j or Amazon Neptune, are designed for applications requiring graph-based relationships, such as social networks or recommendation engines.",
+    "tags": ["Databases", "Graph Database", "Graph Relationships"]
+  },
+  {
+    "question": "What is the purpose of a database migration tool?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage changes to the database schema over time",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage changes to the database schema over time",
+    "explanation": "Database migration tools help manage changes to the database schema over time, ensuring smooth upgrades and consistent data structures across environments.",
+    "tags": ["Databases", "Migration Tools", "Schema Management"]
+  },
+  {
+    "question": "Which database category is most suitable for applications requiring geographic data analysis?",
+    "options": [
+      "Relational Database",
+      "Spatial Database",
+      "Graph Database",
+      "Time-Series Database"
+    ],
+    "answer": "Spatial Database",
+    "explanation": "Spatial databases, like PostGIS or Oracle Spatial, are specialized for geographic data analysis, enabling efficient queries and calculations involving location-based data.",
+    "tags": ["Databases", "Spatial Database", "Geographic Data"]
+  },
+  {
+    "question": "What is the role of triggers in database systems?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To execute stored procedures automatically when certain events occur",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To execute stored procedures automatically when certain events occur",
+    "explanation": "Triggers in databases automatically execute stored procedures or actions when specific events, such as inserts or updates, occur, ensuring automated data validation or logging.",
+    "tags": ["Databases", "Triggers", "Automated Execution"]
+  },
+  {
+    "question": "Which database feature enables horizontal scaling by distributing data across nodes?",
+    "options": ["Sharding", "Indexing", "Encryption", "Caching"],
+    "answer": "Sharding",
+    "explanation": "Sharding enables horizontal scaling by partitioning data across multiple nodes, improving performance and capacity for large-scale applications.",
+    "tags": ["Databases", "Sharding", "Horizontal Scaling"]
+  },
+  {
+    "question": "What is the purpose of a database view?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide a virtual table based on the result of a query, simplifying complex queries",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide a virtual table based on the result of a query, simplifying complex queries",
+    "explanation": "A database view acts as a virtual table derived from the result of a query, simplifying access to complex or frequently used datasets.",
+    "tags": ["Databases", "Views", "Virtual Tables"]
+  },
+  {
+    "question": "What is the licensing model for PostgreSQL?",
+    "options": [
+      "Proprietary license owned by Oracle",
+      "Dual-licensed (GPLv2 and commercial)",
+      "Open-source under PostgreSQL License, community-driven",
+      "Closed-source with no public license"
+    ],
+    "answer": "Open-source under PostgreSQL License, community-driven",
+    "explanation": "PostgreSQL is open-source and released under the PostgreSQL License, which is permissively licensed and maintained by a community-driven development model.",
+    "tags": ["PostgreSQL", "Licensing", "Community"]
+  },
+  {
+    "question": "Which database is known for its close adherence to SQL standards?",
+    "options": ["MySQL", "PostgreSQL", "Both equally", "Neither"],
+    "answer": "PostgreSQL",
+    "explanation": "PostgreSQL closely follows SQL standards and supports advanced features such as Common Table Expressions (CTEs), window functions, and materialized views.",
+    "tags": ["PostgreSQL", "SQL Compliance", "Features"]
+  },
+  {
+    "question": "What is a key advantage of PostgreSQL over MySQL in terms of data types?",
+    "options": [
+      "PostgreSQL offers fewer specialized extensions",
+      "PostgreSQL provides rich data types like arrays, JSONB, and hstore",
+      "MySQL has better JSONB support",
+      "MySQL supports more geospatial extensions"
+    ],
+    "answer": "PostgreSQL provides rich data types like arrays, JSONB, and hstore",
+    "explanation": "PostgreSQL supports advanced data types such as arrays, JSONB (binary JSON storage), hstore (key-value pairs), and UUIDs, along with extensible features like PostGIS for geospatial data.",
+    "tags": ["PostgreSQL", "Data Types", "Extensions"]
+  },
+  {
+    "question": "Which database performs better for read-heavy, simple queries?",
+    "options": ["PostgreSQL", "MySQL", "Both perform equally", "Neither"],
+    "answer": "MySQL",
+    "explanation": "MySQL is optimized for read-heavy, simple queries, making it faster in scenarios where query complexity is low.",
+    "tags": ["MySQL", "Performance", "Read-Heavy Queries"]
+  },
+  {
+    "question": "How does PostgreSQL handle high concurrency compared to MySQL?",
+    "options": [
+      "PostgreSQL struggles with high concurrency",
+      "PostgreSQL uses MVCC to avoid read/write locks",
+      "MySQL uses MVCC for all storage engines",
+      "Both use the same locking mechanism"
+    ],
+    "answer": "PostgreSQL uses MVCC to avoid read/write locks",
+    "explanation": "PostgreSQL employs Multi-Version Concurrency Control (MVCC) to manage high concurrency without locking, ensuring smooth read/write operations.",
+    "tags": ["PostgreSQL", "Concurrency", "MVCC"]
+  },
+  {
+    "question": "Which database offers better replication and high availability options?",
+    "options": [
+      "MySQL, due to its simpler setup",
+      "PostgreSQL, with streaming and logical replication",
+      "Both offer identical replication capabilities",
+      "Neither supports replication"
+    ],
+    "answer": "PostgreSQL, with streaming and logical replication",
+    "explanation": "PostgreSQL provides robust replication options, including streaming replication, logical replication, and tools like pgPool, offering better high availability solutions.",
+    "tags": ["PostgreSQL", "Replication", "High Availability"]
+  },
+  {
+    "question": "What is the primary difference in ACID compliance between PostgreSQL and MySQL?",
+    "options": [
+      "Only PostgreSQL supports ACID",
+      "Only MySQL supports ACID",
+      "Both support ACID, but PostgreSQL's implementation is more robust under heavy load",
+      "ACID compliance is irrelevant to both databases"
+    ],
+    "answer": "Both support ACID, but PostgreSQL's implementation is more robust under heavy load",
+    "explanation": "Both PostgreSQL and MySQL (with InnoDB) support ACID transactions, but PostgreSQL's implementation handles heavy workloads more effectively.",
+    "tags": ["PostgreSQL", "MySQL", "ACID Compliance"]
+  },
+  {
+    "question": "Which database stores JSON data more efficiently?",
+    "options": [
+      "MySQL, using JSON data type",
+      "PostgreSQL, using JSONB for binary storage",
+      "Both store JSON data equally efficiently",
+      "Neither supports JSON storage"
+    ],
+    "answer": "PostgreSQL, using JSONB for binary storage",
+    "explanation": "PostgreSQL's JSONB data type stores JSON in binary format, enabling efficient querying and indexing compared to MySQL's text-based JSON storage.",
+    "tags": ["PostgreSQL", "JSON Support", "JSONB"]
+  },
+  {
+    "question": "Which database has stronger full-text search capabilities?",
+    "options": [
+      "MySQL, with basic support",
+      "PostgreSQL, with built-in advanced features",
+      "Both have identical full-text search features",
+      "Neither supports full-text search"
+    ],
+    "answer": "PostgreSQL, with built-in advanced features",
+    "explanation": "PostgreSQL includes advanced full-text search features such as multiple languages and custom dictionaries, while MySQL's support is more limited.",
+    "tags": ["PostgreSQL", "Full-Text Search", "Advanced Features"]
+  },
+  {
+    "question": "What is the main advantage of MySQL's InnoDB storage engine?",
+    "options": [
+      "It supports row-level locking and ACID compliance",
+      "It is deprecated in favor of MyISAM",
+      "It eliminates the need for indexing",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It supports row-level locking and ACID compliance",
+    "explanation": "MySQL's InnoDB storage engine supports row-level locking and ensures ACID compliance, making it suitable for transactional applications.",
+    "tags": ["MySQL", "InnoDB", "Storage Engine"]
+  },
+  {
+    "question": "Which database is easier to set up for beginners?",
+    "options": [
+      "PostgreSQL, due to its flexibility",
+      "MySQL, with simpler setup and configuration",
+      "Both are equally easy to set up",
+      "Neither is beginner-friendly"
+    ],
+    "answer": "MySQL, with simpler setup and configuration",
+    "explanation": "MySQL is generally considered easier to set up and use, especially for beginners, due to its straightforward installation process and simplicity.",
+    "tags": ["MySQL", "Ease of Use", "Setup"]
+  },
+  {
+    "question": "What is the role of stored procedures in PostgreSQL?",
+    "options": [
+      "Limited to SQL/JavaScript syntax",
+      "Supports multiple procedural languages like PL/pgSQL, PL/Python",
+      "Stored procedures are not supported in PostgreSQL",
+      "They replace traditional APIs entirely"
+    ],
+    "answer": "Supports multiple procedural languages like PL/pgSQL, PL/Python",
+    "explanation": "PostgreSQL allows creating stored procedures using various procedural languages, including PL/pgSQL, PL/Python, and others, providing greater flexibility.",
+    "tags": ["PostgreSQL", "Stored Procedures", "Procedural Languages"]
+  },
+  {
+    "question": "Which database is better suited for geospatial applications?",
+    "options": [
+      "MySQL, with superior geospatial extensions",
+      "PostgreSQL, through PostGIS",
+      "Both offer identical geospatial capabilities",
+      "Neither supports geospatial data"
+    ],
+    "answer": "PostgreSQL, through PostGIS",
+    "explanation": "PostgreSQL, combined with PostGIS, is widely regarded as the best choice for geospatial applications due to its powerful spatial data handling capabilities.",
+    "tags": ["PostgreSQL", "Geospatial", "PostGIS"]
+  },
+  {
+    "question": "What is the purpose of MVCC in PostgreSQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To allow concurrent read/write operations without locking",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To allow concurrent read/write operations without locking",
+    "explanation": "MVCC (Multi-Version Concurrency Control) in PostgreSQL enables concurrent read/write operations without locking, improving performance under high load.",
+    "tags": ["PostgreSQL", "MVCC", "Concurrency"]
+  },
+  {
+    "question": "Which database is preferred for complex analytics and data warehousing?",
+    "options": [
+      "MySQL, due to its speed",
+      "PostgreSQL, with advanced SQL features",
+      "Both are equally suited",
+      "Neither supports analytics"
+    ],
+    "answer": "PostgreSQL, with advanced SQL features",
+    "explanation": "PostgreSQL is preferred for complex analytics and data warehousing because of its support for advanced SQL features like CTEs, window functions, and materialized views.",
+    "tags": ["PostgreSQL", "Complex Analytics", "SQL Features"]
+  },
+  {
+    "question": "What is the primary disadvantage of MySQL compared to PostgreSQL?",
+    "options": [
+      "Less community-driven development",
+      "Poor performance for simple queries",
+      "Limited support for JSON data",
+      "All of the above"
+    ],
+    "answer": "Less community-driven development",
+    "explanation": "MySQL is owned by Oracle, raising concerns about independence, whereas PostgreSQL is fully community-driven and open-source.",
+    "tags": ["MySQL", "PostgreSQL", "Community Development"]
+  },
+  {
+    "question": "Which database offers more granular security features?",
+    "options": [
+      "MySQL, with standard privileges",
+      "PostgreSQL, with row-level security",
+      "Both provide identical security features",
+      "Neither supports security"
+    ],
+    "answer": "PostgreSQL, with row-level security",
+    "explanation": "PostgreSQL provides more granular security features, including row-level security and robust access control mechanisms.",
+    "tags": ["PostgreSQL", "Security", "Row-Level Security"]
+  },
+  {
+    "question": "Which database is better for write-heavy workloads?",
+    "options": [
+      "MySQL, due to its simplicity",
+      "PostgreSQL, optimized for write-heavy operations",
+      "Both perform equally well",
+      "Neither supports write-heavy workloads"
+    ],
+    "answer": "PostgreSQL, optimized for write-heavy operations",
+    "explanation": "PostgreSQL is optimized for write-heavy workloads and high concurrency, thanks to its MVCC implementation and efficient locking mechanisms.",
+    "tags": ["PostgreSQL", "Write-Heavy Workloads", "MVCC"]
+  },
+  {
+    "question": "What is the main advantage of MySQL's dual licensing model?",
+    "options": [
+      "Encourages community contributions",
+      "Provides flexibility for commercial and open-source use cases",
+      "Eliminates the need for third-party tools",
+      "Focuses exclusively on frontend development"
+    ],
+    "answer": "Provides flexibility for commercial and open-source use cases",
+    "explanation": "MySQL's dual licensing model (GPLv2 for open-source and a commercial license) offers flexibility for both open-source and proprietary projects.",
+    "tags": ["MySQL", "Licensing", "Dual Licensing"]
+  },
+  {
+    "question": "Which database is most commonly used in LAMP stack environments?",
+    "options": [
+      "PostgreSQL",
+      "MySQL",
+      "Both are equally popular",
+      "Neither is used in LAMP stacks"
+    ],
+    "answer": "MySQL",
+    "explanation": "MySQL is traditionally more popular in LAMP stack environments due to its simplicity and integration with PHP-based applications.",
+    "tags": ["MySQL", "LAMP Stack", "Popularity"]
+  },
+  {
+    "question": "Which database has a steeper learning curve?",
+    "options": [
+      "MySQL, due to its proprietary syntax",
+      "PostgreSQL, due to its configurability and advanced features",
+      "Both are equally easy to learn",
+      "Neither requires learning"
+    ],
+    "answer": "PostgreSQL, due to its configurability and advanced features",
+    "explanation": "PostgreSQL's extensive feature set and configurability make it more complex to learn compared to MySQL's simpler setup and usage.",
+    "tags": ["PostgreSQL", "Learning Curve", "Configurability"]
+  },
+  {
+    "question": "Which database is better suited for web applications requiring high read traffic?",
+    "options": [
+      "PostgreSQL, due to its advanced indexing",
+      "MySQL, optimized for read-heavy queries",
+      "Both perform equally well",
+      "Neither supports web applications"
+    ],
+    "answer": "MySQL, optimized for read-heavy queries",
+    "explanation": "MySQL is optimized for read-heavy, simple queries, making it ideal for web applications with high read traffic, such as content management systems.",
+    "tags": ["MySQL", "Read-Heavy Queries", "Web Applications"]
+  },
+  {
+    "question": "What is the role of index types in PostgreSQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide multiple index types (e.g., B-tree, GIN, GiST) for complex data",
+      "To simplify database setup",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide multiple index types (e.g., B-tree, GIN, GiST) for complex data",
+    "explanation": "PostgreSQL supports multiple index types, including B-tree, GIN, GiST, and BRIN, enabling efficient handling of complex and diverse datasets.",
+    "tags": ["PostgreSQL", "Indexing", "Index Types"]
+  },
+  {
+    "question": "Which database is better suited for applications needing materialized views?",
+    "options": [
+      "MySQL, with native support",
+      "PostgreSQL, supporting materialized views natively",
+      "Both support materialized views equally",
+      "Neither supports materialized views"
+    ],
+    "answer": "PostgreSQL, supporting materialized views natively",
+    "explanation": "PostgreSQL supports materialized views natively, allowing precomputed results to be stored and refreshed periodically, enhancing performance for complex queries.",
+    "tags": ["PostgreSQL", "Materialized Views", "Performance"]
+  },
+  {
+    "question": "When should you choose MySQL over PostgreSQL?",
+    "options": [
+      "For applications requiring advanced SQL features",
+      "For simple web apps with high read traffic",
+      "For geospatial applications",
+      "For write-heavy workloads"
+    ],
+    "answer": "For simple web apps with high read traffic",
+    "explanation": "MySQL is often chosen for simple web applications with high read traffic due to its speed and ease of use.",
+    "tags": ["MySQL", "Use Cases", "Read-Heavy Traffic"]
+  },
+  {
+    "question": "Which database is preferred for cloud-based managed services?",
+    "options": [
+      "PostgreSQL, with strong support in AWS RDS, Azure, etc.",
+      "MySQL, due to its Oracle ownership",
+      "Both are equally preferred",
+      "Neither is cloud-friendly"
+    ],
+    "answer": "PostgreSQL, with strong support in AWS RDS, Azure, etc.",
+    "explanation": "While both databases are cloud-friendly, PostgreSQL is often preferred for managed services due to its robust feature set and active community support.",
+    "tags": ["PostgreSQL", "Cloud Services", "Managed Databases"]
+  },
+  {
+    "question": "What is the role of `pgPool` in PostgreSQL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To enhance replication and connection pooling",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To enhance replication and connection pooling",
+    "explanation": "`pgPool` is a tool for PostgreSQL that enhances replication and connection pooling, improving scalability and performance.",
+    "tags": ["PostgreSQL", "pgPool", "Replication"]
+  },
+  {
+    "question": "Which database is more suitable for CMS platforms like WordPress?",
+    "options": [
+      "PostgreSQL, due to its advanced features",
+      "MySQL, being historically more integrated with CMS platforms",
+      "Both are equally suitable",
+      "Neither supports CMS platforms"
+    ],
+    "answer": "MySQL, being historically more integrated with CMS platforms",
+    "explanation": "MySQL has been historically more integrated with CMS platforms like WordPress, making it a common choice for such applications.",
+    "tags": ["MySQL", "CMS Platforms", "WordPress"]
+  },
+  {
+    "question": "Which database offers better extensibility through third-party tools?",
+    "options": [
+      "MySQL, with Oracle's ecosystem",
+      "PostgreSQL, with tools like TimescaleDB and Citus",
+      "Both offer identical extensibility",
+      "Neither supports third-party tools"
+    ],
+    "answer": "PostgreSQL, with tools like TimescaleDB and Citus",
+    "explanation": "PostgreSQL is highly extensible, with a wide range of third-party tools like TimescaleDB for time-series data and Citus for distributed databases.",
+    "tags": ["PostgreSQL", "Extensibility", "Third-Party Tools"]
   }
 ]
