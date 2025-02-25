@@ -21970,5 +21970,437 @@
     "answer": "REST uses hypermedia (HATEOAS), GraphQL uses nested queries",
     "explanation": "REST traditionally uses hypermedia links between resources, while GraphQL allows nested queries in a single request.",
     "tags": ["Data Relationships", "REST", "GraphQL"]
+  },
+  {
+    "question": "What is the primary benefit of React Server Components?",
+    "options": [
+      "Eliminate client-side JavaScript entirely",
+      "Reduce client-side bundle size by keeping server-only code off the client",
+      "Enable real-time browser animations",
+      "Replace API endpoints with direct database access"
+    ],
+    "answer": "Reduce client-side bundle size by keeping server-only code off the client",
+    "explanation": "Server Components execute on the server and never ship their code to the client, significantly reducing bundle size.",
+    "tags": ["React", "Server Components", "Performance"]
+  },
+  {
+    "question": "Which of these CANNOT be used in React Server Components?",
+    "options": [
+      "Async/await for data fetching",
+      "React useState hook",
+      "CSS Modules",
+      "Server-side data sources"
+    ],
+    "answer": "React useState hook",
+    "explanation": "Server Components cannot use state or effects (useState, useEffect) as they don't execute on the client.",
+    "tags": ["React", "Server Components", "Limitations"]
+  },
+  {
+    "question": "How do Server Components handle interactivity?",
+    "options": [
+      "Through WebSocket connections",
+      "By automatically converting to client components",
+      "By composing with Client Components for interactive parts",
+      "Using server-side click handlers"
+    ],
+    "answer": "By composing with Client Components for interactive parts",
+    "explanation": "Server Components handle static content, while interactive elements require co-located Client Components ('use client' directive).",
+    "tags": ["React", "Server Components", "Architecture"]
+  },
+  {
+    "question": "What makes Server Components different from Server-Side Rendering (SSR)?",
+    "options": [
+      "SSR is obsolete with Server Components",
+      "Server Components enable progressive hydration",
+      "SSR renders Client Components on server, Server Components never hydrate",
+      "They're fundamentally the same technology"
+    ],
+    "answer": "SSR renders Client Components on server, Server Components never hydrate",
+    "explanation": "SSR renders client components to HTML on server, while Server Components are never hydrated on client.",
+    "tags": ["React", "Server Components", "SSR"]
+  },
+  {
+    "question": "Why might Server Components improve data fetching efficiency?",
+    "options": [
+      "They enable direct database access from components",
+      "They merge data fetching and rendering in same environment",
+      "They automatically cache all API responses",
+      "They replace REST APIs with GraphQL"
+    ],
+    "answer": "They merge data fetching and rendering in same environment",
+    "explanation": "Server Components can access backend services directly during rendering, avoiding client-server waterfall requests.",
+    "tags": ["React", "Server Components", "Data Fetching"]
+  },
+  {
+    "question": "What file convention often indicates a Server Component in Next.js?",
+    "options": [
+      ".client.js",
+      ".server.js",
+      ".sc.js", 
+      "No special extension needed"
+    ],
+    "answer": "No special extension needed",
+    "explanation": "Next.js uses the 'use server' directive rather than file extensions to denote Server Components.",
+    "tags": ["React", "Server Components", "Next.js"]
+  },
+  {
+    "question": "Which browser API is inaccessible in Server Components?",
+    "options": [
+      "fetch()",
+      "localStorage",
+      "console.log",
+      "Error boundaries"
+    ],
+    "answer": "localStorage",
+    "explanation": "Browser APIs like localStorage are unavailable in Server Components as they execute on the server.",
+    "tags": ["React", "Server Components", "Limitations"]
+  },
+  {
+    "question": "How do Server Components affect SEO?",
+    "options": [
+      "Worse SEO due to lack of client-side JS",
+      "Better SEO through server-rendered static content",
+      "No impact on SEO",
+      "Require special meta tags for search engines"
+    ],
+    "answer": "Better SEO through server-rendered static content",
+    "explanation": "Server Components render content on the server, providing search engines with fully formed HTML.",
+    "tags": ["React", "Server Components", "SEO"]
+  },
+  {
+    "question": "What happens when a Server Component imports a Client Component?",
+    "options": [
+      "The entire tree becomes a Client Component",
+      "It creates a network boundary between server/client",
+      "Next.js throws a compilation error",
+      "The Client Component becomes server-rendered"
+    ],
+    "answer": "It creates a network boundary between server/client",
+    "explanation": "Client Components form islands of interactivity within Server Components, creating a boundary between environments.",
+    "tags": ["React", "Server Components", "Architecture"]
+  },
+  {
+    "question": "Which framework first popularized React Server Components?",
+    "options": [
+      "Create React App",
+      "Next.js",
+      "Gatsby",
+      "Remix"
+    ],
+    "answer": "Next.js",
+    "explanation": "Next.js 13+ implemented React Server Components as a core feature, driving their mainstream adoption.",
+    "tags": ["React", "Server Components", "Frameworks"]
+  },
+  {
+    "question": "What is the primary purpose of unit testing in a NestJS application?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure individual units of code (e.g., functions or services) work as expected",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure individual units of code (e.g., functions or services) work as expected",
+    "explanation": "Unit testing in NestJS ensures that individual units of code, such as functions or services, behave correctly and independently, improving code quality and reliability.",
+    "tags": ["NestJS", "Testing", "Unit Testing"]
+  },
+  {
+    "question": "Which library is commonly used for writing unit tests in NestJS?",
+    "options": [
+      "Mocha",
+      "Jest (@nestjs/testing)",
+      "Supertest",
+      "Cypress"
+    ],
+    "answer": "Jest (@nestjs/testing)",
+    "explanation": "Jest, integrated via `@nestjs/testing`, is widely used for writing unit tests in NestJS applications due to its simplicity and powerful features like mocking dependencies.",
+    "tags": ["NestJS", "Testing", "Jest"]
+  },
+  {
+    "question": "What is the role of Supertest in end-to-end testing?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To test HTTP endpoints by simulating requests and verifying responses",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To test HTTP endpoints by simulating requests and verifying responses",
+    "explanation": "Supertest is a library used for end-to-end testing in NestJS, allowing developers to simulate HTTP requests and verify the responses returned by the application.",
+    "tags": ["NestJS", "Testing", "Supertest", "End-to-End Testing"]
+  },
+  {
+    "question": "Which logging library is preferred for high-performance logging in NestJS?",
+    "options": [
+      "Console.log",
+      "Winston or Pino",
+      "Express.js middleware",
+      "None of the above"
+    ],
+    "answer": "Winston or Pino",
+    "explanation": "Winston and Pino are popular logging libraries in NestJS due to their performance, flexibility, and ability to handle structured logs effectively.",
+    "tags": ["NestJS", "Logging", "Winston", "Pino"]
+  },
+  {
+    "question": "What is the purpose of Prometheus + Grafana in NestJS applications?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide robust logging capabilities",
+      "To monitor application performance and metrics visually",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To monitor application performance and metrics visually",
+    "explanation": "Prometheus collects metrics from your NestJS application, while Grafana visualizes these metrics, enabling effective monitoring and performance analysis.",
+    "tags": ["NestJS", "Monitoring", "Prometheus", "Grafana"]
+  },
+  {
+    "question": "Which file is essential for Dockerizing a NestJS application?",
+    "options": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "package.json",
+      "app.module.ts"
+    ],
+    "answer": "Dockerfile",
+    "explanation": "A `Dockerfile` is required to define the environment and build process for containerizing a NestJS application, ensuring consistent deployment across environments.",
+    "tags": ["NestJS", "Deployment", "Docker", "Dockerfile"]
+  },
+  {
+    "question": "What is the main advantage of deploying a NestJS application using Docker?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It ensures consistent and reproducible environments across development and production",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It ensures consistent and reproducible environments across development and production",
+    "explanation": "Dockerizing a NestJS application ensures consistent and reproducible environments, simplifying deployment and avoiding 'it works on my machine' issues.",
+    "tags": ["NestJS", "Deployment", "Docker"]
+  },
+  {
+    "question": "Which platform is commonly used for deploying NestJS applications?",
+    "options": [
+      "AWS",
+      "DigitalOcean",
+      "Vercel",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "NestJS applications can be deployed on platforms like AWS, DigitalOcean, and Vercel, depending on the project requirements and scalability needs.",
+    "tags": ["NestJS", "Deployment", "Platforms"]
+  },
+  {
+    "question": "What is the role of CI/CD in software development?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To automate the testing, building, and deployment processes",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To automate the testing, building, and deployment processes",
+    "explanation": "CI/CD (Continuous Integration/Continuous Deployment) automates the testing, building, and deployment processes, ensuring faster and more reliable releases.",
+    "tags": ["NestJS", "CI/CD", "Automation"]
+  },
+  {
+    "question": "Which tool is best suited for creating efficient and lightweight logs in NestJS?",
+    "options": [
+      "Console.log",
+      "Pino",
+      "Winston",
+      "Supertest"
+    ],
+    "answer": "Pino",
+    "explanation": "Pino is known for its high-performance logging capabilities, making it ideal for lightweight and efficient logging in NestJS applications.",
+    "tags": ["NestJS", "Logging", "Pino"]
+  },
+  {
+    "question": "What is the purpose of using Winston in a NestJS application?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide flexible and structured logging with transport options",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide flexible and structured logging with transport options",
+    "explanation": "Winston is a versatile logging library that allows structured logging and supports multiple transports (e.g., file, console, cloud) in NestJS applications.",
+    "tags": ["NestJS", "Logging", "Winston"]
+  },
+  {
+    "question": "Which of the following best describes the benefit of using Grafana with Prometheus?",
+    "options": [
+      "Grafana replaces traditional APIs with AI-driven solutions",
+      "Grafana provides a visual interface for analyzing metrics collected by Prometheus",
+      "Grafana manages front-end state exclusively",
+      "Grafana focuses solely on hardware optimization"
+    ],
+    "answer": "Grafana provides a visual interface for analyzing metrics collected by Prometheus",
+    "explanation": "Grafana complements Prometheus by offering a user-friendly dashboard for visualizing metrics and monitoring application performance.",
+    "tags": ["NestJS", "Monitoring", "Grafana", "Prometheus"]
+  },
+  {
+    "question": "What is the role of a Dockerfile in the context of NestJS deployment?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define the steps for building and running the application in a containerized environment",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define the steps for building and running the application in a containerized environment",
+    "explanation": "A Dockerfile defines the instructions for building and running a NestJS application inside a Docker container, ensuring portability and consistency.",
+    "tags": ["NestJS", "Deployment", "Dockerfile"]
+  },
+  {
+    "question": "Which of the following is true about deploying a NestJS application on AWS?",
+    "options": [
+      "AWS eliminates the need for encryption",
+      "AWS offers scalable infrastructure and managed services for deploying NestJS applications",
+      "AWS manages front-end state exclusively",
+      "AWS replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "AWS offers scalable infrastructure and managed services for deploying NestJS applications",
+    "explanation": "AWS provides scalable infrastructure and managed services like Elastic Beanstalk, ECS, or Lambda, making it a popular choice for deploying NestJS applications.",
+    "tags": ["NestJS", "Deployment", "AWS"]
+  },
+  {
+    "question": "What is the main advantage of deploying a NestJS application on DigitalOcean?",
+    "options": [
+      "DigitalOcean offers cost-effective and developer-friendly hosting solutions",
+      "DigitalOcean replaces traditional APIs with AI-driven solutions",
+      "DigitalOcean manages front-end state exclusively",
+      "DigitalOcean focuses solely on hardware optimization"
+    ],
+    "answer": "DigitalOcean offers cost-effective and developer-friendly hosting solutions",
+    "explanation": "DigitalOcean is favored for its cost-effectiveness and ease of use, providing simple tools for deploying and managing NestJS applications.",
+    "tags": ["NestJS", "Deployment", "DigitalOcean"]
+  },
+  {
+    "question": "Which deployment platform is primarily designed for frontend applications but also supports backend deployments like NestJS?",
+    "options": [
+      "AWS",
+      "DigitalOcean",
+      "Vercel",
+      "Heroku"
+    ],
+    "answer": "Vercel",
+    "explanation": "Vercel is primarily designed for frontend applications but also supports backend deployments, including serverless functions and full-stack applications like NestJS.",
+    "tags": ["NestJS", "Deployment", "Vercel"]
+  },
+  {
+    "question": "What is the purpose of route-based testing in end-to-end (e2e) tests?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To verify the behavior of HTTP routes and their corresponding responses",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To verify the behavior of HTTP routes and their corresponding responses",
+    "explanation": "Route-based testing in e2e tests ensures that HTTP routes function correctly and return the expected responses under various conditions.",
+    "tags": ["NestJS", "Testing", "End-to-End Testing", "Routes"]
+  },
+  {
+    "question": "Which of the following is true about using Promises in e2e tests with Supertest?",
+    "options": [
+      "Promises eliminate the need for encryption",
+      "Promises allow chaining HTTP requests and assertions for better test readability",
+      "Promises manage front-end state exclusively",
+      "Promises replace traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Promises allow chaining HTTP requests and assertions for better test readability",
+    "explanation": "In e2e tests with Supertest, Promises enable chaining HTTP requests and assertions, improving test clarity and maintainability.",
+    "tags": ["NestJS", "Testing", "Supertest", "Promises"]
+  },
+  {
+    "question": "What is the role of an e2e test framework in a NestJS application?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To test the entire application flow, including API interactions and business logic",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To test the entire application flow, including API interactions and business logic",
+    "explanation": "An e2e test framework in NestJS ensures that the entire application flow, including API interactions and business logic, works as expected before deployment.",
+    "tags": ["NestJS", "Testing", "End-to-End Testing"]
+  },
+  {
+    "question": "Which of the following is true about continuous integration (CI) in the context of NestJS?",
+    "options": [
+      "CI eliminates the need for manual testing entirely",
+      "CI automates the execution of tests and builds whenever code changes are pushed",
+      "CI manages front-end state exclusively",
+      "CI replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "CI automates the execution of tests and builds whenever code changes are pushed",
+    "explanation": "Continuous Integration (CI) automates the execution of tests and builds when code changes are pushed, ensuring rapid feedback and reducing manual effort.",
+    "tags": ["NestJS", "CI/CD", "Continuous Integration"]
+  },
+  {
+    "question": "What is the main benefit of continuous deployment (CD) in a NestJS application?",
+    "options": [
+      "CD simplifies manual configuration processes",
+      "CD automates the deployment of new versions to production after successful CI",
+      "CD manages front-end state exclusively",
+      "CD replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "CD automates the deployment of new versions to production after successful CI",
+    "explanation": "Continuous Deployment (CD) automates the deployment of new versions to production once they pass CI checks, ensuring faster delivery and reducing human error.",
+    "tags": ["NestJS", "CI/CD", "Continuous Deployment"]
+  },
+  {
+    "question": "Which of the following is true about monitoring a NestJS application with Prometheus?",
+    "options": [
+      "Prometheus eliminates the need for logging",
+      "Prometheus collects metrics from the application for performance monitoring",
+      "Prometheus manages front-end state exclusively",
+      "Prometheus replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Prometheus collects metrics from the application for performance monitoring",
+    "explanation": "Prometheus integrates with NestJS to collect metrics such as request latency, throughput, and error rates, facilitating performance monitoring.",
+    "tags": ["NestJS", "Monitoring", "Prometheus"]
+  },
+  {
+    "question": "What is the purpose of adding logging to a NestJS application?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To track application events, errors, and performance for debugging and analysis",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To track application events, errors, and performance for debugging and analysis",
+    "explanation": "Adding logging to a NestJS application helps track events, errors, and performance metrics, aiding in debugging and operational analysis.",
+    "tags": ["NestJS", "Logging", "Debugging"]
+  },
+  {
+    "question": "Which of the following is true about deploying a NestJS application on Heroku?",
+    "options": [
+      "Heroku offers automatic scaling and managed databases for NestJS",
+      "Heroku eliminates the need for encryption",
+      "Heroku manages front-end state exclusively",
+      "Heroku replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Heroku offers automatic scaling and managed databases for NestJS",
+    "explanation": "Heroku provides automatic scaling, managed databases, and a seamless deployment process, making it suitable for deploying NestJS applications quickly.",
+    "tags": ["NestJS", "Deployment", "Heroku"]
+  },
+  {
+    "question": "What is the role of Kubernetes in deploying NestJS applications?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage container orchestration and scaling for NestJS deployments",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage container orchestration and scaling for NestJS deployments",
+    "explanation": "Kubernetes orchestrates and scales containerized NestJS applications, ensuring high availability and fault tolerance in production environments.",
+    "tags": ["NestJS", "Deployment", "Kubernetes"]
+  },
+  {
+    "question": "Which of the following is true about using Vercel for deploying a NestJS application?",
+    "options": [
+      "Vercel supports serverless deployments, making it suitable for lightweight NestJS apps",
+      "Vercel eliminates the need for encryption",
+      "Vercel manages front-end state exclusively",
+      "Vercel replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "Vercel supports serverless deployments, making it suitable for lightweight NestJS apps",
+    "explanation": "Vercel supports serverless deployments, which can be leveraged for lightweight and modular NestJS applications, especially those with minimal backend requirements.",
+    "tags": ["NestJS", "Deployment", "Vercel", "Serverless"]
   }
 ]
