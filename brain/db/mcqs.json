@@ -24704,5 +24704,317 @@
     "answer": "HTTP 3.0",
     "explanation": "HTTP 3.0 introduces streams as first-class citizens at the transport layer through QUIC, enabling independent delivery of streams and eliminating HOL blocking at this level.",
     "tags": ["HTTP", "HTTP 3.0", "QUIC Streams"]
+  },
+  {
+    "question": "What is the difference between HTTP and TCP?",
+    "options": [
+        "HTTP is a transport layer protocol, and TCP is an application layer protocol.",
+        "HTTP defines data formatting for web communication, and TCP ensures reliable data delivery.",
+        "HTTP handles packet reassembly, and TCP defines request/response structures.",
+        "HTTP establishes connections, and TCP transmits web content."
+    ],
+    "answer": "HTTP defines data formatting for web communication, and TCP ensures reliable data delivery.",
+    "explanation": "HTTP (Hypertext Transfer Protocol) is an application layer protocol that defines how data is formatted and transmitted on the web. TCP (Transmission Control Protocol) is a transport layer protocol that ensures reliable, ordered delivery of data between applications. HTTP relies on TCP to provide this reliable transport.",
+    "tags": ["HTTP", "TCP", "Networking", "Protocols"]
+  },
+  {
+    "question": "What is a VPN?",
+    "options": [
+        "A type of firewall.",
+        "A network protocol for faster internet speeds.",
+        "A Virtual Private Network that extends a private network across a public network.",
+        "A hardware device that filters internet content."
+    ],
+    "answer": "A Virtual Private Network that extends a private network across a public network.",
+    "explanation": "A VPN, or Virtual Private Network, creates a secure, encrypted connection over a less secure network, like the public internet. This allows users to send and receive data as if their devices were directly connected to a private network. It masks your IP address and encrypts your traffic, enhancing privacy and security.",
+    "tags": ["VPN", "Network Security", "Privacy", "Internet"]
+  },
+  {
+    "question": "What is HTTP primarily used for?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To transfer web pages and resources between clients and servers",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To transfer web pages and resources between clients and servers",
+    "explanation": "HTTP (Hypertext Transfer Protocol) is a protocol designed for transferring web pages, documents, and other resources between clients and servers.",
+    "tags": ["HTTP", "Definition", "Web Transfer"]
+  },
+  {
+    "question": "Which protocol is specifically designed for email transmission?",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "TCP",
+      "None of the above"
+    ],
+    "answer": "SMTP",
+    "explanation": "SMTP (Simple Mail Transfer Protocol) is specifically designed for transmitting emails between servers and clients in a reliable and standardized manner.",
+    "tags": ["SMTP", "Definition", "Email Transmission"]
+  },
+  {
+    "question": "What is TCP's role in network communication?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide a reliable, connection-oriented transport layer for data transmission",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide a reliable, connection-oriented transport layer for data transmission",
+    "explanation": "TCP (Transmission Control Protocol) ensures reliable, ordered, and error-checked delivery of data over a network, forming the foundation for many higher-level protocols like HTTP and SMTP.",
+    "tags": ["TCP", "Definition", "Transport Layer"]
+  },
+  {
+    "question": "Which of the following best describes the difference between HTTP and SMTP?",
+    "options": [
+      "HTTP is used for email transmission, while SMTP transfers web resources",
+      "HTTP transfers web resources between clients and servers, while SMTP handles email transmission",
+      "HTTP and SMTP both manage front-end state exclusively",
+      "HTTP and SMTP replace traditional APIs entirely"
+    ],
+    "answer": "HTTP transfers web resources between clients and servers, while SMTP handles email transmission",
+    "explanation": "HTTP focuses on transferring web resources (e.g., HTML, images) between clients and servers, whereas SMTP is dedicated to transmitting emails reliably.",
+    "tags": ["HTTP", "SMTP", "Comparison"]
+  },
+  {
+    "question": "What is the primary purpose of TCP in relation to HTTP and SMTP?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To act as the underlying transport protocol ensuring reliable data transmission",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To act as the underlying transport protocol ensuring reliable data transmission",
+    "explanation": "TCP serves as the transport layer for both HTTP and SMTP, ensuring reliable, connection-oriented data transmission across networks.",
+    "tags": ["TCP", "Purpose", "Transport Protocol"]
+  },
+  {
+    "question": "Which protocol is connectionless and does not guarantee data delivery?",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "TCP",
+      "UDP"
+    ],
+    "answer": "UDP",
+    "explanation": "Unlike TCP, UDP (User Datagram Protocol) is connectionless and does not guarantee data delivery, making it unsuitable for HTTP and SMTP but ideal for real-time applications.",
+    "tags": ["TCP", "UDP", "Connectionless"]
+  },
+  {
+    "question": "What is the main advantage of HTTP/2 over HTTP/1.1?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It introduces multiplexing to reduce head-of-line blocking",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It introduces multiplexing to reduce head-of-line blocking",
+    "explanation": "HTTP/2 introduces multiplexing, allowing multiple requests and responses to be handled concurrently over a single connection, reducing latency and improving performance.",
+    "tags": ["HTTP", "HTTP/2", "Multiplexing"]
+  },
+  {
+    "question": "Which protocol uses persistent connections to improve performance?",
+    "options": [
+      "HTTP/1.1",
+      "SMTP",
+      "TCP",
+      "HTTP/1.0"
+    ],
+    "answer": "HTTP/1.1",
+    "explanation": "HTTP/1.1 introduced persistent connections, enabling reuse of a single TCP connection for multiple requests, reducing overhead and improving performance.",
+    "tags": ["HTTP", "HTTP/1.1", "Persistent Connections"]
+  },
+  {
+    "question": "What is the role of route parameters in Angular routing, and how does it relate to HTTP?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To capture dynamic values from the URL, similar to how HTTP handles query parameters",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To capture dynamic values from the URL, similar to how HTTP handles query parameters",
+    "explanation": "Route parameters in Angular routing capture dynamic values from the URL, analogous to how HTTP handles query parameters or path variables for dynamic resource access.",
+    "tags": ["Angular", "Routing", "HTTP Query Parameters"]
+  },
+  {
+    "question": "Which protocol is responsible for breaking down data into packets and ensuring their reliable delivery?",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "TCP",
+      "QUIC"
+    ],
+    "answer": "TCP",
+    "explanation": "TCP breaks down data into packets, ensures their reliable delivery, and reassembles them at the destination, forming the backbone of reliable internet communication.",
+    "tags": ["TCP", "Responsibility", "Data Delivery"]
+  },
+  {
+    "question": "What is the main drawback of using SMTP compared to HTTP?",
+    "options": [
+      "SMTP is slower due to its reliance on TCP",
+      "SMTP lacks support for multimedia content, focusing primarily on text-based emails",
+      "SMTP manages front-end state exclusively",
+      "SMTP replaces traditional APIs entirely"
+    ],
+    "answer": "SMTP lacks support for multimedia content, focusing primarily on text-based emails",
+    "explanation": "While HTTP supports multimedia content, SMTP is primarily designed for text-based email transmission, requiring additional protocols like MIME for handling attachments.",
+    "tags": ["SMTP", "Drawbacks", "Multimedia Support"]
+  },
+  {
+    "question": "Which of the following is true about HTTP and TCP?",
+    "options": [
+      "HTTP operates independently of TCP",
+      "HTTP relies on TCP for reliable data transmission",
+      "TCP manages front-end state exclusively",
+      "TCP replaces traditional APIs entirely"
+    ],
+    "answer": "HTTP relies on TCP for reliable data transmission",
+    "explanation": "HTTP depends on TCP to ensure reliable and ordered delivery of data packets across the network, forming a layered relationship between the two protocols.",
+    "tags": ["HTTP", "TCP", "Relationship"]
+  },
+  {
+    "question": "What is the purpose of head-of-line (HOL) blocking in the context of HTTP and TCP?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To describe a situation where subsequent requests are delayed until previous ones complete",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To describe a situation where subsequent requests are delayed until previous ones complete",
+    "explanation": "Head-of-line blocking occurs when subsequent requests or packets are delayed because they must wait for previous ones to complete, affecting protocols like HTTP/1.1 and TCP.",
+    "tags": ["HTTP", "TCP", "HOL Blocking"]
+  },
+  {
+    "question": "Which protocol introduces streams to eliminate head-of-line blocking at the transport layer?",
+    "options": [
+      "HTTP/1.1",
+      "HTTP/2",
+      "SMTP",
+      "QUIC"
+    ],
+    "answer": "QUIC",
+    "explanation": "QUIC, used in HTTP/3, introduces streams at the transport layer, eliminating head-of-line blocking caused by packet loss in TCP-based protocols.",
+    "tags": ["QUIC", "HTTP/3", "HOL Blocking"]
+  },
+  {
+    "question": "What is the role of the `@NgModule` decorator in Angular modules, and how does it relate to HTTP?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define metadata for grouping components, directives, and pipes, similar to how HTTP groups resources under URLs",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define metadata for grouping components, directives, and pipes, similar to how HTTP groups resources under URLs",
+    "explanation": "The `@NgModule` decorator in Angular organizes application components and features, akin to how HTTP structures resources under unique URLs for client-server communication.",
+    "tags": ["Angular", "Modules", "HTTP Resource Grouping"]
+  },
+  {
+    "question": "Which protocol is most suitable for applications requiring real-time updates and low-latency communication?",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "TCP",
+      "WebSocket"
+    ],
+    "answer": "WebSocket",
+    "explanation": "While HTTP and TCP are foundational, WebSocket is better suited for real-time, low-latency applications due to its persistent, bidirectional connections.",
+    "tags": ["WebSocket", "Real-Time Communication", "Low-Latency"]
+  },
+  {
+    "question": "What is the main application of SMTP?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To transmit emails reliably between mail servers and clients",
+      "To manage front-end state exclusively",
+      "To focus solely on IoT development"
+    ],
+    "answer": "To transmit emails reliably between mail servers and clients",
+    "explanation": "SMTP is specifically designed for transmitting emails between mail servers and clients, ensuring reliable delivery through a standardized process.",
+    "tags": ["SMTP", "Application", "Email Transmission"]
+  },
+  {
+    "question": "Which protocol is used as the transport layer for both HTTP and SMTP?",
+    "options": [
+      "UDP",
+      "TCP",
+      "WebSocket",
+      "QUIC"
+    ],
+    "answer": "TCP",
+    "explanation": "Both HTTP and SMTP rely on TCP as their transport layer, ensuring reliable, ordered, and error-checked delivery of data packets.",
+    "tags": ["TCP", "Transport Layer", "HTTP and SMTP"]
+  },
+  {
+    "question": "What is the role of HTTP headers in API communication?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To carry metadata about the request or response, such as content type and authentication tokens",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To carry metadata about the request or response, such as content type and authentication tokens",
+    "explanation": "HTTP headers provide essential metadata about the request or response, including content type, authentication tokens, and caching instructions, facilitating efficient API communication.",
+    "tags": ["HTTP", "Headers", "Metadata"]
+  },
+  {
+    "question": "Which protocol is best suited for file downloads or streaming media?",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "TCP",
+      "WebSocket"
+    ],
+    "answer": "HTTP",
+    "explanation": "HTTP is widely used for file downloads and streaming media due to its support for chunked transfers and content negotiation.",
+    "tags": ["HTTP", "Application", "File Downloads"]
+  },
+  {
+    "question": "What is the purpose of the wildcard route (`**`) in Angular routing, and how does it relate to HTTP?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To catch unmatched routes and display a fallback component, similar to HTTP's 404 error handling",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To catch unmatched routes and display a fallback component, similar to HTTP's 404 error handling",
+    "explanation": "The wildcard route (`**`) in Angular routing captures unmatched routes and displays a fallback component, mirroring HTTP's 404 error handling mechanism.",
+    "tags": ["Angular", "Routing", "HTTP Error Handling"]
+  },
+  {
+    "question": "Which protocol is most suitable for large-scale, asynchronous messaging systems?",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "TCP",
+      "MQTT"
+    ],
+    "answer": "MQTT",
+    "explanation": "While HTTP and SMTP are useful for specific tasks, MQTT is better suited for large-scale, asynchronous messaging systems due to its lightweight and publish-subscribe architecture.",
+    "tags": ["MQTT", "Asynchronous Messaging", "Scalability"]
+  },
+  {
+    "question": "What is the main benefit of QUIC over TCP in HTTP/3?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It reduces latency and HOL blocking by introducing independent streams",
+      "It manages front-end state exclusively",
+      "It focuses solely on backend development"
+    ],
+    "answer": "It reduces latency and HOL blocking by introducing independent streams",
+    "explanation": "QUIC, used in HTTP/3, reduces latency and head-of-line blocking by delivering independent streams over UDP, enhancing performance for web applications.",
+    "tags": ["QUIC", "HTTP/3", "Latency Reduction"]
+  },
+  {
+    "question": "Which protocol is most commonly used for web browsing and API communication?",
+    "options": [
+      "SMTP",
+      "TCP",
+      "HTTP",
+      "WebSocket"
+    ],
+    "answer": "HTTP",
+    "explanation": "HTTP is the most commonly used protocol for web browsing and API communication, providing a standardized way to exchange resources and data between clients and servers.",
+    "tags": ["HTTP", "Application", "Web Browsing"]
   }
 ]
