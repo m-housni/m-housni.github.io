@@ -25016,5 +25016,557 @@
     "answer": "HTTP",
     "explanation": "HTTP is the most commonly used protocol for web browsing and API communication, providing a standardized way to exchange resources and data between clients and servers.",
     "tags": ["HTTP", "Application", "Web Browsing"]
+  },
+  {
+    "question": "What is the primary characteristic of the Code-First approach in development?",
+    "options": [
+      "API design is planned before implementation.",
+      "Developers write application logic first and expose APIs later.",
+      "API definitions are documented using tools like OpenAPI or GraphQL SDL.",
+      "It focuses exclusively on frontend development."
+    ],
+    "answer": "Developers write application logic first and expose APIs later.",
+    "explanation": "In the Code-First approach, developers focus on writing the application logic first and generate API definitions afterward, often exposing them as an afterthought.",
+    "tags": ["Code-First", "Definition", "Application Logic"]
+  },
+  {
+    "question": "Which type of applications does the Code-First approach work best for?",
+    "options": [
+      "Monolithic applications or internal services with minimal third-party interaction.",
+      "Large-scale distributed systems requiring strict contracts.",
+      "Applications that need to align with cross-functional teams upfront.",
+      "Frontend-heavy applications focusing solely on UI/UX."
+    ],
+    "answer": "Monolithic applications or internal services with minimal third-party interaction.",
+    "explanation": "The Code-First approach is well-suited for monolithic applications or internal services where third-party interactions are limited, as it allows developers to focus on application logic before exposing APIs.",
+    "tags": ["Code-First", "Use Cases", "Monolithic Applications"]
+  },
+  {
+    "question": "What is a common challenge of the Code-First approach?",
+    "options": [
+      "It eliminates the need for encryption.",
+      "APIs may become inconsistent since they are not prioritized during development.",
+      "It simplifies collaboration between backend and frontend teams.",
+      "It replaces traditional APIs entirely."
+    ],
+    "answer": "APIs may become inconsistent since they are not prioritized during development.",
+    "explanation": "One major challenge of the Code-First approach is that APIs might be treated as an afterthought, leading to inconsistencies and difficulties in maintaining service contracts, especially in microservices architectures.",
+    "tags": ["Code-First", "Challenges", "Inconsistencies"]
+  },
+  {
+    "question": "What is the main advantage of the API-First approach?",
+    "options": [
+      "It allows developers to write application logic without worrying about API design.",
+      "API design is planned upfront, ensuring consistency and clear contracts.",
+      "It eliminates the need for documentation.",
+      "It focuses exclusively on hardware optimization."
+    ],
+    "answer": "API design is planned upfront, ensuring consistency and clear contracts.",
+    "explanation": "In the API-First approach, API design is prioritized and defined before implementation, creating clear contracts that guide development and ensure consistency across services.",
+    "tags": ["API-First", "Advantages", "Consistency"]
+  },
+  {
+    "question": "Which tools are commonly used in the API-First approach to document APIs?",
+    "options": [
+      "OpenAPI (Swagger), GraphQL SDL, and AsyncAPI",
+      "Angular CLI and NestJS",
+      "Docker and Kubernetes",
+      "None of the above"
+    ],
+    "answer": "OpenAPI (Swagger), GraphQL SDL, and AsyncAPI",
+    "explanation": "Tools like OpenAPI (Swagger), GraphQL SDL, and AsyncAPI are widely used in the API-First approach to document APIs and define contracts upfront.",
+    "tags": ["API-First", "Tools", "Documentation"]
+  },
+  {
+    "question": "Why is the API-First approach beneficial in microservices architecture?",
+    "options": [
+      "It encourages better system design with well-defined interfaces between services.",
+      "It simplifies manual testing processes.",
+      "It eliminates the need for database connections.",
+      "It focuses exclusively on IoT development."
+    ],
+    "answer": "It encourages better system design with well-defined interfaces between services.",
+    "explanation": "In microservices architecture, the API-First approach ensures that each service has well-defined interfaces, improving scalability, flexibility, and interoperability.",
+    "tags": ["API-First", "Microservices", "System Design"]
+  },
+  {
+    "question": "How does the API-First approach improve collaboration between teams?",
+    "options": [
+      "By allowing teams to work independently while adhering to predefined API contracts.",
+      "By replacing traditional APIs with AI-driven solutions.",
+      "By managing front-end state exclusively.",
+      "By focusing solely on hardware optimization."
+    ],
+    "answer": "By allowing teams to work independently while adhering to predefined API contracts.",
+    "explanation": "The API-First approach fosters collaboration by defining contracts upfront, enabling backend, frontend, and third-party teams to work independently yet consistently.",
+    "tags": ["API-First", "Collaboration", "Contracts"]
+  },
+  {
+    "question": "What is the role of mocking in the API-First approach?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions.",
+      "To create fake implementations of APIs for early testing and development.",
+      "To manage front-end state exclusively.",
+      "To focus solely on hardware optimization."
+    ],
+    "answer": "To create fake implementations of APIs for early testing and development.",
+    "explanation": "In the API-First approach, APIs can be mocked to allow frontend and backend teams to test and develop their components independently before the actual implementation is complete.",
+    "tags": ["API-First", "Mocking", "Testing"]
+  },
+  {
+    "question": "Which of the following is true about Test-Driven Development (TDD) in the context of API-First?",
+    "options": [
+      "API contracts guide test creation before implementation, facilitating TDD.",
+      "TDD is irrelevant in the API-First approach.",
+      "API-First eliminates the need for tests entirely.",
+      "API-First focuses exclusively on frontend development."
+    ],
+    "answer": "API contracts guide test creation before implementation, facilitating TDD.",
+    "explanation": "The API-First approach supports Test-Driven Development (TDD) by defining API contracts upfront, which can be used to create tests before the actual implementation begins.",
+    "tags": ["API-First", "TDD", "Testing"]
+  },
+  {
+    "question": "What is the purpose of defining API contracts in the API-First approach?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions.",
+      "To provide a blueprint for API implementation and ensure alignment across teams.",
+      "To manage front-end state exclusively.",
+      "To focus solely on hardware optimization."
+    ],
+    "answer": "To provide a blueprint for API implementation and ensure alignment across teams.",
+    "explanation": "Defining API contracts in the API-First approach acts as a blueprint for implementation, ensuring all teams (backend, frontend, and third parties) are aligned and reducing surprises during development.",
+    "tags": ["API-First", "Contracts", "Alignment"]
+  },
+  {
+    "question": "Which of the following is a disadvantage of the Code-First approach?",
+    "options": [
+      "It reduces the initial load time of applications.",
+      "It makes it harder to maintain contracts between services in microservices architecture.",
+      "It simplifies manual testing processes.",
+      "It focuses exclusively on IoT development."
+    ],
+    "answer": "It makes it harder to maintain contracts between services in microservices architecture.",
+    "explanation": "A key disadvantage of the Code-First approach is its difficulty in maintaining consistent contracts between services, particularly in microservices architectures where clear interfaces are essential.",
+    "tags": ["Code-First", "Disadvantages", "Microservices"]
+  },
+  {
+    "question": "What is the main goal of the API-First approach?",
+    "options": [
+      "To prioritize application logic over API design.",
+      "To plan and define APIs upfront for better system design and collaboration.",
+      "To replace traditional APIs with AI-driven solutions.",
+      "To focus solely on hardware optimization."
+    ],
+    "answer": "To plan and define APIs upfront for better system design and collaboration.",
+    "explanation": "The API-First approach aims to define APIs upfront, ensuring better system design, improved collaboration, and higher software quality through clear contracts.",
+    "tags": ["API-First", "Goals", "Upfront Planning"]
+  },
+  {
+    "question": "Which of the following best describes when to choose the Code-First approach?",
+    "options": [
+      "For large-scale distributed systems requiring strict contracts.",
+      "For monolithic applications or internal services with minimal third-party interaction.",
+      "When working with cloud-based architectures that demand scalability.",
+      "When focusing exclusively on frontend development."
+    ],
+    "answer": "For monolithic applications or internal services with minimal third-party interaction.",
+    "explanation": "The Code-First approach is ideal for monolithic applications or internal services where third-party integrations are limited, allowing developers to focus on application logic before API design.",
+    "tags": ["Code-First", "Use Cases", "Monolithic Applications"]
+  },
+  {
+    "question": "What is the role of OpenAPI (Swagger) in the API-First approach?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions.",
+      "To document and define API contracts upfront, ensuring clarity and consistency.",
+      "To manage front-end state exclusively.",
+      "To focus solely on hardware optimization."
+    ],
+    "answer": "To document and define API contracts upfront, ensuring clarity and consistency.",
+    "explanation": "OpenAPI (Swagger) is commonly used in the API-First approach to document and define API contracts upfront, ensuring clarity and consistency across teams and services.",
+    "tags": ["API-First", "OpenAPI", "Documentation"]
+  },
+  {
+    "question": "How does the API-First approach contribute to faster development?",
+    "options": [
+      "By eliminating the need for encryption.",
+      "By enabling mock APIs for early frontend/backend testing.",
+      "By managing front-end state exclusively.",
+      "By focusing solely on hardware optimization."
+    ],
+    "answer": "By enabling mock APIs for early frontend/backend testing.",
+    "explanation": "The API-First approach allows for the creation of mock APIs, enabling frontend and backend teams to start testing and development earlier, thus speeding up the overall process.",
+    "tags": ["API-First", "Faster Development", "Mock APIs"]
+  },
+  {
+    "question": "Which of the following is true about the relationship between Code-First and API-First approaches?",
+    "options": [
+      "Code-First eliminates the need for API-First entirely.",
+      "API-First focuses on designing APIs upfront, while Code-First generates APIs after writing application logic.",
+      "Both approaches manage front-end state exclusively.",
+      "Both approaches replace traditional APIs with AI-driven solutions."
+    ],
+    "answer": "API-First focuses on designing APIs upfront, while Code-First generates APIs after writing application logic.",
+    "explanation": "The API-First approach emphasizes designing APIs upfront, whereas the Code-First approach generates APIs after the application logic has been implemented.",
+    "tags": ["Code-First", "API-First", "Comparison"]
+  },
+  {
+    "question": "What is the primary benefit of using the API-First approach in cloud-based architectures?",
+    "options": [
+      "It simplifies manual testing processes.",
+      "It ensures scalability, flexibility, and interoperability through well-defined contracts.",
+      "It eliminates the need for encryption.",
+      "It focuses exclusively on IoT development."
+    ],
+    "answer": "It ensures scalability, flexibility, and interoperability through well-defined contracts.",
+    "explanation": "In cloud-based architectures, the API-First approach ensures scalability, flexibility, and interoperability by defining clear and consistent API contracts upfront.",
+    "tags": ["API-First", "Cloud-Based Architectures", "Scalability"]
+  },
+  {
+    "question": "Which of the following is a challenge of the Code-First approach in microservices?",
+    "options": [
+      "APIs are too rigid and cannot adapt to changing requirements.",
+      "It is difficult to maintain consistent contracts between services.",
+      "It manages front-end state exclusively.",
+      "It replaces traditional APIs with AI-driven solutions."
+    ],
+    "answer": "It is difficult to maintain consistent contracts between services.",
+    "explanation": "In microservices, the Code-First approach struggles to maintain consistent contracts between services, as APIs are often generated after implementation rather than being planned upfront.",
+    "tags": ["Code-First", "Microservices", "Challenges"]
+  },
+  {
+    "question": "What is the purpose of HTTP status codes?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To indicate the outcome of an HTTP request, such as success or failure",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To indicate the outcome of an HTTP request, such as success or failure",
+    "explanation": "HTTP status codes provide a standardized way to communicate the result of an HTTP request, helping clients understand whether the request was successful or encountered an issue.",
+    "tags": ["HTTP", "Status Codes", "Purpose"]
+  },
+  {
+    "question": "Which HTTP status code indicates that the server successfully processed the request?",
+    "options": [
+      "200 OK",
+      "404 Not Found",
+      "500 Internal Server Error",
+      "301 Moved Permanently"
+    ],
+    "answer": "200 OK",
+    "explanation": "The `200 OK` status code indicates that the server successfully processed the request and returned the expected response.",
+    "tags": ["HTTP", "Status Codes", "Success"]
+  },
+  {
+    "question": "What does the `404 Not Found` status code signify?",
+    "options": [
+      "The client's request was successful but returned no content",
+      "The requested resource could not be found on the server",
+      "The server encountered an unexpected condition and failed to fulfill the request",
+      "The client needs to authenticate before accessing the resource"
+    ],
+    "answer": "The requested resource could not be found on the server",
+    "explanation": "The `404 Not Found` status code indicates that the requested resource (e.g., URL) does not exist on the server.",
+    "tags": ["HTTP", "Status Codes", "Client Errors"]
+  },
+  {
+    "question": "Which HTTP status code is used when a resource has been permanently moved to a new location?",
+    "options": [
+      "301 Moved Permanently",
+      "302 Found",
+      "201 Created",
+      "403 Forbidden"
+    ],
+    "answer": "301 Moved Permanently",
+    "explanation": "The `301 Moved Permanently` status code is used when a resource has been relocated to a new URL, and clients should update their references.",
+    "tags": ["HTTP", "Status Codes", "Redirection"]
+  },
+  {
+    "question": "What is the role of the `500 Internal Server Error` status code?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To indicate that the server encountered an unexpected error while processing the request",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To indicate that the server encountered an unexpected error while processing the request",
+    "explanation": "The `500 Internal Server Error` status code signals that the server encountered an unexpected condition and could not complete the request.",
+    "tags": ["HTTP", "Status Codes", "Server Errors"]
+  },
+  {
+    "question": "Which HTTP status code is returned when the client provides invalid credentials?",
+    "options": [
+      "401 Unauthorized",
+      "403 Forbidden",
+      "400 Bad Request",
+      "404 Not Found"
+    ],
+    "answer": "401 Unauthorized",
+    "explanation": "The `401 Unauthorized` status code is returned when the client tries to access a protected resource without providing valid authentication credentials.",
+    "tags": ["HTTP", "Status Codes", "Authentication"]
+  },
+  {
+    "question": "What does the `403 Forbidden` status code mean?",
+    "options": [
+      "The client must authenticate to access the resource",
+      "The client has no permission to access the requested resource, even if authenticated",
+      "The requested resource could not be found",
+      "The server is temporarily unable to handle the request"
+    ],
+    "answer": "The client has no permission to access the requested resource, even if authenticated",
+    "explanation": "The `403 Forbidden` status code indicates that the client lacks the necessary permissions to access the resource, regardless of authentication.",
+    "tags": ["HTTP", "Status Codes", "Authorization"]
+  },
+  {
+    "question": "Which HTTP status code is used to signal that a new resource has been created successfully?",
+    "options": [
+      "200 OK",
+      "201 Created",
+      "204 No Content",
+      "301 Moved Permanently"
+    ],
+    "answer": "201 Created",
+    "explanation": "The `201 Created` status code is returned when a new resource has been successfully created in response to a client request.",
+    "tags": ["HTTP", "Status Codes", "Resource Creation"]
+  },
+  {
+    "question": "What is the purpose of the `302 Found` status code?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To indicate that the resource has been temporarily moved to a different location",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To indicate that the resource has been temporarily moved to a different location",
+    "explanation": "The `302 Found` status code signifies that the resource has been temporarily moved to another URL, and clients should use the new location for this request only.",
+    "tags": ["HTTP", "Status Codes", "Redirection"]
+  },
+  {
+    "question": "Which HTTP status code is returned when the server is overloaded or down for maintenance?",
+    "options": [
+      "400 Bad Request",
+      "503 Service Unavailable",
+      "500 Internal Server Error",
+      "404 Not Found"
+    ],
+    "answer": "503 Service Unavailable",
+    "explanation": "The `503 Service Unavailable` status code is returned when the server is temporarily unable to handle requests due to overload or maintenance.",
+    "tags": ["HTTP", "Status Codes", "Server Errors"]
+  },
+  {
+    "question": "What does the `204 No Content` status code indicate?",
+    "options": [
+      "The server processed the request but did not return any content",
+      "The server encountered an unexpected error",
+      "The requested resource could not be found",
+      "The client must authenticate before accessing the resource"
+    ],
+    "answer": "The server processed the request but did not return any content",
+    "explanation": "The `204 No Content` status code indicates that the server successfully processed the request but will not return any content in the response body.",
+    "tags": ["HTTP", "Status Codes", "Success"]
+  },
+  {
+    "question": "Which HTTP status code is used when the client sends a malformed or invalid request?",
+    "options": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "500 Internal Server Error"
+    ],
+    "answer": "400 Bad Request",
+    "explanation": "The `400 Bad Request` status code is used when the client sends a syntactically incorrect or invalid request that the server cannot process.",
+    "tags": ["HTTP", "Status Codes", "Client Errors"]
+  },
+  {
+    "question": "What is the role of the `409 Conflict` status code?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To indicate that the request conflicts with the current state of the server",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To indicate that the request conflicts with the current state of the server",
+    "explanation": "The `409 Conflict` status code is used when the request cannot be completed due to a conflict with the server's current state, such as duplicate records.",
+    "tags": ["HTTP", "Status Codes", "Client Errors"]
+  },
+  {
+    "question": "Which HTTP status code is returned when the client's cache is up-to-date, and the server does not send the full response?",
+    "options": [
+      "200 OK",
+      "304 Not Modified",
+      "404 Not Found",
+      "500 Internal Server Error"
+    ],
+    "answer": "304 Not Modified",
+    "explanation": "The `304 Not Modified` status code is returned when the client's cache is already up-to-date, allowing the server to avoid sending the full response again.",
+    "tags": ["HTTP", "Status Codes", "Caching"]
+  },
+  {
+    "question": "What does the `405 Method Not Allowed` status code signify?",
+    "options": [
+      "The requested method is not supported for the given resource",
+      "The client must authenticate before accessing the resource",
+      "The requested resource could not be found",
+      "The server encountered an unexpected error"
+    ],
+    "answer": "The requested method is not supported for the given resource",
+    "explanation": "The `405 Method Not Allowed` status code indicates that the HTTP method (e.g., GET, POST) used in the request is not supported for the specified resource.",
+    "tags": ["HTTP", "Status Codes", "Client Errors"]
+  },
+  {
+    "question": "Which HTTP status code is used when the server requires the client to switch protocols?",
+    "options": [
+      "101 Switching Protocols",
+      "201 Created",
+      "302 Found",
+      "404 Not Found"
+    ],
+    "answer": "101 Switching Protocols",
+    "explanation": "The `101 Switching Protocols` status code is used when the server agrees to switch to a different protocol, as requested by the client.",
+    "tags": ["HTTP", "Status Codes", "Informational"]
+  },
+  {
+    "question": "What is the purpose of the `406 Not Acceptable` status code?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To indicate that the server cannot produce a response matching the client's accepted formats",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To indicate that the server cannot produce a response matching the client's accepted formats",
+    "explanation": "The `406 Not Acceptable` status code is returned when the server cannot generate a response that matches the client's acceptable formats (e.g., media types).",
+    "tags": ["HTTP", "Status Codes", "Client Errors"]
+  },
+  {
+    "question": "Which HTTP status code is used when the server is acting as a gateway and cannot get a response from the upstream server?",
+    "options": [
+      "400 Bad Request",
+      "408 Request Timeout",
+      "504 Gateway Timeout",
+      "500 Internal Server Error"
+    ],
+    "answer": "504 Gateway Timeout",
+    "explanation": "The `504 Gateway Timeout` status code is used when the server, acting as a gateway, fails to receive a timely response from the upstream server.",
+    "tags": ["HTTP", "Status Codes", "Server Errors"]
+  },
+  {
+    "question": "What does the `202 Accepted` status code mean?",
+    "options": [
+      "The request was successful, and the server returned the requested resource",
+      "The server has accepted the request but has not yet completed processing it",
+      "The requested resource could not be found",
+      "The server encountered an unexpected error"
+    ],
+    "answer": "The server has accepted the request but has not yet completed processing it",
+    "explanation": "The `202 Accepted` status code indicates that the server has accepted the request but has not yet finished processing it, often used for long-running operations.",
+    "tags": ["HTTP", "Status Codes", "Success"]
+  },
+  {
+    "question": "Which HTTP status code is used when the client sends too many requests in a given amount of time?",
+    "options": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "429 Too Many Requests",
+      "500 Internal Server Error"
+    ],
+    "answer": "429 Too Many Requests",
+    "explanation": "The `429 Too Many Requests` status code is returned when the client exceeds the rate limit set by the server, indicating they should slow down their requests.",
+    "tags": ["HTTP", "Status Codes", "Rate Limiting"]
+  },
+  {
+    "question": "What is the role of the `307 Temporary Redirect` status code?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To indicate that the resource has been temporarily moved, and the request method and body should remain unchanged",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To indicate that the resource has been temporarily moved, and the request method and body should remain unchanged",
+    "explanation": "The `307 Temporary Redirect` status code is used when the resource has been temporarily moved, and the client should repeat the same request (method and body) at the new location.",
+    "tags": ["HTTP", "Status Codes", "Redirection"]
+  },
+  {
+    "question": "Which HTTP status code is returned when the server wants the client to authenticate using a different mechanism?",
+    "options": [
+      "401 Unauthorized",
+      "403 Forbidden",
+      "407 Proxy Authentication Required",
+      "500 Internal Server Error"
+    ],
+    "answer": "407 Proxy Authentication Required",
+    "explanation": "The `407 Proxy Authentication Required` status code is returned when the client must authenticate with a proxy server to gain access to the requested resource.",
+    "tags": ["HTTP", "Status Codes", "Authentication"]
+  },
+  {
+    "question": "What does the `418 I'm a Teapot` status code signify?",
+    "options": [
+      "A serious error occurred during processing",
+      "The server refuses to brew coffee because it is a teapot",
+      "The client must authenticate before accessing the resource",
+      "The server encountered an unexpected error"
+    ],
+    "answer": "The server refuses to brew coffee because it is a teapot",
+    "explanation": "The `418 I'm a Teapot` status code is a non-standard, humorous response originally defined in RFC 2324, indicating that the server refuses to brew coffee because it is a teapot.",
+    "tags": ["HTTP", "Status Codes", "Non-Standard"]
+  },
+  {
+    "question": "Which HTTP status code is used to indicate that the client's request payload is too large?",
+    "options": [
+      "400 Bad Request",
+      "403 Forbidden",
+      "413 Payload Too Large",
+      "500 Internal Server Error"
+    ],
+    "answer": "413 Payload Too Large",
+    "explanation": "The `413 Payload Too Large` status code is returned when the client's request payload exceeds the server's size limits.",
+    "tags": ["HTTP", "Status Codes", "Client Errors"]
+  },
+  {
+    "question": "What is the purpose of the `204 No Content` status code?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To indicate that the server processed the request but did not return any content",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To indicate that the server processed the request but did not return any content",
+    "explanation": "The `204 No Content` status code indicates that the server successfully processed the request but will not return any content in the response body.",
+    "tags": ["HTTP", "Status Codes", "Success"]
+  },
+  {
+    "question": "Which HTTP status code is used when the client sends a request with unsupported headers or content types?",
+    "options": [
+      "400 Bad Request",
+      "406 Not Acceptable",
+      "415 Unsupported Media Type",
+      "500 Internal Server Error"
+    ],
+    "answer": "415 Unsupported Media Type",
+    "explanation": "The `415 Unsupported Media Type` status code is returned when the client sends a request with a content type or format that the server does not support.",
+    "tags": ["HTTP", "Status Codes", "Client Errors"]
+  },
+  {
+    "question": "What does the `501 Not Implemented` status code mean?",
+    "options": [
+      "The server encountered an unexpected error",
+      "The server does not support the requested functionality",
+      "The requested resource could not be found",
+      "The client must authenticate before accessing the resource"
+    ],
+    "answer": "The server does not support the requested functionality",
+    "explanation": "The `501 Not Implemented` status code is returned when the server does not recognize or support the requested functionality, such as an unsupported HTTP method.",
+    "tags": ["HTTP", "Status Codes", "Server Errors"]
+  },
+  {
+    "question": "Which HTTP status code is used to indicate that the client's session has expired or is invalid?",
+    "options": [
+      "401 Unauthorized",
+      "403 Forbidden",
+      "440 Login Timeout",
+      "500 Internal Server Error"
+    ],
+    "answer": "440 Login Timeout",
+    "explanation": "Although non-standard, the `440 Login Timeout` status code is sometimes used to indicate that the client's session has expired or is invalid.",
+    "tags": ["HTTP", "Status Codes", "Non-Standard"]
   }
 ]
