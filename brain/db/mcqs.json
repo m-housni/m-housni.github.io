@@ -25568,5 +25568,1901 @@
     "answer": "440 Login Timeout",
     "explanation": "Although non-standard, the `440 Login Timeout` status code is sometimes used to indicate that the client's session has expired or is invalid.",
     "tags": ["HTTP", "Status Codes", "Non-Standard"]
+  },
+  {
+    "question": "What is the OSI Model?",
+    "options": [
+      "A protocol for secure communication between services",
+      "A conceptual framework that standardizes the functions of a communication system into seven distinct layers",
+      "A database management system",
+      "A tool for encrypting sensitive information"
+    ],
+    "answer": "A conceptual framework that standardizes the functions of a communication system into seven distinct layers",
+    "explanation": "The OSI (Open Systems Interconnection) Model is a conceptual framework that divides network communication into seven layers, each with specific responsibilities.",
+    "tags": ["OSI Model", "Definition", "Network Communication"]
+  },
+  {
+    "question": "Which layer of the OSI Model is responsible for direct interaction with the user or application software?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Presentation Layer (Layer 6)",
+      "Session Layer (Layer 5)",
+      "Transport Layer (Layer 4)"
+    ],
+    "answer": "Application Layer (Layer 7)",
+    "explanation": "The Application Layer (Layer 7) is the topmost layer of the OSI Model, responsible for providing services directly to user applications, such as email, file transfer, and web browsing.",
+    "tags": ["OSI Model", "Application Layer", "User Interaction"]
+  },
+  {
+    "question": "What is the role of the Presentation Layer (Layer 6) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To translate data between the Application Layer and the Session Layer, ensuring compatibility",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To translate data between the Application Layer and the Session Layer, ensuring compatibility",
+    "explanation": "The Presentation Layer (Layer 6) translates and formats data for the Application Layer, handling tasks like encryption, compression, and data representation to ensure compatibility.",
+    "tags": ["OSI Model", "Presentation Layer", "Data Translation"]
+  },
+  {
+    "question": "Which OSI layer establishes, manages, and terminates sessions between applications?",
+    "options": [
+      "Session Layer (Layer 5)",
+      "Transport Layer (Layer 4)",
+      "Network Layer (Layer 3)",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": "Session Layer (Layer 5)",
+    "explanation": "The Session Layer (Layer 5) is responsible for establishing, managing, and terminating sessions between applications, ensuring orderly communication over the network.",
+    "tags": ["OSI Model", "Session Layer", "Session Management"]
+  },
+  {
+    "question": "What is the primary function of the Transport Layer (Layer 4) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure reliable end-to-end communication by segmenting and reassembling data",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure reliable end-to-end communication by segmenting and reassembling data",
+    "explanation": "The Transport Layer (Layer 4) ensures reliable communication between systems by segmenting data into packets, managing flow control, and error correction.",
+    "tags": ["OSI Model", "Transport Layer", "End-to-End Communication"]
+  },
+  {
+    "question": "Which layer of the OSI Model determines the best path for data transmission across networks?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Network Layer (Layer 3)",
+      "Data Link Layer (Layer 2)",
+      "Physical Layer (Layer 1)"
+    ],
+    "answer": "Network Layer (Layer 3)",
+    "explanation": "The Network Layer (Layer 3) determines the best path for data transmission across networks, using protocols like IP for addressing and routing.",
+    "tags": ["OSI Model", "Network Layer", "Routing"]
+  },
+  {
+    "question": "What is the role of the Data Link Layer (Layer 2) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide error-free transfer of data frames between nodes over a physical link",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide error-free transfer of data frames between nodes over a physical link",
+    "explanation": "The Data Link Layer (Layer 2) ensures error-free transfer of data frames between adjacent network nodes, using protocols like Ethernet or Wi-Fi.",
+    "tags": ["OSI Model", "Data Link Layer", "Error-Free Transfer"]
+  },
+  {
+    "question": "Which OSI layer is responsible for transmitting raw bit streams over a physical medium?",
+    "options": [
+      "Physical Layer (Layer 1)",
+      "Data Link Layer (Layer 2)",
+      "Network Layer (Layer 3)",
+      "Transport Layer (Layer 4)"
+    ],
+    "answer": "Physical Layer (Layer 1)",
+    "explanation": "The Physical Layer (Layer 1) is responsible for transmitting raw bit streams over a physical medium, defining electrical and mechanical specifications for devices and connections.",
+    "tags": ["OSI Model", "Physical Layer", "Bit Stream Transmission"]
+  },
+  {
+    "question": "What is the purpose of the `pathMatch: 'full'` option in Angular routing, and how does it relate to the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure the entire URL path matches before applying a redirect, similar to how the Network Layer determines exact routes",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure the entire URL path matches before applying a redirect, similar to how the Network Layer determines exact routes",
+    "explanation": "In Angular routing, `pathMatch: 'full'` ensures the entire URL path matches before applying a redirect, akin to the Network Layer's role in determining precise paths for data packets.",
+    "tags": ["Angular", "OSI Model", "Routing", "Network Layer"]
+  },
+  {
+    "question": "Which OSI layer handles logical addressing and routing of data packets?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Transport Layer (Layer 4)",
+      "Network Layer (Layer 3)",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": "Network Layer (Layer 3)",
+    "explanation": "The Network Layer (Layer 3) handles logical addressing (e.g., IP addresses) and routing of data packets across different networks.",
+    "tags": ["OSI Model", "Network Layer", "Logical Addressing"]
+  },
+  {
+    "question": "What is the main function of the Session Layer (Layer 5) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To establish and manage sessions between applications, ensuring synchronized communication",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To establish and manage sessions between applications, ensuring synchronized communication",
+    "explanation": "The Session Layer (Layer 5) establishes and manages sessions between applications, enabling synchronized communication and checkpointing for recovery.",
+    "tags": ["OSI Model", "Session Layer", "Synchronized Communication"]
+  },
+  {
+    "question": "Which OSI layer provides mechanisms for flow control and error detection?",
+    "options": [
+      "Transport Layer (Layer 4)",
+      "Data Link Layer (Layer 2)",
+      "Network Layer (Layer 3)",
+      "Physical Layer (Layer 1)"
+    ],
+    "answer": "Transport Layer (Layer 4)",
+    "explanation": "The Transport Layer (Layer 4) provides mechanisms for flow control, error detection, and correction, ensuring reliable data transfer between systems.",
+    "tags": ["OSI Model", "Transport Layer", "Flow Control"]
+  },
+  {
+    "question": "What is the role of the Presentation Layer (Layer 6) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To handle data formatting, encryption, and compression, ensuring compatibility between systems",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle data formatting, encryption, and compression, ensuring compatibility between systems",
+    "explanation": "The Presentation Layer (Layer 6) handles data formatting, encryption, and compression, acting as a translator between the Application Layer and lower layers.",
+    "tags": ["OSI Model", "Presentation Layer", "Data Formatting"]
+  },
+  {
+    "question": "Which OSI layer defines the protocols used for actual data transfer over the network?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Transport Layer (Layer 4)",
+      "Network Layer (Layer 3)",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": "Transport Layer (Layer 4)",
+    "explanation": "The Transport Layer (Layer 4) defines protocols like TCP and UDP, which are responsible for actual data transfer and reliability over the network.",
+    "tags": ["OSI Model", "Transport Layer", "Data Transfer Protocols"]
+  },
+  {
+    "question": "What is the purpose of the Physical Layer (Layer 1) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define the physical means of transmitting data, such as cables, connectors, and signals",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define the physical means of transmitting data, such as cables, connectors, and signals",
+    "explanation": "The Physical Layer (Layer 1) defines the physical means of transmitting data, including electrical, mechanical, and functional specifications for devices and connections.",
+    "tags": ["OSI Model", "Physical Layer", "Data Transmission"]
+  },
+  {
+    "question": "Which OSI layer is responsible for dividing data into frames and ensuring error-free transmission over the network link?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Data Link Layer (Layer 2)",
+      "Network Layer (Layer 3)",
+      "Transport Layer (Layer 4)"
+    ],
+    "answer": "Data Link Layer (Layer 2)",
+    "explanation": "The Data Link Layer (Layer 2) divides data into frames and ensures error-free transmission over the network link, using MAC addresses for node identification.",
+    "tags": ["OSI Model", "Data Link Layer", "Frame Transmission"]
+  },
+  {
+    "question": "What is the role of the Network Layer (Layer 3) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To determine the best path for data packets to reach their destination",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To determine the best path for data packets to reach their destination",
+    "explanation": "The Network Layer (Layer 3) determines the best path for data packets to reach their destination, using logical addressing (IP) and routing protocols.",
+    "tags": ["OSI Model", "Network Layer", "Routing"]
+  },
+  {
+    "question": "Which OSI layer is responsible for packaging data into segments and ensuring reliable delivery?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Transport Layer (Layer 4)",
+      "Data Link Layer (Layer 2)",
+      "Physical Layer (Layer 1)"
+    ],
+    "answer": "Transport Layer (Layer 4)",
+    "explanation": "The Transport Layer (Layer 4) packages data into segments and ensures reliable delivery through protocols like TCP or UDP, depending on the application's needs.",
+    "tags": ["OSI Model", "Transport Layer", "Segmentation"]
+  },
+  {
+    "question": "What is the purpose of route guards in Angular, and how do they relate to the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To control access to routes based on conditions, similar to how the Session Layer manages session permissions",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To control access to routes based on conditions, similar to how the Session Layer manages session permissions",
+    "explanation": "Route guards in Angular control access to routes based on conditions, analogous to the Session Layer's role in managing session permissions and synchronization in the OSI Model.",
+    "tags": ["Angular", "OSI Model", "Route Guards", "Session Layer"]
+  },
+  {
+    "question": "Which OSI layer ensures that data is transmitted correctly within a single network segment?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Data Link Layer (Layer 2)",
+      "Network Layer (Layer 3)",
+      "Transport Layer (Layer 4)"
+    ],
+    "answer": "Data Link Layer (Layer 2)",
+    "explanation": "The Data Link Layer (Layer 2) ensures correct data transmission within a single network segment, using error detection and correction techniques.",
+    "tags": ["OSI Model", "Data Link Layer", "Error Detection"]
+  },
+  {
+    "question": "What is the role of the Application Layer (Layer 7) in the OSI Model?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To interact directly with the user or application software, providing services like email and file transfer",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To interact directly with the user or application software, providing services like email and file transfer",
+    "explanation": "The Application Layer (Layer 7) interacts directly with the user or application software, offering services like email, file transfer, and web browsing.",
+    "tags": ["OSI Model", "Application Layer", "User Services"]
+  },
+  {
+    "question": "Which OSI layer is responsible for encoding and decoding data, as well as handling encryption and compression?",
+    "options": [
+      "Application Layer (Layer 7)",
+      "Presentation Layer (Layer 6)",
+      "Session Layer (Layer 5)",
+      "Transport Layer (Layer 4)"
+    ],
+    "answer": "Presentation Layer (Layer 6)",
+    "explanation": "The Presentation Layer (Layer 6) encodes and decodes data, handles encryption and compression, and ensures data compatibility between systems.",
+    "tags": ["OSI Model", "Presentation Layer", "Data Encoding"]
+  },
+  {
+    "question": "What is the primary purpose of load-balancing algorithms?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To distribute client requests evenly across multiple service instances, improving performance and reliability",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To distribute client requests evenly across multiple service instances, improving performance and reliability",
+    "explanation": "Load-balancing algorithms are designed to distribute client requests across multiple service instances, ensuring efficient resource utilization and high availability.",
+    "tags": ["Load Balancing", "Purpose", "Performance"]
+  },
+  {
+    "question": "Which load-balancing algorithm sends client requests to service instances in sequential order?",
+    "options": [
+      "Least connections",
+      "Round robin",
+      "Weighted round-robin",
+      "Hash"
+    ],
+    "answer": "Round robin",
+    "explanation": "The round-robin algorithm distributes client requests sequentially to different service instances, assuming all instances have equal capacity.",
+    "tags": ["Load Balancing", "Round Robin", "Static Algorithm"]
+  },
+  {
+    "question": "What is the main advantage of the sticky round-robin algorithm over the standard round-robin algorithm?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It ensures that subsequent requests from the same client are routed to the same service instance",
+      "It manages front-end state exclusively",
+      "It focuses solely on IoT development"
+    ],
+    "answer": "It ensures that subsequent requests from the same client are routed to the same service instance",
+    "explanation": "Sticky round-robin improves upon the standard round-robin by routing all requests from a specific client (e.g., Alice) to the same service instance (e.g., Service A), preserving session state.",
+    "tags": ["Load Balancing", "Sticky Round-Robin", "Session State"]
+  },
+  {
+    "question": "Which load-balancing algorithm allows administrators to specify weights for each service instance?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Weighted round-robin",
+      "Least response time"
+    ],
+    "answer": "Weighted round-robin",
+    "explanation": "The weighted round-robin algorithm allows administrators to assign weights to service instances, ensuring that instances with higher weights handle more requests.",
+    "tags": ["Load Balancing", "Weighted Round-Robin", "Dynamic Distribution"]
+  },
+  {
+    "question": "What is the role of the hash-based load-balancing algorithm?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To route requests to specific service instances based on a hash function applied to the client's IP or URL",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To route requests to specific service instances based on a hash function applied to the client's IP or URL",
+    "explanation": "The hash-based algorithm applies a hash function to the client's IP or URL, ensuring that requests are consistently routed to the same service instance.",
+    "tags": ["Load Balancing", "Hash Algorithm", "Consistent Routing"]
+  },
+  {
+    "question": "Which dynamic load-balancing algorithm sends new requests to the service instance with the fewest active connections?",
+    "options": [
+      "Round robin",
+      "Least connections",
+      "Least response time",
+      "Hash"
+    ],
+    "answer": "Least connections",
+    "explanation": "The least connections algorithm dynamically routes new requests to the service instance with the fewest concurrent connections, optimizing resource usage.",
+    "tags": ["Load Balancing", "Least Connections", "Dynamic Algorithm"]
+  },
+  {
+    "question": "What does the least response time algorithm prioritize when distributing requests?",
+    "options": [
+      "The number of active connections on each service instance",
+      "The fastest response time from service instances",
+      "The weight assigned to each service instance",
+      "The client's IP address"
+    ],
+    "answer": "The fastest response time from service instances",
+    "explanation": "The least response time algorithm prioritizes sending requests to the service instance with the fastest response time, enhancing overall performance.",
+    "tags": ["Load Balancing", "Least Response Time", "Dynamic Algorithm"]
+  },
+  {
+    "question": "Which load-balancing algorithm is best suited for stateless services?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Weighted round-robin",
+      "Hash"
+    ],
+    "answer": "Round robin",
+    "explanation": "The round-robin algorithm is ideal for stateless services, as it assumes all service instances can handle any request without requiring session persistence.",
+    "tags": ["Load Balancing", "Round Robin", "Stateless Services"]
+  },
+  {
+    "question": "What is the main disadvantage of the standard round-robin algorithm compared to sticky round-robin?",
+    "options": [
+      "It requires additional encryption",
+      "It does not preserve session state, potentially leading to inconsistent user experiences",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It does not preserve session state, potentially leading to inconsistent user experiences",
+    "explanation": "While the standard round-robin algorithm distributes requests evenly, it does not preserve session state, which can lead to inconsistencies if sessions are required.",
+    "tags": ["Load Balancing", "Round Robin vs Sticky Round-Robin", "Session State"]
+  },
+  {
+    "question": "Which load-balancing algorithm is most appropriate for applications requiring consistent session handling?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Weighted round-robin",
+      "Least connections"
+    ],
+    "answer": "Sticky round-robin",
+    "explanation": "Sticky round-robin ensures that all requests from a specific client are routed to the same service instance, making it suitable for applications requiring consistent session handling.",
+    "tags": ["Load Balancing", "Sticky Round-Robin", "Session Handling"]
+  },
+  {
+    "question": "What is the purpose of assigning weights in the weighted round-robin algorithm?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To distribute requests unevenly, favoring instances with higher capacity or performance",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To distribute requests unevenly, favoring instances with higher capacity or performance",
+    "explanation": "In weighted round-robin, weights are assigned to service instances to reflect their capacity or performance, ensuring requests are distributed accordingly.",
+    "tags": ["Load Balancing", "Weighted Round-Robin", "Capacity Management"]
+  },
+  {
+    "question": "Which load-balancing algorithm uses a hash function to determine the target service instance?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Hash",
+      "Least response time"
+    ],
+    "answer": "Hash",
+    "explanation": "The hash-based algorithm uses a hash function (e.g., hashing the client's IP or URL) to determine the target service instance, ensuring consistent routing for specific clients.",
+    "tags": ["Load Balancing", "Hash Algorithm", "Consistent Routing"]
+  },
+  {
+    "question": "What is the main benefit of using the least connections algorithm?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It optimizes resource usage by routing requests to instances with fewer active connections",
+      "It eliminates the need for encryption",
+      "It focuses exclusively on frontend development"
+    ],
+    "answer": "It optimizes resource usage by routing requests to instances with fewer active connections",
+    "explanation": "The least connections algorithm dynamically routes requests to service instances with fewer active connections, ensuring balanced resource usage.",
+    "tags": ["Load Balancing", "Least Connections", "Resource Optimization"]
+  },
+  {
+    "question": "Which load-balancing algorithm is best suited for real-time applications requiring fast response times?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Least response time",
+      "Hash"
+    ],
+    "answer": "Least response time",
+    "explanation": "The least response time algorithm prioritizes service instances with the fastest response times, making it ideal for real-time applications where speed is critical.",
+    "tags": ["Load Balancing", "Least Response Time", "Real-Time Applications"]
+  },
+  {
+    "question": "What is the role of the hash function in the hash-based load-balancing algorithm?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure consistent routing of requests based on client-specific attributes like IP or URL",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure consistent routing of requests based on client-specific attributes like IP or URL",
+    "explanation": "The hash function in the hash-based algorithm maps client-specific attributes (e.g., IP or URL) to specific service instances, ensuring consistent routing.",
+    "tags": ["Load Balancing", "Hash Algorithm", "Consistency"]
+  },
+  {
+    "question": "Which algorithm is most effective for distributing requests evenly across identical service instances?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Weighted round-robin",
+      "Least response time"
+    ],
+    "answer": "Round robin",
+    "explanation": "The round-robin algorithm is effective for distributing requests evenly across identical service instances, as it assumes all instances have equal capacity.",
+    "tags": ["Load Balancing", "Round Robin", "Even Distribution"]
+  },
+  {
+    "question": "What is the main difference between static and dynamic load-balancing algorithms?",
+    "options": [
+      "Static algorithms require encryption, while dynamic algorithms do not",
+      "Static algorithms distribute requests based on predefined rules, while dynamic algorithms adapt to current conditions",
+      "Static algorithms manage front-end state exclusively, while dynamic algorithms focus on backend",
+      "Static algorithms replace traditional APIs, while dynamic algorithms enhance them"
+    ],
+    "answer": "Static algorithms distribute requests based on predefined rules, while dynamic algorithms adapt to current conditions",
+    "explanation": "Static algorithms like round-robin use predefined rules to distribute requests, whereas dynamic algorithms like least connections or least response time adapt based on real-time conditions.",
+    "tags": ["Load Balancing", "Static vs Dynamic", "Adaptability"]
+  },
+  {
+    "question": "Which load-balancing algorithm is best suited for applications with varying service instance capacities?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Weighted round-robin",
+      "Hash"
+    ],
+    "answer": "Weighted round-robin",
+    "explanation": "Weighted round-robin is ideal for applications with varying service instance capacities, as it allows assigning weights to instances based on their performance or resources.",
+    "tags": ["Load Balancing", "Weighted Round-Robin", "Varying Capacities"]
+  },
+  {
+    "question": "What is the purpose of the wildcard route (`**`) in Angular routing, and how does it relate to load balancing?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To catch unmatched routes and redirect them, similar to how a fallback mechanism works in load balancing",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To catch unmatched routes and redirect them, similar to how a fallback mechanism works in load balancing",
+    "explanation": "In Angular routing, the wildcard route (`**`) acts as a fallback for unmatched routes, similar to how some load balancers provide fallback mechanisms for failed service instances.",
+    "tags": ["Angular", "Load Balancing", "Wildcard Route"]
+  },
+  {
+    "question": "Which load-balancing algorithm is most suitable for microservices architectures where service instances may vary in performance?",
+    "options": [
+      "Round robin",
+      "Least connections",
+      "Least response time",
+      "Hash"
+    ],
+    "answer": "Least response time",
+    "explanation": "The least response time algorithm is well-suited for microservices architectures, as it dynamically routes requests to the fastest-performing service instances.",
+    "tags": ["Load Balancing", "Microservices", "Least Response Time"]
+  },
+  {
+    "question": "What is the role of the `providedIn: 'root'` metadata in Angular services, and how does it relate to load balancing?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To create singleton services available throughout the application, similar to how load balancers centralize traffic management",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To create singleton services available throughout the application, similar to how load balancers centralize traffic management",
+    "explanation": "The `providedIn: 'root'` metadata in Angular creates singleton services available app-wide, analogous to how load balancers centralize traffic distribution across services.",
+    "tags": ["Angular", "Load Balancing", "Singleton Services"]
+  },
+  {
+    "question": "Which load-balancing algorithm ensures that a client's subsequent requests are routed to the same service instance?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Least connections",
+      "Hash"
+    ],
+    "answer": "Sticky round-robin",
+    "explanation": "Sticky round-robin ensures that a client's subsequent requests are routed to the same service instance, maintaining session consistency.",
+    "tags": ["Load Balancing", "Sticky Round-Robin", "Session Consistency"]
+  },
+  {
+    "question": "What is the main advantage of using the hash-based load-balancing algorithm?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It ensures consistent routing of requests based on client attributes",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It ensures consistent routing of requests based on client attributes",
+    "explanation": "The hash-based algorithm ensures consistent routing by mapping client attributes (e.g., IP or URL) to specific service instances.",
+    "tags": ["Load Balancing", "Hash Algorithm", "Consistent Routing"]
+  },
+  {
+    "question": "Which load-balancing algorithm is best suited for large-scale applications with many identical service instances?",
+    "options": [
+      "Round robin",
+      "Sticky round-robin",
+      "Weighted round-robin",
+      "Least response time"
+    ],
+    "answer": "Round robin",
+    "explanation": "Round robin is ideal for large-scale applications with identical service instances, as it distributes requests evenly without requiring complex logic.",
+    "tags": ["Load Balancing", "Round Robin", "Large-Scale Applications"]
+  },
+  {
+    "question": "What is the role of route guards in Angular, and how do they relate to load balancing?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To control access to routes based on conditions, similar to how load balancers enforce access policies",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To control access to routes based on conditions, similar to how load balancers enforce access policies",
+    "explanation": "Route guards in Angular control access to routes based on conditions, much like how load balancers enforce access policies or restrict traffic to certain service instances.",
+    "tags": ["Angular", "Load Balancing", "Route Guards"]
+  },
+  {
+    "question": "Which load-balancing algorithm is most effective for handling high-concurrency scenarios?",
+    "options": [
+      "Round robin",
+      "Least connections",
+      "Sticky round-robin",
+      "Hash"
+    ],
+    "answer": "Least connections",
+    "explanation": "The least connections algorithm is effective for high-concurrency scenarios, as it routes requests to instances with fewer active connections, preventing overload.",
+    "tags": ["Load Balancing", "Least Connections", "High Concurrency"]
+  },
+  {
+    "question": "What is the main disadvantage of the standard round-robin algorithm?",
+    "options": [
+      "It requires additional encryption",
+      "It does not account for varying service instance capacities or performance",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It does not account for varying service instance capacities or performance",
+    "explanation": "Standard round-robin assumes all service instances are identical and does not account for differences in capacity or performance, potentially leading to inefficiencies.",
+    "tags": ["Load Balancing", "Round Robin", "Disadvantages"]
+  },
+  {
+    "question": "What does URI stand for?",
+    "options": [
+      "Uniform Resource Identifier",
+      "Universal Resource Index",
+      "Unique Resource Interface",
+      "Unified Resource Integration"
+    ],
+    "answer": "Uniform Resource Identifier",
+    "explanation": "URI stands for Uniform Resource Identifier, which identifies a logical or physical resource on the web.",
+    "tags": ["URI", "Definition"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between URI, URL, and URN?",
+    "options": [
+      "URL and URN are subtypes of URI",
+      "URI and URN are subtypes of URL",
+      "URL and URN are unrelated to URI",
+      "URI replaces traditional APIs with AI-driven solutions"
+    ],
+    "answer": "URL and URN are subtypes of URI",
+    "explanation": "Both URL (Uniform Resource Locator) and URN (Uniform Resource Name) are subtypes of URI, each serving a specific purpose in identifying resources.",
+    "tags": ["URI", "URL", "URN", "Relationship"]
+  },
+  {
+    "question": "What is the primary purpose of a URL?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To locate a specific resource on the web",
+      "To name a resource without specifying its location",
+      "To manage front-end state exclusively"
+    ],
+    "answer": "To locate a specific resource on the web",
+    "explanation": "A URL (Uniform Resource Locator) specifies the address of a unique resource on the web, enabling its location and retrieval.",
+    "tags": ["URL", "Purpose", "Resource Location"]
+  },
+  {
+    "question": "What is the main function of a URN?",
+    "options": [
+      "To locate a resource by providing its address",
+      "To name a resource using a unique identifier without specifying its location",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To name a resource using a unique identifier without specifying its location",
+    "explanation": "A URN (Uniform Resource Name) provides a unique name for a resource using the urn scheme but does not specify how to locate or access it.",
+    "tags": ["URN", "Purpose", "Resource Naming"]
+  },
+  {
+    "question": "Which part of a URI specifies the protocol used to access a resource?",
+    "options": [
+      "Authority",
+      "Scheme",
+      "Path",
+      "Fragment"
+    ],
+    "answer": "Scheme",
+    "explanation": "The scheme part of a URI (e.g., http, https, ftp) specifies the protocol used to access or identify the resource.",
+    "tags": ["URI", "Structure", "Scheme"]
+  },
+  {
+    "question": "What is the role of the authority section in a URI?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To specify the server or domain where the resource resides",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the server or domain where the resource resides",
+    "explanation": "The authority section in a URI (e.g., www.example.com) specifies the server or domain where the resource is located.",
+    "tags": ["URI", "Structure", "Authority"]
+  },
+  {
+    "question": "Which part of a URI allows passing additional data to the server?",
+    "options": [
+      "Path",
+      "Query",
+      "Fragment",
+      "Scheme"
+    ],
+    "answer": "Query",
+    "explanation": "The query part of a URI (e.g., ?id=123) allows passing additional data to the server for filtering or customization purposes.",
+    "tags": ["URI", "Structure", "Query"]
+  },
+  {
+    "question": "What is the purpose of the fragment section in a URI?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To reference a specific portion of the resource, such as an anchor in a webpage",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To reference a specific portion of the resource, such as an anchor in a webpage",
+    "explanation": "The fragment section in a URI (e.g., #section1) references a specific part of the resource, like an anchor in a webpage.",
+    "tags": ["URI", "Structure", "Fragment"]
+  },
+  {
+    "question": "Which of the following is true about the path section of a URI?",
+    "options": [
+      "It specifies the hierarchical structure of the resource on the server",
+      "It replaces traditional APIs entirely",
+      "It manages front-end state exclusively",
+      "It focuses solely on IoT development"
+    ],
+    "answer": "It specifies the hierarchical structure of the resource on the server",
+    "explanation": "The path section in a URI (e.g., /folder/file.html) specifies the hierarchical structure of the resource within the server's namespace.",
+    "tags": ["URI", "Structure", "Path"]
+  },
+  {
+    "question": "Which of the following protocols can be used with a URL?",
+    "options": [
+      "HTTP and HTTPS only",
+      "FTP and JDBC only",
+      "HTTP, HTTPS, FTP, JDBC, and others",
+      "None of the above"
+    ],
+    "answer": "HTTP, HTTPS, FTP, JDBC, and others",
+    "explanation": "A URL (Uniform Resource Locator) can use various protocols, including HTTP, HTTPS, FTP, JDBC, and others, to specify the resource's location.",
+    "tags": ["URL", "Protocols"]
+  },
+  {
+    "question": "What is the difference between a URL and a URN?",
+    "options": [
+      "A URL locates a resource, while a URN names it without specifying its location",
+      "There is no difference; both serve the same purpose",
+      "A URN replaces traditional APIs, while a URL manages front-end state",
+      "A URL focuses exclusively on backend development"
+    ],
+    "answer": "A URL locates a resource, while a URN names it without specifying its location",
+    "explanation": "A URL provides the address of a resource for locating it, whereas a URN uniquely names a resource without specifying its location.",
+    "tags": ["URL", "URN", "Comparison"]
+  },
+  {
+    "question": "Which of the following is an example of a URN?",
+    "options": [
+      "http://example.com/resource",
+      "ftp://example.com/file.txt",
+      "urn:isbn:978-3-16-148410-0",
+      "https://api.example.com/data"
+    ],
+    "answer": "urn:isbn:978-3-16-148410-0",
+    "explanation": "A URN typically uses the urn scheme, such as urn:isbn:978-3-16-148410-0, which names a resource (in this case, a book) without specifying its location.",
+    "tags": ["URN", "Example"]
+  },
+  {
+    "question": "What is the role of the `@Injectable` decorator in Angular services, and how does it relate to URIs?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To mark a service as available for dependency injection, similar to how URIs identify resources",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To mark a service as available for dependency injection, similar to how URIs identify resources",
+    "explanation": "In Angular, the `@Injectable` decorator marks a service for dependency injection, ensuring it can be identified and used throughout the application, much like how URIs identify resources.",
+    "tags": ["Angular", "URI", "Injectable"]
+  },
+  {
+    "question": "Which of the following best describes the structure of a URI?",
+    "options": [
+      "scheme:[//authority]path[?query][#fragment]",
+      "authority:scheme[path]?query#fragment",
+      "path[scheme://authority]?query#fragment",
+      "fragment#path[scheme://authority]?query"
+    ],
+    "answer": "scheme:[//authority]path[?query][#fragment]",
+    "explanation": "A URI is structured as scheme:[//authority]path[?query][#fragment], where each part serves a specific purpose in identifying or accessing a resource.",
+    "tags": ["URI", "Structure"]
+  },
+  {
+    "question": "What is the main advantage of using a URN over a URL?",
+    "options": [
+      "A URN eliminates the need for encryption",
+      "A URN uniquely names a resource, making it persistent even if the resource moves",
+      "A URN manages front-end state exclusively",
+      "A URN replaces traditional APIs entirely"
+    ],
+    "answer": "A URN uniquely names a resource, making it persistent even if the resource moves",
+    "explanation": "A URN uniquely names a resource, ensuring persistence regardless of its location, unlike a URL, which depends on the resource's address.",
+    "tags": ["URN", "Advantages", "Persistence"]
+  },
+  {
+    "question": "Which part of a URI is optional when referencing local resources?",
+    "options": [
+      "Scheme",
+      "Authority",
+      "Path",
+      "Fragment"
+    ],
+    "answer": "Authority",
+    "explanation": "When referencing local resources, the authority section (e.g., www.example.com) is often optional, as the resource may reside within the same domain or application.",
+    "tags": ["URI", "Structure", "Optional Parts"]
+  },
+  {
+    "question": "What is the purpose of the `providedIn: 'root'` metadata in Angular services, and how does it relate to URIs?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide a service globally, akin to how a URI identifies a resource universally",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide a service globally, akin to how a URI identifies a resource universally",
+    "explanation": "The `providedIn: 'root'` metadata in Angular makes a service globally available, similar to how a URI universally identifies a resource across systems.",
+    "tags": ["Angular", "URI", "Service Injection"]
+  },
+  {
+    "question": "Which of the following is true about the relationship between URL and HTTP?",
+    "options": [
+      "HTTP is irrelevant to URLs",
+      "URLs are primarily used with HTTP to locate resources on the web",
+      "URLs replace traditional APIs entirely",
+      "URLs focus exclusively on frontend development"
+    ],
+    "answer": "URLs are primarily used with HTTP to locate resources on the web",
+    "explanation": "URLs are closely tied to HTTP, as they are used to specify the location of resources on the web via the HTTP protocol.",
+    "tags": ["URL", "HTTP", "Resource Location"]
+  },
+  {
+    "question": "What is the role of route parameters in Angular routing, and how do they relate to URIs?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To capture dynamic parts of the URI path and pass them to components",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To capture dynamic parts of the URI path and pass them to components",
+    "explanation": "Route parameters in Angular routing capture dynamic parts of the URI path (e.g., /user/:id) and pass them to components for processing, enabling dynamic navigation.",
+    "tags": ["Angular", "URI", "Routing Parameters"]
+  },
+  {
+    "question": "Which of the following is true about the fragment section in a URI?",
+    "options": [
+      "It specifies the protocol used to access the resource",
+      "It references a specific section or anchor within the resource",
+      "It replaces traditional APIs entirely",
+      "It focuses exclusively on backend development"
+    ],
+    "answer": "It references a specific section or anchor within the resource",
+    "explanation": "The fragment section in a URI (e.g., #section1) references a specific section or anchor within the resource, enhancing navigation precision.",
+    "tags": ["URI", "Fragment", "Navigation"]
+  },
+  {
+    "question": "What is the primary difference between a URL and a URI?",
+    "options": [
+      "A URL is a subtype of URI that specifies the resource's location",
+      "There is no difference; both serve the same purpose",
+      "A URI replaces traditional APIs, while a URL manages front-end state",
+      "A URL focuses exclusively on hardware optimization"
+    ],
+    "answer": "A URL is a subtype of URI that specifies the resource's location",
+    "explanation": "A URL is a specific type of URI that includes the resource's location, enabling direct access via protocols like HTTP or FTP.",
+    "tags": ["URL", "URI", "Comparison"]
+  },
+  {
+    "question": "Which of the following is true about the query section in a URI?",
+    "options": [
+      "It replaces traditional APIs with AI-driven solutions",
+      "It passes key-value pairs to the server for filtering or customizing responses",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It passes key-value pairs to the server for filtering or customizing responses",
+    "explanation": "The query section in a URI (e.g., ?id=123) passes key-value pairs to the server, allowing for filtering or customizing responses based on client input.",
+    "tags": ["URI", "Query", "Server Communication"]
+  },
+  {
+    "question": "What is the role of the wildcard route (`**`) in Angular routing, and how does it relate to URIs?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To handle unmatched URIs by redirecting to a fallback component",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle unmatched URIs by redirecting to a fallback component",
+    "explanation": "The wildcard route (`**`) in Angular routing captures unmatched URIs and redirects them to a fallback component, preventing broken links.",
+    "tags": ["Angular", "URI", "Wildcard Route"]
+  },
+  {
+    "question": "Which of the following is true about the urn scheme in URNs?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It uniquely identifies a resource without specifying its location",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It uniquely identifies a resource without specifying its location",
+    "explanation": "The urn scheme in URNs (e.g., urn:isbn:978-3-16-148410-0) uniquely identifies a resource without specifying its location or access method.",
+    "tags": ["URN", "URN Scheme", "Resource Identification"]
+  },
+  {
+    "question": "What is the main disadvantage of using a URN instead of a URL?",
+    "options": [
+      "A URN cannot directly locate or retrieve a resource",
+      "A URN eliminates the need for encryption",
+      "A URN manages front-end state exclusively",
+      "A URN focuses solely on IoT development"
+    ],
+    "answer": "A URN cannot directly locate or retrieve a resource",
+    "explanation": "While a URN uniquely names a resource, it does not provide a mechanism for locating or retrieving it, unlike a URL.",
+    "tags": ["URN", "Disadvantages", "Resource Location"]
+  },
+  {
+    "question": "Which of the following is true about the structure of a URL?",
+    "options": [
+      "It includes a scheme, authority, path, query, and fragment, enabling precise resource identification",
+      "It replaces traditional APIs with AI-driven solutions",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It includes a scheme, authority, path, query, and fragment, enabling precise resource identification",
+    "explanation": "A URL includes all necessary parts—scheme, authority, path, query, and fragment—to precisely locate and identify a resource on the web.",
+    "tags": ["URL", "Structure", "Resource Identification"]
+  },
+  {
+    "question": "What is the purpose of the authority section in a URI?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To specify the server or domain hosting the resource",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To specify the server or domain hosting the resource",
+    "explanation": "The authority section in a URI (e.g., www.example.com) specifies the server or domain hosting the resource, enabling proper routing.",
+    "tags": ["URI", "Authority", "Resource Hosting"]
+  },
+  {
+    "question": "What does SDLC stand for, and what are its key stages?",
+    "options": [
+      "Software Development Life Cycle: development, testing, deployment, maintenance",
+      "System Design Lifecycle: design, implementation, testing, deployment",
+      "Software Deployment Lifecycle: coding, debugging, deploying, monitoring",
+      "None of the above"
+    ],
+    "answer": "Software Development Life Cycle: development, testing, deployment, maintenance",
+    "explanation": "SDLC stands for Software Development Life Cycle and includes key stages such as development, testing, deployment, and maintenance. CI/CD automates and integrates these stages for faster and more reliable releases.",
+    "tags": ["SDLC", "Definition", "Stages"]
+  },
+  {
+    "question": "What is the role of CI/CD in the software development life cycle (SDLC)?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To automate and integrate the stages of SDLC for faster and more reliable releases",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To automate and integrate the stages of SDLC for faster and more reliable releases",
+    "explanation": "CI/CD automates and integrates the stages of the software development life cycle (SDLC), enabling faster feedback loops and reducing the risk of bugs in production.",
+    "tags": ["CI/CD", "Role", "Automation"]
+  },
+  {
+    "question": "Which of the following best describes Continuous Integration (CI)?",
+    "options": [
+      "It automates infrastructure changes and deployment to production",
+      "It automates the build, test, and merge process to detect integration issues early",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It automates the build, test, and merge process to detect integration issues early",
+    "explanation": "Continuous Integration (CI) automates the build, test, and merge process whenever code is committed, encouraging frequent commits and providing rapid feedback to developers.",
+    "tags": ["CI", "Definition", "Build and Test"]
+  },
+  {
+    "question": "What is the primary purpose of Continuous Delivery (CD)?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To automate release processes like infrastructure changes and deployment",
+      "To manage front-end state exclusively",
+      "To focus solely on IoT development"
+    ],
+    "answer": "To automate release processes like infrastructure changes and deployment",
+    "explanation": "Continuous Delivery (CD) automates the release process, ensuring that software can be deployed reliably at any time through automated workflows, including manual approval steps if necessary.",
+    "tags": ["CD", "Definition", "Release Automation"]
+  },
+  {
+    "question": "What happens when code is pushed to a Git repository in a CI/CD workflow?",
+    "options": [
+      "It triggers an automated build and test process to validate the code",
+      "It eliminates the need for encryption",
+      "It manages front-end state exclusively",
+      "It focuses solely on hardware optimization"
+    ],
+    "answer": "It triggers an automated build and test process to validate the code",
+    "explanation": "When code is pushed to a Git repository, it triggers an automated build and test process in the CI/CD pipeline, running tests and providing fast feedback to developers.",
+    "tags": ["CI/CD", "Git Repository", "Automated Testing"]
+  },
+  {
+    "question": "Which stage of the CI/CD pipeline ensures that the code is compiled and tested before deployment?",
+    "options": [
+      "Development",
+      "Testing",
+      "Continuous Integration (CI)",
+      "Continuous Delivery (CD)"
+    ],
+    "answer": "Continuous Integration (CI)",
+    "explanation": "The Continuous Integration (CI) stage ensures that the code is built, compiled, and tested automatically whenever changes are committed, detecting integration issues early.",
+    "tags": ["CI/CD", "Pipeline", "Continuous Integration"]
+  },
+  {
+    "question": "What is the main advantage of using Continuous Delivery (CD) in the deployment process?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It ensures software can be released reliably at any time through automated workflows",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It ensures software can be released reliably at any time through automated workflows",
+    "explanation": "Continuous Delivery (CD) ensures that software can be deployed reliably at any time, automating the release process and minimizing manual intervention.",
+    "tags": ["CD", "Advantages", "Reliable Releases"]
+  },
+  {
+    "question": "Which of the following is true about the difference between CI and CD?",
+    "options": [
+      "CI automates infrastructure changes, while CD automates testing",
+      "CI automates the build and test process, while CD automates the release process",
+      "CI manages front-end state exclusively, while CD focuses on backend",
+      "CI and CD serve the same purpose"
+    ],
+    "answer": "CI automates the build and test process, while CD automates the release process",
+    "explanation": "Continuous Integration (CI) focuses on automating the build and test process, while Continuous Delivery (CD) automates the release process, ensuring seamless transitions from development to production.",
+    "tags": ["CI/CD", "Comparison", "CI vs CD"]
+  },
+  {
+    "question": "What is the purpose of reporting test results in the CI/CD pipeline?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide developers with fast feedback on the quality of their code",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide developers with fast feedback on the quality of their code",
+    "explanation": "Reporting test results in the CI/CD pipeline provides developers with fast feedback, helping them identify and fix issues quickly before they reach production.",
+    "tags": ["CI/CD", "Testing", "Feedback"]
+  },
+  {
+    "question": "Which stage of the CI/CD pipeline involves deploying artifacts to staging environments?",
+    "options": [
+      "Development",
+      "Continuous Integration (CI)",
+      "Continuous Delivery (CD)",
+      "Maintenance"
+    ],
+    "answer": "Continuous Delivery (CD)",
+    "explanation": "In the Continuous Delivery (CD) stage, approved artifacts are deployed to staging environments for further testing before being released to production.",
+    "tags": ["CI/CD", "Pipeline", "Staging Deployment"]
+  },
+  {
+    "question": "What is the role of the `Wildcard Route` (`**`) in Angular routing, and how does it relate to CI/CD?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To handle unmatched routes, similar to how CI/CD handles failed builds by sending them back for fixes",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle unmatched routes, similar to how CI/CD handles failed builds by sending them back for fixes",
+    "explanation": "The wildcard route (`**`) in Angular routing handles unmatched routes, much like how CI/CD pipelines send failed builds back to developers for bug fixing, ensuring robust error handling.",
+    "tags": ["Angular", "CI/CD", "Wildcard Route"]
+  },
+  {
+    "question": "Which of the following best describes the relationship between CI and CD?",
+    "options": [
+      "CI and CD are independent and unrelated processes",
+      "CI feeds into CD, ensuring tested code is ready for automated deployment",
+      "CI replaces the need for CD entirely",
+      "CD eliminates the need for encryption"
+    ],
+    "answer": "CI feeds into CD, ensuring tested code is ready for automated deployment",
+    "explanation": "CI and CD work together in the pipeline, where CI ensures the code is built and tested, and CD automates the deployment process, ensuring smooth transitions to production.",
+    "tags": ["CI/CD", "Relationship", "Integration"]
+  },
+  {
+    "question": "What is the main benefit of automating the testing phase in a CI/CD pipeline?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It reduces the risk of bugs reaching production by catching issues early",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It reduces the risk of bugs reaching production by catching issues early",
+    "explanation": "Automating the testing phase in a CI/CD pipeline helps catch bugs early, reducing the likelihood of issues reaching production and improving overall software quality.",
+    "tags": ["CI/CD", "Testing", "Bug Detection"]
+  },
+  {
+    "question": "Which part of the CI/CD pipeline ensures that infrastructure changes are applied consistently?",
+    "options": [
+      "Development",
+      "Continuous Integration (CI)",
+      "Continuous Delivery (CD)",
+      "Maintenance"
+    ],
+    "answer": "Continuous Delivery (CD)",
+    "explanation": "Continuous Delivery (CD) ensures that infrastructure changes and deployments are applied consistently and reliably through automated workflows.",
+    "tags": ["CI/CD", "Pipeline", "Infrastructure Management"]
+  },
+  {
+    "question": "What is the purpose of the `providedIn: 'root'` metadata in Angular services, and how does it relate to CI/CD?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure singleton services are available app-wide, promoting consistency in automated testing and deployment",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure singleton services are available app-wide, promoting consistency in automated testing and deployment",
+    "explanation": "The `providedIn: 'root'` metadata in Angular ensures singleton services are available app-wide, which aligns with CI/CD practices by promoting consistent behavior during testing and deployment.",
+    "tags": ["Angular", "CI/CD", "Singleton Services"]
+  },
+  {
+    "question": "Which stage of the CI/CD pipeline involves running end-to-end (e2e) test cases?",
+    "options": [
+      "Development",
+      "Continuous Integration (CI)",
+      "Continuous Delivery (CD)",
+      "Maintenance"
+    ],
+    "answer": "Continuous Integration (CI)",
+    "explanation": "End-to-end (e2e) test cases are typically run during the Continuous Integration (CI) stage to validate the entire application flow before deployment.",
+    "tags": ["CI/CD", "Pipeline", "E2E Testing"]
+  },
+  {
+    "question": "What is the role of the `NgModule` decorator in Angular modules, and how does it relate to CI/CD?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define metadata for grouping components, facilitating modular testing and deployment",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define metadata for grouping components, facilitating modular testing and deployment",
+    "explanation": "The `NgModule` decorator in Angular defines metadata for grouping components, directives, pipes, and services, making it easier to test and deploy feature modules independently in a CI/CD pipeline.",
+    "tags": ["Angular", "CI/CD", "NgModule"]
+  },
+  {
+    "question": "What does MVC stand for, and what is its primary role in app development?",
+    "options": [
+      "Model-View-Controller: Separates data management (Model), UI rendering (View), and user interaction handling (Controller)",
+      "Model-View-Presenter: Focuses exclusively on frontend development",
+      "Model-View-ViewModel: Replaces traditional APIs with AI-driven solutions",
+      "None of the above"
+    ],
+    "answer": "Model-View-Controller: Separates data management (Model), UI rendering (View), and user interaction handling (Controller)",
+    "explanation": "MVC (Model-View-Controller) is one of the oldest architecture patterns, dating back almost 50 years. It separates concerns into three components: Model (data management), View (UI rendering), and Controller (user interaction handling).",
+    "tags": ["MVC", "Definition", "Separation of Concerns"]
+  },
+  {
+    "question": "Which component in the MVC pattern is responsible for managing business data?",
+    "options": [
+      "View",
+      "Controller",
+      "Model",
+      "Presenter"
+    ],
+    "answer": "Model",
+    "explanation": "In the MVC pattern, the Model component manages business data, logic, and rules, ensuring that the data is independent of the UI and controller.",
+    "tags": ["MVC", "Model", "Business Data"]
+  },
+  {
+    "question": "What is the main difference between MVC and MVP patterns?",
+    "options": [
+      "MVP eliminates the need for encryption",
+      "MVP introduces a Presenter to handle business logic and mediate between the View and Model",
+      "MVP focuses exclusively on hardware optimization",
+      "MVP replaces traditional APIs entirely"
+    ],
+    "answer": "MVP introduces a Presenter to handle business logic and mediate between the View and Model",
+    "explanation": "The MVP (Model-View-Presenter) pattern introduces a Presenter that handles business logic and mediates between the View and Model, reducing the responsibilities of the Controller in MVC.",
+    "tags": ["MVC", "MVP", "Comparison"]
+  },
+  {
+    "question": "Which architecture pattern uses a ViewModel to represent the state of the view?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "MVVM",
+    "explanation": "The MVVM (Model-View-ViewModel) pattern uses a ViewModel to represent the state of the view and act as an intermediary between the View and Model, enabling two-way data binding and simplifying UI updates.",
+    "tags": ["MVVM", "Definition", "ViewModel"]
+  },
+  {
+    "question": "What is the role of the ViewModel in the MVVM pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage front-end state exclusively",
+      "To act as a translator between the View and Model, representing the state of the view",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To act as a translator between the View and Model, representing the state of the view",
+    "explanation": "In the MVVM pattern, the ViewModel acts as a translator between the View and Model, encapsulating the state and behavior of the UI while keeping it decoupled from the View.",
+    "tags": ["MVVM", "ViewModel", "Translator"]
+  },
+  {
+    "question": "Which architecture pattern extends MVVM by introducing a Coordinator for navigation?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM-C",
+      "VIPER"
+    ],
+    "answer": "MVVM-C",
+    "explanation": "The MVVM-C (Model-View-ViewModel-Coordinator) pattern extends MVVM by adding a Coordinator component, which handles navigation and flow management, further improving modularity.",
+    "tags": ["MVVM-C", "Definition", "Coordinator"]
+  },
+  {
+    "question": "What is the purpose of the Coordinator in the MVVM-C pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage navigation and flow between views or screens",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage navigation and flow between views or screens",
+    "explanation": "In the MVVM-C pattern, the Coordinator is responsible for managing navigation and flow between views or screens, separating this concern from the ViewModel and View.",
+    "tags": ["MVVM-C", "Coordinator", "Navigation"]
+  },
+  {
+    "question": "Which architecture pattern is most suitable for large-scale applications requiring high modularity?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "VIPER",
+    "explanation": "VIPER (View-Interactor-Presenter-Entity-Router) is highly modular and well-suited for large-scale applications, as it separates concerns into distinct components, promoting scalability and maintainability.",
+    "tags": ["VIPER", "Modularity", "Large-Scale Applications"]
+  },
+  {
+    "question": "What is the role of the Interactor in the VIPER pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage business logic and interact with external services",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage business logic and interact with external services",
+    "explanation": "In the VIPER pattern, the Interactor component is responsible for managing business logic and interacting with external services or databases, ensuring separation of concerns.",
+    "tags": ["VIPER", "Interactor", "Business Logic"]
+  },
+  {
+    "question": "Which component in VIPER is responsible for defining the navigation flow?",
+    "options": [
+      "View",
+      "Presenter",
+      "Router",
+      "Entity"
+    ],
+    "answer": "Router",
+    "explanation": "In the VIPER pattern, the Router component defines the navigation flow between different screens or modules, ensuring a clean separation of concerns.",
+    "tags": ["VIPER", "Router", "Navigation Flow"]
+  },
+  {
+    "question": "What is the main advantage of using the MVVM pattern over MVC?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It improves testability and decouples the UI from the business logic using a ViewModel",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It improves testability and decouples the UI from the business logic using a ViewModel",
+    "explanation": "The MVVM pattern improves testability and decouples the UI from business logic by introducing a ViewModel, which acts as an intermediary and simplifies UI updates.",
+    "tags": ["MVVM", "Advantages", "Testability"]
+  },
+  {
+    "question": "Which architecture pattern separates the UI logic into a Presenter, making it easier to test?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "MVP",
+    "explanation": "The MVP (Model-View-Presenter) pattern separates UI logic into a Presenter, which makes it easier to test and ensures that the View remains lightweight and focused on rendering.",
+    "tags": ["MVP", "Definition", "Presenter"]
+  },
+  {
+    "question": "What is the role of the Entity in the VIPER pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To store and manage data independently of other components",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To store and manage data independently of other components",
+    "explanation": "In the VIPER pattern, the Entity component stores and manages data, acting as the equivalent of the Model in other patterns but with stricter separation of concerns.",
+    "tags": ["VIPER", "Entity", "Data Management"]
+  },
+  {
+    "question": "Which architecture pattern is best suited for applications requiring complex navigation and strict separation of concerns?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "VIPER",
+    "explanation": "The VIPER pattern is ideal for applications with complex navigation and strict separation of concerns, as it divides responsibilities into five distinct components: View, Interactor, Presenter, Entity, and Router.",
+    "tags": ["VIPER", "Complex Navigation", "Separation of Concerns"]
+  },
+  {
+    "question": "What is the main difference between MVVM and MVVM-C?",
+    "options": [
+      "MVVM-C introduces a Coordinator for managing navigation and flow",
+      "There is no difference; both serve the same purpose",
+      "MVVM-C eliminates the need for encryption",
+      "MVVM-C focuses exclusively on IoT development"
+    ],
+    "answer": "MVVM-C introduces a Coordinator for managing navigation and flow",
+    "explanation": "The MVVM-C pattern extends MVVM by introducing a Coordinator, which is responsible for managing navigation and flow between views, enhancing modularity.",
+    "tags": ["MVVM-C", "MVVM", "Comparison"]
+  },
+  {
+    "question": "Which architecture pattern uses a Router to define navigation paths and transitions?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM-C",
+      "VIPER"
+    ],
+    "answer": "VIPER",
+    "explanation": "In the VIPER pattern, the Router component is specifically responsible for defining navigation paths and transitions, ensuring that navigation logic is decoupled from other components.",
+    "tags": ["VIPER", "Router", "Navigation"]
+  },
+  {
+    "question": "What is the purpose of the Presenter in the MVP pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To handle user interactions, update the View, and communicate with the Model",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To handle user interactions, update the View, and communicate with the Model",
+    "explanation": "In the MVP pattern, the Presenter handles user interactions, updates the View, and communicates with the Model, ensuring a clear separation of concerns and improved testability.",
+    "tags": ["MVP", "Presenter", "User Interactions"]
+  },
+  {
+    "question": "Which architecture pattern is best suited for applications requiring two-way data binding?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "MVVM",
+    "explanation": "The MVVM pattern is well-suited for applications requiring two-way data binding, as the ViewModel represents the state of the View and allows for seamless synchronization.",
+    "tags": ["MVVM", "Two-Way Binding", "Data Synchronization"]
+  },
+  {
+    "question": "What is the role of the View in all architecture patterns discussed?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To display content and receive user input",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To display content and receive user input",
+    "explanation": "Across all patterns (MVC, MVP, MVVM, MVVM-C, VIPER), the View is responsible for displaying content and receiving user input, ensuring a consistent user experience.",
+    "tags": ["Architecture Patterns", "View", "User Interaction"]
+  },
+  {
+    "question": "Which architecture pattern introduces the concept of an Interactor for handling business logic?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "VIPER",
+    "explanation": "The VIPER pattern introduces the Interactor component, which is dedicated to handling business logic, ensuring a strict separation of concerns and better scalability.",
+    "tags": ["VIPER", "Interactor", "Business Logic"]
+  },
+  {
+    "question": "What is the main disadvantage of the MVC pattern compared to newer patterns like MVVM or VIPER?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It can lead to a 'Massive View Controller' problem due to overlapping responsibilities",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It can lead to a 'Massive View Controller' problem due to overlapping responsibilities",
+    "explanation": "The MVC pattern can result in a 'Massive View Controller' issue, where the Controller takes on too many responsibilities, leading to less maintainable code compared to MVVM or VIPER.",
+    "tags": ["MVC", "Disadvantages", "Massive View Controller"]
+  },
+  {
+    "question": "Which architecture pattern is most commonly used in iOS development for its high modularity?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "VIPER",
+    "explanation": "VIPER is widely used in iOS development due to its high modularity, strict separation of concerns, and suitability for large-scale applications.",
+    "tags": ["VIPER", "iOS Development", "Modularity"]
+  },
+  {
+    "question": "What is the role of the ViewModel in the MVVM pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To represent the state of the View and enable two-way data binding",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To represent the state of the View and enable two-way data binding",
+    "explanation": "In the MVVM pattern, the ViewModel represents the state of the View and facilitates two-way data binding, ensuring that changes in the View are reflected in the Model and vice versa.",
+    "tags": ["MVVM", "ViewModel", "Two-Way Binding"]
+  },
+  {
+    "question": "Which architecture pattern separates navigation logic into a dedicated Router component?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM-C",
+      "VIPER"
+    ],
+    "answer": "VIPER",
+    "explanation": "The VIPER pattern separates navigation logic into a dedicated Router component, ensuring that navigation is decoupled from other application logic.",
+    "tags": ["VIPER", "Router", "Navigation Decoupling"]
+  },
+  {
+    "question": "What is the main advantage of the VIPER pattern over other patterns?",
+    "options": [
+      "It simplifies manual testing processes",
+      "It provides a highly modular structure, making it ideal for large-scale applications",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It provides a highly modular structure, making it ideal for large-scale applications",
+    "explanation": "The VIPER pattern offers a highly modular structure, dividing responsibilities into distinct components, which makes it ideal for large-scale applications with complex requirements.",
+    "tags": ["VIPER", "Advantages", "Modularity"]
+  },
+  {
+    "question": "Which architecture pattern is best suited for simple applications with minimal complexity?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "MVC",
+    "explanation": "The MVC pattern is often preferred for simple applications with minimal complexity due to its straightforward structure and ease of implementation.",
+    "tags": ["MVC", "Use Cases", "Simple Applications"]
+  },
+  {
+    "question": "What is the purpose of the `pathMatch: 'full'` option in Angular routing, and how does it relate to architecture patterns?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To ensure the entire URL path matches before applying a redirect, aligning with the separation of concerns in architecture patterns",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To ensure the entire URL path matches before applying a redirect, aligning with the separation of concerns in architecture patterns",
+    "explanation": "The `pathMatch: 'full'` option in Angular routing ensures the entire URL path matches before applying a redirect, reflecting the separation of concerns emphasized in architecture patterns like MVC, MVP, MVVM, etc.",
+    "tags": ["Angular", "Routing", "Architecture Patterns"]
+  },
+  {
+    "question": "Which architecture pattern emphasizes the use of Entities for data storage and management?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "VIPER",
+    "explanation": "The VIPER pattern emphasizes the use of Entities for data storage and management, ensuring that data is handled separately from other components like the View or Presenter.",
+    "tags": ["VIPER", "Entity", "Data Management"]
+  },
+  {
+    "question": "What is the main goal of introducing Coordinators in the MVVM-C pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To manage navigation and flow between views, improving modularity",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To manage navigation and flow between views, improving modularity",
+    "explanation": "In the MVVM-C pattern, Coordinators are introduced to manage navigation and flow between views, further improving modularity and reducing coupling in the application.",
+    "tags": ["MVVM-C", "Coordinator", "Navigation Management"]
+  },
+  {
+    "question": "Which architecture pattern separates UI logic into a Presenter, allowing for easier testing?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "MVP",
+    "explanation": "The MVP pattern separates UI logic into a Presenter, which makes it easier to test and ensures that the View remains lightweight and focused on rendering.",
+    "tags": ["MVP", "Presenter", "Testing"]
+  },
+  {
+    "question": "What is the role of the Router in the VIPER pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To define navigation paths and handle transitions between screens",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To define navigation paths and handle transitions between screens",
+    "explanation": "In the VIPER pattern, the Router is responsible for defining navigation paths and handling transitions between screens, ensuring that navigation logic is decoupled from other components.",
+    "tags": ["VIPER", "Router", "Navigation"]
+  },
+  {
+    "question": "Which architecture pattern is most suitable for applications requiring frequent UI updates and synchronization with the backend?",
+    "options": [
+      "MVC",
+      "MVP",
+      "MVVM",
+      "VIPER"
+    ],
+    "answer": "MVVM",
+    "explanation": "The MVVM pattern is well-suited for applications requiring frequent UI updates and synchronization with the backend, thanks to its two-way data binding and ViewModel component.",
+    "tags": ["MVVM", "Use Cases", "UI Updates"]
+  },
+  {
+    "question": "What is the purpose of design patterns in software development?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To provide reusable solutions to common design problems, improving efficiency and structure",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To provide reusable solutions to common design problems, improving efficiency and structure",
+    "explanation": "Design patterns are reusable solutions to recurring problems in software design, serving as blueprints for building better software structures.",
+    "tags": ["Design Patterns", "Purpose", "Reusable Solutions"]
+  },
+  {
+    "question": "Which design pattern creates groups of related objects without specifying their concrete classes?",
+    "options": [
+      "Abstract Factory",
+      "Builder",
+      "Prototype",
+      "Singleton"
+    ],
+    "answer": "Abstract Factory",
+    "explanation": "The Abstract Factory pattern provides a way to create families of related objects without specifying their concrete classes, promoting flexibility and consistency.",
+    "tags": ["Abstract Factory", "Family Creator", "Object Creation"]
+  },
+  {
+    "question": "What is the Builder pattern often compared to?",
+    "options": [
+      "Lego Master",
+      "Clone Maker",
+      "One and Only",
+      "Universal Plug"
+    ],
+    "answer": "Lego Master",
+    "explanation": "The Builder pattern is often compared to a 'Lego Master' because it builds objects step by step, separating the construction process from the final representation.",
+    "tags": ["Builder", "Lego Master", "Step-by-Step Construction"]
+  },
+  {
+    "question": "Which design pattern creates copies of fully prepared examples?",
+    "options": [
+      "Abstract Factory",
+      "Prototype",
+      "Singleton",
+      "Adapter"
+    ],
+    "answer": "Prototype",
+    "explanation": "The Prototype pattern creates clones of existing objects (fully prepared examples), allowing developers to avoid complex initialization processes.",
+    "tags": ["Prototype", "Clone Maker", "Object Duplication"]
+  },
+  {
+    "question": "What is the Singleton pattern known for?",
+    "options": [
+      "Creating multiple instances of a class",
+      "Ensuring a class has only one instance throughout the application",
+      "Connecting incompatible interfaces",
+      "Simplifying system interactions"
+    ],
+    "answer": "Ensuring a class has only one instance throughout the application",
+    "explanation": "The Singleton pattern ensures that a class has exactly one instance and provides a global point of access to it, making it ideal for managing shared resources like configurations or caches.",
+    "tags": ["Singleton", "One and Only", "Global Access"]
+  },
+  {
+    "question": "Which design pattern acts as a bridge between incompatible interfaces?",
+    "options": [
+      "Adapter",
+      "Bridge",
+      "Composite",
+      "Decorator"
+    ],
+    "answer": "Adapter",
+    "explanation": "The Adapter pattern, often referred to as a 'Universal Plug,' allows two incompatible interfaces to work together by converting one interface into another.",
+    "tags": ["Adapter", "Universal Plug", "Interface Conversion"]
+  },
+  {
+    "question": "What does the Bridge pattern connect?",
+    "options": [
+      "Different databases",
+      "How an object works to what it does",
+      "Requests in a chain",
+      "Class states"
+    ],
+    "answer": "How an object works to what it does",
+    "explanation": "The Bridge pattern separates an object's abstraction (how it works) from its implementation (what it does), enabling both to vary independently.",
+    "tags": ["Bridge", "Function Connector", "Abstraction-Implementation Separation"]
+  },
+  {
+    "question": "Which design pattern forms tree-like structures of simple and complex parts?",
+    "options": [
+      "Composite",
+      "Decorator",
+      "Facade",
+      "Flyweight"
+    ],
+    "answer": "Composite",
+    "explanation": "The Composite pattern organizes objects into tree-like structures, allowing clients to treat individual objects and compositions uniformly.",
+    "tags": ["Composite", "Tree Builder", "Hierarchical Structures"]
+  },
+  {
+    "question": "What is the role of the Decorator pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To add features to objects dynamically without altering their core structure",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To add features to objects dynamically without altering their core structure",
+    "explanation": "The Decorator pattern extends the functionality of objects at runtime without modifying their core structure, promoting flexibility and reusability.",
+    "tags": ["Decorator", "Customizer", "Dynamic Feature Addition"]
+  },
+  {
+    "question": "Which pattern simplifies access to a complex system through a single, unified interface?",
+    "options": [
+      "Abstract Factory",
+      "Builder",
+      "Facade",
+      "Proxy"
+    ],
+    "answer": "Facade",
+    "explanation": "The Facade pattern provides a simplified interface to a larger, more complex system, hiding its internal complexity from external users.",
+    "tags": ["Facade", "One-Stop-Shop", "Simplified Interface"]
+  },
+  {
+    "question": "What is the main goal of the Flyweight pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To share small, reusable objects efficiently, reducing memory usage",
+      "To manage front-end state exclusively",
+      "To focus solely on IoT development"
+    ],
+    "answer": "To share small, reusable objects efficiently, reducing memory usage",
+    "explanation": "The Flyweight pattern focuses on sharing small, reusable objects to minimize memory consumption, particularly useful in systems with many similar objects.",
+    "tags": ["Flyweight", "Space Saver", "Memory Optimization"]
+  },
+  {
+    "question": "Which pattern controls access to an object by acting as its surrogate?",
+    "options": [
+      "Proxy",
+      "Chain of Responsibility",
+      "Command",
+      "Observer"
+    ],
+    "answer": "Proxy",
+    "explanation": "The Proxy pattern acts as a stand-in for another object, controlling access or adding behavior while maintaining the same interface.",
+    "tags": ["Proxy", "Stand-In Actor", "Access Control"]
+  },
+  {
+    "question": "What is the Chain of Responsibility pattern used for?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To pass a request through a chain of objects until it is handled",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To pass a request through a chain of objects until it is handled",
+    "explanation": "The Chain of Responsibility pattern allows a request to be passed through a chain of objects, ensuring that the appropriate handler processes it.",
+    "tags": ["Chain of Responsibility", "Request Relay", "Handler Chains"]
+  },
+  {
+    "question": "Which pattern encapsulates a request as an object, allowing for parameterization and queuing of operations?",
+    "options": [
+      "Command",
+      "Iterator",
+      "Mediator",
+      "Visitor"
+    ],
+    "answer": "Command",
+    "explanation": "The Command pattern turns a request into a standalone object, enabling parameterization, queuing, and logging of operations while supporting undo/redo functionality.",
+    "tags": ["Command", "Task Wrapper", "Encapsulated Requests"]
+  },
+  {
+    "question": "What is the Iterator pattern responsible for?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To traverse elements in a collection sequentially without exposing its underlying structure",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To traverse elements in a collection sequentially without exposing its underlying structure",
+    "explanation": "The Iterator pattern provides a way to access elements in a collection one by one without revealing the collection's internal structure, enhancing encapsulation.",
+    "tags": ["Iterator", "Collection Explorer", "Sequential Access"]
+  },
+  {
+    "question": "Which pattern simplifies communication between multiple classes?",
+    "options": [
+      "Adapter",
+      "Bridge",
+      "Mediator",
+      "Visitor"
+    ],
+    "answer": "Mediator",
+    "explanation": "The Mediator pattern centralizes communication between multiple classes, reducing direct dependencies and simplifying interactions within a system.",
+    "tags": ["Mediator", "Communication Hub", "Centralized Communication"]
+  },
+  {
+    "question": "What is the Memento pattern used for?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To capture and restore an object's state externally",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To capture and restore an object's state externally",
+    "explanation": "The Memento pattern captures an object's internal state and stores it externally, allowing the object to be restored to its previous state if needed.",
+    "tags": ["Memento", "Time Capsule", "State Management"]
+  },
+  {
+    "question": "Which pattern notifies dependent objects about changes in other objects?",
+    "options": [
+      "Observer",
+      "Singleton",
+      "Prototype",
+      "Command"
+    ],
+    "answer": "Observer",
+    "explanation": "The Observer pattern establishes a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.",
+    "tags": ["Observer", "News Broadcaster", "Dependency Notification"]
+  },
+  {
+    "question": "What is the Visitor pattern designed to do?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To add new operations to a class hierarchy without modifying its structure",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To add new operations to a class hierarchy without modifying its structure",
+    "explanation": "The Visitor pattern allows you to define new operations for a set of classes without changing their structure, promoting separation of concerns and extensibility.",
+    "tags": ["Visitor", "Skillful Guest", "Operation Addition"]
+  },
+  {
+    "question": "Which pattern is best suited for creating a family of related objects?",
+    "options": [
+      "Abstract Factory",
+      "Builder",
+      "Prototype",
+      "Singleton"
+    ],
+    "answer": "Abstract Factory",
+    "explanation": "The Abstract Factory pattern is ideal for creating a family of related objects, ensuring consistency and flexibility in object creation.",
+    "tags": ["Abstract Factory", "Family Creator", "Related Object Creation"]
+  },
+  {
+    "question": "What is the primary benefit of using the Singleton pattern?",
+    "options": [
+      "It eliminates the need for encryption",
+      "It ensures a class has only one instance and provides a global point of access",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It ensures a class has only one instance and provides a global point of access",
+    "explanation": "The Singleton pattern guarantees that a class has only one instance and provides a global point of access, making it useful for managing shared resources like configurations.",
+    "tags": ["Singleton", "One and Only", "Global Access"]
+  },
+  {
+    "question": "Which pattern combines simple and composite objects into a unified structure?",
+    "options": [
+      "Composite",
+      "Decorator",
+      "Facade",
+      "Flyweight"
+    ],
+    "answer": "Composite",
+    "explanation": "The Composite pattern combines simple and composite objects into a tree-like structure, enabling uniform treatment of individual objects and collections.",
+    "tags": ["Composite", "Tree Builder", "Unified Structure"]
+  },
+  {
+    "question": "What is the role of the Adapter pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To connect incompatible interfaces, allowing them to work together",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To connect incompatible interfaces, allowing them to work together",
+    "explanation": "The Adapter pattern acts as a bridge between incompatible interfaces, enabling collaboration between otherwise unrelated components.",
+    "tags": ["Adapter", "Universal Plug", "Interface Compatibility"]
+  },
+  {
+    "question": "Which pattern passes requests along a chain of potential handlers until one handles it?",
+    "options": [
+      "Chain of Responsibility",
+      "Command",
+      "Iterator",
+      "Mediator"
+    ],
+    "answer": "Chain of Responsibility",
+    "explanation": "The Chain of Responsibility pattern passes requests through a chain of handlers, ensuring that each request is processed by the appropriate handler.",
+    "tags": ["Chain of Responsibility", "Request Relay", "Handler Chains"]
+  },
+  {
+    "question": "What is the main advantage of the Facade pattern?",
+    "options": [
+      "It simplifies complex systems by providing a single, unified interface",
+      "It eliminates the need for encryption",
+      "It manages front-end state exclusively",
+      "It replaces traditional APIs entirely"
+    ],
+    "answer": "It simplifies complex systems by providing a single, unified interface",
+    "explanation": "The Facade pattern hides the complexity of a subsystem behind a simplified interface, making it easier to interact with complex systems.",
+    "tags": ["Facade", "One-Stop-Shop", "Complexity Hiding"]
+  },
+  {
+    "question": "Which pattern reduces memory usage by sharing similar objects efficiently?",
+    "options": [
+      "Flyweight",
+      "Singleton",
+      "Prototype",
+      "Decorator"
+    ],
+    "answer": "Flyweight",
+    "explanation": "The Flyweight pattern reduces memory usage by sharing similar objects efficiently, especially useful in systems with a large number of small objects.",
+    "tags": ["Flyweight", "Space Saver", "Memory Efficiency"]
+  },
+  {
+    "question": "What is the role of the Proxy pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To act as a surrogate for another object, controlling access or adding behavior",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To act as a surrogate for another object, controlling access or adding behavior",
+    "explanation": "The Proxy pattern provides a placeholder for another object, controlling access or adding behavior while maintaining the same interface.",
+    "tags": ["Proxy", "Stand-In Actor", "Access Control"]
+  },
+  {
+    "question": "Which pattern is most suitable for adding responsibilities to objects dynamically?",
+    "options": [
+      "Decorator",
+      "Adapter",
+      "Composite",
+      "Facade"
+    ],
+    "answer": "Decorator",
+    "explanation": "The Decorator pattern adds responsibilities to objects dynamically without altering their core structure, promoting flexibility and reusability.",
+    "tags": ["Decorator", "Customizer", "Dynamic Feature Addition"]
+  },
+  {
+    "question": "What is the purpose of route guards in Angular, and how does it relate to design patterns?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To control access to routes, akin to the Chain of Responsibility pattern",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To control access to routes, akin to the Chain of Responsibility pattern",
+    "explanation": "Route guards in Angular control access to routes, much like the Chain of Responsibility pattern, which passes requests through a chain of handlers until one handles it.",
+    "tags": ["Angular", "Route Guards", "Chain of Responsibility"]
+  },
+  {
+    "question": "Which pattern facilitates traversal of a collection without exposing its internal structure?",
+    "options": [
+      "Iterator",
+      "Mediator",
+      "Memento",
+      "Visitor"
+    ],
+    "answer": "Iterator",
+    "explanation": "The Iterator pattern enables sequential traversal of a collection while hiding its internal structure, promoting encapsulation and flexibility.",
+    "tags": ["Iterator", "Collection Explorer", "Sequential Traversal"]
+  },
+  {
+    "question": "What is the role of the Mediator pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To centralize communication between objects, reducing direct dependencies",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To centralize communication between objects, reducing direct dependencies",
+    "explanation": "The Mediator pattern centralizes communication between objects, reducing direct dependencies and simplifying interactions within a system.",
+    "tags": ["Mediator", "Communication Hub", "Centralized Communication"]
+  },
+  {
+    "question": "Which pattern captures an object's state and allows restoration?",
+    "options": [
+      "Memento",
+      "Observer",
+      "Singleton",
+      "Command"
+    ],
+    "answer": "Memento",
+    "explanation": "The Memento pattern captures an object's internal state and allows restoration to a previous state, often used in scenarios requiring undo/redo functionality.",
+    "tags": ["Memento", "Time Capsule", "State Restoration"]
+  },
+  {
+    "question": "What is the primary use case of the Visitor pattern?",
+    "options": [
+      "To replace traditional APIs with AI-driven solutions",
+      "To add new operations to a class hierarchy without altering its structure",
+      "To manage front-end state exclusively",
+      "To focus solely on hardware optimization"
+    ],
+    "answer": "To add new operations to a class hierarchy without altering its structure",
+    "explanation": "The Visitor pattern allows you to add new operations to a class hierarchy without modifying its structure, promoting open-closed principles and extensibility.",
+    "tags": ["Visitor", "Skillful Guest", "Operation Addition"]
   }
 ]
