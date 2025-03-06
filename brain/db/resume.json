@@ -217,6 +217,13 @@
   "projects": [
     {
       "timestamp": 1740728027,
+      "title": "Abstract Factory Pattern in React for Themed Components",
+      "description": "This project demonstrates the implementation of the Abstract Factory Pattern in React to create reusable components that adapt their appearance and behavior based on themes (light/dark). It utilizes React Context to dynamically switch between different UI factories.",
+      "link": "https://github.com/m-housni/react-abstract-factory-theme",
+      "tags": "React, Abstract Factory Pattern, Context API, Theming, Design Patterns, Reusable Components, TypeScript"
+    },    
+    {
+      "timestamp": 1740728027,
       "title": "Okta SAML implementation for SSO",
       "description": "This project demonstrates the implementation of SAML (Security Assertion Markup Language) for Single Sign-On (SSO) authentication.",
       "link": "https://github.com/m-housni/okta-saml-demo-using-node-passport",
