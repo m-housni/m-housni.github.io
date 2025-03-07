@@ -219,7 +219,7 @@
       "timestamp": 1740728027,
       "title": "Abstract Factory Pattern in React for Themed Components",
       "description": "This project demonstrates the implementation of the Abstract Factory Pattern in React to create reusable components that adapt their appearance and behavior based on themes (light/dark). It utilizes React Context to dynamically switch between different UI factories.",
-      "link": "https://github.com/m-housni/react-abstract-factory-theme",
+      "link": "https://github.com/m-housni/themed-react-components-using-abstract-factory-pattern",
       "tags": "React, Abstract Factory Pattern, Context API, Theming, Design Patterns, Reusable Components, TypeScript"
     },    
     {
