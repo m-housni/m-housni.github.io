@@ -1,5 +1,181 @@
 [
   {
+    "question": "What is the primary goal of Clean Architecture?",
+    "options": [
+      "To minimize the number of lines of code",
+      "To maximize the use of external libraries",
+      "To create systems that are independent of frameworks, UI, databases, and external agencies",
+      "To prioritize speed of development over maintainability"
+    ],
+    "answer": "To create systems that are independent of frameworks, UI, databases, and external agencies",
+    "explanation": "Clean Architecture aims to decouple core business logic from external concerns, making the system more flexible, testable, and maintainable.",
+    "tags": ["Clean Architecture", "Goal", "Decoupling"]
+  },
+  {
+    "question": "Which layer in Clean Architecture contains the business rules?",
+    "options": [
+      "Frameworks & Drivers",
+      "Interface Adapters",
+      "Entities",
+      "Use Cases"
+    ],
+    "answer": "Entities",
+    "explanation": "Entities represent the core business objects and rules of the application. They are the least likely to change.",
+    "tags": ["Clean Architecture", "Entities", "Business Rules"]
+  },
+  {
+    "question": "Which layer in Clean Architecture handles the interaction between the outside world and the Use Cases?",
+    "options": [
+      "Frameworks & Drivers",
+      "Interface Adapters",
+      "Entities",
+      "Use Cases"
+    ],
+    "answer": "Interface Adapters",
+    "explanation": "Interface Adapters convert data from the format most convenient for the Use Cases and Entities to the format most convenient for some external agency such as the Database or the Web.",
+    "tags": ["Clean Architecture", "Interface Adapters", "Interaction"]
+  },
+  {
+    "question": "Which layer in Clean Architecture contains the application-specific business rules?",
+    "options": [
+      "Frameworks & Drivers",
+      "Interface Adapters",
+      "Entities",
+      "Use Cases"
+    ],
+    "answer": "Use Cases",
+    "explanation": "Use Cases encapsulate and implement all of the application-specific business rules. They orchestrate the flow of data to and from the Entities.",
+    "tags": ["Clean Architecture", "Use Cases", "Application Rules"]
+  },
+  {
+    "question": "In Clean Architecture, which direction do dependencies point?",
+    "options": [
+      "Outwards, towards the outer layers",
+      "Inwards, towards the Entities",
+      "Bidirectionally, between all layers",
+      "Randomly, based on developer preference"
+    ],
+    "answer": "Inwards, towards the Entities",
+    "explanation": "The Dependency Rule states that source code dependencies can only point inwards. This ensures that inner layers are independent of outer layers.",
+    "tags": ["Clean Architecture", "Dependency Rule", "Direction"]
+  },
+  {
+    "question": "What is the role of the Dependency Inversion Principle in Clean Architecture?",
+    "options": [
+      "To increase coupling between layers",
+      "To reduce the number of interfaces",
+      "To decouple high-level modules from low-level modules by depending on abstractions",
+      "To eliminate the need for unit testing"
+    ],
+    "answer": "To decouple high-level modules from low-level modules by depending on abstractions",
+    "explanation": "The Dependency Inversion Principle is crucial for Clean Architecture as it allows high-level modules to remain independent of low-level modules by depending on abstractions.",
+    "tags": [
+      "Clean Architecture",
+      "Dependency Inversion Principle",
+      "Decoupling"
+    ]
+  },
+  {
+    "question": "Which layer in Clean Architecture is responsible for handling database interactions?",
+    "options": [
+      "Entities",
+      "Use Cases",
+      "Interface Adapters",
+      "Frameworks & Drivers"
+    ],
+    "answer": "Frameworks & Drivers",
+    "explanation": "The Frameworks & Drivers layer contains frameworks and tools such as the Database, the Web Framework, etc. This layer is the outermost layer.",
+    "tags": ["Clean Architecture", "Frameworks & Drivers", "Database"]
+  },
+  {
+    "question": "What is the primary benefit of separating business logic from frameworks in Clean Architecture?",
+    "options": [
+      "Increased development speed",
+      "Improved performance",
+      "Enhanced testability and maintainability",
+      "Reduced code complexity"
+    ],
+    "answer": "Enhanced testability and maintainability",
+    "explanation": "By separating business logic, Clean Architecture makes it easier to test core business rules and maintain the system over time.",
+    "tags": ["Clean Architecture", "Benefits", "Testability"]
+  },
+  {
+    "question": "What is the purpose of the 'boundary' in Clean Architecture?",
+    "options": [
+      "To define the physical location of the server",
+      "To separate different teams working on the project",
+      "To define the interface between different layers",
+      "To limit the number of external dependencies"
+    ],
+    "answer": "To define the interface between different layers",
+    "explanation": "Boundaries in Clean Architecture define the interfaces between layers, ensuring that dependencies flow inwards and that layers are decoupled.",
+    "tags": ["Clean Architecture", "Boundary", "Interface"]
+  },
+  {
+    "question": "Which of the following is an example of an Interface Adapter?",
+    "options": [
+      "A database connection",
+      "A user interface controller",
+      "A business entity",
+      "A use case interactor"
+    ],
+    "answer": "A user interface controller",
+    "explanation": "Interface Adapters like controllers, presenters, and gateways adapt data between the format used by use cases and entities and the format used by external systems.",
+    "tags": ["Clean Architecture", "Interface Adapters", "Example"]
+  },
+  {
+    "question": "What is the main concern addressed by the 'Frameworks & Drivers' layer?",
+    "options": [
+      "Business logic",
+      "User interface presentation",
+      "External interactions and system-level details",
+      "Application-specific rules"
+    ],
+    "answer": "External interactions and system-level details",
+    "explanation": "The Frameworks & Drivers layer handles the interaction with external frameworks, databases, and devices, keeping these details separate from the core business logic.",
+    "tags": [
+      "Clean Architecture",
+      "Frameworks & Drivers",
+      "External Interactions"
+    ]
+  },
+  {
+    "question": "In Clean Architecture, Entities are considered to be:",
+    "options": [
+      "Framework-dependent",
+      "Application-specific",
+      "Framework-independent and application-agnostic",
+      "Database-specific"
+    ],
+    "answer": "Framework-independent and application-agnostic",
+    "explanation": "Entities represent the most general and high-level rules. They are independent of any specific application or framework.",
+    "tags": ["Clean Architecture", "Entities", "Independence"]
+  },
+  {
+    "question": "What is the purpose of a 'gateway' in Clean Architecture?",
+    "options": [
+      "To manage user authentication",
+      "To provide an interface for data access",
+      "To control the flow of use cases",
+      "To define the user interface layout"
+    ],
+    "answer": "To provide an interface for data access",
+    "explanation": "Gateways act as interfaces between the Use Cases and the external data sources, ensuring that the Use Cases are not coupled to specific data access implementations.",
+    "tags": ["Clean Architecture", "Gateway", "Data Access"]
+  },
+  {
+    "question": "Which layer is the most stable and least likely to change in Clean Architecture?",
+    "options": [
+      "Frameworks & Drivers",
+      "Interface Adapters",
+      "Use Cases",
+      "Entities"
+    ],
+    "answer": "Entities",
+    "explanation": "Entities represent the core business logic and are designed to be stable and independent of external changes.",
+    "tags": ["Clean Architecture", "Stability", "Entities"]
+  },
+  {
     "question": "What is a JSON Web Token (JWT)?",
     "options": [
       "A database management system",
@@ -22511,12 +22687,7 @@
   },
   {
     "question": "Which protocol is commonly used in enterprise applications for implementing SSO?",
-    "options": [
-      "OAuth 2.0",
-      "SAML",
-      "OpenID Connect (OIDC)",
-      "JWT"
-    ],
+    "options": ["OAuth 2.0", "SAML", "OpenID Connect (OIDC)", "JWT"],
     "answer": "SAML",
     "explanation": "SAML (Security Assertion Markup Language) is widely used in enterprise applications for implementing SSO due to its robustness and compatibility with legacy systems.",
     "tags": ["SSO", "Protocols", "SAML"]
@@ -22535,12 +22706,7 @@
   },
   {
     "question": "Which protocol is built on top of OAuth 2.0 and provides authentication and identity management?",
-    "options": [
-      "SAML",
-      "JWT",
-      "OpenID Connect (OIDC)",
-      "None of the above"
-    ],
+    "options": ["SAML", "JWT", "OpenID Connect (OIDC)", "None of the above"],
     "answer": "OpenID Connect (OIDC)",
     "explanation": "OpenID Connect (OIDC) is built on top of OAuth 2.0 and provides authentication and identity management, making it a popular choice for modern SSO implementations.",
     "tags": ["SSO", "Protocols", "OpenID Connect"]
@@ -22787,12 +22953,7 @@
   },
   {
     "question": "Which communication protocol is most suitable for real-time, bidirectional data exchange?",
-    "options": [
-      "RESTful",
-      "gRPC",
-      "WebSocket",
-      "Webhook"
-    ],
+    "options": ["RESTful", "gRPC", "WebSocket", "Webhook"],
     "answer": "WebSocket",
     "explanation": "WebSocket enables real-time, bidirectional, and persistent connections, making it ideal for low-latency data exchange in applications like chat systems or live updates.",
     "tags": ["Communication Protocols", "WebSocket", "Real-Time Communication"]
@@ -22811,12 +22972,7 @@
   },
   {
     "question": "Which protocol is best suited for reducing network overhead by requesting only specific data?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "GraphQL",
-      "gRPC"
-    ],
+    "options": ["SOAP", "RESTful", "GraphQL", "gRPC"],
     "answer": "GraphQL",
     "explanation": "GraphQL allows clients to request exactly the data they need, reducing network overhead and improving response times compared to traditional RESTful APIs.",
     "tags": ["Communication Protocols", "GraphQL", "Data Request Optimization"]
@@ -22835,12 +22991,7 @@
   },
   {
     "question": "Which communication protocol is event-driven and uses HTTP callbacks?",
-    "options": [
-      "RESTful",
-      "GraphQL",
-      "WebSocket",
-      "Webhook"
-    ],
+    "options": ["RESTful", "GraphQL", "WebSocket", "Webhook"],
     "answer": "Webhook",
     "explanation": "Webhooks are event-driven protocols that use HTTP callbacks to notify systems when specific events occur, enabling asynchronous communication between applications.",
     "tags": ["Communication Protocols", "Webhook", "Event-Driven Systems"]
@@ -22859,12 +23010,7 @@
   },
   {
     "question": "Which protocol is ideal for applications requiring fast responses and minimal data transfer?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "GraphQL",
-      "gRPC"
-    ],
+    "options": ["SOAP", "RESTful", "GraphQL", "gRPC"],
     "answer": "gRPC",
     "explanation": "gRPC is designed for fast responses and minimal data transfer, leveraging Protocol Buffers for efficient serialization and communication in performance-critical applications.",
     "tags": ["Communication Protocols", "gRPC", "Performance"]
@@ -22883,12 +23029,7 @@
   },
   {
     "question": "Which protocol is best suited for querying specific data from a server?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "GraphQL",
-      "Webhook"
-    ],
+    "options": ["SOAP", "RESTful", "GraphQL", "Webhook"],
     "answer": "GraphQL",
     "explanation": "GraphQL allows clients to query specific data from the server, reducing unnecessary data transfer and ensuring faster, more efficient responses.",
     "tags": ["Communication Protocols", "GraphQL", "Data Querying"]
@@ -22907,12 +23048,7 @@
   },
   {
     "question": "Which communication protocol is commonly used for building scalable microservices?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "gRPC",
-      "Webhook"
-    ],
+    "options": ["SOAP", "RESTful", "gRPC", "Webhook"],
     "answer": "gRPC",
     "explanation": "gRPC is often used for building scalable microservices due to its high-performance nature, language-agnostic interface, and efficient binary serialization.",
     "tags": ["Communication Protocols", "gRPC", "Microservices"]
@@ -22931,12 +23067,7 @@
   },
   {
     "question": "Which protocol is best suited for scenarios requiring asynchronous notifications?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "Webhook",
-      "GraphQL"
-    ],
+    "options": ["SOAP", "RESTful", "Webhook", "GraphQL"],
     "answer": "Webhook",
     "explanation": "Webhooks are ideal for scenarios requiring asynchronous notifications, as they send HTTP callbacks to subscribing systems when specific events occur.",
     "tags": ["Communication Protocols", "Webhook", "Asynchronous Notifications"]
@@ -22955,12 +23086,7 @@
   },
   {
     "question": "Which communication protocol is most suitable for enterprise-level applications requiring robust security and reliability?",
-    "options": [
-      "RESTful",
-      "GraphQL",
-      "SOAP",
-      "WebSocket"
-    ],
+    "options": ["RESTful", "GraphQL", "SOAP", "WebSocket"],
     "answer": "SOAP",
     "explanation": "SOAP is well-suited for enterprise-level applications due to its robust security features, built-in reliability mechanisms, and support for complex transactions.",
     "tags": ["Communication Protocols", "SOAP", "Enterprise Applications"]
@@ -22979,12 +23105,7 @@
   },
   {
     "question": "Which communication protocol reduces network overhead by allowing clients to specify the exact data they need?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "GraphQL",
-      "gRPC"
-    ],
+    "options": ["SOAP", "RESTful", "GraphQL", "gRPC"],
     "answer": "GraphQL",
     "explanation": "GraphQL allows clients to specify the exact data they require, reducing network overhead and avoiding the inefficiencies of over-fetching or under-fetching data.",
     "tags": ["Communication Protocols", "GraphQL", "Network Efficiency"]
@@ -23003,12 +23124,7 @@
   },
   {
     "question": "Which protocol is best suited for applications needing to notify other systems about specific events?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "Webhook",
-      "GraphQL"
-    ],
+    "options": ["SOAP", "RESTful", "Webhook", "GraphQL"],
     "answer": "Webhook",
     "explanation": "Webhooks are specifically designed for notifying other systems about specific events by sending HTTP callbacks when those events occur.",
     "tags": ["Communication Protocols", "Webhook", "Event Notifications"]
@@ -23027,12 +23143,7 @@
   },
   {
     "question": "Which communication protocol is most appropriate for client-server interactions in web applications?",
-    "options": [
-      "SOAP",
-      "RESTful",
-      "GraphQL",
-      "Webhook"
-    ],
+    "options": ["SOAP", "RESTful", "GraphQL", "Webhook"],
     "answer": "RESTful",
     "explanation": "RESTful APIs are widely used for client-server interactions in web applications due to their simplicity, scalability, and compatibility with various data formats.",
     "tags": ["Communication Protocols", "RESTful", "Web Applications"]
@@ -23051,12 +23162,7 @@
   },
   {
     "question": "Which protocol is best suited for maintaining persistent connections in real-time applications?",
-    "options": [
-      "RESTful",
-      "SOAP",
-      "WebSocket",
-      "Webhook"
-    ],
+    "options": ["RESTful", "SOAP", "WebSocket", "Webhook"],
     "answer": "WebSocket",
     "explanation": "WebSockets maintain persistent connections, enabling real-time, bidirectional communication in applications such as live dashboards, chat systems, or multiplayer games.",
     "tags": ["Communication Protocols", "WebSocket", "Persistent Connections"]
@@ -23075,12 +23181,7 @@
   },
   {
     "question": "Which protocol is most suitable for reducing bandwidth usage in microservices communication?",
-    "options": [
-      "RESTful",
-      "SOAP",
-      "gRPC",
-      "Webhook"
-    ],
+    "options": ["RESTful", "SOAP", "gRPC", "Webhook"],
     "answer": "gRPC",
     "explanation": "gRPC reduces bandwidth usage through efficient binary serialization with Protocol Buffers, making it ideal for microservices communication where performance and efficiency are critical.",
     "tags": ["Communication Protocols", "gRPC", "Bandwidth Reduction"]
@@ -23099,12 +23200,7 @@
   },
   {
     "question": "Which communication protocol ensures reliable message delivery in distributed systems?",
-    "options": [
-      "RESTful",
-      "SOAP",
-      "gRPC",
-      "Webhook"
-    ],
+    "options": ["RESTful", "SOAP", "gRPC", "Webhook"],
     "answer": "SOAP",
     "explanation": "SOAP ensures reliable message delivery through its built-in mechanisms for security, transactions, and error handling, making it suitable for distributed systems.",
     "tags": ["Communication Protocols", "SOAP", "Reliable Delivery"]
@@ -23231,12 +23327,7 @@
   },
   {
     "question": "Which API style is better suited for rapidly evolving frontend requirements?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "GraphQL",
     "explanation": "GraphQL is particularly well-suited for applications with rapidly changing frontend needs, as it allows clients to request only the data they require without modifying server-side endpoints.",
     "tags": ["GraphQL", "Frontend Requirements", "Rapid Evolution"]
@@ -23279,12 +23370,7 @@
   },
   {
     "question": "Which API style is ideal for reducing network overhead by fetching only necessary data?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "GraphQL",
     "explanation": "GraphQL reduces network overhead by enabling clients to specify exactly what data they need, avoiding over-fetching or under-fetching common in REST API.",
     "tags": ["GraphQL", "Network Overhead", "Optimized Payloads"]
@@ -23327,12 +23413,7 @@
   },
   {
     "question": "Which API style is better suited for applications requiring real-time updates?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "GraphQL",
     "explanation": "GraphQL supports Subscriptions, which facilitate real-time updates by notifying clients whenever data changes on the server.",
     "tags": ["GraphQL", "Real-Time Updates", "Subscriptions"]
@@ -23363,12 +23444,7 @@
   },
   {
     "question": "Which API style is preferred for applications with static, predictable data needs?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "REST API",
     "explanation": "REST API is often preferred for applications with static, predictable data needs due to its simplicity and reliance on standard HTTP methods.",
     "tags": ["REST API", "Static Data Needs", "Predictability"]
@@ -23387,12 +23463,7 @@
   },
   {
     "question": "Which API style shifts complexity to the client side?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "GraphQL",
     "explanation": "GraphQL shifts complexity to the client side, as clients must construct precise queries and handle responses accordingly, whereas REST API typically defines fixed endpoints.",
     "tags": ["GraphQL", "Client Complexity", "Complexity Shift"]
@@ -23411,12 +23482,7 @@
   },
   {
     "question": "Which API style is better suited for applications with complex, interdependent data requirements?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "GraphQL",
     "explanation": "GraphQL is ideal for applications with complex, interdependent data requirements, as it allows clients to request nested data structures in a single query.",
     "tags": ["GraphQL", "Complex Data Requirements", "Nested Queries"]
@@ -23435,12 +23501,7 @@
   },
   {
     "question": "Which API style is better suited for applications with frequent schema changes?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "GraphQL",
     "explanation": "GraphQL adapts well to frequent schema changes, as clients can request only the fields they need, reducing the impact of backend modifications on the frontend.",
     "tags": ["GraphQL", "Schema Changes", "Flexibility"]
@@ -23459,12 +23520,7 @@
   },
   {
     "question": "Which API style is better suited for applications requiring minimal initial load time?",
-    "options": [
-      "REST API",
-      "GraphQL",
-      "Both equally",
-      "Neither"
-    ],
+    "options": ["REST API", "GraphQL", "Both equally", "Neither"],
     "answer": "REST API",
     "explanation": "REST API is better suited for applications requiring minimal initial load time, as it avoids the overhead of constructing complex queries and focuses on lightweight, predefined endpoints.",
     "tags": ["REST API", "Initial Load Time", "Efficiency"]
@@ -23495,12 +23551,7 @@
   },
   {
     "question": "Which protocol does gRPC use for network communication?",
-    "options": [
-      "HTTP/1.1",
-      "HTTP/2",
-      "WebSocket",
-      "SFTP"
-    ],
+    "options": ["HTTP/1.1", "HTTP/2", "WebSocket", "SFTP"],
     "answer": "HTTP/2",
     "explanation": "gRPC utilizes HTTP/2 for network communication, enabling features like multiplexing, header compression, and bidirectional streaming, which enhance its efficiency.",
     "tags": ["gRPC", "Protocol", "HTTP/2"]
@@ -23939,12 +23990,7 @@
   },
   {
     "question": "Which HTTP method is typically used by servers to send data to webhook endpoints?",
-    "options": [
-      "GET",
-      "POST",
-      "PUT",
-      "DELETE"
-    ],
+    "options": ["GET", "POST", "PUT", "DELETE"],
     "answer": "POST",
     "explanation": "Servers typically use the HTTP POST method to send data to webhook endpoints, as it allows transmitting complex payloads securely and efficiently.",
     "tags": ["Webhook", "HTTP Method", "POST"]
@@ -24515,12 +24561,7 @@
   },
   {
     "question": "Which generation of HTTP uses QUIC as its underlying transport protocol?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 3.0",
     "explanation": "HTTP 3.0 is the first generation of HTTP to use QUIC as its underlying transport protocol, replacing TCP with UDP for improved performance and reliability.",
     "tags": ["HTTP", "HTTP 3.0", "QUIC"]
@@ -24551,12 +24592,7 @@
   },
   {
     "question": "Which HTTP version introduced persistent connections to improve performance?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 1.1",
     "explanation": "HTTP 1.1 introduced persistent connections, allowing multiple requests to reuse the same TCP connection, reducing connection overhead and improving performance.",
     "tags": ["HTTP", "HTTP 1.1", "Persistent Connections"]
@@ -24575,12 +24611,7 @@
   },
   {
     "question": "Which HTTP version solves HOL blocking at both the application and transport layers?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 3.0",
     "explanation": "HTTP 3.0 solves head-of-line blocking at both the application and transport layers by using QUIC, which delivers streams independently over UDP.",
     "tags": ["HTTP", "HTTP 3.0", "HOL Blocking"]
@@ -24599,12 +24630,7 @@
   },
   {
     "question": "Which HTTP version uses a binary format instead of text-based communication?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 2.0",
     "explanation": "HTTP 2.0 uses a binary format for communication instead of the text-based format used in HTTP 1.0 and HTTP 1.1, improving efficiency and reducing parsing overhead.",
     "tags": ["HTTP", "HTTP 2.0", "Binary Format"]
@@ -24623,12 +24649,7 @@
   },
   {
     "question": "Which HTTP version eliminates HOL blocking at the transport layer by using UDP instead of TCP?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 3.0",
     "explanation": "HTTP 3.0 eliminates head-of-line blocking at the transport layer by using QUIC, which is based on UDP rather than TCP, ensuring independent delivery of streams.",
     "tags": ["HTTP", "HTTP 3.0", "QUIC"]
@@ -24647,12 +24668,7 @@
   },
   {
     "question": "Which HTTP version introduces server push to improve resource loading?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 2.0",
     "explanation": "HTTP 2.0 introduces server push, allowing servers to send resources proactively to clients before they are explicitly requested, improving resource loading times.",
     "tags": ["HTTP", "HTTP 2.0", "Server Push"]
@@ -24671,12 +24687,7 @@
   },
   {
     "question": "Which HTTP version is most suitable for applications requiring low-latency and high-throughput communication?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 3.0",
     "explanation": "HTTP 3.0, with its QUIC-based transport protocol, is ideal for applications requiring low-latency and high-throughput communication due to its elimination of HOL blocking at the transport layer.",
     "tags": ["HTTP", "HTTP 3.0", "Low-Latency Communication"]
@@ -24695,12 +24706,7 @@
   },
   {
     "question": "Which HTTP version introduces the concept of 'streams' as first-class citizens at the transport layer?",
-    "options": [
-      "HTTP 1.0",
-      "HTTP 1.1",
-      "HTTP 2.0",
-      "HTTP 3.0"
-    ],
+    "options": ["HTTP 1.0", "HTTP 1.1", "HTTP 2.0", "HTTP 3.0"],
     "answer": "HTTP 3.0",
     "explanation": "HTTP 3.0 introduces streams as first-class citizens at the transport layer through QUIC, enabling independent delivery of streams and eliminating HOL blocking at this level.",
     "tags": ["HTTP", "HTTP 3.0", "QUIC Streams"]
@@ -24708,10 +24714,10 @@
   {
     "question": "What is the difference between HTTP and TCP?",
     "options": [
-        "HTTP is a transport layer protocol, and TCP is an application layer protocol.",
-        "HTTP defines data formatting for web communication, and TCP ensures reliable data delivery.",
-        "HTTP handles packet reassembly, and TCP defines request/response structures.",
-        "HTTP establishes connections, and TCP transmits web content."
+      "HTTP is a transport layer protocol, and TCP is an application layer protocol.",
+      "HTTP defines data formatting for web communication, and TCP ensures reliable data delivery.",
+      "HTTP handles packet reassembly, and TCP defines request/response structures.",
+      "HTTP establishes connections, and TCP transmits web content."
     ],
     "answer": "HTTP defines data formatting for web communication, and TCP ensures reliable data delivery.",
     "explanation": "HTTP (Hypertext Transfer Protocol) is an application layer protocol that defines how data is formatted and transmitted on the web. TCP (Transmission Control Protocol) is a transport layer protocol that ensures reliable, ordered delivery of data between applications. HTTP relies on TCP to provide this reliable transport.",
@@ -24720,10 +24726,10 @@
   {
     "question": "What is a VPN?",
     "options": [
-        "A type of firewall.",
-        "A network protocol for faster internet speeds.",
-        "A Virtual Private Network that extends a private network across a public network.",
-        "A hardware device that filters internet content."
+      "A type of firewall.",
+      "A network protocol for faster internet speeds.",
+      "A Virtual Private Network that extends a private network across a public network.",
+      "A hardware device that filters internet content."
     ],
     "answer": "A Virtual Private Network that extends a private network across a public network.",
     "explanation": "A VPN, or Virtual Private Network, creates a secure, encrypted connection over a less secure network, like the public internet. This allows users to send and receive data as if their devices were directly connected to a private network. It masks your IP address and encrypts your traffic, enhancing privacy and security.",
@@ -24743,12 +24749,7 @@
   },
   {
     "question": "Which protocol is specifically designed for email transmission?",
-    "options": [
-      "HTTP",
-      "SMTP",
-      "TCP",
-      "None of the above"
-    ],
+    "options": ["HTTP", "SMTP", "TCP", "None of the above"],
     "answer": "SMTP",
     "explanation": "SMTP (Simple Mail Transfer Protocol) is specifically designed for transmitting emails between servers and clients in a reliable and standardized manner.",
     "tags": ["SMTP", "Definition", "Email Transmission"]
@@ -24791,12 +24792,7 @@
   },
   {
     "question": "Which protocol is connectionless and does not guarantee data delivery?",
-    "options": [
-      "HTTP",
-      "SMTP",
-      "TCP",
-      "UDP"
-    ],
+    "options": ["HTTP", "SMTP", "TCP", "UDP"],
     "answer": "UDP",
     "explanation": "Unlike TCP, UDP (User Datagram Protocol) is connectionless and does not guarantee data delivery, making it unsuitable for HTTP and SMTP but ideal for real-time applications.",
     "tags": ["TCP", "UDP", "Connectionless"]
@@ -24815,12 +24811,7 @@
   },
   {
     "question": "Which protocol uses persistent connections to improve performance?",
-    "options": [
-      "HTTP/1.1",
-      "SMTP",
-      "TCP",
-      "HTTP/1.0"
-    ],
+    "options": ["HTTP/1.1", "SMTP", "TCP", "HTTP/1.0"],
     "answer": "HTTP/1.1",
     "explanation": "HTTP/1.1 introduced persistent connections, enabling reuse of a single TCP connection for multiple requests, reducing overhead and improving performance.",
     "tags": ["HTTP", "HTTP/1.1", "Persistent Connections"]
@@ -24839,12 +24830,7 @@
   },
   {
     "question": "Which protocol is responsible for breaking down data into packets and ensuring their reliable delivery?",
-    "options": [
-      "HTTP",
-      "SMTP",
-      "TCP",
-      "QUIC"
-    ],
+    "options": ["HTTP", "SMTP", "TCP", "QUIC"],
     "answer": "TCP",
     "explanation": "TCP breaks down data into packets, ensures their reliable delivery, and reassembles them at the destination, forming the backbone of reliable internet communication.",
     "tags": ["TCP", "Responsibility", "Data Delivery"]
@@ -24887,12 +24873,7 @@
   },
   {
     "question": "Which protocol introduces streams to eliminate head-of-line blocking at the transport layer?",
-    "options": [
-      "HTTP/1.1",
-      "HTTP/2",
-      "SMTP",
-      "QUIC"
-    ],
+    "options": ["HTTP/1.1", "HTTP/2", "SMTP", "QUIC"],
     "answer": "QUIC",
     "explanation": "QUIC, used in HTTP/3, introduces streams at the transport layer, eliminating head-of-line blocking caused by packet loss in TCP-based protocols.",
     "tags": ["QUIC", "HTTP/3", "HOL Blocking"]
@@ -24911,12 +24892,7 @@
   },
   {
     "question": "Which protocol is most suitable for applications requiring real-time updates and low-latency communication?",
-    "options": [
-      "HTTP",
-      "SMTP",
-      "TCP",
-      "WebSocket"
-    ],
+    "options": ["HTTP", "SMTP", "TCP", "WebSocket"],
     "answer": "WebSocket",
     "explanation": "While HTTP and TCP are foundational, WebSocket is better suited for real-time, low-latency applications due to its persistent, bidirectional connections.",
     "tags": ["WebSocket", "Real-Time Communication", "Low-Latency"]
@@ -24935,12 +24911,7 @@
   },
   {
     "question": "Which protocol is used as the transport layer for both HTTP and SMTP?",
-    "options": [
-      "UDP",
-      "TCP",
-      "WebSocket",
-      "QUIC"
-    ],
+    "options": ["UDP", "TCP", "WebSocket", "QUIC"],
     "answer": "TCP",
     "explanation": "Both HTTP and SMTP rely on TCP as their transport layer, ensuring reliable, ordered, and error-checked delivery of data packets.",
     "tags": ["TCP", "Transport Layer", "HTTP and SMTP"]
@@ -24959,12 +24930,7 @@
   },
   {
     "question": "Which protocol is best suited for file downloads or streaming media?",
-    "options": [
-      "SMTP",
-      "HTTP",
-      "TCP",
-      "WebSocket"
-    ],
+    "options": ["SMTP", "HTTP", "TCP", "WebSocket"],
     "answer": "HTTP",
     "explanation": "HTTP is widely used for file downloads and streaming media due to its support for chunked transfers and content negotiation.",
     "tags": ["HTTP", "Application", "File Downloads"]
@@ -24983,12 +24949,7 @@
   },
   {
     "question": "Which protocol is most suitable for large-scale, asynchronous messaging systems?",
-    "options": [
-      "HTTP",
-      "SMTP",
-      "TCP",
-      "MQTT"
-    ],
+    "options": ["HTTP", "SMTP", "TCP", "MQTT"],
     "answer": "MQTT",
     "explanation": "While HTTP and SMTP are useful for specific tasks, MQTT is better suited for large-scale, asynchronous messaging systems due to its lightweight and publish-subscribe architecture.",
     "tags": ["MQTT", "Asynchronous Messaging", "Scalability"]
@@ -25007,12 +24968,7 @@
   },
   {
     "question": "Which protocol is most commonly used for web browsing and API communication?",
-    "options": [
-      "SMTP",
-      "TCP",
-      "HTTP",
-      "WebSocket"
-    ],
+    "options": ["SMTP", "TCP", "HTTP", "WebSocket"],
     "answer": "HTTP",
     "explanation": "HTTP is the most commonly used protocol for web browsing and API communication, providing a standardized way to exchange resources and data between clients and servers.",
     "tags": ["HTTP", "Application", "Web Browsing"]
@@ -25939,7 +25895,11 @@
     ],
     "answer": "It does not preserve session state, potentially leading to inconsistent user experiences",
     "explanation": "While the standard round-robin algorithm distributes requests evenly, it does not preserve session state, which can lead to inconsistencies if sessions are required.",
-    "tags": ["Load Balancing", "Round Robin vs Sticky Round-Robin", "Session State"]
+    "tags": [
+      "Load Balancing",
+      "Round Robin vs Sticky Round-Robin",
+      "Session State"
+    ]
   },
   {
     "question": "Which load-balancing algorithm is most appropriate for applications requiring consistent session handling?",
@@ -26207,12 +26167,7 @@
   },
   {
     "question": "Which part of a URI specifies the protocol used to access a resource?",
-    "options": [
-      "Authority",
-      "Scheme",
-      "Path",
-      "Fragment"
-    ],
+    "options": ["Authority", "Scheme", "Path", "Fragment"],
     "answer": "Scheme",
     "explanation": "The scheme part of a URI (e.g., http, https, ftp) specifies the protocol used to access or identify the resource.",
     "tags": ["URI", "Structure", "Scheme"]
@@ -26231,12 +26186,7 @@
   },
   {
     "question": "Which part of a URI allows passing additional data to the server?",
-    "options": [
-      "Path",
-      "Query",
-      "Fragment",
-      "Scheme"
-    ],
+    "options": ["Path", "Query", "Fragment", "Scheme"],
     "answer": "Query",
     "explanation": "The query part of a URI (e.g., ?id=123) allows passing additional data to the server for filtering or customization purposes.",
     "tags": ["URI", "Structure", "Query"]
@@ -26339,12 +26289,7 @@
   },
   {
     "question": "Which part of a URI is optional when referencing local resources?",
-    "options": [
-      "Scheme",
-      "Authority",
-      "Path",
-      "Fragment"
-    ],
+    "options": ["Scheme", "Authority", "Path", "Fragment"],
     "answer": "Authority",
     "explanation": "When referencing local resources, the authority section (e.g., www.example.com) is often optional, as the resource may reside within the same domain or application.",
     "tags": ["URI", "Structure", "Optional Parts"]
@@ -26699,12 +26644,7 @@
   },
   {
     "question": "Which component in the MVC pattern is responsible for managing business data?",
-    "options": [
-      "View",
-      "Controller",
-      "Model",
-      "Presenter"
-    ],
+    "options": ["View", "Controller", "Model", "Presenter"],
     "answer": "Model",
     "explanation": "In the MVC pattern, the Model component manages business data, logic, and rules, ensuring that the data is independent of the UI and controller.",
     "tags": ["MVC", "Model", "Business Data"]
@@ -26723,12 +26663,7 @@
   },
   {
     "question": "Which architecture pattern uses a ViewModel to represent the state of the view?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "MVVM",
     "explanation": "The MVVM (Model-View-ViewModel) pattern uses a ViewModel to represent the state of the view and act as an intermediary between the View and Model, enabling two-way data binding and simplifying UI updates.",
     "tags": ["MVVM", "Definition", "ViewModel"]
@@ -26747,12 +26682,7 @@
   },
   {
     "question": "Which architecture pattern extends MVVM by introducing a Coordinator for navigation?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM-C",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM-C", "VIPER"],
     "answer": "MVVM-C",
     "explanation": "The MVVM-C (Model-View-ViewModel-Coordinator) pattern extends MVVM by adding a Coordinator component, which handles navigation and flow management, further improving modularity.",
     "tags": ["MVVM-C", "Definition", "Coordinator"]
@@ -26771,12 +26701,7 @@
   },
   {
     "question": "Which architecture pattern is most suitable for large-scale applications requiring high modularity?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "VIPER",
     "explanation": "VIPER (View-Interactor-Presenter-Entity-Router) is highly modular and well-suited for large-scale applications, as it separates concerns into distinct components, promoting scalability and maintainability.",
     "tags": ["VIPER", "Modularity", "Large-Scale Applications"]
@@ -26795,12 +26720,7 @@
   },
   {
     "question": "Which component in VIPER is responsible for defining the navigation flow?",
-    "options": [
-      "View",
-      "Presenter",
-      "Router",
-      "Entity"
-    ],
+    "options": ["View", "Presenter", "Router", "Entity"],
     "answer": "Router",
     "explanation": "In the VIPER pattern, the Router component defines the navigation flow between different screens or modules, ensuring a clean separation of concerns.",
     "tags": ["VIPER", "Router", "Navigation Flow"]
@@ -26819,12 +26739,7 @@
   },
   {
     "question": "Which architecture pattern separates the UI logic into a Presenter, making it easier to test?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "MVP",
     "explanation": "The MVP (Model-View-Presenter) pattern separates UI logic into a Presenter, which makes it easier to test and ensures that the View remains lightweight and focused on rendering.",
     "tags": ["MVP", "Definition", "Presenter"]
@@ -26843,12 +26758,7 @@
   },
   {
     "question": "Which architecture pattern is best suited for applications requiring complex navigation and strict separation of concerns?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "VIPER",
     "explanation": "The VIPER pattern is ideal for applications with complex navigation and strict separation of concerns, as it divides responsibilities into five distinct components: View, Interactor, Presenter, Entity, and Router.",
     "tags": ["VIPER", "Complex Navigation", "Separation of Concerns"]
@@ -26867,12 +26777,7 @@
   },
   {
     "question": "Which architecture pattern uses a Router to define navigation paths and transitions?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM-C",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM-C", "VIPER"],
     "answer": "VIPER",
     "explanation": "In the VIPER pattern, the Router component is specifically responsible for defining navigation paths and transitions, ensuring that navigation logic is decoupled from other components.",
     "tags": ["VIPER", "Router", "Navigation"]
@@ -26891,12 +26796,7 @@
   },
   {
     "question": "Which architecture pattern is best suited for applications requiring two-way data binding?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "MVVM",
     "explanation": "The MVVM pattern is well-suited for applications requiring two-way data binding, as the ViewModel represents the state of the View and allows for seamless synchronization.",
     "tags": ["MVVM", "Two-Way Binding", "Data Synchronization"]
@@ -26915,12 +26815,7 @@
   },
   {
     "question": "Which architecture pattern introduces the concept of an Interactor for handling business logic?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "VIPER",
     "explanation": "The VIPER pattern introduces the Interactor component, which is dedicated to handling business logic, ensuring a strict separation of concerns and better scalability.",
     "tags": ["VIPER", "Interactor", "Business Logic"]
@@ -26939,12 +26834,7 @@
   },
   {
     "question": "Which architecture pattern is most commonly used in iOS development for its high modularity?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "VIPER",
     "explanation": "VIPER is widely used in iOS development due to its high modularity, strict separation of concerns, and suitability for large-scale applications.",
     "tags": ["VIPER", "iOS Development", "Modularity"]
@@ -26963,12 +26853,7 @@
   },
   {
     "question": "Which architecture pattern separates navigation logic into a dedicated Router component?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM-C",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM-C", "VIPER"],
     "answer": "VIPER",
     "explanation": "The VIPER pattern separates navigation logic into a dedicated Router component, ensuring that navigation is decoupled from other application logic.",
     "tags": ["VIPER", "Router", "Navigation Decoupling"]
@@ -26987,12 +26872,7 @@
   },
   {
     "question": "Which architecture pattern is best suited for simple applications with minimal complexity?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "MVC",
     "explanation": "The MVC pattern is often preferred for simple applications with minimal complexity due to its straightforward structure and ease of implementation.",
     "tags": ["MVC", "Use Cases", "Simple Applications"]
@@ -27011,12 +26891,7 @@
   },
   {
     "question": "Which architecture pattern emphasizes the use of Entities for data storage and management?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "VIPER",
     "explanation": "The VIPER pattern emphasizes the use of Entities for data storage and management, ensuring that data is handled separately from other components like the View or Presenter.",
     "tags": ["VIPER", "Entity", "Data Management"]
@@ -27035,12 +26910,7 @@
   },
   {
     "question": "Which architecture pattern separates UI logic into a Presenter, allowing for easier testing?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "MVP",
     "explanation": "The MVP pattern separates UI logic into a Presenter, which makes it easier to test and ensures that the View remains lightweight and focused on rendering.",
     "tags": ["MVP", "Presenter", "Testing"]
@@ -27059,12 +26929,7 @@
   },
   {
     "question": "Which architecture pattern is most suitable for applications requiring frequent UI updates and synchronization with the backend?",
-    "options": [
-      "MVC",
-      "MVP",
-      "MVVM",
-      "VIPER"
-    ],
+    "options": ["MVC", "MVP", "MVVM", "VIPER"],
     "answer": "MVVM",
     "explanation": "The MVVM pattern is well-suited for applications requiring frequent UI updates and synchronization with the backend, thanks to its two-way data binding and ViewModel component.",
     "tags": ["MVVM", "Use Cases", "UI Updates"]
@@ -27083,36 +26948,21 @@
   },
   {
     "question": "Which design pattern creates groups of related objects without specifying their concrete classes?",
-    "options": [
-      "Abstract Factory",
-      "Builder",
-      "Prototype",
-      "Singleton"
-    ],
+    "options": ["Abstract Factory", "Builder", "Prototype", "Singleton"],
     "answer": "Abstract Factory",
     "explanation": "The Abstract Factory pattern provides a way to create families of related objects without specifying their concrete classes, promoting flexibility and consistency.",
     "tags": ["Abstract Factory", "Family Creator", "Object Creation"]
   },
   {
     "question": "What is the Builder pattern often compared to?",
-    "options": [
-      "Lego Master",
-      "Clone Maker",
-      "One and Only",
-      "Universal Plug"
-    ],
+    "options": ["Lego Master", "Clone Maker", "One and Only", "Universal Plug"],
     "answer": "Lego Master",
     "explanation": "The Builder pattern is often compared to a 'Lego Master' because it builds objects step by step, separating the construction process from the final representation.",
     "tags": ["Builder", "Lego Master", "Step-by-Step Construction"]
   },
   {
     "question": "Which design pattern creates copies of fully prepared examples?",
-    "options": [
-      "Abstract Factory",
-      "Prototype",
-      "Singleton",
-      "Adapter"
-    ],
+    "options": ["Abstract Factory", "Prototype", "Singleton", "Adapter"],
     "answer": "Prototype",
     "explanation": "The Prototype pattern creates clones of existing objects (fully prepared examples), allowing developers to avoid complex initialization processes.",
     "tags": ["Prototype", "Clone Maker", "Object Duplication"]
@@ -27131,12 +26981,7 @@
   },
   {
     "question": "Which design pattern acts as a bridge between incompatible interfaces?",
-    "options": [
-      "Adapter",
-      "Bridge",
-      "Composite",
-      "Decorator"
-    ],
+    "options": ["Adapter", "Bridge", "Composite", "Decorator"],
     "answer": "Adapter",
     "explanation": "The Adapter pattern, often referred to as a 'Universal Plug,' allows two incompatible interfaces to work together by converting one interface into another.",
     "tags": ["Adapter", "Universal Plug", "Interface Conversion"]
@@ -27151,16 +26996,15 @@
     ],
     "answer": "How an object works to what it does",
     "explanation": "The Bridge pattern separates an object's abstraction (how it works) from its implementation (what it does), enabling both to vary independently.",
-    "tags": ["Bridge", "Function Connector", "Abstraction-Implementation Separation"]
+    "tags": [
+      "Bridge",
+      "Function Connector",
+      "Abstraction-Implementation Separation"
+    ]
   },
   {
     "question": "Which design pattern forms tree-like structures of simple and complex parts?",
-    "options": [
-      "Composite",
-      "Decorator",
-      "Facade",
-      "Flyweight"
-    ],
+    "options": ["Composite", "Decorator", "Facade", "Flyweight"],
     "answer": "Composite",
     "explanation": "The Composite pattern organizes objects into tree-like structures, allowing clients to treat individual objects and compositions uniformly.",
     "tags": ["Composite", "Tree Builder", "Hierarchical Structures"]
@@ -27179,12 +27023,7 @@
   },
   {
     "question": "Which pattern simplifies access to a complex system through a single, unified interface?",
-    "options": [
-      "Abstract Factory",
-      "Builder",
-      "Facade",
-      "Proxy"
-    ],
+    "options": ["Abstract Factory", "Builder", "Facade", "Proxy"],
     "answer": "Facade",
     "explanation": "The Facade pattern provides a simplified interface to a larger, more complex system, hiding its internal complexity from external users.",
     "tags": ["Facade", "One-Stop-Shop", "Simplified Interface"]
@@ -27203,12 +27042,7 @@
   },
   {
     "question": "Which pattern controls access to an object by acting as its surrogate?",
-    "options": [
-      "Proxy",
-      "Chain of Responsibility",
-      "Command",
-      "Observer"
-    ],
+    "options": ["Proxy", "Chain of Responsibility", "Command", "Observer"],
     "answer": "Proxy",
     "explanation": "The Proxy pattern acts as a stand-in for another object, controlling access or adding behavior while maintaining the same interface.",
     "tags": ["Proxy", "Stand-In Actor", "Access Control"]
@@ -27227,12 +27061,7 @@
   },
   {
     "question": "Which pattern encapsulates a request as an object, allowing for parameterization and queuing of operations?",
-    "options": [
-      "Command",
-      "Iterator",
-      "Mediator",
-      "Visitor"
-    ],
+    "options": ["Command", "Iterator", "Mediator", "Visitor"],
     "answer": "Command",
     "explanation": "The Command pattern turns a request into a standalone object, enabling parameterization, queuing, and logging of operations while supporting undo/redo functionality.",
     "tags": ["Command", "Task Wrapper", "Encapsulated Requests"]
@@ -27251,12 +27080,7 @@
   },
   {
     "question": "Which pattern simplifies communication between multiple classes?",
-    "options": [
-      "Adapter",
-      "Bridge",
-      "Mediator",
-      "Visitor"
-    ],
+    "options": ["Adapter", "Bridge", "Mediator", "Visitor"],
     "answer": "Mediator",
     "explanation": "The Mediator pattern centralizes communication between multiple classes, reducing direct dependencies and simplifying interactions within a system.",
     "tags": ["Mediator", "Communication Hub", "Centralized Communication"]
@@ -27275,12 +27099,7 @@
   },
   {
     "question": "Which pattern notifies dependent objects about changes in other objects?",
-    "options": [
-      "Observer",
-      "Singleton",
-      "Prototype",
-      "Command"
-    ],
+    "options": ["Observer", "Singleton", "Prototype", "Command"],
     "answer": "Observer",
     "explanation": "The Observer pattern establishes a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.",
     "tags": ["Observer", "News Broadcaster", "Dependency Notification"]
@@ -27299,12 +27118,7 @@
   },
   {
     "question": "Which pattern is best suited for creating a family of related objects?",
-    "options": [
-      "Abstract Factory",
-      "Builder",
-      "Prototype",
-      "Singleton"
-    ],
+    "options": ["Abstract Factory", "Builder", "Prototype", "Singleton"],
     "answer": "Abstract Factory",
     "explanation": "The Abstract Factory pattern is ideal for creating a family of related objects, ensuring consistency and flexibility in object creation.",
     "tags": ["Abstract Factory", "Family Creator", "Related Object Creation"]
@@ -27323,12 +27137,7 @@
   },
   {
     "question": "Which pattern combines simple and composite objects into a unified structure?",
-    "options": [
-      "Composite",
-      "Decorator",
-      "Facade",
-      "Flyweight"
-    ],
+    "options": ["Composite", "Decorator", "Facade", "Flyweight"],
     "answer": "Composite",
     "explanation": "The Composite pattern combines simple and composite objects into a tree-like structure, enabling uniform treatment of individual objects and collections.",
     "tags": ["Composite", "Tree Builder", "Unified Structure"]
@@ -27347,12 +27156,7 @@
   },
   {
     "question": "Which pattern passes requests along a chain of potential handlers until one handles it?",
-    "options": [
-      "Chain of Responsibility",
-      "Command",
-      "Iterator",
-      "Mediator"
-    ],
+    "options": ["Chain of Responsibility", "Command", "Iterator", "Mediator"],
     "answer": "Chain of Responsibility",
     "explanation": "The Chain of Responsibility pattern passes requests through a chain of handlers, ensuring that each request is processed by the appropriate handler.",
     "tags": ["Chain of Responsibility", "Request Relay", "Handler Chains"]
@@ -27371,12 +27175,7 @@
   },
   {
     "question": "Which pattern reduces memory usage by sharing similar objects efficiently?",
-    "options": [
-      "Flyweight",
-      "Singleton",
-      "Prototype",
-      "Decorator"
-    ],
+    "options": ["Flyweight", "Singleton", "Prototype", "Decorator"],
     "answer": "Flyweight",
     "explanation": "The Flyweight pattern reduces memory usage by sharing similar objects efficiently, especially useful in systems with a large number of small objects.",
     "tags": ["Flyweight", "Space Saver", "Memory Efficiency"]
@@ -27395,12 +27194,7 @@
   },
   {
     "question": "Which pattern is most suitable for adding responsibilities to objects dynamically?",
-    "options": [
-      "Decorator",
-      "Adapter",
-      "Composite",
-      "Facade"
-    ],
+    "options": ["Decorator", "Adapter", "Composite", "Facade"],
     "answer": "Decorator",
     "explanation": "The Decorator pattern adds responsibilities to objects dynamically without altering their core structure, promoting flexibility and reusability.",
     "tags": ["Decorator", "Customizer", "Dynamic Feature Addition"]
@@ -27419,12 +27213,7 @@
   },
   {
     "question": "Which pattern facilitates traversal of a collection without exposing its internal structure?",
-    "options": [
-      "Iterator",
-      "Mediator",
-      "Memento",
-      "Visitor"
-    ],
+    "options": ["Iterator", "Mediator", "Memento", "Visitor"],
     "answer": "Iterator",
     "explanation": "The Iterator pattern enables sequential traversal of a collection while hiding its internal structure, promoting encapsulation and flexibility.",
     "tags": ["Iterator", "Collection Explorer", "Sequential Traversal"]
@@ -27443,12 +27232,7 @@
   },
   {
     "question": "Which pattern captures an object's state and allows restoration?",
-    "options": [
-      "Memento",
-      "Observer",
-      "Singleton",
-      "Command"
-    ],
+    "options": ["Memento", "Observer", "Singleton", "Command"],
     "answer": "Memento",
     "explanation": "The Memento pattern captures an object's internal state and allows restoration to a previous state, often used in scenarios requiring undo/redo functionality.",
     "tags": ["Memento", "Time Capsule", "State Restoration"]
@@ -27464,5 +27248,185 @@
     "answer": "To add new operations to a class hierarchy without altering its structure",
     "explanation": "The Visitor pattern allows you to add new operations to a class hierarchy without modifying its structure, promoting open-closed principles and extensibility.",
     "tags": ["Visitor", "Skillful Guest", "Operation Addition"]
+  },
+  {
+    "question": "What is the primary goal of Clean Architecture?",
+    "options": [
+      "Maximizing code execution speed",
+      "Separation of concerns and independence from external frameworks",
+      "Reducing the number of code comments",
+      "Ensuring all code is written in a single language"
+    ],
+    "answer": "Separation of concerns and independence from external frameworks",
+    "explanation": "Clean Architecture prioritizes separating layers of responsibility and ensuring the core business logic is decoupled from frameworks, databases, or UI.",
+    "tags": ["Clean Architecture", "Principles", "Goals"]
+  },
+  {
+    "question": "Which of the following layers is NOT part of Clean Architecture?",
+    "options": [
+      "Entities",
+      "Use Cases",
+      "Interface Adapters",
+      "Middleware"
+    ],
+    "answer": "Middleware",
+    "explanation": "The four primary layers are Entities, Use Cases, Interface Adapters, and Frameworks/Drivers. Middleware is not a core layer in Clean Architecture.",
+    "tags": ["Clean Architecture", "Layers"]
+  },
+  {
+    "question": "The Dependency Rule in Clean Architecture states that dependencies should point:",
+    "options": [
+      "Outward, toward frameworks",
+      "Inward, toward the core business logic",
+      "Laterally, between adjacent layers",
+      "Toward the most frequently updated layer"
+    ],
+    "answer": "Inward, toward the core business logic",
+    "explanation": "The Dependency Rule mandates that inner layers (e.g., entities) should not depend on outer layers (e.g., UI or databases). Dependencies flow inward.",
+    "tags": ["Clean Architecture", "Dependency Rule"]
+  },
+  {
+    "question": "Which layer contains application-specific business rules?",
+    "options": [
+      "Entities",
+      "Use Cases",
+      "Interface Adapters",
+      "Frameworks/Drivers"
+    ],
+    "answer": "Use Cases",
+    "explanation": "The Use Cases layer implements application-specific business rules, orchestrating data flow between entities and outer layers.",
+    "tags": ["Clean Architecture", "Layers", "Use Cases"]
+  },
+  {
+    "question": "In Clean Architecture, the Entities layer typically represents:",
+    "options": [
+      "UI components",
+      "Enterprise-wide business rules and data structures",
+      "Database connection logic",
+      "Third-party API integrations"
+    ],
+    "answer": "Enterprise-wide business rules and data structures",
+    "explanation": "Entities encapsulate universal business rules and data models that are independent of the application's context.",
+    "tags": ["Clean Architecture", "Entities", "Layers"]
+  },
+  {
+    "question": "Which statement about the Interface Adapters layer is TRUE?",
+    "options": [
+      "It directly interacts with external hardware",
+      "It converts data between external formats and internal use cases/entities",
+      "It contains the core business logic",
+      "It is the innermost layer"
+    ],
+    "answer": "It converts data between external formats and internal use cases/entities",
+    "explanation": "Interface Adapters (e.g., presenters, controllers) transform data from external systems (e.g., UI, APIs) into formats usable by the core layers, and vice versa.",
+    "tags": ["Clean Architecture", "Interface Adapters"]
+  },
+  {
+    "question": "What is a key benefit of Clean Architecture?",
+    "options": [
+      "Reduces the need for testing",
+      "Decouples business logic from frameworks and databases",
+      "Guarantees zero bugs in production",
+      "Eliminates the need for documentation"
+    ],
+    "answer": "Decouples business logic from frameworks and databases",
+    "explanation": "By isolating core logic from external components, Clean Architecture makes systems more maintainable, testable, and adaptable to change.",
+    "tags": ["Clean Architecture", "Benefits"]
+  },
+  {
+    "question": "Which principle is closely associated with Clean Architecture?",
+    "options": [
+      "Dependency Inversion Principle (DIP)",
+      "Single Responsibility Principle (SRP)",
+      "Open-Closed Principle (OCP)",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "Clean Architecture relies on SOLID principles, including DIP (for dependency direction), SRP (layer separation), and OCP (extensibility).",
+    "tags": ["Clean Architecture", "SOLID", "Principles"]
+  },
+  {
+    "question": "Which layer would contain a REST API controller?",
+    "options": [
+      "Entities",
+      "Use Cases",
+      "Interface Adapters",
+      "Frameworks/Drivers"
+    ],
+    "answer": "Interface Adapters",
+    "explanation": "Controllers in a REST API act as interface adapters, translating HTTP requests into inputs for use cases and vice versa.",
+    "tags": ["Clean Architecture", "Interface Adapters", "Controllers"]
+  },
+  {
+    "question": "What does violating the Dependency Rule lead to?",
+    "options": [
+      "Improved performance",
+      "Tight coupling between core logic and external systems",
+      "Reduced code complexity",
+      "Faster development cycles"
+    ],
+    "answer": "Tight coupling between core logic and external systems",
+    "explanation": "If outer layers (e.g., UI) depend on inner layers, changes to external systems could force costly rewrites of core business logic.",
+    "tags": ["Clean Architecture", "Dependency Rule", "Anti-patterns"]
+  },
+  {
+    "question": "In Clean Architecture, where are database implementations placed?",
+    "options": [
+      "Entities layer",
+      "Use Cases layer",
+      "Interface Adapters layer",
+      "Frameworks/Drivers layer"
+    ],
+    "answer": "Frameworks/Drivers layer",
+    "explanation": "Database implementations (e.g., SQL queries) reside in the outermost layer, ensuring the core remains framework-agnostic.",
+    "tags": ["Clean Architecture", "Database", "Layers"]
+  },
+  {
+    "question": "Which layer is most likely to change if you switch from React to Angular?",
+    "options": [
+      "Entities",
+      "Use Cases",
+      "Interface Adapters",
+      "Frameworks/Drivers"
+    ],
+    "answer": "Frameworks/Drivers",
+    "explanation": "The UI framework (e.g., React to Angular) is part of the outermost layer, so changes here don’t affect inner layers.",
+    "tags": ["Clean Architecture", "Layers", "UI"]
+  },
+  {
+    "question": "How does Clean Architecture facilitate testing?",
+    "options": [
+      "By requiring all tests to be written first",
+      "By decoupling business logic from external dependencies",
+      "By enforcing a specific testing framework",
+      "By eliminating the need for integration tests"
+    ],
+    "answer": "By decoupling business logic from external dependencies",
+    "explanation": "Core layers (entities, use cases) can be tested in isolation without relying on databases, APIs, or UI frameworks.",
+    "tags": ["Clean Architecture", "Testing"]
+  },
+  {
+    "question": "What is the role of the Presenter in Clean Architecture?",
+    "options": [
+      "Handle user authentication",
+      "Convert use case output into a UI-friendly format",
+      "Manage database transactions",
+      "Define enterprise business rules"
+    ],
+    "answer": "Convert use case output into a UI-friendly format",
+    "explanation": "Presenters in the Interface Adapters layer format data from use cases for display in the UI.",
+    "tags": ["Clean Architecture", "Presenters", "Interface Adapters"]
+  },
+  {
+    "question": "Which statement is FALSE about Clean Architecture?",
+    "options": [
+      "The core layers depend on outer layers",
+      "It emphasizes testability",
+      "It is framework-agnostic",
+      "Entities define enterprise-wide business rules"
+    ],
+    "answer": "The core layers depend on outer layers",
+    "explanation": "The Dependency Rule forbids core layers (entities, use cases) from depending on outer layers (UI, databases).",
+    "tags": ["Clean Architecture", "Misconceptions"]
   }
 ]
