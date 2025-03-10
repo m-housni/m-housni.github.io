@@ -27428,5 +27428,125 @@
     "answer": "The core layers depend on outer layers",
     "explanation": "The Dependency Rule forbids core layers (entities, use cases) from depending on outer layers (UI, databases).",
     "tags": ["Clean Architecture", "Misconceptions"]
+  },
+  {
+    "question": "What’s your preferred way to structure a backend application?",
+    "options": [
+      "Monolithic – Simple and easy to manage.",
+      "Microservices – Scalable and flexible.",
+      "Serverless – Pay only for what you use.",
+      "Modular Monolith – A balance between both worlds."
+    ],
+    "answer": "Modular Monolith – A balance between both worlds.",
+    "explanation": "Modular Monolith offers a balance between simplicity and scalability, allowing for easier maintenance and potential future splitting into microservices if needed.",
+    "tags": ["Architecture", "Backend", "Design", "Opinionated-123"]
+  },
+  {
+    "question": "When designing a system, what's your top priority?",
+    "options": [
+      "Scalability – It should handle millions of users.",
+      "Maintainability – Future devs should thank me.",
+      "Performance – Optimize everything!",
+      "Simplicity – Keep it as straightforward as possible."
+    ],
+    "answer": "Maintainability – Future devs should thank me.",
+    "explanation": "Maintainability ensures the system remains adaptable and easier to modify, aligning with long-term sustainability and Clean Architecture principles.",
+    "tags": ["Architecture", "Design", "Maintainability", "Opinionated-123"]
+  },
+  {
+    "question": "What’s the best way to choose a programming language for a new project?",
+    "options": [
+      "Use whatever the team is most comfortable with.",
+      "Pick the language best suited for the problem domain.",
+      "Go for the most in-demand language to future-proof the project.",
+      "Use the latest hyped language—why not?"
+    ],
+    "answer": "Pick the language best suited for the problem domain.",
+    "explanation": "The language should align with the project's requirements and domain for optimal efficiency and maintainability (e.g., Python for data science, JavaScript for web).",
+    "tags": ["Programming", "Languages", "Best Practices", "Opinionated-123"]
+  },
+  {
+    "question": "What’s your take on JavaScript frameworks?",
+    "options": [
+      "React – The ecosystem is unbeatable.",
+      "Vue – Simplicity and elegance win.",
+      "Svelte – Who needs a virtual DOM?",
+      "Vanilla JS – Frameworks are overrated."
+    ],
+    "answer": "React – The ecosystem is unbeatable.",
+    "explanation": "React's extensive ecosystem and community support make it a popular choice for building scalable and maintainable applications.",
+    "tags": ["JavaScript", "Frameworks", "Frontend", "Opinionated-123"]
+  },
+  {
+    "question": "What’s your preferred deployment strategy?",
+    "options": [
+      "Continuous Deployment – Every merge goes live.",
+      "Manual Deployments – Better safe than sorry.",
+      "Blue-Green Deployment – Minimize downtime.",
+      "Feature Flags – Control releases incrementally."
+    ],
+    "answer": "Blue-Green Deployment – Minimize downtime.",
+    "explanation": "Blue-Green Deployment reduces downtime and risk by switching between identical environments, ensuring seamless updates.",
+    "tags": ["DevOps", "Deployment", "CI/CD", "Opinionated-123"]
+  },
+  {
+    "question": "Where do you prefer to deploy applications?",
+    "options": [
+      "Cloud (AWS, Azure, GCP) – Scalability and reliability.",
+      "On-premise – Full control over everything.",
+      "Hybrid – Some things belong in the cloud, some don’t.",
+      "Edge Computing – The future is decentralized."
+    ],
+    "answer": "Cloud (AWS, Azure, GCP) – Scalability and reliability.",
+    "explanation": "Cloud platforms provide scalable infrastructure and managed services, reducing operational overhead and enhancing reliability.",
+    "tags": ["DevOps", "Cloud", "Deployment", "Opinionated-123"]
+  },
+  {
+    "question": "How do you feel about writing unit tests?",
+    "options": [
+      "Essential – No code should go untested.",
+      "Only for critical features – Balance is key.",
+      "I rely more on integration tests.",
+      "Testing is overrated – Ship fast, fix later."
+    ],
+    "answer": "Essential – No code should go untested.",
+    "explanation": "Unit tests ensure code correctness early, facilitate refactoring, and reduce bugs in production.",
+    "tags": ["Testing", "Best Practices", "Software Quality", "Opinionated-123"]
+  },
+  {
+    "question": "What’s the best way to manage technical debt?",
+    "options": [
+      "Address it immediately – It will snowball.",
+      "Plan for it in the roadmap.",
+      "Leave it for the next team.",
+      "If users aren’t complaining, it’s not a priority."
+    ],
+    "answer": "Plan for it in the roadmap.",
+    "explanation": "Proactively scheduling debt repayment in the roadmap prevents accumulation without blocking current progress.",
+    "tags": ["Technical Debt", "Project Management", "Best Practices", "Opinionated-123"]
+  },
+  {
+    "question": "Which development workflow do you prefer?",
+    "options": [
+      "Git Flow – Structured and disciplined.",
+      "Trunk-Based Development – Faster iteration cycles.",
+      "GitHub Flow – Simplicity over complexity.",
+      "YOLO – Just commit to main and deploy."
+    ],
+    "answer": "Trunk-Based Development – Faster iteration cycles.",
+    "explanation": "Trunk-Based Development promotes smaller, frequent commits and faster integration, aligning with modern CI/CD practices.",
+    "tags": ["Workflow", "Version Control", "CI/CD", "Opinionated-123"]
+  },
+  {
+    "question": "What’s your opinion on code reviews?",
+    "options": [
+      "A must – Nothing should go unreviewed.",
+      "Only for complex changes.",
+      "Pair programming is a better alternative.",
+      "Slows things down too much."
+    ],
+    "answer": "A must – Nothing should go unreviewed.",
+    "explanation": "Code reviews improve code quality, reduce errors, and foster knowledge sharing among team members.",
+    "tags": ["Code Reviews", "Collaboration", "Best Practices", "Opinionated-123"]
   }
 ]
