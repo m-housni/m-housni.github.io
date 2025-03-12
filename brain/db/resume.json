@@ -216,6 +216,13 @@
   },
   "projects": [
     {
+      "timestamp": 1741798901,
+      "title": "Simple NodeJS User management API using Clean Architecture",
+      "description": "Clean Architecture in a Node.js project, for a User Management API using Express, TypeScript, and Dependency Injection, adhering to SOLID principles and ensuring Separation of Concerns.",
+      "link": "https://github.com/m-housni/clean-architecture-node",
+      "tags": "Node.js, Express, TypeScript, Clean Architecture, SOLID Principles, Dependency Injection, Separation of Concerns, User Management API"
+    },
+    {
       "timestamp": 1740728027,
       "title": "Abstract Factory Pattern in React for Themed Components",
       "description": "This project demonstrates the implementation of the Abstract Factory Pattern in React to create reusable components that adapt their appearance and behavior based on themes (light/dark). It utilizes React Context to dynamically switch between different UI factories.",
