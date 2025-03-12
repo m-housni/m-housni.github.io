@@ -44,20 +44,44 @@ try {
             });
 
             const skillsCloudContainer = document.getElementById('skillsCloud');
+            const skillsCount = {};
+
             // get skills from experiences
-            const skillsCloud = new Set();
             for (const [company, experience] of Object.entries(data.experiences)) {
-                experience.skills.split(',').forEach(skill => skillsCloud.add(skill.trim()));
+                experience.skills.split(',').forEach(skill => {
+                    skill = skill.trim();
+                    skillsCount[skill] = (skillsCount[skill] || 0) + 1;
+                });
             }
+
             // get skills from projects
-            data.projects.forEach(project => project.tags.split(",").forEach(tag => skillsCloud.add(tag.trim())));
-            const orderedSkillsCloud = [...skillsCloud].map(skill => [skill, skill.toLowerCase()]).sort((a, b) => a[1].localeCompare(b[1])).map(skill => skill[0]);
-            orderedSkillsCloud.forEach(skill => {
+            data.projects.forEach(project => {
+                project.tags.split(",").forEach(tag => {
+                    tag = tag.trim();
+                    skillsCount[tag] = (skillsCount[tag] || 0) + 1;
+                });
+            });
+
+            const orderedSkillsCloud = Object.entries(skillsCount)
+                .sort((a, b) => b[1] - a[1]);
+
+            orderedSkillsCloud.forEach(([skill, count]) => {
                 const skillDiv = document.createElement('div');
-                skillDiv.innerHTML = `<span class="text-xs">${skill}</span>`;
+                skillDiv.innerHTML = `<span class="text-xs">${skill} (${count})</span>`;
                 skillsCloudContainer.appendChild(skillDiv);
             });
 
+            // const orderedSkillsCloud0 = Object.entries(skillsCount)
+            // .sort((a, b) => b[1] - a[1]).filter(([skill, count]) => count >= 3);
+
+            // const skillsCloudContainer0 = document.getElementById('skillsCloud0');
+            // orderedSkillsCloud0.forEach(([skill, count]) => {
+            //     const skillDiv = document.createElement('div');
+            //     skillDiv.innerHTML = `<span class="text-xs">${skill} (${count})</span>`;
+            //     skillsCloudContainer0.appendChild(skillDiv);
+            // });
+
+            //
             const experiencesContainer = document.getElementById('experiences');
             for (const [company, experience] of Object.entries(data.experiences)) {
                 const experienceDiv = document.createElement('div');

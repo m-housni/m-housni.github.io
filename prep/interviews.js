@@ -3,7 +3,7 @@ const mcqsAll = [];
 const tags = new Map();
 
 try {
-  fetch("./brain/db/mcqs.json")
+  fetch("./../brain/db/mcqs.json")
     .then((response) => response.json())
     .then((data) => {
       document.body.classList.remove("hidden");
@@ -33,9 +33,9 @@ function displayQuestion(data) {
         })
         .join("")}</div>` +
       `<h3 class="font-semibold">${mcq.question}</h3>` +
-      `<ul class="list-disc list-inside">${mcq.options
-        .map((option) => `<li class="text-sm">${option}</li>`)
-        .join("")}</ul>` +
+      // `<ul class="list-disc list-inside">${mcq.options
+      //   .map((option) => `<li class="text-sm">${option}</li>`)
+      //   .join("")}</ul>` +
       `<div class="mt-4">${mcq.answer}</div>` +
       `<div class="mt-4">${mcq.explanation}</div>` +
       `<hr class="my-5">`;

@@ -1,14 +1,14 @@
 {
   "info": {
     "name": "Mohamed Housni",
-    "title": "Fullstack JS Engineer | Scalable Web Apps & CI/CD Automation",
+    "title": "Fullstack Javascript Engineer | Scalable Web Apps & CI/CD Automation",
     "location": "Casablanca, MA",
     "email": "mohamed.housni@um5s.net.ma",
     "phone": "+212 7 08 11 36 36",
     "website": "",
     "linkedin": "https://linkedin.com/in/m-housni",
     "github": "https://github.com/m-housni",
-    "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust.<br><br>I'm open to both <b>CDI and freelance opportunities</b>."
+    "summary": "I’m a Fullstack JavaScript Engineer with <b>9 years</b> of experience building and scaling web applications. I specialize in both modern <b>frontend</b> frameworks like <b>React</b> and <b>Angular</b> and <b>backend</b> technologies such as <b>Node</b>, <b>Express</b>, and <b>MongoDB</b>. <br><br> Over the years, I’ve worked on automating <b>CI/CD pipelines</b>, designing <b>microservices</b>, and improving application <b>performance</b>. I enjoy collaborating with cross-functional teams, tackling legacy code challenges, and creating user-focused solutions that deliver real business impact.<br><br> I’m passionate about clean, <b>maintainable code</b>, following best practices like <b>TDD</b> and scalable <b>design patterns</b>, and building software that truly meets user needs while staying technically robust.<br><br>I'm open to both <b>CDI and freelance opportunities</b>."
   },
   "focusAreas": [
     "Redis",
@@ -17,7 +17,7 @@
     "Microservices",
     "Angular",
     "React",
-    "Vanilla JS",
+    "Vanilla Javascript",
     "OpenAI",
     "GraphQL",
     "Agentic AI",
@@ -175,7 +175,7 @@
       "description": "Developed SFR Lost Mobile Service.",
       "customers": ["Orange", "Société Générale", "BNP Paribas"],
       "industries": ["Banking", "Telecommunications", "Retail"],
-      "skills": "Angular, Node, Express, MongoDB, Php, Elasticsearch, JS, HTML, CSS, leafletJS, Twilio",
+      "skills": "Angular, Node, Express, MongoDB, Php, Elasticsearch, Javascript, HTML, CSS, leafletJS, Twilio",
       "achievements": [
         "Designed and implemented the frontend",
         "Designed and implemented the backend",
@@ -217,10 +217,10 @@
   "projects": [
     {
       "timestamp": 1741798901,
-      "title": "Simple NodeJS User management API using Clean Architecture",
-      "description": "Clean Architecture in a Node.js project, for a User Management API using Express, TypeScript, and Dependency Injection, adhering to SOLID principles and ensuring Separation of Concerns.",
+      "title": "Simple Node User management API using Clean Architecture",
+      "description": "Clean Architecture in a Node project, for a User Management API using Express, TypeScript, and Dependency Injection, adhering to SOLID principles and ensuring Separation of Concerns.",
       "link": "https://github.com/m-housni/clean-architecture-node",
-      "tags": "Node.js, Express, TypeScript, Clean Architecture, SOLID Principles, Dependency Injection, Separation of Concerns, User Management API"
+      "tags": "Node, Express, TypeScript, Clean Architecture, SOLID Principles, Dependency Injection, Separation of Concerns, User Management API"
     },
     {
       "timestamp": 1740728027,
@@ -234,21 +234,21 @@
       "title": "Okta SAML implementation for SSO",
       "description": "This project demonstrates the implementation of SAML (Security Assertion Markup Language) for Single Sign-On (SSO) authentication.",
       "link": "https://github.com/m-housni/okta-saml-demo-using-node-passport",
-      "tags": "Node.js, SAML, Okta, Single Sign-On, Authentication, Security, passport, passport-saml"
+      "tags": "Node, SAML, Okta, Single Sign-On, Authentication, Security, passport, passport-saml"
     },
     {
       "timestamp": 1039480776,
       "title": "Users Restfull API built with NestJS",
       "description": "This is a simple API built with NestJS for managing users.",
       "link": "https://github.com/m-housni/nest-users-api",
-      "tags": "Node.js, NestJS, RESTful API, TypeScript, CRUD, uuid, Dependency Injection, NestJS Modules, NestJS Services, NestJS Controllers"
+      "tags": "Node, NestJS, RESTful API, TypeScript, CRUD, uuid, Dependency Injection, NestJS Modules, NestJS Services, NestJS Controllers"
     },
     {
       "timestamp": 1739480776,
       "title": "Image Processing with Worker Threads",
-      "description": "his project demonstrates how to use Node.js Worker Threads to offload CPU-intensive image processing tasks, improving application responsiveness and performance.",
+      "description": "his project demonstrates how to use Node Worker Threads to offload CPU-intensive image processing tasks, improving application responsiveness and performance.",
       "link": "https://github.com/m-housni/image-processing-workers-demo",
-      "tags": "Node.js, Express.js, Worker Threads, Parallel Processing, Sharp, Multer, Concurrency"
+      "tags": "Node, Express, Worker Threads, Parallel Processing, Sharp, Multer, Concurrency"
     },
     {
       "timestamp": 1739480776,
@@ -269,21 +269,21 @@
       "title": "Angular-Express Authentication Starter: JWT-Based Secure Login System",
       "description": "Boilerplate project that integrates Angular and Express for user authentication. It features a login system where users enter credentials, which are validated by an Express backend using bcrypt. A JWT token is generated and returned to the frontend, where it is stored and used to manage authentication state through an Angular service and BehaviorSubject, ensuring UI updates.",
       "link": "https://github.com/m-housni/angular-express-auth-starter",
-      "tags": "Angular, Express, Authentication, JWT, Node.js, bcrypt, User Login, Token-Based Authentication, Secure Login, Full-Stack, MEAN Stack, AuthService, BehaviorSubject, API Security"
+      "tags": "Angular, Express, Authentication, JWT, Node, bcrypt, User Login, Token-Based Authentication, Secure Login, Full-Stack, MEAN Stack, AuthService, BehaviorSubject, API Security"
     },
     {
       "timestamp": 1737415539,
-      "title": "Dockerized React & Node.js Full-Stack App with Mysql",
+      "title": "Dockerized React & Node Full-Stack App with Mysql",
       "description": "This Docker Compose configuration setup orchestrates multiple services to create a seamless development environment for a todo application. Traefik serves as the reverse proxy, efficiently routing traffic between the backend API, frontend client, and phpMyAdmin interface. The MySQL service is configured with persistent storage, and development-specific settings enable real-time code synchronization and automatic rebuilding of services upon code changes.",
       "link": "https://github.com/m-housni/dockerized-todoapp/",
-      "tags": "Docker, Treafik, Reverse Proxy, Code Sync, Automatic rebuild, phpMyAdmin, Docker Compose, React, Node.js, MySQL, CI/CD, GitHub Actions, Containers, Compose, Dockerfile, Vite, Nodemon, TodoApp"
+      "tags": "Docker, Treafik, Reverse Proxy, Code Sync, Automatic rebuild, phpMyAdmin, Docker Compose, React, Node, MySQL, CI/CD, GitHub Actions, Containers, Compose, Dockerfile, Vite, Nodemon, TodoApp"
     },
     {
       "timestamp": 1737415453,
       "title": "Scalable Session Management System with Express, Redis, and Monitoring Tools",
-      "description": "A scalable and secure session management system built with Express.js and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
+      "description": "A scalable and secure session management system built with Express and Redis, designed for high-performance applications. This project ensures efficient user authentication, protected routes, and session handling with centralized storage. Enhanced with Docker for containerization and integrated with Prometheus and Grafana for real-time monitoring and performance metrics. Ideal for applications requiring robust scalability and advanced session management capabilities.",
       "link": "https://github.com/m-housni/express-redis-session-management",
-      "tags": "nodemon, npm, bcrypt, connect-redis, dotenv, express, express-session, prom-client, redis, redis-info, Node.js, Express.js, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
+      "tags": "nodemon, npm, bcrypt, connect-redis, dotenv, Express, express-session, prom-client, redis, redis-info, Node, Express, Redis, Session Management, Authentication, Authorization, Docker, Prometheus, Grafana, Metrics Monitoring, Persistence, RDB, AOF"
     },
     {
       "timestamp": 1737987383,
@@ -301,17 +301,17 @@
     },
     {
       "timestamp": 1738073454,
-      "title": "Fullstack TodoApp with Angular, Node.js, and Postgres",
-      "description": "Full-stack Todo app featuring an intuitive Angular-powered UI, a Node.js backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
+      "title": "Fullstack TodoApp with Angular, Node, and Postgres",
+      "description": "Full-stack Todo app featuring an intuitive Angular-powered UI, a Node backend with RESTful APIs, real-time updates via WebSockets, and secure authentication. It's Dockerized for seamless deployment and includes an analytics dashboard for productivity tracking.",
       "link": "https://github.com/m-housni/full-stack-todo-app-with-angular-node-sqlite",
-      "tags": "Angular, NodeJS, WebSockets, Docker, SQLite, RESTful APIs, Authentication, Dashboard, Full-Stack, Real-Time Updates, Postgres, Supabase"
+      "tags": "Angular, Node, WebSockets, Docker, SQLite, RESTful APIs, Authentication, Dashboard, Full-Stack, Real-Time Updates, Postgres, Supabase"
     },
     {
       "timestamp": 99,
-      "title": "E-Commerce Website with Angular and Node.js",
-      "description": "E-commerce platform that integrates both front-end and back-end development tasks. On the front-end, it features product listing, shopping cart functionalities, a contact form, pagination, filtering, and product quantity adjustments. The back-end is built using Node.js/Express, and includes API development with CRUD operations, JWT-based user authentication, and management of shopping carts and wishlists.",
+      "title": "E-Commerce Website with Angular and Node",
+      "description": "E-commerce platform that integrates both front-end and back-end development tasks. On the front-end, it features product listing, shopping cart functionalities, a contact form, pagination, filtering, and product quantity adjustments. The back-end is built using Node/Express, and includes API development with CRUD operations, JWT-based user authentication, and management of shopping carts and wishlists.",
       "link": "https://github.com/m-housni/e-commerce-angular-node",
-      "tags": "E-Commerce, Angular, Node.js, RxJS, Postman, JWT Authentication, CRUD, API, Express, Shopping Cart, Wishlist, Pagination, Filtering, Contact Form, Front-End, Back-End, Full-Stack, PrimeNG, Observables, Reactive Programming, Signals, Events, Data Flow, State Management, Typescript, Dependency Injection"
+      "tags": "E-Commerce, Angular, Node, RxJS, Postman, JWT Authentication, CRUD, API, Express, Shopping Cart, Wishlist, Pagination, Filtering, Contact Form, Front-End, Back-End, Full-Stack, PrimeNG, Observables, Reactive Programming, Signals, Events, Data Flow, State Management, Typescript, Dependency Injection"
     }
   ],
   "certifications": [
