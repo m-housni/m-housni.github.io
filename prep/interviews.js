@@ -14,16 +14,24 @@ try {
       getTags();
       totalQuestions();
       topicsCount();
+      getCoverage();
     });
 } catch (error) {
   console.error(error);
 }
 
-function displayQuestion(data) {
+function displayQuestion(data, tag) {
   const mcqsContainer = document.getElementById("mcqs");
+  const currTopic = document.getElementById("currTopic");
+
+  currTopic.innerText = tag
+    ? tag + " " + data.length
+    : data.length + " Questions";
+
   mcqsContainer.innerHTML = "";
   // ramdomize the questions
-  data = data.sort(() => Math.random() - 0.5);
+  // TODO: handle random/natural order options
+  // data = data.sort(() => Math.random() - 0.5);
   data.forEach((mcq) => {
     const questionDiv = document.createElement("div");
     questionDiv.innerHTML +=
@@ -33,19 +41,77 @@ function displayQuestion(data) {
         })
         .join("")}</div>` +
       `<h3 class="font-semibold">${mcq.question}</h3>` +
-      // `<ul class="list-disc list-inside">${mcq.options
-      //   .map((option) => `<li class="text-sm">${option}</li>`)
-      //   .join("")}</ul>` +
       `<div class="mt-4">${mcq.answer}</div>` +
       `<div class="mt-4">${mcq.explanation}</div>` +
+      `<div class="mt-4">
+      <button class="bg-blue-500 text-white px-2 py-0 rounded mr-2" onclick="updateResponse(event, '${mcq.question.replace(
+        /'/g,
+        "\\'"
+      )}', 1)">1</button>
+      <button class="bg-green-500 text-white px-2 py-0 rounded mr-2" onclick="updateResponse(event, '${mcq.question.replace(
+        /'/g,
+        "\\'"
+      )}', 2)">2</button>
+      <button class="bg-red-500 text-white px-2 py-0 rounded" onclick="updateResponse(event, '${mcq.question.replace(
+        /'/g,
+        "\\'"
+      )}', 3)">3</button>
+      <span class="ml-2 text-xs">${getResponseStats(
+        mcq.question.replace(/'/g, "\\'")
+      )}</span>
+      </div>` +
       `<hr class="my-5">`;
+
     mcqsContainer.appendChild(questionDiv);
   });
 }
 
+function updateResponse(event, question, response) {
+  let responses = JSON.parse(localStorage.getItem("responses")) || {};
+  if (!responses[question]) {
+    responses[question] = { total: 0, count: 0 };
+  }
+  responses[question].total += response;
+  responses[question].count += 1;
+  localStorage.setItem("responses", JSON.stringify(responses));
+  event.target.closest("div").querySelector("span").innerText =
+    getResponseStats(question.replace(/'/g, "\\'"));
+  getCoverage();
+}
+
+function getCoverage() {
+  const coverage = document.getElementById("coverage");
+  const responses = JSON.parse(localStorage.getItem("responses")) || {};
+  let totalQuestionsAnswered = 0;
+  let totalResponses = 0;
+  let totalScore = 0;
+
+  for (const question in responses) {
+    totalQuestionsAnswered += 1;
+    totalResponses += responses[question].count;
+    totalScore += responses[question].total;
+  }
+
+  const average = totalResponses ? (totalScore / totalResponses).toFixed(2) : 0;
+
+  coverage.innerHTML = `${totalQuestionsAnswered} | ${((totalQuestionsAnswered/(mcqsAll.length)).toFixed(2)*100)}% | ${average}`;
+}
+
+function getResponseStats(question) {
+  const responses = JSON.parse(localStorage.getItem("responses"));
+  if (responses && responses[question]) {
+    const average = (
+      responses[question].total / responses[question].count
+    ).toFixed(2);
+    const total = responses[question].count;
+    return `${average} / ${total}`;
+  }
+  return "0 / 0";
+}
+
 function filterByTag(tag) {
   const filteredData = mcqsAll.filter((mcq) => mcq.tags.includes(tag));
-  displayQuestion(filteredData);
+  displayQuestion(filteredData, tag);
 }
 
 function getTags() {

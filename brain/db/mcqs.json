@@ -27668,5 +27668,245 @@
     "answer": "window.location",
     "explanation": "Browser-specific APIs like window aren't available in server execution environment.",
     "tags": ["JavaScript", "React", "Server Components", "Limitations"]
+  },
+  {
+    "question": "What is the primary purpose of the `dotenv` package in LangChain projects?",
+    "options": [
+      "To enable quantum computing",
+      "To manage environment variables like API keys",
+      "To create vector databases",
+      "To handle HTTP routing"
+    ],
+    "answer": "To manage environment variables like API keys",
+    "explanation": "dotenv loads environment variables from .env files, crucial for securing sensitive data like API keys.",
+    "tags": ["JavaScript", "LangChain", "Environment"]
+  },
+  {
+    "question": "What does the `temperature` parameter control in OpenAI models?",
+    "options": [
+      "Response speed",
+      "Output randomness/creativity",
+      "API call cost",
+      "Memory allocation"
+    ],
+    "answer": "Output randomness/creativity",
+    "explanation": "Temperature (0-1) adjusts response randomness: lower values = more deterministic, higher = more creative.",
+    "tags": ["JavaScript", "LangChain", "LLM"]
+  },
+  {
+    "question": "What is the purpose of `PromptTemplate` in LangChain?",
+    "options": [
+      "To store API keys",
+      "To create reusable input formats with variables",
+      "To optimize database queries",
+      "To manage memory allocation"
+    ],
+    "answer": "To create reusable input formats with variables",
+    "explanation": "PromptTemplate structures prompts with placeholders for dynamic inputs (e.g., {topic}).",
+    "tags": ["JavaScript", "LangChain", "Prompts"]
+  },
+  {
+    "question": "Which component enables conversation history retention?",
+    "options": [
+      "VectorStore",
+      "BufferMemory",
+      "LLMChain",
+      "SerpAPI"
+    ],
+    "answer": "BufferMemory",
+    "explanation": "BufferMemory stores conversation context for subsequent interactions.",
+    "tags": ["JavaScript", "LangChain", "Memory"]
+  },
+  {
+    "question": "What does a LangChain Agent enable?",
+    "options": [
+      "Static responses",
+      "Direct database writes",
+      "Dynamic tool usage (APIs, calculators)",
+      "Automatic code deployment"
+    ],
+    "answer": "Dynamic tool usage (APIs, calculators)",
+    "explanation": "Agents allow LLMs to use external tools like web search APIs dynamically.",
+    "tags": ["JavaScript", "LangChain", "Agents"]
+  },
+  {
+    "question": "Which tool would you use for web search integration?",
+    "options": [
+      "Pinecone",
+      "SerpAPI",
+      "BufferMemory",
+      "PromptTemplate"
+    ],
+    "answer": "SerpAPI",
+    "explanation": "SerpAPI provides search engine results to LangChain agents.",
+    "tags": ["JavaScript", "LangChain", "Tools"]
+  },
+  {
+    "question": "What is the purpose of `MemoryVectorStore`?",
+    "options": [
+      "Store API keys",
+      "Manage conversation history",
+      "Handle document embeddings/search",
+      "Optimize LLM temperature"
+    ],
+    "answer": "Handle document embeddings/search",
+    "explanation": "MemoryVectorStore stores/document embeddings for semantic search.",
+    "tags": ["JavaScript", "LangChain", "Retrieval"]
+  },
+  {
+    "question": "Which method executes a LangChain LLM call?",
+    "options": [
+      "model.execute()",
+      "model.call()",
+      "model.run()",
+      "model.query()"
+    ],
+    "answer": "model.call()",
+    "explanation": "The call() method triggers LLM execution with provided input.",
+    "tags": ["JavaScript", "LangChain", "LLM"]
+  },
+  {
+    "question": "What does `getRelevantDocuments()` return?",
+    "options": [
+      "API keys",
+      "Search engine results",
+      "Context-matched documents",
+      "Error logs"
+    ],
+    "answer": "Context-matched documents",
+    "explanation": "This retrieval method finds documents relevant to the query context.",
+    "tags": ["JavaScript", "LangChain", "Retrieval"]
+  },
+  {
+    "question": "Which package is essential for OpenAI integration?",
+    "options": [
+      "langchain/vectorstores",
+      "langchain/llms/openai",
+      "langchain/routing",
+      "langchain/security"
+    ],
+    "answer": "langchain/llms/openai",
+    "explanation": "The OpenAI LLM wrapper is imported from langchain/llms/openai.",
+    "tags": ["JavaScript", "LangChain", "LLM"]
+  },
+  {
+    "question": "What is the primary purpose of LangSmith?",
+    "options": [
+      "To create vector databases",
+      "To monitor and debug LLM applications",
+      "To replace OpenAI API keys",
+      "To generate CSS stylesheets"
+    ],
+    "answer": "To monitor and debug LLM applications",
+    "explanation": "LangSmith provides observability, logging, and debugging tools for LangChain applications.",
+    "tags": ["JavaScript", "LangChain", "LangSmith"]
+  },
+  {
+    "question": "Which tool enables building stateful, multi-actor applications with cycles?",
+    "options": [
+      "LangChain Agents",
+      "LangGraph",
+      "LangSmith Traces",
+      "PromptTemplate"
+    ],
+    "answer": "LangGraph",
+    "explanation": "LangGraph extends LangChain with cyclic graphs for complex workflows and stateful interactions.",
+    "tags": ["JavaScript", "LangGraph", "State Management"]
+  },
+  {
+    "question": "What would you use to trace an LLM call's execution path?",
+    "options": [
+      "LangChain Hub",
+      "LangSmith",
+      "LangServe",
+      "MemoryVectorStore"
+    ],
+    "answer": "LangSmith",
+    "explanation": "LangSmith's tracing shows detailed execution flows of LLM calls and chain operations.",
+    "tags": ["JavaScript", "LangSmith", "Debugging"]
+  },
+  {
+    "question": "Which tool helps deploy LangChain applications as APIs?",
+    "options": [
+      "LangGraph",
+      "LangSmith",
+      "LangServe",
+      "BufferMemory"
+    ],
+    "answer": "LangServe",
+    "explanation": "LangServe is specifically designed for deploying LangChain apps as REST APIs.",
+    "tags": ["JavaScript", "LangChain", "LangServe"]
+  },
+  {
+    "question": "What LangGraph feature enables feedback loops?",
+    "options": [
+      "Vector Stores",
+      "Cyclic Graphs",
+      "Prompt Templates",
+      "Agents"
+    ],
+    "answer": "Cyclic Graphs",
+    "explanation": "LangGraph's cyclic graph architecture allows for iterative processes and feedback loops.",
+    "tags": ["JavaScript", "LangGraph", "Architecture"]
+  },
+  {
+    "question": "Which tool would help track LLM token usage costs?",
+    "options": [
+      "LangSmith",
+      "LangGraph",
+      "ConversationChain",
+      "SerpAPI"
+    ],
+    "answer": "LangSmith",
+    "explanation": "LangSmith monitors usage metrics including token consumption and associated costs.",
+    "tags": ["JavaScript", "LangSmith", "Monitoring"]
+  },
+  {
+    "question": "What is the main benefit of using LangGraph over basic LangChain?",
+    "options": [
+      "Simpler prompts",
+      "Multi-agent collaboration",
+      "Cheaper API calls",
+      "Faster vector search"
+    ],
+    "answer": "Multi-agent collaboration",
+    "explanation": "LangGraph enables complex multi-agent systems with coordinated interactions.",
+    "tags": ["JavaScript", "LangGraph", "Agents"]
+  },
+  {
+    "question": "Which LangSmith feature helps compare model outputs?",
+    "options": [
+      "Dataset Testing",
+      "Vector Indexing",
+      "Prompt Versioning",
+      "Token Counter"
+    ],
+    "answer": "Dataset Testing",
+    "explanation": "LangSmith's dataset testing allows side-by-side comparison of different model outputs.",
+    "tags": ["JavaScript", "LangSmith", "Evaluation"]
+  },
+  {
+    "question": "How does LangGraph handle workflow state?",
+    "options": [
+      "Through React hooks",
+      "Using global variables",
+      "Via persistent context objects",
+      "With browser cookies"
+    ],
+    "answer": "Via persistent context objects",
+    "explanation": "LangGraph maintains state through context objects that persist between graph nodes.",
+    "tags": ["JavaScript", "LangGraph", "State Management"]
+  },
+  {
+    "question": "What would you use to share prompts across teams?",
+    "options": [
+      "LangSmith Hub",
+      "LangGraph Nodes",
+      "MemoryVectorStore",
+      "ConversationChain"
+    ],
+    "answer": "LangSmith Hub",
+    "explanation": "LangSmith Hub provides collaborative prompt management and versioning.",
+    "tags": ["JavaScript", "LangSmith", "Collaboration"]
   }
 ]
