@@ -27548,5 +27548,125 @@
     "answer": "A must – Nothing should go unreviewed.",
     "explanation": "Code reviews improve code quality, reduce errors, and foster knowledge sharing among team members.",
     "tags": ["Code Reviews", "Collaboration", "Best Practices", "Opinionated-123"]
+  },
+  {
+    "question": "What is the primary advantage of Server Components reducing client-side JavaScript?",
+    "options": [
+      "Enables complex animations",
+      "Eliminates need for API endpoints",
+      "Reduces bundle size sent to browser",
+      "Improves mobile touch responsiveness"
+    ],
+    "answer": "Reduces bundle size sent to browser",
+    "explanation": "Server Components execute on the server and don't ship their code to the client, significantly decreasing bundle size.",
+    "tags": ["JavaScript", "React", "Server Components", "Performance"]
+  },
+  {
+    "question": "Which directive must Client Components include at the top of their files?",
+    "options": [
+      "'use server'",
+      "'use strict'",
+      "'use client'",
+      "'use effect'"
+    ],
+    "answer": "'use client'",
+    "explanation": "The 'use client' directive marks components that require client-side interactivity and browser APIs.",
+    "tags": ["JavaScript", "React", "Client Components", "Syntax"]
+  },
+  {
+    "question": "What type of data source can Server Components directly access that Client Components cannot?",
+    "options": [
+      "Browser localStorage",
+      "REST APIs",
+      "Database connections",
+      "Third-party JavaScript SDKs"
+    ],
+    "answer": "Database connections",
+    "explanation": "Server Components can directly access backend resources like databases without needing API middleware.",
+    "tags": ["JavaScript", "React", "Server Components", "Data Fetching"]
+  },
+  {
+    "question": "Which React feature is unavailable in Server Components?",
+    "options": [
+      "Async/await",
+      "CSS Modules",
+      "useState hook",
+      "Prop drilling"
+    ],
+    "answer": "useState hook",
+    "explanation": "Server Components cannot use state hooks as they don't execute/re-render on the client.",
+    "tags": ["JavaScript", "React", "Server Components", "Limitations"]
+  },
+  {
+    "question": "How does streaming improve user experience with Server Components?",
+    "options": [
+      "Enables video playback",
+      "Sends HTML in chunks as ready",
+      "Compresses network payloads",
+      "Enables WebSocket communication"
+    ],
+    "answer": "Sends HTML in chunks as ready",
+    "explanation": "Streaming allows progressive rendering by sending partial HTML responses as server components complete.",
+    "tags": ["JavaScript", "React", "Server Components", "Performance"]
+  },
+  {
+    "question": "What file extension pattern typically identifies Server Components?",
+    "options": [
+      ".client.jsx",
+      ".stream.jsx",
+      ".server.jsx", 
+      ".ssr.jsx"
+    ],
+    "answer": ".server.jsx",
+    "explanation": "Frameworks use .server.jsx extensions to distinguish Server Components (though exact convention varies).",
+    "tags": ["JavaScript", "React", "Server Components", "File Structure"]
+  },
+  {
+    "question": "Why are Server Components particularly beneficial for SEO?",
+    "options": [
+      "They generate sitemaps automatically",
+      "They produce fully-rendered HTML upfront",
+      "They optimize image loading",
+      "They prevent client-side routing"
+    ],
+    "answer": "They produce fully-rendered HTML upfront",
+    "explanation": "Search engines can crawl server-rendered content without requiring JavaScript execution.",
+    "tags": ["JavaScript", "React", "Server Components", "SEO"]
+  },
+  {
+    "question": "What happens when a Server Component imports a Client Component?",
+    "options": [
+      "Server handles all rendering",
+      "Creates a client-rendered boundary",
+      "Causes compilation error",
+      "Converts both to SSR"
+    ],
+    "answer": "Creates a client-rendered boundary",
+    "explanation": "Client Components form interactive islands within Server Component trees via network boundaries.",
+    "tags": ["JavaScript", "React", "Architecture", "Component Composition"]
+  },
+  {
+    "question": "Which framework first mainstreamed React Server Components implementation?",
+    "options": [
+      "Create React App",
+      "Next.js 13+",
+      "Gatsby Cloud",
+      "Remix Run"
+    ],
+    "answer": "Next.js 13+",
+    "explanation": "Next.js App Router popularized RSC implementation with its file-system based routing.",
+    "tags": ["JavaScript", "React", "Frameworks", "Next.js"]
+  },
+  {
+    "question": "What browser API is inaccessible in Server Components?",
+    "options": [
+      "fetch()",
+      "window.location",
+      "React.createElement",
+      "Error boundaries"
+    ],
+    "answer": "window.location",
+    "explanation": "Browser-specific APIs like window aren't available in server execution environment.",
+    "tags": ["JavaScript", "React", "Server Components", "Limitations"]
   }
 ]
