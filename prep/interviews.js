@@ -25,7 +25,7 @@ function displayQuestion(data, tag) {
   const currTopic = document.getElementById("currTopic");
 
   currTopic.innerText = tag
-    ? tag + " " + data.length
+    ? tag + " | " + data.length
     : data.length + " Questions";
 
   mcqsContainer.innerHTML = "";
