@@ -217,10 +217,17 @@
   "projects": [
     {
       "timestamp": 1741798901,
-      "title": "Simple Node User management API using Clean Architecture",
-      "description": "Clean Architecture in a Node project, for a User Management API using Express, TypeScript, and Dependency Injection, adhering to SOLID principles and ensuring Separation of Concerns.",
+      "title": "LinkedinCrew – Automated LinkedIn Research & Analysis Tool",
+      "description": "LinkedinCrew is a Python-based project that automates LinkedIn-related research and tasks. It ensures proper environment setup, parses command-line arguments, and initiates the LinkedinCrew process using a specified topic and year. The project requires an OpenAI API key for execution.",
       "link": "https://github.com/m-housni/clean-architecture-node",
-      "tags": "Node, Express, TypeScript, Clean Architecture, SOLID Principles, Dependency Injection, Separation of Concerns, User Management API"
+      "tags": "crewAI, n8n, Python, Automation, LinkedIn, AI, OpenAI API, Command-Line Tool, Scripting"
+    },
+    {
+      "timestamp": 1741798901,
+      "title": "Simple Node User management API using Clean Architecture",
+      "description": "This project demonstrates the application of Clean Architecture in a Node.js API designed for user management. Using Express, TypeScript, and Dependency Injection, the API ensures maintainable and scalable code by adhering to the SOLID principles and emphasizing Separation of Concerns.",
+      "link": "https://github.com/m-housni/clean-architecture-node",
+      "tags": "Node.js, Clean Architecture, TypeScript, User Management API, Express, Dependency Injection, SOLID Principles, PostgreSQL, MongoDB, JWT Authentication, CRUD Operations, Unit Testing, Jest, Mocking, API Design, Software Architecture, Scalability, Maintainability, Modular Code, Repository Pattern, API Endpoints, Use Cases, Data Persistence, TypeORM, Prisma, Express API"
     },
     {
       "timestamp": 1740728027,
