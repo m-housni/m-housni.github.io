@@ -19794,7 +19794,7 @@
       "By focusing solely on hardware optimization"
     ],
     "answer": "Using the `@Injectable` decorator to mark classes as injectable",
-    "explanation": "NestJS implements dependency injection by marking classes with the `@Injectable` decorator, allowing them to be injected into controllers or other services via Angular's DI system.",
+    "explanation": "NestJS implements dependency injection using the @Injectable() decorator to mark classes as injectable. These classes can then be injected into controllers or other services using NestJS's built-in DI system.",
     "tags": ["NestJS", "Dependency Injection", "@Injectable"]
   },
   {
