@@ -86,7 +86,7 @@ try {
             for (const [company, experience] of Object.entries(data.experiences)) {
                 const experienceDiv = document.createElement('div');
                 experienceDiv.classList.add('mb-4');
-                experienceDiv.innerHTML = `<h3 class="font-semibold">${experience.title} - ${experience.location}</h3><p class="text-sm">${experience.dates}</p><p>${experience.description}</p><ul class="list-disc list-inside">${experience.achievements.map(achievement => `<li>${achievement}</li>`).join('')}</ul><p>Techs: ${experience.skills}</p>`;
+                experienceDiv.innerHTML = `<h3 class="font-semibold">${experience.title} - ${experience.location}</h3><p class="text-sm underline">${experience.dates}</p><p>${experience.description}</p><ul class="list-disc list-inside">${experience.achievements.map(achievement => `<li>${achievement}</li>`).join('')}</ul><p>${experience.skills.split(',').map(skill => `<span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">${skill.trim()}</span>`).join('')}</p>`;
                 experiencesContainer.appendChild(experienceDiv);
             }
 
