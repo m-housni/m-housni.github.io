@@ -10,12 +10,12 @@ try {
             document.getElementById('email').href = `mailto:${data.info.email}`;
             document.getElementById('phone').textContent = data.info.phone;
             document.getElementById('phone').href = `tel:${data.info.phone}`;
-            document.getElementById('website').textContent = data.info.website;
-            document.getElementById('website').href = data.info.website;
-            document.getElementById('linkedin').textContent = data.info.linkedin;
-            document.getElementById('linkedin').href = data.info.linkedin;
-            document.getElementById('github').textContent = data.info.github;
-            document.getElementById('github').href = data.info.github;
+            // document.getElementById('website').textContent = data.info.websiteText;
+            // document.getElementById('website').setAttribute('src',data.info.websiteUrl);
+            document.getElementById('linkedin').textContent = data.info.linkedinText;
+            document.getElementById('linkedin').setAttribute('href',data.info.linkedinUrl);
+            document.getElementById('github').textContent = data.info.githubText;
+            document.getElementById('github').href = data.info.githubUrl;
             document.getElementById('summary').innerHTML = data.info.summary;
             try {
                 const skillsContainer = document.getElementById('skills');
