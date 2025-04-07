@@ -1,5 +1,245 @@
 [
   {
+    "question": "What key principle distinguishes frameworks from libraries?",
+    "options": [
+      "Frameworks require less code",
+      "Inversion of Control (IoC)",
+      "Only libraries have documentation",
+      "Frameworks can't be modified"
+    ],
+    "answer": "Inversion of Control (IoC)",
+    "explanation": "Frameworks dictate program flow (they call your code), while libraries are called by your code.",
+    "tags": ["Libraries vs Frameworks", "Software Architecture"]
+  },
+  {
+    "question": "Which statement about modification is generally true?",
+    "options": [
+      "Libraries are more customizable than frameworks",
+      "Frameworks allow core modification",
+      "Both are equally modifiable",
+      "Neither can be modified"
+    ],
+    "answer": "Libraries are more customizable than frameworks",
+    "explanation": "Libraries can be used à la carte, while frameworks often impose architectural constraints.",
+    "tags": ["Libraries vs Frameworks", "Customization"]
+  },
+  {
+    "question": "Which is a framework example?",
+    "options": [
+      "React.js",
+      "Lodash",
+      "Angular",
+      "jQuery"
+    ],
+    "answer": "Angular",
+    "explanation": "Angular is a full MVC framework, while React is a library for building UI components.",
+    "tags": ["Libraries vs Frameworks", "Examples"]
+  },
+  {
+    "question": "What happens when using multiple libraries?",
+    "options": [
+      "Mandatory architectural pattern",
+      "Increased flexibility in implementation",
+      "Automatic conflict resolution",
+      "Forced code structure"
+    ],
+    "answer": "Increased flexibility in implementation",
+    "explanation": "Libraries can be combined freely, unlike frameworks that often require adherence to specific patterns.",
+    "tags": ["Libraries", "Integration"]
+  },
+  {
+    "question": "Which typically has more dependencies?",
+    "options": [
+      "Libraries",
+      "Frameworks",
+      "Both have same dependencies",
+      "Depends on programming language"
+    ],
+    "answer": "Frameworks",
+    "explanation": "Frameworks often come with bundled dependencies to support their architecture.",
+    "tags": ["Libraries vs Frameworks", "Dependencies"]
+  },
+  {
+    "question": "Which is better for large-scale enterprise applications?",
+    "options": [
+      "Collection of libraries",
+      "Opinionated framework",
+      "Custom-built solution",
+      "No difference"
+    ],
+    "answer": "Opinionated framework",
+    "explanation": "Frameworks provide structure and conventions that help maintain large codebases.",
+    "tags": ["Frameworks", "Enterprise Applications"]
+  },
+  {
+    "question": "What's a key advantage of libraries?",
+    "options": [
+      "Enforce best practices",
+      "Provide complete application structure",
+      "Granular functionality selection",
+      "Automatic updates"
+    ],
+    "answer": "Granular functionality selection",
+    "explanation": "Libraries allow picking specific features without adopting entire ecosystems.",
+    "tags": ["Libraries", "Advantages"]
+  },
+  {
+    "question": "Which requires more upfront configuration?",
+    "options": [
+      "Libraries",
+      "Frameworks",
+      "Both require equal setup",
+      "Depends on project size"
+    ],
+    "answer": "Frameworks",
+    "explanation": "Frameworks often need boilerplate setup before development can begin.",
+    "tags": ["Frameworks", "Configuration"]
+  },
+  {
+    "question": "Which statement about testing is true?",
+    "options": [
+      "Frameworks simplify testing",
+      "Libraries make testing harder",
+      "Framework tests require special tools",
+      "Library tests are framework-dependent"
+    ],
+    "answer": "Frameworks simplify testing",
+    "explanation": "Frameworks often include integrated testing tools and patterns.",
+    "tags": ["Testing", "Libraries vs Frameworks"]
+  },
+  {
+    "question": "When would you prefer a library?",
+    "options": [
+      "Building entire application from scratch",
+      "Adding specific functionality to existing system",
+      "Enforcing team-wide conventions",
+      "Managing database migrations"
+    ],
+    "answer": "Adding specific functionality to existing system",
+    "explanation": "Libraries are ideal for targeted enhancements without architectural overhauls.",
+    "tags": ["Libraries", "Use Cases"]
+  },
+  {
+    "question": "What is the primary goal of CI/CD?",
+    "options": [
+      "To manually test code changes",
+      "To automate software delivery pipelines",
+      "To reduce code documentation",
+      "To replace version control systems"
+    ],
+    "answer": "To automate software delivery pipelines",
+    "explanation": "CI/CD automates building, testing, and deployment to enable frequent, reliable releases.",
+    "tags": ["CI/CD", "DevOps"]
+  },
+  {
+    "question": "Which file defines project dependencies in Maven?",
+    "options": [
+      "package.json",
+      "pom.xml",
+      "build.gradle",
+      "requirements.txt"
+    ],
+    "answer": "pom.xml",
+    "explanation": "Maven uses pom.xml (Project Object Model) for dependency and build configuration.",
+    "tags": ["Build Tools", "Maven"]
+  },
+  {
+    "question": "What does semantic versioning '1.4.3' represent?",
+    "options": [
+      "Major.Minor.Security",
+      "Major.Feature.Patch",
+      "Minor.Patch.Hotfix",
+      "Major.Minor.Patch"
+    ],
+    "answer": "Major.Minor.Patch",
+    "explanation": "SemVer format: MAJOR.MINOR.PATCH (breaking changes.features.backward-compatible fixes).",
+    "tags": ["Packages", "Versioning"]
+  },
+  {
+    "question": "Which tool is a package manager for Python?",
+    "options": [
+      "npm",
+      "pip",
+      "NuGet",
+      "Homebrew"
+    ],
+    "answer": "pip",
+    "explanation": "pip is Python's default package installer (PyPI).",
+    "tags": ["Package Managers", "Python"]
+  },
+  {
+    "question": "What is a key benefit of GitHub Actions?",
+    "options": [
+      "Local database management",
+      "Native CI/CD workflows integrated with repos",
+      "Automated UI design",
+      "Blockchain integration"
+    ],
+    "answer": "Native CI/CD workflows integrated with repos",
+    "explanation": "GitHub Actions enables CI/CD pipelines directly within GitHub repositories.",
+    "tags": ["CI/CD", "GitHub"]
+  },
+  {
+    "question": "What does 'tree shaking' refer to in Webpack?",
+    "options": [
+      "Removing dead code",
+      "Generating CSS animations",
+      "Database optimization",
+      "Error logging"
+    ],
+    "answer": "Removing dead code",
+    "explanation": "Tree shaking eliminates unused code during bundling to reduce final bundle size.",
+    "tags": ["Build Tools", "Webpack"]
+  },
+  {
+    "question": "Which file locks dependency versions in npm?",
+    "options": [
+      "package.json",
+      "package-lock.json",
+      "node_modules/",
+      ".npmrc"
+    ],
+    "answer": "package-lock.json",
+    "explanation": "package-lock.json ensures reproducible builds by locking exact dependency versions.",
+    "tags": ["Package Managers", "npm"]
+  },
+  {
+    "question": "What is a Jenkins pipeline?",
+    "options": [
+      "A physical network cable",
+      "A CI/CD workflow definition",
+      "A database migration tool",
+      "A CSS framework"
+    ],
+    "answer": "A CI/CD workflow definition",
+    "explanation": "Jenkins pipelines define automated build/test/deploy stages using Groovy DSL.",
+    "tags": ["CI/CD", "Jenkins"]
+  },
+  {
+    "question": "Which Gradle feature replaces XML configuration?",
+    "options": [
+      "YAML syntax",
+      "Groovy/Kotlin DSL",
+      "JSON schemas",
+      "TOML files"
+    ],
+    "answer": "Groovy/Kotlin DSL",
+    "explanation": "Gradle uses domain-specific languages (Groovy/Kotlin) instead of XML for build scripts.",
+    "tags": ["Build Tools", "Gradle"]
+  },
+  {
+    "question": "What is a 'transitive dependency'?",
+    "options": [
+      "A direct project dependency",
+      "A dependency of your dependency",
+      "A deprecated package",
+      "A security vulnerability"
+    ],
+    "answer": "A dependency of your dependency",
+    "explanation": "Transitive dependencies are automatically included by your direct dependencies.",
+    "tags": ["Packages", "Dependencies"]
+  },
+  {
     "question": "What is the primary goal of Clean Architecture?",
     "options": [
       "To minimize the number of lines of code",
