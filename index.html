@@ -30,26 +30,41 @@
             font-weight: 600;
         }
 
-        #experiences {
+        #experiences, #projects {
             font-size: 1.1rem;
         }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900 hidden">
-    <nav class="hide-on-print fixed top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-md rounded-l-lg p-4 hidden md:block lg:block">
-        <ul class="space-y-2">
-            <li><a href="#summary" class="text-blue-500">Summary</a></li>
-            <li><a href="#skills" class="text-blue-500">Skills</a></li>
-            <li><a href="#experiences" class="text-blue-500">Experience</a></li>
-            <li><a href="#projects" class="text-blue-500">Projects</a></li>
-            <li><a href="#certifications" class="text-blue-500">Certifications</a></li>
-            <li><a href="#education" class="text-blue-500">Education</a></li>
-            <li><a href="#languages" class="text-blue-500">Languages</a></li>
-            <li><a href="#interests" class="text-blue-500">Interests</a></li>
+    <nav class="hide-on-print sticky top-0 bg-white shadow-md p-4 z-50 md:flex md:justify-center hidden">
+        <ul class="flex flex-wrap justify-center space-x-4">
+            <li><a href="#top" class="text-green-500 hover:underline scroll-offset">Open to Work</a></li>
+            <li><a href="#summary" class="text-blue-500 hover:underline scroll-offset">Summary</a></li>
+            <li><a href="#skills" class="text-blue-500 hover:underline scroll-offset">Skills</a></li>
+            <li><a href="#experiences" class="text-blue-500 hover:underline scroll-offset">Experience</a></li>
+            <li><a href="#certifications" class="text-blue-500 hover:underline scroll-offset">Certifications</a></li>
+            <li><a href="#education" class="text-blue-500 hover:underline scroll-offset">Education</a></li>
+            <li><a href="#languages" class="text-blue-500 hover:underline scroll-offset">Languages</a></li>
+            <li><a href="#interests" class="text-blue-500 hover:underline scroll-offset">Interests</a></li>
+            <li><a href="#projects" class="text-blue-500 hover:underline scroll-offset">Projects</a></li>
         </ul>
     </nav>
+    <script>
+        document.querySelectorAll('.scroll-offset').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const offset = 124; // Adjust this value as needed
+                const topPosition = target.offsetTop - offset;
+                window.scrollTo({
+                    top: topPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
     <div class="max-w-4xl mx-auto p-6 bg-white">
-        <header class="mb-6 flex items-center justify-between">
+        <header id="top" class="mb-6 flex items-center justify-between">
             <div>
                 <h1 id="name" class="text-4xl font-extrabold"></h1>
                 <p id="title" class="text-lg font-extrabold"></p>
@@ -67,7 +82,7 @@
                     Open to Work
                 </button>
                 <button onclick="window.print();" class="hide-on-print bg-blue-500 text-white mt-2 px-4 py-2 rounded">
-                    Download Resume
+                    Download CV
                 </button>
             </div>
         </header>
@@ -98,15 +113,9 @@
         </section>
         <div class="page-break"></div>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Latest Projects</h2>
+            <h2 class="text-2xl font-bold mb-2">Certifications</h2>
             <hr class="mb-4">
-            <div id="projects"></div>
-        </section>
-        <div class="page-break"></div>
-        <section class="mb-6 hidden">
-            <h2 class="text-2xl font-bold mb-2">Latest Certifications</h2>
-            <hr class="mb-4">
-            <div id="certifications"></div>
+            <div class="grid grid-cols-1 gap-4" id="certifications"></div>
         </section>
         <section class="mb-6">
             <h2 class="text-2xl font-bold mb-2">Education</h2>
@@ -122,6 +131,12 @@
             <h2 class="text-2xl font-bold mb-2">Interests</h2>
             <hr class="mb-4">
             <ul class="list-disc list-inside" id="interests"></ul>
+        </section>
+        <div class="page-break"></div>
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-2">Latest Projects</h2>
+            <hr class="mb-4">
+            <div id="projects"></div>
         </section>
     </div>
     <script src="./brain/scripts/resume.js"></script>
