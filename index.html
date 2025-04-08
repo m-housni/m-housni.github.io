@@ -38,7 +38,7 @@
 <body class="bg-gray-100 text-gray-900 hidden">
     <nav class="hide-on-print sticky top-0 bg-white shadow-md p-4 z-50 md:flex md:justify-center hidden">
         <ul class="flex flex-wrap justify-center space-x-4">
-            <li><a href="#top" class="text-white bg-gray-800 hover:bg-gray-900 scroll-offset font-bold italic rounded-full px-2 py-2">MH</a></li>
+            <li><a href="#top" class="text-black bg-white hover:bg-gray-100 scroll-offset font-bold italic rounded-full px-2 py-2 border-2 border-black">MH</a></li>
             <!-- <li><a href="#summary" class="text-blue-500 hover:underline scroll-offset">Summary</a></li> -->
             <li><a href="#skills" class="text-blue-500 hover:underline scroll-offset">Skills</a></li>
             <li><a href="#experiences" class="text-blue-500 hover:underline scroll-offset">Experience</a></li>
@@ -70,13 +70,18 @@
             <div>
                 <h1 id="name" class="text-4xl font-extrabold"></h1>
                 <p id="title" class="text-lg font-extrabold"></p>
-                <p id="location"></p>
-                <div class="grid grid-cols-1">
-                    <span>Email: <a id="email" class="text-blue-500"></a></span>
-                    <span>Mobile: <a id="phone" class="text-blue-500"></a></span>
-                    <!-- <span>Website: <a id="website" class="text-blue-500"></a></span> -->
-                    <span>Linkedin: <a id="linkedin" class="text-blue-500"></a></span>
-                    <span>Github: <a id="github" class="text-blue-500"></a></span>
+                <!-- <p id="location"></p> -->
+                <div class="grid grid-cols-2 gap-24 mt-4">
+                    <div>
+                        <span id="location"></span><br>
+                        <span>Email: <a id="email" class="text-blue-500"></a></span><br>
+                        <span>Mobile: <a id="phone" class="text-blue-500"></a></span>
+                    </div>
+                    <div>
+                        <span>Linkedin: <a id="linkedin" class="text-blue-500"></a></span><br>
+                        <span>Github: <a id="github" class="text-blue-500"></a></span><br>
+                        <span>Website: <a id="website" class="text-blue-500"></a></span>
+                    </div>
                 </div>
                 <!-- <img id="profile-picture" src="./pic.png" alt="Profile Picture" class=""> -->
 
