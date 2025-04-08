@@ -54,15 +54,20 @@
                 <h1 id="name" class="text-4xl font-extrabold"></h1>
                 <p id="title" class="text-lg font-extrabold"></p>
                 <p id="location"></p>
-                <p>Email: <a id="email" class="text-blue-500"></a></p>
-                <p>Mobile: <a id="phone" class="text-blue-500"></a></p>
-                <p><a id="website" class="text-blue-500"></a></p>
-                <p>Linkedin: <a id="linkedin" class="text-blue-500"></a></p>
-                <p>Github: <a id="github" class="text-blue-500"></a></p>
+                <div class="grid grid-cols-1">
+                    <span>Email: <a id="email" class="text-blue-500"></a></span>
+                    <span>Mobile: <a id="phone" class="text-blue-500"></a></span>
+                    <!-- <span>Website: <a id="website" class="text-blue-500"></a></span> -->
+                    <span>Linkedin: <a id="linkedin" class="text-blue-500"></a></span>
+                    <span>Github: <a id="github" class="text-blue-500"></a></span>
+                </div>
                 <!-- <img id="profile-picture" src="./pic.png" alt="Profile Picture" class=""> -->
 
+                <button class="hide-on-print bg-green-500 text-white mt-2 px-4 py-2 rounded">
+                    Open to Work
+                </button>
                 <button onclick="window.print();" class="hide-on-print bg-blue-500 text-white mt-2 px-4 py-2 rounded">
-                    Download
+                    Download Resume
                 </button>
             </div>
         </header>
