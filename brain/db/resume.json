@@ -346,19 +346,34 @@
   ],
   "certifications": [
     {
-      "title": "AWS Certified Solutions Architect - Associate",
-      "date": "2024",
-      "link": ""
+      "title": "By CompTIA - ITF+/A+",
+      "date": "01/2025",
+      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/CompTIA"
     },
     {
-      "title": "Google Cloud Professional Cloud Architect",
-      "date": "2022",
-      "link": ""
+      "title": "By Microsoft - Azure Fundamentals",
+      "date": "12/2024",
+      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/Microsoft"
     },
     {
-      "title": "Scrum Master Certification",
-      "date": "2020",
-      "link": ""
+      "title": "By Atlassian - Jira Software Manager",
+      "date": "12/2024",
+      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/Atlassian"
+    },
+    {
+      "title": "By ISC2 - CCSP (Cloud Security Professional)",
+      "date": "01/2025",
+      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/ISC2"
+    },
+    {
+      "title": "By CISCO - CCST (Certified Support Technician)",
+      "date": "12/2024",
+      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/CISCO"
+    },
+    {
+      "title": "By AWS - Cloud Practitioner",
+      "date": "12/2024",
+      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/AWS"
     }
   ],
   "education": {

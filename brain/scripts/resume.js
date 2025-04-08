@@ -104,7 +104,7 @@ try {
             data.certifications.forEach(certification => {
                 const certificationDiv = document.createElement('div');
                 certificationDiv.classList.add('mb-4');
-                certificationDiv.innerHTML = `<h3 class="font-semibold">${certification.title}</h3><p class="text-sm">${certification.date}</p><p><a target="_blank" href="${certification.link}" class="text-blue-500">${certification.link}</a></p>`;
+                certificationDiv.innerHTML = `<p class="text-sm hidden">${certification.date}</p><h3 class="font-semibold">${certification.title}</h3><p><a target="_blank" href="${certification.link}" class="text-blue-500 text-xs">${certification.link}</a></p>`;
                 certificationsContainer.appendChild(certificationDiv);
             });
 
