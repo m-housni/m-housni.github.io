@@ -346,34 +346,14 @@
   ],
   "certifications": [
     {
-      "title": "By CompTIA - ITF+/A+",
-      "date": "01/2025",
+      "org": "AWS",
+      "certs": ["AWS Certified Cloud Practitioner", "AWS Certified Solutions Architect - Associate"],
       "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/CompTIA"
     },
     {
-      "title": "By Microsoft - Azure Fundamentals",
-      "date": "12/2024",
-      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/Microsoft"
-    },
-    {
-      "title": "By Atlassian - Jira Software Manager",
-      "date": "12/2024",
-      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/Atlassian"
-    },
-    {
-      "title": "By ISC2 - CCSP (Cloud Security Professional)",
-      "date": "01/2025",
-      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/ISC2"
-    },
-    {
-      "title": "By CISCO - CCST (Certified Support Technician)",
-      "date": "12/2024",
-      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/CISCO"
-    },
-    {
-      "title": "By AWS - Cloud Practitioner",
-      "date": "12/2024",
-      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/AWS"
+      "org": "CompTIA",
+      "certs": ["IT Fundamentals+", "A+ Core 1", "A+ Core 2", "Network+", "Security+", "Cloud+"],
+      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/CompTIA"
     }
   ],
   "education": {

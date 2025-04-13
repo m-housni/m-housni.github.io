@@ -103,8 +103,7 @@ try {
             const certificationsContainer = document.getElementById('certifications');
             data.certifications.forEach(certification => {
                 const certificationDiv = document.createElement('div');
-                certificationDiv.classList.add('mb-4');
-                certificationDiv.innerHTML = `<p class="text-sm hidden">${certification.date}</p><h3 class="font-semibold">${certification.title}</h3><p><a target="_blank" href="${certification.link}" class="text-blue-500 text-xs">${certification.link}</a></p>`;
+                certificationDiv.innerHTML = `<h1 class="text-xl font-semibold">${certification.org}</h1>${certification.certs.map(cert => `<li class="text-sm">${cert}</li>`).join('')}`;
                 certificationsContainer.appendChild(certificationDiv);
             });
 
