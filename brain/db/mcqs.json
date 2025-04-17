@@ -1,5 +1,365 @@
 [
   {
+    "question": "What is the primary purpose of an AWS Elastic Load Balancer?",
+    "options": [
+      "To store static website content",
+      "To distribute incoming traffic across multiple targets",
+      "To provide direct database access",
+      "To manage IAM permissions"
+    ],
+    "answer": "To distribute incoming traffic across multiple targets",
+    "explanation": "ELB automatically distributes incoming application traffic across multiple EC2 instances, containers, or IP addresses.",
+    "tags": ["AWS", "ELB", "Networking"]
+  },
+  {
+    "question": "Which type of ELB is best suited for HTTP/HTTPS traffic?",
+    "options": [
+      "Classic Load Balancer",
+      "Application Load Balancer",
+      "Network Load Balancer",
+      "Gateway Load Balancer"
+    ],
+    "answer": "Application Load Balancer",
+    "explanation": "ALB operates at Layer 7 (application layer) and is ideal for HTTP/HTTPS traffic with advanced routing capabilities.",
+    "tags": ["AWS", "ELB", "ALB"]
+  },
+  {
+    "question": "What is a key feature of Network Load Balancer?",
+    "options": [
+      "Content-based routing",
+      "Ultra-low latency and high throughput",
+      "SSL termination",
+      "Cookie-based session affinity"
+    ],
+    "answer": "Ultra-low latency and high throughput",
+    "explanation": "NLB operates at Layer 4 (transport layer) and handles millions of requests per second with ultra-low latency.",
+    "tags": ["AWS", "ELB", "NLB"]
+  },
+  {
+    "question": "Which component allows ALB to route requests based on content?",
+    "options": [
+      "Security Groups",
+      "Listeners",
+      "Target Groups",
+      "Rules"
+    ],
+    "answer": "Rules",
+    "explanation": "ALB rules evaluate incoming requests and route them to different target groups based on URL path or host.",
+    "tags": ["AWS", "ELB", "Routing"]
+  },
+  {
+    "question": "What is the purpose of a Target Group in ELB?",
+    "options": [
+      "To define IAM permissions",
+      "To group EC2 instances for traffic routing",
+      "To store SSL certificates",
+      "To configure DNS settings"
+    ],
+    "answer": "To group EC2 instances for traffic routing",
+    "explanation": "Target Groups route requests to registered targets (EC2 instances, IPs, or Lambda functions) using the configured protocol and port.",
+    "tags": ["AWS", "ELB", "Target Groups"]
+  },
+  {
+    "question": "Which ELB feature ensures a user sticks to the same instance?",
+    "options": [
+      "Connection Draining",
+      "Cross-Zone Load Balancing",
+      "Sticky Sessions",
+      "Path Patterns"
+    ],
+    "answer": "Sticky Sessions",
+    "explanation": "Session stickiness uses cookies to route requests from the same client to the same target.",
+    "tags": ["AWS", "ELB", "Session Management"]
+  },
+  {
+    "question": "What does Connection Draining do in ELB?",
+    "options": [
+      "Terminates unhealthy instances immediately",
+      "Completes in-flight requests before deregistering instances",
+      "Blocks all new connections",
+      "Forces instance reboots"
+    ],
+    "answer": "Completes in-flight requests before deregistering instances",
+    "explanation": "Connection Draining allows existing requests to complete before removing an instance from service.",
+    "tags": ["AWS", "ELB", "High Availability"]
+  },
+  {
+    "question": "Which ELB type is designed for third-party virtual appliances?",
+    "options": [
+      "Application Load Balancer",
+      "Network Load Balancer",
+      "Gateway Load Balancer",
+      "Classic Load Balancer"
+    ],
+    "answer": "Gateway Load Balancer",
+    "explanation": "GWLB deploys and manages third-party virtual appliances like firewalls and intrusion detection systems.",
+    "tags": ["AWS", "ELB", "GWLB"]
+  },
+  {
+    "question": "How does ELB contribute to high availability?",
+    "options": [
+      "By automatically scaling instances",
+      "By distributing traffic across multiple Availability Zones",
+      "By reducing storage costs",
+      "By caching database queries"
+    ],
+    "answer": "By distributing traffic across multiple Availability Zones",
+    "explanation": "ELB automatically distributes traffic across targets in multiple AZs and only routes to healthy targets.",
+    "tags": ["AWS", "ELB", "High Availability"]
+  },
+  {
+    "question": "Which protocol is NOT supported by Application Load Balancer?",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "WebSocket",
+      "FTP"
+    ],
+    "answer": "FTP",
+    "explanation": "ALB supports HTTP, HTTPS, WebSocket, and gRPC protocols, but not FTP (which would use NLB).",
+    "tags": ["AWS", "ELB", "Protocols"]
+  },
+  {
+    "question": "What is the primary purpose of Amazon EC2?",
+    "options": [
+      "To provide managed database services",
+      "To offer scalable virtual servers in the cloud",
+      "To store static website content",
+      "To manage DNS records"
+    ],
+    "answer": "To offer scalable virtual servers in the cloud",
+    "explanation": "EC2 provides resizable compute capacity in the cloud via virtual servers (instances).",
+    "tags": ["AWS", "EC2", "Compute"]
+  },
+  {
+    "question": "Which EC2 feature allows automatic scaling of instances?",
+    "options": [
+      "Elastic Load Balancing",
+      "Auto Scaling Groups",
+      "Instance Store Volumes",
+      "Elastic IPs"
+    ],
+    "answer": "Auto Scaling Groups",
+    "explanation": "Auto Scaling Groups automatically adjust the number of EC2 instances based on demand.",
+    "tags": ["AWS", "EC2", "Auto Scaling"]
+  },
+  {
+    "question": "What is the difference between EC2 On-Demand and Spot Instances?",
+    "options": [
+      "On-Demand has fixed pricing, Spot uses bidding",
+      "Spot Instances are always more expensive",
+      "On-Demand can be interrupted, Spot cannot",
+      "Only Spot Instances can use Auto Scaling"
+    ],
+    "answer": "On-Demand has fixed pricing, Spot uses bidding",
+    "explanation": "On-Demand offers fixed-rate pay-as-you-go pricing, while Spot Instances use variable pricing with possible interruptions.",
+    "tags": ["AWS", "EC2", "Pricing"]
+  },
+  {
+    "question": "Which storage option provides temporary block-level storage for EC2?",
+    "options": [
+      "Amazon S3",
+      "Instance Store",
+      "EFS",
+      "Glacier"
+    ],
+    "answer": "Instance Store",
+    "explanation": "Instance Store provides temporary block storage physically attached to the host computer.",
+    "tags": ["AWS", "EC2", "Storage"]
+  },
+  {
+    "question": "What does an EC2 Security Group control?",
+    "options": [
+      "Instance pricing tiers",
+      "Network traffic to instances",
+      "AWS account access",
+      "Instance CPU utilization"
+    ],
+    "answer": "Network traffic to instances",
+    "explanation": "Security Groups act as virtual firewalls controlling inbound/outbound traffic at the instance level.",
+    "tags": ["AWS", "EC2", "Security"]
+  },
+  {
+    "question": "Which EC2 instance type is optimized for memory-intensive applications?",
+    "options": [
+      "T-series",
+      "M-series",
+      "R-series",
+      "C-series"
+    ],
+    "answer": "R-series",
+    "explanation": "R-series instances (e.g., R5, R6g) are optimized for memory-intensive workloads.",
+    "tags": ["AWS", "EC2", "Instance Types"]
+  },
+  {
+    "question": "What is the purpose of EC2 User Data?",
+    "options": [
+      "To store customer credentials",
+      "To pass configuration scripts at launch",
+      "To monitor instance performance",
+      "To encrypt EBS volumes"
+    ],
+    "answer": "To pass configuration scripts at launch",
+    "explanation": "User Data allows execution of scripts when an instance first launches for automated configuration.",
+    "tags": ["AWS", "EC2", "Configuration"]
+  },
+  {
+    "question": "Which service provides static IPv4 addresses for EC2 instances?",
+    "options": [
+      "VPC",
+      "Elastic IP",
+      "NAT Gateway",
+      "Route 53"
+    ],
+    "answer": "Elastic IP",
+    "explanation": "Elastic IPs provide persistent public IPv4 addresses that can be reassigned between instances.",
+    "tags": ["AWS", "EC2", "Networking"]
+  },
+  {
+    "question": "What is the benefit of EC2 Placement Groups?",
+    "options": [
+      "To reduce costs by up to 90%",
+      "To control instance placement for low latency/high throughput",
+      "To automatically patch instances",
+      "To enable cross-region replication"
+    ],
+    "answer": "To control instance placement for low latency/high throughput",
+    "explanation": "Placement Groups optimize instance placement for workloads requiring low-latency network performance.",
+    "tags": ["AWS", "EC2", "Performance"]
+  },
+  {
+    "question": "Which tool allows SSH access to EC2 instances?",
+    "options": [
+      "AWS Systems Manager",
+      "EC2 Instance Connect",
+      "AWS Direct Connect",
+      "CloudTrail"
+    ],
+    "answer": "EC2 Instance Connect",
+    "explanation": "EC2 Instance Connect provides browser-based SSH access without managing SSH keys manually.",
+    "tags": ["AWS", "EC2", "Management"]
+  },
+  {
+    "question": "What is the AWS Shared Responsibility Model primarily used for?",
+    "options": [
+      "To determine billing costs",
+      "To define security responsibilities between AWS and customers",
+      "To allocate cloud resources",
+      "To manage AWS support tickets"
+    ],
+    "answer": "To define security responsibilities between AWS and customers",
+    "explanation": "The model clearly separates AWS's security obligations (infrastructure) from customer responsibilities (data/configurations).",
+    "tags": ["AWS", "Security", "Shared Responsibility Model"]
+  },
+  {
+    "question": "Which of these is AWS responsible for securing?",
+    "options": [
+      "EC2 instance operating system patches",
+      "Physical data center security",
+      "Customer IAM policies",
+      "Application-level firewalls"
+    ],
+    "answer": "Physical data center security",
+    "explanation": "AWS manages physical/host infrastructure security, while customers handle guest OS/application security.",
+    "tags": ["AWS", "Infrastructure Security"]
+  },
+  {
+    "question": "Who is responsible for encrypting data stored in S3?",
+    "options": [
+      "AWS automatically handles it",
+      "The customer",
+      "Shared 50/50 responsibility",
+      "Internet Service Providers"
+    ],
+    "answer": "The customer",
+    "explanation": "While AWS provides encryption tools, enabling/configuring them is the customer's responsibility.",
+    "tags": ["AWS S3", "Data Security"]
+  },
+  {
+    "question": "If an EC2 instance is hacked due to an unpatched vulnerability, who is responsible?",
+    "options": [
+      "AWS",
+      "The customer",
+      "Both equally",
+      "The Linux/Windows vendor"
+    ],
+    "answer": "The customer",
+    "explanation": "Customers manage guest OS patching for EC2 instances (security IN the cloud).",
+    "tags": ["AWS EC2", "Patching"]
+  },
+  {
+    "question": "Which service is entirely AWS's responsibility to secure?",
+    "options": [
+      "AWS Lambda runtime environment",
+      "RDS database content",
+      "EC2 instance SSH keys",
+      "S3 bucket policies"
+    ],
+    "answer": "AWS Lambda runtime environment",
+    "explanation": "Serverless services like Lambda shift OS/runtime security to AWS under the shared responsibility model.",
+    "tags": ["AWS Lambda", "Serverless"]
+  },
+  {
+    "question": "What best describes customer responsibilities for IAM?",
+    "options": [
+      "AWS manages all IAM automatically",
+      "Customers define users, roles, and least-privilege policies",
+      "Only AWS Support can create IAM rules",
+      "IAM is handled by third-party services"
+    ],
+    "answer": "Customers define users, roles, and least-privilege policies",
+    "explanation": "Identity and Access Management (IAM) configuration is always the customer's responsibility.",
+    "tags": ["AWS IAM", "Access Control"]
+  },
+  {
+    "question": "Who ensures DDoS protection for AWS services?",
+    "options": [
+      "Customers using third-party tools",
+      "AWS Shield (for AWS infrastructure)",
+      "The ISP providing internet connectivity",
+      "Only for Enterprise Support customers"
+    ],
+    "answer": "AWS Shield (for AWS infrastructure)",
+    "explanation": "AWS provides DDoS protection for its infrastructure; customers may need additional application-layer protections.",
+    "tags": ["AWS Shield", "DDoS Protection"]
+  },
+  {
+    "question": "For an RDS database, who manages the database engine software updates?",
+    "options": [
+      "AWS",
+      "The customer",
+      "The database vendor (e.g., Oracle)",
+      "Depends on the service tier"
+    ],
+    "answer": "AWS",
+    "explanation": "AWS manages RDS engine updates, but customers control database content/access.",
+    "tags": ["AWS RDS", "Managed Services"]
+  },
+  {
+    "question": "What is a common customer mistake under this model?",
+    "options": [
+      "Not auditing S3 bucket permissions",
+      "AWS forgetting to patch hypervisors",
+      "Data center power outages",
+      "Internet backbone failures"
+    ],
+    "answer": "Not auditing S3 bucket permissions",
+    "explanation": "Misconfigured S3 permissions are a top customer-caused security issue.",
+    "tags": ["AWS S3", "Security Best Practices"]
+  },
+  {
+    "question": "Which analogy best fits the Shared Responsibility Model?",
+    "options": [
+      "AWS is a car manufacturer, customer is the driver",
+      "AWS is a restaurant, customer is the food",
+      "AWS is a bank vault, customer is the money",
+      "AWS is a movie theater, customer is the film"
+    ],
+    "answer": "AWS is a car manufacturer, customer is the driver",
+    "explanation": "AWS provides secure infrastructure (car), but customers must operate it safely (drive responsibly).",
+    "tags": ["AWS", "Shared Responsibility Model", "Analogy"]
+  },
+  {
     "question": "What key principle distinguishes frameworks from libraries?",
     "options": [
       "Frameworks require less code",
