@@ -1,5 +1,245 @@
 [
   {
+    "question": "Which AWS service is serverless and executes code in response to events without provisioning servers?",
+    "options": [
+      "Amazon ECS",
+      "AWS Lambda",
+      "Amazon EKS",
+      "AWS Fargate"
+    ],
+    "answer": "AWS Lambda",
+    "explanation": "Lambda is an event-driven, serverless compute service that runs code without server management.",
+    "tags": ["AWS", "Lambda", "Serverless"]
+  },
+  {
+    "question": "What is the primary difference between ECS and EKS?",
+    "options": [
+      "ECS uses Kubernetes, EKS does not",
+      "EKS is AWS's managed Kubernetes service, ECS is AWS's proprietary container orchestrator",
+      "ECS is serverless, EKS requires server management",
+      "EKS only works with Fargate"
+    ],
+    "answer": "EKS is AWS's managed Kubernetes service, ECS is AWS's proprietary container orchestrator",
+    "explanation": "EKS provides managed Kubernetes clusters, while ECS uses AWS's own container orchestration technology.",
+    "tags": ["AWS", "ECS", "EKS", "Containers"]
+  },
+  {
+    "question": "Which service combines with ECS/EKS to provide serverless container execution?",
+    "options": [
+      "AWS Lambda",
+      "AWS Fargate",
+      "Amazon EC2",
+      "AWS Batch"
+    ],
+    "answer": "AWS Fargate",
+    "explanation": "Fargate is a serverless compute engine that works with both ECS and EKS to run containers without managing servers.",
+    "tags": ["AWS", "Fargate", "Serverless"]
+  },
+  {
+    "question": "What is the maximum execution time for an AWS Lambda function?",
+    "options": [
+      "1 minute",
+      "5 minutes",
+      "15 minutes",
+      "1 hour"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Lambda functions have a maximum execution timeout of 15 minutes per invocation.",
+    "tags": ["AWS", "Lambda", "Limits"]
+  },
+  {
+    "question": "Which container service gives you the most control over underlying EC2 instances?",
+    "options": [
+      "AWS Lambda",
+      "ECS with Fargate",
+      "EKS with Fargate",
+      "ECS/EKS with EC2 launch type"
+    ],
+    "answer": "ECS/EKS with EC2 launch type",
+    "explanation": "The EC2 launch type allows direct management of the underlying EC2 instances, unlike Fargate or Lambda.",
+    "tags": ["AWS", "ECS", "EKS", "EC2"]
+  },
+  {
+    "question": "What is the smallest unit of deployment in AWS Lambda?",
+    "options": [
+      "Container",
+      "Function",
+      "Task",
+      "Pod"
+    ],
+    "answer": "Function",
+    "explanation": "Lambda deploys individual functions, unlike container services that work with containers/tasks/pods.",
+    "tags": ["AWS", "Lambda", "Concepts"]
+  },
+  {
+    "question": "Which service automatically scales based on incoming requests or events?",
+    "options": [
+      "Only Lambda",
+      "Only ECS",
+      "Lambda and Fargate",
+      "All of them (Lambda, ECS, EKS, Fargate)"
+    ],
+    "answer": "All of them (Lambda, ECS, EKS, Fargate)",
+    "explanation": "All these services offer auto-scaling capabilities, though their scaling mechanisms differ.",
+    "tags": ["AWS", "Scaling", "Lambda", "ECS", "EKS", "Fargate"]
+  },
+  {
+    "question": "Which AWS service would be most suitable for long-running background processes?",
+    "options": [
+      "AWS Lambda",
+      "ECS with Fargate",
+      "Both are equally suitable",
+      "Neither can handle long-running processes"
+    ],
+    "answer": "ECS with Fargate",
+    "explanation": "ECS/Fargate is better for long-running processes, while Lambda has a 15-minute execution limit.",
+    "tags": ["AWS", "Lambda", "ECS", "Fargate", "Use Cases"]
+  },
+  {
+    "question": "What is the primary benefit of using Fargate with ECS/EKS?",
+    "options": [
+      "Lower cost for spiky workloads",
+      "No need to manage EC2 instances",
+      "Faster cold start times than Lambda",
+      "Built-in CI/CD pipelines"
+    ],
+    "answer": "No need to manage EC2 instances",
+    "explanation": "Fargate eliminates the need to provision, scale, or manage EC2 instances for containers.",
+    "tags": ["AWS", "Fargate", "Serverless"]
+  },
+  {
+    "question": "Which service would be most appropriate for running a stateful Kubernetes application?",
+    "options": [
+      "AWS Lambda",
+      "ECS with Fargate",
+      "Amazon EKS",
+      "All are equally suitable"
+    ],
+    "answer": "Amazon EKS",
+    "explanation": "EKS is the best choice for stateful Kubernetes applications needing persistent storage and complex orchestration.",
+    "tags": ["AWS", "EKS", "Kubernetes", "Use Cases"]
+  },
+  {
+    "question": "What is the primary purpose of Amazon SNS?",
+    "options": [
+      "To store large amounts of data",
+      "To send pub/sub notifications to multiple endpoints",
+      "To manage virtual servers",
+      "To provide DNS services"
+    ],
+    "answer": "To send pub/sub notifications to multiple endpoints",
+    "explanation": "SNS is a publish/subscribe service that sends notifications to multiple subscribers like email, SMS, and HTTP endpoints.",
+    "tags": ["AWS", "SNS", "Messaging"]
+  },
+  {
+    "question": "Which pattern does Amazon SQS primarily implement?",
+    "options": [
+      "Publish/Subscribe",
+      "Point-to-Point",
+      "Broadcast",
+      "Stream Processing"
+    ],
+    "answer": "Point-to-Point",
+    "explanation": "SQS uses a queue-based point-to-point messaging model where messages are processed by one consumer.",
+    "tags": ["AWS", "SQS", "Messaging"]
+  },
+  {
+    "question": "What is a key difference between SNS and SQS?",
+    "options": [
+      "SNS stores messages indefinitely",
+      "SQS supports multiple subscribers",
+      "SNS pushes messages, SQS requires polling",
+      "SQS can send SMS notifications"
+    ],
+    "answer": "SNS pushes messages, SQS requires polling",
+    "explanation": "SNS actively pushes messages to subscribers, while SQS requires consumers to poll the queue for messages.",
+    "tags": ["AWS", "SNS", "SQS", "Comparison"]
+  },
+  {
+    "question": "What is the maximum retention period for SQS messages?",
+    "options": [
+      "1 day",
+      "14 days",
+      "30 days",
+      "1 year"
+    ],
+    "answer": "14 days",
+    "explanation": "SQS messages can be retained in the queue for a maximum of 14 days (default is 4 days).",
+    "tags": ["AWS", "SQS", "Limits"]
+  },
+  {
+    "question": "Which SNS feature allows message filtering?",
+    "options": [
+      "Topics",
+      "Subscriptions",
+      "Message Attributes",
+      "Delivery Policies"
+    ],
+    "answer": "Message Attributes",
+    "explanation": "SNS message attributes enable subscribers to filter and receive only relevant messages.",
+    "tags": ["AWS", "SNS", "Features"]
+  },
+  {
+    "question": "What is the purpose of SQS visibility timeout?",
+    "options": [
+      "To encrypt messages",
+      "To prevent other consumers from processing a message being handled",
+      "To automatically delete processed messages",
+      "To limit queue access"
+    ],
+    "answer": "To prevent other consumers from processing a message being handled",
+    "explanation": "Visibility timeout temporarily hides a message being processed to prevent duplicate processing.",
+    "tags": ["AWS", "SQS", "Configuration"]
+  },
+  {
+    "question": "Which protocol is NOT natively supported by SNS?",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "SMTP",
+      "WebSocket"
+    ],
+    "answer": "WebSocket",
+    "explanation": "SNS supports HTTP, HTTPS, Email (SMTP), SMS, SQS, and Lambda, but not WebSocket directly.",
+    "tags": ["AWS", "SNS", "Protocols"]
+  },
+  {
+    "question": "What is the benefit of using SQS FIFO queues?",
+    "options": [
+      "Higher throughput",
+      "Exactly-once processing and ordering",
+      "Lower costs",
+      "Longer retention period"
+    ],
+    "answer": "Exactly-once processing and ordering",
+    "explanation": "FIFO queues guarantee message ordering and prevent duplicates (exactly-once processing).",
+    "tags": ["AWS", "SQS", "FIFO"]
+  },
+  {
+    "question": "How can SNS and SQS be used together?",
+    "options": [
+      "SQS can subscribe to SNS topics for fan-out pattern",
+      "SNS can poll SQS queues",
+      "SQS can send notifications to SNS",
+      "They cannot be integrated"
+    ],
+    "answer": "SQS can subscribe to SNS topics for fan-out pattern",
+    "explanation": "Multiple SQS queues can subscribe to an SNS topic to implement message fan-out to multiple systems.",
+    "tags": ["AWS", "SNS", "SQS", "Integration"]
+  },
+  {
+    "question": "What is the maximum size of an SQS message?",
+    "options": [
+      "64 KB",
+      "256 KB",
+      "1 MB",
+      "2 MB"
+    ],
+    "answer": "256 KB",
+    "explanation": "The maximum size for an SQS message is 256 KB (can be extended to 2GB using S3 extended client).",
+    "tags": ["AWS", "SQS", "Limits"]
+  },
+  {
     "question": "What is the primary purpose of an AWS Elastic Load Balancer?",
     "options": [
       "To store static website content",
