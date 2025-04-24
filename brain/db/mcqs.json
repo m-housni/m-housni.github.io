@@ -1,5 +1,125 @@
 [
   {
+    "question": "What is the primary purpose of DNS in networking?",
+    "options": [
+      "To encrypt data in transit",
+      "To translate domain names to IP addresses",
+      "To create virtual private networks",
+      "To manage firewall rules"
+    ],
+    "answer": "To translate domain names to IP addresses",
+    "explanation": "DNS acts like a phonebook for the internet, converting human-readable domain names to machine-readable IP addresses.",
+    "tags": ["Networking", "DNS", "AWS"]
+  },
+  {
+    "question": "Which AWS service provides a dedicated private connection between on-premises and AWS?",
+    "options": [
+      "VPN Gateway",
+      "Direct Connect",
+      "Internet Gateway",
+      "Route 53"
+    ],
+    "answer": "Direct Connect",
+    "explanation": "AWS Direct Connect establishes a dedicated network connection bypassing the public internet for higher bandwidth and security.",
+    "tags": ["AWS", "Networking", "Hybrid"]
+  },
+  {
+    "question": "What is the key difference between public and private subnets in a VPC?",
+    "options": [
+      "Public subnets have internet access via NAT, private via IGW",
+      "Public subnets use IPv6, private use IPv4",
+      "Public subnets have internet access via IGW, private use NAT",
+      "Only private subnets can have EC2 instances"
+    ],
+    "answer": "Public subnets have internet access via IGW, private use NAT",
+    "explanation": "Public subnets route traffic through an Internet Gateway (IGW), while private subnets access internet via NAT Gateway.",
+    "tags": ["AWS", "VPC", "Subnets"]
+  },
+  {
+    "question": "Which security layer would IAM policies belong to?",
+    "options": [
+      "Physical security",
+      "Network security",
+      "Application security",
+      "User security"
+    ],
+    "answer": "User security",
+    "explanation": "IAM manages user access and permissions, enforcing the principle of least privilege.",
+    "tags": ["AWS", "Security", "IAM"]
+  },
+  {
+    "question": "What does a Virtual Private Gateway enable?",
+    "options": [
+      "Public S3 bucket access",
+      "Site-to-site VPN connection to AWS",
+      "Direct EC2 instance internet access",
+      "Global DNS resolution"
+    ],
+    "answer": "Site-to-site VPN connection to AWS",
+    "explanation": "The VPG is the AWS-side endpoint for secure VPN connections between on-prem networks and AWS VPCs.",
+    "tags": ["AWS", "VPN", "Hybrid"]
+  },
+  {
+    "question": "Which service would improve global application performance?",
+    "options": [
+      "AWS Shield",
+      "Global Accelerator",
+      "Direct Connect",
+      "Secrets Manager"
+    ],
+    "answer": "Global Accelerator",
+    "explanation": "Global Accelerator uses AWS's backbone network to optimize traffic routing worldwide.",
+    "tags": ["AWS", "Networking", "Performance"]
+  },
+  {
+    "question": "What is the main benefit of hybrid cloud deployments?",
+    "options": [
+      "Eliminates all on-prem infrastructure",
+      "Allows gradual cloud migration while maintaining legacy systems",
+      "Is always cheaper than full cloud adoption",
+      "Requires no networking configuration"
+    ],
+    "answer": "Allows gradual cloud migration while maintaining legacy systems",
+    "explanation": "Hybrid architectures provide flexibility to modernize incrementally while supporting existing systems.",
+    "tags": ["AWS", "Hybrid", "Architecture"]
+  },
+  {
+    "question": "Which AWS service would you use for DDoS protection?",
+    "options": [
+      "AWS WAF",
+      "AWS Shield",
+      "Network ACLs",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "AWS offers multi-layered DDoS protection with Shield (infrastructure), WAF (application), and NACLs (network layer).",
+    "tags": ["AWS", "Security", "DDoS"]
+  },
+  {
+    "question": "What does Transit Gateway simplify?",
+    "options": [
+      "EC2 instance management",
+      "Multi-VPC and hybrid network connectivity",
+      "DNS record management",
+      "SSL certificate rotation"
+    ],
+    "answer": "Multi-VPC and hybrid network connectivity",
+    "explanation": "Transit Gateway acts as a hub for connecting multiple VPCs and on-prem networks with centralized management.",
+    "tags": ["AWS", "Networking", "VPC"]
+  },
+  {
+    "question": "Which combination delivers content globally with low latency?",
+    "options": [
+      "S3 + CloudFront",
+      "EC2 + NAT Gateway",
+      "RDS + Direct Connect",
+      "Lambda + API Gateway"
+    ],
+    "answer": "S3 + CloudFront",
+    "explanation": "CloudFront CDN caches content at edge locations worldwide when paired with S3 origin.",
+    "tags": ["AWS", "Networking", "Performance"]
+  },
+  {
     "question": "Which AWS service is serverless and executes code in response to events without provisioning servers?",
     "options": [
       "Amazon ECS",
