@@ -1,5 +1,125 @@
 [
   {
+    "question": "What is the primary purpose of AWS Database Migration Service (DMS)?",
+    "options": [
+      "To create new databases from scratch",
+      "To migrate databases between platforms with minimal downtime",
+      "To replace database administrators",
+      "To provide long-term database storage"
+    ],
+    "answer": "To migrate databases between platforms with minimal downtime",
+    "explanation": "DMS enables homogeneous and heterogeneous database migrations with minimal downtime by continuously replicating changes.",
+    "tags": ["AWS", "DMS", "Migration"]
+  },
+  {
+    "question": "Which components are essential for a DMS migration task?",
+    "options": [
+      "Source endpoint, target endpoint, and replication instance",
+      "Only source and target endpoints",
+      "EC2 instance and S3 bucket",
+      "Lambda function and Kinesis stream"
+    ],
+    "answer": "Source endpoint, target endpoint, and replication instance",
+    "explanation": "A DMS migration requires: 1) Source endpoint 2) Target endpoint 3) Replication instance to perform the migration.",
+    "tags": ["AWS", "DMS", "Architecture"]
+  },
+  {
+    "question": "What types of database migrations does DMS support?",
+    "options": [
+      "Only homogeneous (same engine) migrations",
+      "Only heterogeneous (different engine) migrations",
+      "Both homogeneous and heterogeneous migrations",
+      "Only NoSQL database migrations"
+    ],
+    "answer": "Both homogeneous and heterogeneous migrations",
+    "explanation": "DMS supports both same-engine (e.g., MySQL to MySQL) and cross-engine (e.g., Oracle to PostgreSQL) migrations.",
+    "tags": ["AWS", "DMS", "Compatibility"]
+  },
+  {
+    "question": "Which feature enables ongoing replication after initial data load?",
+    "options": [
+      "Full Load Only",
+      "CDC (Change Data Capture)",
+      "One-time snapshot",
+      "Schema conversion"
+    ],
+    "answer": "CDC (Change Data Capture)",
+    "explanation": "CDC captures ongoing changes from source databases after initial load, enabling near-zero downtime migrations.",
+    "tags": ["AWS", "DMS", "CDC"]
+  },
+  {
+    "question": "What is the purpose of a DMS Schema Conversion Tool (SCT)?",
+    "options": [
+      "To migrate data only",
+      "To automatically convert database schemas and code objects",
+      "To replace DMS replication instances",
+      "To monitor database performance"
+    ],
+    "answer": "To automatically convert database schemas and code objects",
+    "explanation": "SCT converts source database schemas and code objects (stored procedures, functions) to be compatible with the target engine.",
+    "tags": ["AWS", "DMS", "SCT"]
+  },
+  {
+    "question": "Which databases can be both source and target in DMS?",
+    "options": [
+      "Only Amazon Aurora",
+      "Only on-premises databases",
+      "Both cloud and on-premises databases",
+      "Only AWS-managed databases"
+    ],
+    "answer": "Both cloud and on-premises databases",
+    "explanation": "DMS supports migrations between on-premises, EC2-based, and AWS-managed database services.",
+    "tags": ["AWS", "DMS", "Connectivity"]
+  },
+  {
+    "question": "What is the maximum retention period for change data in DMS?",
+    "options": [
+      "24 hours",
+      "7 days",
+      "30 days",
+      "1 year"
+    ],
+    "answer": "7 days",
+    "explanation": "DMS retains change data for up to 7 days to handle temporary network interruptions.",
+    "tags": ["AWS", "DMS", "Limits"]
+  },
+  {
+    "question": "Which DMS component handles the actual data movement?",
+    "options": [
+      "Endpoints",
+      "Replication task",
+      "Schema Conversion Tool",
+      "Target database only"
+    ],
+    "answer": "Replication task",
+    "explanation": "Replication tasks define what data to migrate and how to migrate it (full load, CDC, or both).",
+    "tags": ["AWS", "DMS", "Tasks"]
+  },
+  {
+    "question": "What is a key benefit of using DMS over manual migration?",
+    "options": [
+      "Higher database licensing costs",
+      "Minimal downtime during migration",
+      "No need for target database",
+      "Eliminates all transformation requirements"
+    ],
+    "answer": "Minimal downtime during migration",
+    "explanation": "DMS's CDC capability allows applications to keep running during migration with only brief cutover downtime.",
+    "tags": ["AWS", "DMS", "Benefits"]
+  },
+  {
+    "question": "Which AWS service integrates with DMS for data validation?",
+    "options": [
+      "AWS Config",
+      "DMS Data Validation",
+      "Database Activity Streams",
+      "Amazon Inspector"
+    ],
+    "answer": "DMS Data Validation",
+    "explanation": "DMS includes built-in data validation to compare source and target records after migration.",
+    "tags": ["AWS", "DMS", "Validation"]
+  },
+  {
     "question": "What type of database is Amazon Redshift primarily designed to be?",
     "options": [
       "Key-value store",
