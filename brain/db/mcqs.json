@@ -1,5 +1,365 @@
 [
   {
+    "question": "What type of database is Amazon Redshift primarily designed to be?",
+    "options": [
+      "Key-value store",
+      "Document database",
+      "Data warehouse",
+      "Graph database"
+    ],
+    "answer": "Data warehouse",
+    "explanation": "Redshift is a fully managed, petabyte-scale data warehouse service optimized for analytical workloads.",
+    "tags": ["AWS", "Redshift", "Data Warehouse"]
+  },
+  {
+    "question": "Which SQL dialect does Amazon Redshift use?",
+    "options": [
+      "PostgreSQL-compatible",
+      "MySQL-compatible",
+      "Oracle-compatible",
+      "Proprietary SQL"
+    ],
+    "answer": "PostgreSQL-compatible",
+    "explanation": "Redshift uses a PostgreSQL 8.0.2-compatible dialect with specific optimizations for data warehousing.",
+    "tags": ["AWS", "Redshift", "SQL"]
+  },
+  {
+    "question": "What is the fundamental architecture concept behind Redshift's performance?",
+    "options": [
+      "In-memory processing",
+      "Massively Parallel Processing (MPP)",
+      "Blockchain technology",
+      "Serverless computing"
+    ],
+    "answer": "Massively Parallel Processing (MPP)",
+    "explanation": "Redshift uses an MPP architecture that distributes data and query load across multiple nodes.",
+    "tags": ["AWS", "Redshift", "Architecture"]
+  },
+  {
+    "question": "Which Redshift feature automatically manages data distribution across nodes?",
+    "options": [
+      "Sort keys",
+      "Distribution styles (KEY, ALL, EVEN)",
+      "Zone maps",
+      "WLM queues"
+    ],
+    "answer": "Distribution styles (KEY, ALL, EVEN)",
+    "explanation": "Redshift offers three distribution styles to optimize how data is distributed across compute nodes.",
+    "tags": ["AWS", "Redshift", "Performance"]
+  },
+  {
+    "question": "What is the purpose of sort keys in Redshift?",
+    "options": [
+      "To encrypt data at rest",
+      "To define primary keys",
+      "To physically organize data for efficient querying",
+      "To distribute data across nodes"
+    ],
+    "answer": "To physically organize data for efficient querying",
+    "explanation": "Sort keys determine the physical order of data on disk, enabling efficient range-restricted scans.",
+    "tags": ["AWS", "Redshift", "Optimization"]
+  },
+  {
+    "question": "Which Redshift feature provides a serverless option?",
+    "options": [
+      "Redshift Spectrum",
+      "Redshift Serverless (preview)",
+      "RA3 nodes",
+      "Concurrency Scaling"
+    ],
+    "answer": "Redshift Serverless (preview)",
+    "explanation": "Redshift Serverless automatically provisions and scales capacity based on workload demands.",
+    "tags": ["AWS", "Redshift", "Serverless"]
+  },
+  {
+    "question": "What is the primary benefit of Redshift Spectrum?",
+    "options": [
+      "Query data directly in S3 without loading into Redshift",
+      "Increase node storage capacity",
+      "Replace ETL processes",
+      "Provide real-time analytics"
+    ],
+    "answer": "Query data directly in S3 without loading into Redshift",
+    "explanation": "Spectrum enables querying exabyte-scale data in S3 using the same SQL as Redshift tables.",
+    "tags": ["AWS", "Redshift", "Spectrum"]
+  },
+  {
+    "question": "Which Redshift feature automatically scales to handle concurrent queries?",
+    "options": [
+      "Elastic Resize",
+      "Concurrency Scaling",
+      "Workload Management",
+      "AQUA (Advanced Query Accelerator)"
+    ],
+    "answer": "Concurrency Scaling",
+    "explanation": "Concurrency Scaling automatically adds temporary clusters to handle bursts in query traffic.",
+    "tags": ["AWS", "Redshift", "Scalability"]
+  },
+  {
+    "question": "What is the maximum compression ratio Redshift can achieve through columnar storage?",
+    "options": [
+      "Up to 2:1",
+      "Up to 5:1",
+      "Up to 10:1",
+      "Up to 20:1"
+    ],
+    "answer": "Up to 10:1",
+    "explanation": "Redshift's columnar storage can achieve compression ratios up to 10:1 depending on data characteristics.",
+    "tags": ["AWS", "Redshift", "Storage"]
+  },
+  {
+    "question": "Which feature helps optimize query performance by caching frequently accessed data?",
+    "options": [
+      "Result Cache",
+      "Elastic Resize",
+      "Short Query Acceleration",
+      "AQUA"
+    ],
+    "answer": "Result Cache",
+    "explanation": "The Result Cache stores query results for reuse, improving performance for repeated queries.",
+    "tags": ["AWS", "Redshift", "Performance"]
+  },
+  {
+    "question": "What type of database is Amazon DynamoDB?",
+    "options": [
+      "Relational database",
+      "Key-value and document database",
+      "Graph database",
+      "Time-series database"
+    ],
+    "answer": "Key-value and document database",
+    "explanation": "DynamoDB is a fully managed NoSQL database supporting both key-value and document data models.",
+    "tags": ["AWS", "DynamoDB", "NoSQL"]
+  },
+  {
+    "question": "What is the primary key component that uniquely identifies each item in a DynamoDB table?",
+    "options": [
+      "Partition key only",
+      "Sort key only",
+      "Either a partition key or a composite primary key (partition + sort key)",
+      "Global secondary index"
+    ],
+    "answer": "Either a partition key or a composite primary key (partition + sort key)",
+    "explanation": "DynamoDB requires a primary key that can be either a single partition key or a composite key combining partition and sort keys.",
+    "tags": ["AWS", "DynamoDB", "Data Modeling"]
+  },
+  {
+    "question": "Which DynamoDB feature enables automatic scaling of throughput capacity?",
+    "options": [
+      "DynamoDB Accelerator (DAX)",
+      "Auto Scaling",
+      "On-demand capacity mode",
+      "Global Tables"
+    ],
+    "answer": "Auto Scaling",
+    "explanation": "DynamoDB Auto Scaling automatically adjusts provisioned throughput capacity based on actual usage patterns.",
+    "tags": ["AWS", "DynamoDB", "Scalability"]
+  },
+  {
+    "question": "What is the maximum size of an item in DynamoDB?",
+    "options": [
+      "100KB",
+      "400KB",
+      "1MB",
+      "16MB"
+    ],
+    "answer": "400KB",
+    "explanation": "Each item in DynamoDB can be up to 400KB in size, including attribute names and values.",
+    "tags": ["AWS", "DynamoDB", "Limits"]
+  },
+  {
+    "question": "Which DynamoDB feature provides in-memory caching for faster read performance?",
+    "options": [
+      "ElastiCache",
+      "DynamoDB Accelerator (DAX)",
+      "Global Secondary Indexes",
+      "Streams"
+    ],
+    "answer": "DynamoDB Accelerator (DAX)",
+    "explanation": "DAX is an in-memory cache for DynamoDB that reduces read latency from milliseconds to microseconds.",
+    "tags": ["AWS", "DynamoDB", "Performance"]
+  },
+  {
+    "question": "What consistency models does DynamoDB support?",
+    "options": [
+      "Only strongly consistent reads",
+      "Only eventually consistent reads",
+      "Both strongly and eventually consistent reads",
+      "No consistency guarantees"
+    ],
+    "answer": "Both strongly and eventually consistent reads",
+    "explanation": "DynamoDB offers both strongly consistent and eventually consistent read options, with eventually consistent being the default.",
+    "tags": ["AWS", "DynamoDB", "Consistency"]
+  },
+  {
+    "question": "Which DynamoDB feature enables multi-region, multi-active replication?",
+    "options": [
+      "Global Secondary Indexes",
+      "DynamoDB Streams",
+      "Global Tables",
+      "Backup and Restore"
+    ],
+    "answer": "Global Tables",
+    "explanation": "Global Tables provide fully replicated, multi-region tables with typical recovery times of under 1 second.",
+    "tags": ["AWS", "DynamoDB", "Global"]
+  },
+  {
+    "question": "What is the purpose of a Global Secondary Index (GSI) in DynamoDB?",
+    "options": [
+      "To provide a backup of the primary table",
+      "To enable querying on non-primary key attributes",
+      "To increase item size limits",
+      "To replace the primary key"
+    ],
+    "answer": "To enable querying on non-primary key attributes",
+    "explanation": "GSIs allow querying data using alternative partition/sort keys different from the primary key.",
+    "tags": ["AWS", "DynamoDB", "Indexes"]
+  },
+  {
+    "question": "Which DynamoDB feature captures time-ordered sequence of item modifications?",
+    "options": [
+      "Time to Live (TTL)",
+      "DynamoDB Streams",
+      "Transactions",
+      "Backups"
+    ],
+    "answer": "DynamoDB Streams",
+    "explanation": "DynamoDB Streams captures a time-ordered sequence of item-level modifications in a table.",
+    "tags": ["AWS", "DynamoDB", "Streams"]
+  },
+  {
+    "question": "What is the main advantage of DynamoDB's on-demand capacity mode?",
+    "options": [
+      "Fixed monthly pricing",
+      "No need to specify read/write capacity units",
+      "Higher item size limits",
+      "Stronger consistency guarantees"
+    ],
+    "answer": "No need to specify read/write capacity units",
+    "explanation": "On-demand mode automatically scales to accommodate workloads without capacity planning.",
+    "tags": ["AWS", "DynamoDB", "Capacity"]
+  },
+  {
+    "question": "What is Amazon Aurora's primary advantage over traditional RDS databases?",
+    "options": [
+      "Higher compatibility with non-relational databases",
+      "Lower cost than all other database options",
+      "MySQL/PostgreSQL compatibility with cloud-optimized performance",
+      "Eliminates the need for SQL queries"
+    ],
+    "answer": "MySQL/PostgreSQL compatibility with cloud-optimized performance",
+    "explanation": "Aurora provides up to 5x better performance than standard MySQL/PostgreSQL while maintaining full compatibility.",
+    "tags": ["AWS", "Aurora", "RDS"]
+  },
+  {
+    "question": "How does Aurora achieve high availability by default?",
+    "options": [
+      "By storing copies of data in a single Availability Zone",
+      "Through automatic replication across 3 AZs",
+      "Using S3 as primary storage",
+      "Requiring manual failover configuration"
+    ],
+    "answer": "Through automatic replication across 3 AZs",
+    "explanation": "Aurora replicates 6 copies of data across 3 AZs for fault tolerance and automatic recovery.",
+    "tags": ["AWS", "Aurora", "High Availability"]
+  },
+  {
+    "question": "What is the maximum storage capacity for an Aurora database?",
+    "options": [
+      "64TB",
+      "128TB",
+      "256TB",
+      "Storage scales automatically with no predefined limit"
+    ],
+    "answer": "128TB",
+    "explanation": "Aurora automatically scales up to 128TB while handling growth in 10GB increments.",
+    "tags": ["AWS", "Aurora", "Storage"]
+  },
+  {
+    "question": "Which Aurora feature allows read scaling across multiple instances?",
+    "options": [
+      "Aurora Replicas",
+      "Multi-AZ Deployment",
+      "Storage Auto-Scaling",
+      "Backtrack"
+    ],
+    "answer": "Aurora Replicas",
+    "explanation": "Up to 15 Aurora Replicas can distribute read workloads across AZs with minimal replica lag.",
+    "tags": ["AWS", "Aurora", "Scalability"]
+  },
+  {
+    "question": "How does Aurora's storage model differ from traditional RDS?",
+    "options": [
+      "Uses local instance storage only",
+      "Shared cluster volume accessible to all instances",
+      "Requires manual storage provisioning",
+      "Limited to EBS gp2 volumes"
+    ],
+    "answer": "Shared cluster volume accessible to all instances",
+    "explanation": "Aurora uses a distributed, shared storage volume that all instances in the cluster can access.",
+    "tags": ["AWS", "Aurora", "Architecture"]
+  },
+  {
+    "question": "What is Aurora Serverless best suited for?",
+    "options": [
+      "Steady, predictable workloads",
+      "Infrequently used applications with variable traffic",
+      "On-premises database migrations",
+      "Non-relational data storage"
+    ],
+    "answer": "Infrequently used applications with variable traffic",
+    "explanation": "Aurora Serverless automatically scales capacity based on demand, ideal for intermittent workloads.",
+    "tags": ["AWS", "Aurora", "Serverless"]
+  },
+  {
+    "question": "Which Aurora feature provides point-in-time recovery without backups?",
+    "options": [
+      "Snapshots",
+      "Backtrack",
+      "Clone",
+      "Multi-master"
+    ],
+    "answer": "Backtrack",
+    "explanation": "Backtrack rewinds the database to a specific time (like a 'rewind' button) without restoring backups.",
+    "tags": ["AWS", "Aurora", "Recovery"]
+  },
+  {
+    "question": "What is the primary benefit of Aurora Global Database?",
+    "options": [
+      "Reduces storage costs",
+      "Provides cross-region replication for disaster recovery",
+      "Eliminates the need for replicas",
+      "Automatically converts SQL to NoSQL"
+    ],
+    "answer": "Provides cross-region replication for disaster recovery",
+    "explanation": "Global Database replicates data across AWS regions with <1s latency for global applications.",
+    "tags": ["AWS", "Aurora", "Global"]
+  },
+  {
+    "question": "How does Aurora improve write performance compared to standard MySQL?",
+    "options": [
+      "By eliminating the redo log",
+      "Through a log-structured storage system",
+      "Using blockchain technology",
+      "Restricting writes to primary instance only"
+    ],
+    "answer": "Through a log-structured storage system",
+    "explanation": "Aurora's storage is optimized for database workloads by minimizing write amplification.",
+    "tags": ["AWS", "Aurora", "Performance"]
+  },
+  {
+    "question": "Which maintenance task is NOT required for Aurora?",
+    "options": [
+      "Software patching",
+      "Storage capacity planning",
+      "Backup management",
+      "All are automated"
+    ],
+    "answer": "Storage capacity planning",
+    "explanation": "Aurora automatically handles storage scaling, though patching and backups still require configuration.",
+    "tags": ["AWS", "Aurora", "Management"]
+  },
+  {
     "question": "What is the primary purpose of DNS in networking?",
     "options": [
       "To encrypt data in transit",
