@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=1024">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./brain/pic.ico" type="image/x-icon">
-    <title>MH - Fullstack Engineer | Javascript, Node, React, Angular, Devops, CI/CD</title>
+    <title>Mohamed Housni - Senior Fullstack Engineer | Javascript, Node, React, Angular, Devops, CI/CD</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -35,6 +35,18 @@
         #experiences, #projects {
             font-size: 1.1rem;
         }
+
+        .scroll-to-top {
+            position: relative;
+            float: right;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -60,13 +72,11 @@
                 <h1 id="name" class="text-4xl font-extrabold"></h1>
                 <p id="title" class="text-lg font-extrabold"></p>
                 <!-- <p id="location"></p> -->
-                <div class="grid grid-cols-2 gap-24 mt-4">
+                <div class="grid grid-cols-1 gap-24 mt-4">
                     <div>
-                        <span id="location"></span><br>
+                        <span id="location"></span><br><br>
                         <span>Email: <a id="email" class="text-blue-500"></a></span><br>
-                        <span>Mobile: <a id="phone" class="text-blue-500"></a></span>
-                    </div>
-                    <div>
+                        <span>Mobile: <a id="phone" class="text-blue-500"></a></span><br>
                         <span>Linkedin: <a id="linkedin" class="text-blue-500"></a></span><br>
                         <span>Github: <a id="github" class="text-blue-500"></a></span><br>
                         <span>Website: <a id="website" class="text-blue-500"></a></span>
@@ -83,18 +93,56 @@
             </div>
         </header>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Summary</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Summary
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
-            <p id="summary"></p>
+            <p id="summary" hidden></p>
+            <div class="text-base font-sans">
+                <p class="mb-4">For more than <strong class="text-base">9 years</strong>, I’ve worked across different industries, including <strong class="text-base">PLM</strong>, <strong class="text-base">Telecom</strong>, <strong class="text-base">Compliance</strong>, <strong class="text-base">E-Commerce</strong>, and <strong class="text-base">Logistics</strong>, handling many projects and responsibilities.</p>
+                <ul class="list-none space-y-1">
+                    <li>• At <strong class="text-base">Atos</strong> I maintained and developed many fullstack microservices for TangerMed PCS.</li>
+                    <li>• At <strong class="text-base">DevUp</strong>, I developed multiple <strong class="text-base">AI agents</strong> for multiple use cases improving productivity.</li>
+                    <li>• At <strong class="text-base">Inetum</strong>, I built and maintained <strong class="text-base">PLM applications</strong>.</li>
+                    <li>• At <strong class="text-base">Intelcia IT Solutions</strong>, I rebuilt the <strong class="text-base">SFR Lost Mobile Service</strong>.</li>
+                    <li>• At <strong class="text-base">Komplians</strong>, I led a team, and built <strong class="text-base">compliance SaaS</strong>.</li>
+                    <li>• At <strong class="text-base">SW</strong>, I worked on dealers portals, and booking systems.</li>
+                </ul>
+                <p class="mt-4">I bring <strong class="text-base">strong teamwork</strong>, <strong class="text-base">adaptability</strong>, and <strong class="text-base">problem-solving skills</strong> and am looking for a role where I can develop <strong class="text-base">scalable</strong>, <strong class="text-base">high-impact solutions</strong>.</p>
+            </div>
+            <nav class="mt-4">
+                <ul class="list-none space-y-1">
+                    <li><a href="#skills" class="text-blue-500 hover:underline scroll-offset">Skills</a></li>
+                    <li><a href="#experiences" class="text-blue-500 hover:underline scroll-offset">Experience</a></li>
+                    <li><a href="#certifications" class="text-blue-500 hover:underline scroll-offset">Certifications</a></li>
+                    <li><a href="#education" class="text-blue-500 hover:underline scroll-offset">Education</a></li>
+                    <li><a href="#languages" class="text-blue-500 hover:underline scroll-offset">Languages</a></li>
+                    <li><a href="#interests" class="text-blue-500 hover:underline scroll-offset">Interests</a></li>
+                    <li><a href="#projects" class="text-blue-500 hover:underline scroll-offset">Projects</a></li>
+                </ul>
+            </nav>
         </section>
         <section class="hidden-on-load hide-on-print mb-6">
-            <h2 class="text-2xl font-bold mb-2">Currently focusing on ...</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Currently focusing on ...
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <div class="grid grid-cols-7 gap-1" id="focusAreas"></div>
         </section>
-        
+        <div class="page-break"></div>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Skills</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Skills
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <div class="grid grid-cols-3 gap-4" id="skills"></div>
         </section>
@@ -103,13 +151,23 @@
             <div class="grid grid-cols-5 gap-1" id="skillsCloud"></div>
         </section>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Experience</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Experience
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <div id="experiences"></div>
         </section>
         <div class="page-break"></div>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Certifications</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Certifications
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <div class="grid grid-cols-1 gap-4" id="certifications"></div>
             <div class="mt-4">
@@ -117,23 +175,43 @@
             </div>
         </section>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Education</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Education
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <div id="education"></div>
         </section>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Languages</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Languages
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <ul class="list-disc list-inside" id="languages"></ul>
         </section>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Interests</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Interests
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <ul class="list-disc list-inside" id="interests"></ul>
         </section>
         <div class="page-break"></div>
         <section class="mb-6">
-            <h2 class="text-2xl font-bold mb-2">Latest Projects</h2>
+            <h2 class="text-2xl font-bold mb-2">
+                Latest Projects
+                <a href="#top" class="scroll-offset scroll-to-top">
+                    <i class="fas fa-arrow-up text-gray-500 text-sm ml-2"></i>
+                </a>
+            </h2>
             <hr class="mb-4">
             <div id="projects"></div>
         </section>
