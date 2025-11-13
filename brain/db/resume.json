@@ -170,6 +170,18 @@
         "Collaborated with cross-functional teams."
       ]
     },
+    "AlaaNext1": {
+      "title": "Fullstack Developer @ AlaaNext ( Freelance )",
+      "location": "Casablanca, MA (Fully Remote)",
+      "dates": "11/2024 - 05/2025",
+      "description": "Worked on different solutions both on the frontend and backend.",
+      "customers": ["Klever Mobility"],
+      "industries": ["Retail"],
+      "skills": "n8n, crewAI, python, Javascript, APIs",
+      "achievements": [
+        "Build AI agents on n8n to automate lead generation tasks."
+      ]
+    },
     "Inetum": {
       "title": "Frontend Developer @ Inetum (Freelance)",
       "location": "Casablanca, MA",
@@ -185,25 +197,10 @@
         "Provided onboarding to new team members"
       ]
     },
-    "Komplians": {
-      "title": "Co-founder & Tech Lead @ Komplians ( Freelance )",
-      "location": "Casablanca, MA",
-      "dates": "03/2019 - 11/2022",
-      "description": "Developed and maintained many solutions related to compliance, risk management, and more.",
-      "customers": ["Orange", "Société Générale", "BNP Paribas"],
-      "industries": ["Banking", "Telecommunications", "Retail"],
-      "skills": "Php, Laravel, Javascript, Angular, HTML, CSS, Node, Express, Moodle",
-      "achievements": [
-        "Developed a Compliance and Risk Management SaaS solution ( Komplians )",
-        "Developed a Corporate Social Responsibility Solution ( les domaines agricoles )",
-        "Maintained a CSR platform for responsible procurement ( GreenSupply )",
-        "Led a team of 3 junior developers"
-      ]
-    },
-    "AlaaNext": {
-      "title": "Web Developer @ AlaaNext ( Contractor )",
+    "AlaaNext2": {
+      "title": "Fullstack Developer @ AlaaNext ( Freelance )",
       "location": "Casablanca, MA (Fully Remote)",
-      "dates": "03/2016 - 04/2019",
+      "dates": "03/2016 - 11/1022",
       "description": "Worked on different solutions both on the frontend and backend.",
       "customers": ["Klever Mobility"],
       "industries": ["Retail"],
