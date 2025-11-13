@@ -31,7 +31,7 @@ function displayQuestion(data, tag) {
   mcqsContainer.innerHTML = "";
   // ramdomize the questions
   // TODO: handle random/natural order options
-  // data = data.sort(() => Math.random() - 0.5);
+  data = data.sort(() => Math.random() - 0.5);
   data.forEach((mcq) => {
     const questionDiv = document.createElement("div");
     questionDiv.innerHTML +=
@@ -40,7 +40,7 @@ function displayQuestion(data, tag) {
           return `<span onclick="filterByTag('${e}')" class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs mr-2 cursor-pointer">${e}</span>`;
         })
         .join("")}</div>` +
-      `<h3 class="font-semibold">${mcq.question}</h3>` +
+      `<h3 class="font-semibold"><a href="https://www.google.com/search?q=${mcq.question}" target="_blank">${mcq.question}</a></h3>` +
       `<div class="mt-4">${mcq.answer}</div>` +
       `<div class="mt-4">${mcq.explanation}</div>` +
       `<div class="mt-4">
