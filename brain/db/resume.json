@@ -169,19 +169,6 @@
         "Developed and maintained software functionalities.",
         "Collaborated with cross-functional teams."
       ]
-    }, 
-    "DevUp": {
-      "title": "Fullstack Developer @ DevUp (Freelance)",
-      "location": "Casablanca, MA",
-      "dates": "02/2025 - 04/2025",
-      "description": "Developing AI agents for various use cases.",
-      "customers": ["Airbus", "Stelia Aerospace", "Thales"],
-      "industries": ["Manufacturing", "Aerospace"],
-      "skills": "Agentic AI, Javascript, Node, CSS, Python, CrewAI, n8n, OpenAI, MCP, Docker, Airtable",
-      "achievements": [
-        "Developed multiple AI agents for different use cases",
-        "Proved a productivity enhancement compared to existing solutions"
-      ]
     },
     "Inetum": {
       "title": "Frontend Developer @ Inetum (Freelance)",
@@ -196,20 +183,6 @@
         "Collaborated with cross-functional teams.",
         "Led code reviews, troubleshooting and bug fixing.",
         "Provided onboarding to new team members"
-      ]
-    },
-    "IntelciaITSolutions": {
-      "title": "Fullstack Developer @ Intelcia IT Solutions (Freelance)",
-      "location": "Casablanca, MA",
-      "dates": "06/2022 - 11/2022",
-      "description": "Developed SFR Lost Mobile Service.",
-      "customers": ["Orange", "Société Générale", "BNP Paribas"],
-      "industries": ["Banking", "Telecommunications", "Retail"],
-      "skills": "Angular, Node, Express, MongoDB, Php, Elasticsearch, Javascript, HTML, CSS, leafletJS",
-      "achievements": [
-        "Designed and implemented the frontend",
-        "Designed and implemented the backend",
-        "Proved a performance enhancement compared to existing solution."
       ]
     },
     "Komplians": {
@@ -227,13 +200,13 @@
         "Led a team of 3 junior developers"
       ]
     },
-    "SW": {
-      "title": "Web Developer @ SW ( Contractor )",
+    "AlaaNext": {
+      "title": "Web Developer @ AlaaNext ( Contractor )",
       "location": "Casablanca, MA (Fully Remote)",
       "dates": "03/2016 - 04/2019",
       "description": "Worked on different solutions both on the frontend and backend.",
-      "customers": ["Orange", "Société Générale", "BNP Paribas"],
-      "industries": ["Banking", "Telecommunications", "Retail"],
+      "customers": ["Klever Mobility"],
+      "industries": ["Retail"],
       "skills": "Laravel, Php, Vue, React, Wordpress, Strapi, Node, Express, SQL, AFAS API",
       "achievements": [
         "Developed functionalities for a dealers portal for a dutch e-bikes supplier ( Klever Mobility ).",
