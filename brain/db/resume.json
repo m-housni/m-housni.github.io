@@ -158,7 +158,7 @@
   ],
   "experiences": {
     "ATOS": {
-      "title": "Senior Fullstack Developer @ ATOS (Freelance)",
+      "title": "Senior Fullstack Developer @ ATOS (Freelance / Hybrid)",
       "location": "Casablanca, MA",
       "dates": "05/2025 - Present",
       "description": "Developing and maintaining many business services for TangerMed Port Authority.",
@@ -171,7 +171,7 @@
       ]
     },
     "AlaaNext1": {
-      "title": "Fullstack Developer @ AlaaNext ( Freelance )",
+      "title": "Fullstack Developer @ AlaaNext ( Freelance / Remote )",
       "location": "Casablanca, MA (Fully Remote)",
       "dates": "11/2024 - 05/2025",
       "description": "Worked on different solutions both on the frontend and backend.",
@@ -183,7 +183,7 @@
       ]
     },
     "Inetum": {
-      "title": "Frontend Developer @ Inetum (Freelance)",
+      "title": "Frontend Developer @ Inetum ( Freelance / Hybrid )",
       "location": "Casablanca, MA",
       "dates": "11/2022 - 11/2024",
       "description": "Developing and maintaining PLM applications in the manufacturing sector.",
@@ -198,8 +198,8 @@
       ]
     },
     "AlaaNext2": {
-      "title": "Fullstack Developer @ AlaaNext ( Freelance )",
-      "location": "Casablanca, MA (Fully Remote)",
+      "title": "Fullstack Developer @ AlaaNext ( Freelance / Remote )",
+      "location": "Casablanca, MA",
       "dates": "03/2016 - 11/1022",
       "description": "Worked on different solutions both on the frontend and backend.",
       "customers": ["Klever Mobility"],
