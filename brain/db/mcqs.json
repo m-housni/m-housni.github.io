@@ -1,4 +1,556 @@
 [
+    {
+    "question": "What does LAN stand for in networking?",
+    "options": [
+      "Large Area Network",
+      "Local Access Node",
+      "Local Area Network",
+      "Linked Application Network"
+    ],
+    "answer": "Local Area Network",
+    "explanation": "LAN stands for Local Area Network, which connects devices within a limited area such as a home, office, or building.",
+    "tags": ["Networking Basics", "Terminology", "LAN"]
+  },
+  {
+    "question": "Which device operates at Layer 2 of the OSI model and forwards data based on MAC addresses?",
+    "options": [
+      "Router",
+      "Switch",
+      "Hub",
+      "Firewall"
+    ],
+    "answer": "Switch",
+    "explanation": "A switch operates at the Data Link Layer (Layer 2) of the OSI model and uses MAC addresses to forward frames within a local network.",
+    "tags": ["Networking Basics", "Devices", "Switch"]
+  },
+  {
+    "question": "Which layer of the OSI model is responsible for routing and logical addressing?",
+    "options": [
+      "Data Link Layer",
+      "Transport Layer",
+      "Network Layer",
+      "Physical Layer"
+    ],
+    "answer": "Network Layer",
+    "explanation": "The Network Layer (Layer 3) handles logical addressing (e.g., IP addresses) and routing packets between different networks.",
+    "tags": ["Networking Basics", "OSI Model", "Network Layer"]
+  },
+  {
+    "question": "Which protocol suite forms the foundation of modern internet communication?",
+    "options": [
+      "OSI",
+      "TCP/IP",
+      "HTTP/HTTPS",
+      "FTP"
+    ],
+    "answer": "TCP/IP",
+    "explanation": "The TCP/IP model is the foundational protocol suite used for internet communication, mapping closely to the OSI model but with fewer layers.",
+    "tags": ["Networking Basics", "TCP/IP Model", "Internet Protocols"]
+  },
+  {
+    "question": "Which layer in the TCP/IP model corresponds to both the Session, Presentation, and Application layers of the OSI model?",
+    "options": [
+      "Application Layer",
+      "Transport Layer",
+      "Internet Layer",
+      "Link Layer"
+    ],
+    "answer": "Application Layer",
+    "explanation": "In the TCP/IP model, the Application Layer combines the functions of the OSI's Application, Presentation, and Session layers, handling high-level protocols like HTTP, FTP, and DNS.",
+    "tags": ["Networking Basics", "TCP/IP vs OSI", "Application Layer"]
+  },
+  {
+    "question": "Which of the following best describes an IPv4 address?",
+    "options": [
+      "A 128-bit identifier for network interfaces",
+      "A 32-bit number that uniquely identifies a device on a network",
+      "A domain name resolved by DNS",
+      "A physical hardware address"
+    ],
+    "answer": "A 32-bit number that uniquely identifies a device on a network",
+    "explanation": "IPv4 addresses are 32-bit numbers typically represented in dotted-decimal notation (e.g., 192.168.1.1) and identify devices on IP networks.",
+    "tags": ["IP Addressing", "IPv4", "Addressing"]
+  },
+  {
+    "question": "What is the purpose of a subnet mask?",
+    "options": [
+      "To encrypt traffic between subnets",
+      "To determine the network and host portions of an IP address",
+      "To assign dynamic IP addresses",
+      "To resolve domain names"
+    ],
+    "answer": "To determine the network and host portions of an IP address",
+    "explanation": "A subnet mask separates the network part from the host part of an IP address, enabling proper routing within and between networks.",
+    "tags": ["IP Addressing", "Subnet Mask", "Networking"]
+  },
+  {
+    "question": "Which service automatically assigns IP addresses to devices on a network?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "NAT",
+      "ARP"
+    ],
+    "answer": "DHCP",
+    "explanation": "Dynamic Host Configuration Protocol (DHCP) automatically assigns IP addresses, subnet masks, gateways, and other network parameters to clients.",
+    "tags": ["IP Addressing", "DHCP", "Configuration"]
+  },
+  {
+    "question": "What is the primary difference between DHCP and static IP configuration?",
+    "options": [
+      "DHCP requires manual setup; static IPs are automatic",
+      "DHCP assigns IPs dynamically; static IPs are manually assigned and fixed",
+      "Static IPs use DNS; DHCP does not",
+      "There is no difference"
+    ],
+    "answer": "DHCP assigns IPs dynamically; static IPs are manually assigned and fixed",
+    "explanation": "DHCP provides dynamic IP assignment, while static IP configuration involves manually setting a permanent IP address on a device.",
+    "tags": ["IP Addressing", "DHCP vs Static", "Network Config"]
+  },
+  {
+    "question": "Which component translates human-readable domain names into IP addresses?",
+    "options": [
+      "Router",
+      "Switch",
+      "DNS Resolver",
+      "Firewall"
+    ],
+    "answer": "DNS Resolver",
+    "explanation": "A DNS resolver initiates the process of translating domain names (like google.com) into corresponding IP addresses.",
+    "tags": ["IP Addressing", "DNS", "Domain Resolution"]
+  },
+  {
+    "question": "What is the role of an authoritative DNS server?",
+    "options": [
+      "To cache recent queries",
+      "To act as a forwarding agent",
+      "To hold the official records for a domain",
+      "To block malicious domains"
+    ],
+    "answer": "To hold the official records for a domain",
+    "explanation": "An authoritative DNS server stores and provides definitive answers about a domain’s DNS records (e.g., A, CNAME, MX).",
+    "tags": ["IP Addressing", "DNS", "Authoritative Server"]
+  },
+  {
+    "question": "Which command would you use to trace the path a packet takes to reach a destination?",
+    "options": [
+      "ping",
+      "nslookup",
+      "traceroute",
+      "curl"
+    ],
+    "answer": "traceroute",
+    "explanation": "Traceroute shows the route packets take across the network, displaying each hop and latency between them.",
+    "tags": ["IP Addressing", "Tracing", "Network Diagnostics"]
+  },
+  {
+    "question": "Which transport protocol ensures reliable, ordered delivery of data?",
+    "options": [
+      "UDP",
+      "ICMP",
+      "TCP",
+      "ARP"
+    ],
+    "answer": "TCP",
+    "explanation": "Transmission Control Protocol (TCP) guarantees reliable, connection-oriented communication with error checking and retransmission of lost packets.",
+    "tags": ["Transport Protocols", "TCP", "Reliability"]
+  },
+  {
+    "question": "Which protocol is connectionless and commonly used for real-time applications like video streaming?",
+    "options": [
+      "TCP",
+      "HTTP",
+      "UDP",
+      "FTP"
+    ],
+    "answer": "UDP",
+    "explanation": "User Datagram Protocol (UDP) is connectionless and fast, making it ideal for time-sensitive applications where some data loss is acceptable.",
+    "tags": ["Transport Protocols", "UDP", "Real-Time Applications"]
+  },
+  {
+    "question": "Which port number is commonly associated with HTTPS?",
+    "options": [
+      "80",
+      "22",
+      "443",
+      "53"
+    ],
+    "answer": "443",
+    "explanation": "Port 443 is the standard port used for HTTPS, which encrypts HTTP traffic using TLS/SSL.",
+    "tags": ["Transport Protocols", "Ports", "HTTPS"]
+  },
+  {
+    "question": "What happens when a port is 'closed' on a server?",
+    "options": [
+      "It accepts all incoming connections",
+      "It drops or rejects incoming connection attempts",
+      "It routes traffic to another port",
+      "It enables encryption"
+    ],
+    "answer": "It drops or rejects incoming connection attempts",
+    "explanation": "A closed port refuses incoming connections, either dropping packets or sending a rejection response (e.g., TCP RST).",
+    "tags": ["Transport Protocols", "Port Security", "Firewall"]
+  },
+  {
+    "question": "Which of the following best describes the HTTP request/response cycle?",
+    "options": [
+      "The client sends a request; the server processes it and returns a response",
+      "The server continuously pushes data to the client",
+      "Both client and server send unsolicited messages",
+      "The client waits for the server to initiate contact"
+    ],
+    "answer": "The client sends a request; the server processes it and returns a response",
+    "explanation": "In the HTTP model, the client initiates a request (e.g., GET), and the server responds with status code and content.",
+    "tags": ["Application Protocols", "HTTP", "Request-Response"]
+  },
+  {
+    "question": "What additional layer does HTTPS provide compared to HTTP?",
+    "options": [
+      "Compression",
+      "Caching",
+      "TLS Encryption",
+      "Routing"
+    ],
+    "answer": "TLS Encryption",
+    "explanation": "HTTPS adds Transport Layer Security (TLS) encryption over HTTP, securing data in transit against eavesdropping and tampering.",
+    "tags": ["Application Protocols", "HTTPS", "Security"]
+  },
+  {
+    "question": "When is FTP typically used?",
+    "options": [
+      "For secure remote login",
+      "For transferring files between systems, especially legacy ones",
+      "For web browsing",
+      "For email transmission"
+    ],
+    "answer": "For transferring files between systems, especially legacy ones",
+    "explanation": "FTP (File Transfer Protocol) is used for uploading/downloading files, though it lacks encryption unless secured via FTPS or SFTP.",
+    "tags": ["Application Protocols", "FTP", "File Transfer"]
+  },
+  {
+    "question": "Which protocol provides secure remote command-line access to a server?",
+    "options": [
+      "Telnet",
+      "FTP",
+      "SSH",
+      "HTTP"
+    ],
+    "answer": "SSH",
+    "explanation": "Secure Shell (SSH) allows encrypted remote login and command execution, replacing insecure protocols like Telnet.",
+    "tags": ["Application Protocols", "SSH", "Remote Access"]
+  },
+  {
+    "question": "What is the basic function of a firewall?",
+    "options": [
+      "To speed up internet connections",
+      "To prevent unauthorized access while allowing legitimate traffic",
+      "To assign IP addresses",
+      "To resolve domain names"
+    ],
+    "answer": "To prevent unauthorized access while allowing legitimate traffic",
+    "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on predefined security rules.",
+    "tags": ["Application Protocols", "Firewall", "Security"]
+  },
+  {
+    "question": "How do firewalls enforce rules?",
+    "options": [
+      "By changing DNS settings",
+      "By inspecting packets and applying allow/deny policies based on IP, port, or protocol",
+      "By compressing data",
+      "By caching websites"
+    ],
+    "answer": "By inspecting packets and applying allow/deny policies based on IP, port, or protocol",
+    "explanation": "Firewalls analyze packet headers and apply filtering rules to decide whether to permit or block traffic.",
+    "tags": ["Application Protocols", "Firewall", "Packet Filtering"]
+  },
+  {
+    "question": "Which hardware component executes instructions and performs calculations?",
+    "options": [
+      "RAM",
+      "Disk",
+      "CPU",
+      "GPU"
+    ],
+    "answer": "CPU",
+    "explanation": "The Central Processing Unit (CPU) is responsible for executing instructions and performing computational tasks.",
+    "tags": ["Operating Systems", "Hardware", "CPU"]
+  },
+  {
+    "question": "What is the primary role of RAM in a computer system?",
+    "options": [
+      "Long-term storage of files",
+      "Running programs and storing active data temporarily",
+      "Displaying graphics",
+      "Connecting to the internet"
+    ],
+    "answer": "Running programs and storing active data temporarily",
+    "explanation": "RAM (Random Access Memory) holds data and machine code currently being used, providing fast access for the CPU.",
+    "tags": ["Operating Systems", "RAM", "Memory"]
+  },
+  {
+    "question": "Which term refers to a running instance of a program?",
+    "options": [
+      "Service",
+      "Daemon",
+      "Process",
+      "Thread"
+    ],
+    "answer": "Process",
+    "explanation": "A process is a running instance of a program, allocated memory and system resources by the OS.",
+    "tags": ["Operating Systems", "Processes", "Program Execution"]
+  },
+  {
+    "question": "What is the difference between a service in Windows and a daemon in Linux?",
+    "options": [
+      "Services run in user mode; daemons run in kernel mode",
+      "They are essentially the same concept: background processes that start automatically",
+      "Daemons are only for GUI apps",
+      "Services cannot be managed via CLI"
+    ],
+    "answer": "They are essentially the same concept: background processes that start automatically",
+    "explanation": "Both services (Windows) and daemons (Linux) refer to background processes that run without user interaction and often start at boot.",
+    "tags": ["Operating Systems", "Services", "Daemons"]
+  },
+  {
+    "question": "What is the root directory in Linux?",
+    "options": [
+      "C:\\",
+      "/",
+      "Desktop",
+      "Documents"
+    ],
+    "answer": "/",
+    "explanation": "In Linux, the root directory is denoted by '/', serving as the top-level directory in the file system hierarchy.",
+    "tags": ["Operating Systems", "File System", "Linux"]
+  },
+  {
+    "question": "Which command changes file permissions in Linux?",
+    "options": [
+      "chown",
+      "chmod",
+      "ls",
+      "cp"
+    ],
+    "answer": "chmod",
+    "explanation": "The chmod command modifies read, write, and execute permissions for users, groups, and others on a file or directory.",
+    "tags": ["Operating Systems", "Permissions", "chmod"]
+  },
+  {
+    "question": "What does 'chown' do in Linux?",
+    "options": [
+      "Changes file ownership",
+      "Changes file permissions",
+      "Copies a file",
+      "Lists directory contents"
+    ],
+    "answer": "Changes file ownership",
+    "explanation": "The chown command changes the owner and/or group of a file or directory.",
+    "tags": ["Operating Systems", "Permissions", "chown"]
+  },
+  {
+    "question": "Which tool can be used to monitor CPU and memory usage in real time?",
+    "options": [
+      "ping",
+      "top / htop",
+      "nslookup",
+      "traceroute"
+    ],
+    "answer": "top / htop",
+    "explanation": "The top and htop commands display real-time system statistics including CPU, memory, and running processes.",
+    "tags": ["Operating Systems", "Monitoring", "System Resources"]
+  },
+  {
+    "question": "What is a hypervisor?",
+    "options": [
+      "A type of firewall",
+      "Software that creates and manages virtual machines",
+      "A network switch for VMs",
+      "An operating system"
+    ],
+    "answer": "Software that creates and manages virtual machines",
+    "explanation": "A hypervisor (or VMM – Virtual Machine Monitor) enables multiple VMs to run on a single physical host by abstracting hardware resources.",
+    "tags": ["Virtualization", "Hypervisor", "VM Management"]
+  },
+  {
+    "question": "What is the key difference between Type 1 and Type 2 hypervisors?",
+    "options": [
+      "Type 1 runs on bare metal; Type 2 runs on top of an OS",
+      "Type 1 is slower than Type 2",
+      "Type 2 is more secure",
+      "Type 1 only supports one VM"
+    ],
+    "answer": "Type 1 runs on bare metal; Type 2 runs on top of an OS",
+    "explanation": "Type 1 (bare-metal) hypervisors run directly on hardware (e.g., VMware ESXi), while Type 2 (hosted) run on a host OS (e.g., VirtualBox).",
+    "tags": ["Virtualization", "Hypervisor", "Type 1 vs Type 2"]
+  },
+  {
+    "question": "Which of the following is a benefit of virtual machines (VMs)?",
+    "options": [
+      "Higher resource overhead than containers",
+      "Strong isolation between environments",
+      "Slower startup times",
+      "Limited scalability"
+    ],
+    "answer": "Strong isolation between environments",
+    "explanation": "VMs provide strong isolation since each runs its own OS, enhancing security and stability across workloads.",
+    "tags": ["Virtualization", "VM Benefits", "Isolation"]
+  },
+  {
+    "question": "What is a container?",
+    "options": [
+      "A full virtual machine with its own OS",
+      "A lightweight, isolated process sharing the host OS kernel",
+      "A type of firewall rule",
+      "A cloud storage bucket"
+    ],
+    "answer": "A lightweight, isolated process sharing the host OS kernel",
+    "explanation": "Containers package applications and dependencies together, sharing the host OS kernel for efficiency while maintaining isolation.",
+    "tags": ["Containerization", "Containers", "Concept"]
+  },
+  {
+    "question": "How do containers differ from VMs in terms of resource usage?",
+    "options": [
+      "Containers use more RAM and CPU",
+      "Containers are heavier due to separate OS instances",
+      "Containers are lighter and faster because they share the host OS",
+      "There is no difference"
+    ],
+    "answer": "Containers are lighter and faster because they share the host OS",
+    "explanation": "Containers share the host OS kernel and don't require a full guest OS, resulting in lower overhead and faster startup times.",
+    "tags": ["Containerization", "Containers vs VMs", "Efficiency"]
+  },
+  {
+    "question": "What is a Docker image?",
+    "options": [
+      "A running container",
+      "A snapshot of a container's filesystem and metadata",
+      "A log file",
+      "A network configuration"
+    ],
+    "answer": "A snapshot of a container's filesystem and metadata",
+    "explanation": "A Docker image is a read-only template containing the application code, libraries, and configurations needed to run a container.",
+    "tags": ["Containerization", "Docker", "Images"]
+  },
+  {
+    "question": "Which command builds a Docker image from a Dockerfile?",
+    "options": [
+      "docker run",
+      "docker pull",
+      "docker build",
+      "docker push"
+    ],
+    "answer": "docker build",
+    "explanation": "The `docker build` command constructs a Docker image from a Dockerfile and context.",
+    "tags": ["Containerization", "Docker", "Commands"]
+  },
+  {
+    "question": "Which command starts a new container from an image?",
+    "options": [
+      "docker create",
+      "docker start",
+      "docker run",
+      "docker exec"
+    ],
+    "answer": "docker run",
+    "explanation": "`docker run` creates and starts a new container from a specified image.",
+    "tags": ["Containerization", "Docker", "Commands"]
+  },
+  {
+    "question": "Which scenario is better suited for VMs rather than containers?",
+    "options": [
+      "Running microservices with shared OS",
+      "Hosting applications requiring different OS types (e.g., Windows + Linux)",
+      "Fast-scaling APIs",
+      "CI/CD pipelines"
+    ],
+    "answer": "Hosting applications requiring different OS types (e.g., Windows + Linux)",
+    "explanation": "VMs support multiple operating systems on the same host, whereas containers rely on the host OS kernel and are limited to similar OS types.",
+    "tags": ["Containerization", "Use Cases", "VM vs Container"]
+  },
+  {
+    "question": "Which command pulls a Docker image from a registry?",
+    "options": [
+      "docker export",
+      "docker save",
+      "docker pull",
+      "docker load"
+    ],
+    "answer": "docker pull",
+    "explanation": "`docker pull` downloads a pre-built image from a registry like Docker Hub.",
+    "tags": ["Containerization", "Docker", "Commands"]
+  },
+  {
+    "question": "Which command pushes a Docker image to a registry?",
+    "options": [
+      "docker upload",
+      "docker send",
+      "docker push",
+      "docker deploy"
+    ],
+    "answer": "docker push",
+    "explanation": "`docker push` uploads a tagged image to a container registry such as Docker Hub or AWS ECR.",
+    "tags": ["Containerization", "Docker", "Commands"]
+  },
+  {
+    "question": "Which tool allows you to set up a virtual lab environment on your PC?",
+    "options": [
+      "Docker",
+      "VirtualBox",
+      "curl",
+      "ping"
+    ],
+    "answer": "VirtualBox",
+    "explanation": "Oracle VirtualBox is a Type 2 hypervisor that lets users create and manage virtual machines for testing and learning.",
+    "tags": ["Bonus", "Lab Setup", "VirtualBox"]
+  },
+  {
+    "question": "Which command tests connectivity to another host?",
+    "options": [
+      "traceroute",
+      "ping",
+      "nslookup",
+      "netstat"
+    ],
+    "answer": "ping",
+    "explanation": "The ping command sends ICMP echo requests to test reachability and round-trip time to a target host.",
+    "tags": ["Bonus", "Networking Commands", "ping"]
+  },
+  {
+    "question": "Which command retrieves information about DNS records?",
+    "options": [
+      "ping",
+      "curl",
+      "nslookup",
+      "ss"
+    ],
+    "answer": "nslookup",
+    "explanation": "nslookup queries DNS servers to obtain domain name or IP address mappings.",
+    "tags": ["Bonus", "Networking Commands", "nslookup"]
+  },
+  {
+    "question": "Which command displays active network connections and listening ports?",
+    "options": [
+      "ping",
+      "traceroute",
+      "netstat or ss",
+      "curl"
+    ],
+    "answer": "netstat or ss",
+    "explanation": "Both netstat and ss (socket statistics) show open ports, connections, and routing tables.",
+    "tags": ["Bonus", "Networking Commands", "netstat"]
+  },
+  {
+    "question": "Which command transfers data from a URL?",
+    "options": [
+      "ping",
+      "traceroute",
+      "curl",
+      "nslookup"
+    ],
+    "answer": "curl",
+    "explanation": "curl is a command-line tool for transferring data using URLs, supporting protocols like HTTP, HTTPS, FTP, etc.",
+    "tags": ["Bonus", "Networking Commands", "curl"]
+  },
   {
     "question": "What is the primary purpose of AWS Database Migration Service (DMS)?",
     "options": [
