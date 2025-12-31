@@ -87,8 +87,6 @@
     ]
   },
   "skillsCloud": [
-    "TypeScript",
-    "Redis",
     "Persistency",
     "Caching",
     "RDB",
@@ -158,58 +156,91 @@
   ],
   "experiences": {
     "ATOS": {
-      "title": "Senior Fullstack Developer @ ATOS (Freelance / Hybrid)",
-      "location": "Casablanca, MA",
-      "dates": "05/2025 - Present",
-      "description": "Developing and maintaining many business services for TangerMed Port Authority.",
+      "title": "Full Stack Engineer @ Atos (Freelance)",
+      "location": "Casablanca Metropolitan Area · Hybrid",
+      "dates": "May 2025 - Oct 2025",
+      "description": "Maintained and developed fullstack features in a microfrontend / microservice architecture for Tangermed Port Community System.",
       "customers": ["TangerMed"],
       "industries": ["Port Authority", "Logistics"],
-      "skills": "Javascript, React, Node, Express, MongoDB, Docker, Kubernetes, CI/CD",
+      "skills": "Node.js, Full-Stack Development, MERN Stack, Sonarqube, Rancher, MongoDB, React.js, Microservices, Microfrontend, Jest, vitest, CI/CD, Git, Material UI",
       "achievements": [
-        "Developed and maintained software functionalities.",
-        "Collaborated with cross-functional teams."
+        "Maintained and developed fullstack features for Tangermed Port Community System (PCS).",
+        "Worked across microfrontend and microservice boundaries to deliver reliable production releases."
       ]
     },
-    "AlaaNext1": {
-      "title": "Fullstack Developer @ AlaaNext ( Freelance / Remote )",
-      "location": "Casablanca, MA (Fully Remote)",
-      "dates": "11/2024 - 05/2025",
-      "description": "Worked on different solutions both on the frontend and backend.",
-      "customers": ["Klever Mobility"],
-      "industries": ["Retail"],
-      "skills": "n8n, crewAI, python, Javascript, APIs",
+    "DEVUP": {
+      "title": "AI Developer @ DEV-UP (Contract)",
+      "location": "Remote",
+      "dates": "Apr 2025 - May 2025",
+      "description": "Built an agentic AI system that automatically qualifies, classifies, and cleans a high-volume customer support inbox.",
+      "customers": [],
+      "industries": ["AI", "Automation"],
+      "skills": "CrewAI, n8n, OAuth, Python",
       "achievements": [
-        "Build AI agents on n8n to automate lead generation tasks."
+        "Designed and implemented autonomous agents to process and triage incoming support messages.",
+        "Improved inbox throughput and reduced manual triage time with automated classification and cleanup pipelines."
       ]
     },
     "Inetum": {
-      "title": "Frontend Developer @ Inetum ( Freelance / Hybrid )",
-      "location": "Casablanca, MA",
-      "dates": "11/2022 - 11/2024",
-      "description": "Developing and maintaining PLM applications in the manufacturing sector.",
-      "customers": ["Airbus", "Stelia Aerospace", "Thales"],
+      "title": "Frontend Engineer @ Inetum (Freelance)",
+      "location": "Casablanca Metropolitan Area · Hybrid",
+      "dates": "Oct 2022 - Sep 2024",
+      "description": "Developed and maintained PLM solutions in the aeronautic industry for customers such as Airbus, Premium Aerotec GmbH, and Thalès.",
+      "customers": ["Airbus", "Premium Aerotec GmbH", "Thalès"],
       "industries": ["Manufacturing", "Aerospace"],
-      "skills": "Javascript, HTML, CSS, JAVA, Thingworx, Windchill.",
+      "skills": "Windchill 9.1, JavaScript, TypeScript, PTC ThingWorx, Version Control, CI/CD, Git, Deno",
       "achievements": [
-        "Developed and maintained software functionalities.",
-        "Collaborated with cross-functional teams.",
-        "Led code reviews, troubleshooting and bug fixing.",
-        "Provided onboarding to new team members"
+        "Delivered PLM features and integrations for aeronautic customers.",
+        "Participated in code reviews, debugging and onboarding of new engineers."
       ]
     },
-    "AlaaNext2": {
-      "title": "Fullstack Developer @ AlaaNext ( Freelance / Remote )",
-      "location": "Casablanca, MA",
-      "dates": "03/2016 - 11/1022",
-      "description": "Worked on different solutions both on the frontend and backend.",
+    "Komplians": {
+      "title": "Technical Lead @ Komplians (Freelance)",
+      "location": "Casablanca Metropolitan Area · Hybrid",
+      "dates": "Jun 2020 - May 2023",
+      "description": "Led development of a SaaS compliance management platform and related integrations and migrations.",
+      "customers": [],
+      "industries": ["Compliance", "SaaS"],
+      "skills": "PHP, Laravel, JavaScript, Svelte, React, Next.js, AngularJS, Git, PHPUnit, Version Control",
+      "achievements": [
+        "Built a SaaS compliance management platform for Komplians.",
+        "Led an e-learning platform migration to Moodle and developed a custom CSR solution to help domaines-agricoles comply with ISO26000."
+      ]
+    },
+    "IntelciaIT": {
+      "title": "Fullstack Developer @ Intelcia IT Solutions (Freelance)",
+      "location": "Hybrid",
+      "dates": "Sep 2022 - Nov 2022",
+      "description": "Re-built the SFR Lost Mobile Portal front-end and backend.",
+      "customers": [],
+      "industries": ["Telecom"],
+      "skills": "Svelte, PHP, Elasticsearch, Bases de données distribuées, JavaScript, Node.js",
+      "achievements": [
+        "Re-built the Lost Mobile Portal end-to-end improving stability and maintainability."
+      ]
+    },
+    "SmartWorkers": {
+      "title": "Web Developer @ SmartWorkers (Contract)",
+      "location": "Remote",
+      "dates": "May 2021 - Apr 2022",
+      "description": "Developed and maintained the Klever Dealers Portal for Klever Mobility.",
       "customers": ["Klever Mobility"],
       "industries": ["Retail"],
-      "skills": "Laravel, Php, Vue, React, Wordpress, Strapi, Node, Express, SQL, AFAS API",
+      "skills": "JavaScript, PHP, Node.js, Frontend Development",
       "achievements": [
-        "Developed functionalities for a dealers portal for a dutch e-bikes supplier ( Klever Mobility ).",
-        "Led a team of 2 developers in building a patient management system. (helppo )",
-        "Developed the frontend and backend of a booking system ( roompot.nl )",
-        "Developed landing pages and websites using wordpress (bubbelbal.nl, ozylshop.com..)"
+        "Implemented features and maintenance for the dealers portal used by Klever Mobility."
+      ]
+    },
+    "APHP": {
+      "title": "Project Intern @ AP-HP, Assistance Publique - Hôpitaux de Paris",
+      "location": "Paris et périphérie · On-site",
+      "dates": "May 2014 - Jul 2014",
+      "description": "Project internship working on hospital-related systems and processes.",
+      "customers": [],
+      "industries": ["Healthcare"],
+      "skills": "",
+      "achievements": [
+        "Completed a 3-month project internship within AP-HP."
       ]
     }
   },
@@ -329,14 +360,33 @@
   ],
   "certifications": [
     {
-      "org": "AWS",
-      "certs": ["AWS Certified Cloud Practitioner", "AWS Certified Solutions Architect - Associate"],
-      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/CompTIA"
+      "org": "Microsoft Azure",
+      "certs": [
+        "Azure Administrator Associate (AZ-104) (Prep)",
+        "Azure Developer Associate (AZ-204) (Prep)"
+      ],
+      "link": "https://learn.microsoft.com/en-us/certifications/"
     },
     {
-      "org": "CompTIA",
-      "certs": ["IT Fundamentals+", "A+ Core 1", "A+ Core 2", "Network+", "Security+", "Cloud+"],
-      "link": "https://github.com/m-housni/portfolio/tree/main/Certifications/CompTIA"
+      "org": "HashiCorp",
+      "certs": [
+        "HashiCorp Certified: Terraform Associate (Prep)"
+      ],
+      "link": "https://learn.hashicorp.com/certification"
+    },
+    {
+      "org": "AWS",
+      "certs": [
+        "AWS Certified Solutions Architect - Associate (Prep)"
+      ],
+      "link": "https://aws.amazon.com/certification/"
+    },
+    {
+      "org": "Scrum.org",
+      "certs": [
+        "Professional Scrum Master I (PSM I)"
+      ],
+      "link": "https://www.scrum.org/certifications"
     }
   ],
   "education": {
