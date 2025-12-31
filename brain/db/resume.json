@@ -188,7 +188,7 @@
       "description": "Developed and maintained PLM solutions in the aeronautic industry for customers such as Airbus, Premium Aerotec GmbH, and Thalès.",
       "customers": ["Airbus", "Premium Aerotec GmbH", "Thalès"],
       "industries": ["Manufacturing", "Aerospace"],
-      "skills": "Windchill 9.1, JavaScript, TypeScript, PTC ThingWorx, Version Control, CI/CD, Git, Deno",
+      "skills": "Windchill 9.1, JavaScript, TypeScript, OData, PTC ThingWorx, Version Control, CI/CD, Git, Deno",
       "achievements": [
         "Delivered PLM features and integrations for aeronautic customers.",
         "Participated in code reviews, debugging and onboarding of new engineers."
@@ -226,7 +226,7 @@
       "description": "Developed and maintained the Klever Dealers Portal for Klever Mobility.",
       "customers": ["Klever Mobility"],
       "industries": ["Retail"],
-      "skills": "JavaScript, PHP, Node.js, Frontend Development",
+      "skills": "JavaScript, PHP, Node.js, Frontend Development, Laravel, MySQL, Version Control, Git",
       "achievements": [
         "Implemented features and maintenance for the dealers portal used by Klever Mobility."
       ]
@@ -391,7 +391,7 @@
   ],
   "education": {
     "Master": {
-      "degree": "MSc in Science et Technologies du Logiciel (M1)",
+      "degree": "MSc in Mechatronic Systems for Rehabilitation (M1)",
       "school": "Sorbonne Universités - UPMC",
       "dates": "2014-2015",
       "location": "Paris, FR"
