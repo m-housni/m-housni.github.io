@@ -390,17 +390,43 @@
     }
   ],
   "education": {
+    "ExecutiveMBA": {
+      "degree": "Executive MBA, Cloud Computing",
+      "school": "École Hassania des Travaux Publics - المدرسة الحسنية للأشغال العمومية",
+      "dates": "Oct 2025",
+      "location": "Casablanca, MA",
+      "skills": [
+        "Cloud Computing",
+        "Microsoft Azure",
+        "Amazon Web Services (AWS)",
+        "Google Cloud Platform (GCP)",
+        "DevOps"
+      ]
+    },
     "Master": {
       "degree": "MSc in Mechatronic Systems for Rehabilitation (M1)",
-      "school": "Sorbonne Universités - UPMC",
-      "dates": "2014-2015",
-      "location": "Paris, FR"
+      "school": "Pierre and Marie Curie University (Sorbonne Universités - UPMC)",
+      "dates": "Jan 2014 - Dec 2015",
+      "location": "Paris, FR",
+      "grade": "M1"
     },
     "Bachelor": {
-      "degree": "BSc in Industrial Engineering",
-      "school": "Universite Abdelmalek Essaadi - FST",
-      "dates": "2009-2012",
+      "degree": "Bachelor's degree, Industrial Engineering",
+      "school": "Faculty of Science and Technology Tangier - Universite Abdelmalek Essaadi - FST",
+      "dates": "Sep 2012 - Jun 2013",
       "location": "Tangier, MA"
+    },
+    "Foundation": {
+      "degree": "Foundation degree, Mechanical and Electrical Engineering",
+      "school": "Faculty of Science and Technology Tangier",
+      "dates": "Sep 2010 - Jun 2011",
+      "location": "Tangier, MA"
+    },
+    "HighSchool": {
+      "degree": "High School Diploma, Science and Technology",
+      "school": "Université Moulay Ismail Meknès",
+      "dates": "Sep 2008 - Jun 2009",
+      "location": "Meknès, MA"
     }
   },
   "languages": {
