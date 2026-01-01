@@ -1,0 +1,374 @@
+{
+  "info": {
+    "name": "Mohamed Housni",
+    "title": "Ingénieur Fullstack | Javascript, Node, React, Angular, Devops, CI/CD",
+    "location": "Casablanca, MA",
+    "email": "mh@mohamedhousni.dev",
+    "phone": "+212708113636",
+    "websiteUrl": "https://mohamedhousni.dev",
+    "websiteText": "mohamedhousni.dev",
+    "linkedinText": "linkedin.com/in/m-housni",
+    "linkedinUrl": "https://linkedin.com/in/m-housni",
+    "githubUrl": "https://github.com/m-housni",
+    "githubText": "github.com/m-housni",
+    "summary": "Depuis plus de 𝟵 𝗮𝗻𝘀, j'ai évolué dans divers secteurs, notamment le 𝗣𝗟𝗠, les 𝗧𝗲𝗹𝗲𝗰𝗼𝗺𝘀, la 𝗖𝗼𝗻𝗳𝗼𝗿𝗺𝗶𝘁𝗲́, l'𝗘-𝗖𝗼𝗺𝗺𝗲𝗿𝗰𝗲 et la 𝗟𝗼𝗴𝗶𝘀𝘁𝗶𝘁𝗶𝗾𝘂𝗲, gérant de nombreux projets et responsabilités.<br><br>• Chez 𝗔𝘁𝗼𝘀, j'ai maintenu et développé plusieurs microservices fullstack pour TangerMed PCS.<br>• Chez 𝗗𝗲𝘃𝗨𝗽, j'ai conçu plusieurs agents IA pour divers cas d'usage, améliorant ainsi la productivité.<br>• Chez 𝗜𝗻𝗲𝘁𝘂𝗺, j'ai construit et maintenu des applications PLM.<br>• Chez 𝗞𝗼𝗺𝗽𝗹𝗶𝗮𝗻𝘀, j'ai dirigé une équipe et développé un SaaS de conformité.<br>• Chez AlaaNext, j'ai travaillé sur des portails concessionnaires et des systèmes de réservation.<br><br>J'apporte un 𝗳𝗼𝗿𝘁 𝗲𝘀𝗽𝗿𝗶𝘁 𝗱'𝗲́𝗾𝘂𝗶𝗽𝗲, une grande 𝗮𝗱𝗮𝗽𝘁𝗮𝗯𝗶𝗹𝗶𝘁𝗲́ et des capacités de 𝗿𝗲́𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗱𝗲 𝗽𝗿𝗼𝗯𝗹𝗲̀𝗺𝗲𝘀. Je recherche un rôle où je peux développer des solutions 𝘀𝗰𝗮𝗹𝗮𝗯𝗹𝗲𝘀 𝗮̀ 𝗵𝗮𝘂𝘁 𝗶𝗺𝗽𝗮𝗰𝘁.",
+    "summary1": "Je suis un Ingénieur Fullstack JavaScript avec <b>9 ans</b> d'expérience dans la création et le passage à l'échelle d'applications web. Je me spécialise dans les frameworks <b>frontend</b> modernes comme <b>React</b> et <b>Angular</b>, ainsi que dans les technologies <b>backend</b> telles que <b>Node</b>, <b>Express</b> et <b>MongoDB</b>. <br><br> Au fil des années, j'ai travaillé sur l'automatisation de <b>pipelines CI/CD</b>, la conception de <b>microservices</b> et l'optimisation des <b>performances</b> applicatives. J'apprécie collaborer avec des équipes pluridisciplinaires, relever les défis liés au code legacy et créer des solutions centrées sur l'utilisateur qui génèrent un réel impact métier.<br><br> Passionné par le <b>code propre et maintenable</b>, je respecte les meilleures pratiques telles que le <b>TDD</b> et les <b>design patterns</b> évolutifs pour bâtir des logiciels robustes répondant aux besoins des utilisateurs."
+  },
+  "focusAreas": [
+    "Redis",
+    "Kafka",
+    "Docker",
+    "Microservices",
+    "Angular",
+    "React",
+    "Vanilla Javascript",
+    "OpenAI",
+    "GraphQL",
+    "IA Agentique",
+    "Cloud"
+  ],
+  "skills": {
+    "Langages": [
+      "TypeScript, JavaScript",
+      "SQL, PLSQL, GraphQL",
+      "HTML, CSS, SCSS",
+      "JSON, XML, YAML",
+      "Java, PHP, Python"
+    ],
+    "Frontend": [
+      "Angular",
+      "React / Next",
+      "Vue / Nuxt",
+      "Svelte / SvelteKit",
+      "Web Components"
+    ],
+    "Backend": ["Node", "Express", "NestJS", "Koa", "Strapi"],
+    "Bases de données": [
+      "MongoDB",
+      "MySQL, PostgreSQL",
+      "Redis",
+      "Elasticsearch",
+      "Firebase"
+    ],
+    "Outils": [
+      "Git, Git flow",
+      "Jenkins / Github Actions",
+      "Docker",
+      "Webpack",
+      "Babel"
+    ],
+    "Tests / Monitoring": [
+      "Jest, Mocha",
+      "Insomnia, Postman",
+      "k6, JMeter",
+      "Prometheus, Grafana",
+      "Sentry"
+    ],
+    "APIs": [
+      "Rest, oData",
+      "GraphQL",
+      "WebSockets",
+      "Algolia, OpenAI",
+      "Twilio, Stripe"
+    ],
+    "Méthodologies": [
+      "Agile, Scrum",
+      "TDD, DDD, CI/CD, OOP, SOLID",
+      "Architectural Patterns",
+      "Design Patterns",
+      "System Design"
+    ],
+    "Soft Skills": [
+      "Résolution de problèmes",
+      "Travail d'équipe",
+      "Communication",
+      "Leadership",
+      "Gestion du temps"
+    ]
+  },
+  "skillsCloud": [
+    "Persistency", "Caching", "RDB", "AOF", "RDBMS", "NoSQL", "MongoDB", "Elasticsearch", "Firebase", "WebSockets", "Algolia", "JavaScript", "SQL", "Thingworx", "Windchill", "oData", "OpenAI", "Twilio", "Stripe", "Rest", "Oracle Databases", "SQL Server", "PLSQL", "GraphQL", "HTML", "CSS", "SCSS", "JSON", "XML", "YAML", "Java", "PHP", "Python", "Angular", "React", "Next", "Vue", "Nuxt", "Svelte", "SvelteKit", "Web Components", "Express", "Koa", "NestJS", "MeteorJS", "AdonisJS", "MySQL", "PostgreSQL", "Redis", "Git", "Git flow", "Jenkins", "Github Actions", "Docker", "Webpack", "Babel", "Jest", "Mocha", "Insomnia", "Postman", "k6", "JMeter"
+  ],
+  "experiences": {
+    "ATOS": {
+      "title": "Ingénieur Full Stack @ Atos (Freelance)",
+      "location": "Casablanca · Hybride",
+      "dates": "Mai 2025 - Oct 2025",
+      "description": "Maintenance et développement de fonctionnalités fullstack dans une architecture micro-frontend / microservices pour le TangerMed Port Community System.",
+      "customers": ["TangerMed"],
+      "industries": ["Autorité Portuaire", "Logistique"],
+      "skills": "Node.js, Full-Stack Development, MERN Stack, Sonarqube, Rancher, MongoDB, React.js, Microservices, Microfrontend, Jest, vitest, CI/CD, Git, Material UI",
+      "achievements": [
+        "Maintenu et développé des fonctionnalités fullstack pour le TangerMed Port Community System (PCS).",
+        "Intervention sur les périmètres micro-frontend et microservices pour assurer des déploiements fiables en production."
+      ]
+    },
+    "DEVUP": {
+      "title": "Développeur IA @ DEV-UP (Contractuel)",
+      "location": "À distance",
+      "dates": "Avr 2025 - Mai 2025",
+      "description": "Construction d'un système d'IA agentique pour qualifier, classifier et nettoyer automatiquement une boîte de réception support client à haut volume.",
+      "customers": [],
+      "industries": ["IA", "Automatisation"],
+      "skills": "CrewAI, n8n, OAuth, Python",
+      "achievements": [
+        "Conçu et implémenté des agents autonomes pour traiter et trier les messages de support entrants.",
+        "Amélioré le débit de traitement des emails et réduit le temps de tri manuel grâce à des pipelines de classification automatisés."
+      ]
+    },
+    "Inetum": {
+      "title": "Ingénieur Frontend @ Inetum (Freelance)",
+      "location": "Casablanca · Hybride",
+      "dates": "Oct 2022 - Sep 2024",
+      "description": "Développement et maintenance de solutions PLM dans le secteur aéronautique pour des clients tels qu'Airbus, Premium Aerotec GmbH et Thalès.",
+      "customers": ["Airbus", "Premium Aerotec GmbH", "Thalès"],
+      "industries": ["Industrie", "Aéronautique"],
+      "skills": "Windchill 9.1, JavaScript, TypeScript, OData, PTC ThingWorx, Version Control, CI/CD, Git, Deno",
+      "achievements": [
+        "Livraison de fonctionnalités PLM et d'intégrations pour des clients aéronautiques majeurs.",
+        "Participation aux revues de code, au débogage et à l'onboarding des nouveaux ingénieurs."
+      ]
+    },
+    "Komplians": {
+      "title": "Lead Technique @ Komplians (Freelance)",
+      "location": "Casablanca · Hybride",
+      "dates": "Juin 2020 - Mai 2023",
+      "description": "Direction du développement d'une plateforme SaaS de gestion de la conformité, incluant les intégrations et migrations associées.",
+      "customers": [],
+      "industries": ["Conformité", "SaaS"],
+      "skills": "PHP, Laravel, JavaScript, Svelte, React, Next.js, AngularJS, Git, PHPUnit, Version Control",
+      "achievements": [
+        "Développement complet d'une plateforme SaaS de gestion de la conformité pour Komplians.",
+        "Direction de la migration d'une plateforme e-learning vers Moodle et développement d'une solution RSE personnalisée pour aider Les Domaines Agricoles à se conformer à l'ISO26000."
+      ]
+    },
+    "IntelciaIT": {
+      "title": "Développeur Fullstack @ Intelcia IT Solutions (Freelance)",
+      "location": "Hybride",
+      "dates": "Sep 2022 - Nov 2022",
+      "description": "Refonte complète (frontend et backend) du portail SFR 'Mobile Perdu'.",
+      "customers": [],
+      "industries": ["Télécom"],
+      "skills": "Svelte, PHP, Elasticsearch, Bases de données distribuées, JavaScript, Node.js",
+      "achievements": [
+        "Reconstruction de bout en bout du portail Mobile Perdu, améliorant la stabilité et la maintenabilité."
+      ]
+    },
+    "SmartWorkers": {
+      "title": "Développeur Web @ SmartWorkers (Contractuel)",
+      "location": "À distance",
+      "dates": "Mai 2021 - Avr 2022",
+      "description": "Développement et maintenance du portail concessionnaire Klever pour Klever Mobility.",
+      "customers": ["Klever Mobility"],
+      "industries": ["Retail"],
+      "skills": "JavaScript, PHP, Node.js, Frontend Development, Laravel, MySQL, Version Control, Git",
+      "achievements": [
+        "Implémentation de fonctionnalités et maintenance corrective pour le portail utilisé par les concessionnaires Klever Mobility."
+      ]
+    },
+    "APHP": {
+      "title": "Stagiaire Projet @ AP-HP, Assistance Publique - Hôpitaux de Paris",
+      "location": "Paris et périphérie · Sur site",
+      "dates": "Mai 2014 - Juil 2014",
+      "description": "Stage de fin d'études portant sur les systèmes et processus hospitaliers.",
+      "customers": [],
+      "industries": ["Santé"],
+      "skills": "",
+      "achievements": [
+        "Réalisation d'un projet de 3 mois au sein de l'AP-HP."
+      ]
+    }
+  },
+  "projects": [
+    {
+      "timestamp": 1743804683,
+      "title": "API de Test de Charge Login avec Grafana K6",
+      "description": "Ce projet démontre l'utilisation de K6 pour tester la charge d'une API de connexion Node.js reliée à MongoDB. Le script K6 simule plusieurs utilisateurs se connectant simultanément pour analyser les performances. Résultats visualisés dans Grafana.",
+      "link": "https://github.com/m-housni/k6-login-loadtest",
+      "tags": "K6, Load Testing, Grafana, Node.js, MongoDB, Performance Testing, API Testing, JavaScript"
+    },
+    {
+      "timestamp": 1742719021,
+      "title": "LinkedinCrew – Outil Automatisé de Recherche & Analyse LinkedIn",
+      "description": "Projet basé sur Python qui automatise les tâches de recherche sur LinkedIn. Gère la configuration de l'environnement et lance le processus LinkedinCrew sur un sujet spécifique. Utilise l'API OpenAI.",
+      "link": "https://github.com/m-housni/linkedin_crew",
+      "tags": "crewAI, n8n, Python, Automation, LinkedIn, AI, OpenAI API, Command-Line Tool, Scripting"
+    },
+    {
+      "timestamp": 1741798901,
+      "title": "API de Gestion d'Utilisateurs Node en Clean Architecture",
+      "description": "Démonstration de la Clean Architecture dans une API Node.js. Utilise Express, TypeScript et l'Injection de Dépendances pour garantir un code maintenable et scalable en respectant les principes SOLID.",
+      "link": "https://github.com/m-housni/clean-architecture-node",
+      "tags": "Node.js, Clean Architecture, TypeScript, User Management API, Express, Dependency Injection, SOLID Principles, PostgreSQL, MongoDB, JWT Authentication, CRUD Operations, Unit Testing, Jest, API Design"
+    },
+    {
+      "timestamp": 1740728027,
+      "title": "Pattern Abstract Factory en React pour Composants Thémés",
+      "description": "Implémentation du pattern Abstract Factory dans React pour créer des composants réutilisables s'adaptant dynamiquement aux thèmes (clair/sombre) via l'API Context.",
+      "link": "https://github.com/m-housni/themed-react-components-using-abstract-factory-pattern",
+      "tags": "React, Abstract Factory Pattern, Context API, Theming, Design Patterns, Reusable Components, TypeScript"
+    },
+    {
+      "timestamp": 1740728027,
+      "title": "Implémentation Okta SAML pour SSO",
+      "description": "Démonstration de l'implémentation de SAML pour l'authentification Single Sign-On (SSO).",
+      "link": "https://github.com/m-housni/okta-saml-demo-using-node-passport",
+      "tags": "Node, SAML, Okta, Single Sign-On, Authentication, Security, passport, passport-saml"
+    },
+    {
+      "timestamp": 1039480776,
+      "title": "API RESTful Utilisateurs avec NestJS",
+      "description": "API simple construite avec NestJS pour la gestion des utilisateurs.",
+      "link": "https://github.com/m-housni/nest-users-api",
+      "tags": "Node, NestJS, RESTful API, TypeScript, CRUD, uuid, Dependency Injection"
+    },
+    {
+      "timestamp": 1739480776,
+      "title": "Traitement d'Image avec Worker Threads",
+      "description": "Utilisation des Worker Threads Node.js pour décharger les tâches gourmandes en CPU, améliorant la réactivité et les performances de l'application.",
+      "link": "https://github.com/m-housni/image-processing-workers-demo",
+      "tags": "Node, Express, Worker Threads, Parallel Processing, Sharp, Multer, Concurrency"
+    },
+    {
+      "timestamp": 1739480776,
+      "title": "Démo Gherkin-Cucumber",
+      "description": "Utilisation de la syntaxe Gherkin avec Cucumber.js pour les tests BDD (Behavior-Driven Development). Inclut des tests automatisés avec Puppeteer.",
+      "link": "https://github.com/m-housni/gherkin-cucumber-demo",
+      "tags": "Gherkin, Cucumber, BDD, Testing, Automation, Puppeteer, Chai, JavaScript"
+    },
+    {
+      "timestamp": 1739480776,
+      "title": "Système de Suivi de Livraison Vue-Java-Springboot",
+      "description": "Système complet de suivi de livraison. Frontend Vue.js et Backend SpringBoot gérant les mises à jour de statut, les modifications d'adresse et les créneaux horaires. Supporte les rôles acheteur/vendeur.",
+      "link": "https://github.com/m-housni/delivery-tracking-app-with-vue3-and-java-springboot/",
+      "tags": "Vue.js, Java, SpringBoot, Full-Stack, API, REST API, CRUD Operations, Axios, JavaScript"
+    },
+    {
+      "timestamp": 1738425136,
+      "title": "Starter Auth Angular-Express : Système JWT Sécurisé",
+      "description": "Boilerplate intégrant Angular et Express pour l'authentification. Utilise bcrypt pour le hachage et JWT pour la gestion d'état via BehaviorSubject.",
+      "link": "https://github.com/m-housni/angular-express-auth-starter",
+      "tags": "Angular, Express, Authentication, JWT, Node, bcrypt, User Login, Token-Based Authentication, Full-Stack"
+    },
+    {
+      "timestamp": 1737415539,
+      "title": "App Full-Stack Dockerisée React, Node & MySQL",
+      "description": "Configuration Docker Compose orchestrant plusieurs services. Traefik en reverse proxy, MySQL avec stockage persistant et synchronisation du code en temps réel.",
+      "link": "https://github.com/m-housni/dockerized-todoapp/",
+      "tags": "Docker, Traefik, Reverse Proxy, Docker Compose, React, Node, MySQL, CI/CD, GitHub Actions"
+    },
+    {
+      "timestamp": 1737415453,
+      "title": "Système de Gestion de Sessions Scalable avec Express, Redis et Monitoring",
+      "description": "Gestion de sessions haute performance. Intégration Docker avec Prometheus et Grafana pour le monitoring en temps réel.",
+      "link": "https://github.com/m-housni/express-redis-session-management",
+      "tags": "Node, Express, Redis, Session Management, Authentication, Docker, Prometheus, Grafana, Monitoring"
+    },
+    {
+      "timestamp": 1737987383,
+      "title": "Application Sociale Redis Checkin",
+      "description": "Réseau social permettant de 'checker' des lieux avec notations. Exploite Redis comme base de données principale et cache pour une performance optimale.",
+      "link": "https://github.com/m-housni/redis-checkin-social-app",
+      "tags": "ioredis, Redis JSON, Docker, Node, Redis Streams, Redis Pub/Sub, Real-Time Updates"
+    },
+    {
+      "timestamp": 80,
+      "title": "Démo Debounce : Prévention d'Appels API Excessifs",
+      "description": "Application minimale montrant comment le debouncing empêche les appels API multiples lors de clics rapides sur un bouton.",
+      "link": "https://github.com/m-housni/Debounce-Demo-Prevent-Excessive-API-Calls-on-Button-Clicks",
+      "tags": "Debounce, API Calls, Performance, JavaScript, Optimization"
+    },
+    {
+      "timestamp": 1738073454,
+      "title": "TodoApp Fullstack avec Angular, Node et Postgres",
+      "description": "Todo app avec interface intuitive, APIs RESTful, mises à jour temps réel via WebSockets et dashboard d'analyse de productivité.",
+      "link": "https://github.com/m-housni/full-stack-todo-app-with-angular-node-sqlite",
+      "tags": "Angular, Node, WebSockets, Docker, SQLite, RESTful APIs, Real-Time Updates, Postgres"
+    },
+    {
+      "timestamp": 99,
+      "title": "Site E-Commerce avec Angular et Node",
+      "description": "Plateforme complète avec panier, filtrage, pagination et gestion JWT. Backend Node/Express gérant les opérations CRUD et les listes de souhaits.",
+      "link": "https://github.com/m-housni/e-commerce-angular-node",
+      "tags": "E-Commerce, Angular, Node, RxJS, JWT Authentication, Express, State Management, Typescript"
+    }
+  ],
+  "certifications": [
+    {
+      "org": "Microsoft Azure",
+      "certs": [
+        "Azure Administrator Associate (AZ-104) (En préparation)",
+        "Azure Developer Associate (AZ-204) (En préparation)"
+      ],
+      "link": "https://learn.microsoft.com/en-us/certifications/"
+    },
+    {
+      "org": "HashiCorp",
+      "certs": [
+        "HashiCorp Certified: Terraform Associate (En préparation)"
+      ],
+      "link": "https://learn.hashicorp.com/certification"
+    },
+    {
+      "org": "AWS",
+      "certs": [
+        "AWS Certified Solutions Architect - Associate (En préparation)"
+      ],
+      "link": "https://aws.amazon.com/certification/"
+    },
+    {
+      "org": "Scrum.org",
+      "certs": [
+        "Professional Scrum Master I (PSM I)"
+      ],
+      "link": "https://www.scrum.org/certifications"
+    }
+  ],
+  "education": {
+    "ExecutiveMBA": {
+      "degree": "Executive MBA, Cloud Computing",
+      "school": "École Hassania des Travaux Publics",
+      "dates": "Oct 2025",
+      "location": "Casablanca, MA",
+      "skills": [
+        "Cloud Computing",
+        "Microsoft Azure",
+        "Amazon Web Services (AWS)",
+        "Google Cloud Platform (GCP)",
+        "DevOps"
+      ]
+    },
+    "Master": {
+      "degree": "Master en Systèmes Mécatroniques pour la Réhabilitation (M1)",
+      "school": "Université Pierre et Marie Curie (Sorbonne Universités - UPMC)",
+      "dates": "Jan 2014 - Déc 2015",
+      "location": "Paris, FR",
+      "grade": "M1"
+    },
+    "Bachelor": {
+      "degree": "Licence en Génie Industriel",
+      "school": "Faculté des Sciences et Techniques Tanger - Université Abdelmalek Essaadi",
+      "dates": "Sep 2012 - Juin 2013",
+      "location": "Tanger, MA"
+    },
+    "Foundation": {
+      "degree": "DEUST, Génie Mécanique et Électrique",
+      "school": "Faculté des Sciences et Techniques Tanger",
+      "dates": "Sep 2010 - Juin 2011",
+      "location": "Tanger, MA"
+    },
+    "HighSchool": {
+      "degree": "Baccalauréat, Sciences et Technologies",
+      "school": "Université Moulay Ismail Meknès",
+      "dates": "Sep 2008 - Juin 2009",
+      "location": "Meknès, MA"
+    }
+  },
+  "languages": {
+    "Anglais": "Professionnel (7.5 IELTS)",
+    "Français": "Professionnel (C1 CECR)",
+    "Arabe": "Maternel",
+    "Amazigh": "Maternel"
+  },
+  "interests": ["Open Source", "Communautés Tech"]
+}
