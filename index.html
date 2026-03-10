@@ -1013,7 +1013,7 @@
           const isEditable =
             document.body.getAttribute("contenteditable") === "true";
           document.body.contentEditable = !isEditable;
-          this.style.outline = !isEditable ? "3px solid #3b82f6" : "";
+          this.style.outline = isEditable ? "3px solid #3b82f6" : "";
         });
     </script>
     <script src="./brain/scripts/resume.js"></script>
