@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <img id="profile-picture" src="https://media.licdn.com/dms/image/v2/D4D03AQHQl6u_stOpjw/profile-displayphoto-scale_400_400/B4DZzTjGFpKAAg-/0/1773075731684?e=1774483200&amp;v=beta&amp;t=DnEerBNNTzwJI-zeH3a5cPh3eDwRirsSL1KnpiroLwc" alt="Profile Picture" class="h-32 w-32 rounded-full border flex-shrink-0 ml-6" style="outline: rgb(59, 130, 246) solid 3px;">
+        <img id="profile-picture" src="https://media.licdn.com/dms/image/v2/D4D03AQHQl6u_stOpjw/profile-displayphoto-scale_400_400/B4DZzTjGFpKAAg-/0/1773075731684?e=1774483200&amp;v=beta&amp;t=DnEerBNNTzwJI-zeH3a5cPh3eDwRirsSL1KnpiroLwc" alt="Profile Picture" class="h-32 w-32 rounded-full border flex-shrink-0 ml-6">
       </header>
       <section class="mb-6">
         <h2 class="text-2xl font-bold mb-2">
@@ -382,7 +382,7 @@
           </div>
           <div class="mb-4">
             <h3 class="font-semibold">
-              CTO & Cofounder @ Komplians (Freelance) - Casablanca · Hybrid
+              Technical Lead @ Komplians (Freelance) - Casablanca · Hybrid
             </h3>
             <p class="text-sm underline">Jun 2020 - May 2023</p>
             <p>
@@ -423,21 +423,18 @@
             <h3 class="font-semibold">
               Web Developer @ SmartWorkers (Contract) - Remote
             </h3>
-            <p class="text-sm underline">May 2019 - Apr 2022</p>
-                        <p>
+            <p class="text-sm underline">May 2021 - Apr 2022</p>
+            <p>
               Developed and maintained the Klever Dealers Portal for Klever
-              Mobility and many other web development.
+              Mobility.
             </p>
-              <ul class="list-disc list-inside">
-                <li>
-                  Implemented features and maintenance for the dealers portal used
-                  by Klever Mobility, managed a team of 2.
-                </li>
-                <li>
-                  Different web development tasks related to different projects. (maintenance, evols, ...)
-                </li>
-              </ul>
-              <p>
+            <ul class="list-disc list-inside">
+              <li>
+                Implemented features and maintenance for the dealers portal used
+                by Klever Mobility.
+              </li>
+            </ul>
+            <p>
               <span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">JavaScript</span><span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">PHP</span><span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Node.js</span><span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Frontend Development</span><span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Laravel</span><span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">MySQL</span><span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Version Control</span><span class="inline-block text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Git</span>
             </p>
           </div>
@@ -451,7 +448,7 @@
             </p>
               <ul class="list-disc list-inside">
                 <li>
-                  hourly or project based mainly focusing Website design and development
+                  hourly or project based mainly focusing on website design and development
                 </li>
               </ul>
               <p>
@@ -488,11 +485,15 @@
         <hr class="mb-4">
         <div class="grid grid-cols-1 gap-4" id="certifications">
           <div>
-            <h1 class="text-xl font-semibold"><br></h1>
             <li class="text-sm">
               Azure Administrator Associate (AZ-104) (Prep)
             </li>
-            <li class="text-sm">Azure Developer Associate (AZ-204) (Prep)</li><li class="text-sm">Kubernetes (CKAD, CKA)</li></div><div>
+            <li class="text-sm">
+              Azure Developer Associate (AZ-204) (Prep)
+            </li>
+            <li class="text-sm">
+              Kubernetes (CKAD, CKA)
+            </li>
           </div>
         </div>
         <div class="mt-4">
@@ -1004,8 +1005,9 @@
         .getElementById("profile-picture")
         .addEventListener("dblclick", function () {
           const isEditable =
-            document.body.getAttribute("contenteditable") === "false";
-          	document.body.contentEditable = !isEditable;
+            document.body.getAttribute("contenteditable") === "true";
+          document.body.contentEditable = !isEditable;
+          this.style.outline = !isEditable ? "3px solid #3b82f6" : "";
         });
     </script>
     <script src="./brain/scripts/resume.js"></script>
